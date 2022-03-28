@@ -1,0 +1,498 @@
+prefix : <http://www.werk.saw-leipzig.de/>
+prefix werkd: <http://www.werk.saw-leipzig.de/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix rdf-star:  <http://www.w3.org/ns/rdf-star#>
+prefix owl:	<http://www.w3.org/2002/07/owl#>
+
+:person
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_citation ;
+    rdfs:subClassOf :agent ;
+    rdfs:label "Person"@en.
+
+# -----------------------
+
+:has_name
+    rdf:type rdf:Property ;
+    rdfs:label "has name" ;
+    rdfs:domain :entity_with_name ;
+    rdfs:range :name .
+
+:has_preferred_name
+    rdf:type rdf:Property ;
+    rdfs:label "has preferred name" ;
+    rdfs:subPropertyOf :has_name .
+
+:has_alternative_name
+    rdf:type rdf:Property ;
+    rdfs:label "has alternative name" ;
+    rdfs:subPropertyOf :has_name .
+
+:name
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:label "name" .
+
+:has_name_value
+    rdf:type rdf:Property ;
+    rdfs:label "has name value" ;
+    rdfs:domain :name ;
+    rdfs:subPropertyOf :has_main_value .
+
+:has_script
+    rdf:type rdf:Property ;
+    rdfs:label "has script" ;
+    rdfs:domain :name ;
+    rdfs:range :script .
+
+# ------------------------------
+
+# allgemeine value properties
+
+:has_main_value
+    rdf:type rdf:Property ;
+    rdfs:label "has main value" ;    
+    rdfs:subPropertyOf rdf:value ;
+    rdfs:subPropertyOf :has_value .
+
+:has_value
+    rdf:type rdf:Property ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "has value" .
+
+    
+# Properties for provenance or comments for making statements about triples
+
+:has_provenence_text
+    rdf:type rdf:Property ;
+    rdfs:label "has provenance text" ;
+    rdfs:subPropertyOf :has_triple_value .
+
+:has_provenence_URI
+    rdf:type rdf:Property ;
+    rdfs:label "has provenance URI" ;
+    rdfs:subPropertyOf rdfs:seeAlso ;
+    rdfs:subPropertyOf :has_triple_value .
+
+:has_provenance_certainty
+    rdf:type rdf:Property ;
+    rdfs:label "has provenance certainty" ;
+    rdfs:subPropertyOf :has_triple_value .
+
+:has_comment
+    rdf:type rdf:Property ;
+    rdfs:label "has comment" ;
+    rdfs:subPropertyOf  rdfs:comment ;
+    rdfs:subPropertyOf :has_triple_value .
+
+:has_description
+    rdf:type rdf:Property ;
+    rdfs:label "has description" ;
+    rdfs:subPropertyOf :has_triple_value .
+
+:has_triple_value
+    rdf:type rdf:Property ;
+    rdfs:domain rdf-star:Triple ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "has triple value" ;
+    rdfs:subPropertyOf :has_value .
+
+# ----------------------
+    
+:has_entity_description
+    rdf:type rdf:Property ;
+    rdfs:label "has description" ;
+    rdfs:domain :entity_with_description ;
+    rdfs:range :description .
+
+:entity_description rdf:type rdfs:Class ;
+    rdfs:label "description" .
+
+:has_entity_descripton_value
+    rdf:type rdf:Property ;
+    rdfs:label "has entity description value" ;
+    rdfs:domain :description ;
+    rdfs:subPropertyOf :has_main_value .
+
+:has_entity_description_author
+    rdf:type rdf:Property ;
+    rdfs:label "has entity description author" ;
+    rdfs:domain :description ;
+    rdfs:range :person .
+
+# ----------------------
+
+:has_gender
+    rdf:type rdf:Property ;
+    rdfs:label "has gender" ;
+    rdfs:domain :person ;
+    rdfs:range :gender .
+
+# ------------------------
+
+:has_birth
+    rdf:type rdf:Property ;
+    rdfs:label "has birth" ;
+    rdfs:subPropertyOf :has_life_state_change .
+
+:has_death
+    rdf:type rdf:Property ;
+    rdfs:label "has death" ;
+    rdfs:subPropertyOf :has_life_state_change .
+
+:has_life_state_change
+    rdf:type rdf:Property ;
+    rdfs:label "has life state change" ;
+    rdfs:domain :person ;
+    rdfs:range :life_state_change .
+
+:has_life_state_change_person
+    rdf:type rdf:Property ;
+    rdfs:label "has life state change person" ;
+    rdfs:range :person ;
+    rdfs:domain :life_state_change ;
+    owl:inverseOf :life_state_change.
+
+:life_state_change
+    rdf:type rdfs:Class ;
+    rdfs:label "life state change" ;
+    rdfs:subClassOf :timepoint_related_entity ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
+
+:has_life_state_change_place
+    rdf:type rdf:Property ;
+    rdfs:label "has life state change place" ;
+    rdfs:range :place ;
+    rdfs:domain :life_state_change .
+    
+:is_place_of_life_state_change
+    rdf:type rdf:Property ;
+    rdfs:label "is place of life state change" ;
+    rdfs:domain :place ;
+    rdfs:range :life_state_change ;
+    owl:inverseOf :has_life_state_change_place .
+
+:timepoint_related_entity
+    rdf:type rdfs:Class ;
+    rdfs:label "timepoint related entity" .
+
+:timeframe_related_entity
+    rdf:type rdfs:Class ;
+    rdfs:label "timeframe related entity" .
+
+:has_date_earliest
+    rdf:type rdf:Property ;
+    rdfs:label "has date earliest" ;
+    rdfs:domain :timepoint_related_entity ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf :has_value .
+
+:has_date_latest
+    rdf:type rdf:Property ;
+    rdfs:label "has date latest" ;
+    rdfs:domain :timepoint_related_entity ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf :has_value .
+
+:has_begin_earliest
+    rdf:type rdf:Property ;
+    rdfs:label "has begin earliest" ;
+    rdfs:domain :timeframe_related_entity ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf :has_value .
+
+:has_begin_latest
+    rdf:type rdf:Property ;
+    rdfs:label "has begin latest" ;
+    rdfs:domain :timeframe_related_entity ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf :has_value .
+    
+:has_end_earliest
+    rdf:type rdf:Property ;
+    rdfs:label "has end earliest" ;
+    rdfs:domain :timeframe_related_entity ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf :has_value .
+
+:has_end_latest
+    rdf:type rdf:Property ;
+    rdfs:label "has end latest" ;
+    rdfs:domain :timeframe_related_entity ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf :has_value .
+
+# ------------------
+
+:has_person_place_relation
+    rdf:type rdf:Property ;
+    rdfs:label "has person place relation" ;
+    rdfs:domain :person ;
+    rdfs:range :person_place_relation .
+
+:has_person_place_relation_person
+    rdf:type rdf:Property ;
+    rdfs:label "has person place relation person" ;
+    rdfs:domain :person_place_relation ;
+    rdfs:range :person ;
+    owl:inverseOf :has_person_place_relation .
+
+:person_place_relation
+    rdf:type rdfs:Class ;
+    rdfs:label "person place relation" ;
+    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
+
+:has_place_person_relation
+    rdf:type rdf:Property ;
+    rdfs:label "has place person relation" ;
+    rdfs:domain :place ;
+    rdfs:range :person_place_relation .
+
+:has_person_place_relation_place
+    rdf:type rdf:Property ;
+    rdfs:label "has person place relation place" ;
+    rdfs:domain :person_place_relation ;
+    rdfs:range :place ;
+    owl:inverseOf :has_place_person_relation .
+
+:has_person_place_relation_type
+    rdf:type rdf:Property ;
+    rdfs:label "has person place relation type" ;
+    rdfs:domain :person_place_relation ;
+    rdfs:range :person_place_relation_type .
+
+:person_place_relation_type
+    rdf:type rdfs:Class ;
+    rdfs:label "person place relation type" ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
+
+# --------------
+
+:has_occupation_relation
+    rdf:type rdf:Property ;
+    rdfs:label "has occupation" ;
+    rdfs:domain :person ;
+    rdfs:range :occupation_relation .
+
+:occupation_relation
+    rdf:type rdfs:Class ;
+    rdfs:label "occupation relation" ;
+    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
+
+:has_occupation
+    rdf:type rdf:Property ;
+    rdfs:label "has occupation" ;
+    rdfs:domain :occupation_relation ;
+    rdfs:range :occupation .
+
+:occupation
+    rdf:type rdfs:Class ;
+    rdfs:label "occupation" ;
+    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
+
+# agent as superset of person and group
+:agent
+    rdf:type rdfs:Class ;
+    rdfs:label "agent" .
+
+# -----------------
+
+:entity_with_id
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with id" .
+    
+:entity_with_name
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with name" .
+
+# ---------------------
+
+:has_id
+    rdf:type rdf:Property ;
+    rdfs:label "has id" ;
+    rdfs:domain :entity_with_id ;
+    rdfs:range :id .
+
+:id
+    rdf:type rdfs:Class ;
+    rdfs:label "id" .
+
+:has_id_value
+    rdf:type rdf:Property ;
+    rdfs:label "has id value" ;
+    rdfs:domain :id ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf :has_main_value .
+    
+:has_id_type
+    rdf:type rdf:Property ;
+    rdfs:label "has id type" ;
+    rdfs:domain :id ;
+    rdfs:range :id_type .
+
+:id_type
+    rdf:type rdfs:Class ;
+    rdfs:label "id type" ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
+
+# -------------
+
+:has_nationality
+    rdf:type rdf:Property ;
+    rdfs:label "has nationality" ;
+    rdfs:domain :person ;
+    rdfs:range :nationality .
+
+# -------------
+
+:has_person_group_relation
+    rdf:type rdf:Property ;
+    rdfs:label "has person group relation" ;
+    rdfs:domain :person ;
+    rdfs:range :person_group_relation .
+
+:has_person_group_relation_person
+    rdf:type rdf:Property ;
+    rdfs:label "has person group relation person" ;
+    owl:inverseOf :has_person_group_relation ;
+    rdfs:domain :person_group_relation ;
+    rdfs:range :person .
+
+:person_group_relation
+    rdf:type rdfs:Class ;
+    rdfs:label "person group relation" ;
+    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
+
+:has_person_group_relation_group
+    rdf:type rdf:Property ;
+    rdfs:label "has person group relation group" ;
+    rdfs:domain :person_group_relation ;
+    rdfs:range :group .
+
+:has_group_person_relation
+    rdf:type rdf:Property ;
+    rdfs:label "has group person relation" ;
+    rdfs:domain :group ;
+    rdfs:range :person_group_relation ;
+    owl:inverseOf :has_person_group_relation_group .
+    
+:has_person_group_relation_type
+    rdf:type rdf:Property ;
+    rdfs:label "has person group relation type" ;
+    rdfs:domain :person_group_relation ;
+    rdfs:range :person_group_relation_type .
+
+:person_group_relation_type
+    rdf:type rdfs:Class ;
+    rdfs:label "person group relation type" ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
+    
+# -------------
+
+:is_same_person_as
+    rdf:type rdf:Property ;
+    rdfs:label "is same person as" ;
+    rdfs:domain :person ;
+    rdfs:range :person .
+
+:is_same_person_as_external_reference
+    rdf:type rdf:Property ;
+    rdfs:label "is same person as external reference" ;
+    rdfs:domain :person ;
+    rdfs:range xsd:anyURI .
+
+:has_person_relation
+    rdf:type rdf:Property ;
+    rdfs:label "has person relation" ;
+    rdfs:domain :person ;
+    rdfs:range :person_relation .
+
+:person_relation
+    rdf:type rdfs:Class ;
+    rdfs:label "person relation" ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
+
+:has_person_relation_person
+    rdf:type rdf:Property ;
+    rdfs:label "has person relation value" ;
+    rdfs:domain :person_relation ;
+    rdfs:range :person ;
+    owl:inverseOf :has_person_relation .
+
+:has_person_relation_type
+    rdf:type rdf:Property ;
+    rdfs:label "has person relation type" ;
+    rdfs:domain :person_relation ;
+    rdfs:range :person_relation_type .
+
+:person_relation_type
+    rdf:type rdfs:Class ;
+    rdfs:label "person_relation type" ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
+
+# ---------------------
+
+:has_citation
+    rdf:type rdf:Property ;
+    rdfs:label "has citation" ;
+    rdfs:domain :entity_with_citation ;
+    rdfs:range :citation .
+
+:cites
+    rdf:type rdf:Property ;
+    rdfs:label "cites " ;
+    rdfs:domain :citation ;
+    rdfs:range :entity_with_citation ;
+    owl:inverseOf :has_citation .
+
+:citation
+    rdf:type rdfs:Class ;
+    rdfs:label "citation" ;
+    rdfs:subClassOf :entity_with_description .
+
+:entity_with_citation
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with citation".
+
+:entity_with_description
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with description".
+
+:has_citation_resource
+    rdf:type rdf:Property ;
+    rdfs:label "has citation resource" ;
+    rdfs:domain :citation ;
+    rdfs:range :bibliographic_item ;
+    rdfs:subPropertyOf rdf:value .
+
+:contains_citation
+    rdf:type rdf:Property ;
+    rdfs:label "contains citation" ;
+    rdfs:domain :bibliographic_item ;
+    rdfs:range :citation ;
+    owl:inverseOf :has_person_relation .
+
+:has_citation_text
+    rdf:type rdf:Property ;
+    rdfs:label "has citation text" ;
+    rdfs:domain :citation ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf :has_value .
