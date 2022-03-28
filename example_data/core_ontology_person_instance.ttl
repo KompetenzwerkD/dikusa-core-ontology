@@ -1,0 +1,220 @@
+prefix : <http://www.werk.saw-leipzig.de/>
+prefix werkd: <http://www.werk.saw-leipzig.de/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:dhguy rdf:type :person .
+:unknown_dhguy rdf:type :person .
+:speters rdf:type :person .
+:leipzig rdf:type :place .
+:dresden rdf:type :place .
+:kreis_bautzen rdf:type :place .
+:male rdf:type :gender .
+:english rdf:type :nationality .
+:saw rdf:type :group .
+:angelverein_dresden rdf:type :group .
+:mitarbeiter rdf:type :has_person_group_relation_type .
+:mitglied rdf:type :has_person_group_relation_type .
+:wohnort rdf:type :person_place_relation_type .
+:peters2018 rdf:type :bibliographic_item .
+
+_:a001 rdf:type :name .
+_:a002 rdf:type :name .
+_:a003 rdf:type :entity_description .
+_:a004 rdf:type :life_state_change .
+_:a005 rdf:type :life_state_change .
+_:a006 rdf:type :person_place_relation .
+_:a007 rdf:type :person_place_relation .
+_:a008 rdf:type :occupation_relation .
+_:a009 rdf:type :occupation_relation .
+_:a010 rdf:type :id .
+_:a011 rdf:type :id .
+_:a012 rdf:type :person_group_relation .
+_:a013 rdf:type :person_relation .
+_:a014 rdf:type :citation .
+_:a015 rdf:type :life_state_change .
+_:a016 rdf:type :person_group_relation .
+
+:dhguy
+    :has_preferred_name _:a001 {|
+        :has_provenence_text "übernommen aus Geburtsurkunde"@de ;
+        :has_provenence_text "found in birth certificate"@en ;
+        :has_provenence_URI "htts://www.geburtsregister.de/dhguy" ;
+        :has_comment "war leicht zu finden"@de ;
+        :has_provenance_certainty "sicher"@de
+    |} ;
+    :has_alternative_name _:a002 {|
+        :has_provenence_text "laut Aussage von Freunden"@de ;
+        :has_comment "ist wohl sein Spitzname"@de ;
+        :has_provenance_certainty "relativ sicher"@de
+    |} .
+
+_:a001
+    :has_name_value "Dennis Hendrik Guy"@de {|
+        :has_comment "eine bemerkenswerte Zeichenkette"@de
+    |} ;
+    :has_script "latin" {|
+        :has_provenence_text "gesunder Menschenverstand"@de ;
+        :has_comment "das sind alles lateinische Buchstaben"@de ;
+        :has_provenance_certainty "sicher"@de
+    |} .
+
+_:a002
+    :has_name_value "DH Guy"@de ;
+    :has_script "latin" {|
+        :has_provenence_text "erneut gesunder Menschenverstand"@de ;
+        :has_comment "das sind wieder alles lateinische Buchstaben" ;
+        :has_provenance_certainty "sicher" |} .
+
+:dhguy
+    :has_entity_description _:a003 {|
+        :has_provenance_certainty "eher unsicher"@de
+    |} .
+
+_:a003
+    :has_entity_descripton_value "ein toller typ"@de ;
+    :has_entity_description_author :speters {|
+        :has_comment "verfasst von seinem besten Freund"@de
+    |} .
+
+:dhguy
+    :has_gender :male {|
+        :has_provenence_text "laut Geburtsurkunde"@de ;
+        :has_provenance_certainty "sicher"@de
+    |} ;
+    :has_birth _:a004 {|
+        :has_provenence_text "laut Geburtsurkunde"@de ;
+        :has_provenance_certainty "sicher"@de
+    |} ;
+    :has_death _:a005 {|
+        :has_provenence_text "offizielle Angabe"@de ;
+        :has_provenance_certainty "unsicher"@de
+    |} ;
+    :has_death _:a015 {|
+        :has_provenence_text "Ergebnis von Nachforschungen"@de ;
+        :has_provenance_certainty "unsicher"@de
+    |}. 
+
+_:a004
+    :has_life_state_change_place :leipzig ;
+    :has_date_earliest "1965-08-26" ;
+    :has_date_latest "1965-08-26" .
+
+    
+_:a005
+    :has_life_state_change_place :dresden ;
+    :has_date_earliest "2011-05-11" {|
+        :has_provenence_text "Leiche nie gefunden; Festsetzung durch Amtsarzt"
+    |} ;
+    :has_date_latest "2011-05-11" {|
+        :has_provenence_text "Leiche nie gefunden; Festsetzung durch Amtsarzt"
+    |} .
+
+
+_:a015
+    :has_life_state_change_place :kreis_bautzen {|
+        :has_provenence_text "laut Aussage von Freunden war er zu einer dreitägigen Wanderung in dieser Region aufgebrochen"
+    |} ;
+    :has_date_earliest "2011-05-10" {|
+        :has_provenence_text "Beginn der geplanten Wanderung"
+    |} ;
+    :has_date_latest "2011-05-12" {|
+        :has_provenence_text "Ende der geplanten Wanderung"
+    |} .
+    
+:dhguy
+    :has_person_place_relation _:a006 ;
+    :has_person_place_relation _:a007 .
+
+_:a006
+    :has_person_place_relation_place :leipzig ;
+    :has_begin_earliest "1965-08-26" ;
+    :has_begin_latest "1965-08-26" ;
+    :has_end_earliest "1992-04-01" {|
+        :has_description "Umzug im April 1992"
+    |} ;
+    :has_end_latest "1992-04-30" {|
+        :has_description "Umzug im April 1992"
+    |} ;
+    :person_place_relation_type :wohnort .
+
+_:a007
+    :has_person_place_relation_place :dresden ;
+    :has_begin_earliest "1992-04-01" {|
+        :has_description "Umzug im April 1992"
+    |} ;
+    :has_begin_latest "1992-04-30" {|
+        :has_description "Umzug im April 1992"
+    |} ;
+    :has_end_earliest "2011-05-10" {|
+        :has_description "unklares Todesdatum"
+    |} ;
+    :has_end_latest "2011-05-12" {|
+        :has_description "unklares Todesdatum"
+    |} ;
+    :person_place_relation_type :wohnort .
+    
+:dhguy
+    :has_occupation_relation _:a008 ;
+    :has_occupation_relation _:a009 .
+    
+_:a008
+    :has_occupation :it_developer ;
+    :has_begin_earliest "1988-01-01" ;
+    :has_begin_latest  "1988-01-01" ;
+    :has_end_earliest "1998-12-31" ;
+    :has_end_latest "1998-12-31" .
+
+_:a009
+    :has_occupation :it_specialist ;
+    :has_begin_earliest "1999-01-01" ;
+    :has_begin_latest "1999-01-01" .
+
+:dhguy
+    :has_id _:a010 ;
+    :has_id _:a011 .
+
+_:a010
+    :has_id_value "112614086" ;
+    :has_id_type :gnd .
+
+_:a011
+    :has_id_value "Q110214280" ;
+    :has_id_type :wikidata .
+    
+:dhguy
+    :has_nationality :english ;
+    :has_person_group_relation _:a012 ;
+    :has_person_group_relation _:a016 .
+
+_:a012
+    :has_person_group_relation_group :saw ;
+    :has_person_group_relation_type :mitarbeiter ; 
+    :has_begin_earliest "1999-01-01" ;
+    :has_begin_latest "1999-01-01" .
+
+_:a016
+    :has_person_group_relation_group :angelverein_dresden ;
+    :has_person_group_relation_type :mitglied ; 
+    :has_begin_earliest "2002-01-01" ;
+    :has_begin_latest "2002-01-01" ;
+    :has_end_earliest "2003-12-31" ;
+    :has_end_latest "2003-12-31" .
+
+:dhguy
+    :is_same_person_as :unknown_dhguy ;
+    :is_same_person_as_external_reference "https://twitter.com/dhguy" .
+    
+:dhguy
+    :has_person_relation _:a013 .
+
+_:a013
+    :has_person_relation_person :speters ;
+    :has_person_relation_type :friendship .
+
+:dhguy :has_citation _:a014 .
+
+_:a014
+    :has_citation_resource :peters2018 ; 
+    :has_citation_text "...once again dhguy saved the day!" .
