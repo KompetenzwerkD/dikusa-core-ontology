@@ -1,20 +1,70 @@
-prefix : <http://www.werk.saw-leipzig.de/>
-prefix werkd: <http://www.werk.saw-leipzig.de/>
+prefix : <http://www.werkd.saw-leipzig.de/>
+prefix werkd: <http://www.werkd.saw-leipzig.de/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix rdf-star:  <http://www.w3.org/ns/rdf-star#>
 prefix owl:	<http://www.w3.org/2002/07/owl#>
+prefix sh: <http://www.w3.org/ns/shacl#>
 
 :person
-    rdf:type rdfs:Class ;
+    rdf:type rdfs:Class, sh:NodeShape  ;
     rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_id ;    
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_citation ;
     rdfs:subClassOf :agent ;
-    rdfs:label "Person"@en.
+    rdfs:subClassOf :entity_with_place_relation ;
+    rdfs:subClassOf :entity_with_group_relation ;
+    rdfs:subClassOf :entity_with_person_relation ;    
+    rdfs:label "Person"@en ;
+    sh:property [
+        sh:path :has_preferred_name ;
+        sh:minCount 1
+    ] .
+
+:place
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_id ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_citation ;
+    rdfs:subClassOf :entity_with_person_relation .
+
+:group
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_id ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_citation ;
+    rdfs:subClassOf :entity_with_person_relation .
 
 # -----------------------
+
+
+:entity_with_person_relation
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with person relation" .
+
+:entity_with_group_relation
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with group relation" .
+
+:entity_with_place_relation
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with place relation" .
+
+:person_relation
+    rdf:type rdfs:Class ;
+    rdfs:label "person relation" .
+
+:group_relation
+    rdf:type rdfs:Class ;
+    rdfs:label "group relation" .
+
+:place_relation
+    rdf:type rdfs:Class ;
+    rdfs:label "place relation" .
+
+# --------------------------
 
 :has_name
     rdf:type rdf:Property ;
@@ -22,20 +72,65 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
     rdfs:domain :entity_with_name ;
     rdfs:range :name .
 
+:has_name_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_name .
+
 :has_preferred_name
     rdf:type rdf:Property ;
     rdfs:label "has preferred name" ;
     rdfs:subPropertyOf :has_name .
+
+:has_preferred_name_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_preferred_name .
 
 :has_alternative_name
     rdf:type rdf:Property ;
     rdfs:label "has alternative name" ;
     rdfs:subPropertyOf :has_name .
 
+:has_alternative_name_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_alternative_name .
+
+:has_preferred_name_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_preferred_name ;
+    sh:nodeKind sh:IRI ;
+    sh:class :entity_with_name .
+
+:has_preferred_name_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_preferred_name ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :name .
+
+:has_alternative_name_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_alternative_name ;
+    sh:nodeKind sh:IRI ;
+    sh:class :entity_with_name .
+
+:has_alternative_name_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_alternative_name ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :name .
+
 :name
-    rdf:type rdfs:Class ;
+    rdf:type rdfs:Class, sh:NodeShape  ;
     rdfs:subClassOf :timeframe_related_entity ;
-    rdfs:label "name" .
+    rdfs:label "name" ;
+    sh:property [
+        sh:path :has_name_value ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path :has_script ;
+        sh:maxCount 1
+    ] .
 
 :has_name_value
     rdf:type rdf:Property ;
@@ -43,11 +138,43 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
     rdfs:domain :name ;
     rdfs:subPropertyOf :has_main_value .
 
+:has_name_value_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_name_value ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :name .
+
+:has_name_value_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_name_value ;
+    sh:nodeKind sh:Literal .
+
 :has_script
     rdf:type rdf:Property ;
     rdfs:label "has script" ;
     rdfs:domain :name ;
     rdfs:range :script .
+
+:has_script_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_script .
+
+:has_script_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_script ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :name .
+
+:has_script_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_script ;
+    sh:nodeKind sh:IRI ;
+    sh:class :script .
+
+:script
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
 
 # ------------------------------
 
@@ -64,7 +191,6 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
     rdfs:range rdfs:Literal ;
     rdfs:label "has value" .
 
-    
 # Properties for provenance or comments for making statements about triples
 
 :has_provenence_text
@@ -72,16 +198,33 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
     rdfs:label "has provenance text" ;
     rdfs:subPropertyOf :has_triple_value .
 
+:has_provenence_text_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_provenence_text ;
+    sh:nodeKind sh:Literal .
+
 :has_provenence_URI
     rdf:type rdf:Property ;
     rdfs:label "has provenance URI" ;
     rdfs:subPropertyOf rdfs:seeAlso ;
     rdfs:subPropertyOf :has_triple_value .
 
+:has_provenence_URI_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_provenence_URI ;
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:anyURI ;
+    sh:pattern "^http" .
+
 :has_provenance_certainty
     rdf:type rdf:Property ;
     rdfs:label "has provenance certainty" ;
     rdfs:subPropertyOf :has_triple_value .
+
+:has_provenance_certainty_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_provenance_certainty ;
+    sh:nodeKind sh:Literal .
 
 :has_comment
     rdf:type rdf:Property ;
@@ -89,10 +232,20 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
     rdfs:subPropertyOf  rdfs:comment ;
     rdfs:subPropertyOf :has_triple_value .
 
+:has_comment_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_comment ;
+    sh:nodeKind sh:Literal .
+
 :has_description
     rdf:type rdf:Property ;
     rdfs:label "has description" ;
     rdfs:subPropertyOf :has_triple_value .
+
+:has_description_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_description ;
+    sh:nodeKind sh:Literal .
 
 :has_triple_value
     rdf:type rdf:Property ;
@@ -101,28 +254,186 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
     rdfs:label "has triple value" ;
     rdfs:subPropertyOf :has_value .
 
+# enable author for provenance information
+rdf-star:Triple rdfs:subClassOf :entity_with_author .
+
 # ----------------------
     
 :has_entity_description
     rdf:type rdf:Property ;
     rdfs:label "has description" ;
     rdfs:domain :entity_with_description ;
-    rdfs:range :description .
+    rdfs:range :entity_description .
 
-:entity_description rdf:type rdfs:Class ;
-    rdfs:label "description" .
+:has_entity_description_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_entity_description ;
+    sh:nodeKind sh:IRI ;
+    sh:class :entity_with_description .
+
+:has_entity_description_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_entity_description ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :entity_description .
+
+:has_entity_description_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_entity_description .
+
+:entity_description rdf:type rdfs:Class, sh:NodeShape ;
+    rdfs:subClassOf :entity_with_author ;
+    rdfs:label "entity description" ;
+    sh:property [
+        sh:path :has_entity_description_value ;
+        sh:minCount 1
+    ] .
 
 :has_entity_descripton_value
     rdf:type rdf:Property ;
     rdfs:label "has entity description value" ;
-    rdfs:domain :description ;
+    rdfs:domain :entity_description ;
     rdfs:subPropertyOf :has_main_value .
 
-:has_entity_description_author
+:has_entity_descripton_value_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_entity_descripton_value ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :entity_description .
+
+:has_entity_descripton_value_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_entity_descripton_value ;
+    sh:nodeKind sh:Literal .
+
+:has_author
     rdf:type rdf:Property ;
-    rdfs:label "has entity description author" ;
-    rdfs:domain :description ;
+    rdfs:label "has author" ;
+    rdfs:domain :entity_with_author ;
+    rdfs:range :author .
+
+:has_author_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_author ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :entity_with_author .
+
+:has_author_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_author ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :author .
+
+:has_author_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_author .
+
+:author
+    rdf:type rdfs:Class, sh:NodeShape  ;
+    rdfs:label "author" ;
+    sh:property [
+        sh:path :has_author_value ;
+        sh:minCount 1
+    ] .
+
+:has_author_role
+    rdf:type rdf:Property ;
+    rdfs:label "has author role" ;
+    rdfs:domain :author ;
+    rdfs:range :author_role .
+
+:has_author_role_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_author_role ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :author .
+
+:has_author_role_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_author_role ;
+    sh:nodeKind sh:IRI ;
+    sh:class :author_role .
+
+:has_author_role_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_author_role .
+
+:author_role rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:label "author role" .
+
+:has_author_value
+    rdf:type rdf:Property ;
+    rdfs:label "has author value" ;
+    rdfs:domain :author ;
     rdfs:range :person .
+
+:has_author_value_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_author_value ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :author .
+
+:has_author_value_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_author_value ;
+    sh:nodeKind sh:IRI ;
+    sh:class :person .
+
+:has_author_value_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_author_value .
+
+# general entity classes
+
+:entity_with_author
+     rdf:type rdfs:Class ;
+     rdfs:label "entity with author" .
+
+:entity_with_citation
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with citation".
+
+:entity_with_description
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with description".
+
+:entity_with_id
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with id" .
+    
+:entity_with_name
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with name" .
+
+:entity_with_place
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with place" .
+
+# -----------------------
+
+:has_place
+    rdf:type rdf:Property ;
+    rdfs:label "has place" ;
+    rdfs:domain :entity_with_place ;
+    rdfs:range :place .
+
+:has_place_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_place ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :entity_with_place .
+
+:has_place_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_place ;
+    sh:nodeKind sh:IRI ;
+    sh:class :place .
+
+:has_place_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_place .
 
 # ----------------------
 
@@ -132,6 +443,28 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
     rdfs:domain :person ;
     rdfs:range :gender .
 
+:has_gender_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_gender ;
+    sh:nodeKind sh:IRI ;
+    sh:class :person .
+
+:has_gender_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_gender ;
+    sh:nodeKind sh:IRI ;
+    sh:class :gender .
+
+:has_gender_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_gender .
+
+:gender
+     rdf:type rdfs:Class ;
+     rdfs:subClassOf :entity_with_name ;
+     rdfs:subClassOf :entity_with_description ;
+     rdfs:label "gender" .
+
 # ------------------------
 
 :has_birth
@@ -139,10 +472,42 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
     rdfs:label "has birth" ;
     rdfs:subPropertyOf :has_life_state_change .
 
+:has_birth_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_birth ;
+    sh:nodeKind sh:IRI ;
+    sh:class :person .
+
+:has_birth_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_birth ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :life_state_change .
+
+:has_birth_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_birth .
+
 :has_death
     rdf:type rdf:Property ;
     rdfs:label "has death" ;
     rdfs:subPropertyOf :has_life_state_change .
+
+:has_death_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_death ;
+    sh:nodeKind sh:IRI ;
+    sh:class :person .
+
+:has_death_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_death ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :life_state_change .
+
+:has_death_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_death .
 
 :has_life_state_change
     rdf:type rdf:Property ;
@@ -150,32 +515,29 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
     rdfs:domain :person ;
     rdfs:range :life_state_change .
 
-:has_life_state_change_person
+:has_life_state_change_i
     rdf:type rdf:Property ;
-    rdfs:label "has life state change person" ;
-    rdfs:range :person ;
-    rdfs:domain :life_state_change ;
-    owl:inverseOf :life_state_change.
+    owl:inverseOf :has_life_state_change .
 
 :life_state_change
-    rdf:type rdfs:Class ;
+    rdf:type rdfs:Class , sh:NodeShape ;
     rdfs:label "life state change" ;
     rdfs:subClassOf :timepoint_related_entity ;
     rdfs:subClassOf :entity_with_name ;
-    rdfs:subClassOf :entity_with_description .
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_place ;
+    sh:or (
+        [
+        sh:path [ sh:inversePath :has_death ] ;
+            sh:minCount 1 ;
+        ]
+        [
+        sh:path [ sh:inversePath :has_birth ] ;
+            sh:minCount 1 ;
+        ]
+    ) .
 
-:has_life_state_change_place
-    rdf:type rdf:Property ;
-    rdfs:label "has life state change place" ;
-    rdfs:range :place ;
-    rdfs:domain :life_state_change .
-    
-:is_place_of_life_state_change
-    rdf:type rdf:Property ;
-    rdfs:label "is place of life state change" ;
-    rdfs:domain :place ;
-    rdfs:range :life_state_change ;
-    owl:inverseOf :has_life_state_change_place .
+# --------------------
 
 :timepoint_related_entity
     rdf:type rdfs:Class ;
@@ -192,12 +554,38 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
     rdfs:range xsd:date ;
     rdfs:subPropertyOf :has_value .
 
+:has_date_earliest_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_date_earliest ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :timepoint_related_entity .
+
+:has_date_earliest_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_date_earliest ;
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:date ;
+    sh:pattern "^[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
+
 :has_date_latest
     rdf:type rdf:Property ;
     rdfs:label "has date latest" ;
     rdfs:domain :timepoint_related_entity ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf :has_value .
+
+:has_date_latest_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_date_latest ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :timepoint_related_entity .
+
+:has_date_latest_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_date_latest ;
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:date ;
+    sh:pattern "^[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
 
 :has_begin_earliest
     rdf:type rdf:Property ;
@@ -206,19 +594,58 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
     rdfs:range xsd:date ;
     rdfs:subPropertyOf :has_value .
 
+:has_begin_earliest_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_begin_earliest ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :timeframe_related_entity .
+
+:has_begin_earliest_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_begin_earliest ;
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:date ;
+    sh:pattern "^[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
+
 :has_begin_latest
     rdf:type rdf:Property ;
     rdfs:label "has begin latest" ;
     rdfs:domain :timeframe_related_entity ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf :has_value .
-    
+
+:has_begin_latest_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_begin_latest ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :timeframe_related_entity .
+
+:has_begin_latest_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_begin_latest ;
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:date ;
+    sh:pattern "^[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
+
 :has_end_earliest
     rdf:type rdf:Property ;
     rdfs:label "has end earliest" ;
     rdfs:domain :timeframe_related_entity ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf :has_value .
+
+:has_end_earliest_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_end_earliest ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :timeframe_related_entity .
+
+:has_end_earliest_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_end_earliest ;
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:date ;
+    sh:pattern "^[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
 
 :has_end_latest
     rdf:type rdf:Property ;
@@ -227,46 +654,103 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
     rdfs:range xsd:date ;
     rdfs:subPropertyOf :has_value .
 
+:has_end_latest_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_end_latest ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :timeframe_related_entity .
+
+:has_end_latest_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_end_latest ;
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:date ;
+    sh:pattern "^[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
+
 # ------------------
 
-:has_person_place_relation
+:has_place_relation
     rdf:type rdf:Property ;
-    rdfs:label "has person place relation" ;
-    rdfs:domain :person ;
-    rdfs:range :person_place_relation .
+    rdfs:label "has place relation" ;
+    rdfs:domain :entity_with_place_relation ;
+    rdfs:range :place_relation .
 
-:has_person_place_relation_person
+:has_place_relation_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_place_relation ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :entity_with_place_relation .
+
+:has_place_relation_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_place_relation ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :place_relation .
+
+:has_place_relation_i
     rdf:type rdf:Property ;
-    rdfs:label "has person place relation person" ;
-    rdfs:domain :person_place_relation ;
-    rdfs:range :person ;
-    owl:inverseOf :has_person_place_relation .
+    owl:inverseOf :has_place_relation .
+
+:has_person_relation
+    rdf:type rdf:Property ;
+    rdfs:label "has person relation" ;
+    rdfs:domain :entity_with_person_relation ;
+    rdfs:range :person_relation .
+
+:has_person_relation_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_person_relation ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :entity_with_person_relation .
+
+:has_person_relation_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_person_relation ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :person_relation .
+
+:has_person_relation_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_person_relation .
 
 :person_place_relation
-    rdf:type rdfs:Class ;
+    rdf:type rdfs:Class , sh:NodeShape ;
     rdfs:label "person place relation" ;
     rdfs:subClassOf :timeframe_related_entity ;
     rdfs:subClassOf :entity_with_name ;
-    rdfs:subClassOf :entity_with_description .
-
-:has_place_person_relation
-    rdf:type rdf:Property ;
-    rdfs:label "has place person relation" ;
-    rdfs:domain :place ;
-    rdfs:range :person_place_relation .
-
-:has_person_place_relation_place
-    rdf:type rdf:Property ;
-    rdfs:label "has person place relation place" ;
-    rdfs:domain :person_place_relation ;
-    rdfs:range :place ;
-    owl:inverseOf :has_place_person_relation .
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :person_relation ;
+    rdfs:subClassOf :place_relation ;
+    sh:property [
+        sh:path [ sh:inversePath :has_person_relation ] ;
+        sh:minCount 1
+    ] ;
+    sh:property [
+        sh:path [ sh:inversePath :has_place_relation ] ;
+        sh:minCount 1
+    ] .
 
 :has_person_place_relation_type
     rdf:type rdf:Property ;
     rdfs:label "has person place relation type" ;
     rdfs:domain :person_place_relation ;
     rdfs:range :person_place_relation_type .
+
+:has_person_place_relation_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_person_place_relation_type ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :person_place_relation .
+
+:has_person_place_relation_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_person_place_relation_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :person_place_relation_type .
+
+:has_person_place_relation_type_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_person_place_relation_type .
 
 :person_place_relation_type
     rdf:type rdfs:Class ;
@@ -276,46 +760,78 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
 
 # --------------
 
-:has_occupation_relation
-    rdf:type rdf:Property ;
-    rdfs:label "has occupation" ;
-    rdfs:domain :person ;
-    rdfs:range :occupation_relation .
-
-:occupation_relation
-    rdf:type rdfs:Class ;
-    rdfs:label "occupation relation" ;
-    rdfs:subClassOf :timeframe_related_entity ;
-    rdfs:subClassOf :entity_with_name ;
-    rdfs:subClassOf :entity_with_description .
-
 :has_occupation
     rdf:type rdf:Property ;
     rdfs:label "has occupation" ;
-    rdfs:domain :occupation_relation ;
+    rdfs:domain :person ;
     rdfs:range :occupation .
 
+:has_occupation_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_occupation ;
+    sh:nodeKind sh:IRI ;
+    sh:class :person .
+
+:has_occupation_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_occupation ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :occupation .
+
+:has_occupation_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_occupation .
+
 :occupation
-    rdf:type rdfs:Class ;
+    rdf:type rdfs:Class , sh:NodeShape ;
     rdfs:label "occupation" ;
     rdfs:subClassOf :timeframe_related_entity ;
     rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    sh:property [
+        sh:path [ sh:inversePath :has_occupation ] ;
+        sh:minCount 1
+    ] ;
+    sh:property [
+        sh:path :has_occupation_value ;
+        sh:minCount 1
+    ] .
+
+:has_occupation_value
+    rdf:type rdf:Property ;
+    rdfs:label "has occupation value" ;
+    rdfs:domain :occupation ;
+    rdfs:range :occupation_value .
+
+:has_occupation_value_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_occupation_value ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :occupation .
+
+:has_occupation_value_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_occupation_value ;
+    sh:nodeKind sh:IRI ;
+    sh:class :occupation_value .
+
+:has_occupation_value_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_occupation_value .
+
+# a vocabulary of occupations
+:occupation_value
+    rdf:type rdfs:Class ;
+    rdfs:label "occupation value" ;
+    rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
+
+# -------------
 
 # agent as superset of person and group
 :agent
     rdf:type rdfs:Class ;
     rdfs:label "agent" .
-
-# -----------------
-
-:entity_with_id
-    rdf:type rdfs:Class ;
-    rdfs:label "entity with id" .
-    
-:entity_with_name
-    rdf:type rdfs:Class ;
-    rdfs:label "entity with name" .
 
 # ---------------------
 
@@ -325,9 +841,37 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
     rdfs:domain :entity_with_id ;
     rdfs:range :id .
 
+:has_id_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_id ;
+    sh:nodeKind sh:IRI ;
+    sh:class :entity_with_id .
+
+:has_id_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_id ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :id .
+
+:has_id_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_id .
+
 :id
-    rdf:type rdfs:Class ;
-    rdfs:label "id" .
+    rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:label "id" ;
+    sh:property [
+        sh:path [ sh:inversePath :has_id ] ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :has_id_value ;
+        sh:minCount 1 ; 
+    ] ;
+        sh:property [
+        sh:path :has_id_type ;
+        sh:minCount 1 ;
+    ] .
 
 :has_id_value
     rdf:type rdf:Property ;
@@ -335,12 +879,39 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
     rdfs:domain :id ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf :has_main_value .
-    
+
+:has_id_value_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_id_value ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :id .
+
+:has_id_value_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_id_value ;
+    sh:nodeKind sh:Literal .
+
 :has_id_type
     rdf:type rdf:Property ;
     rdfs:label "has id type" ;
     rdfs:domain :id ;
     rdfs:range :id_type .
+
+:has_id_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_id_type ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :id .
+
+:has_id_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_id_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :id_type .
+
+:has_id_type_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_id_type .
 
 :id_type
     rdf:type rdfs:Class ;
@@ -353,63 +924,121 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
 :has_nationality
     rdf:type rdf:Property ;
     rdfs:label "has nationality" ;
-    rdfs:domain :person ;
+    rdfs:domain :agent ;
     rdfs:range :nationality .
 
-# -------------
+:has_nationality_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_nationality ;
+    sh:nodeKind sh:IRI ;
+    sh:class :agent .
 
-:has_person_group_relation
+:has_nationality_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_nationality ;
+    sh:nodeKind sh:IRI ;
+    sh:class :nationality .
+
+:has_nationality_i
     rdf:type rdf:Property ;
-    rdfs:label "has person group relation" ;
-    rdfs:domain :person ;
-    rdfs:range :person_group_relation .
+    owl:inverseOf :has_nationality .
 
-:has_person_group_relation_person
-    rdf:type rdf:Property ;
-    rdfs:label "has person group relation person" ;
-    owl:inverseOf :has_person_group_relation ;
-    rdfs:domain :person_group_relation ;
-    rdfs:range :person .
-
-:person_group_relation
+# ISO 3166-1 Alpha-3 Code
+:nationality
     rdf:type rdfs:Class ;
-    rdfs:label "person group relation" ;
-    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:label "nationality" ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
 
-:has_person_group_relation_group
-    rdf:type rdf:Property ;
-    rdfs:label "has person group relation group" ;
-    rdfs:domain :person_group_relation ;
-    rdfs:range :group .
+# -------------
 
-:has_group_person_relation
+:has_group_relation
     rdf:type rdf:Property ;
-    rdfs:label "has group person relation" ;
-    rdfs:domain :group ;
-    rdfs:range :person_group_relation ;
-    owl:inverseOf :has_person_group_relation_group .
+    rdfs:label "has group relation" ;
+    rdfs:domain :entity_with_group_relation ;
+    rdfs:range :group_relation .
+
+:has_group_relation_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_group_relation ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :entity_with_group_relation .
+
+:has_group_relation_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_group_relation ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :group_relation .
+
+:has_group_relation_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_group_relation .
     
+:person_group_relation
+    rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:label "person group relation" ;
+    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :person_relation ;
+    rdfs:subClassOf :group_relation ;
+    sh:property [
+        sh:path [ sh:inversePath :has_person_relation ] ;
+        sh:minCount 1
+    ] ;
+    sh:property [
+        sh:path [ sh:inversePath :has_group_relation ] ;
+        sh:minCount 1
+    ] .
+
 :has_person_group_relation_type
     rdf:type rdf:Property ;
     rdfs:label "has person group relation type" ;
     rdfs:domain :person_group_relation ;
     rdfs:range :person_group_relation_type .
 
+:has_person_group_relation_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_person_group_relation_type ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :person_group_relation .
+
+:has_person_group_relation_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_person_group_relation_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :person_group_relation_type .
+
+:has_person_group_relation_type_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_person_group_relation_type .
+
 :person_group_relation_type
     rdf:type rdfs:Class ;
     rdfs:label "person group relation type" ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
-    
+
 # -------------
 
 :is_same_person_as
     rdf:type rdf:Property ;
+    rdf:type owl:SymmetricProperty ;
     rdfs:label "is same person as" ;
     rdfs:domain :person ;
     rdfs:range :person .
+
+:is_same_person_as_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :is_same_person_as ;
+    sh:nodeKind sh:IRI ;
+    sh:class :person .
+
+:is_same_person_as_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :is_same_person_as ;
+    sh:nodeKind sh:IRI ;
+    sh:class :person .
 
 :is_same_person_as_external_reference
     rdf:type rdf:Property ;
@@ -417,37 +1046,86 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
     rdfs:domain :person ;
     rdfs:range xsd:anyURI .
 
-:has_person_relation
-    rdf:type rdf:Property ;
-    rdfs:label "has person relation" ;
-    rdfs:domain :person ;
-    rdfs:range :person_relation .
+:is_same_person_as_external_reference_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :is_same_person_as_external_reference ;
+    sh:nodeKind sh:IRI ;
+    sh:class :person .
 
-:person_relation
-    rdf:type rdfs:Class ;
-    rdfs:label "person relation" ;
+:is_same_person_as_external_reference_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :is_same_person_as_external_reference ;
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:anyURI ;
+    sh:pattern "^http" .
+
+#-----------------
+
+:person_person_relation
+    rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:label "person person relation" ;
     rdfs:subClassOf :entity_with_name ;
-    rdfs:subClassOf :entity_with_description .
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :person_relation ;
+    rdfs:subClassOf :timeframe_related_entity ;
+    sh:property [
+        sh:path [ sh:inversePath :has_person_relation ] ;
+        sh:minCount 2
+    ] .
 
-:has_person_relation_person
+:has_person_person_relation_type
     rdf:type rdf:Property ;
-    rdfs:label "has person relation value" ;
-    rdfs:domain :person_relation ;
-    rdfs:range :person ;
-    owl:inverseOf :has_person_relation .
+    rdfs:label "has person person relation type" ;
+    rdfs:domain :person_person_relation ;
+    rdfs:range :person_person_relation_type .
 
-:has_person_relation_type
+:has_person_person_relation_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_person_person_relation_type ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :person_person_relation .
+
+:has_person_person_relation_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_person_person_relation_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :person_person_relation_type .
+
+:has_person_person_relation_type_i
     rdf:type rdf:Property ;
-    rdfs:label "has person relation type" ;
-    rdfs:domain :person_relation ;
-    rdfs:range :person_relation_type .
+    owl:inverseOf :has_person_person_relation_type .
 
-:person_relation_type
+# needs a vocabulary
+:person_person_relation_type
     rdf:type rdfs:Class ;
     rdfs:label "person_relation type" ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
 
+# for asymetric relations like teacher/student
+# uses rdf-star syntax (is attributed to a triple) to specify the property linking person and relation further
+:has_person_person_relation_role
+    rdf:type rdf:Property ;
+    rdfs:label "has person person relation role" ;
+    rdfs:domain rdf-star:Triple ;
+    rdfs:range :person_person_relation_role .
+
+:has_person_person_relation_role_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_person_person_relation_role ;
+    sh:nodeKind sh:IRI ;
+    sh:class :person_person_relation_role .
+
+:has_person_person_relation_role_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_person_person_relation_role .
+
+# vocabulary needed (all roles from asymetric :person_person_relation_type-vocabulary)
+:person_person_relation_role
+    rdf:type rdfs:Class ;
+    rdfs:label "person person relation role" ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
 # ---------------------
 
 :has_citation
@@ -456,25 +1134,40 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
     rdfs:domain :entity_with_citation ;
     rdfs:range :citation .
 
-:cites
+:has_citation_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_citation ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :entity_with_citation .
+
+:has_citation_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_citation ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :citation .
+
+:has_citation_i
     rdf:type rdf:Property ;
-    rdfs:label "cites " ;
-    rdfs:domain :citation ;
-    rdfs:range :entity_with_citation ;
     owl:inverseOf :has_citation .
 
 :citation
-    rdf:type rdfs:Class ;
+    rdf:type rdfs:Class, sh:NodeShape ;
     rdfs:label "citation" ;
-    rdfs:subClassOf :entity_with_description .
-
-:entity_with_citation
-    rdf:type rdfs:Class ;
-    rdfs:label "entity with citation".
-
-:entity_with_description
-    rdf:type rdfs:Class ;
-    rdfs:label "entity with description".
+    rdfs:subClassOf :entity_with_description ;
+    sh:property [
+        sh:path [ sh:inversePath :has_citation ] ;
+        sh:minCount 1
+    ] ;
+    sh:or (
+            [
+                sh:path :has_citation_resource ;
+                sh:minCount 1 ;
+            ]
+            [
+                sh:path :has_citation_text ;
+                sh:minCount 1 ;
+            ]
+    ) .
 
 :has_citation_resource
     rdf:type rdf:Property ;
@@ -483,12 +1176,21 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
     rdfs:range :bibliographic_item ;
     rdfs:subPropertyOf rdf:value .
 
-:contains_citation
+:has_citation_resource_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_citation_resource ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :citation .
+
+:has_citation_resource_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_citation_resource ;
+    sh:nodeKind sh:IRI ;
+    sh:class :bibliographic_item .
+
+:has_citation_resource_i
     rdf:type rdf:Property ;
-    rdfs:label "contains citation" ;
-    rdfs:domain :bibliographic_item ;
-    rdfs:range :citation ;
-    owl:inverseOf :has_person_relation .
+    owl:inverseOf :has_citation_resource .
 
 :has_citation_text
     rdf:type rdf:Property ;
@@ -496,3 +1198,14 @@ prefix owl:	<http://www.w3.org/2002/07/owl#>
     rdfs:domain :citation ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf :has_value .
+
+:has_citation_text_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_citation_text ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :citation .
+
+:has_citation_text_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_citation_text ;
+    sh:nodeKind sh:Literal .
