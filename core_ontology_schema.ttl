@@ -254,9 +254,6 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdfs:label "has triple value" ;
     rdfs:subPropertyOf :has_value .
 
-# enable author for provenance information
-rdf-star:Triple rdfs:subClassOf :entity_with_author .
-
 # ----------------------
     
 :has_entity_description
