@@ -234,7 +234,7 @@ _:a006
     :has_end_latest "1992-04-30"^^xsd:date {|
         :has_description "Umzug im April 1992"
     |} ;
-    :person_place_relation_type :wohnort .
+    :has_person_place_relation_type :wohnort .
 
 _:a007
     :has_begin_earliest "1992-04-01"^^xsd:date {|
@@ -249,7 +249,7 @@ _:a007
     :has_end_latest "2011-05-12"^^xsd:date {|
         :has_description "unklares Todesdatum"
     |} ;
-    :person_place_relation_type :wohnort .
+    :has_person_place_relation_type :wohnort .
     
 :dhguy
     :has_occupation _:a008 ;
