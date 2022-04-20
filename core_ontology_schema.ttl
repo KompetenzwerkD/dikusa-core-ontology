@@ -10,7 +10,8 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :person
     rdf:type rdfs:Class, sh:NodeShape  ;
     rdfs:subClassOf :entity_with_name ;
-    rdfs:subClassOf :entity_with_id ;    
+    rdfs:subClassOf :entity_with_id ;
+    rdfs:subClassOf :entity_with_external_reference ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_citation ;
     rdfs:subClassOf :agent ;
@@ -26,13 +27,16 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :place
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_id ;
+    rdfs:subClassOf :entity_with_external_reference ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_citation ;
     rdfs:subClassOf :entity_with_person_relation .
 
 :group
+    rdfs:subClassOf :agent ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_id ;
+    rdfs:subClassOf :entity_with_external_reference ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_citation ;
     rdfs:subClassOf :entity_with_person_relation .
@@ -136,6 +140,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdf:type rdf:Property ;
     rdfs:label "has name value" ;
     rdfs:domain :name ;
+    rdfs:range rdf:langString ;
     rdfs:subPropertyOf :has_main_value .
 
 :has_name_value_subject_shape
@@ -407,6 +412,10 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :entity_with_place
     rdf:type rdfs:Class ;
     rdfs:label "entity with place" .
+
+:entity_with_external_reference
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with external reference" .
 
 # -----------------------
 
@@ -1037,21 +1046,23 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     sh:nodeKind sh:IRI ;
     sh:class :person .
 
-:is_same_person_as_external_reference
+# ----------------
+
+:is_same_as_external_reference
     rdf:type rdf:Property ;
-    rdfs:label "is same person as external reference" ;
-    rdfs:domain :person ;
+    rdfs:label "is same as external reference" ;
+    rdfs:domain :entity_with_external_reference ;
     rdfs:range xsd:anyURI .
 
-:is_same_person_as_external_reference_subject_shape
+:is_same_as_external_reference_subject_shape
 	a sh:NodeShape ;
-	sh:targetSubjectsOf :is_same_person_as_external_reference ;
+	sh:targetSubjectsOf :is_same_as_external_reference ;
     sh:nodeKind sh:IRI ;
-    sh:class :person .
+    sh:class :entity_with_external_reference .
 
-:is_same_person_as_external_reference_object_shape
+:is_same_as_external_reference_object_shape
 	a sh:NodeShape ;
-    sh:targetObjectsOf :is_same_person_as_external_reference ;
+    sh:targetObjectsOf :is_same_as_external_reference ;
     sh:nodeKind sh:Literal ;
     sh:datatype xsd:anyURI ;
     sh:pattern "^http" .
@@ -1205,4 +1216,398 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :has_citation_text_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_citation_text ;
+    sh:nodeKind sh:Literal .
+
+# ------------------
+
+:has_place_type
+    rdf:type rdf:Property ;
+    rdfs:label "has place type" ;
+    rdfs:domain :place ;
+    rdfs:range :place_type .
+
+:has_place_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_place_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :place .
+
+:has_place_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_place_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :place_type .
+
+:has_place_type_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_place_type .
+
+:place_type
+     rdf:type rdfs:Class ;
+     rdfs:subClassOf :entity_with_name ;
+     rdfs:subClassOf :entity_with_description ;
+     rdfs:label "place type" .
+# -----------------
+:is_part_of_place
+    rdf:type rdf:Property ;
+    rdfs:label "is part of place" ;
+    rdfs:domain :place ;
+    rdfs:range :part_of_place_relation .
+
+:is_part_of_place_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :is_part_of_place ;
+    sh:nodeKind sh:IRI ;
+    sh:class :place .
+
+:is_part_of_place_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :is_part_of_place ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :part_of_place_relation .
+
+:is_part_of_place_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :is_part_of_place .
+
+:part_of_place_relation
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_place ;
+    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:label "part of place relation" ;
+    sh:property [
+        sh:path [ sh:inversePath :is_part_of_place ] ;
+        sh:minCount 1
+    ] ;
+    sh:property [
+        sh:path :has_place ;
+        sh:minCount 1
+    ] .
+
+# ------------------------
+
+:has_begin_of_existence
+    rdf:type rdf:Property ;
+    rdfs:label "has begin of existence" ;
+    rdfs:domain :place ;
+    rdfs:range :begin_of_existence .
+
+:has_begin_of_existence_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_begin_of_existence ;
+    sh:nodeKind sh:IRI ;
+    sh:class :place .
+
+:has_begin_of_existence_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_begin_of_existence ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :begin_of_existence .
+
+:has_begin_of_existence_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_begin_of_existence .
+
+:begin_of_existence
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_place ;
+    rdfs:subClassOf :timepoint_related_entity ;
+    rdfs:label "begin of existence" ;
+        sh:property [
+        sh:path [ sh:inversePath :has_begin_of_existence ] ;
+        sh:minCount 1
+    ] .
+
+:has_begin_of_existence_type
+    rdf:type rdf:Property ;
+    rdfs:label "has begin of existence type" ;
+    rdfs:domain :begin_of_existence ;
+    rdfs:range :begin_of_existence_type .
+
+:has_begin_of_existence_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_begin_of_existence_type ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :begin_of_existence .
+
+:has_begin_of_existence_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_begin_of_existence_type ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :begin_of_existence_type .
+
+:has_begin_of_existence_type_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_begin_of_existence_type .
+
+:begin_of_existence_type
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:label "begin of existence type" .
+
+
+:has_end_of_existence
+    rdf:type rdf:Property ;
+    rdfs:label "has end of existence" ;
+    rdfs:domain :place ;
+    rdfs:range :end_of_existence .
+
+:has_end_of_existence_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_end_of_existence ;
+    sh:nodeKind sh:IRI ;
+    sh:class :place .
+
+:has_end_of_existence_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_end_of_existence ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :end_of_existence .
+
+:has_end_of_existence_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_end_of_existence .
+
+:end_of_existence
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_place ;
+    rdfs:subClassOf :timepoint_related_entity ;
+    rdfs:label "end of existence" ;
+        sh:property [
+        sh:path [ sh:inversePath :has_end_of_existence ] ;
+        sh:minCount 1
+    ] .
+
+:has_end_of_existence_type
+    rdf:type rdf:Property ;
+    rdfs:label "has end of existence type" ;
+    rdfs:domain :end_of_existence ;
+    rdfs:range :end_of_existence_type .
+
+:has_end_of_existence_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_end_of_existence_type ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :end_of_existence .
+
+:has_end_of_existence_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_end_of_existence_type ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :end_of_existence_type .
+
+:has_end_of_existence_type_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_end_of_existence_type .
+
+:end_of_existence_type
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:label "end of existence type" .
+
+# -----------------------
+
+:has_coordinates
+    rdf:type rdf:Property ;
+    rdfs:label "has coordinates" ;
+    rdfs:domain :place ;
+    rdfs:range :coordinates .
+
+:has_coordinates_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_coordinates ;
+    sh:nodeKind sh:IRI ;
+    sh:class :place .
+
+:has_coordinates_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_coordinates ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :coordinates .
+
+:has_coordinates_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_coordinates .
+
+:coordinates
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:label "coordinates" ;
+    sh:property [
+        sh:path [ sh:inversePath :has_coordinates ] ;
+        sh:minCount 1
+    ] ;
+    sh:property [
+        sh:path :has_coordinates_value ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] .
+
+:has_coordinates_value
+    rdf:type rdf:Property ;
+    rdfs:label "has coordinates value" ;
+    rdfs:domain :coordinates ;
+    rdfs:range xsd:string .    
+
+:has_coordinates_value_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_coordinates_value ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :coordinates .
+
+:has_coordinates_value_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_coordinates_value ;
+    sh:nodeKind sh:Literal .
+
+# --------------------
+
+:is_same_place_as
+    rdf:type rdf:Property ;
+    rdf:type owl:SymmetricProperty ;
+    rdfs:label "is same place as" ;
+    rdfs:domain :place ;
+    rdfs:range :place .
+
+:is_same_place_as_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :is_same_place_as ;
+    sh:nodeKind sh:IRI ;
+    sh:class :place .
+
+:is_same_place_as_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :is_same_place_as ;
+    sh:nodeKind sh:IRI ;
+    sh:class :place .
+
+:is_same_place_as_external_reference
+    rdf:type rdf:Property ;
+    rdfs:label "is same place as external reference" ;
+    rdfs:domain :place ;
+    rdfs:range xsd:anyURI .
+
+:is_same_place_as_external_reference_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :is_same_place_as_external_reference ;
+    sh:nodeKind sh:IRI ;
+    sh:class :place .
+
+:is_same_place_as_external_reference_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :is_same_place_as_external_reference ;
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:anyURI ;
+    sh:pattern "^http" .
+
+# address
+
+:has_address
+    rdf:type rdf:Property ;
+    rdfs:label "has address" ;
+    rdfs:domain :place ;
+    rdfs:range :address .
+
+:has_address_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_address ;
+    sh:nodeKind sh:IRI ;
+    sh:class :place .
+
+:has_address_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_address ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :address .
+
+:has_address_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_address .
+
+:address
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:label "address" ;
+    sh:property [
+        sh:path [ sh:inversePath :has_address ] ;
+        sh:minCount 1
+    ] .
+
+:has_country
+    rdf:type rdf:Property ;
+    rdfs:label "has country" ;
+    rdfs:domain :address ;
+    rdfs:range :place .    
+
+:has_country_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_country ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :address .
+
+:has_country_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_country ;
+    sh:nodeKind sh:IRI ;
+    sh:class :place .
+
+:has_town
+    rdf:type rdf:Property ;
+    rdfs:label "has town" ;
+    rdfs:domain :address ;
+    rdfs:range :place .    
+
+:has_town_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_town ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :address .
+
+:has_town_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_town ;
+    sh:nodeKind sh:IRI ;
+    sh:class :place .
+
+:has_postcode
+    rdf:type rdf:Property ;
+    rdfs:label "has postcode" ;
+    rdfs:domain :address ;
+    rdfs:range rdfs:Literal .    
+
+:has_postcode_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_postcode ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :address .
+
+:has_postcode_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_postcode ;
+    sh:nodeKind sh:Literal .
+
+:has_street_address
+    rdf:type rdf:Property ;
+    rdfs:label "has street address" ;
+    rdfs:domain :address ;
+    rdfs:range rdfs:Literal .    
+
+:has_street_address_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_street_address ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :address .
+
+:has_street_address_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_street_address ;
     sh:nodeKind sh:Literal .
