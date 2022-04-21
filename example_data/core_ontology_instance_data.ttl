@@ -61,6 +61,7 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf :entity_with_external_reference ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_citation ;
+    rdfs:subClassOf :entity_with_location ;
     rdfs:subClassOf :entity_with_person_relation .
 :person_person_relation
     rdfs:subClassOf :entity_with_name ;
@@ -68,6 +69,26 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:subClassOf :person_relation ;
     rdfs:subClassOf :timeframe_related_entity .
 :name
+    rdfs:subClassOf :timeframe_related_entity .
+:change_of_existence
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_place ;
+    rdfs:subClassOf :timepoint_related_entity .
+:begin_of_existence
+    rdfs:subClassOf :change_of_existence .
+:end_of_existence
+    rdfs:subClassOf :change_of_existence .
+:part_of_place_relation
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_place ;
+    rdfs:subClassOf :timeframe_related_entity .
+:coordinates
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :timeframe_related_entity .
+:location
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_place ;
     rdfs:subClassOf :timeframe_related_entity .
 
 # class declarations
@@ -78,6 +99,8 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 :leipzig_sachsen rdf:type :place .
 :dresden rdf:type :place .
 :kreis_bautzen rdf:type :place .
+:villa_klinkhardt rdf:type :place .
+:germany rdf:type :place .
 :male rdf:type :gender .
 :DEU rdf:type :nationality .
 :latin rdf:type :script .
@@ -98,7 +121,11 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 :student rdf:type :person_person_relation_role .
 :teacher rdf:type :person_person_relation_role .
 :faust1 rdf:type :bibliographic_item .
-
+:town rdf:type :place_type .
+:volkmarsdorf_gebietskoerperschaft rdf:type :place .
+:volkmarsdorf_stadtteil rdf:type :place .
+:eingemeindung rdf:type :change_of_existence_type .
+:district rdf:type :place_type .
 
 # blank nodes used for reified classes
 # depending on versioning approach IRIs will be used instead 
@@ -126,6 +153,14 @@ _:a021 rdf:type :id .
 _:a022 rdf:type :id .
 _:a023 rdf:type :entity_description .
 _:a024 rdf:type :citation .
+_:a025 rdf:type :part_of_place_relation .
+_:a026 rdf:type :change_of_existence .
+_:a027 rdf:type :coordinates .
+_:a028 rdf:type :coordinates .
+_:a029 rdf:type :address .
+_:a030 rdf:type :name .
+_:a031 rdf:type :location .
+
 
 :unknown_dhguy
     :has_preferred_name _:a001 .
@@ -142,12 +177,14 @@ _:a024 rdf:type :citation .
         :has_provenence_text "found in birth certificate"@en ;
         :has_provenence_URI "https://www.geburtsregister.de/dhguy"^^xsd:anyURI ;
         :has_comment "war leicht zu finden"@de ;
-        :has_provenance_certainty "sicher"@de
+        :has_provenance_certainty "sicher"@de ;
+        :has_provenence_contributor :saw
     |} ;
     :has_alternative_name _:a002 {|
         :has_provenence_text "laut Aussage von Freunden"@de ;
         :has_comment "ist wohl sein Spitzname"@de ;
-        :has_provenance_certainty "relativ sicher"@de
+        :has_provenance_certainty "relativ sicher"@de ;
+        :has_provenence_contributor :saw
     |} .
 
 _:a001
@@ -156,7 +193,8 @@ _:a001
     :has_script :latin {|
         :has_provenence_text "gesunder Menschenverstand"@de ;
         :has_comment "das sind alles lateinische Buchstaben"@de ;
-        :has_provenance_certainty "sicher"@de
+        :has_provenance_certainty "sicher"@de ;
+        :has_provenence_contributor :saw
     |} .
 
 _:a002
@@ -231,10 +269,6 @@ _:a015
 :dhguy
     :has_place_relation _:a006 ;
     :has_place_relation _:a007 .
-
-:leipzig :has_person_relation _:a006 .
-
-:dresden :has_person_relation _:a007 .
 
 _:a006
     :has_begin_earliest "1965-08-26"^^xsd:date ;
@@ -385,3 +419,68 @@ _:a023
 _:a024
     :has_citation_resource :faust1 ; 
     :has_citation_text "Mein Leipzig lob ich mir" .
+
+:leipzig :has_person_relation _:a006 .
+
+:dresden :has_person_relation _:a007 .
+
+:leipzig :has_place_type :town .
+
+:volkmarsdorf_stadtteil
+    :has_place_type :district ;
+    :is_part_of_place _:a025 .
+
+_:a025
+    :has_place :leipzig ;
+    :has_begin_earliest "1890-01-01"^^xsd:date ;
+    :has_begin_latest "1890-12-31"^^xsd:date .
+    
+:volkmarsdorf_gebietskoerperschaft
+    :has_end_of_existence _:a026 .
+    
+:volkmarsdorf_stadtteil
+    :has_begin_of_existence _:a026 .
+
+_:a026
+    :has_change_of_existence_type :eingemeindung ;
+    :has_date_earliest "1890-01-01"^^xsd:date ;
+    :has_date_latest "1890-12-31"^^xsd:date ;
+    :has_place :leipzig .
+
+:leipzig :has_coordinates _:a027 .
+:leipzig :has_coordinates _:a028 .
+
+_:a027
+    :has_coordinates_value "{ \"type\": \"Polygon\", \"coordinates\": [ [ [30, 10], [40, 40], [20, 40], [10, 20], [30, 10] ] ] } " ;
+    :has_begin_earliest "1990-01-01"^^xsd:date ;
+    :has_begin_latest "1990-01-01"^^xsd:date ;
+    :has_end_earliest "1990-12-31"^^xsd:date ;
+    :has_end_latest "1990-12-31"^^xsd:date .
+
+_:a028
+    :has_coordinates_value "{ \"type\": \"Polygon\", \"coordinates\": [ [ [35, 10], [45, 45], [20, 50], [10, 20], [30, 10] ] ] } " ;
+    :has_begin_earliest "1991-01-01"^^xsd:date ;
+    :has_begin_latest "1991-01-01"^^xsd:date ;
+    :has_end_earliest "1991-12-31"^^xsd:date ;
+    :has_end_latest "1991-12-31"^^xsd:date .
+
+:saw :has_location _:a031 .
+
+_:a031
+    :has_place :villa_klinkhardt ;
+    :has_begin_earliest "1995-01-01"^^xsd:date ;
+    :has_begin_latest "1995-12-31"^^xsd:date .
+
+:villa_klinkhardt
+    :has_address _:a029 ;
+    :has_preferred_name _:a030 .
+
+_:a029
+    :has_country :germany ;
+    :has_town :leipzig ;
+    :has_postcode "04107" ;
+    :has_street_address "Karl-Tauchnitz-Str. 1" .
+
+_:a030
+    :has_name_value "Villa Klinkhardt"@de ;
+    :has_script :latin .
