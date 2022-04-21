@@ -25,6 +25,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     ] .
 
 :place
+    rdf:type rdfs:Class ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_id ;
     rdfs:subClassOf :entity_with_external_reference ;
@@ -33,12 +34,14 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdfs:subClassOf :entity_with_person_relation .
 
 :group
+    rdf:type rdfs:Class ;
     rdfs:subClassOf :agent ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_id ;
     rdfs:subClassOf :entity_with_external_reference ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_citation ;
+    rdfs:subClassOf :entity_with_location ;
     rdfs:subClassOf :entity_with_person_relation .
 
 # -----------------------
@@ -196,7 +199,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdfs:range rdfs:Literal ;
     rdfs:label "has value" .
 
-# Properties for provenance or comments for making statements about triples
+### Properties for provenance or comments for making statements about triples
 
 :has_provenence_text
     rdf:type rdf:Property ;
@@ -207,6 +210,21 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_provenence_text ;
     sh:nodeKind sh:Literal .
+
+# which group (institution or project) contributed this fact to the knowledge base
+
+:has_provenence_contributor
+    rdf:type rdf:Property ;
+    rdfs:label "has provenance contributor" ;
+    rdfs:domain rdf-star:Triple ;
+    rdfs:range :group .
+
+:has_provenence_contributor_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_provenence_contributor ;
+    sh:nodeKind sh:IRI ;
+    sh:class :group .
+
 
 :has_provenence_URI
     rdf:type rdf:Property ;
@@ -1243,9 +1261,10 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     owl:inverseOf :has_place_type .
 
 :place_type
-     rdf:type rdfs:Class ;
-     rdfs:subClassOf :entity_with_name ;
-     rdfs:subClassOf :entity_with_description ;
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :timeframe_related_entity ;
      rdfs:label "place type" .
 # -----------------
 :is_part_of_place
@@ -1291,7 +1310,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdf:type rdf:Property ;
     rdfs:label "has begin of existence" ;
     rdfs:domain :place ;
-    rdfs:range :begin_of_existence .
+    rdfs:range :change_of_existence .
 
 :has_begin_of_existence_subject_shape
 	a sh:NodeShape ;
@@ -1303,7 +1322,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_begin_of_existence ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:class :begin_of_existence .
+    sh:class :change_of_existence .
 
 :has_begin_of_existence_i
     rdf:type rdf:Property ;
@@ -1311,50 +1330,46 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 
 :begin_of_existence
     rdf:type rdfs:Class ;
-    rdfs:subClassOf :entity_with_name ;
-    rdfs:subClassOf :entity_with_description ;
-    rdfs:subClassOf :entity_with_place ;
-    rdfs:subClassOf :timepoint_related_entity ;
+    rdfs:subClassOf :change_of_existence ;
     rdfs:label "begin of existence" ;
         sh:property [
         sh:path [ sh:inversePath :has_begin_of_existence ] ;
         sh:minCount 1
     ] .
 
-:has_begin_of_existence_type
+:has_change_of_existence_type
     rdf:type rdf:Property ;
-    rdfs:label "has begin of existence type" ;
-    rdfs:domain :begin_of_existence ;
-    rdfs:range :begin_of_existence_type .
+    rdfs:label "has change of existence type" ;
+    rdfs:domain :change_of_existence ;
+    rdfs:range :change_of_existence_type .
 
-:has_begin_of_existence_type_subject_shape
+:has_change_of_existence_type_subject_shape
 	a sh:NodeShape ;
-	sh:targetSubjectsOf :has_begin_of_existence_type ;
+	sh:targetSubjectsOf :has_change_of_existence_type ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:class :begin_of_existence .
+    sh:class :change_of_existence .
 
-:has_begin_of_existence_type_object_shape
+:has_change_of_existence_type_object_shape
 	a sh:NodeShape ;
-    sh:targetObjectsOf :has_begin_of_existence_type ;
+    sh:targetObjectsOf :has_change_of_existence_type ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:class :begin_of_existence_type .
+    sh:class :change_of_existence_type .
 
-:has_begin_of_existence_type_i
+:has_change_of_existence_type_i
     rdf:type rdf:Property ;
-    owl:inverseOf :has_begin_of_existence_type .
+    owl:inverseOf :has_change_of_existence_type .
 
-:begin_of_existence_type
+:change_of_existence_type
     rdf:type rdfs:Class ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "begin of existence type" .
-
+    rdfs:label "change of existence type" .
 
 :has_end_of_existence
     rdf:type rdf:Property ;
     rdfs:label "has end of existence" ;
     rdfs:domain :place ;
-    rdfs:range :end_of_existence .
+    rdfs:range :change_of_existence .
 
 :has_end_of_existence_subject_shape
 	a sh:NodeShape ;
@@ -1366,7 +1381,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_end_of_existence ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:class :end_of_existence .
+    sh:class :change_of_existence .
 
 :has_end_of_existence_i
     rdf:type rdf:Property ;
@@ -1374,43 +1389,52 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 
 :end_of_existence
     rdf:type rdfs:Class ;
-    rdfs:subClassOf :entity_with_name ;
-    rdfs:subClassOf :entity_with_description ;
-    rdfs:subClassOf :entity_with_place ;
-    rdfs:subClassOf :timepoint_related_entity ;
+    rdfs:subClassOf :change_of_existence ;
     rdfs:label "end of existence" ;
         sh:property [
         sh:path [ sh:inversePath :has_end_of_existence ] ;
         sh:minCount 1
     ] .
 
-:has_end_of_existence_type
-    rdf:type rdf:Property ;
-    rdfs:label "has end of existence type" ;
-    rdfs:domain :end_of_existence ;
-    rdfs:range :end_of_existence_type .
-
-:has_end_of_existence_type_subject_shape
-	a sh:NodeShape ;
-	sh:targetSubjectsOf :has_end_of_existence_type ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:class :end_of_existence .
-
-:has_end_of_existence_type_object_shape
-	a sh:NodeShape ;
-    sh:targetObjectsOf :has_end_of_existence_type ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:class :end_of_existence_type .
-
-:has_end_of_existence_type_i
-    rdf:type rdf:Property ;
-    owl:inverseOf :has_end_of_existence_type .
-
-:end_of_existence_type
+:change_of_existence
     rdf:type rdfs:Class ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "end of existence type" .
+    rdfs:subClassOf :entity_with_place ;
+    rdfs:subClassOf :timepoint_related_entity ;
+    rdfs:label "change of existence" ;
+    sh:or (
+        [
+        sh:path [ sh:inversePath :has_end_of_existence ] ;
+            sh:minCount 1 ;
+        ]
+        [
+        sh:path [ sh:inversePath :has_begin_of_existence ] ;
+            sh:minCount 1 ;
+        ]
+    ) .
+
+:has_change_of_existence
+    rdf:type rdf:Property ;
+    rdfs:label "has change of existence" ;
+    rdfs:domain :place ;
+    rdfs:range :change_of_existence .
+
+:has_change_of_existence_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_change_of_existence ;
+    sh:nodeKind sh:IRI ;
+    sh:class :place .
+
+:has_change_of_existence_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_change_of_existence ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :change_of_existence .
+
+:has_change_of_existence_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_change_of_existence .
 
 # -----------------------
 
@@ -1611,3 +1635,53 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_street_address ;
     sh:nodeKind sh:Literal .
+
+# -----------------
+
+:has_location
+    rdf:type rdf:Property ;
+    rdfs:label "has location" ;
+    rdfs:domain :entity_with_location ;
+    rdfs:range :location .
+
+:has_location_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_location ;
+    sh:nodeKind sh:IRI ;
+    sh:class :entity_with_location .
+
+:has_location_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_location ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :location .
+
+:has_location_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_location .
+
+:location
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_place ;
+    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:label "location" ;
+    sh:property [
+        sh:path [ sh:inversePath :has_location ] ;
+        sh:minCount 1
+    ] ;
+    sh:property [
+        sh:path :has_place ;
+        sh:minCount 1
+    ] .
+
+
+
+
+
+
+
+
+
+
+
