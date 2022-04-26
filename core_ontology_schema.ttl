@@ -14,7 +14,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdfs:subClassOf :entity_with_external_reference ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_citation ;
-    rdfs:subClassOf :agent ;
+    rdfs:subClassOf :actor ;
     rdfs:subClassOf :entity_with_place_relation ;
     rdfs:subClassOf :entity_with_group_relation ;
     rdfs:subClassOf :entity_with_person_relation ;    
@@ -35,7 +35,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 
 :group
     rdf:type rdfs:Class ;
-    rdfs:subClassOf :agent ;
+    rdfs:subClassOf :actor ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_id ;
     rdfs:subClassOf :entity_with_external_reference ;
@@ -43,6 +43,41 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdfs:subClassOf :entity_with_citation ;
     rdfs:subClassOf :entity_with_location ;
     rdfs:subClassOf :entity_with_person_relation .
+
+
+:event
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_id ;
+    rdfs:subClassOf :entity_with_external_reference ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_citation ;
+    rdfs:subClassOf :entity_with_timeframe ;
+    rdfs:subClassOf :entity_with_resource_relation ;
+    rdfs:subClassOf :entity_with_location .
+
+:work
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_id ;
+    rdfs:subClassOf :entity_with_external_reference ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_citation ;
+    rdfs:subClassOf :resource .
+
+:object
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_id ;
+    rdfs:subClassOf :entity_with_external_reference ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_citation ;
+    rdfs:subClassOf :entity_with_location ;
+    rdfs:subClassOf :resource .
+
+:resource
+    rdfs:subClassOf :entity_with_event_relation ;
+    rdf:type rdfs:Class .
 
 # -----------------------
 
@@ -127,7 +162,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 
 :name
     rdf:type rdfs:Class, sh:NodeShape  ;
-    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:subClassOf :entity_with_timeframe ;
     rdfs:label "name" ;
     sh:property [
         sh:path :has_name_value ;
@@ -546,7 +581,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :life_state_change
     rdf:type rdfs:Class , sh:NodeShape ;
     rdfs:label "life state change" ;
-    rdfs:subClassOf :timepoint_related_entity ;
+    rdfs:subClassOf :entity_with_timepoint ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_place ;
@@ -563,18 +598,18 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 
 # --------------------
 
-:timepoint_related_entity
+:entity_with_timepoint
     rdf:type rdfs:Class ;
     rdfs:label "timepoint related entity" .
 
-:timeframe_related_entity
+:entity_with_timeframe
     rdf:type rdfs:Class ;
     rdfs:label "timeframe related entity" .
 
 :has_date_earliest
     rdf:type rdf:Property ;
     rdfs:label "has date earliest" ;
-    rdfs:domain :timepoint_related_entity ;
+    rdfs:domain :entity_with_timepoint ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf :has_value .
 
@@ -582,7 +617,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_date_earliest ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:class :timepoint_related_entity .
+    sh:class :entity_with_timepoint .
 
 :has_date_earliest_object_shape
 	a sh:NodeShape ;
@@ -594,7 +629,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :has_date_latest
     rdf:type rdf:Property ;
     rdfs:label "has date latest" ;
-    rdfs:domain :timepoint_related_entity ;
+    rdfs:domain :entity_with_timepoint ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf :has_value .
 
@@ -602,7 +637,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_date_latest ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:class :timepoint_related_entity .
+    sh:class :entity_with_timepoint .
 
 :has_date_latest_object_shape
 	a sh:NodeShape ;
@@ -614,7 +649,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :has_begin_earliest
     rdf:type rdf:Property ;
     rdfs:label "has begin earliest" ;
-    rdfs:domain :timeframe_related_entity ;
+    rdfs:domain :entity_with_timeframe ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf :has_value .
 
@@ -622,7 +657,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_begin_earliest ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:class :timeframe_related_entity .
+    sh:class :entity_with_timeframe .
 
 :has_begin_earliest_object_shape
 	a sh:NodeShape ;
@@ -634,7 +669,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :has_begin_latest
     rdf:type rdf:Property ;
     rdfs:label "has begin latest" ;
-    rdfs:domain :timeframe_related_entity ;
+    rdfs:domain :entity_with_timeframe ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf :has_value .
 
@@ -642,7 +677,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_begin_latest ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:class :timeframe_related_entity .
+    sh:class :entity_with_timeframe .
 
 :has_begin_latest_object_shape
 	a sh:NodeShape ;
@@ -654,7 +689,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :has_end_earliest
     rdf:type rdf:Property ;
     rdfs:label "has end earliest" ;
-    rdfs:domain :timeframe_related_entity ;
+    rdfs:domain :entity_with_timeframe ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf :has_value .
 
@@ -662,7 +697,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_end_earliest ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:class :timeframe_related_entity .
+    sh:class :entity_with_timeframe .
 
 :has_end_earliest_object_shape
 	a sh:NodeShape ;
@@ -674,7 +709,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :has_end_latest
     rdf:type rdf:Property ;
     rdfs:label "has end latest" ;
-    rdfs:domain :timeframe_related_entity ;
+    rdfs:domain :entity_with_timeframe ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf :has_value .
 
@@ -682,7 +717,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_end_latest ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:class :timeframe_related_entity .
+    sh:class :entity_with_timeframe .
 
 :has_end_latest_object_shape
 	a sh:NodeShape ;
@@ -740,7 +775,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :person_place_relation
     rdf:type rdfs:Class , sh:NodeShape ;
     rdfs:label "person place relation" ;
-    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :person_relation ;
@@ -809,7 +844,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :occupation
     rdf:type rdfs:Class , sh:NodeShape ;
     rdfs:label "occupation" ;
-    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
     sh:property [
@@ -852,10 +887,10 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 
 # -------------
 
-# agent as superset of person and group
-:agent
+# actor as superset of person and group
+:actor
     rdf:type rdfs:Class ;
-    rdfs:label "agent" .
+    rdfs:label "actor" .
 
 # ---------------------
 
@@ -948,14 +983,14 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :has_nationality
     rdf:type rdf:Property ;
     rdfs:label "has nationality" ;
-    rdfs:domain :agent ;
+    rdfs:domain :actor ;
     rdfs:range :nationality .
 
 :has_nationality_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_nationality ;
     sh:nodeKind sh:IRI ;
-    sh:class :agent .
+    sh:class :actor .
 
 :has_nationality_object_shape
 	a sh:NodeShape ;
@@ -1001,7 +1036,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :person_group_relation
     rdf:type rdfs:Class , sh:NodeShape ;
     rdfs:label "person group relation" ;
-    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :person_relation ;
@@ -1093,7 +1128,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :person_relation ;
-    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:subClassOf :entity_with_timeframe ;
     sh:property [
         sh:path [ sh:inversePath :has_person_relation ] ;
         sh:minCount 2
@@ -1199,7 +1234,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdf:type rdf:Property ;
     rdfs:label "has citation resource" ;
     rdfs:domain :citation ;
-    rdfs:range :bibliographic_item ;
+    rdfs:range :work ;
     rdfs:subPropertyOf rdf:value .
 
 :has_citation_resource_subject_shape
@@ -1212,7 +1247,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_citation_resource ;
     sh:nodeKind sh:IRI ;
-    sh:class :bibliographic_item .
+    sh:class :work .
 
 :has_citation_resource_i
     rdf:type rdf:Property ;
@@ -1264,8 +1299,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdf:type rdfs:Class ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:subClassOf :timeframe_related_entity ;
-     rdfs:label "place type" .
+    rdfs:label "place type" .
 # -----------------
 :is_part_of_place
     rdf:type rdf:Property ;
@@ -1293,7 +1327,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdf:type rdfs:Class ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_place ;
-    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:subClassOf :entity_with_timeframe ;
     rdfs:label "part of place relation" ;
     sh:property [
         sh:path [ sh:inversePath :is_part_of_place ] ;
@@ -1401,7 +1435,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_place ;
-    rdfs:subClassOf :timepoint_related_entity ;
+    rdfs:subClassOf :entity_with_timepoint ;
     rdfs:label "change of existence" ;
     sh:or (
         [
@@ -1463,7 +1497,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :coordinates
     rdf:type rdfs:Class ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:subClassOf :entity_with_timeframe ;
     rdfs:label "coordinates" ;
     sh:property [
         sh:path [ sh:inversePath :has_coordinates ] ;
@@ -1559,7 +1593,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :address
     rdf:type rdfs:Class ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:subClassOf :entity_with_timeframe ;
     rdfs:label "address" ;
     sh:property [
         sh:path [ sh:inversePath :has_address ] ;
@@ -1664,7 +1698,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdf:type rdfs:Class ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_place ;
-    rdfs:subClassOf :timeframe_related_entity ;
+    rdfs:subClassOf :entity_with_timeframe ;
     rdfs:label "location" ;
     sh:property [
         sh:path [ sh:inversePath :has_location ] ;
@@ -1675,13 +1709,839 @@ prefix sh: <http://www.w3.org/ns/shacl#>
         sh:minCount 1
     ] .
 
+# --------------------
+
+:has_event_type
+    rdf:type rdf:Property ;
+    rdfs:label "has event type" ;
+    rdfs:domain :event ;
+    rdfs:range :event_type .
+
+:has_event_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_event_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :event .
+
+:has_event_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_event_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :event_type .
+
+:has_event_type_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_event_type .
+
+:event_type
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:label "event type" .
+
+:has_topic
+    rdf:type rdf:Property ;
+    rdfs:label "has topic" ;
+    rdfs:domain :event ;
+    rdfs:range :topic .
+
+:has_topic_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_topic ;
+    sh:nodeKind sh:IRI ;
+    sh:class :event .
+
+:has_topic_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_topic ;
+    sh:nodeKind sh:IRI ;
+    sh:class :topic .
+
+:has_topic_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_topic .
+
+:topic
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:label "event type" .
+
+:is_part_of_event
+    rdf:type rdf:Property ;
+    rdfs:label "is part of event" ;
+    rdfs:domain :event ;
+    rdfs:range :event .
+
+:is_part_of_event_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :is_part_of_event ;
+    sh:nodeKind sh:IRI ;
+    sh:class :event .
+
+:is_part_of_event_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :is_part_of_event ;
+    sh:nodeKind sh:IRI ;
+    sh:class :event .
+
+:is_part_of_event_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :is_part_of_event .
+
+:has_subsequent_event
+    rdf:type rdf:Property ;
+    rdfs:label "has subsequent event" ;
+    rdfs:domain :event ;
+    rdfs:range :event .
+
+:has_subsequent_event_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_subsequent_event ;
+    sh:nodeKind sh:IRI ;
+    sh:class :event .
+
+:has_subsequent_event_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_subsequent_event ;
+    sh:nodeKind sh:IRI ;
+    sh:class :event .
+
+:has_subsequent_event_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_subsequent_event .
+
+:has_participant
+    rdf:type rdf:Property ;
+    rdfs:label "has participant" ;
+    rdfs:domain :event ;
+    rdfs:range :participant .
+
+:has_participant_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_participant ;
+    sh:nodeKind sh:IRI ;
+    sh:class :event .
+
+:has_participant_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_participant ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :participant .
+
+:has_participant_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_participant .
 
 
+:participant
+    rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:subClassOf :entity_with_timeframe ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:label "participant" ;
+    sh:property [
+        sh:path [ sh:inversePath :has_parrticipant ] ;
+        sh:minCount 1
+    ] ;
+    sh:property [
+        sh:path :has_participant_value ;
+        sh:minCount 1
+    ] .
+
+:has_participant_value
+    rdf:type rdf:Property ;
+    rdfs:label "has participant value" ;
+    rdfs:domain :participant ;
+    rdfs:range :actor .
+
+:has_participant_value_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_participant_value ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :participant .
+
+:has_participant_value_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_participant_value ;
+    sh:nodeKind sh:IRI ;
+    sh:class :actor .
+
+:has_participant_value_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_participant_value .
+
+:has_participant_role
+    rdf:type rdf:Property ;
+    rdfs:label "has participant role" ;
+    rdfs:domain :participant ;
+    rdfs:range :participant_role .
+
+:has_participant_role_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_participant_role ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :participant .
+
+:has_participant_role_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_participant_role ;
+    sh:nodeKind sh:IRI ;
+    sh:class :participant_role .
+
+:has_participant_role_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_participant_role .
+
+:participant_role
+    rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:label "participant_role" .
+
+# ------------
+
+:resource_relation
+    rdf:type rdfs:Class ;
+    rdfs:label "resource relation" .
+
+:event_relation
+    rdf:type rdfs:Class ;
+    rdfs:label "event relation" .
+
+:entity_with_resource_relation
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with resource relation" .
+
+:entity_with_event_relation
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with event relation" .
+
+:has_resource_relation
+    rdf:type rdf:Property ;
+    rdfs:label "has resource relation" ;
+    rdfs:domain :entity_with_resource_relation ;
+    rdfs:range :resource_relation .
+
+:has_resource_relation_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_resource_relation ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :entity_with_resource_relation .
+
+:has_resource_relation_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_resource_relation ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :resource_relation .
+
+:has_resource_relation_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_resource_relation .
+
+:has_event_relation
+    rdf:type rdf:Property ;
+    rdfs:label "has event relation" ;
+    rdfs:domain :entity_with_event_relation ;
+    rdfs:range :event_relation .
+
+:has_event_relation_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_event_relation ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :entity_with_event_relation .
+
+:has_event_relation_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_event_relation ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :event_relation .
+
+:has_event_relation_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_event_relation .
+
+:event_resource_relation
+    rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:label "event resource relation" ;
+    rdfs:subClassOf :entity_with_timeframe ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :event_relation ;
+    rdfs:subClassOf :resource_relation ;
+    sh:property [
+        sh:path [ sh:inversePath :has_event_relation ] ;
+        sh:minCount 1
+    ] ;
+    sh:property [
+        sh:path [ sh:inversePath :has_resource_relation ] ;
+        sh:minCount 1
+    ] .
+
+:has_event_resource_relation_type
+    rdf:type rdf:Property ;
+    rdfs:label "has event resource relation type" ;
+    rdfs:domain :event_resource_relation ;
+    rdfs:range :event_resource_relation_type .
+
+:has_event_resource_relation_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_event_resource_relation_type ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :event_resource_relation .
+
+:has_event_resource_relation_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_event_resource_relation_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :event_resource_relation_type .
+
+:has_event_resource_relation_type_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_event_resource_relation_type .
+
+:event_resource_relation_type
+    rdf:type rdfs:Class ;
+    rdfs:label "event resource relation type" ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
+
+# -------------
+
+:is_same_event_as
+    rdf:type rdf:Property ;
+    rdf:type owl:SymmetricProperty ;
+    rdfs:label "is same event as" ;
+    rdfs:domain :event ;
+    rdfs:range :event .
+
+:is_same_event_as_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :is_same_event_as ;
+    sh:nodeKind sh:IRI ;
+    sh:class :event .
+
+:is_same_event_as_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :is_same_event_as ;
+    sh:nodeKind sh:IRI ;
+    sh:class :event .
+
+# ----------------
+
+:has_object_type
+    rdf:type rdf:Property ;
+    rdfs:label "has object type" ;
+    rdfs:domain :object ;
+    rdfs:range :object_type .
+
+:has_object_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_object_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :object .
+
+:has_object_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_object_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :object_type .
+
+:has_object_type_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_object_type .
+
+:object_type
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:label "object type" .
+
+# object creation, modification and destruction as supclasses of event, each having at least one :has_resource_relation and each having a unique property for creation, modification or destruction type
+
+:object_creation
+    rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:subClassOf :event ;
+    rdfs:label "object creation" ;
+        sh:property [
+        sh:path :has_resource_relation ;
+        sh:minCount 1
+    ] .
+
+:has_object_creation_type
+    rdf:type rdf:Property ;
+    rdfs:label "has object creation type" ;
+    rdfs:domain :object_creation ;
+    rdfs:range :object_creation_type .
+
+:has_object_creation_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_object_creation_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :object_creation .
+
+:has_object_creation_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_object_creation_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :object_creation_type .
+
+:has_object_creation_type_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_object_creation_type .
+
+:object_creation_type
+    rdf:type rdfs:Class ;
+    rdfs:label "object creation type" ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
+
+:object_destruction
+    rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:subClassOf :event ;
+    rdfs:label "object destruction" ;
+    rdfs:label "object creation" ;
+        sh:property [
+        sh:path :has_resource_relation ;
+        sh:minCount 1
+    ] .
+
+:has_object_destruction_type
+    rdf:type rdf:Property ;
+    rdfs:label "has object destruction type" ;
+    rdfs:domain :object_destruction ;
+    rdfs:range :object_destruction_type .
+
+:has_object_destruction_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_object_destruction_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :object_destruction .
+
+:has_object_destruction_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_object_destruction_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :object_destruction_type .
+
+:has_object_destruction_type_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_object_destruction_type .
+
+:object_destruction_type
+    rdf:type rdfs:Class ;
+    rdfs:label "object destruction type" ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
+
+:object_modification
+    rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:subClassOf :event ;
+    rdfs:label "object modification" ;
+    rdfs:label "object creation" ;
+        sh:property [
+        sh:path :has_resource_relation ;
+        sh:minCount 1
+    ] .
+
+:has_object_modification_type
+    rdf:type rdf:Property ;
+    rdfs:label "has object modification type" ;
+    rdfs:domain :object_modification ;
+    rdfs:range :object_modification_type .
+
+:has_object_modification_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_object_modification_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :object_modification .
+
+:has_object_modification_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_object_modification_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :object_modification_type .
+
+:has_object_modification_type_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_object_modification_type .
+
+:object_modification_type
+    rdf:type rdfs:Class ;
+    rdfs:label "object modification type" ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
+
+# general actor object relation
+
+:object_relation
+    rdf:type rdfs:Class ;
+    rdfs:label "object relation" .
+
+:actor_relation
+    rdf:type rdfs:Class ;
+    rdfs:label "actor relation" .
+
+:entity_with_object_relation
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with object relation" .
+
+:entity_with_actor_relation
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with actor relation" .
+
+:has_object_relation
+    rdf:type rdf:Property ;
+    rdfs:label "has object relation" ;
+    rdfs:domain :entity_with_object_relation ;
+    rdfs:range :object_relation .
+
+:has_object_relation_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_object_relation ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :entity_with_object_relation .
+
+:has_object_relation_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_object_relation ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :object_relation .
+
+:has_object_relation_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_object_relation .
+
+:has_actor_relation
+    rdf:type rdf:Property ;
+    rdfs:label "has actor relation" ;
+    rdfs:domain :entity_with_actor_relation ;
+    rdfs:range :actor_relation .
+
+:has_actor_relation_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_actor_relation ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :entity_with_actor_relation .
+
+:has_actor_relation_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_actor_relation ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :actor_relation .
+
+:has_actor_relation_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_actor_relation .
+
+:actor_object_relation
+    rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:label "actor object relation" ;
+    rdfs:subClassOf :entity_with_timeframe ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :actor_relation ;
+    rdfs:subClassOf :object_relation ;
+    sh:property [
+        sh:path [ sh:inversePath :has_actor_relation ] ;
+        sh:minCount 1
+    ] ;
+    sh:property [
+        sh:path [ sh:inversePath :has_object_relation ] ;
+        sh:minCount 1
+    ] .
+
+:has_actor_object_relation_type
+    rdf:type rdf:Property ;
+    rdfs:label "has actor object relation type" ;
+    rdfs:domain :actor_object_relation ;
+    rdfs:range :actor_object_relation_type .
+
+:has_actor_object_relation_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_actor_object_relation_type ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :actor_object_relation .
+
+:has_actor_object_relation_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_actor_object_relation_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :actor_object_relation_type .
+
+:has_actor_object_relation_type_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_actor_object_relation_type .
+
+# vocabulary: property, holder of, 
+:actor_object_relation_type
+    rdf:type rdfs:Class ;
+    rdfs:label "actor object relation type" ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
+
+# is part of object
+
+:is_part_of_object
+    rdf:type rdf:Property ;
+    rdfs:label "is part of object" ;
+    rdfs:domain :object ;
+    rdfs:range :object .
+
+:is_part_of_object_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :is_part_of_object ;
+    sh:nodeKind sh:IRI ;
+    sh:class :object .
+
+:is_part_of_object_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :is_part_of_object ;
+    sh:nodeKind sh:IRI ;
+    sh:class :object .
+
+:is_part_of_object_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :is_part_of_object .
+
+# dimensions of the object
+
+:has_dimension
+    rdf:type rdf:Property ;
+    rdfs:label "has dimensione" ;
+    rdfs:domain :object ;
+    rdfs:range :dimension .
+
+:has_dimension_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_dimension ;
+    sh:nodeKind sh:IRI ;
+    sh:class :object .
+
+:has_dimension_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_dimension ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :dimension .
+
+:has_dimension_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_dimension .
+
+:dimension
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:label "dimension" .
+
+:has_dimension_type
+    rdf:type rdf:Property ;
+    rdfs:label "has dimension type" ;
+    rdfs:domain :dimension ;
+    rdfs:range :dimension_type .
+
+:has_dimension_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_dimension_type ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :dimension .
+
+:has_dimension_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_dimension_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :dimension_type .
+
+:has_dimension_type_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_dimension_type .
+
+:dimension_type
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:label "dimension type" .
+
+:has_dimension_unit
+    rdf:type rdf:Property ;
+    rdfs:label "has dimension unit" ;
+    rdfs:domain :dimension ;
+    rdfs:range :dimension_unit .
+
+:has_dimension_unit_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_dimension_unit ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :dimension .
+
+:has_dimension_unit_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_dimension_unit ;
+    sh:nodeKind sh:IRI ;
+    sh:class :dimension_unit .
+
+:has_dimension_unit_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_dimension_unit .
+
+:dimension_unit
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:label "dimension unit" .
+
+:has_dimension_value
+    rdf:type rdf:Property ;
+    rdfs:label "has dimension value" ;
+    rdfs:domain :dimension ;
+    rdfs:range rdfs:Literal .
+
+:has_dimension_value_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_dimension_value ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :dimension .
+
+:has_dimension_value_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_dimension_value ;
+    sh:nodeKind sh:Literal .
+
+# -----------------
+
+:has_subject
+    rdf:type rdf:Property ;
+    rdfs:label "has subject" ;
+    rdfs:domain :object ;
+    rdfs:range :subject .
+
+:has_subject_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_subject ;
+    sh:nodeKind sh:IRI ;
+    sh:class :object .
+
+:has_subject_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_subject ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :subject .
+
+:has_subject_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_subject .
+
+:subject
+    rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:label "subject" ;
+    sh:property [
+        sh:path [ sh:inversePath :has_subject ] ;
+        sh:minCount 1
+    ] ;
+    sh:property [
+        sh:path :has_subject_value ;
+        sh:minCount 1
+    ] .
+
+:has_subject_relation_type
+    rdf:type rdf:Property ;
+    rdfs:label "has subject relation type" ;
+    rdfs:domain :subject ;
+    rdfs:range :subject_relation_type .
+
+:has_subject_relation_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_subject_relation_type ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :subject .
+
+:has_subject_relation_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_subject_relation_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :subject_relation_type .
+
+:has_subject_relation_type_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_subject_relation_type .
+
+:subject_relation_type
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:label "subject relation type" .
+
+# subject_value can be any IRI of the knowledge graph (persons, events, objects, ...)
+:has_subject_value
+    rdf:type rdf:Property ;
+    rdfs:label "has subject value" ;
+    rdfs:domain :subject .
+
+:has_subject_value_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_subject_value ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :subject .
+
+:has_subject_value_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_subject_value ;
+    sh:nodeKind sh:IRI .
+
+:has_subject_value_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_subject_value .
+
+:inscription 
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :object .
+
+:has_inscription_text
+    rdf:type rdf:Property ;
+    rdfs:label "has inscription text" ;
+    rdfs:domain :inscription ;
+    rdfs:range rdfs:Literal .
+
+:has_inscription_text_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_inscription_text ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :nscription .
+
+:has_inscription_text_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_inscription_text ;
+    sh:nodeKind sh:Literal .
+
+# --------------------------------
 
 
+:has_material
+    rdf:type rdf:Property ;
+    rdfs:label "has material" ;
+    rdfs:domain :object ;
+    rdfs:range :material .
 
+:has_material_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_material ;
+    sh:nodeKind sh:IRI ;
+    sh:class :object .
 
+:has_material_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_material ;
+    sh:nodeKind sh:IRI ;
+    sh:class :material .
 
+:has_material_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_material .
 
-
+:material
+    rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:label "material" .
 
