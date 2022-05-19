@@ -58,7 +58,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 
 :work
     rdf:type rdfs:Class ;
-    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_title ;
     rdfs:subClassOf :entity_with_id ;
     rdfs:subClassOf :entity_with_external_reference ;
     rdfs:subClassOf :entity_with_description ;
@@ -163,6 +163,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :name
     rdf:type rdfs:Class, sh:NodeShape  ;
     rdfs:subClassOf :entity_with_timeframe ;
+    rdfs:subClassOf :entity_with_script ;
     rdfs:label "name" ;
     sh:property [
         sh:path :has_name_value ;
@@ -195,7 +196,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :has_script
     rdf:type rdf:Property ;
     rdfs:label "has script" ;
-    rdfs:domain :name ;
+    rdfs:domain :entity_with_script ;
     rdfs:range :script .
 
 :has_script_i
@@ -206,7 +207,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_script ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:class :name .
+    sh:class :entity_with_script .
 
 :has_script_object_shape
 	a sh:NodeShape ;
@@ -234,7 +235,10 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdfs:range rdfs:Literal ;
     rdfs:label "has value" .
 
-### Properties for provenance or comments for making statements about triples
+# -------------------
+
+# Properties for making provenance statements about triples
+# the following statements describe the origin of the fact not the action of entering it into the knowledge graph
 
 :has_provenence_text
     rdf:type rdf:Property ;
@@ -246,30 +250,25 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     sh:targetObjectsOf :has_provenence_text ;
     sh:nodeKind sh:Literal .
 
-# which group (institution or project) contributed this fact to the knowledge base
-
-:has_provenence_contributor
+:has_provenence_resource
     rdf:type rdf:Property ;
-    rdfs:label "has provenance contributor" ;
-    rdfs:domain rdf-star:Triple ;
-    rdfs:range :group .
+    rdfs:label "has provenance resource" ;
+    rdfs:domain rdf-star:Triple .
 
-:has_provenence_contributor_object_shape
+:has_provenence_resource_object_shape
 	a sh:NodeShape ;
-    sh:targetObjectsOf :has_provenence_contributor ;
-    sh:nodeKind sh:IRI ;
-    sh:class :group .
+    sh:targetObjectsOf :has_provenence_resource ;
+    sh:nodeKind sh:IRI .
 
-
-:has_provenence_URI
+:has_provenence_URL
     rdf:type rdf:Property ;
-    rdfs:label "has provenance URI" ;
+    rdfs:label "has provenance URL" ;
     rdfs:subPropertyOf rdfs:seeAlso ;
     rdfs:subPropertyOf :has_triple_value .
 
-:has_provenence_URI_object_shape
+:has_provenence_URL_object_shape
 	a sh:NodeShape ;
-    sh:targetObjectsOf :has_provenence_URI ;
+    sh:targetObjectsOf :has_provenence_URL ;
     sh:nodeKind sh:Literal ;
     sh:datatype xsd:anyURI ;
     sh:pattern "^http" .
@@ -283,6 +282,8 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_provenance_certainty ;
     sh:nodeKind sh:Literal .
+
+# general comments or descriptions for describing triples
 
 :has_comment
     rdf:type rdf:Property ;
@@ -305,6 +306,37 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     sh:targetObjectsOf :has_description ;
     sh:nodeKind sh:Literal .
 
+# Properties for making provenance statements about triples
+# the following statements describe the action of entering it into the knowledge graph
+
+# which group (institution or project) contributed this fact to the knowledge base
+:has_provenence_contributor
+    rdf:type rdf:Property ;
+    rdfs:label "has provenance contributor" ;
+    rdfs:domain rdf-star:Triple ;
+    rdfs:range :group .
+
+:has_provenence_contributor_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_provenence_contributor ;
+    sh:nodeKind sh:IRI ;
+    sh:class :group .
+
+# the date the fact was entered into the graph
+:has_provenence_date
+    rdf:type rdf:Property ;
+    rdfs:label "has provenance date" ;
+    rdfs:domain rdf-star:Triple ;
+    rdfs:range xsd:date .
+
+:has_provenence_date_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_provenence_date ;
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:date ;
+    sh:pattern "^[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
+
+# general property for statements on triples
 :has_triple_value
     rdf:type rdf:Property ;
     rdfs:domain rdf-star:Triple ;
@@ -461,6 +493,14 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 :entity_with_name
     rdf:type rdfs:Class ;
     rdfs:label "entity with name" .
+
+:entity_with_title
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with title" .
+
+:entity_with_script
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with script" .
 
 :entity_with_place
     rdf:type rdfs:Class ;
@@ -1446,6 +1486,10 @@ prefix sh: <http://www.w3.org/ns/shacl#>
         sh:path [ sh:inversePath :has_begin_of_existence ] ;
             sh:minCount 1 ;
         ]
+        [
+        sh:path [ sh:inversePath :has_change_of_existence ] ;
+            sh:minCount 1 ;
+        ]
     ) .
 
 :has_change_of_existence
@@ -1618,21 +1662,21 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     sh:nodeKind sh:IRI ;
     sh:class :place .
 
-:has_town
+:has_city
     rdf:type rdf:Property ;
     rdfs:label "has town" ;
     rdfs:domain :address ;
     rdfs:range :place .    
 
-:has_town_subject_shape
+:has_city_subject_shape
 	a sh:NodeShape ;
-	sh:targetSubjectsOf :has_town ;
+	sh:targetSubjectsOf :has_city ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :address .
 
-:has_town_object_shape
+:has_city_object_shape
 	a sh:NodeShape ;
-    sh:targetObjectsOf :has_town ;
+    sh:targetObjectsOf :has_city ;
     sh:nodeKind sh:IRI ;
     sh:class :place .
 
@@ -2099,7 +2143,6 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdf:type rdfs:Class , sh:NodeShape ;
     rdfs:subClassOf :event ;
     rdfs:label "object destruction" ;
-    rdfs:label "object creation" ;
         sh:property [
         sh:path :has_resource_relation ;
         sh:minCount 1
@@ -2137,7 +2180,6 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdf:type rdfs:Class , sh:NodeShape ;
     rdfs:subClassOf :event ;
     rdfs:label "object modification" ;
-    rdfs:label "object creation" ;
         sh:property [
         sh:path :has_resource_relation ;
         sh:minCount 1
@@ -2545,3 +2587,144 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdfs:subClassOf :entity_with_description ;
     rdfs:label "material" .
 
+# -------------------
+
+
+:has_title
+    rdf:type rdf:Property ;
+    rdfs:label "has title" ;
+    rdfs:domain :entity_with_title ;
+    rdfs:range :title .
+
+:has_title_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_title .
+
+:has_preferred_title
+    rdf:type rdf:Property ;
+    rdfs:label "has preferred title" ;
+    rdfs:subPropertyOf :has_title .
+
+:has_preferred_title_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_preferred_title .
+
+:has_alternative_title
+    rdf:type rdf:Property ;
+    rdfs:label "has alternative title" ;
+    rdfs:subPropertyOf :has_title .
+
+:has_alternative_title_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_alternative_title .
+
+:has_preferred_title_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_preferred_title ;
+    sh:nodeKind sh:IRI ;
+    sh:class :entity_with_title .
+
+:has_preferred_title_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_preferred_title ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :title .
+
+:has_alternative_title_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_alternative_title ;
+    sh:nodeKind sh:IRI ;
+    sh:class :entity_with_title .
+
+:has_alternative_title_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_alternative_title ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :title .
+
+:title
+    rdf:type rdfs:Class, sh:NodeShape  ;
+    rdfs:subClassOf :entity_with_timeframe ;
+    rdfs:subClassOf :entity_with_script ;
+    rdfs:label "title" ;
+    sh:property [
+        sh:path :has_title_value ;
+        sh:minCount 1 ;
+        sh:maxCount 1
+    ] ;
+    sh:property [
+        sh:path :has_script ;
+        sh:maxCount 1
+    ] .
+
+:has_title_value
+    rdf:type rdf:Property ;
+    rdfs:label "has title value" ;
+    rdfs:domain :title ;
+    rdfs:range rdf:langString ;
+    rdfs:subPropertyOf :has_main_value .
+
+:has_title_value_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_title_value ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :title .
+
+:has_title_value_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_title_value ;
+    sh:nodeKind sh:Literal .
+
+# --------------------
+
+:is_part_of_work
+    rdf:type rdf:Property ;
+    rdfs:label "is part of work" ;
+    rdfs:domain :work ;
+    rdfs:range :work .
+
+:is_part_of_work_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :is_part_of_work ;
+    sh:nodeKind sh:IRI ;
+    sh:class :work .
+
+:is_part_of_work_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :is_part_of_work ;
+    sh:nodeKind sh:IRI ;
+    sh:class :work .
+
+:is_part_of_work_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :is_part_of_work .
+
+# -------------
+
+:has_work_type
+    rdf:type rdf:Property ;
+    rdfs:label "has work type" ;
+    rdfs:domain :work ;
+    rdfs:range :work_type .
+
+:has_work_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_work_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :work .
+
+:has_work_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_work_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :work_type .
+
+:has_work_type_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_work_type .
+
+:work_type
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:label "work type" .
