@@ -25,6 +25,9 @@ Since the ontology is rather complex and the Turtle-file which also includes the
 * [Object part 1](https://www.ldf.fi/service/rdf-grapher?rdf=https://raw.githubusercontent.com/dgoldhahn/dikusa_core_visualization_test/main/object_test_1.ttl&from=ttl&to=png)
 * [Object part 2](https://www.ldf.fi/service/rdf-grapher?rdf=https://raw.githubusercontent.com/dgoldhahn/dikusa_core_visualization_test/main/object_test_2.ttl&from=ttl&to=png)
 
+### Additional Information
+* [Slides in German presented on 29.04.2022](https://github.com/KompetenzwerkD/dikusa-core-ontology/blob/main/documentation/Dikusa%20Datenmodell%20Folien%2029.04.2022.pdf)
+
 ### Progress
 So far Persons, Places, Events and Objects have been modeled. The classes Work and Group are currently being developed.
 
