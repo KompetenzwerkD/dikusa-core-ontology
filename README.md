@@ -12,10 +12,26 @@ Core ontology for integrating data of the partner institutions within the Dikusa
 * OWL is used for labeling inverse relations
 * SHACL is used to allow for validating instance data against the schema
 
+### Visualisation
+Since the ontology is rather complex and the Turtle-file which also includes the shacl-constraints is difficult to comprehend, additional visualisations have been created:
+* [Person part 1](https://www.ldf.fi/service/rdf-grapher?rdf=https://raw.githubusercontent.com/dgoldhahn/dikusa_core_visualization_test/main/person_test_1.ttl&from=ttl&to=png)
+* [Person part 2](https://www.ldf.fi/service/rdf-grapher?rdf=https://raw.githubusercontent.com/dgoldhahn/dikusa_core_visualization_test/main/person_test_2.ttl&from=ttl&to=png)
+* [Person part 3](https://www.ldf.fi/service/rdf-grapher?rdf=https://raw.githubusercontent.com/dgoldhahn/dikusa_core_visualization_test/main/person_test_3.ttl&from=ttl&to=png)
+* [Person part 4](https://www.ldf.fi/service/rdf-grapher?rdf=https://raw.githubusercontent.com/dgoldhahn/dikusa_core_visualization_test/main/person_test_4.ttl&from=ttl&to=png)
+* [Place part 1](https://www.ldf.fi/service/rdf-grapher?rdf=https://raw.githubusercontent.com/dgoldhahn/dikusa_core_visualization_test/main/place_test_1.ttl&from=ttl&to=png)
+* [Place part 2](https://www.ldf.fi/service/rdf-grapher?rdf=https://raw.githubusercontent.com/dgoldhahn/dikusa_core_visualization_test/main/place_test_2.ttl&from=ttl&to=png)
+* [Event part 1](https://www.ldf.fi/service/rdf-grapher?rdf=https://raw.githubusercontent.com/dgoldhahn/dikusa_core_visualization_test/main/event_test_1.ttl&from=ttl&to=png)
+* [Event part 2](https://www.ldf.fi/service/rdf-grapher?rdf=https://raw.githubusercontent.com/dgoldhahn/dikusa_core_visualization_test/main/event_test_2.ttl&from=ttl&to=png)
+* [Object part 1](https://www.ldf.fi/service/rdf-grapher?rdf=https://raw.githubusercontent.com/dgoldhahn/dikusa_core_visualization_test/main/object_test_1.ttl&from=ttl&to=png)
+* [Object part 2](https://www.ldf.fi/service/rdf-grapher?rdf=https://raw.githubusercontent.com/dgoldhahn/dikusa_core_visualization_test/main/object_test_2.ttl&from=ttl&to=png)
+
+### Progress
+So far Persons, Places, Events and Objects have been modeled. The classes Work and Group are currently being developed.
+
 ## Validation
 
-Using standard tools - such as those provided with Apache Jena - instance data as found in folder example_data can be validated against the schema as described by shacl constraints (under open world assumption).  
-For Apache Jena: shacl v -s schema_file -d instance_data_file 
+Using standard tools - such as those provided with Apache Jena - instance data as found in folder example_data can be validated against the schema as described by shacl constraints (under open world assumption). For validating your own instance data against the schema please be aware that all subclass relations need to be included in your data (see supplied file in example_data) and not (only) in the schema. This is expected by shacl-tools.
+For Apache Jena use the following command: shacl v -s schema_file -d instance_data_file 
 
 ## Author
 
