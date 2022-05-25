@@ -1,0 +1,29 @@
+prefix : <http://www.werkd.saw-leipzig.de/>
+prefix werkd: <http://www.werkd.saw-leipzig.de/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+:object
+    :has_actor_relation :object_actor_relation ;
+    :is_part_of :object ;
+    :has_dimension :dimension .
+
+:actor
+    :has_object_relation :object_actor_relation .
+
+:person rdfs:subClassOf :actor .
+:group rdfs:subClassOf :actor .
+
+:object_actor_relation
+    :has_begin_earliest "begin_earliest" ;
+    :has_begin_latest "begin_latest" ;
+    :has_end_earliest "end_earliest" ;
+    :has_end_latest "end_latest" ;
+    :has_type :type .
+
+:dimension
+    :has_dimension_type :dimension_type ;
+    :has_dimension_value "dimension_value" ;
+    :has_dimension_unit :dimension_unit .

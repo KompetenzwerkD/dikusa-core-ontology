@@ -1,0 +1,27 @@
+prefix : <http://www.werkd.saw-leipzig.de/>
+prefix werkd: <http://www.werkd.saw-leipzig.de/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+:event
+    :has_location :location ;
+    :is_part_of_event :event ;
+    :has_subsequent_event :event ;
+    :has_participant :participant .
+
+:location
+    :has_place :place ;
+    :has_begin_earliest "begin_earliest" ;
+    :has_begin_latest "begin_latest" ;
+    :has_end_earliest "end_earliest" ;
+    :has_end_latest "end_latest" .
+
+:participant
+    :has_begin_earliest "begin_earliest" ;
+    :has_begin_latest "begin_latest" ;
+    :has_end_earliest "end_earliest" ;
+    :has_end_latest "end_latest" ;
+    :has_participant_value :person ;
+    :has_participant_role :participant_role .

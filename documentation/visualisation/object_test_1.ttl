@@ -1,0 +1,28 @@
+prefix : <http://www.werkd.saw-leipzig.de/>
+prefix werkd: <http://www.werkd.saw-leipzig.de/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+:object
+    :has_object_creation :object_creation ;
+    :has_object_destruction :object_destruction ;
+    :has_object_modification :object_modification ;
+    :has_subject :subject .
+
+:object_creation
+    rdfs:subClassOf :event ;
+    :has_object_creation_type :object_creation_type .
+
+:object_destruction
+    rdfs:subClassOf :event ;
+    :has_object_destruction_type :object_destruction_type .
+
+:object_modification
+    rdfs:subClassOf :event ;
+    :has_object_modification_type :object_modification_type .
+
+:subject
+    :has_subject_relation_type :subject_relation_type ;
+    :has_subject_value :IRI .

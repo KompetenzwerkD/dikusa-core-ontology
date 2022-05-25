@@ -1,0 +1,31 @@
+prefix : <http://www.werkd.saw-leipzig.de/>
+prefix werkd: <http://www.werkd.saw-leipzig.de/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:person
+    :has_preferred_name :preferred_name ;
+    :has_alternative_name :alternative_name ;
+    :has_entity_description :entity_description .
+
+:preferred_name
+    :has_name_value "preferred_name_value" ;
+    :has_script :script .
+
+:alternative_name
+    :has_name_value "alternative_name_value" ;
+    :has_script :script .
+
+
+:entity_description
+    :has_entity_description_value "entity_description_value" ;
+    :has_author :author .
+    
+:author
+    :has_author_value :person ;
+    :has_author_role :author_role.
+
+:person
+    :has_gender :gender .
+

@@ -1,0 +1,36 @@
+prefix : <http://www.werkd.saw-leipzig.de/>
+prefix werkd: <http://www.werkd.saw-leipzig.de/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+:person
+    :has_place_relation :person_place_relation .
+
+:place
+    :has_person_relation :person_place_relation ;
+    :has_coordinates :coordinates ;
+    :has_address :address .
+
+:person_place_relation
+    :has_begin_earliest "begin_earliest" ;
+    :has_begin_latest "begin_latest" ;
+    :has_end_earliest "end_earliest" ;
+    :has_end_latest "end_latest" ;
+    :has_person_place_relation_type :person_place_relation_type .
+
+:coordinates
+    :has_coordinates_value "coordinates_value" ;
+    :has_begin_earliest "begin_earliest" ;
+    :has_begin_latest "begin_latest" ;
+    :has_end_earliest "end_earliest" ;
+    :has_end_latest "end_latest" .
+
+:address
+    :has_country :place ;
+    :has_city :place ;
+    :has_postcode "postcode" ;
+    :has_street_address "street_address" .
+    

@@ -1,0 +1,38 @@
+prefix : <http://www.werkd.saw-leipzig.de/>
+prefix werkd: <http://www.werkd.saw-leipzig.de/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+:person
+    :has_group_relation :person_group_relation .
+
+:group :has_person_relation :person_group_relation .
+
+:person_group_relation
+    :has_person_group_relation_type :person_group_relation_type ; 
+    :has_begin_earliest "begin earliest" ;
+    :has_end_earliest "end earliest" ;
+    :has_begin_latest "begin latest" ;
+    :has_end_latest "end latest" .
+
+:person
+    :is_same_person_as :person ;
+    :is_same_person_as_external_reference "external reference URL" .
+    
+:person
+    :has_person_relation :person_person_relation .
+
+:person_person_relation
+    :has_person_person_relation_type :person_person_relation_type ;
+    :has_begin_earliest "begin earliest" ;
+    :has_end_earliest "end earliest" ;
+    :has_begin_latest "begin latest" ;
+    :has_end_latest "end latest" .
+
+:person :has_citation :citation .
+
+:citation
+    :has_citation_resource :work_bibliographic_resource ; 
+    :has_citation_text "citation text" .

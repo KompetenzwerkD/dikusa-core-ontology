@@ -1,0 +1,29 @@
+prefix : <http://www.werkd.saw-leipzig.de/>
+prefix werkd: <http://www.werkd.saw-leipzig.de/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+:place
+    :has_begin_of_existence :change_of_existence ;
+    :has_change_of_existence :change_of_existence ;
+    :has_end_of_existence :change_of_existence ;
+    :is_part_of_place :part_of_place .
+
+:change_of_existence
+    :has_date_earliest "date earliest" ;
+    :has_date_latest "date latest" ;
+    :has_change_of_existence_type :change_of_existence_type ;
+    :has_place :place .
+
+:part_of_place
+    :has_place :place ;
+    :has_begin_earliest "begin_earliest" ;
+    :has_begin_latest "begin_latest" ;
+    :has_end_earliest "end_earliest" ;
+    :has_end_latest "end_latest" .
+
+
+    

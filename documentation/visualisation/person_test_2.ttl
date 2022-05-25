@@ -1,0 +1,37 @@
+prefix : <http://www.werkd.saw-leipzig.de/>
+prefix werkd: <http://www.werkd.saw-leipzig.de/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+
+:person
+    :has_birth :birth ;
+    :has_death :death .
+
+:birth
+    :has_place :place ;
+    :has_date_earliest "birth_date_earliest" ;
+    :has_date_latest "birth_date_latest" .
+
+:death
+    :has_place :place ;
+    :has_date_earliest "death_date_earliest" ;
+    :has_date_latest "death_date_latest" .
+
+
+:person
+    :has_place_relation :person_place_relation .
+
+:place :has_person_relation :person_place_relation .
+
+:person_place_relation
+    :has_begin_earliest "begin_earliest" ;
+    :has_begin_latest "begin_latest" ;
+    :has_end_earliest "end_earliest" ;
+    :has_end_latest "end_latest" ;
+    :has_person_place_relation_type :person_place_relation_type .
+
+    
