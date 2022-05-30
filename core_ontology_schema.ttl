@@ -44,7 +44,6 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdfs:subClassOf :entity_with_location ;
     rdfs:subClassOf :entity_with_person_relation .
 
-
 :event
     rdf:type rdfs:Class ;
     rdfs:subClassOf :entity_with_name ;
@@ -63,6 +62,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdfs:subClassOf :entity_with_external_reference ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_citation ;
+    rdfs:subClassOf :entity_with_author ;
     rdfs:subClassOf :resource .
 
 :object
@@ -454,7 +454,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdf:type rdf:Property ;
     rdfs:label "has author value" ;
     rdfs:domain :author ;
-    rdfs:range :person .
+    rdfs:range :actor .
 
 :has_author_value_subject_shape
 	a sh:NodeShape ;
@@ -466,7 +466,7 @@ prefix sh: <http://www.w3.org/ns/shacl#>
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_author_value ;
     sh:nodeKind sh:IRI ;
-    sh:class :person .
+    sh:class :actor .
 
 :has_author_value_i
     rdf:type rdf:Property ;
@@ -2535,6 +2535,8 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdf:type rdf:Property ;
     owl:inverseOf :has_subject_value .
 
+#------------------
+
 :inscription 
     rdf:type rdfs:Class ;
     rdfs:subClassOf :object .
@@ -2728,3 +2730,202 @@ prefix sh: <http://www.w3.org/ns/shacl#>
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:label "work type" .
+
+# -----
+
+:is_published
+    rdf:type rdf:Property ;
+    rdfs:label "is published" ;
+    rdfs:domain :work ;
+    rdfs:range :publication .
+
+:is_published_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :is_published ;
+    sh:nodeKind sh:IRI ;
+    sh:class :work .
+
+:is_published_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :is_published ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :publication .
+
+:is_published_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :is_published .
+
+:publication
+    rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_timepoint ;
+    rdfs:subClassOf :entity_with_place ;
+    rdfs:label "publication" ;
+    sh:property [
+        sh:path [ sh:inversePath :is_published ] ;
+        sh:minCount 1
+    ] .
+
+:has_publisher
+    rdf:type rdf:Property ;
+    rdfs:label "has publisher" ;
+    rdfs:domain :publication ;
+    rdfs:range :actor .
+
+:has_publisher_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_publisher ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :publication .
+
+:has_publisher_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_publisher ;
+    sh:nodeKind sh:IRI ;
+    sh:class :actor .
+
+:has_publisher_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_publisher .
+
+#-------------
+
+:has_subject_area
+    rdf:type rdf:Property ;
+    rdfs:label "has_subject area" ;
+    rdfs:domain :work ;
+    rdfs:range :subject_area .
+
+:has_subject_area_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_subject_area ;
+    sh:nodeKind sh:IRI ;
+    sh:class :work .
+
+:has_subject_area_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_subject_area ;
+    sh:nodeKind sh:IRI ;
+    sh:class :subject_area .
+
+:has_subject_area_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_subject_area .
+
+:subject_area
+    rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:label "subject area" .
+
+# ---------------------
+
+:has_number_of_pages
+    rdf:type rdf:Property ;
+    rdfs:label "has number of pages" ;
+    rdfs:domain :work ;
+    rdfs:range xsd:integer .
+
+:has_number_of_pages_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_number_of_pages ;
+    sh:nodeKind sh:IRI ;
+    sh:class :work .
+
+:has_number_of_pages_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_number_of_pages ;
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:date .
+
+:has_first_page
+    rdf:type rdf:Property ;
+    rdfs:label "has first page" ;
+    rdfs:domain :work ;
+    rdfs:range xsd:integer .
+
+:has_first_page_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_first_page ;
+    sh:nodeKind sh:IRI ;
+    sh:class :work .
+
+:has_first_page_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_first_page ;
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:date .
+
+:has_last_page
+    rdf:type rdf:Property ;
+    rdfs:label "has last page" ;
+    rdfs:domain :work ;
+    rdfs:range xsd:integer .
+
+:has_last_page_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_last_page ;
+    sh:nodeKind sh:IRI ;
+    sh:class :work .
+
+:has_last_page_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_last_page ;
+    sh:nodeKind sh:Literal ;
+    sh:datatype xsd:date .
+
+#----------------
+
+:has_physical_instance
+    rdf:type rdf:Property ;
+    rdfs:label "has_physical instance" ;
+    rdfs:domain :work ;
+    rdfs:range :object .
+
+:has_physical_instance_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_physical_instance ;
+    sh:nodeKind sh:IRI ;
+    sh:class :work .
+
+:has_physical_instance_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_physical_instance ;
+    sh:nodeKind sh:IRI ;
+    sh:class :object .
+
+:has_physical_instance_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_physical_instance .
+
+#-----------
+
+:has_license
+    rdf:type rdf:Property ;
+    rdfs:label "has license" ;
+    rdfs:domain :work ;
+    rdfs:range :license .
+
+:has_license_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_license ;
+    sh:nodeKind sh:IRI ;
+    sh:class :work .
+
+:has_license_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_license ;
+    sh:nodeKind sh:IRI ;
+    sh:class :license .
+
+:has_license_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_license .
+
+:license
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:label "license" .
+
