@@ -12,7 +12,9 @@
 # this information will be included automatically before validation with Dikusa-RDF-Validator
 
 # class declarations
+
 :dhguy rdf:type :person .
+
 :unknown_dhguy rdf:type :person .
 :speters rdf:type :person .
 :leipzig rdf:type :place .
