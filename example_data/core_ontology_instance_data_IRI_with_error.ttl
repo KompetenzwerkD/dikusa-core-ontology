@@ -47,7 +47,7 @@
 :volkmarsdorf_gebietskoerperschaft rdf:type :place .
 :volkmarsdorf_stadtteil rdf:type :place .
 :incorporation rdf:type :change_of_existence_type .
-:district rdf:type :place_type .
+# :district rdf:type :place_type .
 :municipality rdf:type :place_type .
 
 # IRIs are now used for reified classes, no more blank nodes
@@ -59,7 +59,7 @@
 :life_state_change_2 rdf:type :life_state_change .
 :person_place_relation_1 rdf:type :person_place_relation .
 :person_place_relation_2 rdf:type :person_place_relation .
-:occupation_1 rdf:type :not_an_occupation .
+:occupation_1 rdf:type :occupation .
 :occupation_2 rdf:type :occupation .
 :id_1 rdf:type :id .
 :id_2 rdf:type :id .
@@ -331,7 +331,7 @@
 
 :leipzig
     :is_same_place_as :leipzig_sachsen ;
-    :is_same_as_external_reference "https://de.wikipedia.org/wiki/Leipzig"^^xsd:anyURI ;
+    :is_same_as_external_reference "https://de.wikipedia.org/wiki/Leipzig" ;
     :has_entity_description :entity_description_2 .
 
 :entity_description_2
