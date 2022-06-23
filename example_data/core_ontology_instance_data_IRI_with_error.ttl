@@ -12,7 +12,7 @@
 # this information will be included automatically before validation with Dikusa-RDF-Validator
 
 # class declarations
-:dhguy rdf:type :not_a_person .
+:dhguy rdf:type :person .
 :unknown_dhguy rdf:type :person .
 :speters rdf:type :person .
 :leipzig rdf:type :place .
@@ -48,8 +48,8 @@
 :district rdf:type :place_type .
 :municipality rdf:type :place_type .
 
-# blank nodes used for reified classes
-# depending on versioning approach IRIs will be used instead 
+# IRIs are now used for reified classes, no more blank nodes
+
 :name_1 rdf:type :name .
 :name_2 rdf:type :name .
 :entity_description_1 rdf:type :entity_description .
@@ -57,7 +57,7 @@
 :life_state_change_2 rdf:type :life_state_change .
 :person_place_relation_1 rdf:type :person_place_relation .
 :person_place_relation_2 rdf:type :person_place_relation .
-:occupation_1 rdf:type :occupation .
+:occupation_1 rdf:type :not_an_occupation .
 :occupation_2 rdf:type :occupation .
 :id_1 rdf:type :id .
 :id_2 rdf:type :id .
