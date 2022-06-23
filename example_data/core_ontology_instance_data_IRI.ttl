@@ -8,13 +8,8 @@
 # can be validated against the schema using shacl (under open world assumption)
 # using apache jena try: shacl v -s schema_file -d instance_data_file 
 
-
 # shacl needs the class hierarchy in the instance data file (strange!)
-# will be included automatically before validation
-
-
-:resource
-    rdf:type rdfs:Class .
+# this information will be included automatically before validation with Dikusa-RDF-Validator
 
 # class declarations
 :dhguy rdf:type :person .
@@ -55,50 +50,50 @@
 
 # blank nodes used for reified classes
 # depending on versioning approach IRIs will be used instead 
-_:a001 rdf:type :name .
-_:a002 rdf:type :name .
-_:a003 rdf:type :entity_description .
-_:a004 rdf:type :life_state_change .
-_:a005 rdf:type :life_state_change .
-_:a006 rdf:type :person_place_relation .
-_:a007 rdf:type :person_place_relation .
-_:a008 rdf:type :occupation .
-_:a009 rdf:type :occupation .
-_:a010 rdf:type :id .
-_:a011 rdf:type :id .
-_:a012 rdf:type :person_group_relation .
-_:a013 rdf:type :person_person_relation .
-_:a014 rdf:type :citation .
-_:a015 rdf:type :life_state_change .
-_:a016 rdf:type :person_group_relation .
-_:a017 rdf:type :author .
-_:a018 rdf:type :person_person_relation .
-_:a019 rdf:type :name .
-_:a020 rdf:type :name .
-_:a021 rdf:type :id .
-_:a022 rdf:type :id .
-_:a023 rdf:type :entity_description .
-_:a024 rdf:type :citation .
-_:a025 rdf:type :part_of_place_relation .
-_:a026 rdf:type :change_of_existence .
-_:a027 rdf:type :coordinates .
-_:a028 rdf:type :coordinates .
-_:a029 rdf:type :address .
-_:a030 rdf:type :name .
-_:a031 rdf:type :location .
+:name_1 rdf:type :name .
+:name_2 rdf:type :name .
+:entity_description_1 rdf:type :entity_description .
+:life_state_change_1 rdf:type :life_state_change .
+:life_state_change_2 rdf:type :life_state_change .
+:person_place_relation_1 rdf:type :person_place_relation .
+:person_place_relation_2 rdf:type :person_place_relation .
+:occupation_1 rdf:type :occupation .
+:occupation_2 rdf:type :occupation .
+:id_1 rdf:type :id .
+:id_2 rdf:type :id .
+:person_group_relation_1 rdf:type :person_group_relation .
+:person_person_relation_1 rdf:type :person_person_relation .
+:citation_1 rdf:type :citation .
+:life_state_change_3 rdf:type :life_state_change .
+:person_group_relation_2 rdf:type :person_group_relation .
+:author_1 rdf:type :author .
+::person_person_relation_1 rdf:type :person_person_relation .
+:name_3 rdf:type :name .
+:name_4 rdf:type :name .
+:id_3 rdf:type :id .
+:id_4 rdf:type :id .
+:entity_description_2 rdf:type :entity_description .
+:citation_2 rdf:type :citation .
+:part_of_place_relation_1 rdf:type :part_of_place_relation .
+:change_of_existence_1 rdf:type :change_of_existence .
+:coordinates_1 rdf:type :coordinates .
+:coordinates_2 rdf:type :coordinates .
+:address_1 rdf:type :address .
+:name_5 rdf:type :name .
+:location_1 rdf:type :location .
 
 
 :unknown_dhguy
-    :has_preferred_name _:a001 .
+    :has_preferred_name :name_1 .
     
 :speters
-    :has_preferred_name _:a001 .
+    :has_preferred_name :name_1 .
 
 :speters
-    :has_preferred_name _:a001 .
+    :has_preferred_name :name_1 .
     
 :dhguy
-    :has_preferred_name _:a001 {|
+    :has_preferred_name :name_1 {|
         :has_provenence_text "übernommen aus Geburtsurkunde"@de ;
         :has_provenence_text "found in birth certificate"@en ;
         :has_provenence_URI "https://www.geburtsregister.de/dhguy"^^xsd:anyURI ;
@@ -106,14 +101,14 @@ _:a031 rdf:type :location .
         :has_provenance_certainty "sicher"@de ;
         :has_provenence_contributor :saw
     |} ;
-    :has_alternative_name _:a002 {|
+    :has_alternative_name :name_2 {|
         :has_provenence_text "laut Aussage von Freunden"@de ;
         :has_comment "ist wohl sein Spitzname"@de ;
         :has_provenance_certainty "relativ sicher"@de ;
         :has_provenence_contributor :saw
     |} .
 
-_:a001
+:name_1
     :has_name_value "Dennis Hendrik Guy"@de ;
     :has_comment "eine bemerkenswerte Zeichenkette"@de ;
     :has_script :latin {|
@@ -123,7 +118,7 @@ _:a001
         :has_provenence_contributor :saw
     |} .
 
-_:a002
+:name_2
     :has_name_value "DH Guy"@de ;
     :has_begin_earliest "1989-01-01"^^xsd:date ;
     :has_begin_latest "1989-01-01"^^xsd:date ;
@@ -133,15 +128,15 @@ _:a002
         :has_provenance_certainty "sicher" |} .
 
 :dhguy
-    :has_entity_description _:a003 {|
+    :has_entity_description :entity_description_1 {|
         :has_provenance_certainty "eher unsicher"@de
     |} .
 
-_:a003
+:entity_description_1
     :has_entity_description_value "ein toller typ"@de ;
-    :has_author _:a017 .
+    :has_author :author_1 .
     
-_:a017
+:author_1
     :has_author_value :speters {|
         :has_comment "verfasst von seinem besten Freund"@de
     |} ;
@@ -152,26 +147,26 @@ _:a017
         :has_provenence_text "laut Geburtsurkunde"@de ;
         :has_provenance_certainty "sicher"@de
     |} ;
-    :has_birth _:a004 {|
+    :has_birth :life_state_change_1 {|
         :has_provenence_text "laut Geburtsurkunde"@de ;
         :has_provenance_certainty "sicher"@de
     |} ;
-    :has_death _:a005 {|
+    :has_death :life_state_change_2 {|
         :has_provenence_text "offizielle Angabe"@de ;
         :has_provenance_certainty "unsicher"@de
     |} ;
-    :has_death _:a015 {|
+    :has_death :life_state_change_3 {|
         :has_provenence_text "Ergebnis von Nachforschungen"@de ;
         :has_provenance_certainty "unsicher"@de
     |}. 
 
-_:a004
+:life_state_change_1
     :has_place :leipzig ;
     :has_date_earliest "1965-08-26"^^xsd:date ;
     :has_date_latest "1965-08-26"^^xsd:date .
 
     
-_:a005
+:life_state_change_2
     :has_place :dresden ;
     :has_date_earliest "2011-05-11"^^xsd:date {|
         :has_provenence_text "Leiche nie gefunden; Festsetzung durch Amtsarzt"
@@ -181,7 +176,7 @@ _:a005
     |} .
 
 
-_:a015
+:life_state_change_3
     :has_life_state_change_place :kreis_bautzen {|
         :has_provenence_text "laut Aussage von Freunden war er zu einer dreitägigen Wanderung in dieser Region aufgebrochen"
     |} ;
@@ -193,10 +188,10 @@ _:a015
     |} .
     
 :dhguy
-    :has_place_relation _:a006 ;
-    :has_place_relation _:a007 .
+    :has_place_relation :person_place_relation_1 ;
+    :has_place_relation :person_place_relation_2 .
 
-_:a006
+:person_place_relation_1
     :has_begin_earliest "1965-08-26"^^xsd:date ;
     :has_begin_latest "1965-08-26"^^xsd:date ;
     :has_end_earliest "1992-04-01"^^xsd:date {|
@@ -207,7 +202,7 @@ _:a006
     |} ;
     :has_person_place_relation_type :residence .
 
-_:a007
+:person_place_relation_2
     :has_begin_earliest "1992-04-01"^^xsd:date {|
         :has_description "Umzug im April 1992"
     |} ;
@@ -223,47 +218,47 @@ _:a007
     :has_person_place_relation_type :residence .
     
 :dhguy
-    :has_occupation _:a008 ;
-    :has_occupation _:a009 .
+    :has_occupation :occupation_1 ;
+    :has_occupation :occupation_2 .
     
-_:a008
+:occupation_1
     :has_occupation_value :it_developer ;
     :has_begin_earliest "1988-01-01"^^xsd:date ;
     :has_begin_latest  "1988-01-01"^^xsd:date ;
     :has_end_earliest "1998-12-31"^^xsd:date ;
     :has_end_latest "1998-12-31"^^xsd:date .
 
-_:a009
+:occupation_2
     :has_occupation_value :it_specialist ;
     :has_begin_earliest "1999-01-01"^^xsd:date ;
     :has_begin_latest "1999-01-01"^^xsd:date .
 
 :dhguy
-    :has_id _:a010 ;
-    :has_id _:a011 .
+    :has_id :id_1 ;
+    :has_id :id_2 .
 
-_:a010
+:id_1
     :has_id_value "112614086" ;
     :has_id_type :gnd .
 
-_:a011
+:id_2
     :has_id_value "Q123123123" ;
     :has_id_type :wikidata .
     
 :dhguy
     :has_nationality :DEU ;
-    :has_group_relation _:a012 ;
-    :has_group_relation _:a016 .
+    :has_group_relation :person_group_relation_1 ;
+    :has_group_relation :person_group_relation_2 .
 
-:saw :has_person_relation _:a012 .
-:angelverein_dresden  :has_person_relation _:a016 .
+:saw :has_person_relation :person_group_relation_1 .
+:angelverein_dresden  :has_person_relation :person_group_relation_2 .
 
-_:a012
+:person_group_relation_1
     :has_person_group_relation_type :employee ; 
     :has_begin_earliest "1999-01-01"^^xsd:date ;
     :has_begin_latest "1999-01-01"^^xsd:date .
 
-_:a016
+:person_group_relation_2
     :has_person_group_relation_type :member ; 
     :has_begin_earliest "2002-01-01"^^xsd:date ;
     :has_begin_latest "2002-01-01"^^xsd:date ;
@@ -275,139 +270,139 @@ _:a016
     :is_same_as_external_reference "https://twitter.com/dhguy"^^xsd:anyURI .
     
 :dhguy
-    :has_person_relation _:a013 .
+    :has_person_relation :person_person_relation_1 .
 
 :speters
-    :has_person_relation _:a013 .
+    :has_person_relation :person_person_relation_1 .
 
-_:a013
+:person_person_relation_1
     :has_person_person_relation_type :friendship .
 
 :dhguy
-    :has_person_relation _:a018 {|
+    :has_person_relation ::person_person_relation_1 {|
         :has_person_person_relation_role :student
     |} .
 
 :speters
-    :has_person_relation _:a018 {|
+    :has_person_relation ::person_person_relation_1 {|
         :has_person_person_relation_role :teacher
     |} .
 
-_:a018
+::person_person_relation_1
     :has_person_person_relation_type :teacher_student ;
     :has_begin_earliest "1996-10-01"^^xsd:date ;
     :has_begin_latest "1996-10-01"^^xsd:date ;
     :has_end_earliest "1998-09-30"^^xsd:date ;
     :has_end_latest "1998-09-30"^^xsd:date .
 
-:dhguy :has_citation _:a014 .
+:dhguy :has_citation :citation_1 .
 
-_:a014
+:citation_1
     :has_citation_resource :peters2018 ; 
     :has_citation_text "...once again dhguy saved the day!" .
 
-:leipzig :has_preferred_name _:a019 .
+:leipzig :has_preferred_name :name_3 .
 
-_:a019
+:name_3
     :has_name_value "Leipzig"@de ;
     :has_script :latin .
 
-:leipzig :has_alternative_name _:a020 .
+:leipzig :has_alternative_name :name_4 .
 
-_:a020
+:name_4
     :has_name_value "urbs Libzi"@la ;
     :has_script :latin ;
     :has_begin_earliest "1015-01-01"^^xsd:date ;
     :has_begin_latest "1015-12-31"^^xsd:date .
 
 :leipzig
-    :has_id _:a021 ;
-    :has_id _:a022 .
+    :has_id :id_3 ;
+    :has_id :id_4 .
 
-_:a021
+:id_3
     :has_id_value "4105" ;
     :has_id_type :hov .
 
-_:a022
+:id_4
     :has_id_value "Q2079" ;
     :has_id_type :wikidata .
 
 :leipzig
     :is_same_place_as :leipzig_sachsen ;
     :is_same_as_external_reference "https://de.wikipedia.org/wiki/Leipzig"^^xsd:anyURI ;
-    :has_entity_description _:a023 .
+    :has_entity_description :entity_description_2 .
 
-_:a023
+:entity_description_2
     :has_entity_description_value "die schönste Großstadt Sachsens"@de .
 
-:leipzig :has_citation _:a024 .
+:leipzig :has_citation :citation_2 .
 
-_:a024
+:citation_2
     :has_citation_resource :faust1 ; 
     :has_citation_text "Mein Leipzig lob ich mir" .
 
-:leipzig :has_person_relation _:a006 .
+:leipzig :has_person_relation :person_place_relation_1 .
 
-:dresden :has_person_relation _:a007 .
+:dresden :has_person_relation :person_place_relation_2 .
 
 :leipzig :has_place_type :town .
 
 :volkmarsdorf_stadtteil
     :has_place_type :district ;
-    :is_part_of_place _:a025 .
+    :is_part_of_place :part_of_place_relation_1 .
 
-_:a025
+:part_of_place_relation_1
     :has_place :leipzig ;
     :has_begin_earliest "1890-01-01"^^xsd:date ;
     :has_begin_latest "1890-12-31"^^xsd:date .
     
 :volkmarsdorf_gebietskoerperschaft
     :has_place_type :municipality ;
-    :has_end_of_existence _:a026 .
+    :has_end_of_existence :change_of_existence_1 .
 
 :volkmarsdorf_stadtteil
-    :has_begin_of_existence _:a026 .
+    :has_begin_of_existence :change_of_existence_1 .
 
-_:a026
+:change_of_existence_1
     :has_change_of_existence_type :incorporation ;
     :has_date_earliest "1890-01-01"^^xsd:date ;
     :has_date_latest "1890-12-31"^^xsd:date ;
     :has_place :leipzig .
 
-:leipzig :has_coordinates _:a027 .
-:leipzig :has_coordinates _:a028 .
+:leipzig :has_coordinates :coordinates_1 .
+:leipzig :has_coordinates :coordinates_2 .
 
-_:a027
+:coordinates_1
     :has_coordinates_value "{ \"type\": \"Polygon\", \"coordinates\": [ [ [30, 10], [40, 40], [20, 40], [10, 20], [30, 10] ] ] } " ;
     :has_begin_earliest "1990-01-01"^^xsd:date ;
     :has_begin_latest "1990-01-01"^^xsd:date ;
     :has_end_earliest "1990-12-31"^^xsd:date ;
     :has_end_latest "1990-12-31"^^xsd:date .
 
-_:a028
+:coordinates_2
     :has_coordinates_value "{ \"type\": \"Polygon\", \"coordinates\": [ [ [35, 10], [45, 45], [20, 50], [10, 20], [30, 10] ] ] } " ;
     :has_begin_earliest "1991-01-01"^^xsd:date ;
     :has_begin_latest "1991-01-01"^^xsd:date ;
     :has_end_earliest "1991-12-31"^^xsd:date ;
     :has_end_latest "1991-12-31"^^xsd:date .
 
-:saw :has_location _:a031 .
+:saw :has_location :location_1 .
 
-_:a031
+:location_1
     :has_place :villa_klinkhardt ;
     :has_begin_earliest "1995-01-01"^^xsd:date ;
     :has_begin_latest "1995-12-31"^^xsd:date .
 
 :villa_klinkhardt
-    :has_address _:a029 ;
-    :has_preferred_name _:a030 .
+    :has_address :address_1 ;
+    :has_preferred_name :name_5 .
 
-_:a029
+:address_1
     :has_country :germany ;
     :has_town :leipzig ;
     :has_postcode "04107" ;
     :has_street_address "Karl-Tauchnitz-Str. 1" .
 
-_:a030
+:name_5
     :has_name_value "Villa Klinkhardt"@de ;
     :has_script :latin .
