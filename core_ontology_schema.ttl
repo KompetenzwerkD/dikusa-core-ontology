@@ -551,7 +551,7 @@
 :has_gender_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_gender ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :gender .
 
 :has_gender_i
@@ -559,10 +559,47 @@
     owl:inverseOf :has_gender .
 
 :gender
-     rdf:type rdfs:Class ;
-     rdfs:subClassOf :entity_with_name ;
-     rdfs:subClassOf :entity_with_description ;
-     rdfs:label "gender" .
+    rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:label "gender" ;
+    rdfs:subClassOf :entity_with_timeframe ;
+    rdfs:subClassOf :entity_with_description ;
+    sh:property [
+        sh:path [ sh:inversePath :has_gender ] ;
+        sh:minCount 1
+    ] ;
+    sh:property [
+        sh:path :has_gender_value ;
+        sh:minCount 1
+    ] .
+
+:has_gender_value
+    rdf:type rdf:Property ;
+    rdfs:label "has gender value" ;
+    rdfs:domain :gender ;
+    rdfs:range :gender_value .
+
+:has_gender_value_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_gender_value ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :gender .
+
+:has_gender_value_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_gender_value ;
+    sh:nodeKind sh:IRI ;
+    sh:class :gender_value .
+
+:has_gender_value_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_gender_value .
+
+
+:gender_value
+    rdf:type rdfs:Class ;
+    rdfs:label "gender value" ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
 
 # ------------------------
 
