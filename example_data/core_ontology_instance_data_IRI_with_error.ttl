@@ -23,7 +23,7 @@
 :kreis_bautzen rdf:type :place .
 :villa_klinkhardt rdf:type :place .
 :germany rdf:type :place .
-:male rdf:type :gender .
+:male rdf:type :gender_value .
 :DEU rdf:type :nationality .
 :latin rdf:type :script .
 :saw rdf:type :group .
@@ -83,7 +83,7 @@
 :address_1 rdf:type :address .
 :name_5 rdf:type :name .
 :location_1 rdf:type :location .
-
+:gender_1 rdf:type :gender .
 
 :unknown_dhguy
     :has_preferred_name :name_1 .
@@ -145,7 +145,7 @@
     :has_author_role :main_author.
 
 :dhguy
-    :has_gender :male {|
+    :has_gender :gender_1 {|
         :has_provenence_text "laut Geburtsurkunde"@de ;
         :has_provenance_certainty "sicher"@de
     |} ;
@@ -161,6 +161,8 @@
         :has_provenence_text "Ergebnis von Nachforschungen"@de ;
         :has_provenance_certainty "unsicher"@de
     |}. 
+
+:gender_1 :has_gender_value :male .
 
 :life_state_change_1
     :has_place :leipzig ;
