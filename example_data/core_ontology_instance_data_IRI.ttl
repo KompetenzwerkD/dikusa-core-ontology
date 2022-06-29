@@ -82,16 +82,13 @@
 :name_5 rdf:type :name .
 :location_1 rdf:type :location .
 :gender_1 rdf:type :gender .
+:name_6 rdf:type :name .
 
 :unknown_dhguy
     :has_preferred_name :name_1 .
     
 :speters
-    :has_preferred_name :name_1 .
-
-:speters
-    :has_preferred_name :name_1 .
-    
+    :has_preferred_name :name_6 .
 :dhguy
     :has_preferred_name :name_1 {|
         :has_provenence_text "übernommen aus Geburtsurkunde"@de ;
@@ -126,6 +123,11 @@
         :has_provenence_text "erneut gesunder Menschenverstand"@de ;
         :has_comment "das sind wieder alles lateinische Buchstaben" ;
         :has_provenance_certainty "sicher" |} .
+
+
+:name_6
+    :has_name_value "Schnief Schneters"@de ;
+    :has_script :latin .
 
 :dhguy
     :has_entity_description :entity_description_1 {|
