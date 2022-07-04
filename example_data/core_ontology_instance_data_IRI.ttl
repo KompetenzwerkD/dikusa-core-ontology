@@ -22,7 +22,7 @@
 :villa_klinkhardt rdf:type :place .
 :germany rdf:type :place .
 :male rdf:type :gender_value .
-:DEU rdf:type :nationality .
+:DEU rdf:type :nationality_value .
 :latin rdf:type :script .
 :saw rdf:type :group .
 :angelverein_dresden rdf:type :group .
@@ -85,6 +85,7 @@
 :location_1 rdf:type :location .
 :gender_1 rdf:type :gender .
 :name_6 rdf:type :name .
+:nationality_1 rdf_type nationality .
 
 :unknown_dhguy
     :has_preferred_name :name_1 .
@@ -260,9 +261,14 @@
     :has_id_type :wikidata .
     
 :dhguy
-    :has_nationality :DEU ;
+    :has_nationality :nationality_1 ;
     :has_group_relation :person_group_relation_1 ;
     :has_group_relation :person_group_relation_2 .
+
+:nationality_1
+    :has_nationality_value :DEU ;
+    :has_begin_earliest "1965-08-26"^^xsd:date ;
+    :has_begin_latest "1965-08-26"^^xsd:date .
 
 :saw :has_person_relation :person_group_relation_1 .
 :angelverein_dresden  :has_person_relation :person_group_relation_2 .
