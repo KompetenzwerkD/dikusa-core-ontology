@@ -1060,29 +1060,64 @@
 :has_nationality
     rdf:type rdf:Property ;
     rdfs:label "has nationality" ;
-    rdfs:domain :actor ;
+    rdfs:domain :person ;
     rdfs:range :nationality .
 
 :has_nationality_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_nationality ;
     sh:nodeKind sh:IRI ;
-    sh:class :actor .
+    sh:class :person .
 
 :has_nationality_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_nationality ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :nationality .
 
 :has_nationality_i
     rdf:type rdf:Property ;
     owl:inverseOf :has_nationality .
 
-# ISO 3166-1 Alpha-3 Code
 :nationality
-    rdf:type rdfs:Class ;
+    rdf:type rdfs:Class , sh:NodeShape ;
     rdfs:label "nationality" ;
+    rdfs:subClassOf :entity_with_timeframe ;
+    sh:property [
+        sh:path [ sh:inversePath :has_nationality ] ;
+        sh:minCount 1
+    ] ;
+    sh:property [
+        sh:path :has_nationality_value ;
+        sh:minCount 1
+    ] .
+
+:has_nationality_value
+    rdf:type rdf:Property ;
+    rdfs:label "has nationality value" ;
+    rdfs:domain :nationality ;
+    rdfs:range :nationality_value .
+
+:has_nationality_value_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_nationality_value ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :nationality .
+
+:has_nationality_value_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_nationality_value ;
+    sh:nodeKind sh:IRI ;
+    sh:class :nationality_value .
+
+:has_nationality_value_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_nationality_value .
+
+# ISO 3166-1 Alpha-3 Code
+:nationality_value
+    rdf:type rdfs:Class ;
+    rdfs:label "nationality value" ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
 
