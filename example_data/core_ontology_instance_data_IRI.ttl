@@ -85,7 +85,7 @@
 :location_1 rdf:type :location .
 :gender_1 rdf:type :gender .
 :name_6 rdf:type :name .
-:nationality_1 rdf_type nationality .
+:nationality_1 rdf_type :nationality .
 
 :unknown_dhguy
     :has_preferred_name :name_1 .
