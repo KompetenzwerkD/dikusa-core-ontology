@@ -31,6 +31,7 @@
     rdfs:subClassOf :entity_with_external_reference ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_citation ;
+    rdfs:subClassOf :entity_with_existence_change ;
     rdfs:subClassOf :entity_with_person_relation .
 
 :group
@@ -42,6 +43,7 @@
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_citation ;
     rdfs:subClassOf :entity_with_location ;
+    rdfs:subClassOf :entity_with_existence_change ;
     rdfs:subClassOf :entity_with_person_relation .
 
 :event
@@ -505,10 +507,18 @@
 :entity_with_place
     rdf:type rdfs:Class ;
     rdfs:label "entity with place" .
+    
+:entity_with_group
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with group" .
 
 :entity_with_external_reference
     rdf:type rdfs:Class ;
     rdfs:label "entity with external reference" .
+
+:entity_with_existence_change
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with existence change" .
 
 # -----------------------
 
@@ -534,6 +544,31 @@
     rdf:type rdf:Property ;
     owl:inverseOf :has_place .
 
+#------------
+
+:has_group
+    rdf:type rdf:Property ;
+    rdfs:label "has group" ;
+    rdfs:domain :entity_with_group ;
+    rdfs:range :group .
+
+:has_group_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_group ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :entity_with_group .
+
+:has_group_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_group ;
+    sh:nodeKind sh:IRI ;
+    sh:class :group .
+
+:has_group_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_group .
+    
+    
 # ----------------------
 
 :has_gender
@@ -1455,14 +1490,14 @@
 :has_begin_of_existence
     rdf:type rdf:Property ;
     rdfs:label "has begin of existence" ;
-    rdfs:domain :place ;
+    rdfs:domain :entity_with_existence_change ;
     rdfs:range :change_of_existence .
 
 :has_begin_of_existence_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_begin_of_existence ;
     sh:nodeKind sh:IRI ;
-    sh:class :place .
+    sh:class :entity_with_existence_change .
 
 :has_begin_of_existence_object_shape
 	a sh:NodeShape ;
@@ -1483,45 +1518,75 @@
         sh:minCount 1
     ] .
 
-:has_change_of_existence_type
+# foundation, becoming abandoned, splitting ... of places
+:has_change_of_place_existence_type
     rdf:type rdf:Property ;
-    rdfs:label "has change of existence type" ;
+    rdfs:label "has change of place existence type" ;
     rdfs:domain :change_of_existence ;
-    rdfs:range :change_of_existence_type .
+    rdfs:range :change_of_place_existence_type .
 
-:has_change_of_existence_type_subject_shape
+:has_change_of_place_existence_type_subject_shape
 	a sh:NodeShape ;
-	sh:targetSubjectsOf :has_change_of_existence_type ;
+	sh:targetSubjectsOf :has_change_of_place_existence_type ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :change_of_existence .
 
-:has_change_of_existence_type_object_shape
+:has_change_of_place_existence_type_object_shape
 	a sh:NodeShape ;
-    sh:targetObjectsOf :has_change_of_existence_type ;
+    sh:targetObjectsOf :has_change_of_place_existence_type ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:class :change_of_existence_type .
+    sh:class :change_of_place_existence_type .
 
-:has_change_of_existence_type_i
+:has_change_of_place_existence_type_i
     rdf:type rdf:Property ;
-    owl:inverseOf :has_change_of_existence_type .
+    owl:inverseOf :has_change_of_place_existence_type .
 
-:change_of_existence_type
+:change_of_place_existence_type
     rdf:type rdfs:Class ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "change of existence type" .
+    rdfs:label "change of place existence type" .
+
+# foundation, dissolution ... of groups
+:has_change_of_group_existence_type
+    rdf:type rdf:Property ;
+    rdfs:label "has change of group existence type" ;
+    rdfs:domain :change_of_existence ;
+    rdfs:range :change_of_group_existence_type .
+
+:has_change_of_group_existence_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_change_of_group_existence_type ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :change_of_existence .
+
+:has_change_of_group_existence_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_change_of_group_existence_type ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :change_of_group_existence_type .
+
+:has_change_of_group_existence_type_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_change_of_group_existence_type .
+
+:change_of_group_existence_type
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:label "change of group existence type" .
 
 :has_end_of_existence
     rdf:type rdf:Property ;
     rdfs:label "has end of existence" ;
-    rdfs:domain :place ;
+    rdfs:domain :entity_with_existence_change ;
     rdfs:range :change_of_existence .
 
 :has_end_of_existence_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_end_of_existence ;
     sh:nodeKind sh:IRI ;
-    sh:class :place .
+    sh:class :entity_with_existence_change .
 
 :has_end_of_existence_object_shape
 	a sh:NodeShape ;
@@ -1542,12 +1607,10 @@
         sh:minCount 1
     ] .
 
+
 :change_of_existence
     rdf:type rdfs:Class ;
-    rdfs:subClassOf :entity_with_name ;
-    rdfs:subClassOf :entity_with_description ;
-    rdfs:subClassOf :entity_with_place ;
-    rdfs:subClassOf :entity_with_timepoint ;
+    rdfs:subClassOf :event ;
     rdfs:label "change of existence" ;
     sh:or (
         [
@@ -1567,14 +1630,14 @@
 :has_change_of_existence
     rdf:type rdf:Property ;
     rdfs:label "has change of existence" ;
-    rdfs:domain :place ;
+    rdfs:domain :entity_with_existence_change ;
     rdfs:range :change_of_existence .
 
 :has_change_of_existence_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_change_of_existence ;
     sh:nodeKind sh:IRI ;
-    sh:class :place .
+    sh:class :entity_with_existence_change .
 
 :has_change_of_existence_object_shape
 	a sh:NodeShape ;
@@ -1585,6 +1648,54 @@
 :has_change_of_existence_i
     rdf:type rdf:Property ;
     owl:inverseOf :has_change_of_existence .
+
+#------------------------
+
+#linking to related places (becomes part of a place, is divided from this place)
+:has_related_place
+    rdf:type rdf:Property ;
+    rdfs:label "has related place" ;
+    rdfs:domain :change_of_existence ;
+    rdfs:range :place .
+
+:has_related_place_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_related_place ;
+    sh:nodeKind sh:IRI ;
+    sh:class :change_of_existence .
+
+:has_related_place_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_related_place ;
+    sh:nodeKind sh:IRI ;
+    sh:class :place .
+
+:has_related_place_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_related_place .
+
+#linking to related groups (group became part of another group...)
+:has_related_group
+    rdf:type rdf:Property ;
+    rdfs:label "has related group" ;
+    rdfs:domain :change_of_existence ;
+    rdfs:range :group .
+
+:has_related_group_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_related_group ;
+    sh:nodeKind sh:IRI ;
+    sh:class :change_of_existence .
+
+:has_related_group_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_related_group ;
+    sh:nodeKind sh:IRI ;
+    sh:class :group .
+
+:has_related_group_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_related_group .
 
 # -----------------------
 
@@ -3001,3 +3112,101 @@
     rdfs:subClassOf :entity_with_description ;
     rdfs:label "license" .
 
+#------------
+
+:has_group_type
+    rdf:type rdf:Property ;
+    rdfs:label "has group type" ;
+    rdfs:domain :group ;
+    rdfs:range :group_type .
+
+:has_group_type_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_group_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :group .
+
+:has_group_type_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_group_type ;
+    sh:nodeKind sh:IRI ;
+    sh:class :group_type .
+
+:has_group_type_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_group_type .
+
+:group_type
+    rdf:type rdfs:Class ;
+    rdfs:label "group type" ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
+
+#----------
+
+:has_legal_status
+    rdf:type rdf:Property ;
+    rdfs:label "has legal status" ;
+    rdfs:domain :group ;
+    rdfs:range :legal_status .
+
+:has_legal_status_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_legal_status ;
+    sh:nodeKind sh:IRI ;
+    sh:class :group .
+
+:has_legal_status_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_legal_status ;
+    sh:nodeKind sh:IRI ;
+    sh:class :legal_status .
+
+:has_legal_status_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :has_legal_status .
+
+:legal_status
+    rdf:type rdfs:Class ;
+    rdfs:label "group type" ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
+    
+#------------
+
+:is_part_of_group
+    rdf:type rdf:Property ;
+    rdfs:label "is part of group" ;
+    rdfs:domain :group ;
+    rdfs:range :part_of_group_relation .
+
+:is_part_of_group_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :is_part_of_group ;
+    sh:nodeKind sh:IRI ;
+    sh:class :group .
+
+:is_part_of_group_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :is_part_of_group ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :part_of_group_relation .
+
+:is_part_of_group_i
+    rdf:type rdf:Property ;
+    owl:inverseOf :is_part_of_group .
+
+:part_of_group_relation
+    rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_group ;
+    rdfs:subClassOf :entity_with_timeframe ;
+    rdfs:label "part of group relation" ;
+    sh:property [
+        sh:path [ sh:inversePath :is_part_of_group ] ;
+        sh:minCount 1
+    ] ;
+    sh:property [
+        sh:path :has_group ;
+        sh:minCount 1
+    ] .
