@@ -45,7 +45,7 @@
 :town rdf:type :place_type .
 :volkmarsdorf_gebietskoerperschaft rdf:type :place .
 :volkmarsdorf_stadtteil rdf:type :place .
-:incorporation rdf:type :change_of_existence_type .
+:incorporation rdf:type :change_of_place_existence_type .
 :district rdf:type :place_type .
 :municipality rdf:type :place_type .
 
@@ -386,10 +386,10 @@
     :has_begin_of_existence :change_of_existence_1 .
 
 :change_of_existence_1
-    :has_change_of_existence_type :incorporation ;
-    :has_date_earliest "1890-01-01"^^xsd:date ;
-    :has_date_latest "1890-12-31"^^xsd:date ;
-    :has_place :leipzig .
+    :has_change_of_place_existence_type :incorporation ;
+    :has_begin_earliest "1890-01-01"^^xsd:date ;
+    :has_end_latest "1890-12-31"^^xsd:date ;
+    :has_related_place :leipzig .
 
 :leipzig :has_coordinates :coordinates_1 .
 :leipzig :has_coordinates :coordinates_2 .
