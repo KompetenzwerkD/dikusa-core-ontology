@@ -29,7 +29,7 @@ Since the ontology is rather complex and the Turtle-file which also includes the
 * [Slides in German presented on 29.04.2022](https://github.com/KompetenzwerkD/dikusa-core-ontology/blob/main/documentation/Dikusa%20Datenmodell%20Folien%2029.04.2022.pdf)
 
 ### Progress
-So far Persons, Places, Events, Objects and Works (bibliographic items) have been modeled. The class Group is currently being developed.
+So far all main Categories: Persons, Places, Events, Objects, Groups and Works (bibliographic items) have been modeled. The current state forms the basis of further discussions with project partners.
 
 ## Validation
 
