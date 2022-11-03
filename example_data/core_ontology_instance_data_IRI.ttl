@@ -69,7 +69,7 @@
 :life_state_change_3 rdf:type :life_state_change .
 :person_group_relation_2 rdf:type :person_group_relation .
 :author_1 rdf:type :author .
-::person_person_relation_1 rdf:type :person_person_relation .
+:person_person_relation_1 rdf:type :person_person_relation .
 :name_3 rdf:type :name .
 :name_4 rdf:type :name .
 :id_3 rdf:type :id .
@@ -299,16 +299,16 @@
     :has_person_person_relation_type :friendship .
 
 :dhguy
-    :has_person_relation ::person_person_relation_1 {|
+    :has_person_relation :person_person_relation_1 {|
         :has_person_person_relation_role :student
     |} .
 
 :speters
-    :has_person_relation ::person_person_relation_1 {|
+    :has_person_relation :person_person_relation_1 {|
         :has_person_person_relation_role :teacher
     |} .
 
-::person_person_relation_1
+:person_person_relation_1
     :has_person_person_relation_type :teacher_student ;
     :has_begin_earliest "1996-10-01"^^xsd:date ;
     :has_begin_latest "1996-10-01"^^xsd:date ;
