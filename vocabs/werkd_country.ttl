@@ -1,0 +1,2154 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix werkd: <http://www.werkd.saw-leipzig.de/> .
+@prefix gnd: <https://d-nb.info/gnd/> .
+
+werkd:country rdf:type skos:ConceptScheme;
+    cc:licence              <https://www.gnu.org/licenses/agpl-3.0.en.html> ;
+    dcterms:licence         <https://www.gnu.org/licenses/agpl-3.0.en.html> ;
+    skos:prefLabel          "Country Vocabulary"@en;
+    skos:prefLabel          "Länder Vokabular"@de;
+    skos:definition         "This is a controlled vocabulary based on GND country category and respective GND IDs recommended to use as values for including references to countries in your data"@en.
+    skos:definition         "Dies ist ein kontrolliertes Vokabular basierend auf der GND Länder-Kategorie und den dazugehörigen GND IDs"@de.
+gnd:4042050-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4042050-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Nicaragua"@de ;
+skos:inScheme werkd:country .
+gnd:4029413-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4029413-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kamerun"@de ;
+skos:inScheme werkd:country .
+gnd:4039967-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4039967-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Moldawien"@de ;
+skos:inScheme werkd:country .
+gnd:4037700-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4037700-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Marshallinseln"@de ;
+skos:inScheme werkd:country .
+gnd:2033898-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "2033898-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Norddeutscher Bund"@de ;
+skos:inScheme werkd:country .
+gnd:4029839-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4029839-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kasachstan"@de ;
+skos:inScheme werkd:country .
+gnd:4079143-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4079143-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Belarus"@de ;
+skos:inScheme werkd:country .
+gnd:4288450-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4288450-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Königreich Loango"@de ;
+skos:inScheme werkd:country .
+gnd:4265796-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4265796-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Salomonen"@de ;
+skos:inScheme werkd:country .
+gnd:4015278-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4015278-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Eritrea"@de ;
+skos:inScheme werkd:country .
+gnd:4074187-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4074187-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Lettland"@de ;
+skos:inScheme werkd:country .
+gnd:4041612-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4041612-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Nepal"@de ;
+skos:inScheme werkd:country .
+gnd:4042640-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4042640-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Norwegen"@de ;
+skos:inScheme werkd:country .
+gnd:4037203-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4037203-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Malaysia"@de ;
+skos:inScheme werkd:country .
+gnd:4041915-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4041915-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Neuseeland"@de ;
+skos:inScheme werkd:country .
+gnd:4067608-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4067608-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Zentralafrikanische Republik"@de ;
+skos:inScheme werkd:country .
+gnd:61014-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "61014-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Neue Hebriden"@de ;
+skos:inScheme werkd:country .
+gnd:1081747218 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1081747218" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Volksrepublik Donezk"@de ;
+skos:inScheme werkd:country .
+gnd:4088119-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4088119-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Bosnien-Herzegowina"@de ;
+skos:inScheme werkd:country .
+gnd:4078149-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4078149-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tansania"@de ;
+skos:inScheme werkd:country .
+gnd:4033340-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4033340-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kuba"@de ;
+skos:inScheme werkd:country .
+gnd:4012694-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4012694-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Dominikanische Republik"@de ;
+skos:inScheme werkd:country .
+gnd:4039786-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4039786-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Moçambique"@de ;
+skos:inScheme werkd:country .
+gnd:4022047-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4022047-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Griechenland"@de ;
+skos:inScheme werkd:country .
+gnd:4078029-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4078029-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Südkorea"@de ;
+skos:inScheme werkd:country .
+gnd:1241271305 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1241271305" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Himjar"@de ;
+skos:inScheme werkd:country .
+gnd:1085175642 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085175642" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Schweiz (1803-1815)"@de ;
+skos:inScheme werkd:country .
+gnd:7756217-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "7756217-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Staat Wadhwan"@de ;
+skos:inScheme werkd:country .
+gnd:1181214262 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1181214262" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Nordmazedonien"@de ;
+skos:inScheme werkd:country .
+gnd:4044601-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4044601-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Paraguay"@de ;
+skos:inScheme werkd:country .
+gnd:4034571-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4034571-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Laos"@de ;
+skos:inScheme werkd:country .
+gnd:4014499-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4014499-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "El Salvador"@de ;
+skos:inScheme werkd:country .
+gnd:1241258295 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1241258295" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Lunda (Königreich)"@de ;
+skos:inScheme werkd:country .
+gnd:4071332-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4071332-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Fränkisches Reich"@de ;
+skos:inScheme werkd:country .
+gnd:4072471-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4072471-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Hessen-Darmstadt"@de ;
+skos:inScheme werkd:country .
+gnd:4026722-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4026722-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Indien"@de ;
+skos:inScheme werkd:country .
+gnd:1060577984 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1060577984" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Polen-Litauen"@de ;
+skos:inScheme werkd:country .
+gnd:4051307-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4051307-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Saint Lucia"@de ;
+skos:inScheme werkd:country .
+gnd:4027833-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4027833-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Italien"@de ;
+skos:inScheme werkd:country .
+gnd:4075812-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4075812-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Pakistan"@de ;
+skos:inScheme werkd:country .
+gnd:4062742-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4062742-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Vereinigte Arabische Emirate"@de ;
+skos:inScheme werkd:country .
+gnd:4028750-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4028750-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Jordanien"@de ;
+skos:inScheme werkd:country .
+gnd:4077548-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4077548-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Sowjetunion"@de ;
+skos:inScheme werkd:country .
+gnd:4054529-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4054529-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Senegal"@de ;
+skos:inScheme werkd:country .
+gnd:4060344-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4060344-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Togo"@de ;
+skos:inScheme werkd:country .
+gnd:4086593-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4086593-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Antigua und Barbuda"@de ;
+skos:inScheme werkd:country .
+gnd:123613-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "123613-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Comores (Territoire d'Outre-Mer)"@de ;
+skos:inScheme werkd:country .
+gnd:4009929-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4009929-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Chile"@de ;
+skos:inScheme werkd:country .
+gnd:5245326-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "5245326-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Republik der Sieben Vereinigten Provinzen"@de ;
+skos:inScheme werkd:country .
+gnd:1085178900 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085178900" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Schweiz (1353-1513)"@de ;
+skos:inScheme werkd:country .
+gnd:4009181-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4009181-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Burundi"@de ;
+skos:inScheme werkd:country .
+gnd:4045312-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4045312-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Peru"@de ;
+skos:inScheme werkd:country .
+gnd:44075-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "44075-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Gilbert Islands"@de ;
+skos:inScheme werkd:country .
+gnd:4054694-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4054694-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Seychellen"@de ;
+skos:inScheme werkd:country .
+gnd:1027360262 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1027360262" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tabasaran"@de ;
+skos:inScheme werkd:country .
+gnd:4060907-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4060907-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Trinidad und Tobago"@de ;
+skos:inScheme werkd:country .
+gnd:4061163-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4061163-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Türkei"@de ;
+skos:inScheme werkd:country .
+gnd:4026761-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4026761-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Indonesien"@de ;
+skos:inScheme werkd:country .
+gnd:4062199-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4062199-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Usbekistan"@de ;
+skos:inScheme werkd:country .
+gnd:4316277-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4316277-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Liangshan Yizu Zizhizhou"@de ;
+skos:inScheme werkd:country .
+gnd:4040031-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4040031-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Monaco"@de ;
+skos:inScheme werkd:country .
+gnd:4076429-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4076429-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Puerto Rico"@de ;
+skos:inScheme werkd:country .
+gnd:5036918-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "5036918-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Batavische Republik"@de ;
+skos:inScheme werkd:country .
+gnd:4274661-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4274661-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Staat Mikronesien"@de ;
+skos:inScheme werkd:country .
+gnd:4004487-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4004487-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Barbados"@de ;
+skos:inScheme werkd:country .
+gnd:4307086-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4307086-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Karantanien"@de ;
+skos:inScheme werkd:country .
+gnd:4076986-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4076986-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Sambia"@de ;
+skos:inScheme werkd:country .
+gnd:7756218-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "7756218-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Bamra"@de ;
+skos:inScheme werkd:country .
+gnd:4301261-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4301261-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ostfränkisches Reich"@de ;
+skos:inScheme werkd:country .
+gnd:4058794-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4058794-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Syrien"@de ;
+skos:inScheme werkd:country .
+gnd:4079249-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4079249-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Westsamoa"@de ;
+skos:inScheme werkd:country .
+gnd:4017875-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4017875-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Taiwan"@de ;
+skos:inScheme werkd:country .
+gnd:4118426-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4118426-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "São Tomé und Príncipe"@de ;
+skos:inScheme werkd:country .
+gnd:1120732131 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1120732131" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Thüringer Reich"@de ;
+skos:inScheme werkd:country .
+gnd:4010193-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4010193-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Mitanni"@de ;
+skos:inScheme werkd:country .
+gnd:4000687-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4000687-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Afghanistan"@de ;
+skos:inScheme werkd:country .
+gnd:4029456-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4029456-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kanada"@de ;
+skos:inScheme werkd:country .
+gnd:4001028-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4001028-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Albanien"@de ;
+skos:inScheme werkd:country .
+gnd:4062186-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4062186-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Uruguay"@de ;
+skos:inScheme werkd:country .
+gnd:1193111315 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1193111315" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Myanmar"@de ;
+skos:inScheme werkd:country .
+gnd:4075720-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4075720-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Osmanisches Reich"@de ;
+skos:inScheme werkd:country .
+gnd:4011882-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4011882-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Deutschland"@de ;
+skos:inScheme werkd:country .
+gnd:4062404-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4062404-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Vatikanstadt"@de ;
+skos:inScheme werkd:country .
+gnd:4000639-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4000639-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Äthiopien"@de ;
+skos:inScheme werkd:country .
+gnd:4003900-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4003900-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Australien"@de ;
+skos:inScheme werkd:country .
+gnd:4049850-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4049850-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Simbabwe"@de ;
+skos:inScheme werkd:country .
+gnd:131744-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "131744-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Niue"@de ;
+skos:inScheme werkd:country .
+gnd:4035665-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4035665-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Liechtenstein"@de ;
+skos:inScheme werkd:country .
+gnd:4020949-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4020949-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ghana"@de ;
+skos:inScheme werkd:country .
+gnd:4069500-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4069500-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Birma"@de ;
+skos:inScheme werkd:country .
+gnd:4032097-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4032097-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Republik Kongo"@de ;
+skos:inScheme werkd:country .
+gnd:4040163-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4040163-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Montenegro"@de ;
+skos:inScheme werkd:country .
+gnd:1171764901 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1171764901" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Aram"@de ;
+skos:inScheme werkd:country .
+gnd:4011890-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4011890-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Deutschland (DDR)"@de ;
+skos:inScheme werkd:country .
+gnd:4051524-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4051524-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "San Marino"@de ;
+skos:inScheme werkd:country .
+gnd:1035027-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1035027-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "al- Imārāt al-Mutaṣāliḥa"@de ;
+skos:inScheme werkd:country .
+gnd:4010618-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4010618-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Costa Rica"@de ;
+skos:inScheme werkd:country .
+gnd:4044569-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4044569-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Papua-Neuguinea"@de ;
+skos:inScheme werkd:country .
+gnd:4009696-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4009696-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Sri Lanka"@de ;
+skos:inScheme werkd:country .
+gnd:15582-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "15582-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Dahomey"@de ;
+skos:inScheme werkd:country .
+gnd:133557-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "133557-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Saint Christopher and Nevis"@de ;
+skos:inScheme werkd:country .
+gnd:4230226-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4230226-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Cookinseln"@de ;
+skos:inScheme werkd:country .
+gnd:4019197-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4019197-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Gambia"@de ;
+skos:inScheme werkd:country .
+gnd:1009150-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1009150-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kasachische SSR"@de ;
+skos:inScheme werkd:country .
+gnd:4017243-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4017243-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Finnland"@de ;
+skos:inScheme werkd:country .
+gnd:4075613-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4075613-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Österreich-Ungarn"@de ;
+skos:inScheme werkd:country .
+gnd:4050939-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4050939-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Rumänien"@de ;
+skos:inScheme werkd:country .
+gnd:4008003-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4008003-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Brasilien"@de ;
+skos:inScheme werkd:country .
+gnd:1135617678 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1135617678" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Republik von Korça"@de ;
+skos:inScheme werkd:country .
+gnd:4073009-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4073009-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Jemen"@de ;
+skos:inScheme werkd:country .
+gnd:4014149-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4014149-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Elam"@de ;
+skos:inScheme werkd:country .
+gnd:4019052-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4019052-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Gabun"@de ;
+skos:inScheme werkd:country .
+gnd:4074495-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4074495-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Malawi"@de ;
+skos:inScheme werkd:country .
+gnd:4395034-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4395034-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Russische SFSR"@de ;
+skos:inScheme werkd:country .
+gnd:15633-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "15633-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tanganyika"@de ;
+skos:inScheme werkd:country .
+gnd:4114201-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4114201-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kirchenstaat"@de ;
+skos:inScheme werkd:country .
+gnd:45879-X rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "45879-X" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kraljevina Srba, Hrvata i Slovenaca"@de ;
+skos:inScheme werkd:country .
+gnd:4085456-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4085456-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Dominica"@de ;
+skos:inScheme werkd:country .
+gnd:4079596-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4079596-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Zypern"@de ;
+skos:inScheme werkd:country .
+gnd:1079565973 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1079565973" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Republik Neugranada"@de ;
+skos:inScheme werkd:country .
+gnd:4042300-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4042300-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Nigeria"@de ;
+skos:inScheme werkd:country .
+gnd:4009937-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4009937-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "China"@de ;
+skos:inScheme werkd:country .
+gnd:122139-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "122139-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Latvija"@de ;
+skos:inScheme werkd:country .
+gnd:4078228-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4078228-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Thailand"@de ;
+skos:inScheme werkd:country .
+gnd:4031812-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4031812-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kolumbien"@de ;
+skos:inScheme werkd:country .
+gnd:7589556-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "7589556-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Sint Maarten"@de ;
+skos:inScheme werkd:country .
+gnd:4037257-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4037257-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Malta"@de ;
+skos:inScheme werkd:country .
+gnd:1085176169 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085176169" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "ČSFR"@de ;
+skos:inScheme werkd:country .
+gnd:4079248-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4079248-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Westsahara"@de ;
+skos:inScheme werkd:country .
+gnd:129224-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "129224-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kiribati"@de ;
+skos:inScheme werkd:country .
+gnd:4027754-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4027754-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Island"@de ;
+skos:inScheme werkd:country .
+gnd:4001179-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4001179-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Algerien"@de ;
+skos:inScheme werkd:country .
+gnd:1085174980 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085174980" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Lietuva (ab 1991)"@de ;
+skos:inScheme werkd:country .
+gnd:5027373-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "5027373-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Soudan"@de ;
+skos:inScheme werkd:country .
+gnd:4061457-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4061457-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Uganda"@de ;
+skos:inScheme werkd:country .
+gnd:4072956-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4072956-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Israel (Altertum)"@de ;
+skos:inScheme werkd:country .
+gnd:1123969752 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1123969752" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Gallisches Sonderreich"@de ;
+skos:inScheme werkd:country .
+gnd:4018145-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4018145-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Frankreich"@de ;
+skos:inScheme werkd:country .
+gnd:4008479-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4008479-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Brunei"@de ;
+skos:inScheme werkd:country .
+gnd:4426211-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4426211-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Anguilla"@de ;
+skos:inScheme werkd:country .
+gnd:4078012-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4078012-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Südafrika"@de ;
+skos:inScheme werkd:country .
+gnd:4007467-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4007467-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Böhmen"@de ;
+skos:inScheme werkd:country .
+gnd:1085174875 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085174875" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Srbija (bis 1918)"@de ;
+skos:inScheme werkd:country .
+gnd:4061206-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4061206-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tunesien"@de ;
+skos:inScheme werkd:country .
+gnd:134320-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "134320-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Zentralafrikanisches Kaiserreich"@de ;
+skos:inScheme werkd:country .
+gnd:108517574X rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "108517574X" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Slovensko (1939-1945)"@de ;
+skos:inScheme werkd:country .
+gnd:4077509-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4077509-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Somalia"@de ;
+skos:inScheme werkd:country .
+gnd:1241216274 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1241216274" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Juda (Königreich)"@de ;
+skos:inScheme werkd:country .
+gnd:4055297-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4055297-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Slowakei"@de ;
+skos:inScheme werkd:country .
+gnd:4002890-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4002890-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Argentinien"@de ;
+skos:inScheme werkd:country .
+gnd:4000556-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4000556-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ägypten"@de ;
+skos:inScheme werkd:country .
+gnd:4065787-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4065787-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Westfränkisches Reich"@de ;
+skos:inScheme werkd:country .
+gnd:4054908-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4054908-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Sierra Leone"@de ;
+skos:inScheme werkd:country .
+gnd:1225128579 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1225128579" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Eswatini"@de ;
+skos:inScheme werkd:country .
+gnd:4078704-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4078704-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "USA"@de ;
+skos:inScheme werkd:country .
+gnd:4061255-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4061255-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Turkmenistan"@de ;
+skos:inScheme werkd:country .
+gnd:4011889-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4011889-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Deutschland (Bundesrepublik)"@de ;
+skos:inScheme werkd:country .
+gnd:3018268-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "3018268-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Samoa"@de ;
+skos:inScheme werkd:country .
+gnd:4122008-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4122008-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Nauru"@de ;
+skos:inScheme werkd:country .
+gnd:4005406-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4005406-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Belgien"@de ;
+skos:inScheme werkd:country .
+gnd:4078050-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4078050-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Südvietnam"@de ;
+skos:inScheme werkd:country .
+gnd:4045771-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4045771-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Philippinen"@de ;
+skos:inScheme werkd:country .
+gnd:4051788-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4051788-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Saudi-Arabien"@de ;
+skos:inScheme werkd:country .
+gnd:4293521-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4293521-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Niue"@de ;
+skos:inScheme werkd:country .
+gnd:4038051-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4038051-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Mauretanien"@de ;
+skos:inScheme werkd:country .
+gnd:4028966-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4028966-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Jugoslawien"@de ;
+skos:inScheme werkd:country .
+gnd:4022406-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4022406-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Georgien"@de ;
+skos:inScheme werkd:country .
+gnd:4035567-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4035567-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Libanon"@de ;
+skos:inScheme werkd:country .
+gnd:4023632-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4023632-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Hatti"@de ;
+skos:inScheme werkd:country .
+gnd:4073841-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4073841-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kroatien"@de ;
+skos:inScheme werkd:country .
+gnd:4035589-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4035589-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Libyen"@de ;
+skos:inScheme werkd:country .
+gnd:4130903-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4130903-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Bangladesch"@de ;
+skos:inScheme werkd:country .
+gnd:4055302-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4055302-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Slowenien"@de ;
+skos:inScheme werkd:country .
+gnd:4055089-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4055089-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Singapur"@de ;
+skos:inScheme werkd:country .
+gnd:120375-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "120375-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Siam"@de ;
+skos:inScheme werkd:country .
+gnd:4074183-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4074183-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Lesotho"@de ;
+skos:inScheme werkd:country .
+gnd:4021981-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4021981-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Grenada"@de ;
+skos:inScheme werkd:country .
+gnd:4029400-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4029400-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kambodscha"@de ;
+skos:inScheme werkd:country .
+gnd:4076899-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4076899-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Russland"@de ;
+skos:inScheme werkd:country .
+gnd:4044445-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4044445-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Panama"@de ;
+skos:inScheme werkd:country .
+gnd:4014426-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4014426-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Elfenbeinküste"@de ;
+skos:inScheme werkd:country .
+gnd:4076910-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4076910-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ruanda"@de ;
+skos:inScheme werkd:country .
+gnd:4085931-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4085931-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Armenien"@de ;
+skos:inScheme werkd:country .
+gnd:1028843712 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1028843712" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Autonome Republik Nordepirus"@de ;
+skos:inScheme werkd:country .
+gnd:1085174778 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085174778" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tanganyika"@de ;
+skos:inScheme werkd:country .
+gnd:43683-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "43683-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "British Solomon Islands"@de ;
+skos:inScheme werkd:country .
+gnd:4068430-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4068430-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ägypten (Altertum)"@de ;
+skos:inScheme werkd:country .
+gnd:4025814-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4025814-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Honduras"@de ;
+skos:inScheme werkd:country .
+gnd:5216525-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "5216525-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Burma"@de ;
+skos:inScheme werkd:country .
+gnd:4077258-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4077258-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Schweden"@de ;
+skos:inScheme werkd:country .
+gnd:4062512-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4062512-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Venezuela"@de ;
+skos:inScheme werkd:country .
+gnd:4028456-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4028456-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Jamaika"@de ;
+skos:inScheme werkd:country .
+gnd:272359-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "272359-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Saint Christopher- Nevis-Anguilla"@de ;
+skos:inScheme werkd:country .
+gnd:4058664-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4058664-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Surinam"@de ;
+skos:inScheme werkd:country .
+gnd:4072920-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4072920-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Irak"@de ;
+skos:inScheme werkd:country .
+gnd:1001254-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1001254-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Česká SR"@de ;
+skos:inScheme werkd:country .
+gnd:1182552048 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1182552048" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ukraïnsʹka Narodna Respublika"@de ;
+skos:inScheme werkd:country .
+gnd:4022428-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4022428-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Guatemala"@de ;
+skos:inScheme werkd:country .
+gnd:4074266-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4074266-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Litauen"@de ;
+skos:inScheme werkd:country .
+gnd:4055964-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4055964-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Spanien"@de ;
+skos:inScheme werkd:country .
+gnd:4074641-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4074641-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Mauritius"@de ;
+skos:inScheme werkd:country .
+gnd:4265797-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4265797-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Komoren"@de ;
+skos:inScheme werkd:country .
+gnd:4027667-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4027667-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Irland"@de ;
+skos:inScheme werkd:country .
+gnd:4088707-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4088707-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Burkina Faso"@de ;
+skos:inScheme werkd:country .
+gnd:4039058-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4039058-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Mexiko"@de ;
+skos:inScheme werkd:country .
+gnd:4022974-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4022974-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Haiti"@de ;
+skos:inScheme werkd:country .
+gnd:4029924-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4029924-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Katar"@de ;
+skos:inScheme werkd:country .
+gnd:4027653-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4027653-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Iran"@de ;
+skos:inScheme werkd:country .
+gnd:4068887-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4068887-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Aserbaidschan"@de ;
+skos:inScheme werkd:country .
+gnd:4076778-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4076778-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Römisches Reich"@de ;
+skos:inScheme werkd:country .
+gnd:6070596-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "6070596-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Venezuela (Confederación)"@de ;
+skos:inScheme werkd:country .
+gnd:4096343-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4096343-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Italienisch-Somaliland"@de ;
+skos:inScheme werkd:country .
+gnd:4054598-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4054598-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Serbien"@de ;
+skos:inScheme werkd:country .
+gnd:5245328-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "5245328-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Holland (Königreich)"@de ;
+skos:inScheme werkd:country .
+gnd:4093976-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4093976-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Griechenland (Altertum)"@de ;
+skos:inScheme werkd:country .
+gnd:4075765-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4075765-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Osttimor"@de ;
+skos:inScheme werkd:country .
+gnd:1257385879 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1257385879" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Helvetische Republik"@de ;
+skos:inScheme werkd:country .
+gnd:4036728-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4036728-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Luxemburg"@de ;
+skos:inScheme werkd:country .
+gnd:4030848-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4030848-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kirgisien"@de ;
+skos:inScheme werkd:country .
+gnd:2008993-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "2008993-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Deutsches Reich"@de ;
+skos:inScheme werkd:country .
+gnd:4046496-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4046496-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Polen"@de ;
+skos:inScheme werkd:country .
+gnd:4070610-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4070610-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Dschibuti"@de ;
+skos:inScheme werkd:country .
+gnd:4075202-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4075202-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Namibia"@de ;
+skos:inScheme werkd:country .
+gnd:4001620-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4001620-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Amarna"@de ;
+skos:inScheme werkd:country .
+gnd:4078541-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4078541-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ungarn"@de ;
+skos:inScheme werkd:country .
+gnd:4072186-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4072186-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Guyana"@de ;
+skos:inScheme werkd:country .
+gnd:502234-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "502234-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Nigeria (Colony and Protectorate)"@de ;
+skos:inScheme werkd:country .
+gnd:4007607-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4007607-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Bolivien"@de ;
+skos:inScheme werkd:country .
+gnd:4393305-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4393305-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Makedonien (Altertum)"@de ;
+skos:inScheme werkd:country .
+gnd:2036349-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "2036349-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Saint Vincent (State)"@de ;
+skos:inScheme werkd:country .
+gnd:14282-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "14282-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Zentralafrikanische Föderation"@de ;
+skos:inScheme werkd:country .
+gnd:4010877-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4010877-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Dänemark"@de ;
+skos:inScheme werkd:country .
+gnd:4046843-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4046843-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Portugal"@de ;
+skos:inScheme werkd:country .
+gnd:4063514-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4063514-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Vietnam"@de ;
+skos:inScheme werkd:country .
+gnd:2035457-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "2035457-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Heiliges Römisches Reich"@de ;
+skos:inScheme werkd:country .
+gnd:4042298-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4042298-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Niger"@de ;
+skos:inScheme werkd:country .
+gnd:4043271-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4043271-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Österreich"@de ;
+skos:inScheme werkd:country .
+gnd:4042203-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4042203-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Niederlande"@de ;
+skos:inScheme werkd:country .
+gnd:4006397-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4006397-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Bhutan"@de ;
+skos:inScheme werkd:country .
+gnd:4692332-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4692332-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Serbien und Montenegro"@de ;
+skos:inScheme werkd:country .
+gnd:4035583-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4035583-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Liberia"@de ;
+skos:inScheme werkd:country .
+gnd:4008866-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4008866-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Bulgarien"@de ;
+skos:inScheme werkd:country .
+gnd:1085174735 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085174735" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Česká a Slovenská Federativní Republika"@de ;
+skos:inScheme werkd:country .
+gnd:4073008-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4073008-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Jemen (Demokratische Volksrepublik)"@de ;
+skos:inScheme werkd:country .
+gnd:4001937-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4001937-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Andorra"@de ;
+skos:inScheme werkd:country .
+gnd:4007857-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4007857-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Botswana"@de ;
+skos:inScheme werkd:country .
+gnd:4303381-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4303381-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tschechien"@de ;
+skos:inScheme werkd:country .
+gnd:4027808-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4027808-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Israel"@de ;
+skos:inScheme werkd:country .
+gnd:5025912-X rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "5025912-X" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Mali-Föderation"@de ;
+skos:inScheme werkd:country .
+gnd:4073459-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4073459-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kiribati"@de ;
+skos:inScheme werkd:country .
+gnd:4005503-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4005503-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Benin"@de ;
+skos:inScheme werkd:country .
+gnd:4053881-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4053881-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Schweiz"@de ;
+skos:inScheme werkd:country .
+gnd:4044396-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4044396-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Palauinseln"@de ;
+skos:inScheme werkd:country .
+gnd:4022153-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4022153-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Großbritannien"@de ;
+skos:inScheme werkd:country .
+gnd:4062334-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4062334-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Vanuatu"@de ;
+skos:inScheme werkd:country .
+gnd:4114937-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4114937-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Makedonien"@de ;
+skos:inScheme werkd:country .
+gnd:4040056-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4040056-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Mongolei"@de ;
+skos:inScheme werkd:country .
+gnd:4015587-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4015587-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Estland"@de ;
+skos:inScheme werkd:country .
+gnd:4074505-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4074505-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Mali"@de ;
+skos:inScheme werkd:country .
+gnd:4073919-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4073919-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kuwait"@de ;
+skos:inScheme werkd:country .
+gnd:4205537-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4205537-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Königreich Dahomey"@de ;
+skos:inScheme werkd:country .
+gnd:4069081-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4069081-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Bahamas"@de ;
+skos:inScheme werkd:country .
+gnd:10186763-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "10186763-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Saint Kitts and Nevis"@de ;
+skos:inScheme werkd:country .
+gnd:4005412-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4005412-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Belize"@de ;
+skos:inScheme werkd:country .
+gnd:4067357-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4067357-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Demokratische Republik Kongo"@de ;
+skos:inScheme werkd:country .
+gnd:1085175626 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085175626" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Schweiz (1513-1798)"@de ;
+skos:inScheme werkd:country .
+gnd:4022520-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4022520-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Guinea"@de ;
+skos:inScheme werkd:country .
+gnd:4058378-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4058378-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Sudan"@de ;
+skos:inScheme werkd:country .
+gnd:4051308-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4051308-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Saint Vincent and the Grenadines"@de ;
+skos:inScheme werkd:country .
+gnd:4090132-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4090132-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Britisch-Somaliland"@de ;
+skos:inScheme werkd:country .
+gnd:4029617-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4029617-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kap Verde"@de ;
+skos:inScheme werkd:country .
+gnd:4004268-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4004268-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Bahrain"@de ;
+skos:inScheme werkd:country .
+gnd:4078435-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4078435-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tschechoslowakei"@de ;
+skos:inScheme werkd:country .
+gnd:4058692-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4058692-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Swasiland"@de ;
+skos:inScheme werkd:country .
+gnd:15612-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "15612-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Obervolta"@de ;
+skos:inScheme werkd:country .
+gnd:7755222-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "7755222-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Staat Südsudan"@de ;
+skos:inScheme werkd:country .
+gnd:4060396-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4060396-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tonga"@de ;
+skos:inScheme werkd:country .
+gnd:2121811-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "2121811-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Qi͏̈bri͏̈s"@de ;
+skos:inScheme werkd:country .
+gnd:4014770-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4014770-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "England"@de ;
+skos:inScheme werkd:country .
+gnd:19826-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "19826-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ceylon"@de ;
+skos:inScheme werkd:country .
+gnd:4072817-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4072817-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Inkareich"@de ;
+skos:inScheme werkd:country .
+gnd:4002050-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4002050-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Angola"@de ;
+skos:inScheme werkd:country .
+gnd:4028495-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4028495-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Japan"@de ;
+skos:inScheme werkd:country .
+gnd:4037680-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4037680-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Marokko"@de ;
+skos:inScheme werkd:country .
+gnd:4061496-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4061496-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ukraine"@de ;
+skos:inScheme werkd:country .
+gnd:4037212-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4037212-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Malediven"@de ;
+skos:inScheme werkd:country .
+gnd:1085175731 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085175731" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Djibouti"@de ;
+skos:inScheme werkd:country .
+gnd:4129321-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4129321-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ecuador"@de ;
+skos:inScheme werkd:country .
+gnd:4022522-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4022522-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Guinea-Bissau"@de ;
+skos:inScheme werkd:country .
+gnd:4068436-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4068436-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Äquatorialguinea"@de ;
+skos:inScheme werkd:country .
+gnd:1085175650 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085175650" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Schweiz (1815-1848)"@de ;
+skos:inScheme werkd:country .
+gnd:4076337-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4076337-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Preußen (Ordensstaat)"@de ;
+skos:inScheme werkd:country .
+gnd:4079840-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4079840-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Aruba"@de ;
+skos:inScheme werkd:country .
+gnd:4339067-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4339067-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Föderative Republik Jugoslawien"@de ;
+skos:inScheme werkd:country .
+gnd:4072922-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4072922-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Iran (Altertum)"@de ;
+skos:inScheme werkd:country .
+gnd:4060036-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4060036-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tibet"@de ;
+skos:inScheme werkd:country .
+gnd:4074425-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4074425-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Madagaskar"@de ;
+skos:inScheme werkd:country .
+gnd:4030236-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4030236-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kenia"@de ;
+skos:inScheme werkd:country .
+gnd:4075468-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4075468-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Nordkorea"@de ;
+skos:inScheme werkd:country .
+gnd:1017457-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1017457-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Zaïre"@de ;
+skos:inScheme werkd:country .
+gnd:4118251-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4118251-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Saint Kitts und Nevis"@de ;
+skos:inScheme werkd:country .
+gnd:4058877-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4058877-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tadschikistan"@de ;
+skos:inScheme werkd:country .
+gnd:4017063-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4017063-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Fidschi"@de ;
+skos:inScheme werkd:country .
+gnd:1053533500 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1053533500" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Königreich Widin"@de ;
+skos:inScheme werkd:country .
+gnd:4075653-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4075653-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Oman"@de ;
+skos:inScheme werkd:country .
+gnd:4061074-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4061074-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tschad"@de ;
+skos:inScheme werkd:country .
