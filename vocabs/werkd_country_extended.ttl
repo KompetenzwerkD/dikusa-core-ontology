@@ -1,0 +1,3573 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix werkd: <http://www.werkd.saw-leipzig.de/> .
+@prefix gnd: <https://d-nb.info/gnd/> .
+@prefix wikipediade: <https://de.wikipedia.org/wiki/> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix wikipediaen: <https://en.wikipedia.org/wiki/> .
+@prefix loc: <http://id.loc.gov/rwo/agents/> .
+@prefix geonames: <https://sws.geonames.org/> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix isni: <http://isni.org/isni/> .
+@prefix wikisource: <https://de.wikisource.org/wiki/> .
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+werkd:country rdf:type skos:ConceptScheme;
+cc:licence <https://www.gnu.org/licenses/agpl-3.0.en.html> ;
+dcterms:licence <https://www.gnu.org/licenses/agpl-3.0.en.html> ;
+skos:prefLabel "Country Vocabulary"@en;
+skos:prefLabel "Länder Vokabular"@de;
+skos:definition "This is a controlled vocabulary based on GND country category and respective GND IDs recommended to use as values for including references to countries in your data"@en.
+skos:definition "Dies ist ein kontrolliertes Vokabular basierend auf der GND Länder-Kategorie und den dazugehörigen GND IDs"@de.
+gnd:4042050-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4042050-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Nicaragua"@de ;
+skos:inScheme werkd:country .
+gnd:4029413-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4029413-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kamerun"@de ;
+skos:inScheme werkd:country .
+gnd:4039967-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4039967-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Moldawien"@de ;
+skos:inScheme werkd:country .
+gnd:4037700-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4037700-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Marshallinseln"@de ;
+skos:inScheme werkd:country .
+gnd:2033898-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "2033898-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Norddeutscher Bund"@de ;
+skos:inScheme werkd:country .
+gnd:4029839-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4029839-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kasachstan"@de ;
+skos:inScheme werkd:country .
+gnd:4079143-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4079143-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Belarus"@de ;
+skos:inScheme werkd:country .
+gnd:4288450-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4288450-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Königreich Loango"@de ;
+skos:inScheme werkd:country .
+gnd:4265796-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4265796-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Salomonen"@de ;
+skos:inScheme werkd:country .
+gnd:4015278-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4015278-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Eritrea"@de ;
+skos:inScheme werkd:country .
+gnd:4074187-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4074187-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Lettland"@de ;
+skos:inScheme werkd:country .
+gnd:4041612-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4041612-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Nepal"@de ;
+skos:inScheme werkd:country .
+gnd:4042640-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4042640-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Norwegen"@de ;
+skos:inScheme werkd:country .
+gnd:4037203-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4037203-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Malaysia"@de ;
+skos:inScheme werkd:country .
+gnd:4041915-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4041915-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Neuseeland"@de ;
+skos:inScheme werkd:country .
+gnd:4067608-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4067608-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Zentralafrikanische Republik"@de ;
+skos:inScheme werkd:country .
+gnd:61014-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "61014-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Neue Hebriden"@de ;
+skos:inScheme werkd:country .
+gnd:1081747218 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1081747218" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Volksrepublik Donezk"@de ;
+skos:inScheme werkd:country .
+gnd:4088119-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4088119-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Bosnien-Herzegowina"@de ;
+skos:inScheme werkd:country .
+gnd:4078149-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4078149-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tansania"@de ;
+skos:inScheme werkd:country .
+gnd:4033340-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4033340-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kuba"@de ;
+skos:inScheme werkd:country .
+gnd:4012694-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4012694-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Dominikanische Republik"@de ;
+skos:inScheme werkd:country .
+gnd:4039786-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4039786-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Moçambique"@de ;
+skos:inScheme werkd:country .
+gnd:4022047-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4022047-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Griechenland"@de ;
+skos:inScheme werkd:country .
+gnd:4078029-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4078029-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Südkorea"@de ;
+skos:inScheme werkd:country .
+gnd:1241271305 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1241271305" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Himjar"@de ;
+skos:inScheme werkd:country .
+gnd:1085175642 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085175642" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Schweiz (1803-1815)"@de ;
+skos:inScheme werkd:country .
+gnd:7756217-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "7756217-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Staat Wadhwan"@de ;
+skos:inScheme werkd:country .
+gnd:1181214262 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1181214262" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Nordmazedonien"@de ;
+skos:inScheme werkd:country .
+gnd:4044601-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4044601-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Paraguay"@de ;
+skos:inScheme werkd:country .
+gnd:4034571-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4034571-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Laos"@de ;
+skos:inScheme werkd:country .
+gnd:4014499-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4014499-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "El Salvador"@de ;
+skos:inScheme werkd:country .
+gnd:1241258295 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1241258295" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Lunda (Königreich)"@de ;
+skos:inScheme werkd:country .
+gnd:4071332-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4071332-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Fränkisches Reich"@de ;
+skos:inScheme werkd:country .
+gnd:4072471-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4072471-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Hessen-Darmstadt"@de ;
+skos:inScheme werkd:country .
+gnd:4026722-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4026722-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Indien"@de ;
+skos:inScheme werkd:country .
+gnd:1060577984 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1060577984" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Polen-Litauen"@de ;
+skos:inScheme werkd:country .
+gnd:4051307-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4051307-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Saint Lucia"@de ;
+skos:inScheme werkd:country .
+gnd:4027833-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4027833-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Italien"@de ;
+skos:inScheme werkd:country .
+gnd:4075812-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4075812-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Pakistan"@de ;
+skos:inScheme werkd:country .
+gnd:4062742-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4062742-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Vereinigte Arabische Emirate"@de ;
+skos:inScheme werkd:country .
+gnd:4028750-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4028750-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Jordanien"@de ;
+skos:inScheme werkd:country .
+gnd:4077548-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4077548-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Sowjetunion"@de ;
+skos:inScheme werkd:country .
+gnd:4054529-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4054529-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Senegal"@de ;
+skos:inScheme werkd:country .
+gnd:4060344-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4060344-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Togo"@de ;
+skos:inScheme werkd:country .
+gnd:4086593-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4086593-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Antigua und Barbuda"@de ;
+skos:inScheme werkd:country .
+gnd:123613-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "123613-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Comores (Territoire d'Outre-Mer)"@de ;
+skos:inScheme werkd:country .
+gnd:4009929-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4009929-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Chile"@de ;
+skos:inScheme werkd:country .
+gnd:5245326-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "5245326-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Republik der Sieben Vereinigten Provinzen"@de ;
+skos:inScheme werkd:country .
+gnd:1085178900 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085178900" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Schweiz (1353-1513)"@de ;
+skos:inScheme werkd:country .
+gnd:4009181-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4009181-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Burundi"@de ;
+skos:inScheme werkd:country .
+gnd:4045312-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4045312-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Peru"@de ;
+skos:inScheme werkd:country .
+gnd:44075-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "44075-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Gilbert Islands"@de ;
+skos:inScheme werkd:country .
+gnd:4054694-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4054694-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Seychellen"@de ;
+skos:inScheme werkd:country .
+gnd:1027360262 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1027360262" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tabasaran"@de ;
+skos:inScheme werkd:country .
+gnd:4060907-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4060907-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Trinidad und Tobago"@de ;
+skos:inScheme werkd:country .
+gnd:4061163-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4061163-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Türkei"@de ;
+skos:inScheme werkd:country .
+gnd:4026761-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4026761-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Indonesien"@de ;
+skos:inScheme werkd:country .
+gnd:4062199-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4062199-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Usbekistan"@de ;
+skos:inScheme werkd:country .
+gnd:4316277-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4316277-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Liangshan Yizu Zizhizhou"@de ;
+skos:inScheme werkd:country .
+gnd:4040031-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4040031-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Monaco"@de ;
+skos:inScheme werkd:country .
+gnd:4076429-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4076429-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Puerto Rico"@de ;
+skos:inScheme werkd:country .
+gnd:5036918-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "5036918-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Batavische Republik"@de ;
+skos:inScheme werkd:country .
+gnd:4274661-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4274661-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Staat Mikronesien"@de ;
+skos:inScheme werkd:country .
+gnd:4004487-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4004487-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Barbados"@de ;
+skos:inScheme werkd:country .
+gnd:4307086-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4307086-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Karantanien"@de ;
+skos:inScheme werkd:country .
+gnd:4076986-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4076986-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Sambia"@de ;
+skos:inScheme werkd:country .
+gnd:7756218-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "7756218-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Bamra"@de ;
+skos:inScheme werkd:country .
+gnd:4301261-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4301261-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ostfränkisches Reich"@de ;
+skos:inScheme werkd:country .
+gnd:4058794-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4058794-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Syrien"@de ;
+skos:inScheme werkd:country .
+gnd:4079249-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4079249-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Westsamoa"@de ;
+skos:inScheme werkd:country .
+gnd:4017875-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4017875-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Taiwan"@de ;
+skos:inScheme werkd:country .
+gnd:4118426-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4118426-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "São Tomé und Príncipe"@de ;
+skos:inScheme werkd:country .
+gnd:1120732131 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1120732131" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Thüringer Reich"@de ;
+skos:inScheme werkd:country .
+gnd:4010193-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4010193-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Mitanni"@de ;
+skos:inScheme werkd:country .
+gnd:4000687-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4000687-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Afghanistan"@de ;
+skos:inScheme werkd:country .
+gnd:4029456-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4029456-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kanada"@de ;
+skos:inScheme werkd:country .
+gnd:4001028-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4001028-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Albanien"@de ;
+skos:inScheme werkd:country .
+gnd:4062186-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4062186-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Uruguay"@de ;
+skos:inScheme werkd:country .
+gnd:1193111315 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1193111315" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Myanmar"@de ;
+skos:inScheme werkd:country .
+gnd:4075720-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4075720-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Osmanisches Reich"@de ;
+skos:inScheme werkd:country .
+gnd:4011882-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4011882-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Deutschland"@de ;
+skos:inScheme werkd:country .
+gnd:4062404-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4062404-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Vatikanstadt"@de ;
+skos:inScheme werkd:country .
+gnd:4000639-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4000639-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Äthiopien"@de ;
+skos:inScheme werkd:country .
+gnd:4003900-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4003900-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Australien"@de ;
+skos:inScheme werkd:country .
+gnd:4049850-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4049850-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Simbabwe"@de ;
+skos:inScheme werkd:country .
+gnd:131744-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "131744-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Niue"@de ;
+skos:inScheme werkd:country .
+gnd:4035665-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4035665-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Liechtenstein"@de ;
+skos:inScheme werkd:country .
+gnd:4020949-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4020949-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ghana"@de ;
+skos:inScheme werkd:country .
+gnd:4069500-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4069500-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Birma"@de ;
+skos:inScheme werkd:country .
+gnd:4032097-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4032097-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Republik Kongo"@de ;
+skos:inScheme werkd:country .
+gnd:4040163-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4040163-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Montenegro"@de ;
+skos:inScheme werkd:country .
+gnd:1171764901 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1171764901" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Aram"@de ;
+skos:inScheme werkd:country .
+gnd:4011890-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4011890-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Deutschland (DDR)"@de ;
+skos:inScheme werkd:country .
+gnd:4051524-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4051524-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "San Marino"@de ;
+skos:inScheme werkd:country .
+gnd:1035027-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1035027-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "al- Imārāt al-Mutaṣāliḥa"@de ;
+skos:inScheme werkd:country .
+gnd:4010618-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4010618-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Costa Rica"@de ;
+skos:inScheme werkd:country .
+gnd:4044569-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4044569-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Papua-Neuguinea"@de ;
+skos:inScheme werkd:country .
+gnd:4009696-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4009696-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Sri Lanka"@de ;
+skos:inScheme werkd:country .
+gnd:15582-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "15582-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Dahomey"@de ;
+skos:inScheme werkd:country .
+gnd:133557-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "133557-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Saint Christopher and Nevis"@de ;
+skos:inScheme werkd:country .
+gnd:4230226-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4230226-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Cookinseln"@de ;
+skos:inScheme werkd:country .
+gnd:4019197-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4019197-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Gambia"@de ;
+skos:inScheme werkd:country .
+gnd:1009150-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1009150-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kasachische SSR"@de ;
+skos:inScheme werkd:country .
+gnd:4017243-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4017243-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Finnland"@de ;
+skos:inScheme werkd:country .
+gnd:4075613-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4075613-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Österreich-Ungarn"@de ;
+skos:inScheme werkd:country .
+gnd:4050939-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4050939-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Rumänien"@de ;
+skos:inScheme werkd:country .
+gnd:4008003-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4008003-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Brasilien"@de ;
+skos:inScheme werkd:country .
+gnd:1135617678 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1135617678" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Republik von Korça"@de ;
+skos:inScheme werkd:country .
+gnd:4073009-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4073009-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Jemen"@de ;
+skos:inScheme werkd:country .
+gnd:4014149-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4014149-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Elam"@de ;
+skos:inScheme werkd:country .
+gnd:4019052-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4019052-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Gabun"@de ;
+skos:inScheme werkd:country .
+gnd:4074495-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4074495-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Malawi"@de ;
+skos:inScheme werkd:country .
+gnd:4395034-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4395034-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Russische SFSR"@de ;
+skos:inScheme werkd:country .
+gnd:15633-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "15633-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tanganyika"@de ;
+skos:inScheme werkd:country .
+gnd:4114201-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4114201-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kirchenstaat"@de ;
+skos:inScheme werkd:country .
+gnd:45879-X rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "45879-X" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kraljevina Srba, Hrvata i Slovenaca"@de ;
+skos:inScheme werkd:country .
+gnd:4085456-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4085456-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Dominica"@de ;
+skos:inScheme werkd:country .
+gnd:4079596-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4079596-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Zypern"@de ;
+skos:inScheme werkd:country .
+gnd:1079565973 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1079565973" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Republik Neugranada"@de ;
+skos:inScheme werkd:country .
+gnd:4042300-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4042300-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Nigeria"@de ;
+skos:inScheme werkd:country .
+gnd:4009937-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4009937-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "China"@de ;
+skos:inScheme werkd:country .
+gnd:122139-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "122139-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Latvija"@de ;
+skos:inScheme werkd:country .
+gnd:4078228-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4078228-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Thailand"@de ;
+skos:inScheme werkd:country .
+gnd:4031812-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4031812-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kolumbien"@de ;
+skos:inScheme werkd:country .
+gnd:7589556-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "7589556-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Sint Maarten"@de ;
+skos:inScheme werkd:country .
+gnd:4037257-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4037257-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Malta"@de ;
+skos:inScheme werkd:country .
+gnd:1085176169 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085176169" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "ČSFR"@de ;
+skos:inScheme werkd:country .
+gnd:4079248-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4079248-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Westsahara"@de ;
+skos:inScheme werkd:country .
+gnd:129224-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "129224-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kiribati"@de ;
+skos:inScheme werkd:country .
+gnd:4027754-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4027754-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Island"@de ;
+skos:inScheme werkd:country .
+gnd:4001179-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4001179-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Algerien"@de ;
+skos:inScheme werkd:country .
+gnd:1085174980 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085174980" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Lietuva (ab 1991)"@de ;
+skos:inScheme werkd:country .
+gnd:5027373-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "5027373-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Soudan"@de ;
+skos:inScheme werkd:country .
+gnd:4061457-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4061457-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Uganda"@de ;
+skos:inScheme werkd:country .
+gnd:4072956-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4072956-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Israel (Altertum)"@de ;
+skos:inScheme werkd:country .
+gnd:1123969752 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1123969752" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Gallisches Sonderreich"@de ;
+skos:inScheme werkd:country .
+gnd:4018145-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4018145-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Frankreich"@de ;
+skos:inScheme werkd:country .
+gnd:4008479-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4008479-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Brunei"@de ;
+skos:inScheme werkd:country .
+gnd:4426211-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4426211-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Anguilla"@de ;
+skos:inScheme werkd:country .
+gnd:4078012-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4078012-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Südafrika"@de ;
+skos:inScheme werkd:country .
+gnd:4007467-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4007467-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Böhmen"@de ;
+skos:inScheme werkd:country .
+gnd:1085174875 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085174875" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Srbija (bis 1918)"@de ;
+skos:inScheme werkd:country .
+gnd:4061206-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4061206-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tunesien"@de ;
+skos:inScheme werkd:country .
+gnd:134320-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "134320-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Zentralafrikanisches Kaiserreich"@de ;
+skos:inScheme werkd:country .
+gnd:108517574X rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "108517574X" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Slovensko (1939-1945)"@de ;
+skos:inScheme werkd:country .
+gnd:4077509-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4077509-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Somalia"@de ;
+skos:inScheme werkd:country .
+gnd:1241216274 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1241216274" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Juda (Königreich)"@de ;
+skos:inScheme werkd:country .
+gnd:4055297-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4055297-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Slowakei"@de ;
+skos:inScheme werkd:country .
+gnd:4002890-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4002890-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Argentinien"@de ;
+skos:inScheme werkd:country .
+gnd:4000556-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4000556-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ägypten"@de ;
+skos:inScheme werkd:country .
+gnd:4065787-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4065787-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Westfränkisches Reich"@de ;
+skos:inScheme werkd:country .
+gnd:4054908-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4054908-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Sierra Leone"@de ;
+skos:inScheme werkd:country .
+gnd:1225128579 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1225128579" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Eswatini"@de ;
+skos:inScheme werkd:country .
+gnd:4078704-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4078704-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "USA"@de ;
+skos:inScheme werkd:country .
+gnd:4061255-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4061255-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Turkmenistan"@de ;
+skos:inScheme werkd:country .
+gnd:4011889-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4011889-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Deutschland (Bundesrepublik)"@de ;
+skos:inScheme werkd:country .
+gnd:3018268-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "3018268-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Samoa"@de ;
+skos:inScheme werkd:country .
+gnd:4122008-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4122008-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Nauru"@de ;
+skos:inScheme werkd:country .
+gnd:4005406-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4005406-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Belgien"@de ;
+skos:inScheme werkd:country .
+gnd:4078050-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4078050-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Südvietnam"@de ;
+skos:inScheme werkd:country .
+gnd:4045771-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4045771-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Philippinen"@de ;
+skos:inScheme werkd:country .
+gnd:4051788-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4051788-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Saudi-Arabien"@de ;
+skos:inScheme werkd:country .
+gnd:4293521-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4293521-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Niue"@de ;
+skos:inScheme werkd:country .
+gnd:4038051-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4038051-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Mauretanien"@de ;
+skos:inScheme werkd:country .
+gnd:4028966-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4028966-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Jugoslawien"@de ;
+skos:inScheme werkd:country .
+gnd:4022406-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4022406-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Georgien"@de ;
+skos:inScheme werkd:country .
+gnd:4035567-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4035567-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Libanon"@de ;
+skos:inScheme werkd:country .
+gnd:4023632-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4023632-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Hatti"@de ;
+skos:inScheme werkd:country .
+gnd:4073841-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4073841-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kroatien"@de ;
+skos:inScheme werkd:country .
+gnd:4035589-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4035589-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Libyen"@de ;
+skos:inScheme werkd:country .
+gnd:4130903-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4130903-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Bangladesch"@de ;
+skos:inScheme werkd:country .
+gnd:4055302-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4055302-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Slowenien"@de ;
+skos:inScheme werkd:country .
+gnd:4055089-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4055089-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Singapur"@de ;
+skos:inScheme werkd:country .
+gnd:120375-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "120375-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Siam"@de ;
+skos:inScheme werkd:country .
+gnd:4074183-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4074183-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Lesotho"@de ;
+skos:inScheme werkd:country .
+gnd:4021981-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4021981-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Grenada"@de ;
+skos:inScheme werkd:country .
+gnd:4029400-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4029400-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kambodscha"@de ;
+skos:inScheme werkd:country .
+gnd:4076899-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4076899-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Russland"@de ;
+skos:inScheme werkd:country .
+gnd:4044445-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4044445-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Panama"@de ;
+skos:inScheme werkd:country .
+gnd:4014426-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4014426-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Elfenbeinküste"@de ;
+skos:inScheme werkd:country .
+gnd:4076910-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4076910-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ruanda"@de ;
+skos:inScheme werkd:country .
+gnd:4085931-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4085931-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Armenien"@de ;
+skos:inScheme werkd:country .
+gnd:1028843712 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1028843712" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Autonome Republik Nordepirus"@de ;
+skos:inScheme werkd:country .
+gnd:1085174778 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085174778" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tanganyika"@de ;
+skos:inScheme werkd:country .
+gnd:43683-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "43683-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "British Solomon Islands"@de ;
+skos:inScheme werkd:country .
+gnd:4068430-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4068430-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ägypten (Altertum)"@de ;
+skos:inScheme werkd:country .
+gnd:4025814-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4025814-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Honduras"@de ;
+skos:inScheme werkd:country .
+gnd:5216525-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "5216525-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Burma"@de ;
+skos:inScheme werkd:country .
+gnd:4077258-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4077258-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Schweden"@de ;
+skos:inScheme werkd:country .
+gnd:4062512-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4062512-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Venezuela"@de ;
+skos:inScheme werkd:country .
+gnd:4028456-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4028456-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Jamaika"@de ;
+skos:inScheme werkd:country .
+gnd:272359-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "272359-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Saint Christopher- Nevis-Anguilla"@de ;
+skos:inScheme werkd:country .
+gnd:4058664-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4058664-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Surinam"@de ;
+skos:inScheme werkd:country .
+gnd:4072920-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4072920-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Irak"@de ;
+skos:inScheme werkd:country .
+gnd:1001254-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1001254-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Česká SR"@de ;
+skos:inScheme werkd:country .
+gnd:1182552048 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1182552048" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ukraïnsʹka Narodna Respublika"@de ;
+skos:inScheme werkd:country .
+gnd:4022428-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4022428-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Guatemala"@de ;
+skos:inScheme werkd:country .
+gnd:4074266-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4074266-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Litauen"@de ;
+skos:inScheme werkd:country .
+gnd:4055964-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4055964-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Spanien"@de ;
+skos:inScheme werkd:country .
+gnd:4074641-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4074641-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Mauritius"@de ;
+skos:inScheme werkd:country .
+gnd:4265797-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4265797-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Komoren"@de ;
+skos:inScheme werkd:country .
+gnd:4027667-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4027667-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Irland"@de ;
+skos:inScheme werkd:country .
+gnd:4088707-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4088707-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Burkina Faso"@de ;
+skos:inScheme werkd:country .
+gnd:4039058-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4039058-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Mexiko"@de ;
+skos:inScheme werkd:country .
+gnd:4022974-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4022974-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Haiti"@de ;
+skos:inScheme werkd:country .
+gnd:4029924-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4029924-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Katar"@de ;
+skos:inScheme werkd:country .
+gnd:4027653-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4027653-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Iran"@de ;
+skos:inScheme werkd:country .
+gnd:4068887-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4068887-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Aserbaidschan"@de ;
+skos:inScheme werkd:country .
+gnd:4076778-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4076778-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Römisches Reich"@de ;
+skos:inScheme werkd:country .
+gnd:6070596-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "6070596-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Venezuela (Confederación)"@de ;
+skos:inScheme werkd:country .
+gnd:4096343-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4096343-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Italienisch-Somaliland"@de ;
+skos:inScheme werkd:country .
+gnd:4054598-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4054598-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Serbien"@de ;
+skos:inScheme werkd:country .
+gnd:5245328-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "5245328-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Holland (Königreich)"@de ;
+skos:inScheme werkd:country .
+gnd:4093976-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4093976-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Griechenland (Altertum)"@de ;
+skos:inScheme werkd:country .
+gnd:4075765-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4075765-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Osttimor"@de ;
+skos:inScheme werkd:country .
+gnd:1257385879 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1257385879" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Helvetische Republik"@de ;
+skos:inScheme werkd:country .
+gnd:4036728-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4036728-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Luxemburg"@de ;
+skos:inScheme werkd:country .
+gnd:4030848-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4030848-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kirgisien"@de ;
+skos:inScheme werkd:country .
+gnd:2008993-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "2008993-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Deutsches Reich"@de ;
+skos:inScheme werkd:country .
+gnd:4046496-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4046496-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Polen"@de ;
+skos:inScheme werkd:country .
+gnd:4070610-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4070610-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Dschibuti"@de ;
+skos:inScheme werkd:country .
+gnd:4075202-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4075202-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Namibia"@de ;
+skos:inScheme werkd:country .
+gnd:4001620-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4001620-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Amarna"@de ;
+skos:inScheme werkd:country .
+gnd:4078541-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4078541-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ungarn"@de ;
+skos:inScheme werkd:country .
+gnd:4072186-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4072186-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Guyana"@de ;
+skos:inScheme werkd:country .
+gnd:502234-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "502234-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Nigeria (Colony and Protectorate)"@de ;
+skos:inScheme werkd:country .
+gnd:4007607-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4007607-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Bolivien"@de ;
+skos:inScheme werkd:country .
+gnd:4393305-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4393305-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Makedonien (Altertum)"@de ;
+skos:inScheme werkd:country .
+gnd:2036349-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "2036349-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Saint Vincent (State)"@de ;
+skos:inScheme werkd:country .
+gnd:14282-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "14282-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Zentralafrikanische Föderation"@de ;
+skos:inScheme werkd:country .
+gnd:4010877-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4010877-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Dänemark"@de ;
+skos:inScheme werkd:country .
+gnd:4046843-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4046843-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Portugal"@de ;
+skos:inScheme werkd:country .
+gnd:4063514-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4063514-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Vietnam"@de ;
+skos:inScheme werkd:country .
+gnd:2035457-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "2035457-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Heiliges Römisches Reich"@de ;
+skos:inScheme werkd:country .
+gnd:4042298-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4042298-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Niger"@de ;
+skos:inScheme werkd:country .
+gnd:4043271-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4043271-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Österreich"@de ;
+skos:inScheme werkd:country .
+gnd:4042203-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4042203-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Niederlande"@de ;
+skos:inScheme werkd:country .
+gnd:4006397-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4006397-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Bhutan"@de ;
+skos:inScheme werkd:country .
+gnd:4692332-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4692332-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Serbien und Montenegro"@de ;
+skos:inScheme werkd:country .
+gnd:4035583-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4035583-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Liberia"@de ;
+skos:inScheme werkd:country .
+gnd:4008866-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4008866-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Bulgarien"@de ;
+skos:inScheme werkd:country .
+gnd:1085174735 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085174735" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Česká a Slovenská Federativní Republika"@de ;
+skos:inScheme werkd:country .
+gnd:4073008-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4073008-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Jemen (Demokratische Volksrepublik)"@de ;
+skos:inScheme werkd:country .
+gnd:4001937-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4001937-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Andorra"@de ;
+skos:inScheme werkd:country .
+gnd:4007857-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4007857-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Botswana"@de ;
+skos:inScheme werkd:country .
+gnd:4303381-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4303381-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tschechien"@de ;
+skos:inScheme werkd:country .
+gnd:4027808-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4027808-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Israel"@de ;
+skos:inScheme werkd:country .
+gnd:5025912-X rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "5025912-X" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Mali-Föderation"@de ;
+skos:inScheme werkd:country .
+gnd:4073459-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4073459-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kiribati"@de ;
+skos:inScheme werkd:country .
+gnd:4005503-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4005503-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Benin"@de ;
+skos:inScheme werkd:country .
+gnd:4053881-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4053881-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Schweiz"@de ;
+skos:inScheme werkd:country .
+gnd:4044396-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4044396-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Palauinseln"@de ;
+skos:inScheme werkd:country .
+gnd:4022153-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4022153-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Großbritannien"@de ;
+skos:inScheme werkd:country .
+gnd:4062334-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4062334-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Vanuatu"@de ;
+skos:inScheme werkd:country .
+gnd:4114937-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4114937-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Makedonien"@de ;
+skos:inScheme werkd:country .
+gnd:4040056-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4040056-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Mongolei"@de ;
+skos:inScheme werkd:country .
+gnd:4015587-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4015587-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Estland"@de ;
+skos:inScheme werkd:country .
+gnd:4074505-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4074505-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Mali"@de ;
+skos:inScheme werkd:country .
+gnd:4073919-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4073919-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kuwait"@de ;
+skos:inScheme werkd:country .
+gnd:4205537-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4205537-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Königreich Dahomey"@de ;
+skos:inScheme werkd:country .
+gnd:4069081-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4069081-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Bahamas"@de ;
+skos:inScheme werkd:country .
+gnd:10186763-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "10186763-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Saint Kitts and Nevis"@de ;
+skos:inScheme werkd:country .
+gnd:4005412-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4005412-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Belize"@de ;
+skos:inScheme werkd:country .
+gnd:4067357-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4067357-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Demokratische Republik Kongo"@de ;
+skos:inScheme werkd:country .
+gnd:1085175626 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085175626" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Schweiz (1513-1798)"@de ;
+skos:inScheme werkd:country .
+gnd:4022520-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4022520-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Guinea"@de ;
+skos:inScheme werkd:country .
+gnd:4058378-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4058378-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Sudan"@de ;
+skos:inScheme werkd:country .
+gnd:4051308-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4051308-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Saint Vincent and the Grenadines"@de ;
+skos:inScheme werkd:country .
+gnd:4090132-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4090132-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Britisch-Somaliland"@de ;
+skos:inScheme werkd:country .
+gnd:4029617-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4029617-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kap Verde"@de ;
+skos:inScheme werkd:country .
+gnd:4004268-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4004268-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Bahrain"@de ;
+skos:inScheme werkd:country .
+gnd:4078435-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4078435-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tschechoslowakei"@de ;
+skos:inScheme werkd:country .
+gnd:4058692-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4058692-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Swasiland"@de ;
+skos:inScheme werkd:country .
+gnd:15612-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "15612-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Obervolta"@de ;
+skos:inScheme werkd:country .
+gnd:7755222-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "7755222-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Staat Südsudan"@de ;
+skos:inScheme werkd:country .
+gnd:4060396-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4060396-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tonga"@de ;
+skos:inScheme werkd:country .
+gnd:2121811-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "2121811-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Qi͏̈bri͏̈s"@de ;
+skos:inScheme werkd:country .
+gnd:4014770-8 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4014770-8" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "England"@de ;
+skos:inScheme werkd:country .
+gnd:19826-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "19826-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ceylon"@de ;
+skos:inScheme werkd:country .
+gnd:4072817-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4072817-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Inkareich"@de ;
+skos:inScheme werkd:country .
+gnd:4002050-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4002050-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Angola"@de ;
+skos:inScheme werkd:country .
+gnd:4028495-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4028495-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Japan"@de ;
+skos:inScheme werkd:country .
+gnd:4037680-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4037680-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Marokko"@de ;
+skos:inScheme werkd:country .
+gnd:4061496-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4061496-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ukraine"@de ;
+skos:inScheme werkd:country .
+gnd:4037212-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4037212-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Malediven"@de ;
+skos:inScheme werkd:country .
+gnd:1085175731 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085175731" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Djibouti"@de ;
+skos:inScheme werkd:country .
+gnd:4129321-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4129321-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Ecuador"@de ;
+skos:inScheme werkd:country .
+gnd:4022522-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4022522-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Guinea-Bissau"@de ;
+skos:inScheme werkd:country .
+gnd:4068436-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4068436-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Äquatorialguinea"@de ;
+skos:inScheme werkd:country .
+gnd:1085175650 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1085175650" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Schweiz (1815-1848)"@de ;
+skos:inScheme werkd:country .
+gnd:4076337-7 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4076337-7" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Preußen (Ordensstaat)"@de ;
+skos:inScheme werkd:country .
+gnd:4079840-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4079840-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Aruba"@de ;
+skos:inScheme werkd:country .
+gnd:4339067-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4339067-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Föderative Republik Jugoslawien"@de ;
+skos:inScheme werkd:country .
+gnd:4072922-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4072922-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Iran (Altertum)"@de ;
+skos:inScheme werkd:country .
+gnd:4060036-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4060036-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tibet"@de ;
+skos:inScheme werkd:country .
+gnd:4074425-5 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4074425-5" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Madagaskar"@de ;
+skos:inScheme werkd:country .
+gnd:4030236-2 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4030236-2" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Kenia"@de ;
+skos:inScheme werkd:country .
+gnd:4075468-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4075468-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Nordkorea"@de ;
+skos:inScheme werkd:country .
+gnd:1017457-6 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1017457-6" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Zaïre"@de ;
+skos:inScheme werkd:country .
+gnd:4118251-0 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4118251-0" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Saint Kitts und Nevis"@de ;
+skos:inScheme werkd:country .
+gnd:4058877-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4058877-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tadschikistan"@de ;
+skos:inScheme werkd:country .
+gnd:4017063-9 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4017063-9" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Fidschi"@de ;
+skos:inScheme werkd:country .
+gnd:1053533500 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "1053533500" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Königreich Widin"@de ;
+skos:inScheme werkd:country .
+gnd:4075653-1 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4075653-1" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Oman"@de ;
+skos:inScheme werkd:country .
+gnd:4061074-3 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+werkd:has_id_value "4061074-3" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Tschad"@de ;
+skos:inScheme werkd:country .
+
+gnd:4029413-4 werkd:entity_startdate "1960" .
+gnd:4039967-9 werkd:entity_startdate "23.05.1991" .
+gnd:2033898-3 werkd:entity_startdate "18.08.1866" .
+gnd:4029839-5 werkd:entity_startdate "10.12.1991" .
+gnd:4079143-9 werkd:entity_startdate "19.09.1991" .
+gnd:4265796-9 werkd:entity_startdate "1975" .
+gnd:4015278-9 werkd:entity_startdate "1941" .
+gnd:4015278-9 werkd:entity_startdate "24.05.1993" .
+gnd:4037203-0 werkd:entity_startdate "16.09.1963" .
+gnd:4041915-0 werkd:entity_startdate "1907" .
+gnd:4067608-0 werkd:entity_startdate "1958" .
+gnd:4067608-0 werkd:entity_startdate "1979" .
+gnd:1081747218 werkd:entity_startdate "07.04.2014" .
+gnd:4078149-5 werkd:entity_startdate "26.04.1964" .
+gnd:4033340-1 werkd:entity_startdate "1898" .
+gnd:4012694-8 werkd:entity_startdate "1844" .
+gnd:4039786-5 werkd:entity_startdate "25.06.1975" .
+gnd:4022047-3 werkd:entity_startdate "1821" .
+gnd:4078029-6 werkd:entity_startdate "1945" .
+gnd:1181214262 werkd:entity_startdate "12.02.2019" .
+gnd:4034571-3 werkd:entity_startdate "22.07.1954" .
+gnd:4072471-2 werkd:entity_startdate "1567" .
+gnd:4026722-2 werkd:entity_startdate "15.08.1947" .
+gnd:1060577984 werkd:entity_startdate "1569" .
+gnd:4027833-5 werkd:entity_startdate "17.03.1861" .
+gnd:4075812-6 werkd:entity_startdate "14.08.1947" .
+gnd:4062742-1 werkd:entity_startdate "1971" .
+gnd:4028750-6 werkd:entity_startdate "22.03.1946" .
+gnd:4077548-3 werkd:entity_startdate "1923" .
+gnd:4054529-5 werkd:entity_startdate "1960" .
+gnd:4086593-9 werkd:entity_startdate "01.11.1981" .
+gnd:4009929-5 werkd:entity_startdate "1818" .
+gnd:5245326-1 werkd:entity_startdate "1581" .
+gnd:4009181-8 werkd:entity_startdate "1962" .
+gnd:44075-9 werkd:entity_startdate "1977" .
+gnd:4054694-9 werkd:entity_startdate "1976" .
+gnd:4060907-8 werkd:entity_startdate "1962" .
+gnd:4061163-2 werkd:entity_startdate "1923" .
+gnd:4026761-1 werkd:entity_startdate "1949" .
+gnd:4062199-6 werkd:entity_startdate "01.09.1991" .
+gnd:4076429-1 werkd:entity_startdate "1952" .
+gnd:5036918-0 werkd:entity_startdate "1795" .
+gnd:4274661-9 werkd:entity_startdate "10.05.1979" .
+gnd:4004487-7 werkd:entity_startdate "1966" .
+gnd:4076986-0 werkd:entity_startdate "24.10.1964" .
+gnd:4058794-0 werkd:entity_startdate "28.09.1961" .
+gnd:4058794-0 werkd:entity_startdate "1918" .
+gnd:4079249-3 werkd:entity_startdate "17.12.1920" .
+gnd:4017875-4 werkd:entity_startdate "1949" .
+gnd:4000687-6 werkd:entity_startdate "08.08.1919" .
+gnd:4029456-0 werkd:entity_startdate "01.07.1867" .
+gnd:4001028-4 werkd:entity_startdate "28.11.1912" .
+gnd:1193111315 werkd:entity_startdate "18.06.1989" .
+gnd:4011882-4 werkd:entity_startdate "03.10.1990" .
+gnd:4062404-3 werkd:entity_startdate "1929" .
+gnd:4000639-6 werkd:entity_startdate "1941" .
+gnd:4003900-6 werkd:entity_startdate "01.01.1901" .
+gnd:4049850-5 werkd:entity_startdate "18.04.1980" .
+gnd:4035665-6 werkd:entity_startdate "23.01.1719" .
+gnd:4020949-0 werkd:entity_startdate "1957" .
+gnd:4069500-1 werkd:entity_startdate "1948" .
+gnd:4011890-3 werkd:entity_startdate "07.10.1949" .
+gnd:4044569-0 werkd:entity_startdate "16.09.1975" .
+gnd:4009696-8 werkd:entity_startdate "1972" .
+gnd:15582-2 werkd:entity_startdate "1960" .
+gnd:4019197-7 werkd:entity_startdate "18.02.1965" .
+gnd:1009150-6 werkd:entity_startdate "05.12.1936" .
+gnd:4075613-0 werkd:entity_startdate "1867" .
+gnd:4050939-4 werkd:entity_startdate "23.12.1861" .
+gnd:4008003-1 werkd:entity_startdate "1822" .
+gnd:1135617678 werkd:entity_startdate "1916" .
+gnd:4073009-8 werkd:entity_startdate "1990" .
+gnd:4019052-3 werkd:entity_startdate "1960" .
+gnd:4074495-4 werkd:entity_startdate "06.07.1964" .
+gnd:4395034-6 werkd:entity_startdate "1917" .
+gnd:4395034-6 werkd:entity_startdate "1922" .
+gnd:15633-4 werkd:entity_startdate "9.12.1961" .
+gnd:45879-X werkd:entity_startdate "01.12.1918" .
+gnd:4085456-5 werkd:entity_startdate "03.11.1978" .
+gnd:4079596-2 werkd:entity_startdate "16.08.1960" .
+gnd:1079565973 werkd:entity_startdate "1830" .
+gnd:4042300-1 werkd:entity_startdate "1960" .
+gnd:122139-5 werkd:entity_startdate "1918" .
+gnd:122139-5 werkd:entity_startdate "21.08.1991" .
+gnd:4078228-1 werkd:entity_startdate "1939" .
+gnd:4031812-6 werkd:entity_startdate "1819" .
+gnd:4031812-6 werkd:entity_startdate "1861" .
+gnd:4037257-1 werkd:entity_startdate "21.09.1964" .
+gnd:129224-9 werkd:entity_startdate "1979" .
+gnd:5027373-5 werkd:entity_startdate "24.11.1958" .
+gnd:4061457-8 werkd:entity_startdate "09.10.1962" .
+gnd:1123969752 werkd:entity_startdate "260" .
+gnd:4008479-6 werkd:entity_startdate "01.01.1984" .
+gnd:4078012-0 werkd:entity_startdate "1910" .
+gnd:4061206-5 werkd:entity_startdate "20.03.1956" .
+gnd:134320-8 werkd:entity_startdate "1976" .
+gnd:4077509-4 werkd:entity_startdate "1960" .
+gnd:4055297-4 werkd:entity_startdate "1969" .
+gnd:4055297-4 werkd:entity_startdate "14.03.1939" .
+gnd:4002890-2 werkd:entity_startdate "1816" .
+gnd:4000556-2 werkd:entity_startdate "1971" .
+gnd:1225128579 werkd:entity_startdate "2019" .
+gnd:4061255-7 werkd:entity_startdate "27.10.1991" .
+gnd:4011889-7 werkd:entity_startdate "23.05.1949" .
+gnd:3018268-2 werkd:entity_startdate "1997" .
+gnd:4122008-0 werkd:entity_startdate "1968" .
+gnd:4078050-8 werkd:entity_startdate "24.06.1954" .
+gnd:4045771-0 werkd:entity_startdate "1946" .
+gnd:4051788-3 werkd:entity_startdate "1932" .
+gnd:4038051-8 werkd:entity_startdate "1958" .
+gnd:4028966-7 werkd:entity_startdate "1929" .
+gnd:4022406-5 werkd:entity_startdate "14.11.1990" .
+gnd:4035567-6 werkd:entity_startdate "1920" .
+gnd:4035589-5 werkd:entity_startdate "1951" .
+gnd:4130903-0 werkd:entity_startdate "26.03.1971" .
+gnd:4074183-7 werkd:entity_startdate "1966" .
+gnd:4021981-1 werkd:entity_startdate "1974" .
+gnd:4029400-6 werkd:entity_startdate "1954" .
+gnd:4076899-5 werkd:entity_startdate "25.12.1991" .
+gnd:4076910-0 werkd:entity_startdate "1962" .
+gnd:4085931-9 werkd:entity_startdate "23.08.1991" .
+gnd:4058664-9 werkd:entity_startdate "29.12.1954" .
+gnd:1001254-0 werkd:entity_startdate "1969" .
+gnd:1182552048 werkd:entity_startdate "1917" .
+gnd:4022428-4 werkd:entity_startdate "1823" .
+gnd:4074266-0 werkd:entity_startdate "06.09.1991" .
+gnd:4074266-0 werkd:entity_startdate "1918" .
+gnd:4074641-0 werkd:entity_startdate "12.03.1968" .
+gnd:4265797-0 werkd:entity_startdate "1975" .
+gnd:4088707-8 werkd:entity_startdate "08.08.1984" .
+gnd:4029924-7 werkd:entity_startdate "01.09.1971" .
+gnd:4068887-2 werkd:entity_startdate "18.10.1991" .
+gnd:4068887-2 werkd:entity_startdate "1918" .
+gnd:4076778-4 werkd:entity_startdate "v753" .
+gnd:6070596-6 werkd:entity_startdate "05.07.1811" .
+gnd:4096343-3 werkd:entity_startdate "1950" .
+gnd:5245328-5 werkd:entity_startdate "1806" .
+gnd:4075765-1 werkd:entity_startdate "20.05.2002" .
+gnd:1257385879 werkd:entity_startdate "12.04.1798" .
+gnd:4030848-0 werkd:entity_startdate "1991" .
+gnd:2008993-4 werkd:entity_startdate "1871" .
+gnd:4046496-9 werkd:entity_startdate "1918" .
+gnd:4070610-2 werkd:entity_startdate "27.06.1977" .
+gnd:4075202-1 werkd:entity_startdate "1966" .
+gnd:4078541-5 werkd:entity_startdate "16.11.1918" .
+gnd:4072186-3 werkd:entity_startdate "1966" .
+gnd:502234-4 werkd:entity_startdate "1914" .
+gnd:4007607-6 werkd:entity_startdate "06.08.1825" .
+gnd:2036349-7 werkd:entity_startdate "27.10.1979" .
+gnd:14282-7 werkd:entity_startdate "1953" .
+gnd:4063514-4 werkd:entity_startdate "02.07.1976" .
+gnd:4042298-7 werkd:entity_startdate "18.12.1958" .
+gnd:4043271-3 werkd:entity_startdate "12.11.1918" .
+gnd:4042203-3 werkd:entity_startdate "1815" .
+gnd:4692332-9 werkd:entity_startdate "04.02.2003" .
+gnd:4035583-4 werkd:entity_startdate "1847" .
+gnd:4008866-2 werkd:entity_startdate "1878" .
+gnd:4073008-6 werkd:entity_startdate "1967" .
+gnd:4007857-7 werkd:entity_startdate "1966" .
+gnd:4303381-7 werkd:entity_startdate "01.01.1993" .
+gnd:4027808-6 werkd:entity_startdate "14.05.1948" .
+gnd:5025912-X werkd:entity_startdate "04.04.1959" .
+gnd:4005503-6 werkd:entity_startdate "30.11.1975" .
+gnd:4022153-2 werkd:entity_startdate "1707" .
+gnd:4062334-8 werkd:entity_startdate "1980" .
+gnd:4114937-3 werkd:entity_startdate "1944" .
+gnd:4015587-0 werkd:entity_startdate "1918" .
+gnd:4015587-0 werkd:entity_startdate "21.08.1991" .
+gnd:4074505-3 werkd:entity_startdate "22.09.1960" .
+gnd:4205537-4 werkd:entity_startdate "1625" .
+gnd:4069081-7 werkd:entity_startdate "10.07.1973" .
+gnd:10186763-3 werkd:entity_startdate "1987,Mai" .
+gnd:4005412-3 werkd:entity_startdate "21.09.1981" .
+gnd:4067357-1 werkd:entity_startdate "1997" .
+gnd:4067357-1 werkd:entity_startdate "1960" .
+gnd:4022520-3 werkd:entity_startdate "02.10.1958" .
+gnd:4058378-8 werkd:entity_startdate "1956" .
+gnd:4090132-4 werkd:entity_startdate "1884" .
+gnd:4029617-9 werkd:entity_startdate "1975" .
+gnd:4004268-6 werkd:entity_startdate "14.08.1971" .
+gnd:4078435-6 werkd:entity_startdate "XX.05.1945" .
+gnd:4078435-6 werkd:entity_startdate "28.10.1918" .
+gnd:15612-7 werkd:entity_startdate "1960" .
+gnd:7755222-2 werkd:entity_startdate "09.07.2011" .
+gnd:2121811-0 werkd:entity_startdate "1570" .
+gnd:19826-2 werkd:entity_startdate "1948" .
+gnd:4002050-2 werkd:entity_startdate "11.11.1975" .
+gnd:4037680-1 werkd:entity_startdate "02.03.1956" .
+gnd:4061496-7 werkd:entity_startdate "1991" .
+gnd:4022522-7 werkd:entity_startdate "24.09.1973" .
+gnd:4068436-2 werkd:entity_startdate "1964" .
+gnd:4076337-7 werkd:entity_startdate "1230" .
+gnd:4339067-5 werkd:entity_startdate "1992" .
+gnd:4074425-5 werkd:entity_startdate "1958" .
+gnd:4030236-2 werkd:entity_startdate "12.12.1963" .
+gnd:4075468-6 werkd:entity_startdate "1945" .
+gnd:1017457-6 werkd:entity_startdate "1971" .
+gnd:4058877-4 werkd:entity_startdate "31.08.1991" .
+gnd:4017063-9 werkd:entity_startdate "10.10.1970" .
+gnd:1053533500 werkd:entity_startdate "1337" .
+gnd:4061074-3 werkd:entity_startdate "1960" .
+gnd:2033898-3 werkd:entity_enddate "1871" .
+gnd:4015278-9 werkd:entity_enddate "1962" .
+gnd:4067608-0 werkd:entity_enddate "1976" .
+gnd:61014-8 werkd:entity_enddate "1980" .
+gnd:1241258295 werkd:entity_enddate "1898" .
+gnd:4072471-2 werkd:entity_enddate "1918" .
+gnd:1060577984 werkd:entity_enddate "1795" .
+gnd:4077548-3 werkd:entity_enddate "25.12.1991" .
+gnd:123613-1 werkd:entity_enddate "1975" .
+gnd:5245326-1 werkd:entity_enddate "1798" .
+gnd:44075-9 werkd:entity_enddate "1979" .
+gnd:1027360262 werkd:entity_enddate "1813" .
+gnd:5036918-0 werkd:entity_enddate "1805" .
+gnd:4058794-0 werkd:entity_enddate "01.02.1958" .
+gnd:4079249-3 werkd:entity_enddate "04.07.1997" .
+gnd:1120732131 werkd:entity_enddate "531" .
+gnd:4075720-1 werkd:entity_enddate "1922" .
+gnd:4000639-6 werkd:entity_enddate "1936" .
+gnd:4069500-1 werkd:entity_enddate "17.06.1989" .
+gnd:4011890-3 werkd:entity_enddate "02.10.1990" .
+gnd:1035027-5 werkd:entity_enddate "02.12.1971" .
+gnd:15582-2 werkd:entity_enddate "1975" .
+gnd:133557-1 werkd:entity_enddate "1987" .
+gnd:1009150-6 werkd:entity_enddate "1991" .
+gnd:4075613-0 werkd:entity_enddate "1918" .
+gnd:1135617678 werkd:entity_enddate "1920" .
+gnd:4395034-6 werkd:entity_enddate "1991" .
+gnd:4395034-6 werkd:entity_enddate "1922" .
+gnd:15633-4 werkd:entity_enddate "Apr.1964" .
+gnd:4114201-9 werkd:entity_enddate "1870" .
+gnd:45879-X werkd:entity_enddate "03.10.1929" .
+gnd:1079565973 werkd:entity_enddate "1858" .
+gnd:122139-5 werkd:entity_enddate "1940" .
+gnd:4031812-6 werkd:entity_enddate "1832" .
+gnd:4079248-1 werkd:entity_enddate "1975" .
+gnd:5027373-5 werkd:entity_enddate "03.04.1959" .
+gnd:1123969752 werkd:entity_enddate "274" .
+gnd:4007467-5 werkd:entity_enddate "27.10.1918" .
+gnd:134320-8 werkd:entity_enddate "1979" .
+gnd:4055297-4 werkd:entity_enddate "1945" .
+gnd:4000556-2 werkd:entity_enddate "1958" .
+gnd:4011889-7 werkd:entity_enddate "02.10.1990" .
+gnd:3018268-2 werkd:entity_enddate "1899" .
+gnd:4078050-8 werkd:entity_enddate "02.07.1976" .
+gnd:4028966-7 werkd:entity_enddate "1992" .
+gnd:4022406-5 werkd:entity_enddate "24.02.1921" .
+gnd:120375-7 werkd:entity_enddate "1939" .
+gnd:4076899-5 werkd:entity_enddate "1917" .
+gnd:4085931-9 werkd:entity_enddate "1920" .
+gnd:43683-5 werkd:entity_enddate "1975" .
+gnd:5216525-5 werkd:entity_enddate "1885" .
+gnd:1001254-0 werkd:entity_enddate "05.03.1990" .
+gnd:1182552048 werkd:entity_enddate "1920" .
+gnd:4074266-0 werkd:entity_enddate "02.10.1940" .
+gnd:4068887-2 werkd:entity_enddate "1920" .
+gnd:4076778-4 werkd:entity_enddate "500" .
+gnd:6070596-6 werkd:entity_enddate "25.07.1812" .
+gnd:4096343-3 werkd:entity_enddate "1960" .
+gnd:5245328-5 werkd:entity_enddate "1810" .
+gnd:1257385879 werkd:entity_enddate "10.03.1803" .
+gnd:2008993-4 werkd:entity_enddate "1945" .
+gnd:4046496-9 werkd:entity_enddate "1569" .
+gnd:502234-4 werkd:entity_enddate "1960" .
+gnd:14282-7 werkd:entity_enddate "31.12.1963" .
+gnd:4063514-4 werkd:entity_enddate "1954" .
+gnd:2035457-5 werkd:entity_enddate "1806" .
+gnd:4043271-3 werkd:entity_enddate "1867" .
+gnd:4692332-9 werkd:entity_enddate "03.06.2006" .
+gnd:4073008-6 werkd:entity_enddate "21.05.1990" .
+gnd:5025912-X werkd:entity_enddate "21.09.1960" .
+gnd:4114937-3 werkd:entity_enddate "11.02.2019" .
+gnd:4015587-0 werkd:entity_enddate "1940" .
+gnd:4205537-4 werkd:entity_enddate "1892" .
+gnd:4067357-1 werkd:entity_enddate "1971" .
+gnd:4058378-8 werkd:entity_enddate "1899" .
+gnd:4090132-4 werkd:entity_enddate "1960" .
+gnd:4078435-6 werkd:entity_enddate "31.12.1992" .
+gnd:4078435-6 werkd:entity_enddate "14.03.1939" .
+gnd:15612-7 werkd:entity_enddate "08.08.1984" .
+gnd:2121811-0 werkd:entity_enddate "1878" .
+gnd:4014770-8 werkd:entity_enddate "1707" .
+gnd:19826-2 werkd:entity_enddate "1972" .
+gnd:4076337-7 werkd:entity_enddate "1561" .
+gnd:4339067-5 werkd:entity_enddate "2003" .
+gnd:4074425-5 werkd:entity_enddate "1896" .
+gnd:1017457-6 werkd:entity_enddate "17.05.1997" .
+gnd:1053533500 werkd:entity_enddate "1396" .
+
+gnd:4042050-4 skos:comment "Staat in Mittelamerika zwischen Pazifik und Karibischem Meer; Hauptstadt: Managua"@de .
+gnd:4029413-4 skos:comment "1.1.1959: Autonomie; 1.1.1960: Unabhängigkeit; Amtssprachen: Französisch; seit. 1.10.1965 auch Englisch"@de .
+gnd:4039967-9 skos:comment "Seit 27.8.1991 unabhängiger Staat in d. GUS"@de .
+gnd:4039967-9 skos:comment "Amtssprache: rumänisch"@de .
+gnd:4037700-3 skos:comment "Staat im westlichen Pazifik, umfasst die gleichnamige, zum östlichen Mikronesien zählende Inselgruppe"@de .
+gnd:4079143-9 skos:comment "Amtssprache in Weißrussland von März 1994 - 26.11.1996: nur weißruss.; früher und später: russ. und weißruss."@de .
+gnd:4265796-9 skos:comment "Staat im südwestl. Pazifik, umfaßt Salomoninseln (ohne die Inseln Bougainville u. Buka), Inselgruppe Ontong Java, Santa-Cruz-Inseln, Duff Islands, Reef Island, Tikopia, Rennel u. Bellona; 7.7.1978 unabhängig, bis Juni 1975 brit. Protektorat, 1976 innere Autonomie"@de .
+gnd:4015278-9 skos:comment "Ab Mai 1993 selbständiger, von der UNO anerkannter Staat"@de .
+gnd:4015278-9 skos:comment "1941-50 unter britischer Militärverwaltung; 1952 als autonomes Gebiet zu Äthiopien; seit 24.5.1993 selbständig"@de .
+gnd:4037203-0 skos:comment "Staat in Südostasien"@de .
+gnd:4041915-0 skos:comment "Inselstaat im Pazifik"@de .
+gnd:4067608-0 skos:comment "Gilt seit Ausrufung der Republik 1.12.1958; Unabhängigkeit 13.8.1960"@de .
+gnd:4067608-0 skos:comment "Binnenstaat in Zentralafrika; ehemals Teil Französisch-Äquatorialafrikas"@de .
+gnd:1081747218 skos:comment "am 07.04.2014 proklamierte Republik ohne internationale Anerkennung"@de .
+gnd:4078149-5 skos:comment "Staat in Ost-Afrika, 26.4.1964 durch Zusammenschluß von Tanganjika, Sansibar, Pemba u. Mafia gebildet"@de .
+gnd:4039786-5 skos:comment "Staat in SO-Afrika, Grenzen 1891/94 festgelegt; bis 1951 portug. Kolonie, 1951-1974 portug. Übersee-Provinz, seit 25.6.1975 unabhängig"@de .
+gnd:1241271305 skos:comment "War ein altsüdarabisches Königreich im heutigen Jemen."@de .
+gnd:7756217-3 skos:comment "Wadhwan war ein Fürstenstaat Britisch-Indiens im Nordosten der Halbinsel Kathiawar im heutigen Bundesstaat Gujarat, 1630 - 1960. Seine Hauptstadt war der Ort Wadhwan."@de .
+gnd:1181214262 skos:comment "Namensänderung zum 12.02.2019"@de .
+gnd:1241258295 skos:comment "Sakrales Königtum, welches um 1600 westlich des Staates Luba entstand"@de .
+gnd:4072471-2 skos:comment "Umfasst Landgrafschaft Hessen-Darmstadt 1567-1806; Großherzogtum Hessen 1806-1918"@de .
+gnd:1060577984 skos:comment "Mit der Union von Lublin 1569 gegründetes Staatswesen (Realunion), bestehend aus dem Königreich Polen und dem Großfürstentum Litauen, sowie weiteren Gebieten. (Ab 1386 waren Polen und Litauen bereits in einer Personalunion verbunden gewesen). Die dritte polnische Teilung 1795 bedeutete das endgültige Ende des Staates, sein noch verbliebenes Gebiet wurde unter die Staaten Russland, Österreich und Preußen aufgeteilt; mit den napoleonischen Kriegen traten weitere Gebietsänderungen ein (s. Herzogtum Warschau; Kongresspolen; Staat Krakau)."@de .
+gnd:4051307-5 skos:comment "Ostkaribischer Inselstaat der Windward Islands, umfasst die gleichnamige Insel der Kleinen Antillen"@de .
+gnd:4075812-6 skos:comment """Government"" ist nach § 451 keine Kö., es ist ein zusammenfassender Begriff für verschiedene Regierungseinrichtungen"@de .
+gnd:4062742-1 skos:comment "Föderation der 7 Scheichtümer (Emirate) an der S-Küste des Persischen Golfes, 2.12.1971 gegründet"@de .
+gnd:4077548-3 skos:comment "Bestätigung d. Deklaration u. d. Vertrags zur Bildung d. UdSSR vom 27.12.1922 durch d. 1. Allunions-Sowjetkongreß am 30.12.1922. Altrichter, Staat u. Revolution in Sowjetrußland 1917-1922/23(1981), S. 190/91; v. Rauch, Geschichte der Sowjetunion (1987/7), S. 159."@de .
+gnd:4054529-5 skos:comment "Staat in Westafrika"@de .
+gnd:4054529-5 skos:comment "Staat in Westafrika, 58 autonome Republik innerhalb der ""Französischen Gemeinschaft"", 1960 Unabhängigkeit"@de .
+gnd:4060344-1 skos:comment "Staat in Westafrika, am Golf von Guinea; Hauptstadt ist Lome (Lomé), gilt für die Zeit als Autonome Republik an 1956; Unabhängigkeit: 27.4.1960"@de .
+gnd:4054694-9 skos:comment "Inselgruppe und Staat im Indischen Ozean"@de .
+gnd:1027360262 skos:comment "Staatswesen auf dem Gebiet von Dagestan, 10. Jh. - 1813; zeitweise geteilt in ""Kadijstvo"" im Norden (Zentrum Khuchni) und Rest-""Majsumstvo"" im Süden"@de .
+gnd:4060907-8 skos:comment "Ostkaribischer Inselstaat vor der Nordostküste Südamerikas"@de .
+gnd:4026761-1 skos:comment "Inselstaat in Südostasien"@de .
+gnd:4062199-6 skos:comment """1995, May 6. The law 'On introducing the Uzbek alphabet based on Latin characters' was issued."" - der Gebrauch der kyrillischen Schrift für die Amtssprache Usbekisch ist neben dem neuen Lateinalphabet jedoch weiterhin gestattet"@de .
+gnd:4316277-0 skos:comment "Autonome Präfektur der Yi-Minderheit in Sichuan (in Pinyin)"@de .
+gnd:4040031-1 skos:comment "Stadtstaat an der franz. Riviera, 25.2.1489 unabhängig, griech. Monoikos, röm. Herculis Monoeci Portus"@de .
+gnd:4076429-1 skos:comment "Amtssprachen englisch u. spanisch; nach RAK § 406 Ansetzung engl.-sprachig"@de .
+gnd:4076429-1 skos:comment "Außengebiet der USA im Bereich der Westindischen Inseln"@de .
+gnd:4274661-9 skos:comment "Umfaßt: Yap, Truk, Ponape, Kosrae"@de .
+gnd:4274661-9 skos:comment "Inselstaat im Westen des Pazifischen Ozeans, bestehend aus den Ostkarolinen (Kosrae, Pohnpei, Chuuk) und den zu den Westkarolinen zählenden Yap Islands"@de .
+gnd:4004487-7 skos:comment "Inselstaat innerhalb des Commonwealth of Nations, Windward Islands , Kleine Antillen, Unabhängigkeit: 30.11.1966"@de .
+gnd:4307086-3 skos:comment "Alpenslawisches Herzogtum der Karantaner in Kärnten 2. Hälfte 7. Jh. errichtet, kam um 740/50 unter Herrschaft Bayerns"@de .
+gnd:4076986-0 skos:comment "Darin aufgegangen: Zentralafrikanische Föderation"@de .
+gnd:4076986-0 skos:comment "Binnenstaat im südlichen Afrika"@de .
+gnd:7756218-5 skos:comment "Bamra war ein Fürstenstaat Britisch-Indiens im heutigen Bundesstaat Orissa 1545 - 1956. Seine Hauptstadt war der Ort Deogarh"@de .
+gnd:4058794-0 skos:comment "(bis 1957 und ab 1962)"@de .
+gnd:4058794-0 skos:comment "Gilt auch für die Zeit als französisches Völkerbundmandat 1920 - 1941"@de .
+gnd:4058794-0 skos:comment "Von 1958-1961 Vereinigung von Ägypten und Syrien (=United Arab Republic), nach Austritt Syriens weiterhin offizieller Name Ägyptens bis 1971"@de .
+gnd:4079249-3 skos:comment "1920 - 1961 unter neuseeländ. Verwaltung, ab 1.1.1962 unabhängig"@de .
+gnd:4118426-9 skos:comment "Inselstaat im Golf von Guinea"@de .
+gnd:1120732131 skos:comment "Das Thüringer Reich existierte bis zur Zerschlagung in der ""Schlacht an der Unstrut"" durch die Franken und Sachsen im Jahr 531; Ausdehnung von der Elbe bis zum Main (vermutlich sogar bis zur Donau) und von der Werra bis zum Erzgebirge; um 500 das mächtigste germanische Reich außerhalb der alten römischen Reichsgrenzen; erste namentliche Nennung des Thüringer Königs Bisinus am Ende des 5. Jh."@de .
+gnd:4010193-9 skos:comment "Königreich der Hurriter in N-Mesopotamien im 16. Jh. v. Chr. gebildet, um 1335 v. Chr. zusammengbrochen; ein Teilgebiet bestand als Hanigalbat bis ins 13. Jh. v. Chr. fort"@de .
+gnd:4000687-6 skos:comment "Unabhängigkeit wurde am 31.8.1907 vereinbart und am 8.8.1919 im Vertrag von Rawalpindi anerkannt"@de .
+gnd:4029456-0 skos:comment "1867 als Dominion durch Umwandlung von Britisch-Nordamerika entstanden."@de .
+gnd:4001028-4 skos:comment "Ansetzung Dr. Faensen, SBB, IIID. - 28.11.1912 Erklärung der Unabhängigkeit, 29.7.1913 Anerkennung durch die Großmächte."@de .
+gnd:1193111315 skos:comment "bis zur Kolonialisierung 1885 und seit der Unabhängigkeit 1948 offizielle Bez. im Inland, per Dekret vom 18.6.1989 als offizielle Staats-Bez. im internationalen Gebrauch verfügt"@de .
+gnd:4062404-3 skos:comment "Fragen des völkerrechtlichen Status u. der staatl. Organisation s. Heiliger Stuhl; einz. Bauwerke u. ortsgebund. Körperschaften s. Rom; geistliche Angelegenheiten s. Papst, Römische Kurie oder Katholische Kirche"@de .
+gnd:4003900-6 skos:comment "Umfaßt: Lord Howe Island, Macquarie Island, Ashmore, Cartier"@de .
+gnd:131744-1 skos:comment "Niue is a self-governing state in free Association with New Zealand"@de .
+gnd:4035665-6 skos:comment "entstanden 1719 aus der Vereinigung der Grafschaft Vaduz und der Herrschaft Schellenberg"@de .
+gnd:4020949-0 skos:comment "Staat in W-Afrika seit 6.3.1957 unabhängig"@de .
+gnd:4032097-2 skos:comment "Staat in Zentralafrika; ehemals Teil Französisch-Äquatorialafrikas, seit 15.8.1960 unabhängiger Staat"@de .
+gnd:4040163-7 skos:comment "Selbständiger Staat von 1878 - 1918 und seit dem 3.6.2006."@de .
+gnd:1171764901 skos:comment "Aramäischer Stadtstaat und Königreich (1 Kön 19,15), Hauptstadt Damaskus"@de .
+gnd:4051524-2 skos:comment "Souveräne Republik in Italien seit Verfassung vom 8.10.1600; Freundschaftsvertrag u. Zollunion mit Italien"@de .
+gnd:4019197-7 skos:comment "Staat in Westafrika, am Atlantik"@de .
+gnd:4075613-0 skos:comment "Ehem. Vielvölkerstaat in Mittel- u. Südosteuropa, 8.6.1867 gegründet (Krönung), Okt./Nov. 1918 aufgelöst"@de .
+gnd:4073009-8 skos:comment "Landschaft (Hochland südlich von Mekka) und Staat vor der Teilung (ca. 1970) und nach der Vereinigung 1990, (Anfänge - 1970) (1990 -)"@de .
+gnd:4014149-4 skos:comment "das Reich Elam (Altertum) 3000 und 640 v. Chr. mit der Hauptstadt Susa lag östlich des Tigris in einem Gebiet, das heute Chusistan (im heutigen Iran) .Wurde immer wieder von den Mächten des Zweistromlandes (Sumerer, Akkader, Babylonier, Assyrer) erobert und fiel seinerseits häufig in Mesopotamien ein"@de .
+gnd:4019052-3 skos:comment "Staat im westlichen Zentralafrika; Teil Französisch-Äquatorialafrikas, seit 17.8.1960 unabhängiger Staat"@de .
+gnd:4074495-4 skos:comment "Staat in Südostafrika"@de .
+gnd:4395034-6 skos:comment "(1918-1922 und zugleich bis 1991 als Teilrepublik der UdSSR)"@de .
+gnd:4114201-9 skos:comment "Herrschaftsgebiet des Papstes in Mittelitalien, seit dem 6. Jh. auch Patrimonium Petri genannt; Kern war der Grundbesitz der Kirche in Rom u. in anderen ital. Gebieten; im Verlauf der Franz. Revolution 1797 zur Röm. Republik erklärt u. 1809 dem Königreich Italien eingegliedert, 1815 wiederhergestellt, 1870 in ital. Nationalstaat einverleibt"@de .
+gnd:4085456-5 skos:comment "Inselstaat der Karibik, zweitgrößte der Windward Islands"@de .
+gnd:1079565973 skos:comment "Zentralistische Republik auf dem Gebiet des heutigen Kolumbiens, Panamas und Teilen Ecuadors, Perus, Brasiliens, Costa Ricas, Venezuelas und Nicaraguas. Der Staat entstand nach der Auflösung Großkolumbiens 1830 durch die Abspaltung Ecuadors und Venezuelas. 1858 wurde der Staat wieder umbenannt, als die Granada-Konföderation gebildet wurde. Daraus ging dann das heutige Kolumbien hervor."@de .
+gnd:4078228-1 skos:comment "Konstitutionelles Königreich, bis 1939 u. 1946-49 Siam"@de .
+gnd:4031812-6 skos:comment "1832-1858 Republik Neugranada"@de .
+gnd:7589556-0 skos:comment "Südteil der Insel Saint-Martin Kleine Antillen; Teil der Niederländischen Antillen"@de .
+gnd:7589556-0 skos:comment "Insel; südlicher Teil; der nördliche Teil ist Saint-Martin. Ab dem 10.10.2010 selbstständig"@de .
+gnd:4037257-1 skos:comment "Inselstaat im zentralen Mittelmeer, unabhängig seit 21.9.1964"@de .
+gnd:1085176169 skos:comment "(Ab 1990 bis 1992)"@de .
+gnd:4027754-9 skos:comment "Insel und Staat im Europäischen Nordmeer, umfasst außer der Hauptinsel Island einige kleine vorgelagerte Inseln"@de .
+gnd:4027754-9 skos:comment "Unabhängigkeit 17.6.1944"@de .
+gnd:4001179-3 skos:comment "Unabhängigkeit 5.7.1962"@de .
+gnd:4072956-4 skos:comment "im engeren Sinne der Nordstaat 926 v.Chr. - 722 v.Chr., im weiteren Sinne der gesamte palästinensische Raum von der israelitischen Staatenbildung bis zur römischen Eroberung 135 n.Chr."@de .
+gnd:1123969752 skos:comment "260 n. Chr. von Postumus als von Rom unabhängige Herrschaft gegr., das Gebiet umfaßte Gallien, Britannien, Nordspanien und wohl auch Teile von Raetien, Residenstädte Köln und Trier; Niedergang ab 269, Aurelianus gliederte das Gebiet 274 wieder in das röm. Imperium ein"@de .
+gnd:4008479-6 skos:comment "Amtssprache malaiisch"@de .
+gnd:4426211-5 skos:comment "Seit 1980 Republik, britisches Überseegebiet"@de .
+gnd:4078012-0 skos:comment "Zusammenschluß der Gebiete Transvaal, Oranje-Freistaat, Natal, Kapkolonie"@de .
+gnd:4007467-5 skos:comment "nach dem 1. Weltkrieg ging Böhmen in der am 28.10.1918 gegründeten Tschechoslowakei auf; vom 15.3.1939-8.5.1945 bestand Böhmen als „Protekorat Böhmen und Mähren“."@de .
+gnd:4007467-5 skos:comment "Amtssprache - 1918 deutsch, 1919-1939 deutsch u. tschechisch"@de .
+gnd:1241216274 skos:comment "Eisenzeitliches Königtum im östlichen Mittelmeerraum um Jerusalem, 926 v.Chr. - 586 v.Chr."@de .
+gnd:4055297-4 skos:comment "Selbständiger Staat 1939 - 1945 und seit dem 1.1.1993; 1969 - 1992 Teilrepublik der Tschechoslowakei"@de .
+gnd:4002890-2 skos:comment "9.7.1816 Unabhängigkeit"@de .
+gnd:4000556-2 skos:comment "Gilt auch für den türk. Tributärstaat bis 1914 und das brit. Protektorat 1914 - 1922."@de .
+gnd:4054908-2 skos:comment "Staat in Westafrika am Atlantischen Ozean, 1808 brit. Kronkolonie, 1896 brit. Protektorat, 1958 autonom, 27.4.1961 unabhängig"@de .
+gnd:4061255-7 skos:comment "Amtssprache Turkmenisch; seit 1996 per Präsidentenerlass Wechsel der Kyrilliza zur Lateinschrift"@de .
+gnd:4005406-8 skos:comment "Für 1581-1713 bevorzugt Spanische Niederlande, 1714-1794 Österreichische Niederlande ansetzen."@de .
+gnd:4045771-0 skos:comment "Staat und Inselgruppe in Südostasien, im Malaiischen Archipel"@de .
+gnd:4051788-3 skos:comment "Staat auf der Halbinsel Arabien, 23.9.1932 proklamiert"@de .
+gnd:4293521-0 skos:comment "Insel im südlichen Pazifik"@de .
+gnd:4038051-8 skos:comment "Islamische Präsidial-Republik in NW-Afrika, 28.11.1958 autonome Republik innerhalb der ""Französischen Gemeinschaft"", 28.11.1960 Unabhängigkeit"@de .
+gnd:4035567-6 skos:comment "Gilt auch für die Zeit als französisches Völkerbundmandat; gilt auch für die Zeit vor der Verfassung vom 23.5.1926"@de .
+gnd:4035567-6 skos:comment "Die große Mehrheit der Libanesen spricht als Muttersprache libanesisches Arabisch; in Zeitungen, Magazinen und in den öffentlichen Rundfunkmedien wird oft das Hocharabische verwendet. Daneben ist auch Französisch als Verkehrs- und Elitesprache und in letzter Zeit als Drittsprache auch Englisch verbreitet."@de .
+gnd:4073841-3 skos:comment "Staat im südöstlichen Mitteleuropa"@de .
+gnd:4130903-0 skos:comment "Sprache: Bengali"@de .
+gnd:4055302-4 skos:comment "Staat im Süden Mitteleuropas; Souveränität seit 18.9.1991"@de .
+gnd:4055089-8 skos:comment "Stadtstaat u. Inselrepublik vor der S-Spitze der Malaiischen Halbinsel, 22.12.1965 unabhängig"@de .
+gnd:120375-7 skos:comment "Bis 1939 u. 1946-1949"@de .
+gnd:4021981-1 skos:comment "Staat im Bereich der Westindischen Inseln; umfaßt die südlichsten der Kleinen Antillen u. die südlichen Grenadinen"@de .
+gnd:4029400-6 skos:comment "Staat im festländischen Südostasien, grenzt im Westen und Nordwesten an Thailand, im Nordosten an Laos, im Osten und Süden an Vietnam und im Südwesten an den Golf von Thailand; Hauptstadt ist Phnom Penh"@de .
+gnd:4044445-4 skos:comment "Staat in Zentralamerika, 3.11.1903 unabhängig"@de .
+gnd:4014426-4 skos:comment "Staat in Westafrika, 1889 franz. Protektoratsgebiet, 1895 Teil von Französisch-Westafrika, 1945 Überseeterritorium mit beschränkter innerer Autonomie, 1958 autonome Republik innerhalb der Franz. Gemeinschaft, 7.8.1960 völlige Unabhängigkeit"@de .
+gnd:4085931-9 skos:comment "Erste staatliche Unabhängigkeit: 28.5.1918 - Nov. 1920"@de .
+gnd:1028843712 skos:comment "Nicht anerkannte Republik der Griechen in Nordepirus (heutiges Südalbanien) vom 28. Februar 1914 - 17. Mai 1914, danach bis zum 27. Oktober 1914 autonom unter nomineller alban. Herrschaft. Hauptstadt Gjirokastër, das Gebiet umfasste auch Himarë, Kolonjë, Përmet und Sarandë ; an der Spitze: Georgios Christakis-Zografos"@de .
+gnd:4025814-2 skos:comment "Staat in Zentralamerika; Hauptstadt: Tegucigalpa"@de .
+gnd:5216525-5 skos:comment "Nach d. 3. britisch-birmanischen Krieg 1885 vollständig von Großbritannien unterworfen; ab d. 1.1.1886 Teil von Britisch-Indien"@de .
+gnd:4062512-6 skos:comment "Staat im Norden Südamerikas"@de .
+gnd:4028456-6 skos:comment "Staat in der Karibik; drittgrößte Insel der Großen Antillen"@de .
+gnd:4058664-9 skos:comment "1816 Kolonie Niederländisch-Guayana, amtl. Suriname"@de .
+gnd:1182552048 skos:comment "der erste ukrainische Nationalstaat"@de .
+gnd:4074266-0 skos:comment "In der Zeit Litovskaja SSR war Amtssprache Russisch"@de .
+gnd:4074641-0 skos:comment "Seit 12.3.1992 Republik nach Einführung einer neuen Verfassung"@de .
+gnd:4265797-0 skos:comment "Inselstaat im Ind. Ozean"@de .
+gnd:4022974-9 skos:comment "1915 - 1947 stand Haiti unter militärischem und finanziellem Protektorat der USA"@de .
+gnd:4022974-9 skos:comment "Staat in Mittelamerika, im Bereich der Westindischen Inseln, im Westen der Insel Hispaniola"@de .
+gnd:4027653-3 skos:comment "Lt. 206 bis 6.1.1979: Keshwar Shāhinshāhī; 7.1.1979-11.2.1979: Keshwar; 12.2.1979- : Ǧumhūrīya Islāmīya; lt. 1a Translit.: Kišwar Šāhanšāhī"@de .
+gnd:4068887-2 skos:comment "Erste staatliche Unabhängigkeit (Gründung): 26.5.1918; April 1920 nach Besetzung durch die Rote Armee Umwandlung in Räterepublik; 1989 aserb. Souveränitätserklärung, 18.10.1991 Unabhängigkeitserklärung von der Sowjetunion. Zur Transliteration: in Aserbaidschan existierte 1993-2001 die lateinische und die kyrillische Schreibung der Landessprache parallel, mit Präsidentenbeschluss vom 18.6.2001 wurde diese parallele Verwendung zum 1.8.2001 eingestellt, ab 1.8.2001 darf Aserbaidschanisch nur noch in der neuen Lateinschrift erscheinen"@de .
+gnd:4054598-2 skos:comment "Selbstständiger Staat seit dem 3.6.2006"@de .
+gnd:5245328-5 skos:comment "1810-1813 zu Frankreich"@de .
+gnd:4075765-1 skos:comment "Inselstaat in Südostasien, Ostteil der Insel Timor"@de .
+gnd:4036728-9 skos:comment "hieß 1794-1814 unter französ. Herrschaft: Département des Forêts"@de .
+gnd:4030848-0 skos:comment "Republik in Mittelasien, 14.10.1924 aus Turkestan. ASSR ausgegründet, 5.12.1936 SSR, 31.8.1991 von UdSSR unabhängig"@de .
+gnd:4070610-2 skos:comment "Unabhängigkeit seit 1977"@de .
+gnd:4075202-1 skos:comment "1966 durch die UN-Generalversammlung gegründete Republik, die 1990 ihre Unabhängigkeit erlangte"@de .
+gnd:4078541-5 skos:comment "Staat im SO Mitteleuropas"@de .
+gnd:4072186-3 skos:comment "Küstenstaat im nördlichen Südamerika, zwischen Venezuela, Brasilien und Suriname; Hauptstadt ist Georgetown, Unabhängigkeitserklärung 1966"@de .
+gnd:502234-4 skos:comment "Gilt für den Gesamtstaat; anfangs bestehend aus: Kolonie Nigeria/Colony of Nigeria (=Lagos), Protektorat Nigeria/Protectorate of Nigeria (ehem. Nordnigeria-Protektorat) und dem Südprotektorat (Lagos-Protektorat; Südnigeria-Protektorat); Unvollständigkeit der Verbindung zu späteren Teilen als ""Provinces"" und ""Regions"" Nigerias"@de .
+gnd:4007607-6 skos:comment "oficialmente Estado Plurinacional de Bolivia"@de .
+gnd:14282-7 skos:comment "Bundesstaatl. Zusammenschluss Süd-Rhodesiens, Nord-Rhodesiens und Njassalands; am 31.12.1963 aufgelöst"@de .
+gnd:4063514-4 skos:comment "1954-1976 geteilt in Nord- und Süd-Vietnam"@de .
+gnd:4042298-7 skos:comment "Autonome Republik seit 18.12.1958; Unabhängigkeit: 3.8.1960. Binnenstaat in Westafrika"@de .
+gnd:4035583-4 skos:comment "Seit 1822 Niederlassung in der Nähe des heutigen Monrovia; Konstituierung als Staat 26.7.1847"@de .
+gnd:4035583-4 skos:comment "Staat in Westafrika mit der Hauptstadt Monrovia"@de .
+gnd:4073008-6 skos:comment "Für den Staat Südjemen bis 1990. Ab 1990 mit dem Staat Nordjemen wiedervereinigt zu Jemen."@de .
+gnd:4001937-8 skos:comment "Amtssprache: Katalanisch"@de .
+gnd:4007857-7 skos:comment "Unabhängigkeit 30.9.1966"@de .
+gnd:4303381-7 skos:comment "Selbständiger Staat ab 1.1.1993; 6.2.1990 wurde Petr Pithart erster nicht-kommunistischer Ministerpräsident der CSFR; Trennung der CSFR in zwei Staaten aber erst zum 1.1.1993 beschlossen"@de .
+gnd:5025912-X skos:comment "Staatenbund zwischen Soudan u. Senegal"@de .
+gnd:4073459-6 skos:comment "Staat im Pazifik; besteht aus 3 Inselgruppen:Gilbertinseln, Phönixinseln und einem Teil der Linieninseln"@de .
+gnd:4005503-6 skos:comment "Staat an d. Guineaküste, Westafrika"@de .
+gnd:4005503-6 skos:comment "Unabhängig seit 1960 als Dahomey, 30.11.1975 umbenannt"@de .
+gnd:4044396-6 skos:comment "Inselgruppe u. Staat im westlichen Pazifik, 1.10.1994 unabhängig; westlichste Inselgruppe der Karolinen"@de .
+gnd:4062334-8 skos:comment "Inselstaat im südwestlichen Pazifik, umfasst die Inselgruppe der Neuen Hebriden"@de .
+gnd:4114937-3 skos:comment "Die slawischen Mazedonier wurden 1944 von Jugoslawien zum Staatsvolk erklärt; selbstständiger Staat seit dem 18.9.1991"@de .
+gnd:4040056-6 skos:comment "1924 Gründung der Mongolischen Volksrepublik (MVR) = mong. Bügd Najramdakh Mongol Ard Uls = Bügd Najramdah Mongol Ard Uls = Бүгд Найрамдах Монгол Ард Улс (BNMAU = БНМАУ); 1992 Umbennung in Mongolei = mong. Mongol uls = Монгол улс"@de .
+gnd:4074505-3 skos:comment "Binnenstaat in Westafrika"@de .
+gnd:4073919-3 skos:comment "Staat 19.6.1961 unabhängig"@de .
+gnd:4073919-3 skos:comment "gilt auch für die Zeit der Zugehörigkeit zum Osmanischen Reich"@de .
+gnd:4205537-4 skos:comment "Ehem. Reich an d. Guineaküste, Westafrika"@de .
+gnd:4205537-4 skos:comment "Ca. 1625 von d. Fon gegründet, 1892 von d. Franzosen erobert"@de .
+gnd:4069081-7 skos:comment "Inselstaat und Inselgruppe in Nordatlantik, Teil der Westindischen Inseln"@de .
+gnd:4022520-3 skos:comment "Staat in Westafrika mit der Hauptstadt Conakry"@de .
+gnd:4051308-7 skos:comment "Ostkaribischer Inselstaat der Windward Islands (Kleine Antillen), umfasst die Insel Saint Vincent und die nördlichen Grenadinen"@de .
+gnd:4029617-9 skos:comment "Inselstaat vor der Westküste Afrikas, auf den Kapverdischen Inseln (Kapverden)"@de .
+gnd:4004268-6 skos:comment "Staat am Persischen Golf; Unabhängigkeit erreicht am 14.08.1971"@de .
+gnd:4078435-6 skos:comment "Am 20.4.1990 erfolgte die Umbenennung der ""Tschechoslowakei"" in ""Tschechische und Slowakische Föderative Republik (CSFR)"". Da der im Deutschen gebräuchliche Name ""Tschechoslowakei"" blieb, sind die neuen Namensformen nur aufgetragen."@de .
+gnd:4078435-6 skos:comment "Die Teilrepubliken Česká SR und Slovensko wurden am 1.1.1993 zu selbständigen Staaten."@de .
+gnd:4078435-6 skos:comment "Von 1918-1992 ehem. Staat in Mitteleuropa; davor ""Böhmische Länder"" und ""Slowakei""; ab 1.1.1993 geteilt in zwei unabhängige Staaten : ""Tschechische Republik"" und ""Slowakei"""@de .
+gnd:15612-7 skos:comment "Unabhängiger Staat in Westafrika"@de .
+gnd:15612-7 skos:comment "1960 von Frankreich in die Unabhängigkeit entlassen, 1984 umbenannt in Burkina Faso"@de .
+gnd:7755222-2 skos:comment "erlangte am 9. Juli 2011 die Unabhängigkeit vom Sudan, zuvor autonome Region innerhalb des Sudans"@de .
+gnd:4060396-9 skos:comment "Unabhängigkeit 1970"@de .
+gnd:4060396-9 skos:comment "Staat im südlichen Pazifik; umfasst die Tongainseln"@de .
+gnd:4002050-2 skos:comment "Staat im südwestlichen Afrika, ehemalige portugiesische Kolonie bzw. Provinz, seit dem 11.11.1975 unabhängig"@de .
+gnd:4028495-5 skos:comment "1947 erhielt Japan eine demokratische Verfassung"@de .
+gnd:4037212-1 skos:comment "Unabhängigkeit: 26.7.1965"@de .
+gnd:4037212-1 skos:comment "Inselstaat im Indischen Ozean, südwestlich des indischen Subkontinents, umfasst die gleichnamige Inselgruppe; Hauptstadt ist Male"@de .
+gnd:4022522-7 skos:comment "Proklamation d. Republik 1973; Anerkennung 10.09.1974 von Portugal"@de .
+gnd:4068436-2 skos:comment "am Golf von Guinea, umfasst die ehemalige spanische Überseeprovinz Rio Muni auf dem Festland sowie die Inseln Fernando Pó und Annobón"@de .
+gnd:4068436-2 skos:comment "Unabhängigkeit: 12.10.1968; bis 1959 span. Kolonie; bis 1968 span. Überseeprovinzen Fernando Póo und Río Muni mit interner Autonomie"@de .
+gnd:4079840-9 skos:comment "Seit 1828 Teil von Niederländisch-Westindien und seit 1845 Teil der Niederländischen Antillen; seit 1.1.1986 autonomes Land innerhalb des Königreichs der Niederlande"@de .
+gnd:4060036-1 skos:comment "Im Jahr 2002 wurde im Autonomen Gebiet Tibet gesetzlich festgelegt, dass die tibetische Sprache die gleiche Rechtskraft und den gleichen Rechtsstatus besitzt wie das landesweit gebräuchliche Hochchinesisch."@de .
+gnd:4074425-5 skos:comment "Inselstaat im Indischen Ozean"@de .
+gnd:4118251-0 skos:comment "Ostkarib. Inselstaat d. Leeward Islands, Kleine Antillen; umfasst die Inseln Saint Kitts (Saint Christopher) und Nevis"@de .
+gnd:4058877-4 skos:comment "Die primäre Amtssprache in Tadschikistan ist das Tadschikische; 2011 erhielt Russisch wieder eine offizielle Stellung. Es wurde in der tadschikischen Verfassung offiziell als Sprache der „interethnischen Kommunikation“ festgelegt."@de .
+gnd:4017063-9 skos:comment "Inselstaat im Südwestpazifik; umfasst die Gruppe der Fidschinseln; Hauptstadt ist Suva auf der größten Insel Viti Levu"@de .
+gnd:1053533500 skos:comment "selbständiger bulgarischer Staat von 1337 bis 1396, umfasste die Stadt Vidin mit der nordwestlichen Region Bulgariens"@de .
+gnd:4075653-1 skos:comment "Staat in Vorderasien, im Osten der Arabischen Halbinsel"@de .
+gnd:4061074-3 skos:comment "Binnenstaat in Zentralafrika; ehemals Teil Französisch-Äquatorialafrikas, seit 11.8.1960 unabhängiger Staat"@de .
+gnd:4042050-4 skos:exactMatch wikidata:Q811 .
+gnd:4042050-4 skos:exactMatch geonames:3617476 .
+gnd:4042050-4 skos:exactMatch gnd:4042050-4/about .
+gnd:4042050-4 skos:exactMatch wikisource:Nicaragua .
+gnd:4042050-4 skos:exactMatch wikipediade:Nicaragua .
+gnd:4042050-4 skos:exactMatch isni:0000000123694891 .
+gnd:4042050-4 skos:exactMatch loc:n80009698 .
+gnd:4042050-4 skos:exactMatch gnd:1008881-7 .
+gnd:4042050-4 skos:exactMatch wikipediaen:Nicaragua .
+gnd:4042050-4 skos:exactMatch viaf:140638485 .
+gnd:4029413-4 skos:exactMatch viaf:234123447 .
+gnd:4029413-4 skos:exactMatch gnd:1002926-6 .
+gnd:4029413-4 skos:exactMatch wikidata:Q1009 .
+gnd:4029413-4 skos:exactMatch wikisource:Kamerun .
+gnd:4029413-4 skos:exactMatch gnd:4029413-4/about .
+gnd:4029413-4 skos:exactMatch geonames:2233387 .
+gnd:4039967-9 skos:exactMatch wikisource:Republik_Moldau .
+gnd:4039967-9 skos:exactMatch wikipediade:Moldau_%28Region%29 .
+gnd:4039967-9 skos:exactMatch gnd:4039967-9/about .
+gnd:4039967-9 skos:exactMatch wikidata:Q217 .
+gnd:4039967-9 skos:exactMatch wikipediaen:Western_Moldavia .
+gnd:4039967-9 skos:exactMatch geonames:617790 .
+gnd:4039967-9 skos:exactMatch loc:n90720192 .
+gnd:4039967-9 skos:exactMatch viaf:152364951 .
+gnd:4039967-9 skos:exactMatch wikipediade:Republik_Moldau .
+gnd:4039967-9 skos:exactMatch gnd:1217303-4 .
+gnd:4039967-9 skos:exactMatch wikipediaen:Moldova .
+gnd:4037700-3 skos:exactMatch wikidata:Q709 .
+gnd:4037700-3 skos:exactMatch geonames:2080185 .
+gnd:4037700-3 skos:exactMatch gnd:4037700-3/about .
+gnd:4037700-3 skos:exactMatch viaf:236350130 .
+gnd:4037700-3 skos:exactMatch gnd:129719-3 .
+gnd:2033898-3 skos:exactMatch wikipediade:Norddeutscher_Bund .
+gnd:2033898-3 skos:exactMatch wikipediaen:North_German_Confederation .
+gnd:2033898-3 skos:exactMatch gnd:1085174603 .
+gnd:2033898-3 skos:exactMatch gnd:2033898-3/about .
+gnd:2033898-3 skos:exactMatch viaf:131360783 .
+gnd:2033898-3 skos:exactMatch loc:n81097801 .
+gnd:2033898-3 skos:exactMatch isni:0000000118848032 .
+gnd:2033898-3 skos:exactMatch wikidata:Q150981 .
+gnd:4029839-5 skos:exactMatch gnd:4029839-5/about .
+gnd:4029839-5 skos:exactMatch wikidata:Q232 .
+gnd:4029839-5 skos:exactMatch gnd:1225889-1 .
+gnd:4029839-5 skos:exactMatch viaf:242073413 .
+gnd:4029839-5 skos:exactMatch wikisource:Kasachstan .
+gnd:4029839-5 skos:exactMatch gnd:108743517X .
+gnd:4029839-5 skos:exactMatch geonames:1522867 .
+gnd:4079143-9 skos:exactMatch isni:0000000121712080 .
+gnd:4079143-9 skos:exactMatch gnd:5090472-3 .
+gnd:4079143-9 skos:exactMatch geonames:630336 .
+gnd:4079143-9 skos:exactMatch wikipediade:Belarus .
+gnd:4079143-9 skos:exactMatch loc:n91128701 .
+gnd:4079143-9 skos:exactMatch gnd:1086589785 .
+gnd:4079143-9 skos:exactMatch gnd:4079143-9/about .
+gnd:4079143-9 skos:exactMatch gnd:1085174883 .
+gnd:4079143-9 skos:exactMatch viaf:122714179 .
+gnd:4079143-9 skos:exactMatch wikidata:Q184 .
+gnd:4079143-9 skos:exactMatch wikipediaen:Belarus .
+gnd:4288450-0 skos:exactMatch viaf:234719065 .
+gnd:4288450-0 skos:exactMatch wikidata:Q1479630 .
+gnd:4288450-0 skos:exactMatch gnd:4288450-0/about .
+gnd:4265796-9 skos:exactMatch gnd:4265796-9/about .
+gnd:4265796-9 skos:exactMatch loc:n78093659 .
+gnd:4265796-9 skos:exactMatch geonames:2103350 .
+gnd:4265796-9 skos:exactMatch viaf:147680092 .
+gnd:4265796-9 skos:exactMatch wikidata:Q685 .
+gnd:4265796-9 skos:exactMatch wikipediade:Salomonen .
+gnd:4265796-9 skos:exactMatch gnd:43684-7 .
+gnd:4265796-9 skos:exactMatch wikipediaen:Solomon_Islands .
+gnd:4015278-9 skos:exactMatch gnd:1085176398 .
+gnd:4015278-9 skos:exactMatch wikipediade:Eritrea .
+gnd:4015278-9 skos:exactMatch viaf:152381756 .
+gnd:4015278-9 skos:exactMatch wikipediaen:Eritrea .
+gnd:4015278-9 skos:exactMatch gnd:4015278-9/about .
+gnd:4015278-9 skos:exactMatch wikidata:Q986 .
+gnd:4015278-9 skos:exactMatch loc:n93074182 .
+gnd:4015278-9 skos:exactMatch gnd:44283-5 .
+gnd:4015278-9 skos:exactMatch isni:0000000121869846 .
+gnd:4015278-9 skos:exactMatch geonames:338010 .
+gnd:4074187-4 skos:exactMatch viaf:6305165110762036780008 .
+gnd:4074187-4 skos:exactMatch geonames:458258 .
+gnd:4074187-4 skos:exactMatch gnd:4074187-4/about .
+gnd:4074187-4 skos:exactMatch wikidata:Q211 .
+gnd:4041612-4 skos:exactMatch wikidata:Q837 .
+gnd:4041612-4 skos:exactMatch viaf:132456187 .
+gnd:4041612-4 skos:exactMatch gnd:4041612-4/about .
+gnd:4041612-4 skos:exactMatch geonames:1282988 .
+gnd:4041612-4 skos:exactMatch wikipediaen:Nepal_%28band%29 .
+gnd:4041612-4 skos:exactMatch gnd:15610-3 .
+gnd:4041612-4 skos:exactMatch wikisource:Nepal .
+gnd:4042640-3 skos:exactMatch viaf:156496743 .
+gnd:4042640-3 skos:exactMatch gnd:4042640-3/about .
+gnd:4042640-3 skos:exactMatch wikidata:Q20 .
+gnd:4042640-3 skos:exactMatch gnd:43042-0 .
+gnd:4042640-3 skos:exactMatch geonames:3144096 .
+gnd:4037203-0 skos:exactMatch wikidata:Q833 .
+gnd:4037203-0 skos:exactMatch isni:0000000121775970 .
+gnd:4037203-0 skos:exactMatch wikipediade:Malaysia .
+gnd:4037203-0 skos:exactMatch gnd:4037203-0/about .
+gnd:4037203-0 skos:exactMatch viaf:128419926 .
+gnd:4037203-0 skos:exactMatch geonames:1733045 .
+gnd:4037203-0 skos:exactMatch gnd:15603-6 .
+gnd:4037203-0 skos:exactMatch wikipediaen:Malaysia .
+gnd:4037203-0 skos:exactMatch loc:n79022246 .
+gnd:4041915-0 skos:exactMatch wikipediade:Neuseeland .
+gnd:4041915-0 skos:exactMatch loc:n79021322 .
+gnd:4041915-0 skos:exactMatch geonames:2186224 .
+gnd:4041915-0 skos:exactMatch gnd:11605-1 .
+gnd:4041915-0 skos:exactMatch isni:000000012156951X .
+gnd:4041915-0 skos:exactMatch wikipediaen:New_Zealand .
+gnd:4041915-0 skos:exactMatch wikidata:Q664 .
+gnd:4041915-0 skos:exactMatch gnd:4041915-0/about .
+gnd:4041915-0 skos:exactMatch viaf:130102165 .
+gnd:4067608-0 skos:exactMatch isni:0000000121686038 .
+gnd:4067608-0 skos:exactMatch wikidata:Q929 .
+gnd:4067608-0 skos:exactMatch geonames:239880 .
+gnd:4067608-0 skos:exactMatch loc:n78060051 .
+gnd:4067608-0 skos:exactMatch wikipediaen:Central_African_Republic .
+gnd:4067608-0 skos:exactMatch wikipediade:Zentralafrikanische_Republik .
+gnd:4067608-0 skos:exactMatch gnd:15642-5 .
+gnd:4067608-0 skos:exactMatch gnd:4067608-0/about .
+gnd:4067608-0 skos:exactMatch viaf:1146332761218730721 .
+gnd:61014-8 skos:exactMatch gnd:61014-8/about .
+gnd:61014-8 skos:exactMatch loc:n81093172 .
+gnd:61014-8 skos:exactMatch isni:0000000097935689 .
+gnd:61014-8 skos:exactMatch wikipediade:Kondominium_Neue_Hebriden .
+gnd:61014-8 skos:exactMatch viaf:145018975 .
+gnd:61014-8 skos:exactMatch wikidata:Q752431 .
+gnd:61014-8 skos:exactMatch wikipediaen:New_Hebrides .
+gnd:1081747218 skos:exactMatch viaf:7590150325549110090002 .
+gnd:1081747218 skos:exactMatch gnd:1081747218/about .
+gnd:4088119-2 skos:exactMatch wikipediaen:Bosnia_and_Herzegovina .
+gnd:4088119-2 skos:exactMatch loc:n81035836 .
+gnd:4088119-2 skos:exactMatch gnd:4088119-2/about .
+gnd:4088119-2 skos:exactMatch geonames:3277605 .
+gnd:4088119-2 skos:exactMatch viaf:126120141 .
+gnd:4088119-2 skos:exactMatch wikisource:Bosnien_und_Herzegowina .
+gnd:4088119-2 skos:exactMatch wikipediade:Bosnien_und_Herzegowina .
+gnd:4088119-2 skos:exactMatch wikidata:Q225 .
+gnd:4078149-5 skos:exactMatch wikipediade:Tansania .
+gnd:4078149-5 skos:exactMatch geonames:149590 .
+gnd:4078149-5 skos:exactMatch gnd:4078149-5/about .
+gnd:4078149-5 skos:exactMatch viaf:131265957 .
+gnd:4078149-5 skos:exactMatch wikipediaen:Tanzania .
+gnd:4078149-5 skos:exactMatch isni:0000000121586299 .
+gnd:4078149-5 skos:exactMatch gnd:10649-5 .
+gnd:4078149-5 skos:exactMatch wikidata:Q924 .
+gnd:4078149-5 skos:exactMatch loc:n80121275 .
+gnd:4033340-1 skos:exactMatch geonames:3562981 .
+gnd:4033340-1 skos:exactMatch gnd:2003133-6 .
+gnd:4033340-1 skos:exactMatch viaf:133336007 .
+gnd:4033340-1 skos:exactMatch wikisource:Kuba .
+gnd:4033340-1 skos:exactMatch gnd:4033340-1/about .
+gnd:4033340-1 skos:exactMatch isni:0000000122998690 .
+gnd:4033340-1 skos:exactMatch wikidata:Q241 .
+gnd:4012694-8 skos:exactMatch gnd:4012694-8/about .
+gnd:4012694-8 skos:exactMatch isni:0000000123700622 .
+gnd:4012694-8 skos:exactMatch wikidata:Q786 .
+gnd:4012694-8 skos:exactMatch wikipediade:Dominikanische_Republik .
+gnd:4012694-8 skos:exactMatch viaf:157820855 .
+gnd:4012694-8 skos:exactMatch gnd:1025862-0 .
+gnd:4012694-8 skos:exactMatch geonames:3508796 .
+gnd:4012694-8 skos:exactMatch loc:n79094586 .
+gnd:4012694-8 skos:exactMatch gnd:1086115511 .
+gnd:4012694-8 skos:exactMatch wikipediaen:Dominican_Republic .
+gnd:4039786-5 skos:exactMatch gnd:15609-7 .
+gnd:4039786-5 skos:exactMatch isni:0000000121964448 .
+gnd:4039786-5 skos:exactMatch gnd:4039786-5/about .
+gnd:4039786-5 skos:exactMatch wikidata:Q1029 .
+gnd:4039786-5 skos:exactMatch isni:0000000121581519 .
+gnd:4039786-5 skos:exactMatch wikipediade:Mosambik .
+gnd:4039786-5 skos:exactMatch wikipediade:Volksrepublik_Mosambik .
+gnd:4039786-5 skos:exactMatch loc:n81082759 .
+gnd:4039786-5 skos:exactMatch viaf:130895295 .
+gnd:4039786-5 skos:exactMatch geonames:1036973 .
+gnd:4039786-5 skos:exactMatch wikipediaen:People%27s_Republic_of_Mozambique .
+gnd:4039786-5 skos:exactMatch wikipediaen:Mozambique .
+gnd:4022047-3 skos:exactMatch loc:n80046090 .
+gnd:4022047-3 skos:exactMatch gnd:4022047-3/about .
+gnd:4022047-3 skos:exactMatch wikipediaen:Greece .
+gnd:4022047-3 skos:exactMatch wikidata:Q41 .
+gnd:4022047-3 skos:exactMatch viaf:131265011 .
+gnd:4022047-3 skos:exactMatch geonames:390903 .
+gnd:4022047-3 skos:exactMatch wikipediade:Griechenland .
+gnd:4022047-3 skos:exactMatch gnd:35443-0 .
+gnd:4078029-6 skos:exactMatch gnd:1090415095 .
+gnd:4078029-6 skos:exactMatch gnd:4078029-6/about .
+gnd:4078029-6 skos:exactMatch wikidata:Q884 .
+gnd:4078029-6 skos:exactMatch isni:0000000123083046 .
+gnd:4078029-6 skos:exactMatch gnd:1086429656 .
+gnd:4078029-6 skos:exactMatch geonames:1835841 .
+gnd:4078029-6 skos:exactMatch viaf:132441370 .
+gnd:4078029-6 skos:exactMatch gnd:39749-0 .
+gnd:4078029-6 skos:exactMatch gnd:1086264673 .
+gnd:4078029-6 skos:exactMatch loc:n79126802 .
+gnd:1241271305 skos:exactMatch wikidata:Q289577 .
+gnd:1241271305 skos:exactMatch wikipediaen:Himyarite_Kingdom .
+gnd:1241271305 skos:exactMatch wikipediade:Himyar .
+gnd:1241271305 skos:exactMatch gnd:1241271305/about .
+gnd:1241271305 skos:exactMatch viaf:21163208104207230913 .
+gnd:1085175642 skos:exactMatch viaf:765145858120623022242 .
+gnd:1085175642 skos:exactMatch gnd:1085175642/about .
+gnd:7756217-3 skos:exactMatch viaf:235294575 .
+gnd:7756217-3 skos:exactMatch wikidata:Q180235 .
+gnd:7756217-3 skos:exactMatch gnd:7756217-3/about .
+gnd:1181214262 skos:exactMatch geonames:718075 .
+gnd:1181214262 skos:exactMatch wikidata:Q221 .
+gnd:1181214262 skos:exactMatch gnd:1181214262/about .
+gnd:1181214262 skos:exactMatch viaf:664161575656204730005 .
+gnd:4044601-3 skos:exactMatch geonames:3437598 .
+gnd:4044601-3 skos:exactMatch wikisource:Paraguay .
+gnd:4044601-3 skos:exactMatch wikipediaen:Asunci%C3%B3n .
+gnd:4044601-3 skos:exactMatch gnd:15616-4 .
+gnd:4044601-3 skos:exactMatch loc:n79066597 .
+gnd:4044601-3 skos:exactMatch wikipediade:Asunci%C3%B3n .
+gnd:4044601-3 skos:exactMatch wikidata:Q733 .
+gnd:4044601-3 skos:exactMatch viaf:139099883 .
+gnd:4044601-3 skos:exactMatch gnd:4044601-3/about .
+gnd:4034571-3 skos:exactMatch gnd:4034571-3/about .
+gnd:4034571-3 skos:exactMatch geonames:1655842 .
+gnd:4034571-3 skos:exactMatch gnd:15600-0 .
+gnd:4034571-3 skos:exactMatch viaf:133110791 .
+gnd:4034571-3 skos:exactMatch wikidata:Q819 .
+gnd:4014499-9 skos:exactMatch wikipediaen:El_Salvador .
+gnd:4014499-9 skos:exactMatch viaf:126625611 .
+gnd:4014499-9 skos:exactMatch loc:n79066409 .
+gnd:4014499-9 skos:exactMatch gnd:15583-4 .
+gnd:4014499-9 skos:exactMatch wikipediade:El_Salvador .
+gnd:4014499-9 skos:exactMatch isni:0000000123752529 .
+gnd:4014499-9 skos:exactMatch gnd:4014499-9/about .
+gnd:4014499-9 skos:exactMatch wikidata:Q792 .
+gnd:4014499-9 skos:exactMatch geonames:3585968 .
+gnd:4014499-9 skos:exactMatch wikisource:El_Salvador .
+gnd:4014499-9 skos:exactMatch wikipediade:Salvador_%28Torres_Novas%29 .
+gnd:1241258295 skos:exactMatch gnd:1241258295/about .
+gnd:1241258295 skos:exactMatch viaf:9163208222907231048 .
+gnd:4071332-5 skos:exactMatch gnd:4071332-5/about .
+gnd:4071332-5 skos:exactMatch wikidata:Q146246 .
+gnd:4071332-5 skos:exactMatch viaf:7134161453843864330003 .
+gnd:4072471-2 skos:exactMatch wikidata:Q20135 .
+gnd:4072471-2 skos:exactMatch wikipediade:Landgrafschaft_Hessen-Darmstadt .
+gnd:4072471-2 skos:exactMatch gnd:4072471-2/about .
+gnd:4072471-2 skos:exactMatch wikidata:Q693551 .
+gnd:4072471-2 skos:exactMatch viaf:126702415 .
+gnd:4072471-2 skos:exactMatch wikipediaen:Landgraviate_of_Hesse-Darmstadt .
+gnd:4072471-2 skos:exactMatch loc:n83009475 .
+gnd:4072471-2 skos:exactMatch gnd:15744-2 .
+gnd:4026722-2 skos:exactMatch gnd:1085174492 .
+gnd:4026722-2 skos:exactMatch wikipediade:Indien .
+gnd:4026722-2 skos:exactMatch viaf:135375457 .
+gnd:4026722-2 skos:exactMatch wikipediaen:India .
+gnd:4026722-2 skos:exactMatch gnd:36632-8 .
+gnd:4026722-2 skos:exactMatch loc:n80125948 .
+gnd:4026722-2 skos:exactMatch isni:0000000123312734 .
+gnd:4026722-2 skos:exactMatch gnd:4026722-2/about .
+gnd:4026722-2 skos:exactMatch geonames:1269750 .
+gnd:4026722-2 skos:exactMatch wikidata:Q668 .
+gnd:1060577984 skos:exactMatch wikidata:Q172107 .
+gnd:1060577984 skos:exactMatch wikipediaen:Poland_%28European_Parliament_constituency%29 .
+gnd:1060577984 skos:exactMatch wikipediaen:Polish%E2%80%93Lithuanian_Commonwealth .
+gnd:1060577984 skos:exactMatch viaf:280847926 .
+gnd:1060577984 skos:exactMatch gnd:1060577984/about .
+gnd:1060577984 skos:exactMatch wikipediade:Polen-Litauen .
+gnd:1060577984 skos:exactMatch loc:n79131071 .
+gnd:4051307-5 skos:exactMatch wikidata:Q760 .
+gnd:4051307-5 skos:exactMatch loc:n79034961 .
+gnd:4051307-5 skos:exactMatch gnd:220984-6 .
+gnd:4051307-5 skos:exactMatch viaf:135479387 .
+gnd:4051307-5 skos:exactMatch gnd:4051307-5/about .
+gnd:4051307-5 skos:exactMatch geonames:3576468 .
+gnd:4051307-5 skos:exactMatch wikipediade:St._Lucia .
+gnd:4051307-5 skos:exactMatch wikipediaen:Saint_Lucia .
+gnd:4027833-5 skos:exactMatch geonames:3175395 .
+gnd:4027833-5 skos:exactMatch gnd:4027833-5/about .
+gnd:4027833-5 skos:exactMatch gnd:1085176274 .
+gnd:4027833-5 skos:exactMatch wikipediade:Italien .
+gnd:4027833-5 skos:exactMatch viaf:152361066 .
+gnd:4027833-5 skos:exactMatch wikipediaen:Italy .
+gnd:4027833-5 skos:exactMatch loc:n79021783 .
+gnd:4027833-5 skos:exactMatch gnd:16140245-8 .
+gnd:4027833-5 skos:exactMatch wikidata:Q38 .
+gnd:4027833-5 skos:exactMatch gnd:2016493-2 .
+gnd:4027833-5 skos:exactMatch isni:0000000121869395 .
+gnd:4075812-6 skos:exactMatch isni:0000000121800806 .
+gnd:4075812-6 skos:exactMatch gnd:42543-6 .
+gnd:4075812-6 skos:exactMatch geonames:1168579 .
+gnd:4075812-6 skos:exactMatch wikidata:Q843 .
+gnd:4075812-6 skos:exactMatch loc:n80125947 .
+gnd:4075812-6 skos:exactMatch gnd:4075812-6/about .
+gnd:4075812-6 skos:exactMatch wikipediade:Pakistan .
+gnd:4075812-6 skos:exactMatch wikipediaen:Pakistan .
+gnd:4075812-6 skos:exactMatch viaf:268930849 .
+gnd:4062742-1 skos:exactMatch wikidata:Q878 .
+gnd:4062742-1 skos:exactMatch geonames:290557 .
+gnd:4062742-1 skos:exactMatch wikipediaen:United_Arab_Emirates .
+gnd:4062742-1 skos:exactMatch gnd:4062742-1/about .
+gnd:4062742-1 skos:exactMatch wikipediade:Vereinigte_Arabische_Emirate .
+gnd:4062742-1 skos:exactMatch viaf:255510393 .
+gnd:4062742-1 skos:exactMatch loc:n79086806 .
+gnd:4062742-1 skos:exactMatch gnd:82331-4 .
+gnd:4028750-6 skos:exactMatch isni:0000000406441982 .
+gnd:4028750-6 skos:exactMatch gnd:4028750-6/about .
+gnd:4028750-6 skos:exactMatch gnd:36390-X .
+gnd:4028750-6 skos:exactMatch wikidata:Q810 .
+gnd:4028750-6 skos:exactMatch loc:n79072819 .
+gnd:4028750-6 skos:exactMatch wikipediade:Jordanien .
+gnd:4028750-6 skos:exactMatch wikipediaen:Jordan .
+gnd:4028750-6 skos:exactMatch wikisource:Jordanien .
+gnd:4028750-6 skos:exactMatch geonames:248816 .
+gnd:4028750-6 skos:exactMatch viaf:125091880 .
+gnd:4077548-3 skos:exactMatch gnd:4077548-3/about .
+gnd:4077548-3 skos:exactMatch loc:n80126312 .
+gnd:4077548-3 skos:exactMatch wikipediade:Sowjetunion .
+gnd:4077548-3 skos:exactMatch wikipediaen:Soviet_Union .
+gnd:4077548-3 skos:exactMatch gnd:35392-9 .
+gnd:4077548-3 skos:exactMatch viaf:124251745 .
+gnd:4077548-3 skos:exactMatch wikidata:Q15180 .
+gnd:4077548-3 skos:exactMatch geonames:8354411 .
+gnd:4054529-5 skos:exactMatch viaf:128920607 .
+gnd:4054529-5 skos:exactMatch gnd:15624-3 .
+gnd:4054529-5 skos:exactMatch wikidata:Q1041 .
+gnd:4054529-5 skos:exactMatch geonames:2245662 .
+gnd:4054529-5 skos:exactMatch isni:0000000404582116 .
+gnd:4054529-5 skos:exactMatch wikipediade:Senegal .
+gnd:4054529-5 skos:exactMatch loc:n79007506 .
+gnd:4054529-5 skos:exactMatch wikipediaen:Senegal .
+gnd:4054529-5 skos:exactMatch gnd:4054529-5/about .
+gnd:4060344-1 skos:exactMatch wikipediade:Togo .
+gnd:4060344-1 skos:exactMatch loc:n80061115 .
+gnd:4060344-1 skos:exactMatch wikipediaen:Togo .
+gnd:4060344-1 skos:exactMatch gnd:4060344-1/about .
+gnd:4060344-1 skos:exactMatch isni:0000000121576744 .
+gnd:4060344-1 skos:exactMatch wikidata:Q945 .
+gnd:4060344-1 skos:exactMatch geonames:2363686 .
+gnd:4060344-1 skos:exactMatch viaf:130758453 .
+gnd:4060344-1 skos:exactMatch gnd:1010889-0 .
+gnd:4086593-9 skos:exactMatch geonames:3576396 .
+gnd:4086593-9 skos:exactMatch viaf:125789813 .
+gnd:4086593-9 skos:exactMatch wikipediade:Antigua_und_Barbuda .
+gnd:4086593-9 skos:exactMatch wikidata:Q781 .
+gnd:4086593-9 skos:exactMatch isni:0000000086801343 .
+gnd:4086593-9 skos:exactMatch loc:n83129820 .
+gnd:4086593-9 skos:exactMatch gnd:4086593-9/about .
+gnd:4086593-9 skos:exactMatch wikipediaen:Antigua_and_Barbuda .
+gnd:4086593-9 skos:exactMatch gnd:134322-1 .
+gnd:123613-1 skos:exactMatch gnd:123613-1/about .
+gnd:123613-1 skos:exactMatch viaf:126097465 .
+gnd:4009929-5 skos:exactMatch loc:n79061242 .
+gnd:4009929-5 skos:exactMatch wikisource:Chile .
+gnd:4009929-5 skos:exactMatch viaf:233665742 .
+gnd:4009929-5 skos:exactMatch gnd:1022000-8 .
+gnd:4009929-5 skos:exactMatch gnd:4009929-5/about .
+gnd:4009929-5 skos:exactMatch gnd:16293238-8 .
+gnd:4009929-5 skos:exactMatch geonames:3895114 .
+gnd:4009929-5 skos:exactMatch wikidata:Q298 .
+gnd:4009929-5 skos:exactMatch wikipediade:Chile .
+gnd:4009929-5 skos:exactMatch wikipediaen:Chile .
+gnd:5245326-1 skos:exactMatch loc:n81032306 .
+gnd:5245326-1 skos:exactMatch viaf:155946218 .
+gnd:5245326-1 skos:exactMatch wikipediaen:Dutch_Republic .
+gnd:5245326-1 skos:exactMatch wikipediade:Republik_der_Sieben_Vereinigten_Provinzen .
+gnd:5245326-1 skos:exactMatch gnd:5245326-1/about .
+gnd:1085178900 skos:exactMatch gnd:1085178900/about .
+gnd:1085178900 skos:exactMatch viaf:406145857920923020136 .
+gnd:4009181-8 skos:exactMatch wikidata:Q967 .
+gnd:4009181-8 skos:exactMatch wikipediade:Burundi .
+gnd:4009181-8 skos:exactMatch gnd:2006790-2 .
+gnd:4009181-8 skos:exactMatch viaf:157863385 .
+gnd:4009181-8 skos:exactMatch wikipediaen:Burundi .
+gnd:4009181-8 skos:exactMatch gnd:4009181-8/about .
+gnd:4009181-8 skos:exactMatch geonames:433561 .
+gnd:4009181-8 skos:exactMatch loc:n81025977 .
+gnd:4009181-8 skos:exactMatch isni:0000000120977669 .
+gnd:4045312-1 skos:exactMatch gnd:10638-0 .
+gnd:4045312-1 skos:exactMatch isni:000000012290392X .
+gnd:4045312-1 skos:exactMatch loc:n79055130 .
+gnd:4045312-1 skos:exactMatch wikidata:Q419 .
+gnd:4045312-1 skos:exactMatch gnd:4045312-1/about .
+gnd:4045312-1 skos:exactMatch viaf:159434034 .
+gnd:4045312-1 skos:exactMatch wikipediaen:Peru .
+gnd:4045312-1 skos:exactMatch isni:0000000122858313 .
+gnd:4045312-1 skos:exactMatch wikipediade:Peru .
+gnd:4045312-1 skos:exactMatch wikisource:Peru .
+gnd:4045312-1 skos:exactMatch geonames:3932488 .
+gnd:44075-9 skos:exactMatch viaf:148930726 .
+gnd:44075-9 skos:exactMatch loc:n81035234 .
+gnd:44075-9 skos:exactMatch gnd:44075-9/about .
+gnd:44075-9 skos:exactMatch wikipediade:Gilbertinseln .
+gnd:44075-9 skos:exactMatch wikipediaen:Gilbert_Islands .
+gnd:4054694-9 skos:exactMatch gnd:4054694-9/about .
+gnd:4054694-9 skos:exactMatch geonames:241170 .
+gnd:4054694-9 skos:exactMatch gnd:14284-0 .
+gnd:4054694-9 skos:exactMatch wikidata:Q1042 .
+gnd:4054694-9 skos:exactMatch viaf:238994564 .
+gnd:1027360262 skos:exactMatch gnd:1027360262/about .
+gnd:1027360262 skos:exactMatch viaf:271751749 .
+gnd:4060907-8 skos:exactMatch wikidata:Q754 .
+gnd:4060907-8 skos:exactMatch loc:n81008555 .
+gnd:4060907-8 skos:exactMatch geonames:3573591 .
+gnd:4060907-8 skos:exactMatch viaf:122737458 .
+gnd:4060907-8 skos:exactMatch isni:0000000121047631 .
+gnd:4060907-8 skos:exactMatch wikipediaen:Trinidad_and_Tobago .
+gnd:4060907-8 skos:exactMatch viaf:148033973 .
+gnd:4060907-8 skos:exactMatch wikipediade:Trinidad_und_Tobago .
+gnd:4060907-8 skos:exactMatch loc:no92027448 .
+gnd:4060907-8 skos:exactMatch gnd:4060907-8/about .
+gnd:4060907-8 skos:exactMatch gnd:1009829-X .
+gnd:4061163-2 skos:exactMatch gnd:35434-X .
+gnd:4061163-2 skos:exactMatch gnd:1085174514 .
+gnd:4061163-2 skos:exactMatch wikipediaen:Turkey%2C_Limpopo .
+gnd:4061163-2 skos:exactMatch isni:0000000403699232 .
+gnd:4061163-2 skos:exactMatch wikipediade:T%C3%BCrkei .
+gnd:4061163-2 skos:exactMatch gnd:4061163-2/about .
+gnd:4061163-2 skos:exactMatch wikidata:Q43 .
+gnd:4061163-2 skos:exactMatch geonames:298795 .
+gnd:4061163-2 skos:exactMatch loc:n80070818 .
+gnd:4061163-2 skos:exactMatch viaf:244983681 .
+gnd:4061163-2 skos:exactMatch wikipediaen:Turkey .
+gnd:4026761-1 skos:exactMatch gnd:6737-4 .
+gnd:4026761-1 skos:exactMatch wikidata:Q252 .
+gnd:4026761-1 skos:exactMatch wikipediade:Indonesien .
+gnd:4026761-1 skos:exactMatch geonames:1643084 .
+gnd:4026761-1 skos:exactMatch wikipediaen:Indonesia .
+gnd:4026761-1 skos:exactMatch viaf:125405737 .
+gnd:4026761-1 skos:exactMatch gnd:4026761-1/about .
+gnd:4026761-1 skos:exactMatch loc:n80083633 .
+gnd:4062199-6 skos:exactMatch viaf:130982800 .
+gnd:4062199-6 skos:exactMatch wikidata:Q265 .
+gnd:4062199-6 skos:exactMatch geonames:1512440 .
+gnd:4062199-6 skos:exactMatch viaf:277772825 .
+gnd:4062199-6 skos:exactMatch gnd:5102630-2 .
+gnd:4062199-6 skos:exactMatch gnd:108605282X .
+gnd:4062199-6 skos:exactMatch gnd:4062199-6/about .
+gnd:4062199-6 skos:exactMatch loc:n91129869 .
+gnd:4316277-0 skos:exactMatch gnd:4316277-0/about .
+gnd:4316277-0 skos:exactMatch isni:0000000094771009 .
+gnd:4316277-0 skos:exactMatch viaf:143106654 .
+gnd:4316277-0 skos:exactMatch loc:n83159265 .
+gnd:4040031-1 skos:exactMatch wikidata:Q235 .
+gnd:4040031-1 skos:exactMatch gnd:4040031-1/about .
+gnd:4040031-1 skos:exactMatch gnd:5094423-X .
+gnd:4040031-1 skos:exactMatch viaf:244534809 .
+gnd:4040031-1 skos:exactMatch geonames:2993457 .
+gnd:4040031-1 skos:exactMatch gnd:15608-5 .
+gnd:4076429-1 skos:exactMatch wikipediaen:Puerto_Rico .
+gnd:4076429-1 skos:exactMatch viaf:158263965 .
+gnd:4076429-1 skos:exactMatch gnd:2018539-X .
+gnd:4076429-1 skos:exactMatch geonames:4566966 .
+gnd:4076429-1 skos:exactMatch isni:0000000121138904 .
+gnd:4076429-1 skos:exactMatch wikisource:Puerto_Rico .
+gnd:4076429-1 skos:exactMatch loc:n79063677 .
+gnd:4076429-1 skos:exactMatch wikipediade:Puerto_Rico .
+gnd:4076429-1 skos:exactMatch gnd:4076429-1/about .
+gnd:4076429-1 skos:exactMatch wikidata:Q1183 .
+gnd:5036918-0 skos:exactMatch wikidata:Q188553 .
+gnd:5036918-0 skos:exactMatch viaf:149637573 .
+gnd:5036918-0 skos:exactMatch gnd:5036918-0/about .
+gnd:4274661-9 skos:exactMatch gnd:134335-X .
+gnd:4274661-9 skos:exactMatch wikipediade:F%C3%B6derierte_Staaten_von_Mikronesien .
+gnd:4274661-9 skos:exactMatch geonames:2081918 .
+gnd:4274661-9 skos:exactMatch isni:0000000121095799 .
+gnd:4274661-9 skos:exactMatch gnd:4274661-9/about .
+gnd:4274661-9 skos:exactMatch viaf:128951635 .
+gnd:4274661-9 skos:exactMatch loc:n83074223 .
+gnd:4274661-9 skos:exactMatch wikidata:Q702 .
+gnd:4274661-9 skos:exactMatch wikipediaen:Federated_States_of_Micronesia .
+gnd:4004487-7 skos:exactMatch wikipediade:Barbados .
+gnd:4004487-7 skos:exactMatch loc:n79066542 .
+gnd:4004487-7 skos:exactMatch wikidata:Q244 .
+gnd:4004487-7 skos:exactMatch wikipediaen:Barbados .
+gnd:4004487-7 skos:exactMatch viaf:146498747 .
+gnd:4004487-7 skos:exactMatch isni:0000000106701869 .
+gnd:4004487-7 skos:exactMatch gnd:15575-5 .
+gnd:4004487-7 skos:exactMatch gnd:4004487-7/about .
+gnd:4004487-7 skos:exactMatch geonames:3374084 .
+gnd:4307086-3 skos:exactMatch wikidata:Q501754 .
+gnd:4307086-3 skos:exactMatch viaf:246234249 .
+gnd:4307086-3 skos:exactMatch gnd:4307086-3/about .
+gnd:4076986-0 skos:exactMatch isni:0000000121851793 .
+gnd:4076986-0 skos:exactMatch wikipediade:Sambia .
+gnd:4076986-0 skos:exactMatch viaf:151203068 .
+gnd:4076986-0 skos:exactMatch loc:n80089997 .
+gnd:4076986-0 skos:exactMatch geonames:895949 .
+gnd:4076986-0 skos:exactMatch gnd:1012520-6 .
+gnd:4076986-0 skos:exactMatch wikipediaen:Zambia .
+gnd:4076986-0 skos:exactMatch wikidata:Q953 .
+gnd:4076986-0 skos:exactMatch gnd:108517638X .
+gnd:4076986-0 skos:exactMatch gnd:4076986-0/about .
+gnd:7756218-5 skos:exactMatch viaf:234849663 .
+gnd:7756218-5 skos:exactMatch gnd:7756218-5/about .
+gnd:4301261-9 skos:exactMatch gnd:4301261-9/about .
+gnd:4301261-9 skos:exactMatch viaf:247776471 .
+gnd:4058794-0 skos:exactMatch gnd:4058794-0/about .
+gnd:4058794-0 skos:exactMatch wikisource:Syrien .
+gnd:4058794-0 skos:exactMatch geonames:163843 .
+gnd:4058794-0 skos:exactMatch gnd:1008571-3 .
+gnd:4058794-0 skos:exactMatch viaf:238357283 .
+gnd:4058794-0 skos:exactMatch wikidata:Q858 .
+gnd:4079249-3 skos:exactMatch gnd:15640-1 .
+gnd:4079249-3 skos:exactMatch isni:0000000113544865 .
+gnd:4079249-3 skos:exactMatch loc:n97089384 .
+gnd:4079249-3 skos:exactMatch gnd:4079249-3/about .
+gnd:4079249-3 skos:exactMatch geonames:4034894 .
+gnd:4079249-3 skos:exactMatch wikidata:Q683 .
+gnd:4079249-3 skos:exactMatch wikipediade:Samoa .
+gnd:4079249-3 skos:exactMatch wikipediaen:Samoa .
+gnd:4079249-3 skos:exactMatch viaf:134228520 .
+gnd:4017875-4 skos:exactMatch gnd:2006942-X .
+gnd:4017875-4 skos:exactMatch isni:000000012285649X .
+gnd:4017875-4 skos:exactMatch geonames:1668284 .
+gnd:4017875-4 skos:exactMatch wikidata:Q865 .
+gnd:4017875-4 skos:exactMatch wikipediade:Taiwan_%28Insel%29 .
+gnd:4017875-4 skos:exactMatch wikidata:Q22502 .
+gnd:4017875-4 skos:exactMatch loc:n80022631 .
+gnd:4017875-4 skos:exactMatch viaf:128920774 .
+gnd:4017875-4 skos:exactMatch wikipediaen:Taiwan_%28island%29 .
+gnd:4017875-4 skos:exactMatch gnd:4017875-4/about .
+gnd:4118426-9 skos:exactMatch loc:n50071938 .
+gnd:4118426-9 skos:exactMatch wikipediaen:S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe .
+gnd:4118426-9 skos:exactMatch isni:0000000123430458 .
+gnd:4118426-9 skos:exactMatch wikidata:Q1039 .
+gnd:4118426-9 skos:exactMatch gnd:4118426-9/about .
+gnd:4118426-9 skos:exactMatch gnd:15622-X .
+gnd:4118426-9 skos:exactMatch geonames:2410758 .
+gnd:4118426-9 skos:exactMatch viaf:140101415 .
+gnd:4118426-9 skos:exactMatch wikipediade:S%C3%A3o_Tom%C3%A9_und_Pr%C3%ADncipe .
+gnd:1120732131 skos:exactMatch gnd:1120732131/about .
+gnd:1120732131 skos:exactMatch viaf:96148120495094790803 .
+gnd:4010193-9 skos:exactMatch gnd:4010193-9/about .
+gnd:4010193-9 skos:exactMatch viaf:2918150264372605860007 .
+gnd:4000687-6 skos:exactMatch wikipediaen:Afghanistan .
+gnd:4000687-6 skos:exactMatch viaf:138292433 .
+gnd:4000687-6 skos:exactMatch loc:n79063030 .
+gnd:4000687-6 skos:exactMatch wikidata:Q889 .
+gnd:4000687-6 skos:exactMatch gnd:4000687-6/about .
+gnd:4000687-6 skos:exactMatch geonames:1149361 .
+gnd:4000687-6 skos:exactMatch wikipediade:Afghanistan .
+gnd:4000687-6 skos:exactMatch gnd:80013-2 .
+gnd:4000687-6 skos:exactMatch isni:0000000449050535 .
+gnd:4000687-6 skos:exactMatch wikisource:Afghanistan .
+gnd:4029456-0 skos:exactMatch wikidata:Q16 .
+gnd:4029456-0 skos:exactMatch gnd:36332-7 .
+gnd:4029456-0 skos:exactMatch gnd:4029456-0/about .
+gnd:4029456-0 skos:exactMatch gnd:1088252508 .
+gnd:4029456-0 skos:exactMatch geonames:6251999 .
+gnd:4029456-0 skos:exactMatch viaf:137130855 .
+gnd:4001028-4 skos:exactMatch wikipediaen:Albania .
+gnd:4001028-4 skos:exactMatch wikidata:Q222 .
+gnd:4001028-4 skos:exactMatch loc:n83221467 .
+gnd:4001028-4 skos:exactMatch geonames:783754 .
+gnd:4001028-4 skos:exactMatch gnd:1086369009 .
+gnd:4001028-4 skos:exactMatch isni:0000000115447102 .
+gnd:4001028-4 skos:exactMatch gnd:42476-6 .
+gnd:4001028-4 skos:exactMatch viaf:130228708 .
+gnd:4001028-4 skos:exactMatch gnd:4001028-4/about .
+gnd:4001028-4 skos:exactMatch wikipediade:Albanien .
+gnd:4062186-8 skos:exactMatch wikipediade:Uruguay .
+gnd:4062186-8 skos:exactMatch wikidata:Q77 .
+gnd:4062186-8 skos:exactMatch gnd:4062186-8/about .
+gnd:4062186-8 skos:exactMatch wikisource:Uruguay .
+gnd:4062186-8 skos:exactMatch loc:n50000647 .
+gnd:4062186-8 skos:exactMatch geonames:3439705 .
+gnd:4062186-8 skos:exactMatch viaf:129569873 .
+gnd:4062186-8 skos:exactMatch gnd:1021739-3 .
+gnd:4062186-8 skos:exactMatch isni:0000000122384648 .
+gnd:4062186-8 skos:exactMatch wikipediaen:Uruguay .
+gnd:1193111315 skos:exactMatch viaf:268389441 .
+gnd:1193111315 skos:exactMatch gnd:1193111315/about .
+gnd:4075720-1 skos:exactMatch viaf:245862941 .
+gnd:4075720-1 skos:exactMatch wikidata:Q12560 .
+gnd:4075720-1 skos:exactMatch gnd:1087199492 .
+gnd:4075720-1 skos:exactMatch gnd:4075720-1/about .
+gnd:4075720-1 skos:exactMatch loc:n2016050222 .
+gnd:4075720-1 skos:exactMatch wikipediade:Hohe_Pforte .
+gnd:4075720-1 skos:exactMatch wikipediaen:Sublime_Porte .
+gnd:4011882-4 skos:exactMatch wikidata:Q183 .
+gnd:4011882-4 skos:exactMatch gnd:4011882-4/about .
+gnd:4011882-4 skos:exactMatch gnd:114771987X .
+gnd:4011882-4 skos:exactMatch gnd:2116082-X .
+gnd:4011882-4 skos:exactMatch viaf:10145376357383721487 .
+gnd:4011882-4 skos:exactMatch geonames:2921044 .
+gnd:4011882-4 skos:exactMatch gnd:1085176444 .
+gnd:4011882-4 skos:exactMatch gnd:1150453761 .
+gnd:4062404-3 skos:exactMatch gnd:15636-X .
+gnd:4062404-3 skos:exactMatch wikipediaen:Vatican_City .
+gnd:4062404-3 skos:exactMatch loc:n80053295 .
+gnd:4062404-3 skos:exactMatch wikipediade:Vatikanstadt .
+gnd:4062404-3 skos:exactMatch gnd:4062404-3/about .
+gnd:4062404-3 skos:exactMatch viaf:136038551 .
+gnd:4062404-3 skos:exactMatch wikisource:Vatikanstadt .
+gnd:4062404-3 skos:exactMatch geonames:3164670 .
+gnd:4062404-3 skos:exactMatch wikidata:Q237 .
+gnd:4000639-6 skos:exactMatch gnd:15570-6 .
+gnd:4000639-6 skos:exactMatch wikipediade:%C3%84thiopien .
+gnd:4000639-6 skos:exactMatch wikidata:Q115 .
+gnd:4000639-6 skos:exactMatch gnd:4000639-6/about .
+gnd:4000639-6 skos:exactMatch viaf:132211363 .
+gnd:4000639-6 skos:exactMatch loc:n79081279 .
+gnd:4000639-6 skos:exactMatch geonames:337996 .
+gnd:4000639-6 skos:exactMatch wikipediaen:Ethiopia .
+gnd:4000639-6 skos:exactMatch isni:0000000121869766 .
+gnd:4003900-6 skos:exactMatch viaf:128919823 .
+gnd:4003900-6 skos:exactMatch wikipediaen:Australia .
+gnd:4003900-6 skos:exactMatch geonames:2077456 .
+gnd:4003900-6 skos:exactMatch gnd:35478-8 .
+gnd:4003900-6 skos:exactMatch wikipediade:Australien .
+gnd:4003900-6 skos:exactMatch loc:n79021326 .
+gnd:4003900-6 skos:exactMatch gnd:4003900-6/about .
+gnd:4003900-6 skos:exactMatch wikidata:Q408 .
+gnd:4049850-5 skos:exactMatch isni:0000000122856828 .
+gnd:4049850-5 skos:exactMatch wikipediade:Simbabwe .
+gnd:4049850-5 skos:exactMatch wikipediaen:Zimbabwe .
+gnd:4049850-5 skos:exactMatch gnd:108517641X .
+gnd:4049850-5 skos:exactMatch gnd:124211-8 .
+gnd:4049850-5 skos:exactMatch geonames:878675 .
+gnd:4049850-5 skos:exactMatch gnd:4049850-5/about .
+gnd:4049850-5 skos:exactMatch loc:n80089993 .
+gnd:4049850-5 skos:exactMatch wikidata:Q954 .
+gnd:4049850-5 skos:exactMatch viaf:128940544 .
+gnd:4049850-5 skos:exactMatch gnd:1085174530 .
+gnd:131744-1 skos:exactMatch viaf:133127460 .
+gnd:131744-1 skos:exactMatch gnd:131744-1/about .
+gnd:4035665-6 skos:exactMatch wikipediade:Liechtenstein .
+gnd:4035665-6 skos:exactMatch viaf:133694435 .
+gnd:4035665-6 skos:exactMatch wikidata:Q347 .
+gnd:4035665-6 skos:exactMatch loc:n80158592 .
+gnd:4035665-6 skos:exactMatch isni:0000000121617972 .
+gnd:4035665-6 skos:exactMatch geonames:3042058 .
+gnd:4035665-6 skos:exactMatch gnd:4035665-6/about .
+gnd:4035665-6 skos:exactMatch wikipediaen:Liechtenstein .
+gnd:4035665-6 skos:exactMatch gnd:1088899730 .
+gnd:4035665-6 skos:exactMatch gnd:1005775-4 .
+gnd:4020949-0 skos:exactMatch loc:n80061117 .
+gnd:4020949-0 skos:exactMatch wikidata:Q117 .
+gnd:4020949-0 skos:exactMatch wikipediade:Ghana .
+gnd:4020949-0 skos:exactMatch viaf:159421741 .
+gnd:4020949-0 skos:exactMatch isni:000000012114305X .
+gnd:4020949-0 skos:exactMatch gnd:4020949-0/about .
+gnd:4020949-0 skos:exactMatch gnd:2012609-8 .
+gnd:4020949-0 skos:exactMatch geonames:2300660 .
+gnd:4020949-0 skos:exactMatch wikipediaen:Ghana .
+gnd:4069500-1 skos:exactMatch gnd:1085174832 .
+gnd:4069500-1 skos:exactMatch gnd:4069500-1/about .
+gnd:4069500-1 skos:exactMatch wikidata:Q836 .
+gnd:4069500-1 skos:exactMatch geonames:1327865 .
+gnd:4069500-1 skos:exactMatch viaf:694156677150833770000 .
+gnd:4069500-1 skos:exactMatch gnd:1016351-7 .
+gnd:4032097-2 skos:exactMatch geonames:2260494 .
+gnd:4032097-2 skos:exactMatch isni:0000000123242385 .
+gnd:4032097-2 skos:exactMatch viaf:173167475 .
+gnd:4032097-2 skos:exactMatch wikidata:Q971 .
+gnd:4032097-2 skos:exactMatch gnd:4032097-2/about .
+gnd:4032097-2 skos:exactMatch loc:n80061151 .
+gnd:4032097-2 skos:exactMatch wikipediade:Republik_Kongo .
+gnd:4032097-2 skos:exactMatch wikipediaen:Republic_of_the_Congo .
+gnd:4032097-2 skos:exactMatch gnd:1001374-X .
+gnd:4040163-7 skos:exactMatch wikisource:Montenegro .
+gnd:4040163-7 skos:exactMatch gnd:1022345-9 .
+gnd:4040163-7 skos:exactMatch wikidata:Q236 .
+gnd:4040163-7 skos:exactMatch geonames:3194884 .
+gnd:4040163-7 skos:exactMatch wikipediaen:Montenegro .
+gnd:4040163-7 skos:exactMatch viaf:149551124 .
+gnd:4040163-7 skos:exactMatch gnd:4040163-7/about .
+gnd:4040163-7 skos:exactMatch loc:n81032743 .
+gnd:4040163-7 skos:exactMatch wikipediade:Montenegro .
+gnd:1171764901 skos:exactMatch gnd:1171764901/about .
+gnd:1171764901 skos:exactMatch viaf:1581160001830530300001 .
+gnd:4011890-3 skos:exactMatch wikisource:Deutsche_Demokratische_Republik .
+gnd:4011890-3 skos:exactMatch geonames:8354410 .
+gnd:4011890-3 skos:exactMatch gnd:1072890658 .
+gnd:4011890-3 skos:exactMatch gnd:1085908445 .
+gnd:4011890-3 skos:exactMatch gnd:2009177-1 .
+gnd:4011890-3 skos:exactMatch wikidata:Q16957 .
+gnd:4011890-3 skos:exactMatch viaf:268607483 .
+gnd:4011890-3 skos:exactMatch gnd:4011890-3/about .
+gnd:4011890-3 skos:exactMatch gnd:1085176452 .
+gnd:4011890-3 skos:exactMatch gnd:1085176282 .
+gnd:4051524-2 skos:exactMatch gnd:1029075-8 .
+gnd:4051524-2 skos:exactMatch loc:n81117285 .
+gnd:4051524-2 skos:exactMatch gnd:4051524-2/about .
+gnd:4051524-2 skos:exactMatch wikidata:Q238 .
+gnd:4051524-2 skos:exactMatch wikipediaen:San_Marino .
+gnd:4051524-2 skos:exactMatch viaf:314808075 .
+gnd:4051524-2 skos:exactMatch wikisource:San_Marino .
+gnd:4051524-2 skos:exactMatch geonames:3168068 .
+gnd:4051524-2 skos:exactMatch wikipediade:San_Marino .
+gnd:1035027-5 skos:exactMatch gnd:1035027-5/about .
+gnd:1035027-5 skos:exactMatch wikidata:Q1852345 .
+gnd:1035027-5 skos:exactMatch viaf:137837759 .
+gnd:4010618-4 skos:exactMatch geonames:3624060 .
+gnd:4010618-4 skos:exactMatch viaf:127438253 .
+gnd:4010618-4 skos:exactMatch gnd:15580-9 .
+gnd:4010618-4 skos:exactMatch gnd:4010618-4/about .
+gnd:4010618-4 skos:exactMatch wikisource:Costa_Rica .
+gnd:4010618-4 skos:exactMatch wikidata:Q800 .
+gnd:4044569-0 skos:exactMatch gnd:43567-3 .
+gnd:4044569-0 skos:exactMatch viaf:151781392 .
+gnd:4044569-0 skos:exactMatch loc:n81034915 .
+gnd:4044569-0 skos:exactMatch gnd:4044569-0/about .
+gnd:4044569-0 skos:exactMatch wikipediade:Papua-Neuguinea .
+gnd:4044569-0 skos:exactMatch geonames:2088628 .
+gnd:4044569-0 skos:exactMatch wikipediaen:Papua_New_Guinea .
+gnd:4044569-0 skos:exactMatch wikidata:Q691 .
+gnd:4044569-0 skos:exactMatch isni:0000000122965717 .
+gnd:4009696-8 skos:exactMatch isni:0000000121527336 .
+gnd:4009696-8 skos:exactMatch gnd:4009696-8/about .
+gnd:4009696-8 skos:exactMatch wikipediaen:Sri_Lanka .
+gnd:4009696-8 skos:exactMatch wikipediade:Sri_Lanka .
+gnd:4009696-8 skos:exactMatch viaf:126600002 .
+gnd:4009696-8 skos:exactMatch loc:n80061039 .
+gnd:4009696-8 skos:exactMatch gnd:25254-2 .
+gnd:4009696-8 skos:exactMatch wikidata:Q854 .
+gnd:4009696-8 skos:exactMatch geonames:1227603 .
+gnd:15582-2 skos:exactMatch wikidata:Q798431 .
+gnd:15582-2 skos:exactMatch viaf:152981833 .
+gnd:15582-2 skos:exactMatch loc:n80049722 .
+gnd:15582-2 skos:exactMatch gnd:15582-2/about .
+gnd:15582-2 skos:exactMatch wikipediade:Republik_Dahomey .
+gnd:15582-2 skos:exactMatch wikipediaen:Republic_of_Dahomey .
+gnd:15582-2 skos:exactMatch isni:0000000106734193 .
+gnd:133557-1 skos:exactMatch viaf:158878922 .
+gnd:133557-1 skos:exactMatch gnd:133557-1/about .
+gnd:4230226-2 skos:exactMatch gnd:4230226-2/about .
+gnd:4230226-2 skos:exactMatch wikipediaen:Cook_Islands .
+gnd:4230226-2 skos:exactMatch gnd:124984-8 .
+gnd:4230226-2 skos:exactMatch wikipediade:Cookinseln .
+gnd:4230226-2 skos:exactMatch geonames:1899402 .
+gnd:4230226-2 skos:exactMatch viaf:142437319 .
+gnd:4230226-2 skos:exactMatch loc:n80020426 .
+gnd:4230226-2 skos:exactMatch wikidata:Q26988 .
+gnd:4019197-7 skos:exactMatch wikipediaen:The_Gambia .
+gnd:4019197-7 skos:exactMatch gnd:1003325-7 .
+gnd:4019197-7 skos:exactMatch wikipediade:Gambia .
+gnd:4019197-7 skos:exactMatch geonames:2413451 .
+gnd:4019197-7 skos:exactMatch loc:n50022374 .
+gnd:4019197-7 skos:exactMatch gnd:4019197-7/about .
+gnd:4019197-7 skos:exactMatch viaf:137123352 .
+gnd:4019197-7 skos:exactMatch wikidata:Q1005 .
+gnd:4019197-7 skos:exactMatch isni:0000000121659101 .
+gnd:1009150-6 skos:exactMatch gnd:1009150-6/about .
+gnd:1009150-6 skos:exactMatch viaf:158899775 .
+gnd:4017243-0 skos:exactMatch wikipediade:Finnland .
+gnd:4017243-0 skos:exactMatch geonames:660013 .
+gnd:4017243-0 skos:exactMatch wikidata:Q33 .
+gnd:4017243-0 skos:exactMatch gnd:4017243-0/about .
+gnd:4017243-0 skos:exactMatch loc:n79065711 .
+gnd:4017243-0 skos:exactMatch gnd:25917-2 .
+gnd:4017243-0 skos:exactMatch viaf:157831164 .
+gnd:4017243-0 skos:exactMatch wikipediaen:Finland .
+gnd:4075613-0 skos:exactMatch loc:n50057161 .
+gnd:4075613-0 skos:exactMatch gnd:1085174484 .
+gnd:4075613-0 skos:exactMatch viaf:2413157416853816710008 .
+gnd:4075613-0 skos:exactMatch wikipediaen:Austria-Hungary .
+gnd:4075613-0 skos:exactMatch wikidata:Q28513 .
+gnd:4075613-0 skos:exactMatch wikipediade:%C3%96sterreich-Ungarn .
+gnd:4075613-0 skos:exactMatch isni:0000000118455087 .
+gnd:4075613-0 skos:exactMatch gnd:2021001-2 .
+gnd:4075613-0 skos:exactMatch gnd:4075613-0/about .
+gnd:4050939-4 skos:exactMatch isni:0000000123591227 .
+gnd:4050939-4 skos:exactMatch gnd:4050939-4/about .
+gnd:4050939-4 skos:exactMatch wikipediaen:Socialist_Republic_of_Romania .
+gnd:4050939-4 skos:exactMatch gnd:1009488-X .
+gnd:4050939-4 skos:exactMatch viaf:153149185 .
+gnd:4050939-4 skos:exactMatch geonames:798549 .
+gnd:4050939-4 skos:exactMatch wikidata:Q218 .
+gnd:4050939-4 skos:exactMatch wikipediade:Sozialistische_Republik_Rum%C3%A4nien .
+gnd:4008003-1 skos:exactMatch viaf:248503843 .
+gnd:4008003-1 skos:exactMatch wikipediaen:Empire_of_Brazil .
+gnd:4008003-1 skos:exactMatch gnd:4008003-1/about .
+gnd:4008003-1 skos:exactMatch wikidata:Q155 .
+gnd:4008003-1 skos:exactMatch gnd:7343-X .
+gnd:4008003-1 skos:exactMatch wikipediade:Kaiserreich_Brasilien .
+gnd:4008003-1 skos:exactMatch geonames:3469034 .
+gnd:1135617678 skos:exactMatch viaf:10149841766902840746 .
+gnd:1135617678 skos:exactMatch gnd:1135617678/about .
+gnd:4073009-8 skos:exactMatch wikipediade:Jemen .
+gnd:4073009-8 skos:exactMatch geonames:69543 .
+gnd:4073009-8 skos:exactMatch viaf:123663509 .
+gnd:4073009-8 skos:exactMatch viaf:140653392 .
+gnd:4073009-8 skos:exactMatch wikipediaen:Yemen .
+gnd:4073009-8 skos:exactMatch gnd:4073009-8/about .
+gnd:4073009-8 skos:exactMatch wikidata:Q805 .
+gnd:4073009-8 skos:exactMatch gnd:2129948-1 .
+gnd:4073009-8 skos:exactMatch loc:n81053408 .
+gnd:4014149-4 skos:exactMatch gnd:4014149-4/about .
+gnd:4014149-4 skos:exactMatch loc:n83181686 .
+gnd:4014149-4 skos:exactMatch wikipediaen:Elam .
+gnd:4014149-4 skos:exactMatch viaf:243355130 .
+gnd:4014149-4 skos:exactMatch wikipediade:Elam_%28Altertum%29 .
+gnd:4019052-3 skos:exactMatch isni:0000000121956165 .
+gnd:4019052-3 skos:exactMatch wikipediaen:Gabon .
+gnd:4019052-3 skos:exactMatch loc:n79063286 .
+gnd:4019052-3 skos:exactMatch wikipediade:Gabun .
+gnd:4019052-3 skos:exactMatch viaf:132510392 .
+gnd:4019052-3 skos:exactMatch gnd:1016587-3 .
+gnd:4019052-3 skos:exactMatch gnd:4019052-3/about .
+gnd:4019052-3 skos:exactMatch wikidata:Q1000 .
+gnd:4019052-3 skos:exactMatch geonames:2400553 .
+gnd:4074495-4 skos:exactMatch viaf:138148995952859751705 .
+gnd:4074495-4 skos:exactMatch gnd:37629-2 .
+gnd:4074495-4 skos:exactMatch geonames:927384 .
+gnd:4074495-4 skos:exactMatch loc:n80089996 .
+gnd:4074495-4 skos:exactMatch wikipediade:Malawi .
+gnd:4074495-4 skos:exactMatch isni:0000000121867269 .
+gnd:4074495-4 skos:exactMatch gnd:4074495-4/about .
+gnd:4074495-4 skos:exactMatch wikidata:Q1020 .
+gnd:4074495-4 skos:exactMatch wikipediaen:Malawi .
+gnd:4395034-6 skos:exactMatch viaf:122520290 .
+gnd:4395034-6 skos:exactMatch isni:0000000122909061 .
+gnd:4395034-6 skos:exactMatch loc:n80160431 .
+gnd:4395034-6 skos:exactMatch gnd:1085174581 .
+gnd:4395034-6 skos:exactMatch wikipediaen:Russian_Soviet_Federative_Socialist_Republic .
+gnd:4395034-6 skos:exactMatch wikipediade:Russische_Sozialistische_F%C3%B6derative_Sowjetrepublik .
+gnd:4395034-6 skos:exactMatch gnd:4395034-6/about .
+gnd:4395034-6 skos:exactMatch wikidata:Q2184 .
+gnd:4395034-6 skos:exactMatch gnd:35389-9 .
+gnd:15633-4 skos:exactMatch viaf:153607409 .
+gnd:15633-4 skos:exactMatch gnd:15633-4/about .
+gnd:4114201-9 skos:exactMatch gnd:1183011202 .
+gnd:4114201-9 skos:exactMatch gnd:7504049-9 .
+gnd:4114201-9 skos:exactMatch wikidata:Q170174 .
+gnd:4114201-9 skos:exactMatch viaf:235521738 .
+gnd:4114201-9 skos:exactMatch gnd:121798-7 .
+gnd:4114201-9 skos:exactMatch gnd:4114201-9/about .
+gnd:45879-X skos:exactMatch wikidata:Q15102440 .
+gnd:45879-X skos:exactMatch viaf:129599996 .
+gnd:45879-X skos:exactMatch gnd:45879-X/about .
+gnd:45879-X skos:exactMatch wikidata:Q191077 .
+gnd:4085456-5 skos:exactMatch viaf:124281406 .
+gnd:4085456-5 skos:exactMatch gnd:4085456-5/about .
+gnd:4085456-5 skos:exactMatch geonames:3575830 .
+gnd:4085456-5 skos:exactMatch wikipediade:Dominica .
+gnd:4085456-5 skos:exactMatch wikidata:Q784 .
+gnd:4085456-5 skos:exactMatch loc:n50065763 .
+gnd:4085456-5 skos:exactMatch gnd:270274-5 .
+gnd:4085456-5 skos:exactMatch wikipediaen:Dominica .
+gnd:4085456-5 skos:exactMatch isni:0000000114255416 .
+gnd:4079596-2 skos:exactMatch wikidata:Q229 .
+gnd:4079596-2 skos:exactMatch wikipediaen:Kingdom_of_Cyprus .
+gnd:4079596-2 skos:exactMatch gnd:37568-8 .
+gnd:4079596-2 skos:exactMatch gnd:4079596-2/about .
+gnd:4079596-2 skos:exactMatch viaf:242098446 .
+gnd:1079565973 skos:exactMatch loc:n2007030647 .
+gnd:1079565973 skos:exactMatch viaf:150317263 .
+gnd:1079565973 skos:exactMatch wikipediade:Republik_Neugranada .
+gnd:1079565973 skos:exactMatch wikipediaen:Republic_of_New_Granada .
+gnd:1079565973 skos:exactMatch gnd:1079565973/about .
+gnd:1079565973 skos:exactMatch wikidata:Q630882 .
+gnd:4042300-1 skos:exactMatch gnd:4042300-1/about .
+gnd:4042300-1 skos:exactMatch geonames:2328926 .
+gnd:4042300-1 skos:exactMatch wikipediade:Nigeria .
+gnd:4042300-1 skos:exactMatch wikipediaen:Nigeria .
+gnd:4042300-1 skos:exactMatch isni:0000000121578678 .
+gnd:4042300-1 skos:exactMatch viaf:130803976 .
+gnd:4042300-1 skos:exactMatch loc:n79056412 .
+gnd:4042300-1 skos:exactMatch gnd:1009354-0 .
+gnd:4042300-1 skos:exactMatch wikidata:Q1033 .
+gnd:4009937-4 skos:exactMatch wikidata:Q148 .
+gnd:4009937-4 skos:exactMatch wikipediaen:China .
+gnd:4009937-4 skos:exactMatch viaf:132441531 .
+gnd:4009937-4 skos:exactMatch geonames:1814991 .
+gnd:4009937-4 skos:exactMatch gnd:4009937-4/about .
+gnd:4009937-4 skos:exactMatch wikipediade:Volksrepublik_China .
+gnd:4009937-4 skos:exactMatch gnd:2006950-9 .
+gnd:4009937-4 skos:exactMatch loc:n79091151 .
+gnd:122139-5 skos:exactMatch wikipediade:Lettland .
+gnd:122139-5 skos:exactMatch wikipediaen:Latvia .
+gnd:122139-5 skos:exactMatch loc:n80150219 .
+gnd:122139-5 skos:exactMatch gnd:122139-5/about .
+gnd:122139-5 skos:exactMatch gnd:1085174867 .
+gnd:122139-5 skos:exactMatch viaf:237710820 .
+gnd:4078228-1 skos:exactMatch viaf:138308059 .
+gnd:4078228-1 skos:exactMatch isni:0000000123531793 .
+gnd:4078228-1 skos:exactMatch gnd:4078228-1/about .
+gnd:4078228-1 skos:exactMatch gnd:37686-3 .
+gnd:4078228-1 skos:exactMatch loc:n79059683 .
+gnd:4078228-1 skos:exactMatch wikidata:Q869 .
+gnd:4078228-1 skos:exactMatch wikipediade:Thailand .
+gnd:4078228-1 skos:exactMatch geonames:1605651 .
+gnd:4078228-1 skos:exactMatch wikipediaen:Thailand .
+gnd:4031812-6 skos:exactMatch gnd:4031812-6/about .
+gnd:4031812-6 skos:exactMatch wikidata:Q739 .
+gnd:4031812-6 skos:exactMatch gnd:16293388-5 .
+gnd:4031812-6 skos:exactMatch viaf:127757650 .
+gnd:4031812-6 skos:exactMatch gnd:1017568-4 .
+gnd:4031812-6 skos:exactMatch geonames:3686110 .
+gnd:4031812-6 skos:exactMatch gnd:1085176401 .
+gnd:4031812-6 skos:exactMatch loc:n79084451 .
+gnd:4031812-6 skos:exactMatch wikisource:Kolumbien .
+gnd:4031812-6 skos:exactMatch wikipediaen:Colombia .
+gnd:4031812-6 skos:exactMatch wikipediade:Kolumbien .
+gnd:7589556-0 skos:exactMatch loc:n2003032489 .
+gnd:7589556-0 skos:exactMatch gnd:2134813-3 .
+gnd:7589556-0 skos:exactMatch wikipediaen:Sint_Maarten .
+gnd:7589556-0 skos:exactMatch gnd:7589556-0/about .
+gnd:7589556-0 skos:exactMatch wikipediade:Sint_Maarten .
+gnd:7589556-0 skos:exactMatch wikidata:Q26273 .
+gnd:7589556-0 skos:exactMatch viaf:268864753 .
+gnd:4037257-1 skos:exactMatch viaf:147680224 .
+gnd:4037257-1 skos:exactMatch geonames:2562770 .
+gnd:4037257-1 skos:exactMatch loc:n79145770 .
+gnd:4037257-1 skos:exactMatch wikipediaen:Malta .
+gnd:4037257-1 skos:exactMatch gnd:2019145-5 .
+gnd:4037257-1 skos:exactMatch wikipediade:Malta .
+gnd:4037257-1 skos:exactMatch isni:0000000120975364 .
+gnd:4037257-1 skos:exactMatch wikisource:Malta .
+gnd:4037257-1 skos:exactMatch wikidata:Q233 .
+gnd:4037257-1 skos:exactMatch gnd:4037257-1/about .
+gnd:1085176169 skos:exactMatch gnd:1085176169/about .
+gnd:1085176169 skos:exactMatch viaf:475145857889723021099 .
+gnd:4079248-1 skos:exactMatch loc:n81130239 .
+gnd:4079248-1 skos:exactMatch gnd:4079248-1/about .
+gnd:4079248-1 skos:exactMatch geonames:2461445 .
+gnd:4079248-1 skos:exactMatch gnd:125656-7 .
+gnd:4079248-1 skos:exactMatch wikipediaen:Western_Sahara .
+gnd:4079248-1 skos:exactMatch wikidata:Q689837 .
+gnd:4079248-1 skos:exactMatch wikipediade:Westsahara .
+gnd:4079248-1 skos:exactMatch viaf:127856076 .
+gnd:129224-9 skos:exactMatch gnd:129224-9/about .
+gnd:129224-9 skos:exactMatch viaf:148354942 .
+gnd:4027754-9 skos:exactMatch geonames:2629691 .
+gnd:4027754-9 skos:exactMatch wikidata:Q189 .
+gnd:4027754-9 skos:exactMatch gnd:1017371-7 .
+gnd:4027754-9 skos:exactMatch viaf:129590658 .
+gnd:4027754-9 skos:exactMatch wikipediade:Island_%28Yonne%29 .
+gnd:4027754-9 skos:exactMatch wikipediaen:Island%2C_Yonne .
+gnd:4027754-9 skos:exactMatch gnd:4027754-9/about .
+gnd:4027754-9 skos:exactMatch isni:0000000113700581 .
+gnd:4001179-3 skos:exactMatch isni:0000000121565738 .
