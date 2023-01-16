@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix lido: <http://terminology.lido-schema.org/>.
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix werkd: <http://www.werkd.saw-leipzig.de/> .
+
+lido:genderActor rdf:type   skos:ConceptScheme;
+    cc:licence              <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:licence         <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:altLabel           "genderActor"@en;
+    skos:prefLabel          "Gender Actor Vocabulary"@en;
+    skos:prefLabel          "Geschlecht (Akteur) Vokabular"@de;
+    skos:definition         "The LIDO Gender Actor Vocabulary is a controlled list of terms recommended to use as values in the LIDO Gender Actor element, indicating the sex assigned at birth or the gender identity of an actor."@en.
+lido:lido00773  rdf:type    skos:Concept;
+    rdf:type                werkd:gender_value ;
+    cc:licence              <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:licence         <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:definition         "**Female**, as a value for the LIDO **Gender Actor** LIDO Schema Documentation Version 1.1 element, designates the sex assigned at birth, or the gender identity of an actor as a woman or girl."@en ;
+    skos:exactMatch         <https://d-nb.info/standards/vocab/gnd/gender#female> , <http://www.wikidata.org/entity/Q6581072> , <http://vocab.getty.edu/aat/300189557> ;
+    skos:inScheme           lido:genderActor ;
+    skos:prefLabel          "Weiblich"@de , "Female"@en , "žónska"@hsb , "žeńske"@dsb .
+lido:lido00774  rdf:type    skos:Concept ;
+    rdf:type                werkd:gender_value ;
+    cc:licence              <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:licence         <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:definition         "**Male**, as a value for the LIDO **Gender Actor** LIDO Schema Documentation Version 1.1 element, designates the sex assigned at birth, or the gender identity of an actor as a man or boy."@en ;
+    skos:exactMatch         <http://vocab.getty.edu/aat/300189559> , <https://d-nb.info/standards/vocab/gnd/gender#male> , <http://www.wikidata.org/entity/Q6581097> ;
+    skos:inScheme           lido:genderActor ;
+    skos:prefLabel          "Männlich"@de , "Male"@en , "muski"@hsb , "muski"@dsb .
+lido:lido00776  rdf:type    skos:Concept ;
+    rdf:type                werkd:gender_value ;
+    cc:licence              <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:licence         <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:definition         "**Other sex or gender**, as a value for the LIDO **Gender Actor** Schema Documentation Version 1.1 element, indicates that the sex or gender of an actor is not adequately described by &quot;female&quot; or &quot;male&quot;, respectively."@en ;
+    skos:inScheme           lido:genderActor ;
+    skos:prefLabel          "Anderes Geschlecht"@de , "Other sex or gender"@en , "Druhi splah"@hsb , "Drugi rod"@dsb ;
+    skos:relatedMatch       <http://vocab.getty.edu/page/aat/300400504> .
+lido:lido00775  rdf:type    skos:Concept ;
+    rdf:type                werkd:gender_value ;
+    cc:licence              <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:licence         <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:closeMatch         <https://d-nb.info/standards/vocab/gnd/gender#notKnown> ;
+    skos:definition         "**Unknown sex or gender**, as a value for the LIDO **Gender Actor** LIDO Schema Documentation Version 1.1 element, indicates that the sex or gender of an actor is not known at the time of recording."@en ;
+    skos:inScheme           lido:genderActor ;
+    skos:prefLabel          "Unknown sex or gender"@en , "Unbekannt (Geschlecht)"@de , "Njeznaty splah"@hsb , "njeznaty rod"@dsb ;
+    skos:altLabel           "Unknown (Sex or gender)"@en , "Geschlecht unbekannt"@de , "Not known (Sex or gender)"@en , "Sex or gender unknown"@en .
+
+
+
