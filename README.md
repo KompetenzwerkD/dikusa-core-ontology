@@ -11,6 +11,7 @@ Core ontology for integrating data of the partner institutions within the Dikusa
 * RDF-star is mainly used to include information on provenance of facts, which can be annotated to any triple in the knowöedge base
 * OWL is used for labeling inverse relations
 * SHACL is used to allow for validating instance data against the schema
+* additional controlled vocabularies can be found in the vocabs-folder
 
 ### Visualisation
 Since the ontology is rather complex and the Turtle-file which also includes the shacl-constraints is difficult to comprehend, additional visualisations have been created:
