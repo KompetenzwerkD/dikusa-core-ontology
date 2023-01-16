@@ -1,6 +1,6 @@
 # dikusa-core-ontology
 
-Core ontology for integrating data of the partner institutions within the Dikusa-project
+This dataset contains a central ontology used for the linking of digital cultural data in Saxony, Germany. It is applied by six Saxon non-university research institutions within the DIKUSA-project (Vernetzung digitaler Kulturdaten in Sachsen).
 
 ## Description
 
