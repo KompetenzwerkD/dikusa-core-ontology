@@ -1225,27 +1225,6 @@
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
 
-# -------------
-
-:is_same_person_as
-    rdf:type rdf:Property ;
-    rdf:type owl:SymmetricProperty ;
-    rdfs:label "is same person as" ;
-    rdfs:domain :person ;
-    rdfs:range :person .
-
-:is_same_person_as_subject_shape
-	a sh:NodeShape ;
-	sh:targetSubjectsOf :is_same_person_as ;
-    sh:nodeKind sh:IRI ;
-    sh:class :person .
-
-:is_same_person_as_object_shape
-	a sh:NodeShape ;
-    sh:targetObjectsOf :is_same_person_as ;
-    sh:nodeKind sh:IRI ;
-    sh:class :person .
-
 # ----------------
 
 :is_same_as_external_reference
@@ -1753,47 +1732,7 @@
     sh:targetObjectsOf :has_coordinates_value ;
     sh:nodeKind sh:Literal .
 
-# --------------------
-
-:is_same_place_as
-    rdf:type rdf:Property ;
-    rdf:type owl:SymmetricProperty ;
-    rdfs:label "is same place as" ;
-    rdfs:domain :place ;
-    rdfs:range :place .
-
-:is_same_place_as_subject_shape
-	a sh:NodeShape ;
-	sh:targetSubjectsOf :is_same_place_as ;
-    sh:nodeKind sh:IRI ;
-    sh:class :place .
-
-:is_same_place_as_object_shape
-	a sh:NodeShape ;
-    sh:targetObjectsOf :is_same_place_as ;
-    sh:nodeKind sh:IRI ;
-    sh:class :place .
-
-:is_same_place_as_external_reference
-    rdf:type rdf:Property ;
-    rdfs:label "is same place as external reference" ;
-    rdfs:domain :place ;
-    rdfs:range xsd:anyURI .
-
-:is_same_place_as_external_reference_subject_shape
-	a sh:NodeShape ;
-	sh:targetSubjectsOf :is_same_place_as_external_reference ;
-    sh:nodeKind sh:IRI ;
-    sh:class :place .
-
-:is_same_place_as_external_reference_object_shape
-	a sh:NodeShape ;
-    sh:targetObjectsOf :is_same_place_as_external_reference ;
-    sh:nodeKind sh:Literal ;
-    sh:datatype xsd:anyURI ;
-    sh:pattern "^http" .
-
-# address
+# -------------------- address
 
 :has_address
     rdf:type rdf:Property ;
@@ -2231,27 +2170,6 @@
     rdfs:label "event resource relation type" ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
-
-# -------------
-
-:is_same_event_as
-    rdf:type rdf:Property ;
-    rdf:type owl:SymmetricProperty ;
-    rdfs:label "is same event as" ;
-    rdfs:domain :event ;
-    rdfs:range :event .
-
-:is_same_event_as_subject_shape
-	a sh:NodeShape ;
-	sh:targetSubjectsOf :is_same_event_as ;
-    sh:nodeKind sh:IRI ;
-    sh:class :event .
-
-:is_same_event_as_object_shape
-	a sh:NodeShape ;
-    sh:targetObjectsOf :is_same_event_as ;
-    sh:nodeKind sh:IRI ;
-    sh:class :event .
 
 # ----------------
 
