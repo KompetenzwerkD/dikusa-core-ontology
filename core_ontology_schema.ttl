@@ -2652,7 +2652,7 @@
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_inscription_text ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:class :nscription .
+    sh:class :inscription .
 
 :has_inscription_text_object_shape
 	a sh:NodeShape ;
