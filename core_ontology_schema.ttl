@@ -2956,7 +2956,7 @@
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_first_page ;
     sh:nodeKind sh:Literal ;
-    sh:datatype xsd:date .
+    sh:datatype xsd:integer .
 
 :has_last_page
     rdf:type rdf:Property ;
@@ -2974,7 +2974,7 @@
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_last_page ;
     sh:nodeKind sh:Literal ;
-    sh:datatype xsd:date .
+    sh:datatype xsd:integer .
 
 #----------------
 
