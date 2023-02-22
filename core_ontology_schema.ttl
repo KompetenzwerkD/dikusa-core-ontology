@@ -2938,7 +2938,7 @@
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_number_of_pages ;
     sh:nodeKind sh:Literal ;
-    sh:datatype xsd:date .
+    sh:datatype xsd:integer .
 
 :has_first_page
     rdf:type rdf:Property ;
