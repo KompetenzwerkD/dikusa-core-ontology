@@ -1035,10 +1035,6 @@
     rdf:type rdfs:Class , sh:NodeShape ;
     rdfs:label "id" ;
     sh:property [
-        sh:path [ sh:inversePath :has_id ] ;
-        sh:minCount 1 ;
-    ] ;
-    sh:property [
         sh:path :has_id_value ;
         sh:minCount 1 ; 
     ] ;
