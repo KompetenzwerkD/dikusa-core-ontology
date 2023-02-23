@@ -1153,8 +1153,7 @@
 :nationality_value
     rdf:type rdfs:Class ;
     rdfs:label "nationality value" ;
-    rdfs:subClassOf :entity_with_name ;
-    rdfs:subClassOf :entity_with_description .
+    rdfs:subClassOf :id .
 
 # -------------
 
