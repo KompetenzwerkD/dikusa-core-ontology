@@ -1009,6 +1009,7 @@
 # actor as superset of person and group
 :actor
     rdf:type rdfs:Class ;
+    rdfs:subClassOf :entity_with_object_relation ;
     rdfs:label "actor" .
 
 # ---------------------
