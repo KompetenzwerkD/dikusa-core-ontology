@@ -3,6 +3,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix lido: <http://terminology.lido-schema.org/>.
+@prefix gnd: <https://d-nb.info/gnd/> .
 
 
 # can be validated against the schema using shacl (under open world assumption)
@@ -12,9 +14,7 @@
 # this information will be included automatically before validation with Dikusa-RDF-Validator
 
 # class declarations
-
 :dhguy rdf:type :person .
-
 :unknown_dhguy rdf:type :person .
 :speters rdf:type :person .
 :leipzig rdf:type :place .
@@ -23,19 +23,17 @@
 :kreis_bautzen rdf:type :place .
 :villa_klinkhardt rdf:type :place .
 :germany rdf:type :place .
-:male rdf:type :gender_value .
-:DEU rdf:type :nationality .
 :latin rdf:type :script .
 :saw rdf:type :group .
 :angelverein_dresden rdf:type :group .
 :employee rdf:type :person_group_relation_type .
 :member rdf:type :person_group_relation_type .
 :residence rdf:type :person_place_relation_type .
-:peters2018 rdf:type :work .
+:workplace rdf:type :person_place_relation_type .
 :main_author rdf:type :author_role .
-:it_developer rdf:type :occupation_value .
-:it_specialist rdf:type :occupation_value .
 :gnd rdf:type :id_type .
+:werkd rdf:type :id_type .
+:lido rdf:type :id_type .
 :wikidata rdf:type :id_type .
 :hov rdf:type :id_type .
 :teacher_student rdf:type :person_person_relation_type .
@@ -46,12 +44,12 @@
 :town rdf:type :place_type .
 :volkmarsdorf_gebietskoerperschaft rdf:type :place .
 :volkmarsdorf_stadtteil rdf:type :place .
-:incorporation rdf:type :change_of_existence_type .
-# :district rdf:type :place_type .
+:incorporation rdf:type :change_of_place_existence_type .
+:district rdf:type :place_type .
 :municipality rdf:type :place_type .
 
-# IRIs are now used for reified classes, no more blank nodes
-
+# blank nodes used for reified classes
+# depending on versioning approach IRIs will be used instead 
 :name_1 rdf:type :name .
 :name_2 rdf:type :name .
 :entity_description_1 rdf:type :entity_description .
@@ -59,6 +57,7 @@
 :life_state_change_2 rdf:type :life_state_change .
 :person_place_relation_1 rdf:type :person_place_relation .
 :person_place_relation_2 rdf:type :person_place_relation .
+:person_place_relation_3 rdf:type :person_place_relation .
 :occupation_1 rdf:type :occupation .
 :occupation_2 rdf:type :occupation .
 :id_1 rdf:type :id .
@@ -69,7 +68,7 @@
 :life_state_change_3 rdf:type :life_state_change .
 :person_group_relation_2 rdf:type :person_group_relation .
 :author_1 rdf:type :author .
-::person_person_relation_1 rdf:type :person_person_relation .
+:person_person_relation_1 rdf:type :person_person_relation .
 :name_3 rdf:type :name .
 :name_4 rdf:type :name .
 :id_3 rdf:type :id .
@@ -84,14 +83,12 @@
 :name_5 rdf:type :name .
 :location_1 rdf:type :location .
 :gender_1 rdf:type :gender .
+:nationality_1 rdf:type :nationality .
+
+# import of vocabularies
+
 
 :unknown_dhguy
-    :has_preferred_name :name_1 .
-    
-:speters
-    :has_preferred_name :name_1 .
-
-:speters
     :has_preferred_name :name_1 .
     
 :dhguy
@@ -129,6 +126,8 @@
         :has_comment "das sind wieder alles lateinische Buchstaben" ;
         :has_provenance_certainty "sicher" |} .
 
+
+
 :dhguy
     :has_entity_description :entity_description_1 {|
         :has_provenance_certainty "eher unsicher"@de
@@ -160,9 +159,9 @@
     :has_death :life_state_change_3 {|
         :has_provenence_text "Ergebnis von Nachforschungen"@de ;
         :has_provenance_certainty "unsicher"@de
-    |}. 
+    |} . 
 
-:gender_1 :has_gender_value :male .
+:gender_1 :has_gender_value lido:lido00774 .
 
 :life_state_change_1
     :has_place :leipzig ;
@@ -193,7 +192,8 @@
     
 :dhguy
     :has_place_relation :person_place_relation_1 ;
-    :has_place_relation :person_place_relation_2 .
+    :has_place_relation :person_place_relation_2 ;
+    :has_place_relation :person_place_relation_3 .
 
 :person_place_relation_1
     :has_begin_earliest "1965-08-26"^^xsd:date ;
@@ -205,6 +205,13 @@
         :has_description "Umzug im April 1992"
     |} ;
     :has_person_place_relation_type :residence .
+
+:person_place_relation_3
+    :has_begin_earliest "1988-01-01"^^xsd:date ;
+    :has_begin_latest "1988-01-01"^^xsd:date ;
+    :has_end_earliest "1992-04-01"^^xsd:date ;
+    :has_end_latest "1992-04-30"^^xsd:date ;
+    :has_person_place_relation_type :workplace .
 
 :person_place_relation_2
     :has_begin_earliest "1992-04-01"^^xsd:date {|
@@ -250,9 +257,14 @@
     :has_id_type :wikidata .
     
 :dhguy
-    :has_nationality :DEU ;
+    :has_nationality :nationality_1 ;
     :has_group_relation :person_group_relation_1 ;
     :has_group_relation :person_group_relation_2 .
+
+:nationality_1
+    :has_nationality_value gnd:4011882-4 ;
+    :has_begin_earliest "1965-08-26"^^xsd:date ;
+    :has_begin_latest "1965-08-26"^^xsd:date .
 
 :saw :has_person_relation :person_group_relation_1 .
 :angelverein_dresden  :has_person_relation :person_group_relation_2 .
@@ -283,16 +295,16 @@
     :has_person_person_relation_type :friendship .
 
 :dhguy
-    :has_person_relation ::person_person_relation_1 {|
+    :has_person_relation :person_person_relation_1 {|
         :has_person_person_relation_role :student
     |} .
 
 :speters
-    :has_person_relation ::person_person_relation_1 {|
+    :has_person_relation :person_person_relation_1 {|
         :has_person_person_relation_role :teacher
     |} .
 
-::person_person_relation_1
+:person_person_relation_1
     :has_person_person_relation_type :teacher_student ;
     :has_begin_earliest "1996-10-01"^^xsd:date ;
     :has_begin_latest "1996-10-01"^^xsd:date ;
@@ -333,7 +345,7 @@
 
 :leipzig
     :is_same_place_as :leipzig_sachsen ;
-    :is_same_as_external_reference "https://de.wikipedia.org/wiki/Leipzig" ;
+    :is_same_as_external_reference "https://de.wikipedia.org/wiki/Leipzig"^^xsd:anyURI ;
     :has_entity_description :entity_description_2 .
 
 :entity_description_2
@@ -345,7 +357,9 @@
     :has_citation_resource :faust1 ; 
     :has_citation_text "Mein Leipzig lob ich mir" .
 
-:leipzig :has_person_relation :person_place_relation_1 .
+:leipzig
+    :has_person_relation :person_place_relation_1 ;
+    :has_person_relation :person_place_relation_3 .
 
 :dresden :has_person_relation :person_place_relation_2 .
 
@@ -368,10 +382,10 @@
     :has_begin_of_existence :change_of_existence_1 .
 
 :change_of_existence_1
-    :has_change_of_existence_type :incorporation ;
-    :has_date_earliest "1890-01-01"^^xsd:date ;
-    :has_date_latest "1890-12-31"^^xsd:date ;
-    :has_place :leipzig .
+    :has_change_of_place_existence_type :incorporation ;
+    :has_begin_earliest "1890-01-01"^^xsd:date ;
+    :has_end_latest "1890-12-31"^^xsd:date ;
+    :has_related_place :leipzig .
 
 :leipzig :has_coordinates :coordinates_1 .
 :leipzig :has_coordinates :coordinates_2 .
@@ -410,3 +424,36 @@
 :name_5
     :has_name_value "Villa Klinkhardt"@de ;
     :has_script :latin .
+
+
+
+
+
+ # import of vocabularies (will happen automatically at a later point)
+
+lido:lido00774 rdf:type skos:Concept ;
+rdf:type werkd:gender_value ;
+rdf:type werkd:id ;
+werkd:has_id_value "lido00774" ;
+werkd:has_id_type werkd:lido .
+
+gnd:4011882-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+rdf:type werkd:nationality_value ;
+werkd:has_id_value "4011882-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Deutschland"@de ;
+skos:inScheme werkd:country .
+
+# placeholder until vocabulary of professions is available
+
+werkd:it_developer rdf:type werkd:occupation_value ;
+rdf:type werkd:id ;
+werkd:has_id_value "A0001" ;
+werkd:has_id_type werkd:werkd .
+
+werkd:it_specialist rdf:type werkd:occupation_value ;
+rdf:type werkd:id ;
+werkd:has_id_value "A0002" ;
+werkd:has_id_type werkd:werkd .
