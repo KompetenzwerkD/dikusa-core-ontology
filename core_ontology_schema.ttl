@@ -2970,14 +2970,14 @@
 :has_number_of_pages
     rdf:type rdf:Property ;
     rdfs:label "has number of pages" ;
-    rdfs:domain :work ;
+    rdfs:domain :publication ;
     rdfs:range xsd:integer .
 
 :has_number_of_pages_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_number_of_pages ;
     sh:nodeKind sh:IRI ;
-    sh:class :work .
+    sh:class :publication .
 
 :has_number_of_pages_object_shape
 	a sh:NodeShape ;
@@ -2988,14 +2988,14 @@
 :has_first_page
     rdf:type rdf:Property ;
     rdfs:label "has first page" ;
-    rdfs:domain :work ;
+    rdfs:domain :publication ;
     rdfs:range xsd:integer .
 
 :has_first_page_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_first_page ;
     sh:nodeKind sh:IRI ;
-    sh:class :work .
+    sh:class :publication .
 
 :has_first_page_object_shape
 	a sh:NodeShape ;
@@ -3006,14 +3006,14 @@
 :has_last_page
     rdf:type rdf:Property ;
     rdfs:label "has last page" ;
-    rdfs:domain :work ;
+    rdfs:domain :publication ;
     rdfs:range xsd:integer .
 
 :has_last_page_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_last_page ;
     sh:nodeKind sh:IRI ;
-    sh:class :work .
+    sh:class :publication .
 
 :has_last_page_object_shape
 	a sh:NodeShape ;
