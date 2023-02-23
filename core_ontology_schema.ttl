@@ -75,6 +75,7 @@
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_citation ;
     rdfs:subClassOf :entity_with_location ;
+    rdfs:subClassOf :entity_with_actor_relation ;
     rdfs:subClassOf :resource .
 
 :resource
