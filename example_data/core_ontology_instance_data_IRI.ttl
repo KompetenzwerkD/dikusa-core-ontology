@@ -3,6 +3,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix lido: <http://terminology.lido-schema.org/>.
+@prefix gnd: <https://d-nb.info/gnd/> .
 
 
 # can be validated against the schema using shacl (under open world assumption)
@@ -21,8 +23,6 @@
 :kreis_bautzen rdf:type :place .
 :villa_klinkhardt rdf:type :place .
 :germany rdf:type :place .
-:male rdf:type :gender_value .
-:DEU rdf:type :nationality_value .
 :latin rdf:type :script .
 :saw rdf:type :group .
 :angelverein_dresden rdf:type :group .
@@ -32,9 +32,9 @@
 :workplace rdf:type :person_place_relation_type .
 :peters2018 rdf:type :work .
 :main_author rdf:type :author_role .
-:it_developer rdf:type :occupation_value .
-:it_specialist rdf:type :occupation_value .
 :gnd rdf:type :id_type .
+:werkd rdf:type :id_type .
+:lido rdf:type :id_type .
 :wikidata rdf:type :id_type .
 :hov rdf:type :id_type .
 :teacher_student rdf:type :person_person_relation_type .
@@ -86,6 +86,9 @@
 :gender_1 rdf:type :gender .
 :name_6 rdf:type :name .
 :nationality_1 rdf:type :nationality .
+
+# import of vocabularies
+
 
 :unknown_dhguy
     :has_preferred_name :name_1 .
@@ -165,7 +168,7 @@
         :has_provenance_certainty "unsicher"@de
     |} . 
 
-:gender_1 :has_gender_value :male .
+:gender_1 :has_gender_value lido:lido00774 .
 
 :life_state_change_1
     :has_place :leipzig ;
@@ -266,7 +269,7 @@
     :has_group_relation :person_group_relation_2 .
 
 :nationality_1
-    :has_nationality_value :DEU ;
+    :has_nationality_value gnd:4011882-4 ;
     :has_begin_earliest "1965-08-26"^^xsd:date ;
     :has_begin_latest "1965-08-26"^^xsd:date .
 
@@ -428,3 +431,36 @@
 :name_5
     :has_name_value "Villa Klinkhardt"@de ;
     :has_script :latin .
+
+
+
+
+
+ # import of vocabularies (will happen automatically at a later point)
+
+lido:lido00774 rdf:type skos:Concept ;
+rdf:type werkd:gender_value ;
+rdf:type werkd:id ;
+werkd:has_id_value "lido00774" ;
+werkd:has_id_type werkd:lido .
+
+gnd:4011882-4 rdf:type skos:Concept ;
+dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+rdf:type werkd:id ;
+rdf:type werkd:nationality_value ;
+werkd:has_id_value "4011882-4" ;
+werkd:has_id_type werkd:gnd ;
+skos:prefLabel "Deutschland"@de ;
+skos:inScheme werkd:country .
+
+# placeholder until vocabulary of professions is available
+
+werkd:it_developer rdf:type werkd:occupation_value ;
+rdf:type werkd:id ;
+werkd:has_id_value "A0001" ;
+werkd:has_id_type werkd:werkd .
+
+werkd:it_specialist rdf:type werkd:occupation_value ;
+rdf:type werkd:id ;
+werkd:has_id_value "A0002" ;
+werkd:has_id_type werkd:werkd .
