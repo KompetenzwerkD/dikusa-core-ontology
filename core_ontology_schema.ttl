@@ -112,6 +112,10 @@
     rdf:type rdfs:Class ;
     rdfs:label "entity with occupation value" .
 
+:entity_with_object
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with object" .
+
 # --------------------------
 
 :has_name
@@ -2242,9 +2246,10 @@
 :object_creation
     rdf:type rdfs:Class , sh:NodeShape ;
     rdfs:subClassOf :event ;
+    rdfs:subClassOf :entity_with_object ;
     rdfs:label "object creation" ;
         sh:property [
-        sh:path :has_resource_relation ;
+        sh:path :has_object ;
         sh:minCount 1
     ] .
 
@@ -2279,9 +2284,10 @@
 :object_destruction
     rdf:type rdfs:Class , sh:NodeShape ;
     rdfs:subClassOf :event ;
+    rdfs:subClassOf :entity_with_object ;
     rdfs:label "object destruction" ;
         sh:property [
-        sh:path :has_resource_relation ;
+        sh:path :has_object ;
         sh:minCount 1
     ] .
 
@@ -2316,9 +2322,10 @@
 :object_modification
     rdf:type rdfs:Class , sh:NodeShape ;
     rdfs:subClassOf :event ;
+    rdfs:subClassOf :entity_with_object ;
     rdfs:label "object modification" ;
         sh:property [
-        sh:path :has_resource_relation ;
+        sh:path :has_object ;
         sh:minCount 1
     ] .
 
