@@ -108,6 +108,10 @@
     rdf:type rdfs:Class ;
     rdfs:label "place relation" .
 
+:entity_with_occupation_value
+    rdf:type rdfs:Class ;
+    rdfs:label "entity with occupation value" .
+
 # --------------------------
 
 :has_name
@@ -958,6 +962,7 @@
     rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_occupation_value ;
     sh:property [
         sh:path [ sh:inversePath :has_occupation ] ;
         sh:minCount 1
@@ -970,14 +975,14 @@
 :has_occupation_value
     rdf:type rdf:Property ;
     rdfs:label "has occupation value" ;
-    rdfs:domain :occupation ;
+    rdfs:domain :entity_with_occupation_value ;
     rdfs:range :occupation_value .
 
 :has_occupation_value_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_occupation_value ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:class :occupation .
+    sh:class :entity_with_occupation_value .
 
 :has_occupation_value_object_shape
 	a sh:NodeShape ;
@@ -993,8 +998,7 @@
 :occupation_value
     rdf:type rdfs:Class ;
     rdfs:label "occupation value" ;
-    rdfs:subClassOf :entity_with_name ;
-    rdfs:subClassOf :entity_with_description .
+    rdfs:subClassOf :id .
 
 # -------------
 
