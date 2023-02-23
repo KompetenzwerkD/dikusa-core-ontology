@@ -3050,14 +3050,14 @@
 :has_license
     rdf:type rdf:Property ;
     rdfs:label "has license" ;
-    rdfs:domain :work ;
+    rdfs:domain :publication ;
     rdfs:range :license .
 
 :has_license_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_license ;
     sh:nodeKind sh:IRI ;
-    sh:class :work .
+    sh:class :publication .
 
 :has_license_object_shape
 	a sh:NodeShape ;
