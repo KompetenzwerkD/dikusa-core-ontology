@@ -12,6 +12,9 @@ werkd:country rdf:type skos:ConceptScheme;
     skos:prefLabel          "Länder Vokabular"@de;
     skos:definition         "This is a controlled vocabulary based on GND country category and respective GND IDs recommended to use as values for including references to countries in your data"@en ;
     skos:definition         "Dies ist ein kontrolliertes Vokabular basierend auf der GND Länder-Kategorie und den dazugehörigen GND IDs"@de.
+
+werkd:gnd rdf:type :id_type .
+
 gnd:4042050-4 rdf:type skos:Concept ;
 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
