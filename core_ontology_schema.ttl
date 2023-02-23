@@ -1190,6 +1190,7 @@
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :person_relation ;
     rdfs:subClassOf :group_relation ;
+    rdfs:subClassOf :entity_with_occupation_value ;
     sh:property [
         sh:path [ sh:inversePath :has_person_relation ] ;
         sh:minCount 1
