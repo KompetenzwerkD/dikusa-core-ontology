@@ -1229,6 +1229,43 @@
     rdfs:subClassOf :entity_with_description .
 
 # ----------------
+# attributes for :person_group_relation concerned with education
+
+:has_field_of_study
+    rdf:type rdf:Property ;
+    rdfs:label "has field of study" ;
+    rdfs:domain :person_group_relation ;
+    rdfs:range xsd:string .
+
+:has_field_of_study_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_field_of_study ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :person_group_relation .
+
+:has_field_of_study_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_field_of_study ;
+    sh:nodeKind sh:Literal .
+
+:has_degree
+    rdf:type rdf:Property ;
+    rdfs:label "has degree" ;
+    rdfs:domain :person_group_relation ;
+    rdfs:range xsd:string .
+
+:has_degree_subject_shape
+	a sh:NodeShape ;
+	sh:targetSubjectsOf :has_degree ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:class :person_group_relation .
+
+:has_degree_object_shape
+	a sh:NodeShape ;
+    sh:targetObjectsOf :has_degree ;
+    sh:nodeKind sh:Literal .
+
+# ----------------
 
 :is_same_as_external_reference
     rdf:type rdf:Property ;
