@@ -2042,7 +2042,7 @@
     rdfs:subClassOf :entity_with_description ;
     rdfs:label "participant" ;
     sh:property [
-        sh:path [ sh:inversePath :has_parrticipant ] ;
+        sh:path [ sh:inversePath :has_participant ] ;
         sh:minCount 1
     ] ;
     sh:property [
