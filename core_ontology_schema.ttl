@@ -3062,36 +3062,6 @@
 
 #----------
 
-:has_legal_status
-    rdf:type rdf:Property ;
-    rdfs:label "has legal status" ;
-    rdfs:domain :group ;
-    rdfs:range :legal_status .
-
-:has_legal_status_subject_shape
-	a sh:NodeShape ;
-	sh:targetSubjectsOf :has_legal_status ;
-    sh:nodeKind sh:IRI ;
-    sh:class :group .
-
-:has_legal_status_object_shape
-	a sh:NodeShape ;
-    sh:targetObjectsOf :has_legal_status ;
-    sh:nodeKind sh:IRI ;
-    sh:class :legal_status .
-
-:has_legal_status_i
-    rdf:type rdf:Property ;
-    owl:inverseOf :has_legal_status .
-
-:legal_status
-    rdf:type rdfs:Class ;
-    rdfs:label "group type" ;
-    rdfs:subClassOf :entity_with_name ;
-    rdfs:subClassOf :entity_with_description .
-    
-#------------
-
 :is_part_of_group
     rdf:type rdf:Property ;
     rdfs:label "is part of group" ;
