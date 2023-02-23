@@ -5,6 +5,8 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix werkd: <http://www.werkd.saw-leipzig.de/> .
 
+werkd:lido rdf:type :id_type .
+
 lido:genderActor rdf:type   skos:ConceptScheme;
     cc:licence              <http://creativecommons.org/licenses/by-sa/3.0/> ;
     dcterms:licence         <http://creativecommons.org/licenses/by-sa/3.0/> ;
@@ -14,6 +16,9 @@ lido:genderActor rdf:type   skos:ConceptScheme;
     skos:definition         "The LIDO Gender Actor Vocabulary is a controlled list of terms recommended to use as values in the LIDO Gender Actor element, indicating the sex assigned at birth or the gender identity of an actor."@en.
 lido:lido00773  rdf:type    skos:Concept;
     rdf:type                werkd:gender_value ;
+    rdf:type                werkd:id ;
+    werkd:has_id_value      "lido00773" ;
+    werkd:has_id_type       werkd:lido ;
     cc:licence              <http://creativecommons.org/licenses/by-sa/3.0/> ;
     dcterms:licence         <http://creativecommons.org/licenses/by-sa/3.0/> ;
     skos:definition         "**Female**, as a value for the LIDO **Gender Actor** LIDO Schema Documentation Version 1.1 element, designates the sex assigned at birth, or the gender identity of an actor as a woman or girl."@en ;
@@ -22,6 +27,9 @@ lido:lido00773  rdf:type    skos:Concept;
     skos:prefLabel          "Weiblich"@de , "Female"@en , "žónska"@hsb , "žeńske"@dsb .
 lido:lido00774  rdf:type    skos:Concept ;
     rdf:type                werkd:gender_value ;
+    rdf:type                werkd:id ;
+    werkd:has_id_value      "lido00774" ;
+    werkd:has_id_type       werkd:lido ;
     cc:licence              <http://creativecommons.org/licenses/by-sa/3.0/> ;
     dcterms:licence         <http://creativecommons.org/licenses/by-sa/3.0/> ;
     skos:definition         "**Male**, as a value for the LIDO **Gender Actor** LIDO Schema Documentation Version 1.1 element, designates the sex assigned at birth, or the gender identity of an actor as a man or boy."@en ;
@@ -30,6 +38,9 @@ lido:lido00774  rdf:type    skos:Concept ;
     skos:prefLabel          "Männlich"@de , "Male"@en , "muski"@hsb , "muski"@dsb .
 lido:lido00776  rdf:type    skos:Concept ;
     rdf:type                werkd:gender_value ;
+    rdf:type                werkd:id ;
+    werkd:has_id_value      "lido00776" ;
+    werkd:has_id_type       werkd:lido ;
     cc:licence              <http://creativecommons.org/licenses/by-sa/3.0/> ;
     dcterms:licence         <http://creativecommons.org/licenses/by-sa/3.0/> ;
     skos:definition         "**Other sex or gender**, as a value for the LIDO **Gender Actor** Schema Documentation Version 1.1 element, indicates that the sex or gender of an actor is not adequately described by &quot;female&quot; or &quot;male&quot;, respectively."@en ;
@@ -38,6 +49,9 @@ lido:lido00776  rdf:type    skos:Concept ;
     skos:relatedMatch       <http://vocab.getty.edu/page/aat/300400504> .
 lido:lido00775  rdf:type    skos:Concept ;
     rdf:type                werkd:gender_value ;
+    rdf:type                werkd:id ;
+    werkd:has_id_value      "lido00775" ;
+    werkd:has_id_type       werkd:lido ;
     cc:licence              <http://creativecommons.org/licenses/by-sa/3.0/> ;
     dcterms:licence         <http://creativecommons.org/licenses/by-sa/3.0/> ;
     skos:closeMatch         <https://d-nb.info/standards/vocab/gnd/gender#notKnown> ;
