@@ -3026,14 +3026,14 @@
 :has_physical_instance
     rdf:type rdf:Property ;
     rdfs:label "has_physical instance" ;
-    rdfs:domain :work ;
+    rdfs:domain :publication ;
     rdfs:range :object .
 
 :has_physical_instance_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_physical_instance ;
     sh:nodeKind sh:IRI ;
-    sh:class :work .
+    sh:class :publication .
 
 :has_physical_instance_object_shape
 	a sh:NodeShape ;
