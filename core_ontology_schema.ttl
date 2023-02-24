@@ -344,8 +344,7 @@
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_provenence_date ;
     sh:nodeKind sh:Literal ;
-    sh:datatype xsd:date ;
-    sh:pattern "^[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
+    sh:datatype xsd:date .
 
 # general property for statements on triples
 :has_triple_value
