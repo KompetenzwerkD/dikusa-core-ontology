@@ -4927,612 +4927,918 @@ gnd:4027754-9 skos:exactMatch isni:0000000113700581 .
 gnd:4001179-3 skos:exactMatch isni:0000000121565738 .
 
 werkd:nicaragua werkd:has_preferred_name werkd:nicaragua_name .
-werkd:nicaragua_name werkd:has_name_value "Nicaragua"@de .
+werkd:nicaragua_name rdf:type werkd:name ;
+werkd:has_name_value "Nicaragua"@de .
 werkd:kamerun werkd:has_preferred_name werkd:kamerun_name .
-werkd:kamerun_name werkd:has_name_value "Kamerun"@de .
+werkd:kamerun_name rdf:type werkd:name ;
+werkd:has_name_value "Kamerun"@de .
 werkd:moldawien werkd:has_preferred_name werkd:moldawien_name .
-werkd:moldawien_name werkd:has_name_value "Moldawien"@de .
+werkd:moldawien_name rdf:type werkd:name ;
+werkd:has_name_value "Moldawien"@de .
 werkd:marshallinseln werkd:has_preferred_name werkd:marshallinseln_name .
-werkd:marshallinseln_name werkd:has_name_value "Marshallinseln"@de .
+werkd:marshallinseln_name rdf:type werkd:name ;
+werkd:has_name_value "Marshallinseln"@de .
 werkd:norddeutscher_bund werkd:has_preferred_name werkd:norddeutscher_bund_name .
-werkd:norddeutscher_bund_name werkd:has_name_value "Norddeutscher Bund"@de .
+werkd:norddeutscher_bund_name rdf:type werkd:name ;
+werkd:has_name_value "Norddeutscher Bund"@de .
 werkd:kasachstan werkd:has_preferred_name werkd:kasachstan_name .
-werkd:kasachstan_name werkd:has_name_value "Kasachstan"@de .
+werkd:kasachstan_name rdf:type werkd:name ;
+werkd:has_name_value "Kasachstan"@de .
 werkd:belarus werkd:has_preferred_name werkd:belarus_name .
-werkd:belarus_name werkd:has_name_value "Belarus"@de .
+werkd:belarus_name rdf:type werkd:name ;
+werkd:has_name_value "Belarus"@de .
 werkd:koenigreich_loango werkd:has_preferred_name werkd:koenigreich_loango_name .
-werkd:koenigreich_loango_name werkd:has_name_value "Königreich Loango"@de .
+werkd:koenigreich_loango_name rdf:type werkd:name ;
+werkd:has_name_value "Königreich Loango"@de .
 werkd:salomonen werkd:has_preferred_name werkd:salomonen_name .
-werkd:salomonen_name werkd:has_name_value "Salomonen"@de .
+werkd:salomonen_name rdf:type werkd:name ;
+werkd:has_name_value "Salomonen"@de .
 werkd:eritrea werkd:has_preferred_name werkd:eritrea_name .
-werkd:eritrea_name werkd:has_name_value "Eritrea"@de .
+werkd:eritrea_name rdf:type werkd:name ;
+werkd:has_name_value "Eritrea"@de .
 werkd:lettland werkd:has_preferred_name werkd:lettland_name .
-werkd:lettland_name werkd:has_name_value "Lettland"@de .
+werkd:lettland_name rdf:type werkd:name ;
+werkd:has_name_value "Lettland"@de .
 werkd:nepal werkd:has_preferred_name werkd:nepal_name .
-werkd:nepal_name werkd:has_name_value "Nepal"@de .
+werkd:nepal_name rdf:type werkd:name ;
+werkd:has_name_value "Nepal"@de .
 werkd:norwegen werkd:has_preferred_name werkd:norwegen_name .
-werkd:norwegen_name werkd:has_name_value "Norwegen"@de .
+werkd:norwegen_name rdf:type werkd:name ;
+werkd:has_name_value "Norwegen"@de .
 werkd:malaysia werkd:has_preferred_name werkd:malaysia_name .
-werkd:malaysia_name werkd:has_name_value "Malaysia"@de .
+werkd:malaysia_name rdf:type werkd:name ;
+werkd:has_name_value "Malaysia"@de .
 werkd:neuseeland werkd:has_preferred_name werkd:neuseeland_name .
-werkd:neuseeland_name werkd:has_name_value "Neuseeland"@de .
+werkd:neuseeland_name rdf:type werkd:name ;
+werkd:has_name_value "Neuseeland"@de .
 werkd:zentralafrikanische_republik werkd:has_preferred_name werkd:zentralafrikanische_republik_name .
-werkd:zentralafrikanische_republik_name werkd:has_name_value "Zentralafrikanische Republik"@de .
+werkd:zentralafrikanische_republik_name rdf:type werkd:name ;
+werkd:has_name_value "Zentralafrikanische Republik"@de .
 werkd:neue_hebriden werkd:has_preferred_name werkd:neue_hebriden_name .
-werkd:neue_hebriden_name werkd:has_name_value "Neue Hebriden"@de .
+werkd:neue_hebriden_name rdf:type werkd:name ;
+werkd:has_name_value "Neue Hebriden"@de .
 werkd:volksrepublik_donezk werkd:has_preferred_name werkd:volksrepublik_donezk_name .
-werkd:volksrepublik_donezk_name werkd:has_name_value "Volksrepublik Donezk"@de .
+werkd:volksrepublik_donezk_name rdf:type werkd:name ;
+werkd:has_name_value "Volksrepublik Donezk"@de .
 werkd:bosnien-herzegowina werkd:has_preferred_name werkd:bosnien-herzegowina_name .
-werkd:bosnien-herzegowina_name werkd:has_name_value "Bosnien-Herzegowina"@de .
+werkd:bosnien-herzegowina_name rdf:type werkd:name ;
+werkd:has_name_value "Bosnien-Herzegowina"@de .
 werkd:tansania werkd:has_preferred_name werkd:tansania_name .
-werkd:tansania_name werkd:has_name_value "Tansania"@de .
+werkd:tansania_name rdf:type werkd:name ;
+werkd:has_name_value "Tansania"@de .
 werkd:kuba werkd:has_preferred_name werkd:kuba_name .
-werkd:kuba_name werkd:has_name_value "Kuba"@de .
+werkd:kuba_name rdf:type werkd:name ;
+werkd:has_name_value "Kuba"@de .
 werkd:dominikanische_republik werkd:has_preferred_name werkd:dominikanische_republik_name .
-werkd:dominikanische_republik_name werkd:has_name_value "Dominikanische Republik"@de .
+werkd:dominikanische_republik_name rdf:type werkd:name ;
+werkd:has_name_value "Dominikanische Republik"@de .
 werkd:mocambique werkd:has_preferred_name werkd:mocambique_name .
-werkd:mocambique_name werkd:has_name_value "Moçambique"@de .
+werkd:mocambique_name rdf:type werkd:name ;
+werkd:has_name_value "Moçambique"@de .
 werkd:griechenland werkd:has_preferred_name werkd:griechenland_name .
-werkd:griechenland_name werkd:has_name_value "Griechenland"@de .
+werkd:griechenland_name rdf:type werkd:name ;
+werkd:has_name_value "Griechenland"@de .
 werkd:suedkorea werkd:has_preferred_name werkd:suedkorea_name .
-werkd:suedkorea_name werkd:has_name_value "Südkorea"@de .
+werkd:suedkorea_name rdf:type werkd:name ;
+werkd:has_name_value "Südkorea"@de .
 werkd:himjar werkd:has_preferred_name werkd:himjar_name .
-werkd:himjar_name werkd:has_name_value "Himjar"@de .
+werkd:himjar_name rdf:type werkd:name ;
+werkd:has_name_value "Himjar"@de .
 werkd:schweiz_1803-1815 werkd:has_preferred_name werkd:schweiz_1803-1815_name .
-werkd:schweiz_1803-1815_name werkd:has_name_value "Schweiz (1803-1815)"@de .
+werkd:schweiz_1803-1815_name rdf:type werkd:name ;
+werkd:has_name_value "Schweiz (1803-1815)"@de .
 werkd:staat_wadhwan werkd:has_preferred_name werkd:staat_wadhwan_name .
-werkd:staat_wadhwan_name werkd:has_name_value "Staat Wadhwan"@de .
+werkd:staat_wadhwan_name rdf:type werkd:name ;
+werkd:has_name_value "Staat Wadhwan"@de .
 werkd:nordmazedonien werkd:has_preferred_name werkd:nordmazedonien_name .
-werkd:nordmazedonien_name werkd:has_name_value "Nordmazedonien"@de .
+werkd:nordmazedonien_name rdf:type werkd:name ;
+werkd:has_name_value "Nordmazedonien"@de .
 werkd:paraguay werkd:has_preferred_name werkd:paraguay_name .
-werkd:paraguay_name werkd:has_name_value "Paraguay"@de .
+werkd:paraguay_name rdf:type werkd:name ;
+werkd:has_name_value "Paraguay"@de .
 werkd:laos werkd:has_preferred_name werkd:laos_name .
-werkd:laos_name werkd:has_name_value "Laos"@de .
+werkd:laos_name rdf:type werkd:name ;
+werkd:has_name_value "Laos"@de .
 werkd:el_salvador werkd:has_preferred_name werkd:el_salvador_name .
-werkd:el_salvador_name werkd:has_name_value "El Salvador"@de .
+werkd:el_salvador_name rdf:type werkd:name ;
+werkd:has_name_value "El Salvador"@de .
 werkd:lunda_koenigreich werkd:has_preferred_name werkd:lunda_koenigreich_name .
-werkd:lunda_koenigreich_name werkd:has_name_value "Lunda (Königreich)"@de .
+werkd:lunda_koenigreich_name rdf:type werkd:name ;
+werkd:has_name_value "Lunda (Königreich)"@de .
 werkd:fraenkisches_reich werkd:has_preferred_name werkd:fraenkisches_reich_name .
-werkd:fraenkisches_reich_name werkd:has_name_value "Fränkisches Reich"@de .
+werkd:fraenkisches_reich_name rdf:type werkd:name ;
+werkd:has_name_value "Fränkisches Reich"@de .
 werkd:hessen-darmstadt werkd:has_preferred_name werkd:hessen-darmstadt_name .
-werkd:hessen-darmstadt_name werkd:has_name_value "Hessen-Darmstadt"@de .
+werkd:hessen-darmstadt_name rdf:type werkd:name ;
+werkd:has_name_value "Hessen-Darmstadt"@de .
 werkd:indien werkd:has_preferred_name werkd:indien_name .
-werkd:indien_name werkd:has_name_value "Indien"@de .
+werkd:indien_name rdf:type werkd:name ;
+werkd:has_name_value "Indien"@de .
 werkd:polen-litauen werkd:has_preferred_name werkd:polen-litauen_name .
-werkd:polen-litauen_name werkd:has_name_value "Polen-Litauen"@de .
+werkd:polen-litauen_name rdf:type werkd:name ;
+werkd:has_name_value "Polen-Litauen"@de .
 werkd:saint_lucia werkd:has_preferred_name werkd:saint_lucia_name .
-werkd:saint_lucia_name werkd:has_name_value "Saint Lucia"@de .
+werkd:saint_lucia_name rdf:type werkd:name ;
+werkd:has_name_value "Saint Lucia"@de .
 werkd:italien werkd:has_preferred_name werkd:italien_name .
-werkd:italien_name werkd:has_name_value "Italien"@de .
+werkd:italien_name rdf:type werkd:name ;
+werkd:has_name_value "Italien"@de .
 werkd:pakistan werkd:has_preferred_name werkd:pakistan_name .
-werkd:pakistan_name werkd:has_name_value "Pakistan"@de .
+werkd:pakistan_name rdf:type werkd:name ;
+werkd:has_name_value "Pakistan"@de .
 werkd:vereinigte_arabische_emirate werkd:has_preferred_name werkd:vereinigte_arabische_emirate_name .
-werkd:vereinigte_arabische_emirate_name werkd:has_name_value "Vereinigte Arabische Emirate"@de .
+werkd:vereinigte_arabische_emirate_name rdf:type werkd:name ;
+werkd:has_name_value "Vereinigte Arabische Emirate"@de .
 werkd:jordanien werkd:has_preferred_name werkd:jordanien_name .
-werkd:jordanien_name werkd:has_name_value "Jordanien"@de .
+werkd:jordanien_name rdf:type werkd:name ;
+werkd:has_name_value "Jordanien"@de .
 werkd:sowjetunion werkd:has_preferred_name werkd:sowjetunion_name .
-werkd:sowjetunion_name werkd:has_name_value "Sowjetunion"@de .
+werkd:sowjetunion_name rdf:type werkd:name ;
+werkd:has_name_value "Sowjetunion"@de .
 werkd:senegal werkd:has_preferred_name werkd:senegal_name .
-werkd:senegal_name werkd:has_name_value "Senegal"@de .
+werkd:senegal_name rdf:type werkd:name ;
+werkd:has_name_value "Senegal"@de .
 werkd:togo werkd:has_preferred_name werkd:togo_name .
-werkd:togo_name werkd:has_name_value "Togo"@de .
+werkd:togo_name rdf:type werkd:name ;
+werkd:has_name_value "Togo"@de .
 werkd:antigua_und_barbuda werkd:has_preferred_name werkd:antigua_und_barbuda_name .
-werkd:antigua_und_barbuda_name werkd:has_name_value "Antigua und Barbuda"@de .
+werkd:antigua_und_barbuda_name rdf:type werkd:name ;
+werkd:has_name_value "Antigua und Barbuda"@de .
 werkd:comores werkd:has_preferred_name werkd:comores_name .
-werkd:comores_name werkd:has_name_value "Comores (Territoire d'Outre-Mer)"@de .
+werkd:comores_name rdf:type werkd:name ;
+werkd:has_name_value "Comores (Territoire d'Outre-Mer)"@de .
 werkd:chile werkd:has_preferred_name werkd:chile_name .
-werkd:chile_name werkd:has_name_value "Chile"@de .
+werkd:chile_name rdf:type werkd:name ;
+werkd:has_name_value "Chile"@de .
 werkd:republik_der_sieben_vereinigten_provinzen werkd:has_preferred_name werkd:republik_der_sieben_vereinigten_provinzen_name .
-werkd:republik_der_sieben_vereinigten_provinzen_name werkd:has_name_value "Republik der Sieben Vereinigten Provinzen"@de .
+werkd:republik_der_sieben_vereinigten_provinzen_name rdf:type werkd:name ;
+werkd:has_name_value "Republik der Sieben Vereinigten Provinzen"@de .
 werkd:schweiz_1353-1513 werkd:has_preferred_name werkd:schweiz_1353-1513_name .
-werkd:schweiz_1353-1513_name werkd:has_name_value "Schweiz (1353-1513)"@de .
+werkd:schweiz_1353-1513_name rdf:type werkd:name ;
+werkd:has_name_value "Schweiz (1353-1513)"@de .
 werkd:burundi werkd:has_preferred_name werkd:burundi_name .
-werkd:burundi_name werkd:has_name_value "Burundi"@de .
+werkd:burundi_name rdf:type werkd:name ;
+werkd:has_name_value "Burundi"@de .
 werkd:peru werkd:has_preferred_name werkd:peru_name .
-werkd:peru_name werkd:has_name_value "Peru"@de .
+werkd:peru_name rdf:type werkd:name ;
+werkd:has_name_value "Peru"@de .
 werkd:gilbert_islands werkd:has_preferred_name werkd:gilbert_islands_name .
-werkd:gilbert_islands_name werkd:has_name_value "Gilbert Islands"@de .
+werkd:gilbert_islands_name rdf:type werkd:name ;
+werkd:has_name_value "Gilbert Islands"@de .
 werkd:seychellen werkd:has_preferred_name werkd:seychellen_name .
-werkd:seychellen_name werkd:has_name_value "Seychellen"@de .
+werkd:seychellen_name rdf:type werkd:name ;
+werkd:has_name_value "Seychellen"@de .
 werkd:tabasaran werkd:has_preferred_name werkd:tabasaran_name .
-werkd:tabasaran_name werkd:has_name_value "Tabasaran"@de .
+werkd:tabasaran_name rdf:type werkd:name ;
+werkd:has_name_value "Tabasaran"@de .
 werkd:trinidad_und_tobago werkd:has_preferred_name werkd:trinidad_und_tobago_name .
-werkd:trinidad_und_tobago_name werkd:has_name_value "Trinidad und Tobago"@de .
+werkd:trinidad_und_tobago_name rdf:type werkd:name ;
+werkd:has_name_value "Trinidad und Tobago"@de .
 werkd:tuerkei werkd:has_preferred_name werkd:tuerkei_name .
-werkd:tuerkei_name werkd:has_name_value "Türkei"@de .
+werkd:tuerkei_name rdf:type werkd:name ;
+werkd:has_name_value "Türkei"@de .
 werkd:indonesien werkd:has_preferred_name werkd:indonesien_name .
-werkd:indonesien_name werkd:has_name_value "Indonesien"@de .
+werkd:indonesien_name rdf:type werkd:name ;
+werkd:has_name_value "Indonesien"@de .
 werkd:usbekistan werkd:has_preferred_name werkd:usbekistan_name .
-werkd:usbekistan_name werkd:has_name_value "Usbekistan"@de .
+werkd:usbekistan_name rdf:type werkd:name ;
+werkd:has_name_value "Usbekistan"@de .
 werkd:liangshan_yizu_zizhizhou werkd:has_preferred_name werkd:liangshan_yizu_zizhizhou_name .
-werkd:liangshan_yizu_zizhizhou_name werkd:has_name_value "Liangshan Yizu Zizhizhou"@de .
+werkd:liangshan_yizu_zizhizhou_name rdf:type werkd:name ;
+werkd:has_name_value "Liangshan Yizu Zizhizhou"@de .
 werkd:monaco werkd:has_preferred_name werkd:monaco_name .
-werkd:monaco_name werkd:has_name_value "Monaco"@de .
+werkd:monaco_name rdf:type werkd:name ;
+werkd:has_name_value "Monaco"@de .
 werkd:puerto_rico werkd:has_preferred_name werkd:puerto_rico_name .
-werkd:puerto_rico_name werkd:has_name_value "Puerto Rico"@de .
+werkd:puerto_rico_name rdf:type werkd:name ;
+werkd:has_name_value "Puerto Rico"@de .
 werkd:batavische_republik werkd:has_preferred_name werkd:batavische_republik_name .
-werkd:batavische_republik_name werkd:has_name_value "Batavische Republik"@de .
+werkd:batavische_republik_name rdf:type werkd:name ;
+werkd:has_name_value "Batavische Republik"@de .
 werkd:staat_mikronesien werkd:has_preferred_name werkd:staat_mikronesien_name .
-werkd:staat_mikronesien_name werkd:has_name_value "Staat Mikronesien"@de .
+werkd:staat_mikronesien_name rdf:type werkd:name ;
+werkd:has_name_value "Staat Mikronesien"@de .
 werkd:barbados werkd:has_preferred_name werkd:barbados_name .
-werkd:barbados_name werkd:has_name_value "Barbados"@de .
+werkd:barbados_name rdf:type werkd:name ;
+werkd:has_name_value "Barbados"@de .
 werkd:karantanien werkd:has_preferred_name werkd:karantanien_name .
-werkd:karantanien_name werkd:has_name_value "Karantanien"@de .
+werkd:karantanien_name rdf:type werkd:name ;
+werkd:has_name_value "Karantanien"@de .
 werkd:sambia werkd:has_preferred_name werkd:sambia_name .
-werkd:sambia_name werkd:has_name_value "Sambia"@de .
+werkd:sambia_name rdf:type werkd:name ;
+werkd:has_name_value "Sambia"@de .
 werkd:bamra werkd:has_preferred_name werkd:bamra_name .
-werkd:bamra_name werkd:has_name_value "Bamra"@de .
+werkd:bamra_name rdf:type werkd:name ;
+werkd:has_name_value "Bamra"@de .
 werkd:ostfraenkisches_reich werkd:has_preferred_name werkd:ostfraenkisches_reich_name .
-werkd:ostfraenkisches_reich_name werkd:has_name_value "Ostfränkisches Reich"@de .
+werkd:ostfraenkisches_reich_name rdf:type werkd:name ;
+werkd:has_name_value "Ostfränkisches Reich"@de .
 werkd:syrien werkd:has_preferred_name werkd:syrien_name .
-werkd:syrien_name werkd:has_name_value "Syrien"@de .
+werkd:syrien_name rdf:type werkd:name ;
+werkd:has_name_value "Syrien"@de .
 werkd:westsamoa werkd:has_preferred_name werkd:westsamoa_name .
-werkd:westsamoa_name werkd:has_name_value "Westsamoa"@de .
+werkd:westsamoa_name rdf:type werkd:name ;
+werkd:has_name_value "Westsamoa"@de .
 werkd:taiwan werkd:has_preferred_name werkd:taiwan_name .
-werkd:taiwan_name werkd:has_name_value "Taiwan"@de .
+werkd:taiwan_name rdf:type werkd:name ;
+werkd:has_name_value "Taiwan"@de .
 werkd:sao_tome_und_principe werkd:has_preferred_name werkd:sao_tome_und_principe_name .
-werkd:sao_tome_und_principe_name werkd:has_name_value "São Tomé und Príncipe"@de .
+werkd:sao_tome_und_principe_name rdf:type werkd:name ;
+werkd:has_name_value "São Tomé und Príncipe"@de .
 werkd:thueringer_reich werkd:has_preferred_name werkd:thueringer_reich_name .
-werkd:thueringer_reich_name werkd:has_name_value "Thüringer Reich"@de .
+werkd:thueringer_reich_name rdf:type werkd:name ;
+werkd:has_name_value "Thüringer Reich"@de .
 werkd:mitanni werkd:has_preferred_name werkd:mitanni_name .
-werkd:mitanni_name werkd:has_name_value "Mitanni"@de .
+werkd:mitanni_name rdf:type werkd:name ;
+werkd:has_name_value "Mitanni"@de .
 werkd:afghanistan werkd:has_preferred_name werkd:afghanistan_name .
-werkd:afghanistan_name werkd:has_name_value "Afghanistan"@de .
+werkd:afghanistan_name rdf:type werkd:name ;
+werkd:has_name_value "Afghanistan"@de .
 werkd:kanada werkd:has_preferred_name werkd:kanada_name .
-werkd:kanada_name werkd:has_name_value "Kanada"@de .
+werkd:kanada_name rdf:type werkd:name ;
+werkd:has_name_value "Kanada"@de .
 werkd:albanien werkd:has_preferred_name werkd:albanien_name .
-werkd:albanien_name werkd:has_name_value "Albanien"@de .
+werkd:albanien_name rdf:type werkd:name ;
+werkd:has_name_value "Albanien"@de .
 werkd:uruguay werkd:has_preferred_name werkd:uruguay_name .
-werkd:uruguay_name werkd:has_name_value "Uruguay"@de .
+werkd:uruguay_name rdf:type werkd:name ;
+werkd:has_name_value "Uruguay"@de .
 werkd:myanmar werkd:has_preferred_name werkd:myanmar_name .
-werkd:myanmar_name werkd:has_name_value "Myanmar"@de .
+werkd:myanmar_name rdf:type werkd:name ;
+werkd:has_name_value "Myanmar"@de .
 werkd:osmanisches_reich werkd:has_preferred_name werkd:osmanisches_reich_name .
-werkd:osmanisches_reich_name werkd:has_name_value "Osmanisches Reich"@de .
+werkd:osmanisches_reich_name rdf:type werkd:name ;
+werkd:has_name_value "Osmanisches Reich"@de .
 werkd:deutschland werkd:has_preferred_name werkd:deutschland_name .
-werkd:deutschland_name werkd:has_name_value "Deutschland"@de .
+werkd:deutschland_name rdf:type werkd:name ;
+werkd:has_name_value "Deutschland"@de .
 werkd:vatikanstadt werkd:has_preferred_name werkd:vatikanstadt_name .
-werkd:vatikanstadt_name werkd:has_name_value "Vatikanstadt"@de .
+werkd:vatikanstadt_name rdf:type werkd:name ;
+werkd:has_name_value "Vatikanstadt"@de .
 werkd:aethiopien werkd:has_preferred_name werkd:aethiopien_name .
-werkd:aethiopien_name werkd:has_name_value "Äthiopien"@de .
+werkd:aethiopien_name rdf:type werkd:name ;
+werkd:has_name_value "Äthiopien"@de .
 werkd:australien werkd:has_preferred_name werkd:australien_name .
-werkd:australien_name werkd:has_name_value "Australien"@de .
+werkd:australien_name rdf:type werkd:name ;
+werkd:has_name_value "Australien"@de .
 werkd:simbabwe werkd:has_preferred_name werkd:simbabwe_name .
-werkd:simbabwe_name werkd:has_name_value "Simbabwe"@de .
+werkd:simbabwe_name rdf:type werkd:name ;
+werkd:has_name_value "Simbabwe"@de .
 werkd:niue werkd:has_preferred_name werkd:niue_name .
-werkd:niue_name werkd:has_name_value "Niue"@de .
+werkd:niue_name rdf:type werkd:name ;
+werkd:has_name_value "Niue"@de .
 werkd:liechtenstein werkd:has_preferred_name werkd:liechtenstein_name .
-werkd:liechtenstein_name werkd:has_name_value "Liechtenstein"@de .
+werkd:liechtenstein_name rdf:type werkd:name ;
+werkd:has_name_value "Liechtenstein"@de .
 werkd:ghana werkd:has_preferred_name werkd:ghana_name .
-werkd:ghana_name werkd:has_name_value "Ghana"@de .
+werkd:ghana_name rdf:type werkd:name ;
+werkd:has_name_value "Ghana"@de .
 werkd:birma werkd:has_preferred_name werkd:birma_name .
-werkd:birma_name werkd:has_name_value "Birma"@de .
+werkd:birma_name rdf:type werkd:name ;
+werkd:has_name_value "Birma"@de .
 werkd:republik_kongo werkd:has_preferred_name werkd:republik_kongo_name .
-werkd:republik_kongo_name werkd:has_name_value "Republik Kongo"@de .
+werkd:republik_kongo_name rdf:type werkd:name ;
+werkd:has_name_value "Republik Kongo"@de .
 werkd:montenegro werkd:has_preferred_name werkd:montenegro_name .
-werkd:montenegro_name werkd:has_name_value "Montenegro"@de .
+werkd:montenegro_name rdf:type werkd:name ;
+werkd:has_name_value "Montenegro"@de .
 werkd:aram werkd:has_preferred_name werkd:aram_name .
-werkd:aram_name werkd:has_name_value "Aram"@de .
+werkd:aram_name rdf:type werkd:name ;
+werkd:has_name_value "Aram"@de .
 werkd:deutschland_ddr werkd:has_preferred_name werkd:deutschland_ddr_name .
-werkd:deutschland_ddr_name werkd:has_name_value "Deutschland (DDR)"@de .
+werkd:deutschland_ddr_name rdf:type werkd:name ;
+werkd:has_name_value "Deutschland (DDR)"@de .
 werkd:san_marino werkd:has_preferred_name werkd:san_marino_name .
-werkd:san_marino_name werkd:has_name_value "San Marino"@de .
+werkd:san_marino_name rdf:type werkd:name ;
+werkd:has_name_value "San Marino"@de .
 werkd:al-imarat_al-mutasaliha werkd:has_preferred_name werkd:al-imarat_al-mutasaliha_name .
-werkd:al-imarat_al-mutasaliha_name werkd:has_name_value "al- Imārāt al-Mutaṣāliḥa"@de .
+werkd:al-imarat_al-mutasaliha_name rdf:type werkd:name ;
+werkd:has_name_value "al- Imārāt al-Mutaṣāliḥa"@de .
 werkd:costa_rica werkd:has_preferred_name werkd:costa_rica_name .
-werkd:costa_rica_name werkd:has_name_value "Costa Rica"@de .
+werkd:costa_rica_name rdf:type werkd:name ;
+werkd:has_name_value "Costa Rica"@de .
 werkd:papua-neuguinea werkd:has_preferred_name werkd:papua-neuguinea_name .
-werkd:papua-neuguinea_name werkd:has_name_value "Papua-Neuguinea"@de .
+werkd:papua-neuguinea_name rdf:type werkd:name ;
+werkd:has_name_value "Papua-Neuguinea"@de .
 werkd:sri_lanka werkd:has_preferred_name werkd:sri_lanka_name .
-werkd:sri_lanka_name werkd:has_name_value "Sri Lanka"@de .
+werkd:sri_lanka_name rdf:type werkd:name ;
+werkd:has_name_value "Sri Lanka"@de .
 werkd:dahomey werkd:has_preferred_name werkd:dahomey_name .
-werkd:dahomey_name werkd:has_name_value "Dahomey"@de .
+werkd:dahomey_name rdf:type werkd:name ;
+werkd:has_name_value "Dahomey"@de .
 werkd:saint_christopher_and_nevis werkd:has_preferred_name werkd:saint_christopher_and_nevis_name .
-werkd:saint_christopher_and_nevis_name werkd:has_name_value "Saint Christopher and Nevis"@de .
+werkd:saint_christopher_and_nevis_name rdf:type werkd:name ;
+werkd:has_name_value "Saint Christopher and Nevis"@de .
 werkd:cookinseln werkd:has_preferred_name werkd:cookinseln_name .
-werkd:cookinseln_name werkd:has_name_value "Cookinseln"@de .
+werkd:cookinseln_name rdf:type werkd:name ;
+werkd:has_name_value "Cookinseln"@de .
 werkd:gambia werkd:has_preferred_name werkd:gambia_name .
-werkd:gambia_name werkd:has_name_value "Gambia"@de .
+werkd:gambia_name rdf:type werkd:name ;
+werkd:has_name_value "Gambia"@de .
 werkd:kasachische_ssr werkd:has_preferred_name werkd:kasachische_ssr_name .
-werkd:kasachische_ssr_name werkd:has_name_value "Kasachische SSR"@de .
+werkd:kasachische_ssr_name rdf:type werkd:name ;
+werkd:has_name_value "Kasachische SSR"@de .
 werkd:finnland werkd:has_preferred_name werkd:finnland_name .
-werkd:finnland_name werkd:has_name_value "Finnland"@de .
+werkd:finnland_name rdf:type werkd:name ;
+werkd:has_name_value "Finnland"@de .
 werkd:oesterreich-ungarn werkd:has_preferred_name werkd:oesterreich-ungarn_name .
-werkd:oesterreich-ungarn_name werkd:has_name_value "Österreich-Ungarn"@de .
+werkd:oesterreich-ungarn_name rdf:type werkd:name ;
+werkd:has_name_value "Österreich-Ungarn"@de .
 werkd:rumaenien werkd:has_preferred_name werkd:rumaenien_name .
-werkd:rumaenien_name werkd:has_name_value "Rumänien"@de .
+werkd:rumaenien_name rdf:type werkd:name ;
+werkd:has_name_value "Rumänien"@de .
 werkd:brasilien werkd:has_preferred_name werkd:brasilien_name .
-werkd:brasilien_name werkd:has_name_value "Brasilien"@de .
+werkd:brasilien_name rdf:type werkd:name ;
+werkd:has_name_value "Brasilien"@de .
 werkd:republik_von_korca werkd:has_preferred_name werkd:republik_von_korca_name .
-werkd:republik_von_korca_name werkd:has_name_value "Republik von Korça"@de .
+werkd:republik_von_korca_name rdf:type werkd:name ;
+werkd:has_name_value "Republik von Korça"@de .
 werkd:jemen werkd:has_preferred_name werkd:jemen_name .
-werkd:jemen_name werkd:has_name_value "Jemen"@de .
+werkd:jemen_name rdf:type werkd:name ;
+werkd:has_name_value "Jemen"@de .
 werkd:elam werkd:has_preferred_name werkd:elam_name .
-werkd:elam_name werkd:has_name_value "Elam"@de .
+werkd:elam_name rdf:type werkd:name ;
+werkd:has_name_value "Elam"@de .
 werkd:gabun werkd:has_preferred_name werkd:gabun_name .
-werkd:gabun_name werkd:has_name_value "Gabun"@de .
+werkd:gabun_name rdf:type werkd:name ;
+werkd:has_name_value "Gabun"@de .
 werkd:malawi werkd:has_preferred_name werkd:malawi_name .
-werkd:malawi_name werkd:has_name_value "Malawi"@de .
+werkd:malawi_name rdf:type werkd:name ;
+werkd:has_name_value "Malawi"@de .
 werkd:russische_sfsr werkd:has_preferred_name werkd:russische_sfsr_name .
-werkd:russische_sfsr_name werkd:has_name_value "Russische SFSR"@de .
+werkd:russische_sfsr_name rdf:type werkd:name ;
+werkd:has_name_value "Russische SFSR"@de .
 werkd:tanganyika werkd:has_preferred_name werkd:tanganyika_name .
-werkd:tanganyika_name werkd:has_name_value "Tanganyika"@de .
+werkd:tanganyika_name rdf:type werkd:name ;
+werkd:has_name_value "Tanganyika"@de .
 werkd:kirchenstaat werkd:has_preferred_name werkd:kirchenstaat_name .
-werkd:kirchenstaat_name werkd:has_name_value "Kirchenstaat"@de .
+werkd:kirchenstaat_name rdf:type werkd:name ;
+werkd:has_name_value "Kirchenstaat"@de .
 werkd:kraljevina_srba werkd:has_preferred_name werkd:kraljevina_srba_name .
-werkd:kraljevina_srba_name werkd:has_name_value "Kraljevina Srba, Hrvata i Slovenaca"@de .
+werkd:kraljevina_srba_name rdf:type werkd:name ;
+werkd:has_name_value "Kraljevina Srba, Hrvata i Slovenaca"@de .
 werkd:dominica werkd:has_preferred_name werkd:dominica_name .
-werkd:dominica_name werkd:has_name_value "Dominica"@de .
+werkd:dominica_name rdf:type werkd:name ;
+werkd:has_name_value "Dominica"@de .
 werkd:zypern werkd:has_preferred_name werkd:zypern_name .
-werkd:zypern_name werkd:has_name_value "Zypern"@de .
+werkd:zypern_name rdf:type werkd:name ;
+werkd:has_name_value "Zypern"@de .
 werkd:republik_neugranada werkd:has_preferred_name werkd:republik_neugranada_name .
-werkd:republik_neugranada_name werkd:has_name_value "Republik Neugranada"@de .
+werkd:republik_neugranada_name rdf:type werkd:name ;
+werkd:has_name_value "Republik Neugranada"@de .
 werkd:nigeria werkd:has_preferred_name werkd:nigeria_name .
-werkd:nigeria_name werkd:has_name_value "Nigeria"@de .
+werkd:nigeria_name rdf:type werkd:name ;
+werkd:has_name_value "Nigeria"@de .
 werkd:china werkd:has_preferred_name werkd:china_name .
-werkd:china_name werkd:has_name_value "China"@de .
+werkd:china_name rdf:type werkd:name ;
+werkd:has_name_value "China"@de .
 werkd:latvija werkd:has_preferred_name werkd:latvija_name .
-werkd:latvija_name werkd:has_name_value "Latvija"@de .
+werkd:latvija_name rdf:type werkd:name ;
+werkd:has_name_value "Latvija"@de .
 werkd:thailand werkd:has_preferred_name werkd:thailand_name .
-werkd:thailand_name werkd:has_name_value "Thailand"@de .
+werkd:thailand_name rdf:type werkd:name ;
+werkd:has_name_value "Thailand"@de .
 werkd:kolumbien werkd:has_preferred_name werkd:kolumbien_name .
-werkd:kolumbien_name werkd:has_name_value "Kolumbien"@de .
+werkd:kolumbien_name rdf:type werkd:name ;
+werkd:has_name_value "Kolumbien"@de .
 werkd:sint_maarten werkd:has_preferred_name werkd:sint_maarten_name .
-werkd:sint_maarten_name werkd:has_name_value "Sint Maarten"@de .
+werkd:sint_maarten_name rdf:type werkd:name ;
+werkd:has_name_value "Sint Maarten"@de .
 werkd:malta werkd:has_preferred_name werkd:malta_name .
-werkd:malta_name werkd:has_name_value "Malta"@de .
+werkd:malta_name rdf:type werkd:name ;
+werkd:has_name_value "Malta"@de .
 werkd:csfr werkd:has_preferred_name werkd:csfr_name .
-werkd:csfr_name werkd:has_name_value "ČSFR"@de .
+werkd:csfr_name rdf:type werkd:name ;
+werkd:has_name_value "ČSFR"@de .
 werkd:westsahara werkd:has_preferred_name werkd:westsahara_name .
-werkd:westsahara_name werkd:has_name_value "Westsahara"@de .
+werkd:westsahara_name rdf:type werkd:name ;
+werkd:has_name_value "Westsahara"@de .
 werkd:kiribati werkd:has_preferred_name werkd:kiribati_name .
-werkd:kiribati_name werkd:has_name_value "Kiribati"@de .
+werkd:kiribati_name rdf:type werkd:name ;
+werkd:has_name_value "Kiribati"@de .
 werkd:island werkd:has_preferred_name werkd:island_name .
-werkd:island_name werkd:has_name_value "Island"@de .
+werkd:island_name rdf:type werkd:name ;
+werkd:has_name_value "Island"@de .
 werkd:algerien werkd:has_preferred_name werkd:algerien_name .
-werkd:algerien_name werkd:has_name_value "Algerien"@de .
+werkd:algerien_name rdf:type werkd:name ;
+werkd:has_name_value "Algerien"@de .
 werkd:lietuva_ab_1991 werkd:has_preferred_name werkd:lietuva_ab_1991_name .
-werkd:lietuva_ab_1991_name werkd:has_name_value "Lietuva (ab 1991)"@de .
+werkd:lietuva_ab_1991_name rdf:type werkd:name ;
+werkd:has_name_value "Lietuva (ab 1991)"@de .
 werkd:soudan werkd:has_preferred_name werkd:soudan_name .
-werkd:soudan_name werkd:has_name_value "Soudan"@de .
+werkd:soudan_name rdf:type werkd:name ;
+werkd:has_name_value "Soudan"@de .
 werkd:uganda werkd:has_preferred_name werkd:uganda_name .
-werkd:uganda_name werkd:has_name_value "Uganda"@de .
+werkd:uganda_name rdf:type werkd:name ;
+werkd:has_name_value "Uganda"@de .
 werkd:israel_altertum werkd:has_preferred_name werkd:israel_altertum_name .
-werkd:israel_altertum_name werkd:has_name_value "Israel (Altertum)"@de .
+werkd:israel_altertum_name rdf:type werkd:name ;
+werkd:has_name_value "Israel (Altertum)"@de .
 werkd:gallisches_sonderreich werkd:has_preferred_name werkd:gallisches_sonderreich_name .
-werkd:gallisches_sonderreich_name werkd:has_name_value "Gallisches Sonderreich"@de .
+werkd:gallisches_sonderreich_name rdf:type werkd:name ;
+werkd:has_name_value "Gallisches Sonderreich"@de .
 werkd:frankreich werkd:has_preferred_name werkd:frankreich_name .
-werkd:frankreich_name werkd:has_name_value "Frankreich"@de .
+werkd:frankreich_name rdf:type werkd:name ;
+werkd:has_name_value "Frankreich"@de .
 werkd:brunei werkd:has_preferred_name werkd:brunei_name .
-werkd:brunei_name werkd:has_name_value "Brunei"@de .
+werkd:brunei_name rdf:type werkd:name ;
+werkd:has_name_value "Brunei"@de .
 werkd:anguilla werkd:has_preferred_name werkd:anguilla_name .
-werkd:anguilla_name werkd:has_name_value "Anguilla"@de .
+werkd:anguilla_name rdf:type werkd:name ;
+werkd:has_name_value "Anguilla"@de .
 werkd:suedafrika werkd:has_preferred_name werkd:suedafrika_name .
-werkd:suedafrika_name werkd:has_name_value "Südafrika"@de .
+werkd:suedafrika_name rdf:type werkd:name ;
+werkd:has_name_value "Südafrika"@de .
 werkd:boehmen werkd:has_preferred_name werkd:boehmen_name .
-werkd:boehmen_name werkd:has_name_value "Böhmen"@de .
+werkd:boehmen_name rdf:type werkd:name ;
+werkd:has_name_value "Böhmen"@de .
 werkd:srbija_bis_1918 werkd:has_preferred_name werkd:srbija_bis_1918_name .
-werkd:srbija_bis_1918_name werkd:has_name_value "Srbija (bis 1918)"@de .
+werkd:srbija_bis_1918_name rdf:type werkd:name ;
+werkd:has_name_value "Srbija (bis 1918)"@de .
 werkd:tunesien werkd:has_preferred_name werkd:tunesien_name .
-werkd:tunesien_name werkd:has_name_value "Tunesien"@de .
+werkd:tunesien_name rdf:type werkd:name ;
+werkd:has_name_value "Tunesien"@de .
 werkd:zentralafrikanisches_kaiserreich werkd:has_preferred_name werkd:zentralafrikanisches_kaiserreich_name .
-werkd:zentralafrikanisches_kaiserreich_name werkd:has_name_value "Zentralafrikanisches Kaiserreich"@de .
+werkd:zentralafrikanisches_kaiserreich_name rdf:type werkd:name ;
+werkd:has_name_value "Zentralafrikanisches Kaiserreich"@de .
 werkd:slovensko_1939-1945 werkd:has_preferred_name werkd:slovensko_1939-1945_name .
-werkd:slovensko_1939-1945_name werkd:has_name_value "Slovensko (1939-1945)"@de .
+werkd:slovensko_1939-1945_name rdf:type werkd:name ;
+werkd:has_name_value "Slovensko (1939-1945)"@de .
 werkd:somalia werkd:has_preferred_name werkd:somalia_name .
-werkd:somalia_name werkd:has_name_value "Somalia"@de .
+werkd:somalia_name rdf:type werkd:name ;
+werkd:has_name_value "Somalia"@de .
 werkd:juda_koenigreich werkd:has_preferred_name werkd:juda_koenigreich_name .
-werkd:juda_koenigreich_name werkd:has_name_value "Juda (Königreich)"@de .
+werkd:juda_koenigreich_name rdf:type werkd:name ;
+werkd:has_name_value "Juda (Königreich)"@de .
 werkd:slowakei werkd:has_preferred_name werkd:slowakei_name .
-werkd:slowakei_name werkd:has_name_value "Slowakei"@de .
+werkd:slowakei_name rdf:type werkd:name ;
+werkd:has_name_value "Slowakei"@de .
 werkd:argentinien werkd:has_preferred_name werkd:argentinien_name .
-werkd:argentinien_name werkd:has_name_value "Argentinien"@de .
+werkd:argentinien_name rdf:type werkd:name ;
+werkd:has_name_value "Argentinien"@de .
 werkd:aegypten werkd:has_preferred_name werkd:aegypten_name .
-werkd:aegypten_name werkd:has_name_value "Ägypten"@de .
+werkd:aegypten_name rdf:type werkd:name ;
+werkd:has_name_value "Ägypten"@de .
 werkd:westfraenkisches_reich werkd:has_preferred_name werkd:westfraenkisches_reich_name .
-werkd:westfraenkisches_reich_name werkd:has_name_value "Westfränkisches Reich"@de .
+werkd:westfraenkisches_reich_name rdf:type werkd:name ;
+werkd:has_name_value "Westfränkisches Reich"@de .
 werkd:sierra_leone werkd:has_preferred_name werkd:sierra_leone_name .
-werkd:sierra_leone_name werkd:has_name_value "Sierra Leone"@de .
+werkd:sierra_leone_name rdf:type werkd:name ;
+werkd:has_name_value "Sierra Leone"@de .
 werkd:eswatini werkd:has_preferred_name werkd:eswatini_name .
-werkd:eswatini_name werkd:has_name_value "Eswatini"@de .
+werkd:eswatini_name rdf:type werkd:name ;
+werkd:has_name_value "Eswatini"@de .
 werkd:usa werkd:has_preferred_name werkd:usa_name .
-werkd:usa_name werkd:has_name_value "USA"@de .
+werkd:usa_name rdf:type werkd:name ;
+werkd:has_name_value "USA"@de .
 werkd:turkmenistan werkd:has_preferred_name werkd:turkmenistan_name .
-werkd:turkmenistan_name werkd:has_name_value "Turkmenistan"@de .
+werkd:turkmenistan_name rdf:type werkd:name ;
+werkd:has_name_value "Turkmenistan"@de .
 werkd:deutschland_bundesrepublik werkd:has_preferred_name werkd:deutschland_bundesrepublik_name .
-werkd:deutschland_bundesrepublik_name werkd:has_name_value "Deutschland (Bundesrepublik)"@de .
+werkd:deutschland_bundesrepublik_name rdf:type werkd:name ;
+werkd:has_name_value "Deutschland (Bundesrepublik)"@de .
 werkd:samoa werkd:has_preferred_name werkd:samoa_name .
-werkd:samoa_name werkd:has_name_value "Samoa"@de .
+werkd:samoa_name rdf:type werkd:name ;
+werkd:has_name_value "Samoa"@de .
 werkd:nauru werkd:has_preferred_name werkd:nauru_name .
-werkd:nauru_name werkd:has_name_value "Nauru"@de .
+werkd:nauru_name rdf:type werkd:name ;
+werkd:has_name_value "Nauru"@de .
 werkd:belgien werkd:has_preferred_name werkd:belgien_name .
-werkd:belgien_name werkd:has_name_value "Belgien"@de .
+werkd:belgien_name rdf:type werkd:name ;
+werkd:has_name_value "Belgien"@de .
 werkd:suedvietnam werkd:has_preferred_name werkd:suedvietnam_name .
-werkd:suedvietnam_name werkd:has_name_value "Südvietnam"@de .
+werkd:suedvietnam_name rdf:type werkd:name ;
+werkd:has_name_value "Südvietnam"@de .
 werkd:philippinen werkd:has_preferred_name werkd:philippinen_name .
-werkd:philippinen_name werkd:has_name_value "Philippinen"@de .
+werkd:philippinen_name rdf:type werkd:name ;
+werkd:has_name_value "Philippinen"@de .
 werkd:saudi-arabien werkd:has_preferred_name werkd:saudi-arabien_name .
-werkd:saudi-arabien_name werkd:has_name_value "Saudi-Arabien"@de .
+werkd:saudi-arabien_name rdf:type werkd:name ;
+werkd:has_name_value "Saudi-Arabien"@de .
 werkd:mauretanien werkd:has_preferred_name werkd:mauretanien_name .
-werkd:mauretanien_name werkd:has_name_value "Mauretanien"@de .
+werkd:mauretanien_name rdf:type werkd:name ;
+werkd:has_name_value "Mauretanien"@de .
 werkd:jugoslawien werkd:has_preferred_name werkd:jugoslawien_name .
-werkd:jugoslawien_name werkd:has_name_value "Jugoslawien"@de .
+werkd:jugoslawien_name rdf:type werkd:name ;
+werkd:has_name_value "Jugoslawien"@de .
 werkd:georgien werkd:has_preferred_name werkd:georgien_name .
-werkd:georgien_name werkd:has_name_value "Georgien"@de .
+werkd:georgien_name rdf:type werkd:name ;
+werkd:has_name_value "Georgien"@de .
 werkd:libanon werkd:has_preferred_name werkd:libanon_name .
-werkd:libanon_name werkd:has_name_value "Libanon"@de .
+werkd:libanon_name rdf:type werkd:name ;
+werkd:has_name_value "Libanon"@de .
 werkd:hatti werkd:has_preferred_name werkd:hatti_name .
-werkd:hatti_name werkd:has_name_value "Hatti"@de .
+werkd:hatti_name rdf:type werkd:name ;
+werkd:has_name_value "Hatti"@de .
 werkd:kroatien werkd:has_preferred_name werkd:kroatien_name .
-werkd:kroatien_name werkd:has_name_value "Kroatien"@de .
+werkd:kroatien_name rdf:type werkd:name ;
+werkd:has_name_value "Kroatien"@de .
 werkd:libyen werkd:has_preferred_name werkd:libyen_name .
-werkd:libyen_name werkd:has_name_value "Libyen"@de .
+werkd:libyen_name rdf:type werkd:name ;
+werkd:has_name_value "Libyen"@de .
 werkd:bangladesch werkd:has_preferred_name werkd:bangladesch_name .
-werkd:bangladesch_name werkd:has_name_value "Bangladesch"@de .
+werkd:bangladesch_name rdf:type werkd:name ;
+werkd:has_name_value "Bangladesch"@de .
 werkd:slowenien werkd:has_preferred_name werkd:slowenien_name .
-werkd:slowenien_name werkd:has_name_value "Slowenien"@de .
+werkd:slowenien_name rdf:type werkd:name ;
+werkd:has_name_value "Slowenien"@de .
 werkd:singapur werkd:has_preferred_name werkd:singapur_name .
-werkd:singapur_name werkd:has_name_value "Singapur"@de .
+werkd:singapur_name rdf:type werkd:name ;
+werkd:has_name_value "Singapur"@de .
 werkd:siam werkd:has_preferred_name werkd:siam_name .
-werkd:siam_name werkd:has_name_value "Siam"@de .
+werkd:siam_name rdf:type werkd:name ;
+werkd:has_name_value "Siam"@de .
 werkd:lesotho werkd:has_preferred_name werkd:lesotho_name .
-werkd:lesotho_name werkd:has_name_value "Lesotho"@de .
+werkd:lesotho_name rdf:type werkd:name ;
+werkd:has_name_value "Lesotho"@de .
 werkd:grenada werkd:has_preferred_name werkd:grenada_name .
-werkd:grenada_name werkd:has_name_value "Grenada"@de .
+werkd:grenada_name rdf:type werkd:name ;
+werkd:has_name_value "Grenada"@de .
 werkd:kambodscha werkd:has_preferred_name werkd:kambodscha_name .
-werkd:kambodscha_name werkd:has_name_value "Kambodscha"@de .
+werkd:kambodscha_name rdf:type werkd:name ;
+werkd:has_name_value "Kambodscha"@de .
 werkd:russland werkd:has_preferred_name werkd:russland_name .
-werkd:russland_name werkd:has_name_value "Russland"@de .
+werkd:russland_name rdf:type werkd:name ;
+werkd:has_name_value "Russland"@de .
 werkd:panama werkd:has_preferred_name werkd:panama_name .
-werkd:panama_name werkd:has_name_value "Panama"@de .
+werkd:panama_name rdf:type werkd:name ;
+werkd:has_name_value "Panama"@de .
 werkd:elfenbeinkueste werkd:has_preferred_name werkd:elfenbeinkueste_name .
-werkd:elfenbeinkueste_name werkd:has_name_value "Elfenbeinküste"@de .
+werkd:elfenbeinkueste_name rdf:type werkd:name ;
+werkd:has_name_value "Elfenbeinküste"@de .
 werkd:ruanda werkd:has_preferred_name werkd:ruanda_name .
-werkd:ruanda_name werkd:has_name_value "Ruanda"@de .
+werkd:ruanda_name rdf:type werkd:name ;
+werkd:has_name_value "Ruanda"@de .
 werkd:armenien werkd:has_preferred_name werkd:armenien_name .
-werkd:armenien_name werkd:has_name_value "Armenien"@de .
+werkd:armenien_name rdf:type werkd:name ;
+werkd:has_name_value "Armenien"@de .
 werkd:autonome_republik_nordepirus werkd:has_preferred_name werkd:autonome_republik_nordepirus_name .
-werkd:autonome_republik_nordepirus_name werkd:has_name_value "Autonome Republik Nordepirus"@de .
+werkd:autonome_republik_nordepirus_name rdf:type werkd:name ;
+werkd:has_name_value "Autonome Republik Nordepirus"@de .
 werkd:tanganyika werkd:has_preferred_name werkd:tanganyika_name .
-werkd:tanganyika_name werkd:has_name_value "Tanganyika"@de .
+werkd:tanganyika_name rdf:type werkd:name ;
+werkd:has_name_value "Tanganyika"@de .
 werkd:british_solomon_islands werkd:has_preferred_name werkd:british_solomon_islands_name .
-werkd:british_solomon_islands_name werkd:has_name_value "British Solomon Islands"@de .
+werkd:british_solomon_islands_name rdf:type werkd:name ;
+werkd:has_name_value "British Solomon Islands"@de .
 werkd:aegypten_altertum werkd:has_preferred_name werkd:aegypten_altertum_name .
-werkd:aegypten_altertum_name werkd:has_name_value "Ägypten (Altertum)"@de .
+werkd:aegypten_altertum_name rdf:type werkd:name ;
+werkd:has_name_value "Ägypten (Altertum)"@de .
 werkd:honduras werkd:has_preferred_name werkd:honduras_name .
-werkd:honduras_name werkd:has_name_value "Honduras"@de .
+werkd:honduras_name rdf:type werkd:name ;
+werkd:has_name_value "Honduras"@de .
 werkd:burma werkd:has_preferred_name werkd:burma_name .
-werkd:burma_name werkd:has_name_value "Burma"@de .
+werkd:burma_name rdf:type werkd:name ;
+werkd:has_name_value "Burma"@de .
 werkd:schweden werkd:has_preferred_name werkd:schweden_name .
-werkd:schweden_name werkd:has_name_value "Schweden"@de .
+werkd:schweden_name rdf:type werkd:name ;
+werkd:has_name_value "Schweden"@de .
 werkd:venezuela werkd:has_preferred_name werkd:venezuela_name .
-werkd:venezuela_name werkd:has_name_value "Venezuela"@de .
+werkd:venezuela_name rdf:type werkd:name ;
+werkd:has_name_value "Venezuela"@de .
 werkd:jamaika werkd:has_preferred_name werkd:jamaika_name .
-werkd:jamaika_name werkd:has_name_value "Jamaika"@de .
+werkd:jamaika_name rdf:type werkd:name ;
+werkd:has_name_value "Jamaika"@de .
 werkd:saint_christopher-nevis-anguilla werkd:has_preferred_name werkd:saint_christopher-nevis-anguilla_name .
-werkd:saint_christopher-nevis-anguilla_name werkd:has_name_value "Saint Christopher- Nevis-Anguilla"@de .
+werkd:saint_christopher-nevis-anguilla_name rdf:type werkd:name ;
+werkd:has_name_value "Saint Christopher- Nevis-Anguilla"@de .
 werkd:surinam werkd:has_preferred_name werkd:surinam_name .
-werkd:surinam_name werkd:has_name_value "Surinam"@de .
+werkd:surinam_name rdf:type werkd:name ;
+werkd:has_name_value "Surinam"@de .
 werkd:irak werkd:has_preferred_name werkd:irak_name .
-werkd:irak_name werkd:has_name_value "Irak"@de .
+werkd:irak_name rdf:type werkd:name ;
+werkd:has_name_value "Irak"@de .
 werkd:ceska_sr werkd:has_preferred_name werkd:ceska_sr_name .
-werkd:ceska_sr_name werkd:has_name_value "Česká SR"@de .
+werkd:ceska_sr_name rdf:type werkd:name ;
+werkd:has_name_value "Česká SR"@de .
 werkd:ukrainska_narodna_respublika werkd:has_preferred_name werkd:ukrainska_narodna_respublika_name .
-werkd:ukrainska_narodna_respublika_name werkd:has_name_value "Ukraïnsʹka Narodna Respublika"@de .
+werkd:ukrainska_narodna_respublika_name rdf:type werkd:name ;
+werkd:has_name_value "Ukraïnsʹka Narodna Respublika"@de .
 werkd:guatemala werkd:has_preferred_name werkd:guatemala_name .
-werkd:guatemala_name werkd:has_name_value "Guatemala"@de .
+werkd:guatemala_name rdf:type werkd:name ;
+werkd:has_name_value "Guatemala"@de .
 werkd:litauen werkd:has_preferred_name werkd:litauen_name .
-werkd:litauen_name werkd:has_name_value "Litauen"@de .
+werkd:litauen_name rdf:type werkd:name ;
+werkd:has_name_value "Litauen"@de .
 werkd:spanien werkd:has_preferred_name werkd:spanien_name .
-werkd:spanien_name werkd:has_name_value "Spanien"@de .
+werkd:spanien_name rdf:type werkd:name ;
+werkd:has_name_value "Spanien"@de .
 werkd:mauritius werkd:has_preferred_name werkd:mauritius_name .
-werkd:mauritius_name werkd:has_name_value "Mauritius"@de .
+werkd:mauritius_name rdf:type werkd:name ;
+werkd:has_name_value "Mauritius"@de .
 werkd:komoren werkd:has_preferred_name werkd:komoren_name .
-werkd:komoren_name werkd:has_name_value "Komoren"@de .
+werkd:komoren_name rdf:type werkd:name ;
+werkd:has_name_value "Komoren"@de .
 werkd:irland werkd:has_preferred_name werkd:irland_name .
-werkd:irland_name werkd:has_name_value "Irland"@de .
+werkd:irland_name rdf:type werkd:name ;
+werkd:has_name_value "Irland"@de .
 werkd:burkina_faso werkd:has_preferred_name werkd:burkina_faso_name .
-werkd:burkina_faso_name werkd:has_name_value "Burkina Faso"@de .
+werkd:burkina_faso_name rdf:type werkd:name ;
+werkd:has_name_value "Burkina Faso"@de .
 werkd:mexiko werkd:has_preferred_name werkd:mexiko_name .
-werkd:mexiko_name werkd:has_name_value "Mexiko"@de .
+werkd:mexiko_name rdf:type werkd:name ;
+werkd:has_name_value "Mexiko"@de .
 werkd:haiti werkd:has_preferred_name werkd:haiti_name .
-werkd:haiti_name werkd:has_name_value "Haiti"@de .
+werkd:haiti_name rdf:type werkd:name ;
+werkd:has_name_value "Haiti"@de .
 werkd:katar werkd:has_preferred_name werkd:katar_name .
-werkd:katar_name werkd:has_name_value "Katar"@de .
+werkd:katar_name rdf:type werkd:name ;
+werkd:has_name_value "Katar"@de .
 werkd:iran werkd:has_preferred_name werkd:iran_name .
-werkd:iran_name werkd:has_name_value "Iran"@de .
+werkd:iran_name rdf:type werkd:name ;
+werkd:has_name_value "Iran"@de .
 werkd:aserbaidschan werkd:has_preferred_name werkd:aserbaidschan_name .
-werkd:aserbaidschan_name werkd:has_name_value "Aserbaidschan"@de .
+werkd:aserbaidschan_name rdf:type werkd:name ;
+werkd:has_name_value "Aserbaidschan"@de .
 werkd:roemisches_reich werkd:has_preferred_name werkd:roemisches_reich_name .
-werkd:roemisches_reich_name werkd:has_name_value "Römisches Reich"@de .
+werkd:roemisches_reich_name rdf:type werkd:name ;
+werkd:has_name_value "Römisches Reich"@de .
 werkd:venezuela_confederacion werkd:has_preferred_name werkd:venezuela_confederacion_name .
-werkd:venezuela_confederacion_name werkd:has_name_value "Venezuela (Confederación)"@de .
+werkd:venezuela_confederacion_name rdf:type werkd:name ;
+werkd:has_name_value "Venezuela (Confederación)"@de .
 werkd:italienisch-somaliland werkd:has_preferred_name werkd:italienisch-somaliland_name .
-werkd:italienisch-somaliland_name werkd:has_name_value "Italienisch-Somaliland"@de .
+werkd:italienisch-somaliland_name rdf:type werkd:name ;
+werkd:has_name_value "Italienisch-Somaliland"@de .
 werkd:serbien werkd:has_preferred_name werkd:serbien_name .
-werkd:serbien_name werkd:has_name_value "Serbien"@de .
+werkd:serbien_name rdf:type werkd:name ;
+werkd:has_name_value "Serbien"@de .
 werkd:holland_koenigreich werkd:has_preferred_name werkd:holland_koenigreich_name .
-werkd:holland_koenigreich_name werkd:has_name_value "Holland (Königreich)"@de .
+werkd:holland_koenigreich_name rdf:type werkd:name ;
+werkd:has_name_value "Holland (Königreich)"@de .
 werkd:griechenland_altertum werkd:has_preferred_name werkd:griechenland_altertum_name .
-werkd:griechenland_altertum_name werkd:has_name_value "Griechenland (Altertum)"@de .
+werkd:griechenland_altertum_name rdf:type werkd:name ;
+werkd:has_name_value "Griechenland (Altertum)"@de .
 werkd:osttimor werkd:has_preferred_name werkd:osttimor_name .
-werkd:osttimor_name werkd:has_name_value "Osttimor"@de .
+werkd:osttimor_name rdf:type werkd:name ;
+werkd:has_name_value "Osttimor"@de .
 werkd:helvetische_republik werkd:has_preferred_name werkd:helvetische_republik_name .
-werkd:helvetische_republik_name werkd:has_name_value "Helvetische Republik"@de .
+werkd:helvetische_republik_name rdf:type werkd:name ;
+werkd:has_name_value "Helvetische Republik"@de .
 werkd:luxemburg werkd:has_preferred_name werkd:luxemburg_name .
-werkd:luxemburg_name werkd:has_name_value "Luxemburg"@de .
+werkd:luxemburg_name rdf:type werkd:name ;
+werkd:has_name_value "Luxemburg"@de .
 werkd:kirgisien werkd:has_preferred_name werkd:kirgisien_name .
-werkd:kirgisien_name werkd:has_name_value "Kirgisien"@de .
+werkd:kirgisien_name rdf:type werkd:name ;
+werkd:has_name_value "Kirgisien"@de .
 werkd:deutsches_reich werkd:has_preferred_name werkd:deutsches_reich_name .
-werkd:deutsches_reich_name werkd:has_name_value "Deutsches Reich"@de .
+werkd:deutsches_reich_name rdf:type werkd:name ;
+werkd:has_name_value "Deutsches Reich"@de .
 werkd:polen werkd:has_preferred_name werkd:polen_name .
-werkd:polen_name werkd:has_name_value "Polen"@de .
+werkd:polen_name rdf:type werkd:name ;
+werkd:has_name_value "Polen"@de .
 werkd:dschibuti werkd:has_preferred_name werkd:dschibuti_name .
-werkd:dschibuti_name werkd:has_name_value "Dschibuti"@de .
+werkd:dschibuti_name rdf:type werkd:name ;
+werkd:has_name_value "Dschibuti"@de .
 werkd:namibia werkd:has_preferred_name werkd:namibia_name .
-werkd:namibia_name werkd:has_name_value "Namibia"@de .
+werkd:namibia_name rdf:type werkd:name ;
+werkd:has_name_value "Namibia"@de .
 werkd:amarna werkd:has_preferred_name werkd:amarna_name .
-werkd:amarna_name werkd:has_name_value "Amarna"@de .
+werkd:amarna_name rdf:type werkd:name ;
+werkd:has_name_value "Amarna"@de .
 werkd:ungarn werkd:has_preferred_name werkd:ungarn_name .
-werkd:ungarn_name werkd:has_name_value "Ungarn"@de .
+werkd:ungarn_name rdf:type werkd:name ;
+werkd:has_name_value "Ungarn"@de .
 werkd:guyana werkd:has_preferred_name werkd:guyana_name .
-werkd:guyana_name werkd:has_name_value "Guyana"@de .
+werkd:guyana_name rdf:type werkd:name ;
+werkd:has_name_value "Guyana"@de .
 werkd:nigeria_colony_and_protectorate werkd:has_preferred_name werkd:nigeria_colony_and_protectorate_name .
-werkd:nigeria_colony_and_protectorate_name werkd:has_name_value "Nigeria (Colony and Protectorate)"@de .
+werkd:nigeria_colony_and_protectorate_name rdf:type werkd:name ;
+werkd:has_name_value "Nigeria (Colony and Protectorate)"@de .
 werkd:bolivien werkd:has_preferred_name werkd:bolivien_name .
-werkd:bolivien_name werkd:has_name_value "Bolivien"@de .
+werkd:bolivien_name rdf:type werkd:name ;
+werkd:has_name_value "Bolivien"@de .
 werkd:makedonien_altertum werkd:has_preferred_name werkd:makedonien_altertum_name .
-werkd:makedonien_altertum_name werkd:has_name_value "Makedonien (Altertum)"@de .
+werkd:makedonien_altertum_name rdf:type werkd:name ;
+werkd:has_name_value "Makedonien (Altertum)"@de .
 werkd:saint_vincent_state werkd:has_preferred_name werkd:saint_vincent_state_name .
-werkd:saint_vincent_state_name werkd:has_name_value "Saint Vincent (State)"@de .
+werkd:saint_vincent_state_name rdf:type werkd:name ;
+werkd:has_name_value "Saint Vincent (State)"@de .
 werkd:zentralafrikanische_foederation werkd:has_preferred_name werkd:zentralafrikanische_foederation_name .
-werkd:zentralafrikanische_foederation_name werkd:has_name_value "Zentralafrikanische Föderation"@de .
+werkd:zentralafrikanische_foederation_name rdf:type werkd:name ;
+werkd:has_name_value "Zentralafrikanische Föderation"@de .
 werkd:daenemark werkd:has_preferred_name werkd:daenemark_name .
-werkd:daenemark_name werkd:has_name_value "Dänemark"@de .
+werkd:daenemark_name rdf:type werkd:name ;
+werkd:has_name_value "Dänemark"@de .
 werkd:portugal werkd:has_preferred_name werkd:portugal_name .
-werkd:portugal_name werkd:has_name_value "Portugal"@de .
+werkd:portugal_name rdf:type werkd:name ;
+werkd:has_name_value "Portugal"@de .
 werkd:vietnam werkd:has_preferred_name werkd:vietnam_name .
-werkd:vietnam_name werkd:has_name_value "Vietnam"@de .
+werkd:vietnam_name rdf:type werkd:name ;
+werkd:has_name_value "Vietnam"@de .
 werkd:heiliges_roemisches_reich werkd:has_preferred_name werkd:heiliges_roemisches_reich_name .
-werkd:heiliges_roemisches_reich_name werkd:has_name_value "Heiliges Römisches Reich"@de .
+werkd:heiliges_roemisches_reich_name rdf:type werkd:name ;
+werkd:has_name_value "Heiliges Römisches Reich"@de .
 werkd:niger werkd:has_preferred_name werkd:niger_name .
-werkd:niger_name werkd:has_name_value "Niger"@de .
+werkd:niger_name rdf:type werkd:name ;
+werkd:has_name_value "Niger"@de .
 werkd:oesterreich werkd:has_preferred_name werkd:oesterreich_name .
-werkd:oesterreich_name werkd:has_name_value "Österreich"@de .
+werkd:oesterreich_name rdf:type werkd:name ;
+werkd:has_name_value "Österreich"@de .
 werkd:niederlande werkd:has_preferred_name werkd:niederlande_name .
-werkd:niederlande_name werkd:has_name_value "Niederlande"@de .
+werkd:niederlande_name rdf:type werkd:name ;
+werkd:has_name_value "Niederlande"@de .
 werkd:bhutan werkd:has_preferred_name werkd:bhutan_name .
-werkd:bhutan_name werkd:has_name_value "Bhutan"@de .
+werkd:bhutan_name rdf:type werkd:name ;
+werkd:has_name_value "Bhutan"@de .
 werkd:serbien_und_montenegro werkd:has_preferred_name werkd:serbien_und_montenegro_name .
-werkd:serbien_und_montenegro_name werkd:has_name_value "Serbien und Montenegro"@de .
+werkd:serbien_und_montenegro_name rdf:type werkd:name ;
+werkd:has_name_value "Serbien und Montenegro"@de .
 werkd:liberia werkd:has_preferred_name werkd:liberia_name .
-werkd:liberia_name werkd:has_name_value "Liberia"@de .
+werkd:liberia_name rdf:type werkd:name ;
+werkd:has_name_value "Liberia"@de .
 werkd:bulgarien werkd:has_preferred_name werkd:bulgarien_name .
-werkd:bulgarien_name werkd:has_name_value "Bulgarien"@de .
+werkd:bulgarien_name rdf:type werkd:name ;
+werkd:has_name_value "Bulgarien"@de .
 werkd:ceska_a_slovenska_federativni_republika werkd:has_preferred_name werkd:ceska_a_slovenska_federativni_republika_name .
-werkd:ceska_a_slovenska_federativni_republika_name werkd:has_name_value "Česká a Slovenská Federativní Republika"@de .
+werkd:ceska_a_slovenska_federativni_republika_name rdf:type werkd:name ;
+werkd:has_name_value "Česká a Slovenská Federativní Republika"@de .
 werkd:jemen_demokratische_volksrepublik werkd:has_preferred_name werkd:jemen_demokratische_volksrepublik_name .
-werkd:jemen_demokratische_volksrepublik_name werkd:has_name_value "Jemen (Demokratische Volksrepublik)"@de .
+werkd:jemen_demokratische_volksrepublik_name rdf:type werkd:name ;
+werkd:has_name_value "Jemen (Demokratische Volksrepublik)"@de .
 werkd:andorra werkd:has_preferred_name werkd:andorra_name .
-werkd:andorra_name werkd:has_name_value "Andorra"@de .
+werkd:andorra_name rdf:type werkd:name ;
+werkd:has_name_value "Andorra"@de .
 werkd:botswana werkd:has_preferred_name werkd:botswana_name .
-werkd:botswana_name werkd:has_name_value "Botswana"@de .
+werkd:botswana_name rdf:type werkd:name ;
+werkd:has_name_value "Botswana"@de .
 werkd:tschechien werkd:has_preferred_name werkd:tschechien_name .
-werkd:tschechien_name werkd:has_name_value "Tschechien"@de .
+werkd:tschechien_name rdf:type werkd:name ;
+werkd:has_name_value "Tschechien"@de .
 werkd:israel werkd:has_preferred_name werkd:israel_name .
-werkd:israel_name werkd:has_name_value "Israel"@de .
+werkd:israel_name rdf:type werkd:name ;
+werkd:has_name_value "Israel"@de .
 werkd:mali-foederation werkd:has_preferred_name werkd:mali-foederation_name .
-werkd:mali-foederation_name werkd:has_name_value "Mali-Föderation"@de .
+werkd:mali-foederation_name rdf:type werkd:name ;
+werkd:has_name_value "Mali-Föderation"@de .
 werkd:kiribati werkd:has_preferred_name werkd:kiribati_name .
-werkd:kiribati_name werkd:has_name_value "Kiribati"@de .
+werkd:kiribati_name rdf:type werkd:name ;
+werkd:has_name_value "Kiribati"@de .
 werkd:benin werkd:has_preferred_name werkd:benin_name .
-werkd:benin_name werkd:has_name_value "Benin"@de .
+werkd:benin_name rdf:type werkd:name ;
+werkd:has_name_value "Benin"@de .
 werkd:schweiz werkd:has_preferred_name werkd:schweiz_name .
-werkd:schweiz_name werkd:has_name_value "Schweiz"@de .
+werkd:schweiz_name rdf:type werkd:name ;
+werkd:has_name_value "Schweiz"@de .
 werkd:palauinseln werkd:has_preferred_name werkd:palauinseln_name .
-werkd:palauinseln_name werkd:has_name_value "Palauinseln"@de .
+werkd:palauinseln_name rdf:type werkd:name ;
+werkd:has_name_value "Palauinseln"@de .
 werkd:grossbritannien werkd:has_preferred_name werkd:grossbritannien_name .
-werkd:grossbritannien_name werkd:has_name_value "Großbritannien"@de .
+werkd:grossbritannien_name rdf:type werkd:name ;
+werkd:has_name_value "Großbritannien"@de .
 werkd:vanuatu werkd:has_preferred_name werkd:vanuatu_name .
-werkd:vanuatu_name werkd:has_name_value "Vanuatu"@de .
+werkd:vanuatu_name rdf:type werkd:name ;
+werkd:has_name_value "Vanuatu"@de .
 werkd:makedonien werkd:has_preferred_name werkd:makedonien_name .
-werkd:makedonien_name werkd:has_name_value "Makedonien"@de .
+werkd:makedonien_name rdf:type werkd:name ;
+werkd:has_name_value "Makedonien"@de .
 werkd:mongolei werkd:has_preferred_name werkd:mongolei_name .
-werkd:mongolei_name werkd:has_name_value "Mongolei"@de .
+werkd:mongolei_name rdf:type werkd:name ;
+werkd:has_name_value "Mongolei"@de .
 werkd:estland werkd:has_preferred_name werkd:estland_name .
-werkd:estland_name werkd:has_name_value "Estland"@de .
+werkd:estland_name rdf:type werkd:name ;
+werkd:has_name_value "Estland"@de .
 werkd:mali werkd:has_preferred_name werkd:mali_name .
-werkd:mali_name werkd:has_name_value "Mali"@de .
+werkd:mali_name rdf:type werkd:name ;
+werkd:has_name_value "Mali"@de .
 werkd:kuwait werkd:has_preferred_name werkd:kuwait_name .
-werkd:kuwait_name werkd:has_name_value "Kuwait"@de .
+werkd:kuwait_name rdf:type werkd:name ;
+werkd:has_name_value "Kuwait"@de .
 werkd:koenigreich_dahomey werkd:has_preferred_name werkd:koenigreich_dahomey_name .
-werkd:koenigreich_dahomey_name werkd:has_name_value "Königreich Dahomey"@de .
+werkd:koenigreich_dahomey_name rdf:type werkd:name ;
+werkd:has_name_value "Königreich Dahomey"@de .
 werkd:bahamas werkd:has_preferred_name werkd:bahamas_name .
-werkd:bahamas_name werkd:has_name_value "Bahamas"@de .
+werkd:bahamas_name rdf:type werkd:name ;
+werkd:has_name_value "Bahamas"@de .
 werkd:saint_kitts_and_nevis werkd:has_preferred_name werkd:saint_kitts_and_nevis_name .
-werkd:saint_kitts_and_nevis_name werkd:has_name_value "Saint Kitts and Nevis"@de .
+werkd:saint_kitts_and_nevis_name rdf:type werkd:name ;
+werkd:has_name_value "Saint Kitts and Nevis"@de .
 werkd:belize werkd:has_preferred_name werkd:belize_name .
-werkd:belize_name werkd:has_name_value "Belize"@de .
+werkd:belize_name rdf:type werkd:name ;
+werkd:has_name_value "Belize"@de .
 werkd:demokratische_republik_kongo werkd:has_preferred_name werkd:demokratische_republik_kongo_name .
-werkd:demokratische_republik_kongo_name werkd:has_name_value "Demokratische Republik Kongo"@de .
+werkd:demokratische_republik_kongo_name rdf:type werkd:name ;
+werkd:has_name_value "Demokratische Republik Kongo"@de .
 werkd:schweiz_1513-1798 werkd:has_preferred_name werkd:schweiz_1513-1798_name .
-werkd:schweiz_1513-1798_name werkd:has_name_value "Schweiz (1513-1798)"@de .
+werkd:schweiz_1513-1798_name rdf:type werkd:name ;
+werkd:has_name_value "Schweiz (1513-1798)"@de .
 werkd:guinea werkd:has_preferred_name werkd:guinea_name .
-werkd:guinea_name werkd:has_name_value "Guinea"@de .
+werkd:guinea_name rdf:type werkd:name ;
+werkd:has_name_value "Guinea"@de .
 werkd:sudan werkd:has_preferred_name werkd:sudan_name .
-werkd:sudan_name werkd:has_name_value "Sudan"@de .
+werkd:sudan_name rdf:type werkd:name ;
+werkd:has_name_value "Sudan"@de .
 werkd:saint_vincent_and_the_grenadines werkd:has_preferred_name werkd:saint_vincent_and_the_grenadines_name .
-werkd:saint_vincent_and_the_grenadines_name werkd:has_name_value "Saint Vincent and the Grenadines"@de .
+werkd:saint_vincent_and_the_grenadines_name rdf:type werkd:name ;
+werkd:has_name_value "Saint Vincent and the Grenadines"@de .
 werkd:britisch-somaliland werkd:has_preferred_name werkd:britisch-somaliland_name .
-werkd:britisch-somaliland_name werkd:has_name_value "Britisch-Somaliland"@de .
+werkd:britisch-somaliland_name rdf:type werkd:name ;
+werkd:has_name_value "Britisch-Somaliland"@de .
 werkd:kap_verde werkd:has_preferred_name werkd:kap_verde_name .
-werkd:kap_verde_name werkd:has_name_value "Kap Verde"@de .
+werkd:kap_verde_name rdf:type werkd:name ;
+werkd:has_name_value "Kap Verde"@de .
 werkd:bahrain werkd:has_preferred_name werkd:bahrain_name .
-werkd:bahrain_name werkd:has_name_value "Bahrain"@de .
+werkd:bahrain_name rdf:type werkd:name ;
+werkd:has_name_value "Bahrain"@de .
 werkd:tschechoslowakei werkd:has_preferred_name werkd:tschechoslowakei_name .
-werkd:tschechoslowakei_name werkd:has_name_value "Tschechoslowakei"@de .
+werkd:tschechoslowakei_name rdf:type werkd:name ;
+werkd:has_name_value "Tschechoslowakei"@de .
 werkd:swasiland werkd:has_preferred_name werkd:swasiland_name .
-werkd:swasiland_name werkd:has_name_value "Swasiland"@de .
+werkd:swasiland_name rdf:type werkd:name ;
+werkd:has_name_value "Swasiland"@de .
 werkd:obervolta werkd:has_preferred_name werkd:obervolta_name .
-werkd:obervolta_name werkd:has_name_value "Obervolta"@de .
+werkd:obervolta_name rdf:type werkd:name ;
+werkd:has_name_value "Obervolta"@de .
 werkd:staat_suedsudan werkd:has_preferred_name werkd:staat_suedsudan_name .
-werkd:staat_suedsudan_name werkd:has_name_value "Staat Südsudan"@de .
+werkd:staat_suedsudan_name rdf:type werkd:name ;
+werkd:has_name_value "Staat Südsudan"@de .
 werkd:tonga werkd:has_preferred_name werkd:tonga_name .
-werkd:tonga_name werkd:has_name_value "Tonga"@de .
+werkd:tonga_name rdf:type werkd:name ;
+werkd:has_name_value "Tonga"@de .
 werkd:qibris werkd:has_preferred_name werkd:qibris_name .
-werkd:qibris_name werkd:has_name_value "Qi͏̈bri͏̈s"@de .
+werkd:qibris_name rdf:type werkd:name ;
+werkd:has_name_value "Qi͏̈bri͏̈s"@de .
 werkd:england werkd:has_preferred_name werkd:england_name .
-werkd:england_name werkd:has_name_value "England"@de .
+werkd:england_name rdf:type werkd:name ;
+werkd:has_name_value "England"@de .
 werkd:ceylon werkd:has_preferred_name werkd:ceylon_name .
-werkd:ceylon_name werkd:has_name_value "Ceylon"@de .
+werkd:ceylon_name rdf:type werkd:name ;
+werkd:has_name_value "Ceylon"@de .
 werkd:inkareich werkd:has_preferred_name werkd:inkareich_name .
-werkd:inkareich_name werkd:has_name_value "Inkareich"@de .
+werkd:inkareich_name rdf:type werkd:name ;
+werkd:has_name_value "Inkareich"@de .
 werkd:angola werkd:has_preferred_name werkd:angola_name .
-werkd:angola_name werkd:has_name_value "Angola"@de .
+werkd:angola_name rdf:type werkd:name ;
+werkd:has_name_value "Angola"@de .
 werkd:japan werkd:has_preferred_name werkd:japan_name .
-werkd:japan_name werkd:has_name_value "Japan"@de .
+werkd:japan_name rdf:type werkd:name ;
+werkd:has_name_value "Japan"@de .
 werkd:marokko werkd:has_preferred_name werkd:marokko_name .
-werkd:marokko_name werkd:has_name_value "Marokko"@de .
+werkd:marokko_name rdf:type werkd:name ;
+werkd:has_name_value "Marokko"@de .
 werkd:ukraine werkd:has_preferred_name werkd:ukraine_name .
-werkd:ukraine_name werkd:has_name_value "Ukraine"@de .
+werkd:ukraine_name rdf:type werkd:name ;
+werkd:has_name_value "Ukraine"@de .
 werkd:malediven werkd:has_preferred_name werkd:malediven_name .
-werkd:malediven_name werkd:has_name_value "Malediven"@de .
+werkd:malediven_name rdf:type werkd:name ;
+werkd:has_name_value "Malediven"@de .
 werkd:djibouti werkd:has_preferred_name werkd:djibouti_name .
-werkd:djibouti_name werkd:has_name_value "Djibouti"@de .
+werkd:djibouti_name rdf:type werkd:name ;
+werkd:has_name_value "Djibouti"@de .
 werkd:ecuador werkd:has_preferred_name werkd:ecuador_name .
-werkd:ecuador_name werkd:has_name_value "Ecuador"@de .
+werkd:ecuador_name rdf:type werkd:name ;
+werkd:has_name_value "Ecuador"@de .
 werkd:guinea-bissau werkd:has_preferred_name werkd:guinea-bissau_name .
-werkd:guinea-bissau_name werkd:has_name_value "Guinea-Bissau"@de .
+werkd:guinea-bissau_name rdf:type werkd:name ;
+werkd:has_name_value "Guinea-Bissau"@de .
 werkd:aequatorialguinea werkd:has_preferred_name werkd:aequatorialguinea_name .
-werkd:aequatorialguinea_name werkd:has_name_value "Äquatorialguinea"@de .
+werkd:aequatorialguinea_name rdf:type werkd:name ;
+werkd:has_name_value "Äquatorialguinea"@de .
 werkd:schweiz_1815-1848 werkd:has_preferred_name werkd:schweiz_1815-1848_name .
-werkd:schweiz_1815-1848_name werkd:has_name_value "Schweiz (1815-1848)"@de .
+werkd:schweiz_1815-1848_name rdf:type werkd:name ;
+werkd:has_name_value "Schweiz (1815-1848)"@de .
 werkd:preussen_ordensstaat werkd:has_preferred_name werkd:preussen_ordensstaat_name .
-werkd:preussen_ordensstaat_name werkd:has_name_value "Preußen (Ordensstaat)"@de .
+werkd:preussen_ordensstaat_name rdf:type werkd:name ;
+werkd:has_name_value "Preußen (Ordensstaat)"@de .
 werkd:aruba werkd:has_preferred_name werkd:aruba_name .
-werkd:aruba_name werkd:has_name_value "Aruba"@de .
+werkd:aruba_name rdf:type werkd:name ;
+werkd:has_name_value "Aruba"@de .
 werkd:foederative_republik_jugoslawien werkd:has_preferred_name werkd:foederative_republik_jugoslawien_name .
-werkd:foederative_republik_jugoslawien_name werkd:has_name_value "Föderative Republik Jugoslawien"@de .
+werkd:foederative_republik_jugoslawien_name rdf:type werkd:name ;
+werkd:has_name_value "Föderative Republik Jugoslawien"@de .
 werkd:iran_altertum werkd:has_preferred_name werkd:iran_altertum_name .
-werkd:iran_altertum_name werkd:has_name_value "Iran (Altertum)"@de .
+werkd:iran_altertum_name rdf:type werkd:name ;
+werkd:has_name_value "Iran (Altertum)"@de .
 werkd:tibet werkd:has_preferred_name werkd:tibet_name .
-werkd:tibet_name werkd:has_name_value "Tibet"@de .
+werkd:tibet_name rdf:type werkd:name ;
+werkd:has_name_value "Tibet"@de .
 werkd:madagaskar werkd:has_preferred_name werkd:madagaskar_name .
-werkd:madagaskar_name werkd:has_name_value "Madagaskar"@de .
+werkd:madagaskar_name rdf:type werkd:name ;
+werkd:has_name_value "Madagaskar"@de .
 werkd:kenia werkd:has_preferred_name werkd:kenia_name .
-werkd:kenia_name werkd:has_name_value "Kenia"@de .
+werkd:kenia_name rdf:type werkd:name ;
+werkd:has_name_value "Kenia"@de .
 werkd:nordkorea werkd:has_preferred_name werkd:nordkorea_name .
-werkd:nordkorea_name werkd:has_name_value "Nordkorea"@de .
+werkd:nordkorea_name rdf:type werkd:name ;
+werkd:has_name_value "Nordkorea"@de .
 werkd:zaire werkd:has_preferred_name werkd:zaire_name .
-werkd:zaire_name werkd:has_name_value "Zaïre"@de .
+werkd:zaire_name rdf:type werkd:name ;
+werkd:has_name_value "Zaïre"@de .
 werkd:saint_kitts_und_nevis werkd:has_preferred_name werkd:saint_kitts_und_nevis_name .
-werkd:saint_kitts_und_nevis_name werkd:has_name_value "Saint Kitts und Nevis"@de .
+werkd:saint_kitts_und_nevis_name rdf:type werkd:name ;
+werkd:has_name_value "Saint Kitts und Nevis"@de .
 werkd:tadschikistan werkd:has_preferred_name werkd:tadschikistan_name .
-werkd:tadschikistan_name werkd:has_name_value "Tadschikistan"@de .
+werkd:tadschikistan_name rdf:type werkd:name ;
+werkd:has_name_value "Tadschikistan"@de .
 werkd:fidschi werkd:has_preferred_name werkd:fidschi_name .
-werkd:fidschi_name werkd:has_name_value "Fidschi"@de .
+werkd:fidschi_name rdf:type werkd:name ;
+werkd:has_name_value "Fidschi"@de .
 werkd:koenigreich_widin werkd:has_preferred_name werkd:koenigreich_widin_name .
-werkd:koenigreich_widin_name werkd:has_name_value "Königreich Widin"@de .
+werkd:koenigreich_widin_name rdf:type werkd:name ;
+werkd:has_name_value "Königreich Widin"@de .
 werkd:oman werkd:has_preferred_name werkd:oman_name .
-werkd:oman_name werkd:has_name_value "Oman"@de .
+werkd:oman_name rdf:type werkd:name ;
+werkd:has_name_value "Oman"@de .
 werkd:tschad werkd:has_preferred_name werkd:tschad_name .
-werkd:tschad_name werkd:has_name_value "Tschad"@de .
+werkd:tschad_name rdf:type werkd:name ;
+werkd:has_name_value "Tschad"@de .
+
