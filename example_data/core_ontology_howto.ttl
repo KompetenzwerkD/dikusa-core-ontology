@@ -135,10 +135,15 @@
 
 
 # vocabulary imported from werkd_country.ttl (imports will happen automatically at a later point)
+
+werkd:deutschland
+    rdf:type werkd:place ;
+    rdf:type werkd:nationality_value ;
+    werkd:has_id gnd:4011882-4 .
 gnd:4011882-4
+    rdf:type werkd:id ;
     werkd:has_id_value "4011882-4" ;
-    werkd:has_id_type werkd:gnd ;
-    rdf:type werkd:nationality_value .
+    werkd:has_id_type werkd:gnd .
 
 # imported from lido_genderActor.ttl
 lido:lido00774
