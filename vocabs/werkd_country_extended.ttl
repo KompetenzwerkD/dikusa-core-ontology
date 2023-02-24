@@ -3074,294 +3074,868 @@ rdf:type werkd:id ;
 werkd:has_id_value "4061074-3" ;
 werkd:has_id_type werkd:gnd .
 
-werkd:kamerun werkd:entity_startdate "1960" .
-werkd:moldawien werkd:entity_startdate "23.05.1991" .
-werkd:norddeutscher_bund werkd:entity_startdate "18.08.1866" .
-werkd:kasachstan werkd:entity_startdate "10.12.1991" .
-werkd:belarus werkd:entity_startdate "19.09.1991" .
-werkd:salomonen werkd:entity_startdate "1975" .
-werkd:eritrea werkd:entity_startdate "1941" .
-werkd:eritrea werkd:entity_startdate "24.05.1993" .
-werkd:malaysia werkd:entity_startdate "16.09.1963" .
-werkd:neuseeland werkd:entity_startdate "1907" .
-werkd:zentralafrikanische_republik werkd:entity_startdate "1958" .
-werkd:zentralafrikanische_republik werkd:entity_startdate "1979" .
-werkd:volksrepublik_donezk werkd:entity_startdate "07.04.2014" .
-werkd:tansania werkd:entity_startdate "26.04.1964" .
-werkd:kuba werkd:entity_startdate "1898" .
-werkd:dominikanische_republik werkd:entity_startdate "1844" .
-werkd:mocambique werkd:entity_startdate "25.06.1975" .
-werkd:griechenland werkd:entity_startdate "1821" .
-werkd:suedkorea werkd:entity_startdate "1945" .
-werkd:nordmazedonien werkd:entity_startdate "12.02.2019" .
-werkd:laos werkd:entity_startdate "22.07.1954" .
-werkd:hessen-darmstadt werkd:entity_startdate "1567" .
-werkd:indien werkd:entity_startdate "15.08.1947" .
-werkd:polen-litauen werkd:entity_startdate "1569" .
-werkd:italien werkd:entity_startdate "17.03.1861" .
-werkd:pakistan werkd:entity_startdate "14.08.1947" .
-werkd:vereinigte_arabische_emirate werkd:entity_startdate "1971" .
-werkd:jordanien werkd:entity_startdate "22.03.1946" .
-werkd:sowjetunion werkd:entity_startdate "1923" .
-werkd:senegal werkd:entity_startdate "1960" .
-werkd:antigua_und_barbuda werkd:entity_startdate "01.11.1981" .
-werkd:chile werkd:entity_startdate "1818" .
-werkd:republik_der_sieben_vereinigten_provinzen werkd:entity_startdate "1581" .
-werkd:burundi werkd:entity_startdate "1962" .
-werkd:gilbert_islands werkd:entity_startdate "1977" .
-werkd:seychellen werkd:entity_startdate "1976" .
-werkd:trinidad_und_tobago werkd:entity_startdate "1962" .
-werkd:tuerkei werkd:entity_startdate "1923" .
-werkd:indonesien werkd:entity_startdate "1949" .
-werkd:usbekistan werkd:entity_startdate "01.09.1991" .
-werkd:puerto_rico werkd:entity_startdate "1952" .
-werkd:batavische_republik werkd:entity_startdate "1795" .
-werkd:staat_mikronesien werkd:entity_startdate "10.05.1979" .
-werkd:barbados werkd:entity_startdate "1966" .
-werkd:sambia werkd:entity_startdate "24.10.1964" .
-werkd:syrien werkd:entity_startdate "28.09.1961" .
-werkd:syrien werkd:entity_startdate "1918" .
-werkd:westsamoa werkd:entity_startdate "17.12.1920" .
-werkd:taiwan werkd:entity_startdate "1949" .
-werkd:afghanistan werkd:entity_startdate "08.08.1919" .
-werkd:kanada werkd:entity_startdate "01.07.1867" .
-werkd:albanien werkd:entity_startdate "28.11.1912" .
-werkd:myanmar werkd:entity_startdate "18.06.1989" .
-werkd:deutschland werkd:entity_startdate "03.10.1990" .
-werkd:vatikanstadt werkd:entity_startdate "1929" .
-werkd:aethiopien werkd:entity_startdate "1941" .
-werkd:australien werkd:entity_startdate "01.01.1901" .
-werkd:simbabwe werkd:entity_startdate "18.04.1980" .
-werkd:liechtenstein werkd:entity_startdate "23.01.1719" .
-werkd:ghana werkd:entity_startdate "1957" .
-werkd:birma werkd:entity_startdate "1948" .
-werkd:deutschland_ddr werkd:entity_startdate "07.10.1949" .
-werkd:papua-neuguinea werkd:entity_startdate "16.09.1975" .
-werkd:sri_lanka werkd:entity_startdate "1972" .
-werkd:dahomey werkd:entity_startdate "1960" .
-werkd:gambia werkd:entity_startdate "18.02.1965" .
-werkd:kasachische_ssr werkd:entity_startdate "05.12.1936" .
-werkd:oesterreich-ungarn werkd:entity_startdate "1867" .
-werkd:rumaenien werkd:entity_startdate "23.12.1861" .
-werkd:brasilien werkd:entity_startdate "1822" .
-werkd:republik_von_korca werkd:entity_startdate "1916" .
-werkd:jemen werkd:entity_startdate "1990" .
-werkd:gabun werkd:entity_startdate "1960" .
-werkd:malawi werkd:entity_startdate "06.07.1964" .
-werkd:russische_sfsr werkd:entity_startdate "1917" .
-werkd:russische_sfsr werkd:entity_startdate "1922" .
-werkd:tanganyika werkd:entity_startdate "9.12.1961" .
-werkd:kraljevina_srba werkd:entity_startdate "01.12.1918" .
-werkd:dominica werkd:entity_startdate "03.11.1978" .
-werkd:zypern werkd:entity_startdate "16.08.1960" .
-werkd:republik_neugranada werkd:entity_startdate "1830" .
-werkd:nigeria werkd:entity_startdate "1960" .
-werkd:latvija werkd:entity_startdate "1918" .
-werkd:latvija werkd:entity_startdate "21.08.1991" .
-werkd:thailand werkd:entity_startdate "1939" .
-werkd:kolumbien werkd:entity_startdate "1819" .
-werkd:kolumbien werkd:entity_startdate "1861" .
-werkd:malta werkd:entity_startdate "21.09.1964" .
-werkd:kiribati werkd:entity_startdate "1979" .
-werkd:soudan werkd:entity_startdate "24.11.1958" .
-werkd:uganda werkd:entity_startdate "09.10.1962" .
-werkd:gallisches_sonderreich werkd:entity_startdate "260" .
-werkd:brunei werkd:entity_startdate "01.01.1984" .
-werkd:suedafrika werkd:entity_startdate "1910" .
-werkd:tunesien werkd:entity_startdate "20.03.1956" .
-werkd:zentralafrikanisches_kaiserreich werkd:entity_startdate "1976" .
-werkd:somalia werkd:entity_startdate "1960" .
-werkd:slowakei werkd:entity_startdate "1969" .
-werkd:slowakei werkd:entity_startdate "14.03.1939" .
-werkd:argentinien werkd:entity_startdate "1816" .
-werkd:aegypten werkd:entity_startdate "1971" .
-werkd:eswatini werkd:entity_startdate "2019" .
-werkd:turkmenistan werkd:entity_startdate "27.10.1991" .
-werkd:deutschland_bundesrepublik werkd:entity_startdate "23.05.1949" .
-werkd:samoa werkd:entity_startdate "1997" .
-werkd:nauru werkd:entity_startdate "1968" .
-werkd:suedvietnam werkd:entity_startdate "24.06.1954" .
-werkd:philippinen werkd:entity_startdate "1946" .
-werkd:saudi-arabien werkd:entity_startdate "1932" .
-werkd:mauretanien werkd:entity_startdate "1958" .
-werkd:jugoslawien werkd:entity_startdate "1929" .
-werkd:georgien werkd:entity_startdate "14.11.1990" .
-werkd:libanon werkd:entity_startdate "1920" .
-werkd:libyen werkd:entity_startdate "1951" .
-werkd:bangladesch werkd:entity_startdate "26.03.1971" .
-werkd:lesotho werkd:entity_startdate "1966" .
-werkd:grenada werkd:entity_startdate "1974" .
-werkd:kambodscha werkd:entity_startdate "1954" .
-werkd:russland werkd:entity_startdate "25.12.1991" .
-werkd:ruanda werkd:entity_startdate "1962" .
-werkd:armenien werkd:entity_startdate "23.08.1991" .
-werkd:surinam werkd:entity_startdate "29.12.1954" .
-werkd:ceska_sr werkd:entity_startdate "1969" .
-werkd:ukrainska_narodna_respublika werkd:entity_startdate "1917" .
-werkd:guatemala werkd:entity_startdate "1823" .
-werkd:litauen werkd:entity_startdate "06.09.1991" .
-werkd:litauen werkd:entity_startdate "1918" .
-werkd:mauritius werkd:entity_startdate "12.03.1968" .
-werkd:komoren werkd:entity_startdate "1975" .
-werkd:burkina_faso werkd:entity_startdate "08.08.1984" .
-werkd:katar werkd:entity_startdate "01.09.1971" .
-werkd:aserbaidschan werkd:entity_startdate "18.10.1991" .
-werkd:aserbaidschan werkd:entity_startdate "1918" .
-werkd:roemisches_reich werkd:entity_startdate "v753" .
-werkd:venezuela_confederacion werkd:entity_startdate "05.07.1811" .
-werkd:italienisch-somaliland werkd:entity_startdate "1950" .
-werkd:holland_koenigreich werkd:entity_startdate "1806" .
-werkd:osttimor werkd:entity_startdate "20.05.2002" .
-werkd:helvetische_republik werkd:entity_startdate "12.04.1798" .
-werkd:kirgisien werkd:entity_startdate "1991" .
-werkd:deutsches_reich werkd:entity_startdate "1871" .
-werkd:polen werkd:entity_startdate "1918" .
-werkd:dschibuti werkd:entity_startdate "27.06.1977" .
-werkd:namibia werkd:entity_startdate "1966" .
-werkd:ungarn werkd:entity_startdate "16.11.1918" .
-werkd:guyana werkd:entity_startdate "1966" .
-werkd:nigeria_colony_and_protectorate werkd:entity_startdate "1914" .
-werkd:bolivien werkd:entity_startdate "06.08.1825" .
-werkd:saint_vincent_state werkd:entity_startdate "27.10.1979" .
-werkd:zentralafrikanische_foederation werkd:entity_startdate "1953" .
-werkd:vietnam werkd:entity_startdate "02.07.1976" .
-werkd:niger werkd:entity_startdate "18.12.1958" .
-werkd:oesterreich werkd:entity_startdate "12.11.1918" .
-werkd:niederlande werkd:entity_startdate "1815" .
-werkd:serbien_und_montenegro werkd:entity_startdate "04.02.2003" .
-werkd:liberia werkd:entity_startdate "1847" .
-werkd:bulgarien werkd:entity_startdate "1878" .
-werkd:jemen_demokratische_volksrepublik werkd:entity_startdate "1967" .
-werkd:botswana werkd:entity_startdate "1966" .
-werkd:tschechien werkd:entity_startdate "01.01.1993" .
-werkd:israel werkd:entity_startdate "14.05.1948" .
-werkd:mali-foederation werkd:entity_startdate "04.04.1959" .
-werkd:benin werkd:entity_startdate "30.11.1975" .
-werkd:grossbritannien werkd:entity_startdate "1707" .
-werkd:vanuatu werkd:entity_startdate "1980" .
-werkd:makedonien werkd:entity_startdate "1944" .
-werkd:estland werkd:entity_startdate "1918" .
-werkd:estland werkd:entity_startdate "21.08.1991" .
-werkd:mali werkd:entity_startdate "22.09.1960" .
-werkd:koenigreich_dahomey werkd:entity_startdate "1625" .
-werkd:bahamas werkd:entity_startdate "10.07.1973" .
-werkd:saint_kitts_and_nevis werkd:entity_startdate "1987,Mai" .
-werkd:belize werkd:entity_startdate "21.09.1981" .
-werkd:demokratische_republik_kongo werkd:entity_startdate "1997" .
-werkd:demokratische_republik_kongo werkd:entity_startdate "1960" .
-werkd:guinea werkd:entity_startdate "02.10.1958" .
-werkd:sudan werkd:entity_startdate "1956" .
-werkd:britisch-somaliland werkd:entity_startdate "1884" .
-werkd:kap_verde werkd:entity_startdate "1975" .
-werkd:bahrain werkd:entity_startdate "14.08.1971" .
-werkd:tschechoslowakei werkd:entity_startdate "XX.05.1945" .
-werkd:tschechoslowakei werkd:entity_startdate "28.10.1918" .
-werkd:obervolta werkd:entity_startdate "1960" .
-werkd:staat_suedsudan werkd:entity_startdate "09.07.2011" .
-werkd:qibris werkd:entity_startdate "1570" .
-werkd:ceylon werkd:entity_startdate "1948" .
-werkd:angola werkd:entity_startdate "11.11.1975" .
-werkd:marokko werkd:entity_startdate "02.03.1956" .
-werkd:ukraine werkd:entity_startdate "1991" .
-werkd:guinea-bissau werkd:entity_startdate "24.09.1973" .
-werkd:aequatorialguinea werkd:entity_startdate "1964" .
-werkd:preussen_ordensstaat werkd:entity_startdate "1230" .
-werkd:foederative_republik_jugoslawien werkd:entity_startdate "1992" .
-werkd:madagaskar werkd:entity_startdate "1958" .
-werkd:kenia werkd:entity_startdate "12.12.1963" .
-werkd:nordkorea werkd:entity_startdate "1945" .
-werkd:zaire werkd:entity_startdate "1971" .
-werkd:tadschikistan werkd:entity_startdate "31.08.1991" .
-werkd:fidschi werkd:entity_startdate "10.10.1970" .
-werkd:koenigreich_widin werkd:entity_startdate "1337" .
-werkd:tschad werkd:entity_startdate "1960" .
-werkd:norddeutscher_bund werkd:entity_enddate "1871" .
-werkd:eritrea werkd:entity_enddate "1962" .
-werkd:zentralafrikanische_republik werkd:entity_enddate "1976" .
-werkd:neue_hebriden werkd:entity_enddate "1980" .
-werkd:lunda_koenigreich werkd:entity_enddate "1898" .
-werkd:hessen-darmstadt werkd:entity_enddate "1918" .
-werkd:polen-litauen werkd:entity_enddate "1795" .
-werkd:sowjetunion werkd:entity_enddate "25.12.1991" .
-werkd:comores werkd:entity_enddate "1975" .
-werkd:republik_der_sieben_vereinigten_provinzen werkd:entity_enddate "1798" .
-werkd:gilbert_islands werkd:entity_enddate "1979" .
-werkd:tabasaran werkd:entity_enddate "1813" .
-werkd:batavische_republik werkd:entity_enddate "1805" .
-werkd:syrien werkd:entity_enddate "01.02.1958" .
-werkd:westsamoa werkd:entity_enddate "04.07.1997" .
-werkd:thueringer_reich werkd:entity_enddate "531" .
-werkd:osmanisches_reich werkd:entity_enddate "1922" .
-werkd:aethiopien werkd:entity_enddate "1936" .
-werkd:birma werkd:entity_enddate "17.06.1989" .
-werkd:deutschland_ddr werkd:entity_enddate "02.10.1990" .
-werkd:al-imarat_al-mutasaliha werkd:entity_enddate "02.12.1971" .
-werkd:dahomey werkd:entity_enddate "1975" .
-werkd:saint_christopher_and_nevis werkd:entity_enddate "1987" .
-werkd:kasachische_ssr werkd:entity_enddate "1991" .
-werkd:oesterreich-ungarn werkd:entity_enddate "1918" .
-werkd:republik_von_korca werkd:entity_enddate "1920" .
-werkd:russische_sfsr werkd:entity_enddate "1991" .
-werkd:russische_sfsr werkd:entity_enddate "1922" .
-werkd:tanganyika werkd:entity_enddate "Apr.1964" .
-werkd:kirchenstaat werkd:entity_enddate "1870" .
-werkd:kraljevina_srba werkd:entity_enddate "03.10.1929" .
-werkd:republik_neugranada werkd:entity_enddate "1858" .
-werkd:latvija werkd:entity_enddate "1940" .
-werkd:kolumbien werkd:entity_enddate "1832" .
-werkd:westsahara werkd:entity_enddate "1975" .
-werkd:soudan werkd:entity_enddate "03.04.1959" .
-werkd:gallisches_sonderreich werkd:entity_enddate "274" .
-werkd:boehmen werkd:entity_enddate "27.10.1918" .
-werkd:zentralafrikanisches_kaiserreich werkd:entity_enddate "1979" .
-werkd:slowakei werkd:entity_enddate "1945" .
-werkd:aegypten werkd:entity_enddate "1958" .
-werkd:deutschland_bundesrepublik werkd:entity_enddate "02.10.1990" .
-werkd:samoa werkd:entity_enddate "1899" .
-werkd:suedvietnam werkd:entity_enddate "02.07.1976" .
-werkd:jugoslawien werkd:entity_enddate "1992" .
-werkd:georgien werkd:entity_enddate "24.02.1921" .
-werkd:siam werkd:entity_enddate "1939" .
-werkd:russland werkd:entity_enddate "1917" .
-werkd:armenien werkd:entity_enddate "1920" .
-werkd:british_solomon_islands werkd:entity_enddate "1975" .
-werkd:burma werkd:entity_enddate "1885" .
-werkd:ceska_sr werkd:entity_enddate "05.03.1990" .
-werkd:ukrainska_narodna_respublika werkd:entity_enddate "1920" .
-werkd:litauen werkd:entity_enddate "02.10.1940" .
-werkd:aserbaidschan werkd:entity_enddate "1920" .
-werkd:roemisches_reich werkd:entity_enddate "500" .
-werkd:venezuela_confederacion werkd:entity_enddate "25.07.1812" .
-werkd:italienisch-somaliland werkd:entity_enddate "1960" .
-werkd:holland_koenigreich werkd:entity_enddate "1810" .
-werkd:helvetische_republik werkd:entity_enddate "10.03.1803" .
-werkd:deutsches_reich werkd:entity_enddate "1945" .
-werkd:polen werkd:entity_enddate "1569" .
-werkd:nigeria_colony_and_protectorate werkd:entity_enddate "1960" .
-werkd:zentralafrikanische_foederation werkd:entity_enddate "31.12.1963" .
-werkd:vietnam werkd:entity_enddate "1954" .
-werkd:heiliges_roemisches_reich werkd:entity_enddate "1806" .
-werkd:oesterreich werkd:entity_enddate "1867" .
-werkd:serbien_und_montenegro werkd:entity_enddate "03.06.2006" .
-werkd:jemen_demokratische_volksrepublik werkd:entity_enddate "21.05.1990" .
-werkd:mali-foederation werkd:entity_enddate "21.09.1960" .
-werkd:makedonien werkd:entity_enddate "11.02.2019" .
-werkd:estland werkd:entity_enddate "1940" .
-werkd:koenigreich_dahomey werkd:entity_enddate "1892" .
-werkd:demokratische_republik_kongo werkd:entity_enddate "1971" .
-werkd:sudan werkd:entity_enddate "1899" .
-werkd:britisch-somaliland werkd:entity_enddate "1960" .
-werkd:tschechoslowakei werkd:entity_enddate "31.12.1992" .
-werkd:tschechoslowakei werkd:entity_enddate "14.03.1939" .
-werkd:obervolta werkd:entity_enddate "08.08.1984" .
-werkd:qibris werkd:entity_enddate "1878" .
-werkd:england werkd:entity_enddate "1707" .
-werkd:ceylon werkd:entity_enddate "1972" .
-werkd:preussen_ordensstaat werkd:entity_enddate "1561" .
-werkd:foederative_republik_jugoslawien werkd:entity_enddate "2003" .
-werkd:madagaskar werkd:entity_enddate "1896" .
-werkd:zaire werkd:entity_enddate "17.05.1997" .
-werkd:koenigreich_widin werkd:entity_enddate "1396" .
+werkd:kamerun werkd:has_begin_of_existence werkd:kamerun_boe .
+werkd:kamerun_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1960"^^xsd:date .
+werkd:moldawien werkd:has_begin_of_existence werkd:moldawien_boe .
+werkd:moldawien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1991-05-23"^^xsd:date .
+werkd:norddeutscher_bund werkd:has_begin_of_existence werkd:norddeutscher_bund_boe .
+werkd:norddeutscher_bund_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1866-08-18"^^xsd:date .
+werkd:kasachstan werkd:has_begin_of_existence werkd:kasachstan_boe .
+werkd:kasachstan_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1991-12-10"^^xsd:date .
+werkd:belarus werkd:has_begin_of_existence werkd:belarus_boe .
+werkd:belarus_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1991-09-19"^^xsd:date .
+werkd:salomonen werkd:has_begin_of_existence werkd:salomonen_boe .
+werkd:salomonen_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1975"^^xsd:date .
+werkd:eritrea werkd:has_begin_of_existence werkd:eritrea_boe .
+werkd:eritrea_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1941"^^xsd:date .
+werkd:eritrea werkd:has_begin_of_existence werkd:eritrea_boe .
+werkd:eritrea_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1993-05-24"^^xsd:date .
+werkd:malaysia werkd:has_begin_of_existence werkd:malaysia_boe .
+werkd:malaysia_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1963-09-16"^^xsd:date .
+werkd:neuseeland werkd:has_begin_of_existence werkd:neuseeland_boe .
+werkd:neuseeland_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1907"^^xsd:date .
+werkd:zentralafrikanische_republik werkd:has_begin_of_existence werkd:zentralafrikanische_republik_boe .
+werkd:zentralafrikanische_republik_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1958"^^xsd:date .
+werkd:zentralafrikanische_republik werkd:has_begin_of_existence werkd:zentralafrikanische_republik_boe .
+werkd:zentralafrikanische_republik_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1979"^^xsd:date .
+werkd:volksrepublik_donezk werkd:has_begin_of_existence werkd:volksrepublik_donezk_boe .
+werkd:volksrepublik_donezk_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "2014-04-07"^^xsd:date .
+werkd:tansania werkd:has_begin_of_existence werkd:tansania_boe .
+werkd:tansania_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1964-04-26"^^xsd:date .
+werkd:kuba werkd:has_begin_of_existence werkd:kuba_boe .
+werkd:kuba_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1898"^^xsd:date .
+werkd:dominikanische_republik werkd:has_begin_of_existence werkd:dominikanische_republik_boe .
+werkd:dominikanische_republik_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1844"^^xsd:date .
+werkd:mocambique werkd:has_begin_of_existence werkd:mocambique_boe .
+werkd:mocambique_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1975-06-25"^^xsd:date .
+werkd:griechenland werkd:has_begin_of_existence werkd:griechenland_boe .
+werkd:griechenland_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1821"^^xsd:date .
+werkd:suedkorea werkd:has_begin_of_existence werkd:suedkorea_boe .
+werkd:suedkorea_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1945"^^xsd:date .
+werkd:nordmazedonien werkd:has_begin_of_existence werkd:nordmazedonien_boe .
+werkd:nordmazedonien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "2019-02-12"^^xsd:date .
+werkd:laos werkd:has_begin_of_existence werkd:laos_boe .
+werkd:laos_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1954-07-22"^^xsd:date .
+werkd:hessen-darmstadt werkd:has_begin_of_existence werkd:hessen-darmstadt_boe .
+werkd:hessen-darmstadt_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1567"^^xsd:date .
+werkd:indien werkd:has_begin_of_existence werkd:indien_boe .
+werkd:indien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1947-08-15"^^xsd:date .
+werkd:polen-litauen werkd:has_begin_of_existence werkd:polen-litauen_boe .
+werkd:polen-litauen_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1569"^^xsd:date .
+werkd:italien werkd:has_begin_of_existence werkd:italien_boe .
+werkd:italien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1861-03-17"^^xsd:date .
+werkd:pakistan werkd:has_begin_of_existence werkd:pakistan_boe .
+werkd:pakistan_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1947-08-14"^^xsd:date .
+werkd:vereinigte_arabische_emirate werkd:has_begin_of_existence werkd:vereinigte_arabische_emirate_boe .
+werkd:vereinigte_arabische_emirate_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1971"^^xsd:date .
+werkd:jordanien werkd:has_begin_of_existence werkd:jordanien_boe .
+werkd:jordanien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1946-03-22"^^xsd:date .
+werkd:sowjetunion werkd:has_begin_of_existence werkd:sowjetunion_boe .
+werkd:sowjetunion_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1923"^^xsd:date .
+werkd:senegal werkd:has_begin_of_existence werkd:senegal_boe .
+werkd:senegal_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1960"^^xsd:date .
+werkd:antigua_und_barbuda werkd:has_begin_of_existence werkd:antigua_und_barbuda_boe .
+werkd:antigua_und_barbuda_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1981-11-01"^^xsd:date .
+werkd:chile werkd:has_begin_of_existence werkd:chile_boe .
+werkd:chile_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1818"^^xsd:date .
+werkd:republik_der_sieben_vereinigten_provinzen werkd:has_begin_of_existence werkd:republik_der_sieben_vereinigten_provinzen_boe .
+werkd:republik_der_sieben_vereinigten_provinzen_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1581"^^xsd:date .
+werkd:burundi werkd:has_begin_of_existence werkd:burundi_boe .
+werkd:burundi_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1962"^^xsd:date .
+werkd:gilbert_islands werkd:has_begin_of_existence werkd:gilbert_islands_boe .
+werkd:gilbert_islands_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1977"^^xsd:date .
+werkd:seychellen werkd:has_begin_of_existence werkd:seychellen_boe .
+werkd:seychellen_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1976"^^xsd:date .
+werkd:trinidad_und_tobago werkd:has_begin_of_existence werkd:trinidad_und_tobago_boe .
+werkd:trinidad_und_tobago_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1962"^^xsd:date .
+werkd:tuerkei werkd:has_begin_of_existence werkd:tuerkei_boe .
+werkd:tuerkei_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1923"^^xsd:date .
+werkd:indonesien werkd:has_begin_of_existence werkd:indonesien_boe .
+werkd:indonesien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1949"^^xsd:date .
+werkd:usbekistan werkd:has_begin_of_existence werkd:usbekistan_boe .
+werkd:usbekistan_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1991-09-01"^^xsd:date .
+werkd:puerto_rico werkd:has_begin_of_existence werkd:puerto_rico_boe .
+werkd:puerto_rico_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1952"^^xsd:date .
+werkd:batavische_republik werkd:has_begin_of_existence werkd:batavische_republik_boe .
+werkd:batavische_republik_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1795"^^xsd:date .
+werkd:staat_mikronesien werkd:has_begin_of_existence werkd:staat_mikronesien_boe .
+werkd:staat_mikronesien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1979-05-10"^^xsd:date .
+werkd:barbados werkd:has_begin_of_existence werkd:barbados_boe .
+werkd:barbados_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1966"^^xsd:date .
+werkd:sambia werkd:has_begin_of_existence werkd:sambia_boe .
+werkd:sambia_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1964-10-24"^^xsd:date .
+werkd:syrien werkd:has_begin_of_existence werkd:syrien_boe .
+werkd:syrien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1961-09-28"^^xsd:date .
+werkd:syrien werkd:has_begin_of_existence werkd:syrien_boe .
+werkd:syrien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1918"^^xsd:date .
+werkd:westsamoa werkd:has_begin_of_existence werkd:westsamoa_boe .
+werkd:westsamoa_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1920-12-17"^^xsd:date .
+werkd:taiwan werkd:has_begin_of_existence werkd:taiwan_boe .
+werkd:taiwan_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1949"^^xsd:date .
+werkd:afghanistan werkd:has_begin_of_existence werkd:afghanistan_boe .
+werkd:afghanistan_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1919-08-08"^^xsd:date .
+werkd:kanada werkd:has_begin_of_existence werkd:kanada_boe .
+werkd:kanada_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1867-07-01"^^xsd:date .
+werkd:albanien werkd:has_begin_of_existence werkd:albanien_boe .
+werkd:albanien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1912-11-28"^^xsd:date .
+werkd:myanmar werkd:has_begin_of_existence werkd:myanmar_boe .
+werkd:myanmar_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1989-06-18"^^xsd:date .
+werkd:deutschland werkd:has_begin_of_existence werkd:deutschland_boe .
+werkd:deutschland_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1990-10-03"^^xsd:date .
+werkd:vatikanstadt werkd:has_begin_of_existence werkd:vatikanstadt_boe .
+werkd:vatikanstadt_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1929"^^xsd:date .
+werkd:aethiopien werkd:has_begin_of_existence werkd:aethiopien_boe .
+werkd:aethiopien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1941"^^xsd:date .
+werkd:australien werkd:has_begin_of_existence werkd:australien_boe .
+werkd:australien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1901-01-01"^^xsd:date .
+werkd:simbabwe werkd:has_begin_of_existence werkd:simbabwe_boe .
+werkd:simbabwe_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1980-04-18"^^xsd:date .
+werkd:liechtenstein werkd:has_begin_of_existence werkd:liechtenstein_boe .
+werkd:liechtenstein_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1719-01-23"^^xsd:date .
+werkd:ghana werkd:has_begin_of_existence werkd:ghana_boe .
+werkd:ghana_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1957"^^xsd:date .
+werkd:birma werkd:has_begin_of_existence werkd:birma_boe .
+werkd:birma_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1948"^^xsd:date .
+werkd:deutschland_ddr werkd:has_begin_of_existence werkd:deutschland_ddr_boe .
+werkd:deutschland_ddr_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1949-10-07"^^xsd:date .
+werkd:papua-neuguinea werkd:has_begin_of_existence werkd:papua-neuguinea_boe .
+werkd:papua-neuguinea_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1975-09-16"^^xsd:date .
+werkd:sri_lanka werkd:has_begin_of_existence werkd:sri_lanka_boe .
+werkd:sri_lanka_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1972"^^xsd:date .
+werkd:dahomey werkd:has_begin_of_existence werkd:dahomey_boe .
+werkd:dahomey_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1960"^^xsd:date .
+werkd:gambia werkd:has_begin_of_existence werkd:gambia_boe .
+werkd:gambia_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1965-02-18"^^xsd:date .
+werkd:kasachische_ssr werkd:has_begin_of_existence werkd:kasachische_ssr_boe .
+werkd:kasachische_ssr_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1936-12-05"^^xsd:date .
+werkd:oesterreich-ungarn werkd:has_begin_of_existence werkd:oesterreich-ungarn_boe .
+werkd:oesterreich-ungarn_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1867"^^xsd:date .
+werkd:rumaenien werkd:has_begin_of_existence werkd:rumaenien_boe .
+werkd:rumaenien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1861-12-23"^^xsd:date .
+werkd:brasilien werkd:has_begin_of_existence werkd:brasilien_boe .
+werkd:brasilien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1822"^^xsd:date .
+werkd:republik_von_korca werkd:has_begin_of_existence werkd:republik_von_korca_boe .
+werkd:republik_von_korca_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1916"^^xsd:date .
+werkd:jemen werkd:has_begin_of_existence werkd:jemen_boe .
+werkd:jemen_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1990"^^xsd:date .
+werkd:gabun werkd:has_begin_of_existence werkd:gabun_boe .
+werkd:gabun_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1960"^^xsd:date .
+werkd:malawi werkd:has_begin_of_existence werkd:malawi_boe .
+werkd:malawi_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1964-07-06"^^xsd:date .
+werkd:russische_sfsr werkd:has_begin_of_existence werkd:russische_sfsr_boe .
+werkd:russische_sfsr_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1917"^^xsd:date .
+werkd:russische_sfsr werkd:has_begin_of_existence werkd:russische_sfsr_boe .
+werkd:russische_sfsr_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1922"^^xsd:date .
+werkd:tanganyika werkd:has_begin_of_existence werkd:tanganyika_boe .
+werkd:tanganyika_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1961-12-09"^^xsd:date .
+werkd:kraljevina_srba werkd:has_begin_of_existence werkd:kraljevina_srba_boe .
+werkd:kraljevina_srba_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1918-12-01"^^xsd:date .
+werkd:dominica werkd:has_begin_of_existence werkd:dominica_boe .
+werkd:dominica_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1978-11-03"^^xsd:date .
+werkd:zypern werkd:has_begin_of_existence werkd:zypern_boe .
+werkd:zypern_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1960-08-16"^^xsd:date .
+werkd:republik_neugranada werkd:has_begin_of_existence werkd:republik_neugranada_boe .
+werkd:republik_neugranada_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1830"^^xsd:date .
+werkd:nigeria werkd:has_begin_of_existence werkd:nigeria_boe .
+werkd:nigeria_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1960"^^xsd:date .
+werkd:latvija werkd:has_begin_of_existence werkd:latvija_boe .
+werkd:latvija_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1918"^^xsd:date .
+werkd:latvija werkd:has_begin_of_existence werkd:latvija_boe .
+werkd:latvija_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1991-08-21"^^xsd:date .
+werkd:thailand werkd:has_begin_of_existence werkd:thailand_boe .
+werkd:thailand_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1939"^^xsd:date .
+werkd:kolumbien werkd:has_begin_of_existence werkd:kolumbien_boe .
+werkd:kolumbien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1819"^^xsd:date .
+werkd:kolumbien werkd:has_begin_of_existence werkd:kolumbien_boe .
+werkd:kolumbien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1861"^^xsd:date .
+werkd:malta werkd:has_begin_of_existence werkd:malta_boe .
+werkd:malta_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1964-09-21"^^xsd:date .
+werkd:kiribati werkd:has_begin_of_existence werkd:kiribati_boe .
+werkd:kiribati_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1979"^^xsd:date .
+werkd:soudan werkd:has_begin_of_existence werkd:soudan_boe .
+werkd:soudan_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1958-11-24"^^xsd:date .
+werkd:uganda werkd:has_begin_of_existence werkd:uganda_boe .
+werkd:uganda_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1962-10-09"^^xsd:date .
+werkd:gallisches_sonderreich werkd:has_begin_of_existence werkd:gallisches_sonderreich_boe .
+werkd:gallisches_sonderreich_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "260"^^xsd:date .
+werkd:brunei werkd:has_begin_of_existence werkd:brunei_boe .
+werkd:brunei_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1984-01-01"^^xsd:date .
+werkd:suedafrika werkd:has_begin_of_existence werkd:suedafrika_boe .
+werkd:suedafrika_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1910"^^xsd:date .
+werkd:tunesien werkd:has_begin_of_existence werkd:tunesien_boe .
+werkd:tunesien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1956-03-20"^^xsd:date .
+werkd:zentralafrikanisches_kaiserreich werkd:has_begin_of_existence werkd:zentralafrikanisches_kaiserreich_boe .
+werkd:zentralafrikanisches_kaiserreich_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1976"^^xsd:date .
+werkd:somalia werkd:has_begin_of_existence werkd:somalia_boe .
+werkd:somalia_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1960"^^xsd:date .
+werkd:slowakei werkd:has_begin_of_existence werkd:slowakei_boe .
+werkd:slowakei_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1969"^^xsd:date .
+werkd:slowakei werkd:has_begin_of_existence werkd:slowakei_boe .
+werkd:slowakei_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1939-03-14"^^xsd:date .
+werkd:argentinien werkd:has_begin_of_existence werkd:argentinien_boe .
+werkd:argentinien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1816"^^xsd:date .
+werkd:aegypten werkd:has_begin_of_existence werkd:aegypten_boe .
+werkd:aegypten_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1971"^^xsd:date .
+werkd:eswatini werkd:has_begin_of_existence werkd:eswatini_boe .
+werkd:eswatini_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "2019"^^xsd:date .
+werkd:turkmenistan werkd:has_begin_of_existence werkd:turkmenistan_boe .
+werkd:turkmenistan_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1991-10-27"^^xsd:date .
+werkd:deutschland_bundesrepublik werkd:has_begin_of_existence werkd:deutschland_bundesrepublik_boe .
+werkd:deutschland_bundesrepublik_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1949-05-23"^^xsd:date .
+werkd:samoa werkd:has_begin_of_existence werkd:samoa_boe .
+werkd:samoa_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1997"^^xsd:date .
+werkd:nauru werkd:has_begin_of_existence werkd:nauru_boe .
+werkd:nauru_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1968"^^xsd:date .
+werkd:suedvietnam werkd:has_begin_of_existence werkd:suedvietnam_boe .
+werkd:suedvietnam_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1954-06-24"^^xsd:date .
+werkd:philippinen werkd:has_begin_of_existence werkd:philippinen_boe .
+werkd:philippinen_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1946"^^xsd:date .
+werkd:saudi-arabien werkd:has_begin_of_existence werkd:saudi-arabien_boe .
+werkd:saudi-arabien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1932"^^xsd:date .
+werkd:mauretanien werkd:has_begin_of_existence werkd:mauretanien_boe .
+werkd:mauretanien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1958"^^xsd:date .
+werkd:jugoslawien werkd:has_begin_of_existence werkd:jugoslawien_boe .
+werkd:jugoslawien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1929"^^xsd:date .
+werkd:georgien werkd:has_begin_of_existence werkd:georgien_boe .
+werkd:georgien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1990-11-14"^^xsd:date .
+werkd:libanon werkd:has_begin_of_existence werkd:libanon_boe .
+werkd:libanon_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1920"^^xsd:date .
+werkd:libyen werkd:has_begin_of_existence werkd:libyen_boe .
+werkd:libyen_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1951"^^xsd:date .
+werkd:bangladesch werkd:has_begin_of_existence werkd:bangladesch_boe .
+werkd:bangladesch_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1971-03-26"^^xsd:date .
+werkd:lesotho werkd:has_begin_of_existence werkd:lesotho_boe .
+werkd:lesotho_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1966"^^xsd:date .
+werkd:grenada werkd:has_begin_of_existence werkd:grenada_boe .
+werkd:grenada_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1974"^^xsd:date .
+werkd:kambodscha werkd:has_begin_of_existence werkd:kambodscha_boe .
+werkd:kambodscha_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1954"^^xsd:date .
+werkd:russland werkd:has_begin_of_existence werkd:russland_boe .
+werkd:russland_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1991-12-25"^^xsd:date .
+werkd:ruanda werkd:has_begin_of_existence werkd:ruanda_boe .
+werkd:ruanda_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1962"^^xsd:date .
+werkd:armenien werkd:has_begin_of_existence werkd:armenien_boe .
+werkd:armenien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1991-08-23"^^xsd:date .
+werkd:surinam werkd:has_begin_of_existence werkd:surinam_boe .
+werkd:surinam_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1954-12-29"^^xsd:date .
+werkd:ceska_sr werkd:has_begin_of_existence werkd:ceska_sr_boe .
+werkd:ceska_sr_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1969"^^xsd:date .
+werkd:ukrainska_narodna_respublika werkd:has_begin_of_existence werkd:ukrainska_narodna_respublika_boe .
+werkd:ukrainska_narodna_respublika_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1917"^^xsd:date .
+werkd:guatemala werkd:has_begin_of_existence werkd:guatemala_boe .
+werkd:guatemala_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1823"^^xsd:date .
+werkd:litauen werkd:has_begin_of_existence werkd:litauen_boe .
+werkd:litauen_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1991-09-06"^^xsd:date .
+werkd:litauen werkd:has_begin_of_existence werkd:litauen_boe .
+werkd:litauen_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1918"^^xsd:date .
+werkd:mauritius werkd:has_begin_of_existence werkd:mauritius_boe .
+werkd:mauritius_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1968-03-12"^^xsd:date .
+werkd:komoren werkd:has_begin_of_existence werkd:komoren_boe .
+werkd:komoren_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1975"^^xsd:date .
+werkd:burkina_faso werkd:has_begin_of_existence werkd:burkina_faso_boe .
+werkd:burkina_faso_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1984-08-08"^^xsd:date .
+werkd:katar werkd:has_begin_of_existence werkd:katar_boe .
+werkd:katar_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1971-09-01"^^xsd:date .
+werkd:aserbaidschan werkd:has_begin_of_existence werkd:aserbaidschan_boe .
+werkd:aserbaidschan_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1991-10-18"^^xsd:date .
+werkd:aserbaidschan werkd:has_begin_of_existence werkd:aserbaidschan_boe .
+werkd:aserbaidschan_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1918"^^xsd:date .
+werkd:roemisches_reich werkd:has_begin_of_existence werkd:roemisches_reich_boe .
+werkd:roemisches_reich_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "-753"^^xsd:date .
+werkd:venezuela_confederacion werkd:has_begin_of_existence werkd:venezuela_confederacion_boe .
+werkd:venezuela_confederacion_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1811-07-05"^^xsd:date .
+werkd:italienisch-somaliland werkd:has_begin_of_existence werkd:italienisch-somaliland_boe .
+werkd:italienisch-somaliland_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1950"^^xsd:date .
+werkd:holland_koenigreich werkd:has_begin_of_existence werkd:holland_koenigreich_boe .
+werkd:holland_koenigreich_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1806"^^xsd:date .
+werkd:osttimor werkd:has_begin_of_existence werkd:osttimor_boe .
+werkd:osttimor_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "2002-05-20"^^xsd:date .
+werkd:helvetische_republik werkd:has_begin_of_existence werkd:helvetische_republik_boe .
+werkd:helvetische_republik_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1798-04-12"^^xsd:date .
+werkd:kirgisien werkd:has_begin_of_existence werkd:kirgisien_boe .
+werkd:kirgisien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1991"^^xsd:date .
+werkd:deutsches_reich werkd:has_begin_of_existence werkd:deutsches_reich_boe .
+werkd:deutsches_reich_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1871"^^xsd:date .
+werkd:polen werkd:has_begin_of_existence werkd:polen_boe .
+werkd:polen_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1918"^^xsd:date .
+werkd:dschibuti werkd:has_begin_of_existence werkd:dschibuti_boe .
+werkd:dschibuti_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1977-06-27"^^xsd:date .
+werkd:namibia werkd:has_begin_of_existence werkd:namibia_boe .
+werkd:namibia_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1966"^^xsd:date .
+werkd:ungarn werkd:has_begin_of_existence werkd:ungarn_boe .
+werkd:ungarn_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1918-11-16"^^xsd:date .
+werkd:guyana werkd:has_begin_of_existence werkd:guyana_boe .
+werkd:guyana_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1966"^^xsd:date .
+werkd:nigeria_colony_and_protectorate werkd:has_begin_of_existence werkd:nigeria_colony_and_protectorate_boe .
+werkd:nigeria_colony_and_protectorate_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1914"^^xsd:date .
+werkd:bolivien werkd:has_begin_of_existence werkd:bolivien_boe .
+werkd:bolivien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1825-08-06"^^xsd:date .
+werkd:saint_vincent_state werkd:has_begin_of_existence werkd:saint_vincent_state_boe .
+werkd:saint_vincent_state_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1979-10-27"^^xsd:date .
+werkd:zentralafrikanische_foederation werkd:has_begin_of_existence werkd:zentralafrikanische_foederation_boe .
+werkd:zentralafrikanische_foederation_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1953"^^xsd:date .
+werkd:vietnam werkd:has_begin_of_existence werkd:vietnam_boe .
+werkd:vietnam_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1976-07-02"^^xsd:date .
+werkd:niger werkd:has_begin_of_existence werkd:niger_boe .
+werkd:niger_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1958-12-18"^^xsd:date .
+werkd:oesterreich werkd:has_begin_of_existence werkd:oesterreich_boe .
+werkd:oesterreich_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1918-11-12"^^xsd:date .
+werkd:niederlande werkd:has_begin_of_existence werkd:niederlande_boe .
+werkd:niederlande_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1815"^^xsd:date .
+werkd:serbien_und_montenegro werkd:has_begin_of_existence werkd:serbien_und_montenegro_boe .
+werkd:serbien_und_montenegro_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "2003-02-04"^^xsd:date .
+werkd:liberia werkd:has_begin_of_existence werkd:liberia_boe .
+werkd:liberia_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1847"^^xsd:date .
+werkd:bulgarien werkd:has_begin_of_existence werkd:bulgarien_boe .
+werkd:bulgarien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1878"^^xsd:date .
+werkd:jemen_demokratische_volksrepublik werkd:has_begin_of_existence werkd:jemen_demokratische_volksrepublik_boe .
+werkd:jemen_demokratische_volksrepublik_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1967"^^xsd:date .
+werkd:botswana werkd:has_begin_of_existence werkd:botswana_boe .
+werkd:botswana_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1966"^^xsd:date .
+werkd:tschechien werkd:has_begin_of_existence werkd:tschechien_boe .
+werkd:tschechien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1993-01-01"^^xsd:date .
+werkd:israel werkd:has_begin_of_existence werkd:israel_boe .
+werkd:israel_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1948-05-14"^^xsd:date .
+werkd:mali-foederation werkd:has_begin_of_existence werkd:mali-foederation_boe .
+werkd:mali-foederation_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1959-04-04"^^xsd:date .
+werkd:benin werkd:has_begin_of_existence werkd:benin_boe .
+werkd:benin_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1975-11-30"^^xsd:date .
+werkd:grossbritannien werkd:has_begin_of_existence werkd:grossbritannien_boe .
+werkd:grossbritannien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1707"^^xsd:date .
+werkd:vanuatu werkd:has_begin_of_existence werkd:vanuatu_boe .
+werkd:vanuatu_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1980"^^xsd:date .
+werkd:makedonien werkd:has_begin_of_existence werkd:makedonien_boe .
+werkd:makedonien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1944"^^xsd:date .
+werkd:estland werkd:has_begin_of_existence werkd:estland_boe .
+werkd:estland_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1918"^^xsd:date .
+werkd:estland werkd:has_begin_of_existence werkd:estland_boe .
+werkd:estland_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1991-08-21"^^xsd:date .
+werkd:mali werkd:has_begin_of_existence werkd:mali_boe .
+werkd:mali_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1960-09-22"^^xsd:date .
+werkd:koenigreich_dahomey werkd:has_begin_of_existence werkd:koenigreich_dahomey_boe .
+werkd:koenigreich_dahomey_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1625"^^xsd:date .
+werkd:bahamas werkd:has_begin_of_existence werkd:bahamas_boe .
+werkd:bahamas_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1973-07-10"^^xsd:date .
+werkd:saint_kitts_and_nevis werkd:has_begin_of_existence werkd:saint_kitts_and_nevis_boe .
+werkd:saint_kitts_and_nevis_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1987"^^xsd:date .
+werkd:belize werkd:has_begin_of_existence werkd:belize_boe .
+werkd:belize_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1981-09-21"^^xsd:date .
+werkd:demokratische_republik_kongo werkd:has_begin_of_existence werkd:demokratische_republik_kongo_boe .
+werkd:demokratische_republik_kongo_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1997"^^xsd:date .
+werkd:demokratische_republik_kongo werkd:has_begin_of_existence werkd:demokratische_republik_kongo_boe .
+werkd:demokratische_republik_kongo_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1960"^^xsd:date .
+werkd:guinea werkd:has_begin_of_existence werkd:guinea_boe .
+werkd:guinea_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1958-10-02"^^xsd:date .
+werkd:sudan werkd:has_begin_of_existence werkd:sudan_boe .
+werkd:sudan_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1956"^^xsd:date .
+werkd:britisch-somaliland werkd:has_begin_of_existence werkd:britisch-somaliland_boe .
+werkd:britisch-somaliland_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1884"^^xsd:date .
+werkd:kap_verde werkd:has_begin_of_existence werkd:kap_verde_boe .
+werkd:kap_verde_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1975"^^xsd:date .
+werkd:bahrain werkd:has_begin_of_existence werkd:bahrain_boe .
+werkd:bahrain_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1971-08-14"^^xsd:date .
+werkd:tschechoslowakei werkd:has_begin_of_existence werkd:tschechoslowakei_boe .
+werkd:tschechoslowakei_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1945"^^xsd:date .
+werkd:tschechoslowakei werkd:has_begin_of_existence werkd:tschechoslowakei_boe .
+werkd:tschechoslowakei_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1918-10-28"^^xsd:date .
+werkd:obervolta werkd:has_begin_of_existence werkd:obervolta_boe .
+werkd:obervolta_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1960"^^xsd:date .
+werkd:staat_suedsudan werkd:has_begin_of_existence werkd:staat_suedsudan_boe .
+werkd:staat_suedsudan_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "2011-07-09"^^xsd:date .
+werkd:qibris werkd:has_begin_of_existence werkd:qibris_boe .
+werkd:qibris_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1570"^^xsd:date .
+werkd:ceylon werkd:has_begin_of_existence werkd:ceylon_boe .
+werkd:ceylon_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1948"^^xsd:date .
+werkd:angola werkd:has_begin_of_existence werkd:angola_boe .
+werkd:angola_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1975-11-11"^^xsd:date .
+werkd:marokko werkd:has_begin_of_existence werkd:marokko_boe .
+werkd:marokko_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1956-03-02"^^xsd:date .
+werkd:ukraine werkd:has_begin_of_existence werkd:ukraine_boe .
+werkd:ukraine_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1991"^^xsd:date .
+werkd:guinea-bissau werkd:has_begin_of_existence werkd:guinea-bissau_boe .
+werkd:guinea-bissau_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1973-09-24"^^xsd:date .
+werkd:aequatorialguinea werkd:has_begin_of_existence werkd:aequatorialguinea_boe .
+werkd:aequatorialguinea_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1964"^^xsd:date .
+werkd:preussen_ordensstaat werkd:has_begin_of_existence werkd:preussen_ordensstaat_boe .
+werkd:preussen_ordensstaat_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1230"^^xsd:date .
+werkd:foederative_republik_jugoslawien werkd:has_begin_of_existence werkd:foederative_republik_jugoslawien_boe .
+werkd:foederative_republik_jugoslawien_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1992"^^xsd:date .
+werkd:madagaskar werkd:has_begin_of_existence werkd:madagaskar_boe .
+werkd:madagaskar_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1958"^^xsd:date .
+werkd:kenia werkd:has_begin_of_existence werkd:kenia_boe .
+werkd:kenia_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1963-12-12"^^xsd:date .
+werkd:nordkorea werkd:has_begin_of_existence werkd:nordkorea_boe .
+werkd:nordkorea_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1945"^^xsd:date .
+werkd:zaire werkd:has_begin_of_existence werkd:zaire_boe .
+werkd:zaire_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1971"^^xsd:date .
+werkd:tadschikistan werkd:has_begin_of_existence werkd:tadschikistan_boe .
+werkd:tadschikistan_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1991-08-31"^^xsd:date .
+werkd:fidschi werkd:has_begin_of_existence werkd:fidschi_boe .
+werkd:fidschi_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1970-10-10"^^xsd:date .
+werkd:koenigreich_widin werkd:has_begin_of_existence werkd:koenigreich_widin_boe .
+werkd:koenigreich_widin_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1337"^^xsd:date .
+werkd:tschad werkd:has_begin_of_existence werkd:tschad_boe .
+werkd:tschad_boe rdf:type werkd:change_of_existence ;
+werkd:has_begin_earliest "1960"^^xsd:date .
+werkd:norddeutscher_bund werkd:has_end_of_existence werkd:norddeutscher_bund_eoe .
+werkd:norddeutscher_bund_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1871"^^xsd:date .
+werkd:eritrea werkd:has_end_of_existence werkd:eritrea_eoe .
+werkd:eritrea_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1962"^^xsd:date .
+werkd:zentralafrikanische_republik werkd:has_end_of_existence werkd:zentralafrikanische_republik_eoe .
+werkd:zentralafrikanische_republik_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1976"^^xsd:date .
+werkd:neue_hebriden werkd:has_end_of_existence werkd:neue_hebriden_eoe .
+werkd:neue_hebriden_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1980"^^xsd:date .
+werkd:lunda_koenigreich werkd:has_end_of_existence werkd:lunda_koenigreich_eoe .
+werkd:lunda_koenigreich_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1898"^^xsd:date .
+werkd:hessen-darmstadt werkd:has_end_of_existence werkd:hessen-darmstadt_eoe .
+werkd:hessen-darmstadt_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1918"^^xsd:date .
+werkd:polen-litauen werkd:has_end_of_existence werkd:polen-litauen_eoe .
+werkd:polen-litauen_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1795"^^xsd:date .
+werkd:sowjetunion werkd:has_end_of_existence werkd:sowjetunion_eoe .
+werkd:sowjetunion_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1991-12-25"^^xsd:date .
+werkd:comores werkd:has_end_of_existence werkd:comores_eoe .
+werkd:comores_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1975"^^xsd:date .
+werkd:republik_der_sieben_vereinigten_provinzen werkd:has_end_of_existence werkd:republik_der_sieben_vereinigten_provinzen_eoe .
+werkd:republik_der_sieben_vereinigten_provinzen_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1798"^^xsd:date .
+werkd:gilbert_islands werkd:has_end_of_existence werkd:gilbert_islands_eoe .
+werkd:gilbert_islands_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1979"^^xsd:date .
+werkd:tabasaran werkd:has_end_of_existence werkd:tabasaran_eoe .
+werkd:tabasaran_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1813"^^xsd:date .
+werkd:batavische_republik werkd:has_end_of_existence werkd:batavische_republik_eoe .
+werkd:batavische_republik_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1805"^^xsd:date .
+werkd:syrien werkd:has_end_of_existence werkd:syrien_eoe .
+werkd:syrien_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1958-02-01"^^xsd:date .
+werkd:westsamoa werkd:has_end_of_existence werkd:westsamoa_eoe .
+werkd:westsamoa_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1997-07-04"^^xsd:date .
+werkd:thueringer_reich werkd:has_end_of_existence werkd:thueringer_reich_eoe .
+werkd:thueringer_reich_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "531"^^xsd:date .
+werkd:osmanisches_reich werkd:has_end_of_existence werkd:osmanisches_reich_eoe .
+werkd:osmanisches_reich_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1922"^^xsd:date .
+werkd:aethiopien werkd:has_end_of_existence werkd:aethiopien_eoe .
+werkd:aethiopien_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1936"^^xsd:date .
+werkd:birma werkd:has_end_of_existence werkd:birma_eoe .
+werkd:birma_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1989-06-17"^^xsd:date .
+werkd:deutschland_ddr werkd:has_end_of_existence werkd:deutschland_ddr_eoe .
+werkd:deutschland_ddr_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1990-10-02"^^xsd:date .
+werkd:al-imarat_al-mutasaliha werkd:has_end_of_existence werkd:al-imarat_al-mutasaliha_eoe .
+werkd:al-imarat_al-mutasaliha_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1971-12-02"^^xsd:date .
+werkd:dahomey werkd:has_end_of_existence werkd:dahomey_eoe .
+werkd:dahomey_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1975"^^xsd:date .
+werkd:saint_christopher_and_nevis werkd:has_end_of_existence werkd:saint_christopher_and_nevis_eoe .
+werkd:saint_christopher_and_nevis_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1987"^^xsd:date .
+werkd:kasachische_ssr werkd:has_end_of_existence werkd:kasachische_ssr_eoe .
+werkd:kasachische_ssr_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1991"^^xsd:date .
+werkd:oesterreich-ungarn werkd:has_end_of_existence werkd:oesterreich-ungarn_eoe .
+werkd:oesterreich-ungarn_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1918"^^xsd:date .
+werkd:republik_von_korca werkd:has_end_of_existence werkd:republik_von_korca_eoe .
+werkd:republik_von_korca_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1920"^^xsd:date .
+werkd:russische_sfsr werkd:has_end_of_existence werkd:russische_sfsr_eoe .
+werkd:russische_sfsr_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1991"^^xsd:date .
+werkd:russische_sfsr werkd:has_end_of_existence werkd:russische_sfsr_eoe .
+werkd:russische_sfsr_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1922"^^xsd:date .
+werkd:tanganyika werkd:has_end_of_existence werkd:tanganyika_eoe .
+werkd:tanganyika_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1964"^^xsd:date .
+werkd:kirchenstaat werkd:has_end_of_existence werkd:kirchenstaat_eoe .
+werkd:kirchenstaat_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1870"^^xsd:date .
+werkd:kraljevina_srba werkd:has_end_of_existence werkd:kraljevina_srba_eoe .
+werkd:kraljevina_srba_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1929-10-03"^^xsd:date .
+werkd:republik_neugranada werkd:has_end_of_existence werkd:republik_neugranada_eoe .
+werkd:republik_neugranada_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1858"^^xsd:date .
+werkd:latvija werkd:has_end_of_existence werkd:latvija_eoe .
+werkd:latvija_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1940"^^xsd:date .
+werkd:kolumbien werkd:has_end_of_existence werkd:kolumbien_eoe .
+werkd:kolumbien_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1832"^^xsd:date .
+werkd:westsahara werkd:has_end_of_existence werkd:westsahara_eoe .
+werkd:westsahara_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1975"^^xsd:date .
+werkd:soudan werkd:has_end_of_existence werkd:soudan_eoe .
+werkd:soudan_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1959-04-03"^^xsd:date .
+werkd:gallisches_sonderreich werkd:has_end_of_existence werkd:gallisches_sonderreich_eoe .
+werkd:gallisches_sonderreich_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "274"^^xsd:date .
+werkd:boehmen werkd:has_end_of_existence werkd:boehmen_eoe .
+werkd:boehmen_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1918-10-27"^^xsd:date .
+werkd:zentralafrikanisches_kaiserreich werkd:has_end_of_existence werkd:zentralafrikanisches_kaiserreich_eoe .
+werkd:zentralafrikanisches_kaiserreich_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1979"^^xsd:date .
+werkd:slowakei werkd:has_end_of_existence werkd:slowakei_eoe .
+werkd:slowakei_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1945"^^xsd:date .
+werkd:aegypten werkd:has_end_of_existence werkd:aegypten_eoe .
+werkd:aegypten_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1958"^^xsd:date .
+werkd:deutschland_bundesrepublik werkd:has_end_of_existence werkd:deutschland_bundesrepublik_eoe .
+werkd:deutschland_bundesrepublik_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1990-10-02"^^xsd:date .
+werkd:samoa werkd:has_end_of_existence werkd:samoa_eoe .
+werkd:samoa_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1899"^^xsd:date .
+werkd:suedvietnam werkd:has_end_of_existence werkd:suedvietnam_eoe .
+werkd:suedvietnam_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1976-07-02"^^xsd:date .
+werkd:jugoslawien werkd:has_end_of_existence werkd:jugoslawien_eoe .
+werkd:jugoslawien_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1992"^^xsd:date .
+werkd:georgien werkd:has_end_of_existence werkd:georgien_eoe .
+werkd:georgien_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1921-02-24"^^xsd:date .
+werkd:siam werkd:has_end_of_existence werkd:siam_eoe .
+werkd:siam_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1939"^^xsd:date .
+werkd:russland werkd:has_end_of_existence werkd:russland_eoe .
+werkd:russland_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1917"^^xsd:date .
+werkd:armenien werkd:has_end_of_existence werkd:armenien_eoe .
+werkd:armenien_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1920"^^xsd:date .
+werkd:british_solomon_islands werkd:has_end_of_existence werkd:british_solomon_islands_eoe .
+werkd:british_solomon_islands_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1975"^^xsd:date .
+werkd:burma werkd:has_end_of_existence werkd:burma_eoe .
+werkd:burma_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1885"^^xsd:date .
+werkd:ceska_sr werkd:has_end_of_existence werkd:ceska_sr_eoe .
+werkd:ceska_sr_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1990-03-05"^^xsd:date .
+werkd:ukrainska_narodna_respublika werkd:has_end_of_existence werkd:ukrainska_narodna_respublika_eoe .
+werkd:ukrainska_narodna_respublika_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1920"^^xsd:date .
+werkd:litauen werkd:has_end_of_existence werkd:litauen_eoe .
+werkd:litauen_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1940-10-02"^^xsd:date .
+werkd:aserbaidschan werkd:has_end_of_existence werkd:aserbaidschan_eoe .
+werkd:aserbaidschan_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1920"^^xsd:date .
+werkd:roemisches_reich werkd:has_end_of_existence werkd:roemisches_reich_eoe .
+werkd:roemisches_reich_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "500"^^xsd:date .
+werkd:venezuela_confederacion werkd:has_end_of_existence werkd:venezuela_confederacion_eoe .
+werkd:venezuela_confederacion_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1812-07-25"^^xsd:date .
+werkd:italienisch-somaliland werkd:has_end_of_existence werkd:italienisch-somaliland_eoe .
+werkd:italienisch-somaliland_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1960"^^xsd:date .
+werkd:holland_koenigreich werkd:has_end_of_existence werkd:holland_koenigreich_eoe .
+werkd:holland_koenigreich_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1810"^^xsd:date .
+werkd:helvetische_republik werkd:has_end_of_existence werkd:helvetische_republik_eoe .
+werkd:helvetische_republik_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1803-03-10"^^xsd:date .
+werkd:deutsches_reich werkd:has_end_of_existence werkd:deutsches_reich_eoe .
+werkd:deutsches_reich_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1945"^^xsd:date .
+werkd:polen werkd:has_end_of_existence werkd:polen_eoe .
+werkd:polen_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1569"^^xsd:date .
+werkd:nigeria_colony_and_protectorate werkd:has_end_of_existence werkd:nigeria_colony_and_protectorate_eoe .
+werkd:nigeria_colony_and_protectorate_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1960"^^xsd:date .
+werkd:zentralafrikanische_foederation werkd:has_end_of_existence werkd:zentralafrikanische_foederation_eoe .
+werkd:zentralafrikanische_foederation_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1963-12-31"^^xsd:date .
+werkd:vietnam werkd:has_end_of_existence werkd:vietnam_eoe .
+werkd:vietnam_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1954"^^xsd:date .
+werkd:heiliges_roemisches_reich werkd:has_end_of_existence werkd:heiliges_roemisches_reich_eoe .
+werkd:heiliges_roemisches_reich_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1806"^^xsd:date .
+werkd:oesterreich werkd:has_end_of_existence werkd:oesterreich_eoe .
+werkd:oesterreich_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1867"^^xsd:date .
+werkd:serbien_und_montenegro werkd:has_end_of_existence werkd:serbien_und_montenegro_eoe .
+werkd:serbien_und_montenegro_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "2006-06-03"^^xsd:date .
+werkd:jemen_demokratische_volksrepublik werkd:has_end_of_existence werkd:jemen_demokratische_volksrepublik_eoe .
+werkd:jemen_demokratische_volksrepublik_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1990-05-21"^^xsd:date .
+werkd:mali-foederation werkd:has_end_of_existence werkd:mali-foederation_eoe .
+werkd:mali-foederation_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1960-09-21"^^xsd:date .
+werkd:makedonien werkd:has_end_of_existence werkd:makedonien_eoe .
+werkd:makedonien_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "2019-02-11"^^xsd:date .
+werkd:estland werkd:has_end_of_existence werkd:estland_eoe .
+werkd:estland_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1940"^^xsd:date .
+werkd:koenigreich_dahomey werkd:has_end_of_existence werkd:koenigreich_dahomey_eoe .
+werkd:koenigreich_dahomey_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1892"^^xsd:date .
+werkd:demokratische_republik_kongo werkd:has_end_of_existence werkd:demokratische_republik_kongo_eoe .
+werkd:demokratische_republik_kongo_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1971"^^xsd:date .
+werkd:sudan werkd:has_end_of_existence werkd:sudan_eoe .
+werkd:sudan_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1899"^^xsd:date .
+werkd:britisch-somaliland werkd:has_end_of_existence werkd:britisch-somaliland_eoe .
+werkd:britisch-somaliland_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1960"^^xsd:date .
+werkd:tschechoslowakei werkd:has_end_of_existence werkd:tschechoslowakei_eoe .
+werkd:tschechoslowakei_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1992-12-31"^^xsd:date .
+werkd:tschechoslowakei werkd:has_end_of_existence werkd:tschechoslowakei_eoe .
+werkd:tschechoslowakei_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1939-03-14"^^xsd:date .
+werkd:obervolta werkd:has_end_of_existence werkd:obervolta_eoe .
+werkd:obervolta_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1984-08-08"^^xsd:date .
+werkd:qibris werkd:has_end_of_existence werkd:qibris_eoe .
+werkd:qibris_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1878"^^xsd:date .
+werkd:england werkd:has_end_of_existence werkd:england_eoe .
+werkd:england_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1707"^^xsd:date .
+werkd:ceylon werkd:has_end_of_existence werkd:ceylon_eoe .
+werkd:ceylon_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1972"^^xsd:date .
+werkd:preussen_ordensstaat werkd:has_end_of_existence werkd:preussen_ordensstaat_eoe .
+werkd:preussen_ordensstaat_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1561"^^xsd:date .
+werkd:foederative_republik_jugoslawien werkd:has_end_of_existence werkd:foederative_republik_jugoslawien_eoe .
+werkd:foederative_republik_jugoslawien_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "2003"^^xsd:date .
+werkd:madagaskar werkd:has_end_of_existence werkd:madagaskar_eoe .
+werkd:madagaskar_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1896"^^xsd:date .
+werkd:zaire werkd:has_end_of_existence werkd:zaire_eoe .
+werkd:zaire_eoe rdf:type werkd:change_of_existence ;
+werkd:has_end_latest "1997-05-17"^^xsd:date .
+werkd:koenigreich_widin werkd:entity_enddate "1396"^^xsd:date .
 
 werkd:nicaragua skos:comment "Staat in Mittelamerika zwischen Pazifik und Karibischem Meer; Hauptstadt: Managua"@de .
 werkd:kamerun skos:comment "1.1.1959: Autonomie; 1.1.1960: Unabhängigkeit; Amtssprachen: Französisch; seit. 1.10.1965 auch Englisch"@de .
