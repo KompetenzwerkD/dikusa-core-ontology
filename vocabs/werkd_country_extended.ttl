@@ -12,6 +12,7 @@
 @prefix wikisource: <https://de.wikisource.org/wiki/> .
 @prefix cc:    <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 werkd:country rdf:type skos:ConceptScheme;
     cc:licence              <https://www.gnu.org/licenses/agpl-3.0.en.html> ;
