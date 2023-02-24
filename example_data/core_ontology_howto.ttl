@@ -363,7 +363,7 @@ lido:lido00774
     :has_nationality :nationality_1 .
 
 :nationality_1
-    :has_nationality_value gnd:4011882-4 ;
+    :has_nationality_value :deutschland ;
     :has_begin_earliest "1965-08-26"^^xsd:date ;
     :has_begin_latest "1965-08-26"^^xsd:date .
 
