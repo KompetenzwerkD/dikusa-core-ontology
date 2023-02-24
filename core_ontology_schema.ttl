@@ -742,8 +742,7 @@
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_date_earliest ;
     sh:nodeKind sh:Literal ;
-    sh:datatype xsd:date ;
-    sh:pattern "^[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
+    sh:datatype xsd:date .
 
 :has_date_latest
     rdf:type rdf:Property ;
@@ -762,8 +761,7 @@
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_date_latest ;
     sh:nodeKind sh:Literal ;
-    sh:datatype xsd:date ;
-    sh:pattern "^[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
+    sh:datatype xsd:date .
 
 :has_begin_earliest
     rdf:type rdf:Property ;
@@ -782,8 +780,7 @@
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_begin_earliest ;
     sh:nodeKind sh:Literal ;
-    sh:datatype xsd:date ;
-    sh:pattern "^[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
+    sh:datatype xsd:date .
 
 :has_begin_latest
     rdf:type rdf:Property ;
@@ -802,8 +799,7 @@
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_begin_latest ;
     sh:nodeKind sh:Literal ;
-    sh:datatype xsd:date ;
-    sh:pattern "^[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
+    sh:datatype xsd:date .
 
 :has_end_earliest
     rdf:type rdf:Property ;
@@ -822,8 +818,7 @@
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_end_earliest ;
     sh:nodeKind sh:Literal ;
-    sh:datatype xsd:date ;
-    sh:pattern "^[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
+    sh:datatype xsd:date .
 
 :has_end_latest
     rdf:type rdf:Property ;
@@ -842,8 +837,7 @@
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_end_latest ;
     sh:nodeKind sh:Literal ;
-    sh:datatype xsd:date ;
-    sh:pattern "^[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" .
+    sh:datatype xsd:date .
 
 # ------------------
 
