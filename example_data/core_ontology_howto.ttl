@@ -1,0 +1,847 @@
+@prefix : <http://www.werkd.saw-leipzig.de/> .
+@prefix werkd: <http://www.werkd.saw-leipzig.de/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix gnd: <https://d-nb.info/gnd/> .
+@prefix lido: <http://terminology.lido-schema.org/>.
+
+# example data covering all important aspects of the ontology
+# structured into reusable thematic pieces
+# intended as a small howto for working with the ontology
+
+# can be validated against the schema using shacl (under open world assumption)
+# using apache jena try: shacl v -s schema_file -d instance_data_file 
+# or using the validator: https://github.com/KompetenzwerkD/dikusa_rdf_validator
+
+# shacl needs the class hierarchy in the instance data file (strange!)
+# this information will be included automatically before validation with Dikusa-RDF-Validator
+
+# type declarations
+
+:dhguy rdf:type :person .
+:dhgirl rdf:type :person .
+:unknown_dhguy rdf:type :person .
+:rauch rdf:type :person .
+:saw rdf:type :group .
+:angelverein_dresden rdf:type :group .
+:der_verlag rdf:type :group .
+:werkd rdf:type :group .
+:university_of_leipzig rdf:type :group .
+:geburtsurkunde_dhguy rdf:type :work .
+:main_author rdf:type :author_role .
+:leipzig rdf:type :place .
+:dresden rdf:type :place .
+:volkmarsdorf_gebietskoerperschaft rdf:type :place .
+:germany rdf:type :place .
+:volkmarsdorf_stadtteil rdf:type :place .
+:villa_klinkhardt rdf:type :place .
+:residence rdf:type :person_place_relation_type .
+:gnd rdf:type :id_type .
+:lido rdf:type :id_type .
+:hov rdf:type :id_type .
+:werkd rdf:type :id_type .
+:wikidata rdf:type :id_type .
+:employee rdf:type :person_group_relation_type .
+:member rdf:type :person_group_relation_type .
+:university_studies rdf:type :person_group_relation_type .
+:dhgirl2018 rdf:type :work .
+:faust1 rdf:type :work .
+:faust1_prolog rdf:type :work .
+:student rdf:type :person_person_relation_role .
+:teacher rdf:type :person_person_relation_role .
+:incorporation rdf:type :change_of_place_existence_type .
+:district rdf:type :place_type .
+:municipality rdf:type :place_type .
+:town rdf:type :place_type .
+:latin rdf:type :script .
+:dhd2023 rdf:type :event .
+:dhd2022 rdf:type :event .
+:workshop_datafeminism rdf:type :event .
+:dh rdf:type :topic .
+:speaker rdf:type :participant_role .
+:creator rdf:type :participant_role .
+:utility rdf:type :event_resource_relation_type .
+:laser_pointer rdf:type :object .
+:goethe_bust rdf:type :object .
+:an_actual_book rdf:type :object .
+:inscription_goethe rdf:type :inscription .
+:monument rdf:type :object_type .
+:explosion rdf:type :object_destruction_type .
+:chiseling rdf:type :object_creation_type .
+:removal_of_parts rdf:type :object_modification_type .
+:owner rdf:type :actor_object_relation_type .
+:height rdf:type :dimension_type .
+:cm rdf:type :dimension_unit .
+:portrayal rdf:type :subject_relation_type .
+:marble rdf:type :material .
+:fiction rdf:type :subject_area .
+:public_domain rdf:type :license .
+:scientific_institute rdf:type :group_type .
+:teaching rdf:type :person_person_relation_type .
+:foundation rdf:type :change_of_group_existence_type .
+:scientific_conference rdf:type :event_type .
+:tragedy rdf:type :work_type .
+
+:name_1 rdf:type :name .
+:name_2 rdf:type :name .
+:name_3 rdf:type :name .
+:name_4 rdf:type :name .
+:name_5 rdf:type :name .
+:name_6 rdf:type :name .
+:name_7 rdf:type :name .
+:name_x rdf:type :name .
+:entity_description_1 rdf:type :entity_description .
+:title_x rdf:type :title .
+:title_y rdf:type :title .
+:author_1 rdf:type :author .
+:life_state_change_1 rdf:type :life_state_change .
+:life_state_change_2 rdf:type :life_state_change .
+:person_place_relation_1 rdf:type :person_place_relation .
+:occupation_1 rdf:type :occupation .
+:occupation_2 rdf:type :occupation .
+:id_1 rdf:type :id .
+:id_2 rdf:type :id .
+:id_3 rdf:type :id .
+:id_4 rdf:type :id .
+:gender_1 rdf:type :gender .
+:person_group_relation_1 rdf:type :person_group_relation .
+:person_group_relation_2 rdf:type :person_group_relation .
+:person_group_relation_3 rdf:type :person_group_relation .
+:citation_1 rdf:type :citation .
+:citation_2 rdf:type :citation .
+:part_of_place_relation_1 rdf:type :part_of_place_relation .
+:change_of_existence_1 rdf:type :change_of_existence .
+:change_of_existence_2 rdf:type :change_of_existence .
+:coordinates_1 rdf:type :coordinates .
+:coordinates_2 rdf:type :coordinates .
+:address_1 rdf:type :address .
+:nationality_1 rdf:type :nationality .
+:location_1 rdf:type :location .
+:location_x rdf:type :location .
+:participant_1 rdf:type :participant .
+:participant_x rdf:type :participant .
+:event_resource_relation_1 rdf:type :event_resource_relation .
+:creation_x rdf:type :object_creation .
+:destruction_x rdf:type :object_destruction .
+:modification_x rdf:type :object_modification .
+:actor_object_relation_x rdf:type :actor_object_relation .
+:publication_x rdf:type :publication .
+:part_of_group_relation_x rdf:type :part_of_group_relation .
+:person_person_relation_1 rdf:type :person_person_relation .
+:dimension_1 rdf:type :dimension .
+:subject_1 rdf:type :subject .
+
+
+# vocabulary imported from werkd_country.ttl (imports will happen automatically at a later point)
+gnd:4011882-4
+    werkd:has_id_value "4011882-4" ;
+    werkd:has_id_type werkd:gnd ;
+    rdf:type werkd:nationality_value .
+
+# imported from lido_genderActor.ttl
+lido:lido00774
+    werkd:has_id_value "lido00774" ;
+    werkd:has_id_type werkd:lido ;
+    rdf:type werkd:gender_value .
+
+
+
+
+# provenance (can be attributed to any triple)
+:dhguy
+    :has_preferred_name :name_1 {|
+        :has_provenence_text "übernommen aus Geburtsurkunde"@de ;
+        :has_provenence_text "found in birth certificate"@en ;
+        :has_provenence_URL "https://www.geburtsregister.de/dhguy"^^xsd:anyURI ;
+        :has_comment "war leicht zu finden"@de ;
+        :has_provenence_certainty "sicher"@de ;
+        :has_provenence_contributor :saw ;
+        :has_provenence_resource :geburtsurkunde_dhguy ;
+        :has_provenence_date "2023-02-17"^^xsd:date
+    |} ;
+    :has_alternative_name :name_2 {|
+        :has_provenence_text "laut Aussage von Freunden"@de ;
+        :has_comment "ist wohl sein Spitzname"@de ;
+        :has_provenance_certainty "relativ sicher"@de
+    |} .
+
+
+# preferred name - for all :entity_with_name
+# most classes can have names (person, event, place, object, ...)
+
+:dhguy 
+    :has_preferred_name :name_1 .
+
+    :name_1
+    :has_name_value "Dennis Hendrik Guy"@de ;
+    :has_script :latin .
+
+:dhgirl
+    :has_preferred_name :name_3 .
+
+:name_3
+    :has_name_value "Denise Henriette Girl"@de ;
+    :has_script :latin .
+
+:leipzig
+    :has_preferred_name :name_5 .
+:name_5
+    :has_name_value "Leipzig"@de ;
+    :has_script :latin .
+
+:unknown_dhguy
+    :has_preferred_name :name_x .
+:rauch
+    :has_preferred_name :name_x .
+:name_x
+    :has_name_value "xxx"@de .
+
+
+# alternative name - for all :entity_with_name
+# most classes can have names
+
+:dhguy
+    :has_alternative_name :name_2 .
+
+:name_2
+    :has_name_value "DH Guy"@de ;
+    # begin/end - both possible for names
+    :has_begin_earliest "1989-01-01"^^xsd:date ;
+    :has_begin_latest "1989-01-01"^^xsd:date ;
+    :has_script :latin {|
+        :has_provenence_text "gesunder Menschenverstand"@de ;
+        :has_comment "das sind alles lateinische Buchstaben" ;
+        :has_provenence_certainty "sicher" |} .
+
+:dhgirl
+    :has_alternative_name :name_4 .
+
+:name_4
+    :has_name_value "DH Girl"@de ;
+    :has_script :latin .
+
+:leipzig
+    :has_alternative_name :name_6 .
+
+:name_6
+    :has_name_value "urbs Libzi"@la ;
+    :has_script :latin ;
+    :has_begin_earliest "1015-01-01"^^xsd:date ;
+    :has_begin_latest "1015-12-31"^^xsd:date .
+
+
+# description - for all :entity_with_description
+# most classes can have descriptions
+
+:dhguy
+    :has_entity_description :entity_description_1 .
+
+:entity_description_1
+    :has_entity_description_value "ein toller typ"@de ;
+    :has_author :author_1 .
+
+
+# author - for all :entity_with_author, e.g. entity_description
+
+:entity_description_1
+    :has_author :author_1 .
+
+:author_1
+    :has_author_value :dhguy {|
+        :has_comment "verfasst von ihm selbst"@de
+    |} ;
+    :has_author_role :main_author.
+
+
+# person: gender
+
+:dhguy
+    :has_gender :gender_1 .
+    
+:gender_1
+    # see lido_genderActor.ttl
+    :has_gender_value lido:lido00774 ;
+    # can have begin and/or end
+    :has_begin_earliest "1965-08-26"^^xsd:date ;
+    :has_begin_latest "1965-08-26"^^xsd:date .
+
+
+# person: birth
+
+:dhguy
+    :has_birth :life_state_change_1 .
+
+:life_state_change_1
+    :has_place :leipzig ;
+    :has_date_earliest "1965-08-26"^^xsd:date ;
+    :has_date_latest "1965-08-26"^^xsd:date .
+
+
+# person: death
+    
+:dhguy
+    :has_death :life_state_change_2 .
+
+:life_state_change_2
+    :has_place :dresden ;
+    :has_date_earliest "2011-05-11"^^xsd:date ;
+    :has_date_latest "2011-05-11"^^xsd:date .
+
+
+# person: place relation (could be residence, workplace, ...)
+
+:dhguy
+    :has_place_relation :person_place_relation_1 .
+
+:person_place_relation_1
+    :has_begin_earliest "1965-08-26"^^xsd:date ;
+    :has_begin_latest "1965-08-26"^^xsd:date ;
+    :has_end_earliest "1992-04-01"^^xsd:date ;
+    :has_end_latest "1992-04-30"^^xsd:date ;
+    :has_person_place_relation_type :residence .
+
+
+# place: person relation
+
+:leipzig
+    :has_person_relation :person_place_relation_1 .
+
+
+# person: occupation
+
+:dhguy
+    :has_occupation :occupation_1 ;
+    :has_occupation :occupation_2 .
+    
+:occupation_1
+    :has_occupation_value :it_developer ;
+    :has_begin_earliest "1988-01-01"^^xsd:date ;
+    :has_begin_latest  "1988-01-01"^^xsd:date ;
+    :has_end_earliest "1998-12-31"^^xsd:date ;
+    :has_end_latest "1998-12-31"^^xsd:date .
+
+:occupation_2
+    :has_occupation_value :it_specialist ;
+    :has_begin_earliest "1999-01-01"^^xsd:date ;
+    :has_begin_latest "1999-01-01"^^xsd:date .
+
+
+# ids - for all :entity_with_id
+
+:dhguy
+    :has_id :id_1 ;
+    :has_id :id_2 .
+:id_1
+    :has_id_value "112614086" ;
+    :has_id_type :gnd .
+:id_2
+    :has_id_value "Q123123123" ;
+    :has_id_type :wikidata .
+
+:leipzig
+    :has_id :id_3 ;
+    :has_id :id_4 .
+:id_3
+    :has_id_value "4105" ;
+    :has_id_type :hov .
+:id_4
+    :has_id_value "Q2079" ;
+    :has_id_type :wikidata .
+
+
+# person: nationality
+# nationality_value see: werkd_country.ttl vocabulary
+
+:dhguy
+    :has_nationality :nationality_1 .
+
+:nationality_1
+    :has_nationality_value gnd:4011882-4 ;
+    :has_begin_earliest "1965-08-26"^^xsd:date ;
+    :has_begin_latest "1965-08-26"^^xsd:date .
+
+
+# person: group relation (employee, member, student, ...)
+# :person_group_relation_3 includes additional properties for education, currently (only) expressed as strings
+:dhguy
+    :has_group_relation :person_group_relation_1 ;
+    :has_group_relation :person_group_relation_2 ;
+    :has_group_relation :person_group_relation_3 .
+
+:person_group_relation_1
+    :has_person_group_relation_type :employee ;
+    :has_occupation_value :scientific_staff ;
+    :has_begin_earliest "1999-01-01"^^xsd:date ;
+    :has_begin_latest "1999-01-01"^^xsd:date .
+
+:person_group_relation_2
+    :has_person_group_relation_type :member ; 
+    :has_begin_earliest "2002-01-01"^^xsd:date ;
+    :has_begin_latest "2002-01-01"^^xsd:date ;
+    :has_end_earliest "2003-12-31"^^xsd:date ;
+    :has_end_latest "2003-12-31"^^xsd:date .
+
+:person_group_relation_3
+    :has_person_group_relation_type :university_studies ;
+    :has_field_of_study "Digital Humanities" ;
+    :has_degree "Msc. Digital Humanities" .
+
+# group: person relation
+
+:saw
+    :has_person_relation :person_group_relation_1 .
+:angelverein_dresden
+    :has_person_relation :person_group_relation_2 .
+:university_of_leipzig
+    :has_person_relation :person_group_relation_3 .
+
+# skos:exactMatch for declaring two IRIs as describing the same item
+
+:dhguy
+    skos:exactMatch :unknown_dhguy .
+
+
+# link to external reference (URL) about the IRI, e.g. wikipedia-pages
+
+:leipzig
+    :is_same_as_external_reference "https://de.wikipedia.org/wiki/Leipzig"^^xsd:anyURI .
+
+
+# person: person relation (friendship, relatedness, functional relations, ...)
+# non symetrical relations should use a role attached to the relations
+
+:dhguy
+    :has_person_relation :person_person_relation_1 {|
+        :has_person_person_relation_role :student
+    |} .
+
+:dhgirl
+    :has_person_relation :person_person_relation_1 {|
+        :has_person_person_relation_role :teacher
+    |} .
+
+:person_person_relation_1
+    :has_person_person_relation_type :teaching ;
+    :has_begin_earliest "1996-10-01"^^xsd:date ;
+    :has_begin_latest "1996-10-01"^^xsd:date ;
+    :has_end_earliest "1998-09-30"^^xsd:date ;
+    :has_end_latest "1998-09-30"^^xsd:date .
+
+
+# citation
+
+:dhguy :has_citation :citation_1 .
+:citation_1
+    :has_citation_resource :dhgirl2018 ; 
+    :has_citation_text "...once again dhguy saved the day!" .
+
+:leipzig :has_citation :citation_2 .
+:citation_2
+    :has_citation_resource :faust1 ; 
+    :has_citation_text "Mein Leipzig lob ich mir" .
+
+
+# person: general attrikbutes (already depicted in detail, please see there)
+
+:dhguy
+    :has_id :id_1 ;
+    :has_preferred_name :name_x ;
+    :has_alternative_name :name_x ;
+    :has_citation :citation_1 ;
+    :is_same_as_external_reference "https://www.x.y/z"^^xsd:anyURI ;
+    :has_entity_description :entity_description_1 .
+
+# place: general attributes (already depicted in detail, please see there)
+
+:leipzig
+    :has_id :id_1 ;
+    :has_preferred_name :name_x ;
+    :has_alternative_name :name_x ;
+    :has_citation :citation_1 ;
+    :is_same_as_external_reference "https://www.x.y/z"^^xsd:anyURI ;
+    :has_entity_description :entity_description_1 .
+
+
+# place: type
+
+:leipzig :has_place_type :town .
+:volkmarsdorf_stadtteil :has_place_type :district .
+:volkmarsdorf_gebietskoerperschaft :has_place_type :municipality .
+
+
+# place: part of relation
+
+:volkmarsdorf_stadtteil
+    :is_part_of_place :part_of_place_relation_1 .
+
+:part_of_place_relation_1
+    :has_place :leipzig ;
+    :has_begin_earliest "1890-01-01"^^xsd:date ;
+    :has_begin_latest "1890-12-31"^^xsd:date .
+
+
+# place: beginning and end of existence
+
+:volkmarsdorf_gebietskoerperschaft
+    :has_end_of_existence :change_of_existence_1 .
+
+:volkmarsdorf_stadtteil
+    :has_begin_of_existence :change_of_existence_1 .
+
+:change_of_existence_1
+    :has_change_of_place_existence_type :incorporation ;
+    :has_begin_earliest "1890-01-01"^^xsd:date ;
+    :has_end_latest "1890-12-31"^^xsd:date ;
+    :has_related_place :leipzig .
+
+
+# place: coordinates
+
+:leipzig :has_coordinates :coordinates_1 .
+:leipzig :has_coordinates :coordinates_2 .
+
+:coordinates_1
+    :has_coordinates_value "{ \"type\": \"Polygon\", \"coordinates\": [ [ [30, 10], [40, 40], [20, 40], [10, 20], [30, 10] ] ] } " ;
+    :has_begin_earliest "1990-01-01"^^xsd:date ;
+    :has_begin_latest "1990-01-01"^^xsd:date ;
+    :has_end_earliest "1990-12-31"^^xsd:date ;
+    :has_end_latest "1990-12-31"^^xsd:date .
+
+:coordinates_2
+    :has_coordinates_value "{ \"type\": \"Polygon\", \"coordinates\": [ [ [35, 10], [45, 45], [20, 50], [10, 20], [30, 10] ] ] } " ;
+    :has_begin_earliest "1991-01-01"^^xsd:date ;
+    :has_begin_latest "1991-01-01"^^xsd:date ;
+    :has_end_earliest "1991-12-31"^^xsd:date ;
+    :has_end_latest "1991-12-31"^^xsd:date .
+
+
+# location - for all entity_with_location
+# location includes :place and optional timespan
+
+:saw :has_location :location_1 .
+
+:location_1
+    :has_place :villa_klinkhardt ;
+    :has_begin_earliest "1995-01-01"^^xsd:date ;
+    :has_begin_latest "1995-12-31"^^xsd:date .
+
+
+# place: address
+
+:villa_klinkhardt
+    :has_address :address_1 ;
+    :has_preferred_name :name_7 .
+
+:address_1
+    :has_country :germany ;
+    :has_town :leipzig ;
+    :has_postcode "04107" ;
+    :has_street_address "Karl-Tauchnitz-Str. 1" .
+
+:name_7
+    :has_name_value "Villa Klinkhardt"@de ;
+    :has_script :latin .
+
+
+# group: general attributes
+
+:saw
+    :has_id :id_1 ;
+    :has_preferred_name :name_x ;
+    :has_alternative_name :name_x ;
+    :has_citation :citation_1 ;
+    :is_same_as_external_reference "https://www.x.y/z"^^xsd:anyURI ;
+    :has_entity_description :entity_description_1 ;
+    :has_location :location_1 .
+    
+
+# group: begin or end of existence
+
+:saw
+    :has_begin_of_existence :change_of_existence_2 .
+
+:change_of_existence_2
+    :has_change_of_group_existence_type :foundation ;
+    :has_begin_earliest "1846-07-01"^^xsd:date ;
+    :has_end_latest "1846-07-01"^^xsd:date ;
+    :has_related_group :university_of_leipzig ;
+    :has_location :location_1 .
+
+:location_1
+    :has_place :leipzig .
+
+
+# group: type
+
+:saw
+    :has_group_type :scientific_institute .
+
+
+# group: part of group
+
+:werkd :is_part_of_group :part_of_group_relation_x .
+
+:part_of_group_relation_x
+    :has_group :saw ;
+    :has_begin_earliest "2020-02-01"^^xsd:date ;
+    :has_begin_latest "2020-02-01"^^xsd:date .
+
+
+# event: general attributes (already depicted before in detail, please see there)
+
+:dhd2023
+    :has_id :id_1 ;
+    :has_preferred_name :name_x ;
+    :has_alternative_name :name_x ;
+    :has_begin_earliest "2023-03-13"^^xsd:date ;
+    :has_begin_latest "2023-03-13"^^xsd:date ;
+    :has_end_earliest "2023-03-17"^^xsd:date ;
+    :has_end_latest "2023-03-17"^^xsd:date ;
+    :has_citation :citation_1 ;
+    :is_same_as_external_reference "https://www.x.y/z"^^xsd:anyURI ;
+    :has_entity_description :entity_description_1 ; 
+    :has_location :location_x .
+
+    
+# event: type
+
+:dhd2023 :has_event_type :scientific_conference .
+
+
+# event: topic
+
+:dhd2023 :has_topic :dh .
+
+
+# event: event relations
+
+:dhd2022 :has_subsequent_event :dhd2023 .
+:workshop_datafeminism :is_part_of_event :dhd2023 .
+
+
+# event: participation
+
+:dhd2023 :has_participant :participant_1 .
+
+:participant_1
+    :has_participant_value :dhguy ;
+    :has_participant_role :speaker ;
+    :has_begin_earliest "2023-03-14"^^xsd:date ;
+    :has_begin_latest "2023-03-14"^^xsd:date ;
+    :has_end_earliest "2023-03-16"^^xsd:date ;
+    :has_end_latest "2023-03-16"^^xsd:date .
+
+
+# event: resource relation
+# a resource playing a role in an event
+
+:dhd2023 :has_resource_relation :event_resource_relation_1 .
+
+:event_resource_relation_1
+    :has_event_resource_relation_type :utility ;
+    :has_begin_earliest "2023-03-14"^^xsd:date ;
+    :has_begin_latest "2023-03-14"^^xsd:date ;
+    :has_end_earliest "2023-03-17"^^xsd:date ;
+    :has_end_latest "2023-03-17"^^xsd:date .
+
+
+# resource: event relation
+# resources are :work and :object
+
+:laser_pointer :has_event_relation :event_resource_relation_1 .
+
+
+# object: general attributes 
+
+:goethe_bust
+    :has_id :id_1 ;
+    :has_preferred_name :name_x ;
+    :has_alternative_name :name_x ;
+    :has_citation :citation_1 ;
+    :is_same_as_external_reference "https://www.x.y/z"^^xsd:anyURI ;
+    :has_entity_description :entity_description_1 ; 
+    :has_location :location_x .
+
+
+#object: type
+
+:goethe_bust :has_object_type :monument .
+
+
+# object: creation
+# object_creation/destruction/modification as subclass of event (also inheriting all its attributes, see :dhd2023)
+
+:creation_x
+    :has_object :goethe_bust ;
+    :has_object_creation_type :chiseling ;
+    :has_participant :participant_x .
+
+:participant_x
+    :has_participant_value :rauch ;
+    :has_participant_role :creator .
+
+# object: destruction
+# object_destruction as subclass of event
+
+:destruction_x
+    :has_object :goethe_bust ;
+    :has_object_destruction_type :explosion .
+    
+
+# object: modification
+# object_modification as subclass of event
+
+:modification_x
+    :has_object :goethe_bust ;
+    :has_object_modification_type :removal_of_parts .
+
+
+# object: actor relation (actor includes persons and groups)
+
+:laser_pointer
+    :has_actor_relation :actor_object_relation_x .
+
+:actor_object_relation_x
+    :has_actor_object_relation_type :owner ;
+    :has_entity_description :entity_description_1 ; 
+    :has_preferred_name :name_x ;
+    :has_begin_earliest "2023-03-14"^^xsd:date ;
+    :has_begin_latest "2023-03-14"^^xsd:date ;
+    :has_end_earliest "2023-03-17"^^xsd:date ;
+    :has_end_latest "2023-03-17"^^xsd:date .
+
+
+# actor: object relation
+
+:dhguy
+    :has_object_relation :actor_object_relation_x .
+
+
+# object: part of object relation
+
+:inscription_goethe
+    :is_part_of_object :goethe_bust .
+
+
+# inscription: subclass of :object with extra attribute
+
+:inscription_goethe
+    :has_inscription_text "CH. Rauch fec. 21. August 1820" .
+
+
+# object: dimension
+
+:goethe_bust
+    :has_dimension :dimension_1 .
+
+:dimension_1
+    :has_dimension_type :height ;
+    :has_dimension_unit :cm ;
+    :has_dimension_value "30" .
+
+
+# object: subject
+
+:goethe_bust
+    :has_subject :subject_1 .
+
+:subject_1
+    :has_subject_relation_type :portrayal ;
+    :has_subject_value :goethe .
+
+
+# object: material
+
+:goethe_bust
+    :has_material :marble .
+
+
+# work: general attributes
+
+:faust1
+    :has_id :id_1 ;
+    :has_citation :citation_1 ;
+    :is_same_as_external_reference "https://www.x.y/z"^^xsd:anyURI ;
+    :has_entity_description :entity_description_1 ;
+    :has_author :author_1 .
+
+
+# work: title (timeframe + script optional)
+
+:faust1
+    :has_preferred_title :title_x ;
+    :has_alternative_title :title_y .
+
+:title_x
+    :has_title_value "Faust. Eine Tragödie"@de .
+
+:title_y
+    :has_title_value "Faust. Der Tragödie erster Teil"@de ;
+    :has_begin_earliest "1808-01-01"^^xsd:date ;
+    :has_begin_latest "1808-12-31"^^xsd:date ;
+    :has_script :latin .
+    
+
+# work: part of work
+
+:faust1_prolog
+    :is_part_of_work :faust1 .
+
+
+# work: type
+
+:faust1
+    :has_work_type :tragedy .
+
+
+# work: subject area
+
+:faust1
+    :has_subject_area :fiction .
+
+
+# work: publication
+
+:faust1 :is_published :publication_x .
+
+:publication_x
+    :has_preferred_name :name_x ;
+    :has_entity_description :entity_description_1 ;
+    :has_date_earliest "1809-05-11"^^xsd:date ;
+    :has_date_latest "1809-05-11"^^xsd:date ;
+    :has_place :leipzig .
+
+
+# publication: specific attributes
+
+:publication_x
+    :has_publisher :der_verlag ;
+    :has_number_of_pages "574"^^xsd:integer ;
+    :has_first_page "1"^^xsd:integer ;
+    :has_last_page "574"^^xsd:integer ;
+    :has_physical_instance :an_actual_book ;
+    :has_license :public_domain .
+
+
+# example for creating your own vocabulary
+
+:it_developer
+    rdf:type werkd:occupation_value ;
+    rdf:type werkd:id ;
+    :has_id_value "A0001" ;
+    :has_id_type :werkd .
+
+:it_specialist
+    rdf:type werkd:occupation_value ;
+    rdf:type werkd:id ;
+    :has_id_value "A0002" ;
+    :has_id_type :werkd .
+
+:scientific_staff
+    rdf:type werkd:occupation_value ;
+    rdf:type werkd:id ;
+    :has_id_value "A0003" ;
+    :has_id_type :werkd .
+
