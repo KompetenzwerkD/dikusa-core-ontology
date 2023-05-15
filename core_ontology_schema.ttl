@@ -996,6 +996,7 @@
 :occupation_value
     rdf:type rdfs:Class ;
     rdfs:label "occupation value" ;
+    rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :id .
 
 # -------------
