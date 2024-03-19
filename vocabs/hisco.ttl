@@ -6,8 +6,6 @@
 @prefix hisco: <https://historyofwork.iisg.nl/> .
 
 werkd:occupation_values rdf:type skos:ConceptScheme ;
-    cc:licence              <https://www.gnu.org/licenses/agpl-3.0.en.html> ;
-    dcterms:licence         <https://www.gnu.org/licenses/agpl-3.0.en.html> ;
     skos:prefLabel          "Historical Occupation Vocabulary"@en ;
     skos:prefLabel          "Vokabular Historischer Berufsbezeichnungen"@de ;
     skos:definition         "This is a controlled vocabulary based on HISCO"@en ;
