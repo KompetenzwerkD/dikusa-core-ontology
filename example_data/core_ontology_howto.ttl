@@ -157,17 +157,17 @@ lido:lido00774
 # provenance (can be attributed to any triple)
 :dhguy
     :has_preferred_name :name_1 {|
-        :has_provenence_text "übernommen aus Geburtsurkunde"@de ;
-        :has_provenence_text "found in birth certificate"@en ;
-        :has_provenence_URL "https://www.geburtsregister.de/dhguy"^^xsd:anyURI ;
+        :has_provenance_text "übernommen aus Geburtsurkunde"@de ;
+        :has_provenance_text "found in birth certificate"@en ;
+        :has_provenance_URL "https://www.geburtsregister.de/dhguy"^^xsd:anyURI ;
         :has_comment "war leicht zu finden"@de ;
-        :has_provenence_certainty "sicher"@de ;
-        :has_provenence_contributor :saw ;
-        :has_provenence_resource :geburtsurkunde_dhguy ;
-        :has_provenence_date "2023-02-17"^^xsd:date
+        :has_provenance_certainty "sicher"@de ;
+        :has_provenance_contributor :saw ;
+        :has_provenance_resource :geburtsurkunde_dhguy ;
+        :has_provenance_date "2023-02-17"^^xsd:date
     |} ;
     :has_alternative_name :name_2 {|
-        :has_provenence_text "laut Aussage von Freunden"@de ;
+        :has_provenance_text "laut Aussage von Freunden"@de ;
         :has_comment "ist wohl sein Spitzname"@de ;
         :has_provenance_certainty "relativ sicher"@de
     |} .
@@ -216,9 +216,9 @@ lido:lido00774
     :has_begin_earliest "1989-01-01"^^xsd:date ;
     :has_begin_latest "1989-01-01"^^xsd:date ;
     :has_script :latin {|
-        :has_provenence_text "gesunder Menschenverstand"@de ;
+        :has_provenance_text "gesunder Menschenverstand"@de ;
         :has_comment "das sind alles lateinische Buchstaben" ;
-        :has_provenence_certainty "sicher" |} .
+        :has_provenance_certainty "sicher" |} .
 
 :dhgirl
     :has_alternative_name :name_4 .
