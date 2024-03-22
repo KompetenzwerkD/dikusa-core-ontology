@@ -93,28 +93,28 @@
     
 :dhguy
     :has_preferred_name :name_1 {|
-        :has_provenence_text "übernommen aus Geburtsurkunde"@de ;
-        :has_provenence_text "found in birth certificate"@en ;
-        :has_provenence_URI "https://www.geburtsregister.de/dhguy"^^xsd:anyURI ;
+        :has_provenance_text "übernommen aus Geburtsurkunde"@de ;
+        :has_provenance_text "found in birth certificate"@en ;
+        :has_provenance_URI "https://www.geburtsregister.de/dhguy"^^xsd:anyURI ;
         :has_comment "war leicht zu finden"@de ;
         :has_provenance_certainty "sicher"@de ;
-        :has_provenence_contributor :saw
+        :has_provenance_contributor :saw
     |} ;
     :has_alternative_name :name_2 {|
-        :has_provenence_text "laut Aussage von Freunden"@de ;
+        :has_provenance_text "laut Aussage von Freunden"@de ;
         :has_comment "ist wohl sein Spitzname"@de ;
         :has_provenance_certainty "relativ sicher"@de ;
-        :has_provenence_contributor :saw
+        :has_provenance_contributor :saw
     |} .
 
 :name_1
     :has_name_value "Dennis Hendrik Guy"@de ;
     :has_comment "eine bemerkenswerte Zeichenkette"@de ;
     :has_script :latin {|
-        :has_provenence_text "gesunder Menschenverstand"@de ;
+        :has_provenance_text "gesunder Menschenverstand"@de ;
         :has_comment "das sind alles lateinische Buchstaben"@de ;
         :has_provenance_certainty "sicher"@de ;
-        :has_provenence_contributor :saw
+        :has_provenance_contributor :saw
     |} .
 
 :name_2
@@ -122,7 +122,7 @@
     :has_begin_earliest "1989-01-01"^^xsd:date ;
     :has_begin_latest "1989-01-01"^^xsd:date ;
     :has_script :latin {|
-        :has_provenence_text "erneut gesunder Menschenverstand"@de ;
+        :has_provenance_text "erneut gesunder Menschenverstand"@de ;
         :has_comment "das sind wieder alles lateinische Buchstaben" ;
         :has_provenance_certainty "sicher" |} .
 
@@ -145,19 +145,19 @@
 
 :dhguy
     :has_gender :gender_1 {|
-        :has_provenence_text "laut Geburtsurkunde"@de ;
+        :has_provenance_text "laut Geburtsurkunde"@de ;
         :has_provenance_certainty "sicher"@de
     |} ;
     :has_birth :life_state_change_1 {|
-        :has_provenence_text "laut Geburtsurkunde"@de ;
+        :has_provenance_text "laut Geburtsurkunde"@de ;
         :has_provenance_certainty "sicher"@de
     |} ;
     :has_death :life_state_change_2 {|
-        :has_provenence_text "offizielle Angabe"@de ;
+        :has_provenance_text "offizielle Angabe"@de ;
         :has_provenance_certainty "unsicher"@de
     |} ;
     :has_death :life_state_change_3 {|
-        :has_provenence_text "Ergebnis von Nachforschungen"@de ;
+        :has_provenance_text "Ergebnis von Nachforschungen"@de ;
         :has_provenance_certainty "unsicher"@de
     |} . 
 
@@ -172,22 +172,22 @@
 :life_state_change_2
     :has_place :dresden ;
     :has_date_earliest "2011-05-11"^^xsd:date {|
-        :has_provenence_text "Leiche nie gefunden; Festsetzung durch Amtsarzt"
+        :has_provenance_text "Leiche nie gefunden; Festsetzung durch Amtsarzt"
     |} ;
     :has_date_latest "2011-05-11"^^xsd:date {|
-        :has_provenence_text "Leiche nie gefunden; Festsetzung durch Amtsarzt"
+        :has_provenance_text "Leiche nie gefunden; Festsetzung durch Amtsarzt"
     |} .
 
 
 :life_state_change_3
     :has_life_state_change_place :kreis_bautzen {|
-        :has_provenence_text "laut Aussage von Freunden war er zu einer dreitägigen Wanderung in dieser Region aufgebrochen"
+        :has_provenance_text "laut Aussage von Freunden war er zu einer dreitägigen Wanderung in dieser Region aufgebrochen"
     |} ;
     :has_date_earliest "2011-05-10"^^xsd:date {|
-        :has_provenence_text "Beginn der geplanten Wanderung"
+        :has_provenance_text "Beginn der geplanten Wanderung"
     |} ;
     :has_date_latest "2011-05-12"^^xsd:date {|
-        :has_provenence_text "Ende der geplanten Wanderung"
+        :has_provenance_text "Ende der geplanten Wanderung"
     |} .
     
 :dhguy
