@@ -9,6 +9,7 @@
 
 :person
     rdf:type rdfs:Class, sh:NodeShape  ;
+    rdfs:comment "A human being." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_id ;
     rdfs:subClassOf :entity_with_external_reference ;
@@ -19,6 +20,7 @@
     rdfs:subClassOf :entity_with_group_relation ;
     rdfs:subClassOf :entity_with_person_relation ;    
     rdfs:label "Person"@en ;
+    rdfs:label "Person"@de ;
     sh:property [
         sh:path :has_preferred_name ;
         sh:minCount 1
@@ -26,16 +28,20 @@
 
 :place
     rdf:type rdfs:Class ;
+    rdfs:comment "A general geographic entity, can range from countries to cities or districts to buildings." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_id ;
     rdfs:subClassOf :entity_with_external_reference ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_citation ;
     rdfs:subClassOf :entity_with_existence_change ;
-    rdfs:subClassOf :entity_with_person_relation .
+    rdfs:subClassOf :entity_with_person_relation ;
+    rdfs:label "Place"@en ;
+    rdfs:label "Ort"@de .
 
 :group
     rdf:type rdfs:Class ;
+    rdfs:comment "Different kinds of groups of people or general institutions, such as companies, clubs or schools." ;
     rdfs:subClassOf :actor ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_id ;
@@ -44,10 +50,13 @@
     rdfs:subClassOf :entity_with_citation ;
     rdfs:subClassOf :entity_with_location ;
     rdfs:subClassOf :entity_with_existence_change ;
-    rdfs:subClassOf :entity_with_person_relation .
+    rdfs:subClassOf :entity_with_person_relation ;
+    rdfs:label "Group"@en ;
+    rdfs:label "Gruppe"@de .
 
 :event
     rdf:type rdfs:Class ;
+    rdfs:comment "Any kind of event taking place, such as gatherings of people for various reasons." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_id ;
     rdfs:subClassOf :entity_with_external_reference ;
@@ -55,20 +64,26 @@
     rdfs:subClassOf :entity_with_citation ;
     rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_resource_relation ;
-    rdfs:subClassOf :entity_with_location .
+    rdfs:subClassOf :entity_with_location ;
+    rdfs:label "Event"@en ;
+    rdfs:label "Ereignis"@de .
 
 :work
     rdf:type rdfs:Class ;
+    rdfs:comment "Different types of written works, such as books, scientific papers, event programs." ;
     rdfs:subClassOf :entity_with_title ;
     rdfs:subClassOf :entity_with_id ;
     rdfs:subClassOf :entity_with_external_reference ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_citation ;
     rdfs:subClassOf :entity_with_author ;
-    rdfs:subClassOf :resource .
+    rdfs:subClassOf :resource ;
+    rdfs:label "Work"@en ;
+    rdfs:label "Werk"@de .
 
 :object
     rdf:type rdfs:Class ;
+    rdfs:comment "Any kind of physical object like pieces of art or monuments." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_id ;
     rdfs:subClassOf :entity_with_external_reference ;
@@ -76,75 +91,111 @@
     rdfs:subClassOf :entity_with_citation ;
     rdfs:subClassOf :entity_with_location ;
     rdfs:subClassOf :entity_with_actor_relation ;
-    rdfs:subClassOf :resource .
+    rdfs:subClassOf :resource ;
+    rdfs:label "Object"@en ;
+    rdfs:label "Objekt"@de .
 
 :resource
     rdfs:subClassOf :entity_with_event_relation ;
-    rdf:type rdfs:Class .
+    rdfs:comment "Any kind of resource, superclass of object and work." ;
+    rdf:type rdfs:Class ;
+    rdfs:label "Resource"@en ;
+    rdfs:label "Ressource"@de .
 
 # -----------------------
 
 
 :entity_with_person_relation
     rdf:type rdfs:Class ;
-    rdfs:label "entity with person relation" .
+    rdfs:comment "Internal superclass, all entities that can participate in direct relations with persons." ;
+    rdfs:label "Entity with person relation"@en ;
+    rdfs:label "Entität mit Personenrelation"@de .
 
 :entity_with_group_relation
     rdf:type rdfs:Class ;
-    rdfs:label "entity with group relation" .
+    rdfs:comment "Internal superclass, all entities that can participate in direct relations with groups." ;
+    rdfs:label "Entity with group relation"@en ;
+    rdfs:label "Entität mit Gruppenrelation"@de .
 
 :entity_with_place_relation
     rdf:type rdfs:Class ;
-    rdfs:label "entity with place relation" .
+    rdfs:comment "Internal superclass, all entities that can participate in direct relations with places." ;
+    rdfs:label "Entity with place relation"@en ;
+    rdfs:label "Entität mit Ortsrelation"@de .
 
 :person_relation
     rdf:type rdfs:Class ;
-    rdfs:label "person relation" .
+    rdfs:comment "Internal superclass, all relations where one participant is a person." ;
+    rdfs:label "Person relation"@en ;
+    rdfs:label "Personenrelation"@de .
 
 :group_relation
     rdf:type rdfs:Class ;
-    rdfs:label "group relation" .
+    rdfs:comment "Internal superclass, all relations where one participant is a group." ;
+    rdfs:label "Group relation"@en ;
+    rdfs:label "Gruppenrelation"@de .
 
 :place_relation
     rdf:type rdfs:Class ;
-    rdfs:label "place relation" .
+    rdfs:comment "Internal superclass, all relations where one participant is a place." ;
+    rdfs:label "Place relation"@en ;
+    rdfs:label "Ortsrelation"@de .
 
 :entity_with_occupation_value
     rdf:type rdfs:Class ;
-    rdfs:label "entity with occupation value" .
+    rdfs:comment "Internal superclass, all entities that can have an occupation." ;
+    rdfs:label "Entity with occupation value"@en ;
+    rdfs:label "Entität mit Beruf"@de .
 
 :entity_with_object
     rdf:type rdfs:Class ;
-    rdfs:label "entity with object" .
+    rdfs:comment "Internal superclass, entities that have direct relations with objects." ;
+    rdfs:label "Entity with object"@en ;
+    rdfs:label "Entität mit Objekt"@de .
 
 # --------------------------
 
 :has_name
     rdf:type rdf:Property ;
-    rdfs:label "has name" ;
+    rdfs:comment "Relationship between an entity and its name." ;
+    rdfs:label "has name"@en ;
+    rdfs:label "hat Name"@de ;
     rdfs:domain :entity_with_name ;
     rdfs:range :name .
 
 :has_name_i
     rdf:type rdf:Property ;
+    rdfs:comment "Inverse Relation to has_name." ;
+    rdfs:label "has name - inverse"@en ;
+    rdfs:label "hat Name - invers"@de ;
     owl:inverseOf :has_name .
 
 :has_preferred_name
     rdf:type rdf:Property ;
-    rdfs:label "has preferred name" ;
+    rdfs:comment "Relationship between an entity and its preferred name, subproperty of has_name." ;
+    rdfs:label "has preferred name"@en ;
+    rdfs:label "hat präferierten Namen"@de ;
     rdfs:subPropertyOf :has_name .
 
 :has_preferred_name_i
     rdf:type rdf:Property ;
+    rdfs:comment "Inverse relation to has_preferred_name" ;
+    rdfs:label "has preferred name - inverse"@en ;
+    rdfs:label "hat präferierten Namen - invers"@de ;
     owl:inverseOf :has_preferred_name .
 
 :has_alternative_name
     rdf:type rdf:Property ;
-    rdfs:label "has alternative name" ;
+    rdfs:comment "Relationship between an entity and its alternative name, subproperty of has_name." ;
+    rdfs:label "has alternative name"@en ;
+    rdfs:label "hat alternativen Namen"@de ;
     rdfs:subPropertyOf :has_name .
 
 :has_alternative_name_i
     rdf:type rdf:Property ;
+    rdfs:comment "Inverse relation to has_alternative_name." ;
+    rdfs:label "has alternative name - inverse"@en ;
+    rdfs:label "hat alternativen Namen - invers"@de ;
     owl:inverseOf :has_alternative_name .
 
 :has_preferred_name_subject_shape
@@ -173,9 +224,11 @@
 
 :name
     rdf:type rdfs:Class, sh:NodeShape  ;
+    rdfs:comment "The name-object of an entity." ;
     rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_script ;
-    rdfs:label "name" ;
+    rdfs:label "Name"@en ;
+    rdfs:label "Name"@de ;
     sh:property [
         sh:path :has_name_value ;
         sh:minCount 1 ;
@@ -188,7 +241,9 @@
 
 :has_name_value
     rdf:type rdf:Property ;
-    rdfs:label "has name value" ;
+    rdfs:comment "Relation between a name and its value (string)." ;
+    rdfs:label "has name value"@en ;
+    rdfs:label "hat Namenswert"@de ;
     rdfs:domain :name ;
     rdfs:range rdf:langString ;
     rdfs:subPropertyOf :has_main_value .
@@ -206,12 +261,17 @@
 
 :has_script
     rdf:type rdf:Property ;
-    rdfs:label "has script" ;
+    rdfs:comment "Relation between an entity and the writing script of its representation, such as Latin or Cyrillic." ;
+    rdfs:label "has script"@en ;
+    rdfs:label "hat Schreibsystem"@de ;
     rdfs:domain :entity_with_script ;
     rdfs:range :script .
 
 :has_script_i
     rdf:type rdf:Property ;
+    rdfs:comment "Inverse relation to has_script." ;
+    rdfs:label "has script - inverse"@en ;
+    rdfs:label "hat Schreibsystem - invers"@de ;
     owl:inverseOf :has_script .
 
 :has_script_subject_shape
@@ -228,6 +288,9 @@
 
 :script
     rdf:type rdfs:Class ;
+    rdfs:comment "The writing script of an entity." ;
+    rdfs:label "Script"@en ;
+    rdfs:label "Schreibsystem"@de ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
 
@@ -237,56 +300,68 @@
 
 :has_main_value
     rdf:type rdf:Property ;
-    rdfs:label "has main value" ;    
+    rdfs:comment "Relation between an entity and its central value, if such a feature exists." ;
+    rdfs:label "has main value"@en ;
+    rdfs:label "hat Hauptwert"@de ;
     rdfs:subPropertyOf rdf:value ;
     rdfs:subPropertyOf :has_value .
 
 :has_value
     rdf:type rdf:Property ;
+    rdfs:comment "Relation between an entity and a value." ;
     rdfs:range rdfs:Literal ;
-    rdfs:label "has value" .
+    rdfs:label "has value"@en ;
+    rdfs:label "hat Wert"@de .
 
 # -------------------
 
 # Properties for making provenance statements about triples
 # the following statements describe the origin of the fact not the action of entering it into the knowledge graph
 
-:has_provenence_text
+:has_provenance_text
     rdf:type rdf:Property ;
-    rdfs:label "has provenance text" ;
+    rdfs:comment "Property of a triple containing a textual description of its provenance." ;
+    rdfs:label "has provenance text"@en ;
+    rdfs:label "hat Provenienz-Text"@de ;
     rdfs:subPropertyOf :has_triple_value .
 
-:has_provenence_text_object_shape
+:has_provenance_text_object_shape
 	a sh:NodeShape ;
-    sh:targetObjectsOf :has_provenence_text ;
+    sh:targetObjectsOf :has_provenance_text ;
     sh:nodeKind sh:Literal .
 
-:has_provenence_resource
+:has_provenance_resource
     rdf:type rdf:Property ;
-    rdfs:label "has provenance resource" ;
+    rdfs:comment "Property of a triple containing a link to an IRI as its provenance." ;
+    rdfs:label "has provenance resource"@en ;
+    rdfs:label "hat Provenienz-Ressource"@de ;
     rdfs:domain rdf-star:Triple .
 
-:has_provenence_resource_object_shape
+:has_provenance_resource_object_shape
 	a sh:NodeShape ;
-    sh:targetObjectsOf :has_provenence_resource ;
+    sh:targetObjectsOf :has_provenance_resource ;
     sh:nodeKind sh:IRI .
 
-:has_provenence_URL
+:has_provenance_URL
     rdf:type rdf:Property ;
-    rdfs:label "has provenance URL" ;
+    rdfs:label "has provenance URL"@en ;
+    rdfs:label "hat Provenienz-URL"@de ;
+    rdfs:comment "Property of a triple containing a URL as its provenance." ;
     rdfs:subPropertyOf rdfs:seeAlso ;
     rdfs:subPropertyOf :has_triple_value .
 
-:has_provenence_URL_object_shape
+:has_provenance_URL_object_shape
 	a sh:NodeShape ;
-    sh:targetObjectsOf :has_provenence_URL ;
+    sh:targetObjectsOf :has_provenance_URL ;
     sh:nodeKind sh:Literal ;
     sh:datatype xsd:anyURI ;
     sh:pattern "^http" .
 
 :has_provenance_certainty
     rdf:type rdf:Property ;
-    rdfs:label "has provenance certainty" ;
+    rdfs:comment "Property of a triple describing how certain the statment is." ;
+    rdfs:label "has provenance certainty"@en ;
+    rdfs:label "hat Provenienz-Sicherheit"@de ;
     rdfs:subPropertyOf :has_triple_value .
 
 :has_provenance_certainty_object_shape
@@ -298,7 +373,9 @@
 
 :has_comment
     rdf:type rdf:Property ;
-    rdfs:label "has comment" ;
+    rdfs:label "has comment"@en ;
+    rdfs:label "hat Kommentar"@de ;
+    rdfs:comment "Property of a triple containing a general comment about the statement." ;
     rdfs:subPropertyOf  rdfs:comment ;
     rdfs:subPropertyOf :has_triple_value .
 
@@ -309,7 +386,9 @@
 
 :has_description
     rdf:type rdf:Property ;
-    rdfs:label "has description" ;
+    rdfs:label "has description"@en ;
+    rdfs:label "hat Beschreibung"@de ;
+    rdfs:comment "Property of a triple containing a description of the statement." ;
     rdfs:subPropertyOf :has_triple_value .
 
 :has_description_object_shape
@@ -320,45 +399,51 @@
 # Properties for making provenance statements about triples
 # the following statements describe the action of entering it into the knowledge graph
 
-# which group (institution or project) contributed this fact to the knowledge base
-:has_provenence_contributor
+:has_provenance_contributor
     rdf:type rdf:Property ;
-    rdfs:label "has provenance contributor" ;
+    rdfs:label "has provenance contributor"@en ;
+    rdfs:label "hat Provenienz-Beitragende:r"@de ;
+    rdfs:comment "Relation between a triple and a person or group that entered the information into the database." ;
     rdfs:domain rdf-star:Triple ;
-    rdfs:range :group .
+    rdfs:range :actor .
 
-:has_provenence_contributor_object_shape
+:has_provenance_contributor_object_shape
 	a sh:NodeShape ;
-    sh:targetObjectsOf :has_provenence_contributor ;
+    sh:targetObjectsOf :has_provenance_contributor ;
     sh:nodeKind sh:IRI ;
     sh:class :group .
 
-# the date the fact was entered into the graph
-:has_provenence_date
+:has_provenance_date
     rdf:type rdf:Property ;
-    rdfs:label "has provenance date" ;
+    rdfs:label "has provenance date"@en ;
+    rdfs:label "hat Provenienz-Datum"@de ;
+    rdfs:comment "Property of a triple containing the date it was entered into the database." ;
     rdfs:domain rdf-star:Triple ;
     rdfs:range xsd:date .
 
-:has_provenence_date_object_shape
+:has_provenance_date_object_shape
 	a sh:NodeShape ;
-    sh:targetObjectsOf :has_provenence_date ;
+    sh:targetObjectsOf :has_provenance_date ;
     sh:nodeKind sh:Literal ;
     sh:datatype xsd:date .
 
 # general property for statements on triples
 :has_triple_value
     rdf:type rdf:Property ;
+    rdfs:comment "General super-property for all properties having a triple as their domain and a literal as their range." ;
     rdfs:domain rdf-star:Triple ;
     rdfs:range rdfs:Literal ;
-    rdfs:label "has triple value" ;
+    rdfs:label "has triple value"@en ;
+    rdfs:label "hat Tripel-Wert"@de ;
     rdfs:subPropertyOf :has_value .
 
 # ----------------------
     
 :has_entity_description
     rdf:type rdf:Property ;
-    rdfs:label "has description" ;
+    rdfs:label "has entity-description"@en ;
+    rdfs:label "hat Entitätenbeschreibung"@de ;
+    rdfs:comment "Relation of an entity linking it to an object containing its general description." ;
     rdfs:domain :entity_with_description ;
     rdfs:range :entity_description .
 
@@ -376,11 +461,16 @@
 
 :has_entity_description_i
     rdf:type rdf:Property ;
+    rdfs:label "has description - inverse"@en ;
+    rdfs:label "hat Beschreibung - invers"@de ;
+    rdfs:comment "Inverse relation to has_entity_description" ;
     owl:inverseOf :has_entity_description .
 
 :entity_description rdf:type rdfs:Class, sh:NodeShape ;
     rdfs:subClassOf :entity_with_author ;
-    rdfs:label "entity description" ;
+    rdfs:label "entity description"@en ;
+    rdfs:label "Entitätenbeschreibung"@de ;
+    rdfs:comment "Contains the general description of an entity" ;
     sh:property [
         sh:path :has_entity_description_value ;
         sh:minCount 1
@@ -388,7 +478,9 @@
 
 :has_entity_descripton_value
     rdf:type rdf:Property ;
-    rdfs:label "has entity description value" ;
+    rdfs:label "has entity description value"@en ;
+    rdfs:label "hat Entitätenbeschreibungs-Wert"@de ;
+    rdfs:comment "Property containing the value of an entity_description." ;
     rdfs:domain :entity_description ;
     rdfs:subPropertyOf :has_main_value .
 
@@ -405,7 +497,9 @@
 
 :has_author
     rdf:type rdf:Property ;
-    rdfs:label "has author" ;
+    rdfs:label "has author"@en ;
+    rdfs:label "hat Autor"@de ;
+    rdfs:comment "Relation linking an entity to its author." ;
     rdfs:domain :entity_with_author ;
     rdfs:range :author .
 
@@ -423,11 +517,16 @@
 
 :has_author_i
     rdf:type rdf:Property ;
+    rdfs:comment "Inverse relation to has_author." ;
+    rdfs:label "has author - inverse"@en ;
+    rdfs:label "hat Autor - invers"@de ;
     owl:inverseOf :has_author .
 
 :author
     rdf:type rdfs:Class, sh:NodeShape  ;
-    rdfs:label "author" ;
+    rdfs:label "author"@en ;
+    rdfs:label "Autor"@de ;
+    rdfs:comment "The author of an entity." ;
     sh:property [
         sh:path :has_author_value ;
         sh:minCount 1
@@ -435,7 +534,9 @@
 
 :has_author_role
     rdf:type rdf:Property ;
-    rdfs:label "has author role" ;
+    rdfs:label "has author role"@en ;
+    rdfs:label "hat Autorenrolle"@de ;
+    rdfs:comment "Relation between an author and its role in the authoring process." ;
     rdfs:domain :author ;
     rdfs:range :author_role .
 
@@ -453,16 +554,23 @@
 
 :has_author_role_i
     rdf:type rdf:Property ;
+    rdfs:label "has author role - inverse"@en ;
+    rdfs:label "hat Autorenrolle - invers"@de ;
+    rdfs:comment "Inverse relation to has_author_role." ;
     owl:inverseOf :has_author_role .
 
 :author_role rdf:type rdfs:Class ;
+    rdfs:comment "The role of an author in the authoring process." ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_name ;
-    rdfs:label "author role" .
+    rdfs:label "author role"@en ;
+    rdfs:label "Autorenrolle"@de .
 
 :has_author_value
     rdf:type rdf:Property ;
-    rdfs:label "has author value" ;
+    rdfs:label "has author value"@en ;
+    rdfs:label "hat Autorenwert"@de ;
+    rdfs:comment "Relation linking an author entity to the actual person or group that did the authoring." ;
     rdfs:domain :author ;
     rdfs:range :actor .
 
@@ -480,59 +588,87 @@
 
 :has_author_value_i
     rdf:type rdf:Property ;
+    rdfs:label "has author value - inverse"@en ;
+    rdfs:label "hat Autorenwert - invers"@de ;
+    rdfs:comment "Inverse relation to has_author_value." ;
     owl:inverseOf :has_author_value .
 
-# general entity classes
+
+# general entity classes for hierarchical structuring of the classes
 
 :entity_with_author
      rdf:type rdfs:Class ;
-     rdfs:label "entity with author" .
+     rdfs:comment "All entities that can have an author." ;
+     rdfs:label "entity with author"@en ;
+    rdfs:label "Entität mit Autor"@de .
 
 :entity_with_citation
     rdf:type rdfs:Class ;
-    rdfs:label "entity with citation".
+    rdfs:comment "All entities that can be cited." ;
+    rdfs:label "entity with citation"@en ;
+    rdfs:label "Entität mit Zitation"@de .
 
 :entity_with_description
     rdf:type rdfs:Class ;
-    rdfs:label "entity with description".
+    rdfs:comment "All entities that can have an description." ;
+    rdfs:label "entity with description"@en ;
+    rdfs:label "Entität mit Beschreibung"@de .
 
 :entity_with_id
     rdf:type rdfs:Class ;
-    rdfs:label "entity with id" .
+    rdfs:comment "All entities that can be linked to an ID such as GND." ;
+    rdfs:label "entity with id"@en ;
+    rdfs:label "Entität mit ID"@de .
     
 :entity_with_name
     rdf:type rdfs:Class ;
-    rdfs:label "entity with name" .
+    rdfs:comment "All entities that can have a name." ;
+    rdfs:label "entity with name"@en ;
+    rdfs:label "Entität mit Name"@de .
 
 :entity_with_title
     rdf:type rdfs:Class ;
-    rdfs:label "entity with title" .
+    rdfs:comment "All entities that can have a title." ;
+    rdfs:label "entity with title"@en ;
+    rdfs:label "Entität mit Titel"@de .
 
 :entity_with_script
     rdf:type rdfs:Class ;
-    rdfs:label "entity with script" .
+    rdfs:comment "All entities that can have a writing script." ;
+    rdfs:label "entity with script"@en ;
+    rdfs:label "Entität mit Schreibsystem"@de .
 
 :entity_with_place
     rdf:type rdfs:Class ;
-    rdfs:label "entity with place" .
+    rdfs:comment "All entities that can be directly linked to a place." ;
+    rdfs:label "entity with place"@en ;
+    rdfs:label "Entität mit Ort"@de .
     
 :entity_with_group
     rdf:type rdfs:Class ;
-    rdfs:label "entity with group" .
+    rdfs:comment "All entities that can be directly linked to a group." ;
+    rdfs:label "entity with group"@en ;
+    rdfs:label "Entität mit Gruppe"@de .
 
 :entity_with_external_reference
     rdf:type rdfs:Class ;
-    rdfs:label "entity with external reference" .
+    rdfs:comment "All entities that can be linked to an external reference (URI)." ;
+    rdfs:label "entity with external reference"@en ;
+    rdfs:label "Entität mit externer Referenz"@de .
 
 :entity_with_existence_change
     rdf:type rdfs:Class ;
-    rdfs:label "entity with existence change" .
+    rdfs:comment "Entities such as places or groups, that might be established, dissolved or experience changes to their state of existence." ;
+    rdfs:label "entity with existence change"@en ;
+    rdfs:label "Entität mit Existenzveränderung"@de .
 
 # -----------------------
 
 :has_place
     rdf:type rdf:Property ;
-    rdfs:label "has place" ;
+    rdfs:label "has place"@en ;
+    rdfs:label "hat Ort"@de ;
+    rdfs:comment "Relation linking an entity to a place." ;
     rdfs:domain :entity_with_place ;
     rdfs:range :place .
 
@@ -550,13 +686,18 @@
 
 :has_place_i
     rdf:type rdf:Property ;
+    rdfs:label "has place - inverse"@en ;
+    rdfs:label "hat Ort - invers"@de ;
+    rdfs:comment "Inverse relation to has_place." ;
     owl:inverseOf :has_place .
 
 #------------
 
 :has_group
     rdf:type rdf:Property ;
-    rdfs:label "has group" ;
+    rdfs:label "has group"@en ;
+    rdfs:label "hat Gruppe"@de ;
+    rdfs:comment "Relation linking an entity to a group." ;
     rdfs:domain :entity_with_group ;
     rdfs:range :group .
 
@@ -574,6 +715,9 @@
 
 :has_group_i
     rdf:type rdf:Property ;
+    rdfs:label "has group - inverse"@en ;
+    rdfs:label "hat Gruppe - invers"@de ;
+    rdfs:comment "Inverse relation to has_group." ;
     owl:inverseOf :has_group .
     
     
@@ -581,7 +725,9 @@
 
 :has_gender
     rdf:type rdf:Property ;
-    rdfs:label "has gender" ;
+    rdfs:label "has gender"@en ;
+    rdfs:label "hat Geschlecht"@de ;
+    rdfs:comment "Relation between an entity (person) and its gender." ;
     rdfs:domain :person ;
     rdfs:range :gender .
 
@@ -599,11 +745,16 @@
 
 :has_gender_i
     rdf:type rdf:Property ;
+    rdfs:label "has gender - inverse"@en ;
+    rdfs:label "hat Geschlecht - invers"@de ;
+    rdfs:comment "Inverse relation to has_gender." ;
     owl:inverseOf :has_gender .
 
 :gender
     rdf:type rdfs:Class , sh:NodeShape ;
-    rdfs:label "gender" ;
+    rdfs:label "gender"@en ;
+    rdfs:label "Geschlecht"@de ;
+    rdfs:comment "The gender of an entity; can include a timeframe of validity if necessary." ;
     rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_description ;
     sh:property [
@@ -617,7 +768,9 @@
 
 :has_gender_value
     rdf:type rdf:Property ;
-    rdfs:label "has gender value" ;
+    rdfs:label "has gender value"@en ;
+    rdfs:label "hat Geschlechter-Wert"@de ;
+    rdfs:comment "Property relating to the actual gender of type gender_value, preferably from LIDO gender actor vocabulary." ;
     rdfs:domain :gender ;
     rdfs:range :gender_value .
 
@@ -635,19 +788,27 @@
 
 :has_gender_value_i
     rdf:type rdf:Property ;
+    rdfs:label "has gender value - inverse"@en ;
+    rdfs:label "hat Geschlechter-Wert - invers"@de ;
+    rdfs:comment "Inverse relation to has_gender_value." ;
     owl:inverseOf :has_gender_value .
 
 
 :gender_value
     rdf:type rdfs:Class ;
     rdfs:label "gender value" ;
+    rdfs:label "has gender value"@en ;
+    rdfs:label "Geschlechter-Wert"@de ;
+    rdfs:comment "The actual gender, preferably from LIDO gender actor vocabulary (see folder vocabularies on github)." ;
     rdfs:subClassOf :id .
 
 # ------------------------
 
 :has_birth
     rdf:type rdf:Property ;
-    rdfs:label "has birth" ;
+    rdfs:label "has birth"@en ;
+    rdfs:label "hat Geburtsereignis"@de ;
+    rdfs:comment "Relation linking an entity to its birth event." ;
     rdfs:subPropertyOf :has_life_state_change .
 
 :has_birth_subject_shape
@@ -664,11 +825,16 @@
 
 :has_birth_i
     rdf:type rdf:Property ;
+    rdfs:label "has birth - inverse"@en ;
+    rdfs:label "hat Geburt - invers"@de ;
+    rdfs:comment "Inverse relation to has_birth." ;
     owl:inverseOf :has_birth .
 
 :has_death
     rdf:type rdf:Property ;
-    rdfs:label "has death" ;
+    rdfs:label "has death"@en ;
+    rdfs:label "hat Todesereignis"@de ;
+    rdfs:comment "Relation linking an entity to its death event." ;
     rdfs:subPropertyOf :has_life_state_change .
 
 :has_death_subject_shape
@@ -685,21 +851,31 @@
 
 :has_death_i
     rdf:type rdf:Property ;
+    rdfs:label "has death - inverse"@en ;
+    rdfs:label "hat Todesereignis - invers"@de ;
+    rdfs:comment "Inverse relation to has_death." ;
     owl:inverseOf :has_death .
 
 :has_life_state_change
     rdf:type rdf:Property ;
-    rdfs:label "has life state change" ;
+    rdfs:label "has life state change"@en ;
+    rdfs:label "hat Lebensstatusänderung"@de ;
+    rdfs:comment "Change of life state, superclass to birth and death." ;
     rdfs:domain :person ;
     rdfs:range :life_state_change .
 
 :has_life_state_change_i
     rdf:type rdf:Property ;
+    rdfs:label "has life state change - inverse"@en ;
+    rdfs:label "hat Lebensstatusänderung - invers"@de ;
+    rdfs:comment "Inverse relation to has_life_state_change." ;
     owl:inverseOf :has_life_state_change .
 
 :life_state_change
     rdf:type rdfs:Class , sh:NodeShape ;
-    rdfs:label "life state change" ;
+    rdfs:label "life state change"@en ;
+    rdfs:label "Lebensstatusänderung"@de ;
+    rdfs:comment "A class consisting of birth and death events." ;
     rdfs:subClassOf :entity_with_timepoint ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
@@ -719,15 +895,21 @@
 
 :entity_with_timepoint
     rdf:type rdfs:Class ;
-    rdfs:label "timepoint related entity" .
+    rdfs:comment "Entity which is directly related to a point in time." ;
+    rdfs:label "timepoint related entity"@en ;
+    rdfs:label "Entität mit Zeitpunkt"@de .
 
 :entity_with_timeframe
     rdf:type rdfs:Class ;
-    rdfs:label "timeframe related entity" .
+    rdfs:comment "Entity which is directly related to a period of time." ;
+    rdfs:label "timeframe related entity"@en ;
+    rdfs:label "Entität mit Zeitspanne"@de .
 
 :has_date_earliest
     rdf:type rdf:Property ;
-    rdfs:label "has date earliest" ;
+    rdfs:label "has date earliest"@en ;
+    rdfs:label "hat frühestes Datum"@de ;
+    rdfs:comment "Relation linking an entity to a timepoint, specifically the earliest possible one." ;
     rdfs:domain :entity_with_timepoint ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf :has_value .
@@ -746,7 +928,9 @@
 
 :has_date_latest
     rdf:type rdf:Property ;
-    rdfs:label "has date latest" ;
+    rdfs:label "has date latest"@en ;
+    rdfs:label "hat spätestes Datum"@de ;
+    rdfs:comment "Relation linking an entity to a timepoint, specifically the latest possible one." ;
     rdfs:domain :entity_with_timepoint ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf :has_value .
@@ -765,7 +949,9 @@
 
 :has_begin_earliest
     rdf:type rdf:Property ;
-    rdfs:label "has begin earliest" ;
+    rdfs:label "has begin earliest"@en ;
+    rdfs:label "hat frühesten Beginn"@de ;
+    rdfs:comment "Relation linking an entity to the beginning of a period of time, specifically the earliest possible beginning." ;
     rdfs:domain :entity_with_timeframe ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf :has_value .
@@ -784,7 +970,9 @@
 
 :has_begin_latest
     rdf:type rdf:Property ;
-    rdfs:label "has begin latest" ;
+    rdfs:label "has begin latest"@en ;
+    rdfs:label "hat spätesten Beginn"@de ;
+    rdfs:comment "Relation linking an entity to the beginning of a period of time, specifically the latest possible beginning." ;
     rdfs:domain :entity_with_timeframe ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf :has_value .
@@ -803,7 +991,9 @@
 
 :has_end_earliest
     rdf:type rdf:Property ;
-    rdfs:label "has end earliest" ;
+    rdfs:label "has end earliest"@en ;
+    rdfs:label "hat frühestes Ende"@de ;
+    rdfs:comment "Relation linking an entity to the end of a period of time, specifically the earliest possible end." ;
     rdfs:domain :entity_with_timeframe ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf :has_value .
@@ -822,7 +1012,9 @@
 
 :has_end_latest
     rdf:type rdf:Property ;
-    rdfs:label "has end latest" ;
+    rdfs:label "has end latest"@en ;
+    rdfs:label "hat spätestes Ende"@de ;
+    rdfs:comment "Relation linking an entity to the end of a period of time, specifically the latest possible end." ;
     rdfs:domain :entity_with_timeframe ;
     rdfs:range xsd:date ;
     rdfs:subPropertyOf :has_value .
@@ -843,7 +1035,9 @@
 
 :has_place_relation
     rdf:type rdf:Property ;
-    rdfs:label "has place relation" ;
+    rdfs:label "has place relation"@en ;
+    rdfs:label "hat Ortsrelation"@de ;
+    rdfs:comment "Links an entity to a relation-entity which is itself connected to a place." ;
     rdfs:domain :entity_with_place_relation ;
     rdfs:range :place_relation .
 
@@ -861,11 +1055,16 @@
 
 :has_place_relation_i
     rdf:type rdf:Property ;
+    rdfs:label "has place relation - inverse"@en ;
+    rdfs:label "hat Ortsrelation - invers"@de ;
+    rdfs:comment "Inverse relation to has_place_relation." ;
     owl:inverseOf :has_place_relation .
 
 :has_person_relation
     rdf:type rdf:Property ;
-    rdfs:label "has person relation" ;
+    rdfs:label "has person relation"@en ;
+    rdfs:label "hat Personenrelation"@de ;
+    rdfs:comment "Links an entity to a relation-entity which is itself connected to a person." ;
     rdfs:domain :entity_with_person_relation ;
     rdfs:range :person_relation .
 
@@ -883,11 +1082,16 @@
 
 :has_person_relation_i
     rdf:type rdf:Property ;
+    rdfs:label "has person relation - inverse"@en ;
+    rdfs:label "hat Personenrelation - invers"@de ;
+    rdfs:comment "Inverse relation to has_person_relation." ;
     owl:inverseOf :has_person_relation .
 
 :person_place_relation
     rdf:type rdfs:Class , sh:NodeShape ;
-    rdfs:label "person place relation" ;
+    rdfs:label "person place relation"@en ;
+    rdfs:label "Relation zwischen Person und Ort"@de ;
+    rdfs:comment "An entity representing a relation where a place and a person play a central role." ;
     rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
@@ -904,7 +1108,9 @@
 
 :has_person_place_relation_type
     rdf:type rdf:Property ;
-    rdfs:label "has person place relation type" ;
+    rdfs:label "has person place relation type"@en ;
+    rdfs:label "hat Personen-Orts-Relation-Typ"@de ;
+    rdfs:comment "A relation linking a relation-entity to its type of relation." ;
     rdfs:domain :person_place_relation ;
     rdfs:range :person_place_relation_type .
 
@@ -922,11 +1128,16 @@
 
 :has_person_place_relation_type_i
     rdf:type rdf:Property ;
+    rdfs:label "has person place relation type - inverse"@en ;
+    rdfs:label "hat Personen-Orts-Relation-Typ - invers"@de ;
+    rdfs:comment "Inverse relation to has_person_place_relation." ;
     owl:inverseOf :has_person_place_relation_type .
 
 :person_place_relation_type
     rdf:type rdfs:Class ;
-    rdfs:label "person place relation type" ;
+    rdfs:label "person place relation type"@en ;
+    rdfs:label "Personen-Orts-Relation-Typ"@de ;
+    rdfs:comment "The type of a relation between a place and a person." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
 
@@ -934,7 +1145,9 @@
 
 :has_occupation
     rdf:type rdf:Property ;
-    rdfs:label "has occupation" ;
+    rdfs:label "has occupation"@en ;
+    rdfs:label "hat Beruf"@de ;
+    rdfs:comment "A relation linking an entity (person) to its occupation." ;
     rdfs:domain :person ;
     rdfs:range :occupation .
 
@@ -952,11 +1165,16 @@
 
 :has_occupation_i
     rdf:type rdf:Property ;
+    rdfs:label "has occupation - inverse"@en ;
+    rdfs:label "hat Beruf - invers"@de ;
+    rdfs:comment "Inverse relation to has_occupation." ;
     owl:inverseOf :has_occupation .
 
 :occupation
     rdf:type rdfs:Class , sh:NodeShape ;
-    rdfs:label "occupation" ;
+    rdfs:label "occupation"@en ;
+    rdfs:label "Beruf"@de ;
+    rdfs:comment "The occupation of an entity. Can be linked to a timeframe, a name, a description and the actual occupation value." ;
     rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
@@ -972,7 +1190,9 @@
 
 :has_occupation_value
     rdf:type rdf:Property ;
-    rdfs:label "has occupation value" ;
+    rdfs:label "has occupation value"@en ;
+    rdfs:label "hat Berufs-Wert"@de ;
+    rdfs:comment "Property with the actual occupation-value of an occupation-relation." ;
     rdfs:domain :entity_with_occupation_value ;
     rdfs:range :occupation_value .
 
@@ -990,12 +1210,16 @@
 
 :has_occupation_value_i
     rdf:type rdf:Property ;
+    rdfs:label "has occupation value - inverse"@en ;
+    rdfs:label "hat Berufs-Wert - invers"@de ;
+    rdfs:comment "Inverse relation to has_occupation_value." ;
     owl:inverseOf :has_occupation_value .
 
-# a vocabulary of occupations
+
 :occupation_value
     rdf:type rdfs:Class ;
     rdfs:label "occupation value" ;
+    rdfs:comment "The actual occupation-value of an occupation-relation. Use of a respective vocabulary such as HISCO is recommended." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :id .
 
@@ -1004,14 +1228,18 @@
 # actor as superset of person and group
 :actor
     rdf:type rdfs:Class ;
+    rdfs:comment "Superclass of person and group, entities that can act on their own behalf." ;
     rdfs:subClassOf :entity_with_object_relation ;
-    rdfs:label "actor" .
+    rdfs:label "actor"@en ;
+    rdfs:label "Akteur"@de .
 
 # ---------------------
 
 :has_id
     rdf:type rdf:Property ;
-    rdfs:label "has id" ;
+    rdfs:comment "Relation between an entity and one of its identifiers." ;
+    rdfs:label "has id"@en ;
+    rdfs:label "hat ID"@de ;
     rdfs:domain :entity_with_id ;
     rdfs:range :id .
 
@@ -1029,11 +1257,16 @@
 
 :has_id_i
     rdf:type rdf:Property ;
+    rdfs:label "has id - inverse"@en ;
+    rdfs:label "hat ID - invers"@de ;
+    rdfs:comment "Inverse relation to has_id" ;
     owl:inverseOf :has_id .
 
 :id
     rdf:type rdfs:Class , sh:NodeShape ;
-    rdfs:label "id" ;
+    rdfs:comment "An identifier for an entity, such as GND or wikidata IDs." ;
+    rdfs:label "id"@en ;
+    rdfs:label "ID"@de ;
     sh:property [
         sh:path :has_id_value ;
         sh:minCount 1 ; 
@@ -1045,7 +1278,9 @@
 
 :has_id_value
     rdf:type rdf:Property ;
-    rdfs:label "has id value" ;
+    rdfs:comment "The actual alphanumerical value of the identifier, such as the identifier 134597990 taken from GND." ;
+    rdfs:label "has id value"@en ;
+    rdfs:label "hat ID-Wert"@de ;
     rdfs:domain :id ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf :has_main_value .
@@ -1063,7 +1298,9 @@
 
 :has_id_type
     rdf:type rdf:Property ;
-    rdfs:label "has id type" ;
+    rdfs:comment "Relation to the type of an identifier." ;
+    rdfs:label "has id type"@en ;
+    rdfs:label "hat ID-Typ"@de ;
     rdfs:domain :id ;
     rdfs:range :id_type .
 
@@ -1081,11 +1318,16 @@
 
 :has_id_type_i
     rdf:type rdf:Property ;
+    rdfs:label "has id type - inverse"@en ;
+    rdfs:label "hat ID-Typ - invers"@de ;
+    rdfs:comment "The inverse relation to has_id_type." ;
     owl:inverseOf :has_id_type .
 
 :id_type
     rdf:type rdfs:Class ;
-    rdfs:label "id type" ;
+    rdfs:comment "The type of an identifier, the instituion or website issuing it, such as GND or Wikidata." ;
+    rdfs:label "id type"@en ;
+    rdfs:label "ID-Typ"@de ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
 
@@ -1093,7 +1335,9 @@
 
 :has_nationality
     rdf:type rdf:Property ;
-    rdfs:label "has nationality" ;
+    rdfs:comment "Relation between an entity and its nationality." ;
+    rdfs:label "has nationality"@en ;
+    rdfs:label "hat Nationalität"@de ;
     rdfs:domain :person ;
     rdfs:range :nationality .
 
@@ -1111,11 +1355,16 @@
 
 :has_nationality_i
     rdf:type rdf:Property ;
+    rdfs:label "has nationality - inverse"@en ;
+    rdfs:label "hat Nationalität - invers"@de ;
+    rdfs:comment "Inverse relation to has_nationality." ;
     owl:inverseOf :has_nationality .
 
 :nationality
     rdf:type rdfs:Class , sh:NodeShape ;
-    rdfs:label "nationality" ;
+    rdfs:comment "The nationality of an entity. Can be limited in time." ;
+    rdfs:label "nationality"@en ;
+    rdfs:label "Nationalität"@de ;
     rdfs:subClassOf :entity_with_timeframe ;
     sh:property [
         sh:path [ sh:inversePath :has_nationality ] ;
@@ -1128,7 +1377,9 @@
 
 :has_nationality_value
     rdf:type rdf:Property ;
-    rdfs:label "has nationality value" ;
+    rdfs:comment "Property containing the actual nationality value of an entity." ;
+    rdfs:label "has nationality value"@en ;
+    rdfs:label "hat Nationalitätenwert"@de ;
     rdfs:domain :nationality ;
     rdfs:range :nationality_value .
 
@@ -1146,19 +1397,26 @@
 
 :has_nationality_value_i
     rdf:type rdf:Property ;
+    rdfs:label "has nationality value - inverse"@en ;
+    rdfs:label "hat Nationalitätenwert - invers"@de ;
+    rdfs:comment "Inverse relation to has_nationality_value" ;
     owl:inverseOf :has_nationality_value .
 
 # ISO 3166-1 Alpha-3 Code
 :nationality_value
     rdf:type rdfs:Class ;
-    rdfs:label "nationality value" ;
+    rdfs:comment "The actual nationality value of an entity, subclass of place, only countries should be used." ;
+    rdfs:label "nationality value"@en ;
+    rdfs:label "Nationalitätenwert"@de ;
     rdfs:subClassOf :place .
 
 # -------------
 
 :has_group_relation
     rdf:type rdf:Property ;
-    rdfs:label "has group relation" ;
+    rdfs:comment "Links an entity to a relation-entity which is itself connected to a group." ;
+    rdfs:label "has group relation"@en ;
+    rdfs:label "hat Relation mit Gruppe"@de ;
     rdfs:domain :entity_with_group_relation ;
     rdfs:range :group_relation .
 
@@ -1176,11 +1434,16 @@
 
 :has_group_relation_i
     rdf:type rdf:Property ;
+    rdfs:label "has group relation - inverse"@en ;
+    rdfs:label "hat Relation mit Gruppe - invers"@de ;
+    rdfs:comment "Inverse relation to has_group_relation." ;
     owl:inverseOf :has_group_relation .
     
 :person_group_relation
     rdf:type rdfs:Class , sh:NodeShape ;
-    rdfs:label "person group relation" ;
+    rdfs:comment "An entity that representing a relation where a group and a person play a central role, such as a membership." ;
+    rdfs:label "person group relation"@en ;
+    rdfs:label "Personen-Gruppen-Relation"@de ;
     rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
@@ -1198,7 +1461,9 @@
 
 :has_person_group_relation_type
     rdf:type rdf:Property ;
-    rdfs:label "has person group relation type" ;
+    rdfs:comment "Property containing the type of a relation between a person and a group." ;
+    rdfs:label "has person group relation type"@en ;
+    rdfs:label "hat Typ der Personen-Gruppen-Relation"@de ;
     rdfs:domain :person_group_relation ;
     rdfs:range :person_group_relation_type .
 
@@ -1216,11 +1481,16 @@
 
 :has_person_group_relation_type_i
     rdf:type rdf:Property ;
+    rdfs:label "has person group relation type - inverse"@en ;
+    rdfs:label "hat Typ der Personen-Gruppen-Relation - invers"@de ;
+    rdfs:comment "Inverse relation of has_person_group_relation_type." ;
     owl:inverseOf :has_person_group_relation_type .
 
 :person_group_relation_type
     rdf:type rdfs:Class ;
-    rdfs:label "person group relation type" ;
+    rdfs:comment "The type of a relation between a person and a group, for example a membership, attendance at a school or university." ;
+    rdfs:label "person group relation type"@en ;
+    rdfs:label "Typ der Personen-Gruppen-Relation"@de ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
 
@@ -1229,7 +1499,9 @@
 
 :has_field_of_study
     rdf:type rdf:Property ;
-    rdfs:label "has field of study" ;
+    rdfs:comment "Property containing the field of study, used mainly for education-related relations." ;
+    rdfs:label "has field of study"@en ;
+    rdfs:label "hat Fachrichtung"@de ;
     rdfs:domain :person_group_relation ;
     rdfs:range xsd:string .
 
@@ -1246,7 +1518,9 @@
 
 :has_degree
     rdf:type rdf:Property ;
-    rdfs:label "has degree" ;
+    rdfs:comment "Property containing the degree of an education-related relation." ;
+    rdfs:label "has degree"@en ;
+    rdfs:label "hat Abschluss"@de ;
     rdfs:domain :person_group_relation ;
     rdfs:range xsd:string .
 
@@ -1265,7 +1539,9 @@
 
 :is_same_as_external_reference
     rdf:type rdf:Property ;
-    rdfs:label "is same as external reference" ;
+    rdfs:comment "Property containing a link to external reference (URL) about the entity, such as wikipedia-entries." ;
+    rdfs:label "is same as external reference"@en ;
+    rdfs:label "selbe Entität wie externe Referenz"@de ;
     rdfs:domain :entity_with_external_reference ;
     rdfs:range xsd:anyURI .
 
@@ -1286,7 +1562,9 @@
 
 :person_person_relation
     rdf:type rdfs:Class , sh:NodeShape ;
-    rdfs:label "person person relation" ;
+    rdfs:comment "An entity representing a relation where (at least) two persons play a central role." ;
+    rdfs:label "person person relation"@en ;
+    rdfs:label "Person-Person-Relation"@de ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :person_relation ;
@@ -1298,7 +1576,9 @@
 
 :has_person_person_relation_type
     rdf:type rdf:Property ;
-    rdfs:label "has person person relation type" ;
+    rdfs:comment "Relates a relation between persons with its respective type, such as friendship." ;
+    rdfs:label "has person person relation type"@en ;
+    rdfs:label "hat Typ der Person-Person-Relation"@de ;
     rdfs:domain :person_person_relation ;
     rdfs:range :person_person_relation_type .
 
@@ -1316,20 +1596,24 @@
 
 :has_person_person_relation_type_i
     rdf:type rdf:Property ;
+    rdfs:label "has person person relation type - inverse"@en ;
+    rdfs:label "hat Typ der Person-Person-Relation - invers"@de ;
+    rdfs:comment "Inverse relation to has_person_person_relation_type." ;
     owl:inverseOf :has_person_person_relation_type .
 
-# needs a vocabulary
 :person_person_relation_type
     rdf:type rdfs:Class ;
-    rdfs:label "person_relation type" ;
+    rdfs:comment "The type of a relation between persons, such as friendship." ;
+    rdfs:label "person person relation type"@en ;
+    rdfs:label "Typ der Person-Person-Relation"@de ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
 
-# for asymetric relations like teacher/student
-# uses rdf-star syntax (is attributed to a triple) to specify the property linking person and relation further
 :has_person_person_relation_role
     rdf:type rdf:Property ;
-    rdfs:label "has person person relation role" ;
+    rdfs:comment "A relation for specifying the role of a person in a relation between persons further, used for asymetric person-person-relations like teacher and student, relates a triple (an RDF-statement) with this role-information." ;
+    rdfs:label "has person person relation role"@en ;
+    rdfs:label "hat Rolle in der Person-Person-Relation"@de ;
     rdfs:domain rdf-star:Triple ;
     rdfs:range :person_person_relation_role .
 
@@ -1341,19 +1625,26 @@
 
 :has_person_person_relation_role_i
     rdf:type rdf:Property ;
+    rdfs:label "has person person relation role - inverse"@en ;
+    rdfs:label "hat Rolle in der Person-Person-Relation - invers"@de ;
+    rdfs:comment "Inverse relation to has_person_person_relation_role." ;
     owl:inverseOf :has_person_person_relation_role .
 
 # vocabulary needed (all roles from asymetric :person_person_relation_type-vocabulary)
 :person_person_relation_role
     rdf:type rdfs:Class ;
-    rdfs:label "person person relation role" ;
+    rdfs:comment "The role of a person in a relation between persons, used for asymetric person-person-relations like teacher and student." ;
+    rdfs:label "person person relation role"@en ;
+    rdfs:label "Rolle in der Person-Person-Relation"@de ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
 # ---------------------
 
 :has_citation
     rdf:type rdf:Property ;
-    rdfs:label "has citation" ;
+    rdfs:comment "A relation between an entity and a citation where the entity is mentioned." ;
+    rdfs:label "has citation"@en ;
+    rdfs:label "hat Zitation"@de ;
     rdfs:domain :entity_with_citation ;
     rdfs:range :citation .
 
@@ -1371,11 +1662,16 @@
 
 :has_citation_i
     rdf:type rdf:Property ;
+    rdfs:label "has citation - inverse"@en ;
+    rdfs:label "hat Zitation - invers"@de ;
+    rdfs:comment "Inverse relation to has_citation." ;
     owl:inverseOf :has_citation .
 
 :citation
     rdf:type rdfs:Class, sh:NodeShape ;
-    rdfs:label "citation" ;
+    rdfs:label "citation"@en ;
+    rdfs:label "Zitation"@de ;
+    rdfs:comment "A citation where an entity is mentioned, is related to this entity and to a resource of class work." ;
     rdfs:subClassOf :entity_with_description ;
     sh:property [
         sh:path [ sh:inversePath :has_citation ] ;
@@ -1394,7 +1690,9 @@
 
 :has_citation_resource
     rdf:type rdf:Property ;
-    rdfs:label "has citation resource" ;
+    rdfs:comment "A relation between a citation and the resource where this citation is to be found." ;
+    rdfs:label "has citation resource"@en ;
+    rdfs:label "hat Zitationsressource"@de ;
     rdfs:domain :citation ;
     rdfs:range :work ;
     rdfs:subPropertyOf rdf:value .
@@ -1413,11 +1711,16 @@
 
 :has_citation_resource_i
     rdf:type rdf:Property ;
+    rdfs:label "has citation resource - inverse"@en ;
+    rdfs:label "hat Zitationsressource - invers"@de ;
+    rdfs:comment "Inverse relation to has_citation_resource." ;
     owl:inverseOf :has_citation_resource .
 
 :has_citation_text
     rdf:type rdf:Property ;
-    rdfs:label "has citation text" ;
+    rdfs:comment "A relation between a citation and a string which represents the text of interest." ;
+    rdfs:label "has citation text"@en ;
+    rdfs:label "hat Zitationstext"@de ;
     rdfs:domain :citation ;
     rdfs:range xsd:string ;
     rdfs:subPropertyOf :has_value .
@@ -1437,7 +1740,9 @@
 
 :has_place_type
     rdf:type rdf:Property ;
-    rdfs:label "has place type" ;
+    rdfs:comment "A relation for specifying the type of a place." ;
+    rdfs:label "has place type"@en ;
+    rdfs:label "hat Art des Ortes"@de ;
     rdfs:domain :place ;
     rdfs:range :place_type .
 
@@ -1455,17 +1760,25 @@
 
 :has_place_type_i
     rdf:type rdf:Property ;
+    rdfs:label "has place type - inverse"@en ;
+    rdfs:label "hat Art des Ortes - invers"@de ;
+    rdfs:comment "The inverse relation to has_place_type" ;
     owl:inverseOf :has_place_type .
 
 :place_type
     rdf:type rdfs:Class ;
+    rdfs:comment "Specifies the type of a place, e.g. country, federal state, street." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "place type" .
+    rdfs:label "place type"@en ;
+    rdfs:label "Art des Ortes"@de .
+
 # -----------------
 :is_part_of_place
     rdf:type rdf:Property ;
-    rdfs:label "is part of place" ;
+    rdfs:comment "A relation between a place and a part_of_place_relation, specifies that the specific place is part of another place." ;
+    rdfs:label "is part of place"@en ;
+    rdfs:label "ist Teil des Ortes"@de ;
     rdfs:domain :place ;
     rdfs:range :part_of_place_relation .
 
@@ -1483,14 +1796,19 @@
 
 :is_part_of_place_i
     rdf:type rdf:Property ;
+    rdfs:label "is part of place - inverse"@en ;
+    rdfs:label "ist Teil des Ortes - invers"@de ;
+    rdfs:comment "Inverse relation to is_part_of_place." ;
     owl:inverseOf :is_part_of_place .
 
 :part_of_place_relation
     rdf:type rdfs:Class ;
+    rdfs:comment "Central entity for describing a relation between two places where one is the part of the other. has_place-relation is used to link to the hypernym." ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_place ;
     rdfs:subClassOf :entity_with_timeframe ;
-    rdfs:label "part of place relation" ;
+    rdfs:label "part of place relation"@en ;
+    rdfs:label "Teil des Ortes-Relation"@de ;
     sh:property [
         sh:path [ sh:inversePath :is_part_of_place ] ;
         sh:minCount 1
@@ -1504,7 +1822,9 @@
 
 :has_begin_of_existence
     rdf:type rdf:Property ;
-    rdfs:label "has begin of existence" ;
+    rdfs:comment "Relation between entities (mainly geographical ones like cities, countries or group entities) and the event that is marked as the beginning of their existence." ;
+    rdfs:label "has begin of existence"@en ;
+    rdfs:label "hat Beginn der Existenz"@de ;
     rdfs:domain :entity_with_existence_change ;
     rdfs:range :change_of_existence .
 
@@ -1522,12 +1842,17 @@
 
 :has_begin_of_existence_i
     rdf:type rdf:Property ;
+    rdfs:label "has begin of existence - inverse"@en ;
+    rdfs:label "hat Beginn der Existenz - invers"@de ;
+    rdfs:comment "Inverse relation to has_begin_of_existence." ;
     owl:inverseOf :has_begin_of_existence .
 
 :begin_of_existence
     rdf:type rdfs:Class ;
+    rdfs:comment "The event that is marked as the beginning of the existence of an entity, aimes primarily at geographical entities like cities or countries or at groups, can have a type" ;
     rdfs:subClassOf :change_of_existence ;
-    rdfs:label "begin of existence" ;
+    rdfs:label "begin of existence"@en ;
+    rdfs:label "Beginn der Existenz"@de ;
         sh:property [
         sh:path [ sh:inversePath :has_begin_of_existence ] ;
         sh:minCount 1
@@ -1536,7 +1861,9 @@
 # foundation, becoming abandoned, splitting ... of places
 :has_change_of_place_existence_type
     rdf:type rdf:Property ;
-    rdfs:label "has change of place existence type" ;
+    rdfs:comment "Relation to the type of an event that is marked as the beginning, end or as a change of the existence of an entity of type place." ;
+    rdfs:label "has change of place existence type"@en ;
+    rdfs:label "hat Typ der Änderung der Existenz eines Ortes"@de ;
     rdfs:domain :change_of_existence ;
     rdfs:range :change_of_place_existence_type .
 
@@ -1554,18 +1881,24 @@
 
 :has_change_of_place_existence_type_i
     rdf:type rdf:Property ;
+    rdfs:label "has change of place existence type - inverse"@en ;
+    rdfs:label "hat Typ der Änderung der Existenz eines Ortes - invers"@de ;
+    rdfs:comment "Inverse relation to has_change_of_place_existence_type." ;
     owl:inverseOf :has_change_of_place_existence_type .
 
 :change_of_place_existence_type
     rdf:type rdfs:Class ;
+    rdfs:comment "The type of an event that is marked as the beginning, end or as a change of the existence of an entity of type place." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "change of place existence type" .
+    rdfs:label "change of place existence type"@en ;
+    rdfs:label "Typ der Änderung der Existenz eines Ortes"@de .
 
-# foundation, dissolution ... of groups
 :has_change_of_group_existence_type
     rdf:type rdf:Property ;
-    rdfs:label "has change of group existence type" ;
+    rdfs:comment "Relation to the type of an event that is marked as the beginning, end or as a change of the existence of an entity of type group, like founding, dissolution." ;
+    rdfs:label "has change of group existence type"@en ;
+    rdfs:label "hat Typ der Änderung der Existenz einer Gruppe"@de ;
     rdfs:domain :change_of_existence ;
     rdfs:range :change_of_group_existence_type .
 
@@ -1583,17 +1916,24 @@
 
 :has_change_of_group_existence_type_i
     rdf:type rdf:Property ;
+    rdfs:label "has change of group existence type - inverse"@en ;
+    rdfs:label "hat Typ der Änderung der Existenz einer Gruppe - invers"@de ;
+    rdfs:comment "Inverse relation to has_change_of_group_existence_type." ;
     owl:inverseOf :has_change_of_group_existence_type .
 
 :change_of_group_existence_type
     rdf:type rdfs:Class ;
+    rdfs:comment "The type of an event that is marked as the beginning, end or as a change of the existence of an entity of type group, like founding, dissolution." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "change of group existence type" .
+    rdfs:label "change of group existence type"@en ;
+    rdfs:label "Typ der Änderung der Existenz einer Gruppe"@de .
 
 :has_end_of_existence
     rdf:type rdf:Property ;
-    rdfs:label "has end of existence" ;
+    rdfs:comment "Relation between entities (mainly geographical ones like cities, countries or group entities) and the event that is marked as the end of their existence." ;
+    rdfs:label "has end of existence"@en ;
+    rdfs:label "hat Ende der Existenz"@de ;
     rdfs:domain :entity_with_existence_change ;
     rdfs:range :change_of_existence .
 
@@ -1611,12 +1951,17 @@
 
 :has_end_of_existence_i
     rdf:type rdf:Property ;
+    rdfs:label "has end of existence - inverse"@en ;
+    rdfs:label "hat Ende der Existenz - invers"@de ;
+    rdfs:comment "Inverse relation to has_end_of_existence." ;
     owl:inverseOf :has_end_of_existence .
 
 :end_of_existence
     rdf:type rdfs:Class ;
+    rdfs:comment "The event that is marked as the end of the existence of an entity, aimes primarily at geographical entities like cities or countries or at groups, can have a type" ;
     rdfs:subClassOf :change_of_existence ;
-    rdfs:label "end of existence" ;
+    rdfs:label "end of existence"@en ;
+    rdfs:label "Ende der Existenz"@de ;
         sh:property [
         sh:path [ sh:inversePath :has_end_of_existence ] ;
         sh:minCount 1
@@ -1625,8 +1970,10 @@
 
 :change_of_existence
     rdf:type rdfs:Class ;
+    rdfs:comment "Superclass for the events marked as the beginning end or change of the existence of an entity, subclass of event" ;
     rdfs:subClassOf :event ;
-    rdfs:label "change of existence" ;
+    rdfs:label "change of existence"@en ;
+    rdfs:label "Änderung der Existenz"@de ;
     sh:or (
         [
         sh:path [ sh:inversePath :has_end_of_existence ] ;
@@ -1644,7 +1991,9 @@
 
 :has_change_of_existence
     rdf:type rdf:Property ;
-    rdfs:label "has change of existence" ;
+    rdfs:comment "Relation between entities (mainly geographical ones like cities, countries or group entities) and the event that is marked as a change to their existence, like the incorporation of a place into another one." ;
+    rdfs:label "has change of existence"@en ;
+    rdfs:label "hat Änderung der Existenz"@de ;
     rdfs:domain :entity_with_existence_change ;
     rdfs:range :change_of_existence .
 
@@ -1662,6 +2011,9 @@
 
 :has_change_of_existence_i
     rdf:type rdf:Property ;
+    rdfs:label "has change of existence - inverse"@en ;
+    rdfs:label "hat Änderung der Existenz - invers"@de ;
+    rdfs:comment "Inverse relation to has_change_of_existence." ;
     owl:inverseOf :has_change_of_existence .
 
 #------------------------
@@ -1669,7 +2021,9 @@
 #linking to related places (becomes part of a place, is divided from this place)
 :has_related_place
     rdf:type rdf:Property ;
-    rdfs:label "has related place" ;
+    rdfs:comment "Relation between an existential event for places (beginning, end, change of existence) and a second place that is involved, such as the city a village is incorporated into." ;
+    rdfs:label "has related place"@en ;
+    rdfs:label "hat assoziierten Ort"@de ;
     rdfs:domain :change_of_existence ;
     rdfs:range :place .
 
@@ -1687,12 +2041,17 @@
 
 :has_related_place_i
     rdf:type rdf:Property ;
+    rdfs:label "has related place - inverse"@en ;
+    rdfs:label "hat assoziierten Ort - invers"@de ;
+    rdfs:comment "Inverse relation to has_related_place." ;
     owl:inverseOf :has_related_place .
 
 #linking to related groups (group became part of another group...)
 :has_related_group
     rdf:type rdf:Property ;
-    rdfs:label "has related group" ;
+    rdfs:comment "Relation between an existential event for groups (beginning, end, change of existence) and a second group that is involved, such as the larger club another club is incorporated into." ;
+    rdfs:label "has related group"@en ;
+    rdfs:label "hat assoziierte Gruppe"@de ;
     rdfs:domain :change_of_existence ;
     rdfs:range :group .
 
@@ -1710,13 +2069,18 @@
 
 :has_related_group_i
     rdf:type rdf:Property ;
+    rdfs:label "has related group - inverse"@en ;
+    rdfs:label "hat assoziierte Gruppe - invers"@de ;
+    rdfs:comment "Inverse relation to has_related_group." ;
     owl:inverseOf :has_related_group .
 
 # -----------------------
 
 :has_coordinates
     rdf:type rdf:Property ;
-    rdfs:label "has coordinates" ;
+    rdfs:comment "Relation between a place and its geographical coordinates." ;
+    rdfs:label "has coordinates"@en ;
+    rdfs:label "hat Koordinaten"@de ;
     rdfs:domain :place ;
     rdfs:range :coordinates .
 
@@ -1734,13 +2098,18 @@
 
 :has_coordinates_i
     rdf:type rdf:Property ;
+    rdfs:label "has coordinates - inverse"@en ;
+    rdfs:label "hat Koordinaten - invers"@de ;
+    rdfs:comment "Inverse relation to has_coordinates." ;
     owl:inverseOf :has_coordinates .
 
 :coordinates
     rdf:type rdfs:Class ;
+    rdfs:comment "The geographical coordinates of a place, can be further described e.g. with a period of time." ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_timeframe ;
-    rdfs:label "coordinates" ;
+    rdfs:label "coordinates"@en ;
+    rdfs:label "Koordinaten"@de ;
     sh:property [
         sh:path [ sh:inversePath :has_coordinates ] ;
         sh:minCount 1
@@ -1753,7 +2122,9 @@
 
 :has_coordinates_value
     rdf:type rdf:Property ;
-    rdfs:label "has coordinates value" ;
+    rdfs:comment "Relation between geographical coordinates of a place and the actual value." ;
+    rdfs:label "has coordinates value"@en ;
+    rdfs:label "hat Koordinaten-Wert"@de ;
     rdfs:domain :coordinates ;
     rdfs:range xsd:string .    
 
@@ -1772,7 +2143,9 @@
 
 :has_address
     rdf:type rdf:Property ;
-    rdfs:label "has address" ;
+    rdfs:comment "Relation between a place and its adress." ;
+    rdfs:label "has address"@en ;
+    rdfs:label "hat Adresse"@de ;
     rdfs:domain :place ;
     rdfs:range :address .
 
@@ -1790,13 +2163,18 @@
 
 :has_address_i
     rdf:type rdf:Property ;
+    rdfs:label "has address - inverse"@en ;
+    rdfs:label "hat Adresse - invers"@de ;
+    rdfs:comment "Inverse relation to has_address." ;
     owl:inverseOf :has_address .
 
 :address
     rdf:type rdfs:Class ;
+    rdfs:comment "The address of a place, can be limited to a specific time period." ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_timeframe ;
-    rdfs:label "address" ;
+    rdfs:label "address"@en ;
+    rdfs:label "Adresse"@de ;
     sh:property [
         sh:path [ sh:inversePath :has_address ] ;
         sh:minCount 1
@@ -1804,7 +2182,9 @@
 
 :has_country
     rdf:type rdf:Property ;
-    rdfs:label "has country" ;
+    rdfs:comment "Relation between an address and the country it is situated in." ;
+    rdfs:label "has country"@en ;
+    rdfs:label "hat Land"@de ;
     rdfs:domain :address ;
     rdfs:range :place .    
 
@@ -1820,9 +2200,18 @@
     sh:nodeKind sh:IRI ;
     sh:class :place .
 
+:has_country_i
+    rdf:type rdf:Property ;
+    rdfs:label "has country - inverse"@en ;
+    rdfs:label "hat Land - invers"@de ;
+    rdfs:comment "Inverse relation to has_country." ;
+    owl:inverseOf :has_country .
+
 :has_city
     rdf:type rdf:Property ;
-    rdfs:label "has town" ;
+    rdfs:comment "Relation between an address and the city it is situated in." ;
+    rdfs:label "has city"@en ;
+    rdfs:label "hat Stadt"@de ;
     rdfs:domain :address ;
     rdfs:range :place .    
 
@@ -1838,9 +2227,18 @@
     sh:nodeKind sh:IRI ;
     sh:class :place .
 
+:has_city_i
+    rdf:type rdf:Property ;
+    rdfs:label "has city - inverse"@en ;
+    rdfs:label "hat Stadt - invers"@de ;
+    rdfs:comment "Inverse relation to has_city." ;
+    owl:inverseOf :has_city .
+
 :has_postcode
     rdf:type rdf:Property ;
-    rdfs:label "has postcode" ;
+    rdfs:comment "Relation between an address and its postcode." ;
+    rdfs:label "has postcode"@en ;
+    rdfs:label "hat Postleitzahl"@de ;
     rdfs:domain :address ;
     rdfs:range rdfs:Literal .    
 
@@ -1857,7 +2255,9 @@
 
 :has_street_address
     rdf:type rdf:Property ;
-    rdfs:label "has street address" ;
+    rdfs:comment "Relation between an address-object and its actual street address as a literal." ;
+    rdfs:label "has street address"@en ;
+    rdfs:label "hat Straßenadresse"@de ;
     rdfs:domain :address ;
     rdfs:range rdfs:Literal .    
 
@@ -1876,7 +2276,9 @@
 
 :has_location
     rdf:type rdf:Property ;
-    rdfs:label "has location" ;
+    rdfs:label "has location"@en ;
+    rdfs:label "hat Standort"@de ;
+    rdfs:comment "Relation between an entity and its location." ;
     rdfs:domain :entity_with_location ;
     rdfs:range :location .
 
@@ -1894,14 +2296,19 @@
 
 :has_location_i
     rdf:type rdf:Property ;
+    rdfs:label "has location - inverse"@en ;
+    rdfs:label "hat Standort - invers"@de ;
+    rdfs:comment "Inverse relation to has_location." ;
     owl:inverseOf :has_location .
 
 :location
     rdf:type rdfs:Class ;
+    rdfs:comment "The location of an entity, can be related to a place, can be further described using a timespan." ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_place ;
     rdfs:subClassOf :entity_with_timeframe ;
-    rdfs:label "location" ;
+    rdfs:label "location"@en ;
+    rdfs:label "Standort"@de ;
     sh:property [
         sh:path [ sh:inversePath :has_location ] ;
         sh:minCount 1
@@ -1915,7 +2322,9 @@
 
 :has_event_type
     rdf:type rdf:Property ;
-    rdfs:label "has event type" ;
+    rdfs:comment "Relation between an event and its type." ;
+    rdfs:label "has event type"@en ;
+    rdfs:label "hat Eventtyp"@de ;
     rdfs:domain :event ;
     rdfs:range :event_type .
 
@@ -1933,17 +2342,24 @@
 
 :has_event_type_i
     rdf:type rdf:Property ;
+    rdfs:label "has event type - inverse"@en ;
+    rdfs:label "hat Eventtyp - invers"@de ;
+    rdfs:comment "Inverse relation to has_event_type." ;
     owl:inverseOf :has_event_type .
 
 :event_type
     rdf:type rdfs:Class ;
+    rdfs:comment "The type of an event." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "event type" .
+    rdfs:label "event type"@en ;
+    rdfs:label "Eventtyp"@de .
 
 :has_topic
     rdf:type rdf:Property ;
-    rdfs:label "has topic" ;
+    rdfs:comment "Relation between an event and its topic." ;
+    rdfs:label "has topic"@en ;
+    rdfs:label "hat Thema"@de ;
     rdfs:domain :event ;
     rdfs:range :topic .
 
@@ -1961,17 +2377,24 @@
 
 :has_topic_i
     rdf:type rdf:Property ;
+    rdfs:label "has topic - inverse"@en ;
+    rdfs:label "hat Thema - invers"@de ;
+    rdfs:comment "Inverse relation to has_topic." ;
     owl:inverseOf :has_topic .
 
 :topic
     rdf:type rdfs:Class ;
+    rdfs:comment "The topic an event is about." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "event type" .
+    rdfs:label "topic"@en ;
+    rdfs:label "Thema"@de .
 
 :is_part_of_event
     rdf:type rdf:Property ;
-    rdfs:label "is part of event" ;
+    rdfs:comment "Relation between two events where one event is part of the other." ;
+    rdfs:label "is part of event"@en ;
+    rdfs:label "ist Teil des Events"@de ;
     rdfs:domain :event ;
     rdfs:range :event .
 
@@ -1989,11 +2412,16 @@
 
 :is_part_of_event_i
     rdf:type rdf:Property ;
+    rdfs:label "is part of event - inverse"@en ;
+    rdfs:label "ist Teil des Events - invers"@de ;
+    rdfs:comment "Inverse relation to is_part_of_event." ;
     owl:inverseOf :is_part_of_event .
 
 :has_subsequent_event
     rdf:type rdf:Property ;
-    rdfs:label "has subsequent event" ;
+    rdfs:comment "Relation between two events where one event is subsequent to the other." ;
+    rdfs:label "has subsequent event"@en ;
+    rdfs:label "hat anschließendes Event"@de ;
     rdfs:domain :event ;
     rdfs:range :event .
 
@@ -2011,11 +2439,16 @@
 
 :has_subsequent_event_i
     rdf:type rdf:Property ;
+    rdfs:comment "Inverse relation to has_subsequent_event." ;
+    rdfs:label "has subsequent event - inverse"@en ;
+    rdfs:label "hat anschließendes Event - invers"@de ;
     owl:inverseOf :has_subsequent_event .
 
 :has_participant
     rdf:type rdf:Property ;
-    rdfs:label "has participant" ;
+    rdfs:comment "Relation between an event and one of its participants." ;
+    rdfs:label "has participant"@en ;
+    rdfs:label "hat Teilnehmer:in"@de ;
     rdfs:domain :event ;
     rdfs:range :participant .
 
@@ -2033,14 +2466,19 @@
 
 :has_participant_i
     rdf:type rdf:Property ;
+    rdfs:label "has participant - inverse"@en ;
+    rdfs:label "hat Teilnehmer:in - invers"@de ;
+    rdfs:comment "Inverse relation to has_participant." ;
     owl:inverseOf :has_participant .
 
 
 :participant
     rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:comment "An participant of an event, needs to be related to an actor such as a person, can be further described with a timespan." ;
     rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "participant" ;
+    rdfs:label "participant"@en ;
+    rdfs:label "Teilnehmer:in"@de ;
     sh:property [
         sh:path [ sh:inversePath :has_participant ] ;
         sh:minCount 1
@@ -2052,7 +2490,9 @@
 
 :has_participant_value
     rdf:type rdf:Property ;
-    rdfs:label "has participant value" ;
+    rdfs:comment "Relation between a participant and the actual actor (e.g. a person) that participated." ;
+    rdfs:label "has participant value"@en ;
+    rdfs:label "hat Teilnehmer:in-Wert"@de ;
     rdfs:domain :participant ;
     rdfs:range :actor .
 
@@ -2070,11 +2510,16 @@
 
 :has_participant_value_i
     rdf:type rdf:Property ;
+    rdfs:label "has participant value - inverse"@en ;
+    rdfs:label "hat Teilnehmer:in-Wert - invers"@de ;
+    rdfs:comment "Inverse relation to has_participant_value." ;
     owl:inverseOf :has_participant_value .
 
 :has_participant_role
     rdf:type rdf:Property ;
-    rdfs:label "has participant role" ;
+    rdfs:comment "Relation between an participant of an event and the role of this participant." ;
+    rdfs:label "has participant role"@en ;
+    rdfs:label "hat Teilnehmer:in-Rolle"@de ;
     rdfs:domain :participant ;
     rdfs:range :participant_role .
 
@@ -2092,35 +2537,50 @@
 
 :has_participant_role_i
     rdf:type rdf:Property ;
+    rdfs:label "has participant role - inverse"@en ;
+    rdfs:label "hat Teilnehmer:in-Rolle - invers"@de ;
+    rdfs:comment "Inverse relation to has_participant_role." ;
     owl:inverseOf :has_participant_role .
 
 :participant_role
     rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:comment "The role a participant has in an event." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "participant_role" .
+    rdfs:label "participant_role"@en ;
+    rdfs:label "Teilnehmer:in-Rolle"@de .
 
 # ------------
 
 :resource_relation
     rdf:type rdfs:Class ;
-    rdfs:label "resource relation" .
+    rdfs:comment "Internal superclass, relations where one participant is a resource." ;
+    rdfs:label "resource relation"@en ;
+    rdfs:label "Ressourcen-Relation"@de .
 
 :event_relation
     rdf:type rdfs:Class ;
-    rdfs:label "event relation" .
+    rdfs:comment "Internal superclass, relations where one participant is an event." ;
+    rdfs:label "event relation"@en ;
+    rdfs:label "Event-Relation"@de .
 
 :entity_with_resource_relation
     rdf:type rdfs:Class ;
-    rdfs:label "entity with resource relation" .
+    rdfs:comment "Internal superclass, entities that can participate in direct relations with resources." ;
+    rdfs:label "entity with resource relation"@en ;
+    rdfs:label "Entität mit Ressourcen-Relation"@de .
 
 :entity_with_event_relation
     rdf:type rdfs:Class ;
-    rdfs:label "entity with event relation" .
+    rdfs:comment "Internal superclass, entities that can participate in direct relations with events." ;
+    rdfs:label "entity with event relation"@en ;
+    rdfs:label "Entität mit Event-Relation"@de .
 
 :has_resource_relation
     rdf:type rdf:Property ;
-    rdfs:label "has resource relation" ;
+    rdfs:comment "Links an entity to a relation-entity which is itself connected to a resource." ;
+    rdfs:label "has resource relation"@en ;
+    rdfs:label "hat Ressourcen-Relation"@de ;
     rdfs:domain :entity_with_resource_relation ;
     rdfs:range :resource_relation .
 
@@ -2138,11 +2598,16 @@
 
 :has_resource_relation_i
     rdf:type rdf:Property ;
+    rdfs:label "has resource relation - inverse"@en ;
+    rdfs:label "hat Ressourcen-Relation - invers"@de ;
+    rdfs:comment "Inverse relation to has_resource_relation." ;
     owl:inverseOf :has_resource_relation .
 
 :has_event_relation
     rdf:type rdf:Property ;
-    rdfs:label "has event relation" ;
+    rdfs:comment "Links an entity to a relation-entity which is itself connected to an event." ;
+    rdfs:label "has event relation"@en ;
+    rdfs:label "hat Event-Relation"@de ;
     rdfs:domain :entity_with_event_relation ;
     rdfs:range :event_relation .
 
@@ -2160,11 +2625,16 @@
 
 :has_event_relation_i
     rdf:type rdf:Property ;
+    rdfs:label "has event relation - inverse"@en ;
+    rdfs:label "hat Event-Relation - invers"@de ;
+    rdfs:comment "Inverse relation to has_event_relation." ;
     owl:inverseOf :has_event_relation .
 
 :event_resource_relation
     rdf:type rdfs:Class , sh:NodeShape ;
-    rdfs:label "event resource relation" ;
+    rdfs:comment "An entity representing a relation where an event and a resource play a central role, can be related to a timespan." ;
+    rdfs:label "event resource relation"@en ;
+    rdfs:label "Event-Ressourcen-Relation"@de ;
     rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
@@ -2181,7 +2651,9 @@
 
 :has_event_resource_relation_type
     rdf:type rdf:Property ;
-    rdfs:label "has event resource relation type" ;
+    rdfs:comment "Relation between a relation of an event and a resource and its type." ;
+    rdfs:label "has event resource relation type"@en ;
+    rdfs:label "hat Event-Ressourcen-Relationen-Typ"@de ;
     rdfs:domain :event_resource_relation ;
     rdfs:range :event_resource_relation_type .
 
@@ -2199,11 +2671,16 @@
 
 :has_event_resource_relation_type_i
     rdf:type rdf:Property ;
+    rdfs:label "has event resource relation type - inverse"@en ;
+    rdfs:label "hat Event-Ressourcen-Relationen-Typ - invers"@de ;
+    rdfs:comment "Inverse relation to has_event_resource_relation_type." ;
     owl:inverseOf :has_event_resource_relation_type .
 
 :event_resource_relation_type
     rdf:type rdfs:Class ;
-    rdfs:label "event resource relation type" ;
+    rdfs:comment "The type of a relation between an event and a resource." ;
+    rdfs:label "event resource relation type"@en ;
+    rdfs:label "Event-Ressourcen-Relationen-Typ"@de ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
 
@@ -2211,7 +2688,9 @@
 
 :has_object_type
     rdf:type rdf:Property ;
-    rdfs:label "has object type" ;
+    rdfs:comment "Relation between an object and its type." ;
+    rdfs:label "has object type"@en ;
+    rdfs:label "hat Objekt-Typ"@de ;
     rdfs:domain :object ;
     rdfs:range :object_type .
 
@@ -2229,21 +2708,28 @@
 
 :has_object_type_i
     rdf:type rdf:Property ;
+    rdfs:label "has object type - inverse"@en ;
+    rdfs:label "hat Objekt-Typ - invers"@de ;
+    rdfs:comment "Inverse relation to has_object_type." ;
     owl:inverseOf :has_object_type .
 
 :object_type
     rdf:type rdfs:Class ;
+    rdfs:comment "The type of an object." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "object type" .
+    rdfs:label "object type"@en ;
+    rdfs:label "Objekt-Typ"@de .
 
 # object creation, modification and destruction as supclasses of event, each having at least one :has_resource_relation and each having a unique property for creation, modification or destruction type
 
 :object_creation
     rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:comment "An event in which an object is created." ;
     rdfs:subClassOf :event ;
     rdfs:subClassOf :entity_with_object ;
-    rdfs:label "object creation" ;
+    rdfs:label "object creation"@en ;
+    rdfs:label "Objekt-Erschaffung"@de ;
         sh:property [
         sh:path :has_object ;
         sh:minCount 1
@@ -2251,7 +2737,9 @@
 
 :has_object_creation_type
     rdf:type rdf:Property ;
-    rdfs:label "has object creation type" ;
+    rdfs:comment "Relation between an event in which an object is created and the type of this creation." ;
+    rdfs:label "has object creation type"@en ;
+    rdfs:label "hat Objekt-Erschaffungs-Typ"@de ;
     rdfs:domain :object_creation ;
     rdfs:range :object_creation_type .
 
@@ -2269,19 +2757,26 @@
 
 :has_object_creation_type_i
     rdf:type rdf:Property ;
+    rdfs:label "has object creation type - inverse"@en ;
+    rdfs:label "hat Objekt-Erschaffungs-Typ - invers"@de ;
+    rdfs:comment "Inverse relation to has_object_creation_type." ;
     owl:inverseOf :has_object_creation_type .
 
 :object_creation_type
     rdf:type rdfs:Class ;
-    rdfs:label "object creation type" ;
+    rdfs:comment "The type of creation of an object." ;
+    rdfs:label "object creation type"@en ;
+    rdfs:label "Objekt-Erschaffungs-Typ"@de ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
 
 :object_destruction
     rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:comment "An event in which an object is destroyed." ;
     rdfs:subClassOf :event ;
     rdfs:subClassOf :entity_with_object ;
-    rdfs:label "object destruction" ;
+    rdfs:label "object destruction"@en ;
+    rdfs:label "Objekt-Zerstörung"@de ;
         sh:property [
         sh:path :has_object ;
         sh:minCount 1
@@ -2289,7 +2784,9 @@
 
 :has_object_destruction_type
     rdf:type rdf:Property ;
-    rdfs:label "has object destruction type" ;
+    rdfs:comment "Relation between an event in which an object is destroyed and the type of this destruction." ;
+    rdfs:label "has object destruction type"@en ;
+    rdfs:label "hat Objekt-Zerstörungs-Typ"@de ;
     rdfs:domain :object_destruction ;
     rdfs:range :object_destruction_type .
 
@@ -2307,19 +2804,26 @@
 
 :has_object_destruction_type_i
     rdf:type rdf:Property ;
+    rdfs:label "has object destruction type - inverse"@en ;
+    rdfs:label "hat Objekt-Zerstörungs-Typ - invers"@de ;
+    rdfs:comment "Inverse relation to has_object_destruction_type." ;
     owl:inverseOf :has_object_destruction_type .
 
 :object_destruction_type
     rdf:type rdfs:Class ;
-    rdfs:label "object destruction type" ;
+    rdfs:comment "The type of destruction in an event in which an object is destroyed." ;
+    rdfs:label "object destruction type"@en ;
+    rdfs:label "Objekt-Zerstörungs-Typ"@de ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
 
 :object_modification
     rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:comment "An event in which an object is modified." ;
     rdfs:subClassOf :event ;
     rdfs:subClassOf :entity_with_object ;
-    rdfs:label "object modification" ;
+    rdfs:label "object modification"@en ;
+    rdfs:label "Objekt-Modifikation"@de ;
         sh:property [
         sh:path :has_object ;
         sh:minCount 1
@@ -2327,7 +2831,9 @@
 
 :has_object_modification_type
     rdf:type rdf:Property ;
-    rdfs:label "has object modification type" ;
+    rdfs:comment "Relation between an event in which an object is modified and the type of this modification." ;
+    rdfs:label "has object modification type"@en ;
+    rdfs:label "hat Objekt-Modifikations-Typ"@de ;
     rdfs:domain :object_modification ;
     rdfs:range :object_modification_type .
 
@@ -2345,11 +2851,16 @@
 
 :has_object_modification_type_i
     rdf:type rdf:Property ;
+    rdfs:label "has object modification type - inverse"@en ;
+    rdfs:label "hat Objekt-Modifikations-Typ - invers"@de ;
+    rdfs:comment "Inverse relation to has_object_modification_type." ;
     owl:inverseOf :has_object_modification_type .
 
 :object_modification_type
     rdf:type rdfs:Class ;
-    rdfs:label "object modification type" ;
+    rdfs:comment "The type of modification of an event in which an object is modified." ;
+    rdfs:label "object modification type"@en ;
+    rdfs:label "Objekt-Modifikations-Typ"@de ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
 
@@ -2357,23 +2868,33 @@
 
 :object_relation
     rdf:type rdfs:Class ;
-    rdfs:label "object relation" .
+    rdfs:comment "Internal superclass, relations where one participant is an object." ;
+    rdfs:label "object relation"@en ;
+    rdfs:label "Objekt-Relation"@de .
 
 :actor_relation
     rdf:type rdfs:Class ;
-    rdfs:label "actor relation" .
+    rdfs:comment "Internal superclass, relations where one participant is an actor (person or group)." ;
+    rdfs:label "actor relation"@en ;
+    rdfs:label "Akteur-Relation"@de .
 
 :entity_with_object_relation
     rdf:type rdfs:Class ;
-    rdfs:label "entity with object relation" .
+    rdfs:comment "Internal superclass, entities that can participate in direct relations with objects." ;
+    rdfs:label "entity with object relation"@en ;
+    rdfs:label "Entität mit Objekt-Relation"@de .
 
 :entity_with_actor_relation
     rdf:type rdfs:Class ;
-    rdfs:label "entity with actor relation" .
+    rdfs:comment "Internal superclass, entities that can participate in direct relations with actors (persons or groups)." ;
+    rdfs:label "entity with actor relation"@en ;
+    rdfs:label "Entität mit Akteur-Relation"@de .
 
 :has_object_relation
     rdf:type rdf:Property ;
-    rdfs:label "has object relation" ;
+    rdfs:comment "Links an entity to a relation-entity which is itself connected to an object." ;
+    rdfs:label "has object relation"@en ;
+    rdfs:label "hat Objekt-Relation"@de ;
     rdfs:domain :entity_with_object_relation ;
     rdfs:range :object_relation .
 
@@ -2391,11 +2912,16 @@
 
 :has_object_relation_i
     rdf:type rdf:Property ;
+    rdfs:label "has object relation - inverse"@en ;
+    rdfs:label "hat Objekt-Relation - invers"@de ;
+    rdfs:comment "Inverse relation to has_object_relation." ;
     owl:inverseOf :has_object_relation .
 
 :has_actor_relation
     rdf:type rdf:Property ;
-    rdfs:label "has actor relation" ;
+    rdfs:comment "Links an entity to a relation-entity which is itself connected to an actor (person or group)." ;
+    rdfs:label "has actor relation"@en ;
+    rdfs:label "hat Akteur-Relation"@de ;
     rdfs:domain :entity_with_actor_relation ;
     rdfs:range :actor_relation .
 
@@ -2413,11 +2939,16 @@
 
 :has_actor_relation_i
     rdf:type rdf:Property ;
+    rdfs:label "has actor relation - inverse"@en ;
+    rdfs:label "hat Akteur-Relation - invers"@de ;
+    rdfs:comment "Inverse relation to has_actor_relation." ;
     owl:inverseOf :has_actor_relation .
 
 :actor_object_relation
     rdf:type rdfs:Class , sh:NodeShape ;
-    rdfs:label "actor object relation" ;
+    rdfs:comment "An entity representing a relation where an actor (person or group) and an object play a central role, can be related to a timespan." ;
+    rdfs:label "actor object relation"@en ;
+    rdfs:label "Akteur-Objekt-Relation"@de ;
     rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
@@ -2434,7 +2965,9 @@
 
 :has_actor_object_relation_type
     rdf:type rdf:Property ;
-    rdfs:label "has actor object relation type" ;
+    rdfs:comment "Relation between a relation of an actor and an object and its type." ;
+    rdfs:label "has actor object relation type"@en ;
+    rdfs:label "hat Akteur-Objekt-Relation-Typ"@de ;
     rdfs:domain :actor_object_relation ;
     rdfs:range :actor_object_relation_type .
 
@@ -2452,12 +2985,17 @@
 
 :has_actor_object_relation_type_i
     rdf:type rdf:Property ;
+    rdfs:label "has actor object relation type - inverse"@en ;
+    rdfs:label "hat Akteur-Objekt-Relation-Typ - invers"@de ;
+    rdfs:comment "Inverse relation to has_actor_object_relation_type." ;
     owl:inverseOf :has_actor_object_relation_type .
 
 # vocabulary: property, holder of, 
 :actor_object_relation_type
     rdf:type rdfs:Class ;
-    rdfs:label "actor object relation type" ;
+    rdfs:comment "The type of a relation between an object and an actor (property of, holder of, ...)." ;
+    rdfs:label "actor object relation type"@en ;
+    rdfs:label "Akteur-Objekt-Relation-Typ"@de ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
 
@@ -2465,7 +3003,9 @@
 
 :is_part_of_object
     rdf:type rdf:Property ;
-    rdfs:label "is part of object" ;
+    rdfs:comment "Relation between two objects where one is part of the other." ;
+    rdfs:label "is part of object"@en ;
+    rdfs:label "ist Teil des Objekts"@de ;
     rdfs:domain :object ;
     rdfs:range :object .
 
@@ -2483,13 +3023,18 @@
 
 :is_part_of_object_i
     rdf:type rdf:Property ;
+    rdfs:label "is part of object - inverse"@en ;
+    rdfs:label "ist Teil des Objekts - invers"@de ;
+    rdfs:comment "Inverse relation to is_part_of_object." ;
     owl:inverseOf :is_part_of_object .
 
 # dimensions of the object
 
 :has_dimension
     rdf:type rdf:Property ;
-    rdfs:label "has dimensione" ;
+    rdfs:comment "Relation between an object and one of its dimensions (containing e.g. informations about its height)." ;
+    rdfs:label "has dimension"@en ;
+    rdfs:label "hat Dimension"@de ;
     rdfs:domain :object ;
     rdfs:range :dimension .
 
@@ -2507,17 +3052,24 @@
 
 :has_dimension_i
     rdf:type rdf:Property ;
+    rdfs:label "has dimension - inverse"@en ;
+    rdfs:label "hat Dimension - invers"@de ;
+    rdfs:comment "Inverse relation to has_dimension." ;
     owl:inverseOf :has_dimension .
 
 :dimension
     rdf:type rdfs:Class ;
+    rdfs:comment "An dimension of an object, containing e.g. informations about its height." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "dimension" .
+    rdfs:label "dimension"@en ;
+    rdfs:label "Dimension"@de .
 
 :has_dimension_type
     rdf:type rdf:Property ;
-    rdfs:label "has dimension type" ;
+    rdfs:comment "Relation of the dimension of an object with the type of this dimension (could be height, width, diameter, ...)." ;
+    rdfs:label "has dimension type"@en ;
+    rdfs:label "hat Dimensions-Typ"@de ;
     rdfs:domain :dimension ;
     rdfs:range :dimension_type .
 
@@ -2535,17 +3087,24 @@
 
 :has_dimension_type_i
     rdf:type rdf:Property ;
+    rdfs:label "has dimension type - inverse"@en ;
+    rdfs:label "hat Dimensions-Typ - invers"@de ;
+    rdfs:comment "Inverse relation to has_dimension_type." ;
     owl:inverseOf :has_dimension_type .
 
 :dimension_type
     rdf:type rdfs:Class ;
+    rdfs:comment "The type of a dimension of an object (could be height, width, diameter, ...)." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "dimension type" .
+    rdfs:label "dimension type"@en ;
+    rdfs:label "Dimensions-Typ"@de .
 
 :has_dimension_unit
     rdf:type rdf:Property ;
-    rdfs:label "has dimension unit" ;
+    rdfs:comment "Relation of the dimension of an object with the unit of this dimension." ;
+    rdfs:label "has dimension unit"@en ;
+    rdfs:label "hat Dimensions-Einheit"@de ;
     rdfs:domain :dimension ;
     rdfs:range :dimension_unit .
 
@@ -2563,17 +3122,24 @@
 
 :has_dimension_unit_i
     rdf:type rdf:Property ;
+    rdfs:label "has dimension unit - inverse"@en ;
+    rdfs:label "hat Dimensions-Einheit - invers"@de ;
+    rdfs:comment "Inverse relation to has_dimension_unit." ;
     owl:inverseOf :has_dimension_unit .
 
 :dimension_unit
     rdf:type rdfs:Class ;
+    rdfs:comment "The unit of a dimension of an object (could be cm, mm, ...)." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "dimension unit" .
+    rdfs:label "dimension unit"@en ;
+    rdfs:label "Dimensions-Einheit"@de .
 
 :has_dimension_value
     rdf:type rdf:Property ;
-    rdfs:label "has dimension value" ;
+    rdfs:comment "Relation of the dimension of an object with the numerical value of this dimension." ;
+    rdfs:label "has dimension value"@en ;
+    rdfs:label "hat Dimensions-Wert"@de ;
     rdfs:domain :dimension ;
     rdfs:range rdfs:Literal .
 
@@ -2592,7 +3158,9 @@
 
 :has_subject
     rdf:type rdf:Property ;
-    rdfs:label "has subject" ;
+    rdfs:comment "Relation between an object and its subject." ;
+    rdfs:label "has subject"@en ;
+    rdfs:label "hat Thema oder Gegenstand"@de ;
     rdfs:domain :object ;
     rdfs:range :subject .
 
@@ -2610,13 +3178,18 @@
 
 :has_subject_i
     rdf:type rdf:Property ;
+    rdfs:label "has subject - inverse"@en ;
+    rdfs:label "hat Thema oder Gegenstand - invers"@de ;
+    rdfs:comment "Inverse relation to has_subject." ;
     owl:inverseOf :has_subject .
 
 :subject
     rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:comment "The subject of an object." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "subject" ;
+    rdfs:label "subject"@en ;
+    rdfs:label "Thema oder Gegenstand"@de ;
     sh:property [
         sh:path [ sh:inversePath :has_subject ] ;
         sh:minCount 1
@@ -2628,7 +3201,9 @@
 
 :has_subject_relation_type
     rdf:type rdf:Property ;
-    rdfs:label "has subject relation type" ;
+    rdfs:comment "Relation between the subject of an object and its type." ;
+    rdfs:label "has subject relation type"@en ;
+    rdfs:label "hat Typ der Thema-Relation"@de ;
     rdfs:domain :subject ;
     rdfs:range :subject_relation_type .
 
@@ -2646,18 +3221,24 @@
 
 :has_subject_relation_type_i
     rdf:type rdf:Property ;
+    rdfs:label "has subject relation type - inverse"@en ;
+    rdfs:label "hat Typ der Thema-Relation - invers"@de ;
+    rdfs:comment "Inverse relation to has_subject_relation_type." ;
     owl:inverseOf :has_subject_relation_type .
 
 :subject_relation_type
     rdf:type rdfs:Class ;
+    rdfs:comment "The type of a subject of an object." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "subject relation type" .
+    rdfs:label "subject relation type"@en ;
+    rdfs:label "Typ der Thema-Relation"@de .
 
-# subject_value can be any IRI of the knowledge graph (persons, events, objects, ...)
 :has_subject_value
     rdf:type rdf:Property ;
-    rdfs:label "has subject value" ;
+    rdfs:comment "Relation between the subject of an object an entity (of any class in the knowledge graph) representing this subject." ;
+    rdfs:label "has subject value"@en ;
+    rdfs:label "hat Thema-Wert"@de ;
     rdfs:domain :subject .
 
 :has_subject_value_subject_shape
@@ -2673,17 +3254,25 @@
 
 :has_subject_value_i
     rdf:type rdf:Property ;
+    rdfs:label "has subject value - inverse"@en ;
+    rdfs:label "hat Thema-Wert - invers"@de ;
+    rdfs:comment "Inverse relation to has_subject_value." ;
     owl:inverseOf :has_subject_value .
 
 #------------------
 
 :inscription 
     rdf:type rdfs:Class ;
+    rdfs:label "inscription"@en ;
+    rdfs:label "Inschrift"@de ;
+    rdfs:comment "An inscription, subclass of object, can be related to objects using is_part_of_object relation." ;
     rdfs:subClassOf :object .
 
 :has_inscription_text
     rdf:type rdf:Property ;
-    rdfs:label "has inscription text" ;
+    rdfs:comment "Relation between an inscription-object and the actual text of the inscription." ;
+    rdfs:label "has inscription text"@en ;
+    rdfs:label "hat Inschriften-Text"@de ;
     rdfs:domain :inscription ;
     rdfs:range rdfs:Literal .
 
@@ -2703,7 +3292,9 @@
 
 :has_material
     rdf:type rdf:Property ;
-    rdfs:label "has material" ;
+    rdfs:comment "Relation between an object and its material." ;
+    rdfs:label "has material"@en ;
+    rdfs:label "hat Material"@de ;
     rdfs:domain :object ;
     rdfs:range :material .
 
@@ -2721,43 +3312,63 @@
 
 :has_material_i
     rdf:type rdf:Property ;
+    rdfs:label "has material - inverse"@en ;
+    rdfs:label "hat Material - invers"@de ;
+    rdfs:comment "Inverse relation to has_material." ;
     owl:inverseOf :has_material .
 
 :material
     rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:comment "The material of an object." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "material" .
+    rdfs:label "material"@en ;
+    rdfs:label "Material"@de .
 
 # -------------------
 
 
 :has_title
     rdf:type rdf:Property ;
-    rdfs:label "has title" ;
+    rdfs:comment "A relation between an entity and its title." ;
+    rdfs:label "has title"@en ;
+    rdfs:label "hat Titel"@de ;
     rdfs:domain :entity_with_title ;
     rdfs:range :title .
 
 :has_title_i
     rdf:type rdf:Property ;
+    rdfs:label "has title - inverse"@en ;
+    rdfs:label "hat Titel - invers"@de ;
+    rdfs:comment "Inverse relation to has_title." ;
     owl:inverseOf :has_title .
 
 :has_preferred_title
     rdf:type rdf:Property ;
-    rdfs:label "has preferred title" ;
+    rdfs:comment "A relation between an entity and its preferred title, subproperty of has_title." ;
+    rdfs:label "has preferred title"@en ;
+    rdfs:label "hat bevorzugten Titel"@de ;
     rdfs:subPropertyOf :has_title .
 
 :has_preferred_title_i
     rdf:type rdf:Property ;
+    rdfs:label "has preferred title - inverse"@en ;
+    rdfs:label "hat bevorzugten Titel - invers"@de ;
+    rdfs:comment "Inverse relation to has_preferred_title." ;
     owl:inverseOf :has_preferred_title .
 
 :has_alternative_title
     rdf:type rdf:Property ;
-    rdfs:label "has alternative title" ;
+    rdfs:comment "A relation between an entity and its alternative title, subproperty of title." ;
+    rdfs:label "has alternative title"@en ;
+    rdfs:label "hat alternativen Titel"@de ;
     rdfs:subPropertyOf :has_title .
 
 :has_alternative_title_i
     rdf:type rdf:Property ;
+    rdfs:label "has alternative title - inverse"@en ;
+    rdfs:label "hat alternativen Titel - invers"@de ;
+    rdfs:comment "Inverse relation to has_alternative_title." ;
     owl:inverseOf :has_alternative_title .
 
 :has_preferred_title_subject_shape
@@ -2786,9 +3397,11 @@
 
 :title
     rdf:type rdfs:Class, sh:NodeShape  ;
+    rdfs:comment "The title of an entity." ;
     rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_script ;
-    rdfs:label "title" ;
+    rdfs:label "title"@en ;
+    rdfs:label "Titel"@de ;
     sh:property [
         sh:path :has_title_value ;
         sh:minCount 1 ;
@@ -2801,7 +3414,9 @@
 
 :has_title_value
     rdf:type rdf:Property ;
-    rdfs:label "has title value" ;
+    rdfs:comment "A relation between a title and its actual value." ;
+    rdfs:label "has title value"@en ;
+    rdfs:label "hat Titel-Wert"@de ;
     rdfs:domain :title ;
     rdfs:range rdf:langString ;
     rdfs:subPropertyOf :has_main_value .
@@ -2821,7 +3436,9 @@
 
 :is_part_of_work
     rdf:type rdf:Property ;
-    rdfs:label "is part of work" ;
+    rdfs:comment "A relation between two entities of class work where one is part of the other." ;
+    rdfs:label "is part of work"@en ;
+    rdfs:label "ist Teil des Werks"@de ;
     rdfs:domain :work ;
     rdfs:range :work .
 
@@ -2839,13 +3456,18 @@
 
 :is_part_of_work_i
     rdf:type rdf:Property ;
+    rdfs:label "is part of work - inverse"@en ;
+    rdfs:label "ist Teil des Werks - invers"@de ;
+    rdfs:comment "Inverse relation to is_part_of_work." ;
     owl:inverseOf :is_part_of_work .
 
 # -------------
 
 :has_work_type
     rdf:type rdf:Property ;
-    rdfs:label "has work type" ;
+    rdfs:comment "A relation between an entity of class work and its type." ;
+    rdfs:label "has work type"@en ;
+    rdfs:label "hat Typ des Werks"@de ;
     rdfs:domain :work ;
     rdfs:range :work_type .
 
@@ -2863,19 +3485,26 @@
 
 :has_work_type_i
     rdf:type rdf:Property ;
+    rdfs:label "has work type - inverse"@en ;
+    rdfs:label "hat Typ des Werks - invers"@de ;
+    rdfs:comment "Inverse relation to has_work_type." ;
     owl:inverseOf :has_work_type .
 
 :work_type
     rdf:type rdfs:Class ;
+    rdfs:comment "The type of an entity of the class work." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "work type" .
+    rdfs:label "work type"@en ;
+    rdfs:label "Typ des Werks"@de .
 
 # -----
 
 :is_published
     rdf:type rdf:Property ;
-    rdfs:label "is published" ;
+    rdfs:comment "A relation between an entity of class work and its publication." ;
+    rdfs:label "is published"@en ;
+    rdfs:label "ist veröffentlicht"@de ;
     rdfs:domain :work ;
     rdfs:range :publication .
 
@@ -2893,15 +3522,20 @@
 
 :is_published_i
     rdf:type rdf:Property ;
+    rdfs:label "is published - inverse"@en ;
+    rdfs:label "ist veröffentlicht - invers"@de ;
+    rdfs:comment "Inverse relation to is_published." ;
     owl:inverseOf :is_published .
 
 :publication
     rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:comment "The publication of an entity of class work." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_timepoint ;
     rdfs:subClassOf :entity_with_place ;
-    rdfs:label "publication" ;
+    rdfs:label "publication"@en ;
+    rdfs:label "Veröffentlichung"@de ;
     sh:property [
         sh:path [ sh:inversePath :is_published ] ;
         sh:minCount 1
@@ -2909,7 +3543,9 @@
 
 :has_publisher
     rdf:type rdf:Property ;
-    rdfs:label "has publisher" ;
+    rdfs:comment "A relation between an a publication and its publisher, the publisher can be any actor (person or group)." ;
+    rdfs:label "has publisher"@en ;
+    rdfs:label "hat Publisher"@de ;
     rdfs:domain :publication ;
     rdfs:range :actor .
 
@@ -2927,13 +3563,18 @@
 
 :has_publisher_i
     rdf:type rdf:Property ;
+    rdfs:label "has publisher - inverse"@en ;
+    rdfs:label "hat Publisher - invers"@de ;
+    rdfs:comment "Inverse relation to has_publisher." ;
     owl:inverseOf :has_publisher .
 
 #-------------
 
 :has_subject_area
     rdf:type rdf:Property ;
-    rdfs:label "has_subject area" ;
+    rdfs:comment "A relation between an entity of class work and its subject area." ;
+    rdfs:label "has_subject area"@en ;
+    rdfs:label "hat Themenbereich"@de ;
     rdfs:domain :work ;
     rdfs:range :subject_area .
 
@@ -2951,19 +3592,26 @@
 
 :has_subject_area_i
     rdf:type rdf:Property ;
+    rdfs:label "has_subject area - inverse"@en ;
+    rdfs:label "hat Themenbereich - invers"@de ;
+    rdfs:comment "Inverse relation to has_subject_area." ;
     owl:inverseOf :has_subject_area .
 
 :subject_area
     rdf:type rdfs:Class , sh:NodeShape ;
+    rdfs:comment "The subject area of an entity of class work." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "subject area" .
+    rdfs:label "subject area"@en ;
+    rdfs:label "Themenbereich"@de .
 
 # ---------------------
 
 :has_number_of_pages
     rdf:type rdf:Property ;
-    rdfs:label "has number of pages" ;
+    rdfs:comment "A property containing the number of pages of a publication." ;
+    rdfs:label "has number of pages"@en ;
+    rdfs:label "hat Anzahl Seiten"@de ;
     rdfs:domain :publication ;
     rdfs:range xsd:integer .
 
@@ -2981,7 +3629,9 @@
 
 :has_first_page
     rdf:type rdf:Property ;
-    rdfs:label "has first page" ;
+    rdfs:comment "A property containing the first page of interest of a publication." ;
+    rdfs:label "has first page"@en ;
+    rdfs:label "hat erste Seite"@de ;
     rdfs:domain :publication ;
     rdfs:range xsd:integer .
 
@@ -2999,7 +3649,9 @@
 
 :has_last_page
     rdf:type rdf:Property ;
-    rdfs:label "has last page" ;
+    rdfs:comment "A property containing the last page of interest of a publication." ;
+    rdfs:label "has last page"@en ;
+    rdfs:label "hat letzte Seite"@de ;
     rdfs:domain :publication ;
     rdfs:range xsd:integer .
 
@@ -3019,7 +3671,9 @@
 
 :has_physical_instance
     rdf:type rdf:Property ;
-    rdfs:label "has_physical instance" ;
+    rdfs:comment "A relation between a publication and an object which is one of its physical instances." ;
+    rdfs:label "has_physical instance"@en ;
+    rdfs:label "hat physische Instanz"@de ;
     rdfs:domain :publication ;
     rdfs:range :object .
 
@@ -3037,13 +3691,18 @@
 
 :has_physical_instance_i
     rdf:type rdf:Property ;
+    rdfs:label "has_physical instance - inverse"@en ;
+    rdfs:label "hat physische Instanz - invers"@de ;
+    rdfs:comment "Inverse relation to has_physical_instance." ;
     owl:inverseOf :has_physical_instance .
 
 #-----------
 
 :has_license
     rdf:type rdf:Property ;
-    rdfs:label "has license" ;
+    rdfs:comment "A relation between a publication and its license." ;
+    rdfs:label "has license"@en ;
+    rdfs:label "hat Lizenz"@de ;
     rdfs:domain :publication ;
     rdfs:range :license .
 
@@ -3061,19 +3720,26 @@
 
 :has_license_i
     rdf:type rdf:Property ;
+    rdfs:label "has license - inverse"@en ;
+    rdfs:label "hat Lizenz - invers"@de ;
+    rdfs:comment "Inverse relation to has_license." ;
     owl:inverseOf :has_license .
 
 :license
     rdf:type rdfs:Class ;
+    rdfs:comment "The license of a publication." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
-    rdfs:label "license" .
+    rdfs:label "license"@en ;
+    rdfs:label "Lizenz"@de .
 
 #------------
 
 :has_group_type
     rdf:type rdf:Property ;
-    rdfs:label "has group type" ;
+    rdfs:comment "A relation between a group and its type." ;
+    rdfs:label "has group type"@en ;
+    rdfs:label "hat Typ der Gruppe"@de ;
     rdfs:domain :group ;
     rdfs:range :group_type .
 
@@ -3091,11 +3757,16 @@
 
 :has_group_type_i
     rdf:type rdf:Property ;
+    rdfs:label "has group type - inverse"@en ;
+    rdfs:label "hat Typ der Gruppe - invers"@de ;
+    rdfs:comment "Inverse relation to has_group_type." ;
     owl:inverseOf :has_group_type .
 
 :group_type
     rdf:type rdfs:Class ;
-    rdfs:label "group type" ;
+    rdfs:comment "The type of a group." ;
+    rdfs:label "group type"@en ;
+    rdfs:label "Typ der Gruppe"@de ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
 
@@ -3103,7 +3774,9 @@
 
 :is_part_of_group
     rdf:type rdf:Property ;
-    rdfs:label "is part of group" ;
+    rdfs:comment "Relates a group to a relation-object, which expresses that one group is part of the other." ;
+    rdfs:label "is part of group"@en ;
+    rdfs:label "ist Teil der Gruppe"@de ;
     rdfs:domain :group ;
     rdfs:range :part_of_group_relation .
 
@@ -3121,14 +3794,19 @@
 
 :is_part_of_group_i
     rdf:type rdf:Property ;
+    rdfs:label "is part of group - inverse"@en ;
+    rdfs:label "ist Teil der Gruppe - invers"@de ;
+    rdfs:comment "Inverse relation to is_part_of_group." ;
     owl:inverseOf :is_part_of_group .
 
 :part_of_group_relation
     rdf:type rdfs:Class ;
+    rdfs:comment "Relates two groups and expresses that one group is part of the other." ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_group ;
     rdfs:subClassOf :entity_with_timeframe ;
-    rdfs:label "part of group relation" ;
+    rdfs:label "part of group relation"@en ;
+    rdfs:label "Teil der Gruppe-Relation"@de ;
     sh:property [
         sh:path [ sh:inversePath :is_part_of_group ] ;
         sh:minCount 1
