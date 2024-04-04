@@ -1,6 +1,6 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix werkd: <http://www.werkd.saw-leipzig.de/> .
+@prefix werkd: <http://www.werkd.saw-leipzig.de/IRI/dikusa-core/> .
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikipediade: <https://de.wikipedia.org/wiki/> .
 @prefix viaf: <http://viaf.org/viaf/> .
