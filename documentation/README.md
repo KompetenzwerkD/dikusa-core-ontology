@@ -20,5 +20,5 @@ Since the ontology is rather complex and the Turtle-file is difficult to compreh
 * [Object part 2](https://www.ldf.fi/service/rdf-grapher?rdf=https://raw.githubusercontent.com/KompetenzwerkD/dikusa-core-ontology/main/documentation/visualisation/object_test_2.ttl&from=ttl&to=png)
 * [Complex file: Real world examples as used in core_ontology_howto.ttl](https://www.ldf.fi/service/rdf-grapher?rdf=https://raw.githubusercontent.com/KompetenzwerkD/dikusa-core-ontology/main/example_data/core_ontology_howto_no_rdfstar.ttl&from=ttl&to=png)
 
-### Additional Information
+## Additional Information
 * [Slides in German presented on 29.04.2022](https://github.com/KompetenzwerkD/dikusa-core-ontology/blob/main/documentation/Dikusa%20Datenmodell%20Folien%2029.04.2022.pdf)
