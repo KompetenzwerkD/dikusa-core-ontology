@@ -233,7 +233,7 @@
     rdfs:comment "The name-object of an entity." ;
     rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_script ;
-    rdfs:label "Name"@en ;
+    rdfs:label "name"@en ;
     rdfs:label "Name"@de ;
     sh:property [
         sh:path :has_name_value ;
@@ -295,7 +295,7 @@
 :script
     rdf:type rdfs:Class ;
     rdfs:comment "The writing script of an entity." ;
-    rdfs:label "Script"@en ;
+    rdfs:label "script"@en ;
     rdfs:label "Schreibsystem"@de ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
