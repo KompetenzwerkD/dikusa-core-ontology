@@ -41,7 +41,11 @@ Since the ontology is rather complex and the Turtle-file is difficult to compreh
 * [Slides in German presented on 29.04.2022](https://github.com/KompetenzwerkD/dikusa-core-ontology/blob/main/documentation/Dikusa%20Datenmodell%20Folien%2029.04.2022.pdf)
 
 ### Progress
-So far all main Categories: Persons, Places, Events, Objects, Groups and Works (bibliographic items) have been modelled. The current state forms the basis of further discussions with project partners.
+* So far all main Categories: Persons, Places, Events, Objects, Groups and Works (bibliographic items) have been modelled.
+* The current state forms the basis of further discussions with project partners.
+
+### Please note:
+The main namespace of the ontology is still just a placeholder. The strategy concerning IRI-resolution is currently discussed and depending on technological and strategical choices the namespace will be finalized.
 
 ## Validation
 
