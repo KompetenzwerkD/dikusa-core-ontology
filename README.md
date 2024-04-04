@@ -16,7 +16,6 @@ This dataset contains a central data model / ontology used for the linking of di
 * additional controlled vocabularies can be found in the vocabs-folder in SKOS-format, more will follow as results of the modelling and data acquisition processes of the sub-projects
 
 ### Documentation
-
 * as a starting point rdfs:comment is used as a short description of every class and property
 * rdfs:label provides additional labels in English and German
 * descriptive web pages for all classes and properties based on these information and the structural rdfs-information will be added to thje documentation-folder at a later point
@@ -35,6 +34,7 @@ Since the ontology is rather complex and the Turtle-file is difficult to compreh
 * [Event part 2](https://www.ldf.fi/service/rdf-grapher?rdf=https://raw.githubusercontent.com/KompetenzwerkD/dikusa-core-ontology/main/documentation/visualisation/event_test_2.ttl&from=ttl&to=png)
 * [Object part 1](https://www.ldf.fi/service/rdf-grapher?rdf=https://raw.githubusercontent.com/KompetenzwerkD/dikusa-core-ontology/main/documentation/visualisation/object_test_1.ttl&from=ttl&to=png)
 * [Object part 2](https://www.ldf.fi/service/rdf-grapher?rdf=https://raw.githubusercontent.com/KompetenzwerkD/dikusa-core-ontology/main/documentation/visualisation/object_test_2.ttl&from=ttl&to=png)
+* [Complex file: Real world examples as used in core_ontology_howto.ttl](https://www.ldf.fi/service/rdf-grapher?rdf=https://raw.githubusercontent.com/KompetenzwerkD/dikusa-core-ontology/main/example_data/core_ontology_howto_no_rdfstar.ttl&from=ttl&to=png)
 
 ### Additional Information
 * [Slides in German presented on 29.04.2022](https://github.com/KompetenzwerkD/dikusa-core-ontology/blob/main/documentation/Dikusa%20Datenmodell%20Folien%2029.04.2022.pdf)
