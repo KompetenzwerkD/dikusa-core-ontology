@@ -19,7 +19,7 @@
     rdfs:subClassOf :entity_with_place_relation ;
     rdfs:subClassOf :entity_with_group_relation ;
     rdfs:subClassOf :entity_with_person_relation ;    
-    rdfs:label "Person"@en ;
+    rdfs:label "person"@en ;
     rdfs:label "Person"@de .
 
 :place
@@ -32,7 +32,7 @@
     rdfs:subClassOf :entity_with_citation ;
     rdfs:subClassOf :entity_with_existence_change ;
     rdfs:subClassOf :entity_with_person_relation ;
-    rdfs:label "Place"@en ;
+    rdfs:label "place"@en ;
     rdfs:label "Ort"@de .
 
 :group
@@ -47,7 +47,7 @@
     rdfs:subClassOf :entity_with_location ;
     rdfs:subClassOf :entity_with_existence_change ;
     rdfs:subClassOf :entity_with_person_relation ;
-    rdfs:label "Group"@en ;
+    rdfs:label "group"@en ;
     rdfs:label "Gruppe"@de .
 
 :event
@@ -61,7 +61,7 @@
     rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_resource_relation ;
     rdfs:subClassOf :entity_with_location ;
-    rdfs:label "Event"@en ;
+    rdfs:label "event"@en ;
     rdfs:label "Ereignis"@de .
 
 :work
@@ -74,7 +74,7 @@
     rdfs:subClassOf :entity_with_citation ;
     rdfs:subClassOf :entity_with_author ;
     rdfs:subClassOf :resource ;
-    rdfs:label "Work"@en ;
+    rdfs:label "work"@en ;
     rdfs:label "Werk"@de .
 
 :object
@@ -88,14 +88,14 @@
     rdfs:subClassOf :entity_with_location ;
     rdfs:subClassOf :entity_with_actor_relation ;
     rdfs:subClassOf :resource ;
-    rdfs:label "Object"@en ;
+    rdfs:label "object"@en ;
     rdfs:label "Objekt"@de .
 
 :resource
     rdfs:subClassOf :entity_with_event_relation ;
     rdfs:comment "Any kind of resource, superclass of object and work." ;
     rdf:type rdfs:Class ;
-    rdfs:label "Resource"@en ;
+    rdfs:label "resource"@en ;
     rdfs:label "Ressource"@de .
 
 # -----------------------
@@ -104,55 +104,55 @@
 :entity_with_person_relation
     rdf:type rdfs:Class ;
     rdfs:comment "Internal superclass, all entities that can participate in direct relations with persons." ;
-    rdfs:label "Entity with person relation"@en ;
+    rdfs:label "entity with person relation"@en ;
     rdfs:label "Entität mit Personenrelation"@de .
 
 :entity_with_group_relation
     rdf:type rdfs:Class ;
     rdfs:comment "Internal superclass, all entities that can participate in direct relations with groups." ;
-    rdfs:label "Entity with group relation"@en ;
+    rdfs:label "entity with group relation"@en ;
     rdfs:label "Entität mit Gruppenrelation"@de .
 
 :entity_with_place_relation
     rdf:type rdfs:Class ;
     rdfs:comment "Internal superclass, all entities that can participate in direct relations with places." ;
-    rdfs:label "Entity with place relation"@en ;
+    rdfs:label "entity with place relation"@en ;
     rdfs:label "Entität mit Ortsrelation"@de .
 
 :person_relation
     rdf:type rdfs:Class ;
     rdfs:comment "Internal superclass, all relations where one participant is a person." ;
-    rdfs:label "Person relation"@en ;
+    rdfs:label "person relation"@en ;
     rdfs:label "Personenrelation"@de .
 
 :group_relation
     rdf:type rdfs:Class ;
     rdfs:comment "Internal superclass, all relations where one participant is a group." ;
-    rdfs:label "Group relation"@en ;
+    rdfs:label "group relation"@en ;
     rdfs:label "Gruppenrelation"@de .
 
 :place_relation
     rdf:type rdfs:Class ;
     rdfs:comment "Internal superclass, all relations where one participant is a place." ;
-    rdfs:label "Place relation"@en ;
+    rdfs:label "place relation"@en ;
     rdfs:label "Ortsrelation"@de .
 
 :entity_with_occupation_value
     rdf:type rdfs:Class ;
     rdfs:comment "Internal superclass, all entities that can have an occupation." ;
-    rdfs:label "Entity with occupation value"@en ;
+    rdfs:label "entity with occupation value"@en ;
     rdfs:label "Entität mit Beruf"@de .
 
 :entity_with_object
     rdf:type rdfs:Class ;
     rdfs:comment "Internal superclass, entities that have direct relations with objects." ;
-    rdfs:label "Entity with object"@en ;
+    rdfs:label "entity with object"@en ;
     rdfs:label "Entität mit Objekt"@de .
 
 :entity_with_location
     rdf:type rdfs:Class ;
     rdfs:comment "Internal superclass, entities that have direct relations with locations." ;
-    rdfs:label "Entity with location"@en ;
+    rdfs:label "entity with location"@en ;
     rdfs:label "Entität mit Ort"@de .
 
 # --------------------------
@@ -205,7 +205,7 @@
     rdfs:comment "The name-object of an entity." ;
     rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_script ;
-    rdfs:label "Name"@en ;
+    rdfs:label "name"@en ;
     rdfs:label "Name"@de .
 
 :has_name_value
@@ -235,7 +235,7 @@
 :script
     rdf:type rdfs:Class ;
     rdfs:comment "The writing script of an entity." ;
-    rdfs:label "Script"@en ;
+    rdfs:label "script"@en ;
     rdfs:label "Schreibsystem"@de ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
