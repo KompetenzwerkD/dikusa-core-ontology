@@ -1,4 +1,4 @@
-# dikusa-core-ontology
+# DIKUSA core ontology
 
 This dataset contains a central data model / ontology used for the linking of digital cultural data of research projects in Saxony, Germany. It is applied by six Saxon non-university research institutions within the [DIKUSA-project](https://www.saw-leipzig.de/de/projekte/dikusa) (Vernetzung digitaler Kulturdaten in Sachsen). Future use as a means of data integration between these partners is intended.
 
