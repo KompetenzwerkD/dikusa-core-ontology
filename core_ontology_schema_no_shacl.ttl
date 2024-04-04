@@ -6,6 +6,12 @@
 @prefix rdf-star:  <http://www.w3.org/ns/rdf-star#> .
 @prefix owl:	<http://www.w3.org/2002/07/owl#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://www.werkd.saw-leipzig.de/IRI/dikusa-core/> rdf:type owl:Ontology ;
+    rdfs:label "DIKUSA Core Ontology" ;
+    dcterms:description "The DIKUSA core ontology is used for the linking of digital cultural data of research projects in Saxony, Germany. It is applied by six Saxon non-university research institutions within the DIKUSA-project (Vernetzung digitaler Kulturdaten in Sachsen). Future use as a means of data integration between these partners is intended." ;
+    dcterms:license "https://www.gnu.org/licenses/agpl-3.0.en.html" .
 
 :person
     rdf:type rdfs:Class ;
