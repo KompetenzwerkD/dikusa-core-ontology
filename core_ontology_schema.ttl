@@ -153,6 +153,12 @@
     rdfs:label "Entity with object"@en ;
     rdfs:label "Entität mit Objekt"@de .
 
+:entity_with_location
+    rdf:type rdfs:Class ;
+    rdfs:comment "Internal superclass, entities that have direct relations with locations." ;
+    rdfs:label "Entity with location"@en ;
+    rdfs:label "Entität mit Ort"@de .
+
 # --------------------------
 
 :has_name
