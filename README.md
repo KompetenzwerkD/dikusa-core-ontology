@@ -11,14 +11,15 @@ This dataset contains a central data model / ontology used for the linking of di
 * RDF-star is mainly used to include information on provenance of facts, which can be annotated to any triple / statement in a knowledge base
 * OWL is used for labeling inverse relations
 * SHACL is used to allow for validating instance data against the schema
-* the RDFS-schema including SHACL-constraints can be found in: core_ontology_schema.ttl
-* the RDFS-schema without SHACL-constraints can be found in: core_ontology_schema_no_shacl.ttl
-* additional controlled vocabularies can be found in the vocabs-folder in SKOS-format, more will follow as results of the modelling and data acquisition processes of the sub-projects
+* Main files:
+  * the RDFS-schema including SHACL-constraints can be found in: core_ontology_schema.ttl
+  * the RDFS-schema without SHACL-constraints can be found in: core_ontology_schema_no_shacl.ttl
+  * additional controlled vocabularies can be found in the vocabs-folder in SKOS-format, more will follow as results of the modelling and data acquisition processes of the sub-projects
 
 ### Documentation
 * as a starting point rdfs:comment is used as a short description of every class and property
 * rdfs:label provides additional labels in English and German
-* descriptive web pages for all classes and properties based on these information and the structural rdfs-information will be added to thje documentation-folder at a later point
+* Basic documentation created with pyLODE 3.1.3 using the OntPub-profile can be found in documentation folder
 * The file core_ontology_howto.ttl found in example_data contains typical examples of usage of the data model
 * Links to additional visualisations are provided in the following
 
