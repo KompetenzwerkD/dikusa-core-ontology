@@ -10,7 +10,7 @@
 
 <http://www.werkd.saw-leipzig.de/IRI/dikusa-core/> rdf:type owl:Ontology ;
     rdfs:label "DIKUSA Core Ontology" ;
-    dcterms:description "The DIKUSA core ontology is used for the linking of digital cultural data of research projects in Saxony, Germany. It is applied by six Saxon non-university research institutions within the DIKUSA-project (Vernetzung digitaler Kulturdaten in Sachsen). Future use as a means of data integration between these partners is intended." ;
+    dcterms:description "The DIKUSA core ontology is used for the linking of digital cultural data of research projects in Saxony, Germany. It is applied by six Saxon non-university DH research institutions within the DIKUSA-project (Vernetzung digitaler Kulturdaten in Sachsen). It is used as a common core ontology to harmonize the data of the partners which internally use their own specialized ontology for creating research-related knowledge bases. Central categories of the ontology are person, place, group, object, bibliographic item and event. The ontology is provided as an RDF(star)-file in turtle-format. Shacl-constraints for validation of knowledge bases against the schema are included." ;
     dcterms:license "https://www.gnu.org/licenses/agpl-3.0.en.html" .
 
 :person
