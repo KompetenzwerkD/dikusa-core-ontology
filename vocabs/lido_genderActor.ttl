@@ -3,7 +3,7 @@
 @prefix lido: <http://terminology.lido-schema.org/>.
 @prefix cc:    <http://creativecommons.org/ns#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix werkd: <http://www.werkd.saw-leipzig.de/> .
+@prefix werkd: <http://www.werkd.saw-leipzig.de/IRI/dikusa-core/> .
 
 werkd:lido rdf:type :id_type .
 
