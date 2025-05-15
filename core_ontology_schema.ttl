@@ -1275,18 +1275,10 @@
     owl:inverseOf :has_id .
 
 :id
-    rdf:type rdfs:Class , sh:NodeShape ;
+    rdf:type rdfs:Class ;
     rdfs:comment "An identifier for an entity, such as GND or wikidata IDs." ;
     rdfs:label "id"@en ;
-    rdfs:label "ID"@de ;
-    sh:property [
-        sh:path :has_id_value ;
-        sh:minCount 1 ; 
-    ] ;
-        sh:property [
-        sh:path :has_id_type ;
-        sh:minCount 1 ;
-    ] .
+    rdfs:label "ID"@de .
 
 :has_id_value
     rdf:type rdf:Property ;
