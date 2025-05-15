@@ -1277,6 +1277,7 @@
 :id
     rdf:type rdfs:Class ;
     rdfs:comment "An identifier for an entity, such as GND or wikidata IDs." ;
+    rdfs:subClassOf :entity_with_name ;
     rdfs:label "id"@en ;
     rdfs:label "ID"@de .
 
