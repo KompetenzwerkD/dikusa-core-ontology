@@ -83,6 +83,8 @@
 :foundation rdf:type :change_of_group_existence_type .
 :scientific_conference rdf:type :event_type .
 :tragedy rdf:type :work_type .
+:event_event_1 rdf:type :event_event_relation .
+:thematic_context rdf:type :event_event_relation_type .
 
 :name_1 rdf:type :name .
 :name_2 rdf:type :name .
@@ -91,6 +93,7 @@
 :name_5 rdf:type :name .
 :name_6 rdf:type :name .
 :name_7 rdf:type :name .
+:name_8 rdf:type :name .
 :name_x rdf:type :name .
 :entity_description_1 rdf:type :entity_description .
 :title_x rdf:type :title .
@@ -850,3 +853,12 @@ lido:lido00774
     :has_id_value "A0003" ;
     :has_id_type :werkd .
 
+# generic relation between two events
+
+:event_event_1 :has_event_event_relation_type :thematic_context .
+
+:thematic_context :has_preferred_name :name_8 .
+
+:name_8
+    :has_name_value "same thematic_context"@en ;
+    :has_name_value "thematischer Zusammenhang"@de .
