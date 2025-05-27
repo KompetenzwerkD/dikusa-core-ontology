@@ -862,5 +862,5 @@ lido:lido00774
 :name_8
     :has_name_value "same thematic_context"@en .
 
-:dhd2023 :has_event_event_relation :event_event_1.
-:dhd2022 :has_event_event_relation :event_event_1.
+:dhd2023 :has_event_relation :event_event_1.
+:dhd2022 :has_event_relation :event_event_1.
