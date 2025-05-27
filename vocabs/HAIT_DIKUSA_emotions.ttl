@@ -6,6 +6,7 @@
 <https://werkd.saw-leipzig.de/hait_weedata/classes/4> rdf:type skos:ConceptScheme ;
     cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
     dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:definition "List of emotions used in the DIKUSA project of th HAIT concerned with experiences during displacement" ;
     skos:prefLabel "Emotions"@en .
 
 <https://werkd.saw-leipzig.de/hait_weedata/items/720> rdf:type skos:Concept ;
