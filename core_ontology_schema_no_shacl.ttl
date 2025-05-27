@@ -67,6 +67,7 @@
     rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_resource_relation ;
     rdfs:subClassOf :entity_with_location ;
+    rdfs:subClassOf :entity_with_event_relation ;
     rdfs:label "event"@en ;
     rdfs:label "Ereignis"@de .
 
@@ -856,6 +857,7 @@
 :id
     rdf:type rdfs:Class ;
     rdfs:comment "An identifier for an entity, such as GND or wikidata IDs." ;
+    rdfs:subClassOf :entity_with_name ;
     rdfs:label "id"@en ;
     rdfs:label "ID"@de .
 
@@ -1737,6 +1739,42 @@
     rdfs:label "Event-Ressourcen-Relationen-Typ"@de ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description .
+
+# ----------------
+
+:event_event_relation
+    rdf:type rdfs:Class ;
+    rdfs:comment "An entity representing a general relation where two events play a central role, can be related to a timespan, a name, a description and a type." ;
+    rdfs:label "event event relation"@en ;
+    rdfs:label "Event-Event-Relation"@de ;
+    rdfs:subClassOf :entity_with_timeframe ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :event_relation .
+
+:has_event_event_relation_type
+    rdf:type rdf:Property ;
+    rdfs:comment "Relation between a relation (of 2 events) and its type." ;
+    rdfs:label "has event event relation type"@en ;
+    rdfs:label "hat Event-Event-Relationen-Typ"@de ;
+    rdfs:domain :event_event_relation ;
+    rdfs:range :event_event_relation_type .
+
+:has_event_event_relation_type_i
+    rdf:type rdf:Property ;
+    rdfs:label "has event event relation type - inverse"@en ;
+    rdfs:label "hat Event-Event-Relationen-Typ - invers"@de ;
+    rdfs:comment "Inverse relation to has_event_event_relation_type." ;
+    owl:inverseOf :has_event_event_relation_type .
+
+:event_event_relation_type
+    rdf:type rdfs:Class ;
+    rdfs:comment "The type of a relation between two events." ;
+    rdfs:label "event event relation type"@en ;
+    rdfs:label "Event-Event-Relationen-Typ"@de ;
+    rdfs:subClassOf :entity_with_name ;
+    rdfs:subClassOf :entity_with_description .
+
 
 # ----------------
 
