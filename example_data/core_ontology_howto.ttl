@@ -860,5 +860,4 @@ lido:lido00774
 :thematic_context :has_preferred_name :name_8 .
 
 :name_8
-    :has_name_value "same thematic_context"@en ;
-    :has_name_value "thematischer Zusammenhang"@de .
+    :has_name_value "same thematic_context"@en .
