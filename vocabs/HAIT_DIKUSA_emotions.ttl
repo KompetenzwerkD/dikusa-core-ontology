@@ -1,0 +1,89 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://werkd.saw-leipzig.de/hait_weedata/classes/4> rdf:type skos:ConceptScheme ;
+    cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:prefLabel "Emotions"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/720> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:prefLabel "excitement"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/725> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:prefLabel "hope"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/727> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:prefLabel "hunger"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/722> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/724> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/723> ;
+    skos:prefLabel "fear"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/724> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:prefLabel "fear for family members"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/732> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:prefLabel "relief"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/723> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:prefLabel "fear about incalculability"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/730> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:prefLabel "joy"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/726> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:prefLabel "hopelessness"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/729> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:prefLabel "indifference"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/731> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:prefLabel "love"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/733> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:prefLabel "sadness"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/734> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:prefLabel "safety"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/735> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:prefLabel "surprise"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/719> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:prefLabel "anger"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/721> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+    skos:prefLabel "exclusion"@en .

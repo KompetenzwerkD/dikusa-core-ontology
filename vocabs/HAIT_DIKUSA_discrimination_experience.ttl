@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://werkd.saw-leipzig.de/hait_weedata/classes/6> rdf:type skos:ConceptScheme ;
+    cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:prefLabel "Discrimination experience"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/708> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/6> ;
+    skos:prefLabel "fear of attacks"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/704> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/6> ;
+    skos:prefLabel "attack"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/707> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/6> ;
+    skos:prefLabel "expropriation"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/706> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/6> ;
+    skos:prefLabel "exclusion"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/703> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/6> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/6> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/704> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/705> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/706> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/707> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/708> ;
+    skos:prefLabel "antisemitism"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/705> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/6> ;
+    skos:prefLabel "disenfranchisement"@en .

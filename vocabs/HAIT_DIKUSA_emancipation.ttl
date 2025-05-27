@@ -1,0 +1,95 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://werkd.saw-leipzig.de/hait_weedata/classes/5> rdf:type skos:ConceptScheme ;
+    cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:prefLabel "Emancipation"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/716> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:prefLabel "interruption"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/717> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:prefLabel "termination"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/752> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:prefLabel "apprenticeship"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/754> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:prefLabel "party mandate"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/755> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:prefLabel "NGO"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/756> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:prefLabel "feminist"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/714> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:prefLabel "change of role"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/751> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:prefLabel "language learning"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/715> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:prefLabel "housewife"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/757> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:prefLabel "self-realization"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/713> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:prefLabel "beginning"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/718> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:prefLabel "transition"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/753> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/756> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/755> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/754> ;
+    skos:prefLabel "political commitment"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/748> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/752> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/750> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/751> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/749> ;
+    skos:prefLabel "Opportunities for emancipation"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/712> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/713> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/714> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/715> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/716> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/717> ;
+    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/718> ;
+    skos:prefLabel "career"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/749> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:prefLabel "study"@en .
+
+<https://werkd.saw-leipzig.de/hait_weedata/items/750> rdf:type skos:Concept ;
+    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
+    skos:prefLabel "education"@en .
+
