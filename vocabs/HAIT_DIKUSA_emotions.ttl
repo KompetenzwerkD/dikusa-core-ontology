@@ -2,89 +2,108 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix cc:    <http://creativecommons.org/ns#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<https://werkd.saw-leipzig.de/hait_weedata/classes/4> rdf:type skos:ConceptScheme ;
+<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> rdf:type skos:ConceptScheme ;
+    skos:defaultLanguage "en";
+    owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
     cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
     dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
-    skos:definition "List of emotions used in the DIKUSA project of th HAIT concerned with experiences during displacement" ;
+    skos:definition "List of emotions used in the DIKUSA project of the Hannah Arendt Institute for Totalitarianism Studies (HAIT) concerned with experiences during displacement" ;
     skos:prefLabel "Emotions"@en .
 
-<https://werkd.saw-leipzig.de/hait_weedata/items/720> rdf:type skos:Concept ;
-    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
-    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/720> rdf:type skos:Concept ;
+    owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/720> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
     skos:prefLabel "excitement"@en .
 
-<https://werkd.saw-leipzig.de/hait_weedata/items/725> rdf:type skos:Concept ;
-    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
-    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/725> rdf:type skos:Concept ;
+    owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/725> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
     skos:prefLabel "hope"@en .
 
-<https://werkd.saw-leipzig.de/hait_weedata/items/727> rdf:type skos:Concept ;
-    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
-    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/727> rdf:type skos:Concept ;
+    owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/727> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
     skos:prefLabel "hunger"@en .
 
-<https://werkd.saw-leipzig.de/hait_weedata/items/722> rdf:type skos:Concept ;
-    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
-    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
-    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/724> ;
-    skos:narrower <https://werkd.saw-leipzig.de/hait_weedata/items/723> ;
+<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/722> rdf:type skos:Concept ;
+    owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/722> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:narrower <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/724> ;
+    skos:narrower <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/723> ;
     skos:prefLabel "fear"@en .
 
-<https://werkd.saw-leipzig.de/hait_weedata/items/724> rdf:type skos:Concept ;
-    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/724> rdf:type skos:Concept ;
+    owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/724> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
     skos:prefLabel "fear for family members"@en .
 
-<https://werkd.saw-leipzig.de/hait_weedata/items/732> rdf:type skos:Concept ;
-    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
-    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/732> rdf:type skos:Concept ;
+    owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/732> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
     skos:prefLabel "relief"@en .
 
-<https://werkd.saw-leipzig.de/hait_weedata/items/723> rdf:type skos:Concept ;
-    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/723> rdf:type skos:Concept ;
+    owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/723> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
     skos:prefLabel "fear about incalculability"@en .
 
-<https://werkd.saw-leipzig.de/hait_weedata/items/730> rdf:type skos:Concept ;
-    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
-    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/730> rdf:type skos:Concept ;
+    owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/730> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
     skos:prefLabel "joy"@en .
 
-<https://werkd.saw-leipzig.de/hait_weedata/items/726> rdf:type skos:Concept ;
-    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
-    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/726> rdf:type skos:Concept ;
+    owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/726> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
     skos:prefLabel "hopelessness"@en .
 
-<https://werkd.saw-leipzig.de/hait_weedata/items/729> rdf:type skos:Concept ;
-    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
-    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/729> rdf:type skos:Concept ;
+    owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/729> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
     skos:prefLabel "indifference"@en .
 
-<https://werkd.saw-leipzig.de/hait_weedata/items/731> rdf:type skos:Concept ;
-    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
-    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/731> rdf:type skos:Concept ;
+    owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/731> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
     skos:prefLabel "love"@en .
 
-<https://werkd.saw-leipzig.de/hait_weedata/items/733> rdf:type skos:Concept ;
-    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
-    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/733> rdf:type skos:Concept ;
+    owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/733> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
     skos:prefLabel "sadness"@en .
 
-<https://werkd.saw-leipzig.de/hait_weedata/items/734> rdf:type skos:Concept ;
-    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
-    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/734> rdf:type skos:Concept ;
+    owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/734> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
     skos:prefLabel "safety"@en .
 
-<https://werkd.saw-leipzig.de/hait_weedata/items/735> rdf:type skos:Concept ;
-    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
-    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/735> rdf:type skos:Concept ;
+    owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/735> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
     skos:prefLabel "surprise"@en .
 
-<https://werkd.saw-leipzig.de/hait_weedata/items/719> rdf:type skos:Concept ;
-    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
-    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/719> rdf:type skos:Concept ;
+    owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/719> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
     skos:prefLabel "anger"@en .
 
-<https://werkd.saw-leipzig.de/hait_weedata/items/721> rdf:type skos:Concept ;
-    skos:inScheme <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
-    skos:topConceptOf <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
+<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/721> rdf:type skos:Concept ;
+    owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/721> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
     skos:prefLabel "exclusion"@en .
