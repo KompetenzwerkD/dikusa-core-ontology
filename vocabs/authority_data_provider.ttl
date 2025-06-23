@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.archive.org/werkd/vocabs/authority_data_provider/en> rdf:type skos:ConceptScheme ;
+    skos:defaultLanguage "en";
+    cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:definition "List of authority data providers for referencing entities"@en ;
+    skos:definition "Liste von Normdatenanbietern zur Referenzierung von Entitäten"@de ;
+    skos:prefLabel "Authority Data Providers"@en ;
+    skos:prefLabel "Normdatenanbieter"@de .
+
+<https://purl.archive.org/werkd/vocabs/authority_data_provider/en/page/wikidata> rdf:type skos:Concept ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q2013> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/authority_data_provider/en> ;
+    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/authority_data_provider/en> ;
+    skos:definition "Wikidata is a free and open knowledge base that can be read and edited by both humans and machines. Wikidata acts as central storage for the structured data of its Wikimedia sister projects including Wikipedia, Wikivoyage, Wiktionary, Wikisource, and others."@en ;
+    skos:definition "Wikidata ist eine kostenlose und offene Wissensdatenbank, die sowohl von Menschen als auch von Maschinen gelesen und bearbeitet werden kann."@de ;
+    skos:prefLabel "Wikidata"@en ;
+    skos:prefLabel "Wikidata"@de .
+
+<https://purl.archive.org/werkd/vocabs/authority_data_provider/en/page/hov> rdf:type skos:Concept ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q17024175> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/authority_data_provider/en> ;
+    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/authority_data_provider/en> ;
+    skos:definition "The Historische Ortsverzeichnis von Sachsen (Historical Place Directory of Saxony) includes almost all settlements that have been documented in the territory of the Free State of Saxony since the Middle Ages."@en ;
+    skos:definition "Das Historische Ortsverzeichnis von Sachsen erfasst nahezu alle Siedlungen, die seit dem Mittelalter für das Gebiet des heutigen Freistaates nachweisbar sind."@de ;
+    skos:prefLabel "HOV"@en ;
+    skos:prefLabel "HOV"@de .
+
+<https://purl.archive.org/werkd/vocabs/authority_data_provider/en/page/gnd> rdf:type skos:Concept ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q36578> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/authority_data_provider/en> ;
+    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/authority_data_provider/en> ;
+    skos:definition "The Gemeinsame Normdatei (GND) is a cooperatively created authority file for personal names, corporate bodies and keywords."@en ;
+    skos:definition "Die Gemeinsame Normdatei (GND) ist eine kooperativ erstellte Normdatei für Personennamen, Körperschaften und Schlagwörter."@de ;
+    skos:prefLabel "GND"@en ;
+    skos:prefLabel "GND"@de .
