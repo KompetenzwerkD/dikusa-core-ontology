@@ -694,7 +694,7 @@
 :has_place_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_place ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :place .
 
 :has_place_i
