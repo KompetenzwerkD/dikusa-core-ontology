@@ -2093,7 +2093,7 @@
 :has_coordinates_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_coordinates ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :place .
 
 :has_coordinates_object_shape
@@ -2461,7 +2461,7 @@
 :has_participant_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_participant ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :event .
 
 :has_participant_object_shape
