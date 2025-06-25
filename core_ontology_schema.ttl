@@ -296,7 +296,7 @@
 :has_script_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_script ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :script .
 
 :script
@@ -353,7 +353,7 @@
 :has_provenance_resource_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_provenance_resource ;
-    sh:nodeKind sh:IRI .
+    sh:nodeKind sh:BlankNodeOrIRI .
 
 :has_provenance_URL
     rdf:type rdf:Property ;
@@ -423,7 +423,7 @@
 :has_provenance_contributor_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_provenance_contributor ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :group .
 
 :has_provenance_date
@@ -463,7 +463,7 @@
 :has_entity_description_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_entity_description ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :entity_with_description .
 
 :has_entity_description_object_shape
@@ -562,7 +562,7 @@
 :has_author_role_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_author_role ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :author_role .
 
 :has_author_role_i
@@ -796,7 +796,7 @@
 :has_gender_value_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_gender_value ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :gender_value .
 
 :has_gender_value_i
@@ -1136,7 +1136,7 @@
 :has_person_place_relation_type_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_person_place_relation_type ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :person_place_relation_type .
 
 :has_person_place_relation_type_i
@@ -1218,7 +1218,7 @@
 :has_occupation_value_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_occupation_value ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :occupation_value .
 
 :has_occupation_value_i
@@ -1259,7 +1259,7 @@
 :has_id_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_id ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :entity_with_id .
 
 :has_id_object_shape
@@ -1319,7 +1319,7 @@
 :has_id_type_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_id_type ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :id_type .
 
 :has_id_type_i
@@ -1398,7 +1398,7 @@
 :has_nationality_value_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_nationality_value ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :nationality_value .
 
 :has_nationality_value_i
@@ -1482,7 +1482,7 @@
 :has_person_group_relation_type_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_person_group_relation_type ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :person_group_relation_type .
 
 :has_person_group_relation_type_i
@@ -1554,7 +1554,7 @@
 :is_same_as_external_reference_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :is_same_as_external_reference ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :entity_with_external_reference .
 
 :is_same_as_external_reference_object_shape
@@ -1597,7 +1597,7 @@
 :has_person_person_relation_type_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_person_person_relation_type ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :person_person_relation_type .
 
 :has_person_person_relation_type_i
@@ -1626,7 +1626,7 @@
 :has_person_person_relation_role_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_person_person_relation_role ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :person_person_relation_role .
 
 :has_person_person_relation_role_i
@@ -1712,7 +1712,7 @@
 :has_citation_resource_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_citation_resource ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :work .
 
 :has_citation_resource_i
@@ -1761,7 +1761,7 @@
 :has_place_type_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_place_type ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :place_type .
 
 :has_place_type_i
@@ -1791,7 +1791,7 @@
 :is_part_of_place_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :is_part_of_place ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :place .
 
 :is_part_of_place_object_shape
