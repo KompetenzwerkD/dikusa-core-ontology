@@ -3069,13 +3069,13 @@
 :is_part_of_object_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :is_part_of_object ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :object .
 
 :is_part_of_object_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :is_part_of_object ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :object .
 
 :is_part_of_object_i
@@ -3098,7 +3098,7 @@
 :has_dimension_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_dimension ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :object .
 
 :has_dimension_object_shape
@@ -3139,7 +3139,7 @@
 :has_dimension_type_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_dimension_type ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :dimension_type .
 
 :has_dimension_type_i
@@ -3174,7 +3174,7 @@
 :has_dimension_unit_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_dimension_unit ;
-    sh:nodeKind sh:IRI ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
     sh:class :dimension_unit .
 
 :has_dimension_unit_i
