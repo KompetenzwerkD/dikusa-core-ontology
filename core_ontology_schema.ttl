@@ -84,6 +84,7 @@
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_citation ;
     rdfs:subClassOf :entity_with_author ;
+    rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :resource ;
     rdfs:label "work"@en ;
     rdfs:label "Werk"@de .
