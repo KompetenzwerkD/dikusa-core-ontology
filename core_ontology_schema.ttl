@@ -3585,18 +3585,14 @@
     owl:inverseOf :is_published .
 
 :publication
-    rdf:type rdfs:Class , sh:NodeShape ;
+    rdf:type rdfs:Class ;
     rdfs:comment "The publication of an entity of class work." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :entity_with_timepoint ;
     rdfs:subClassOf :entity_with_place ;
     rdfs:label "publication"@en ;
-    rdfs:label "Veröffentlichung"@de ;
-    sh:property [
-        sh:path [ sh:inversePath :is_published ] ;
-        sh:minCount 1
-    ] .
+    rdfs:label "Veröffentlichung"@de .
 
 :has_publisher
     rdf:type rdf:Property ;
