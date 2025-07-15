@@ -2359,6 +2359,7 @@
     rdfs:comment "The subject area of an entity of class work." ;
     rdfs:subClassOf :entity_with_name ;
     rdfs:subClassOf :entity_with_description ;
+    rdfs:subClassOf :entity_with_id ;
     rdfs:label "subject area"@en ;
     rdfs:label "Themenbereich"@de .
 
