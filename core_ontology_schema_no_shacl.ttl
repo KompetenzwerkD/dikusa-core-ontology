@@ -2415,6 +2415,14 @@
     rdfs:label "published work"@en ;
     rdfs:label "veröffentlichtes Werk"@de .
 
+:physical_work
+    rdf:type rdfs:Class ;
+    rdfs:comment "When a work is not an abstract entity (such as Goethe's Faust) but is one with it's physical form like letters, files or records in an archive" ;
+    rdfs:subClassOf :work ;
+    rdfs:subClassOf :object ;
+    rdfs:label "physical work"@en ;
+    rdfs:label "physisches Werk"@de .
+
 #-----------
 
 :has_license
