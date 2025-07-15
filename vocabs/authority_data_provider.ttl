@@ -8,34 +8,43 @@
     skos:defaultLanguage "en";
     cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
     dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
-    skos:definition "List of authority data providers for referencing entities"@en ;
-    skos:definition "Liste von Normdatenanbietern zur Referenzierung von Entitäten"@de ;
-    skos:prefLabel "Authority Data Providers"@en ;
-    skos:prefLabel "Normdatenanbieter"@de .
+    skos:definition "List of authority data providers for referencing entities"@eng ;
+    skos:definition "Liste von Normdatenanbietern zur Referenzierung von Entitäten"@deu ;
+    skos:prefLabel "Authority Data Providers"@eng ;
+    skos:prefLabel "Normdatenanbieter"@deu .
 
 <https://purl.archive.org/werkd/vocabs/authority_data_provider/en/page/wikidata> rdf:type skos:Concept ;
     owl:sameAs <https://www.wikidata.org/wiki/Q2013> ;
     skos:inScheme <https://purl.archive.org/werkd/vocabs/authority_data_provider/en> ;
     skos:topConceptOf <https://purl.archive.org/werkd/vocabs/authority_data_provider/en> ;
-    skos:definition "Wikidata is a free and open knowledge base that can be read and edited by both humans and machines. Wikidata acts as central storage for the structured data of its Wikimedia sister projects including Wikipedia, Wikivoyage, Wiktionary, Wikisource, and others."@en ;
-    skos:definition "Wikidata ist eine kostenlose und offene Wissensdatenbank, die sowohl von Menschen als auch von Maschinen gelesen und bearbeitet werden kann."@de ;
-    skos:prefLabel "Wikidata"@en ;
-    skos:prefLabel "Wikidata"@de .
+    skos:definition "Wikidata is a free and open knowledge base that can be read and edited by both humans and machines. Wikidata acts as central storage for the structured data of its Wikimedia sister projects including Wikipedia, Wikivoyage, Wiktionary, Wikisource, and others."@eng ;
+    skos:definition "Wikidata ist eine kostenlose und offene Wissensdatenbank, die sowohl von Menschen als auch von Maschinen gelesen und bearbeitet werden kann."@deu ;
+    skos:prefLabel "Wikidata"@eng ;
+    skos:prefLabel "Wikidata"@deu .
 
 <https://purl.archive.org/werkd/vocabs/authority_data_provider/en/page/hov> rdf:type skos:Concept ;
     owl:sameAs <https://www.wikidata.org/wiki/Q17024175> ;
     skos:inScheme <https://purl.archive.org/werkd/vocabs/authority_data_provider/en> ;
     skos:topConceptOf <https://purl.archive.org/werkd/vocabs/authority_data_provider/en> ;
-    skos:definition "The Historische Ortsverzeichnis von Sachsen (Historical Place Directory of Saxony) includes almost all settlements that have been documented in the territory of the Free State of Saxony since the Middle Ages."@en ;
-    skos:definition "Das Historische Ortsverzeichnis von Sachsen erfasst nahezu alle Siedlungen, die seit dem Mittelalter für das Gebiet des heutigen Freistaates nachweisbar sind."@de ;
-    skos:prefLabel "HOV"@en ;
-    skos:prefLabel "HOV"@de .
+    skos:definition "The Historische Ortsverzeichnis von Sachsen (Historical Place Directory of Saxony) includes almost all settlements that have been documented in the territory of the Free State of Saxony since the Middle Ages."@eng ;
+    skos:definition "Das Historische Ortsverzeichnis von Sachsen erfasst nahezu alle Siedlungen, die seit dem Mittelalter für das Gebiet des heutigen Freistaates nachweisbar sind."@deu ;
+    skos:prefLabel "HOV"@eng ;
+    skos:prefLabel "HOV"@deu .
 
 <https://purl.archive.org/werkd/vocabs/authority_data_provider/en/page/gnd> rdf:type skos:Concept ;
     owl:sameAs <https://www.wikidata.org/wiki/Q36578> ;
     skos:inScheme <https://purl.archive.org/werkd/vocabs/authority_data_provider/en> ;
     skos:topConceptOf <https://purl.archive.org/werkd/vocabs/authority_data_provider/en> ;
-    skos:definition "The Gemeinsame Normdatei (GND) is a cooperatively created authority file for personal names, corporate bodies and keywords."@en ;
-    skos:definition "Die Gemeinsame Normdatei (GND) ist eine kooperativ erstellte Normdatei für Personennamen, Körperschaften und Schlagwörter."@de ;
-    skos:prefLabel "GND"@en ;
-    skos:prefLabel "GND"@de .
+    skos:definition "The Gemeinsame Normdatei (GND) is a cooperatively created authority file for personal names, corporate bodies and keywords."@eng ;
+    skos:definition "Die Gemeinsame Normdatei (GND) ist eine kooperativ erstellte Normdatei für Personennamen, Körperschaften und Schlagwörter."@deu ;
+    skos:prefLabel "GND"@eng ;
+    skos:prefLabel "GND"@deu .
+
+<https://purl.archive.org/werkd/vocabs/authority_data_provider/en/page/ddc> rdf:type skos:Concept ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q48460> ;
+    skos:inScheme <https://purl.archive.org/werkd/vocabs/authority_data_provider/en> ;
+    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/authority_data_provider/en> ;
+    skos:definition "The Dewey Decimal Classification is a system for organizing knowledge used in many libraries worldwide."@eng ;
+    skos:definition "Die Dewey-Dezimalklassifikation ist ein System zur Ordnung von Wissen, das in vielen Bibliotheken weltweit verwendet wird."@deu ;
+    skos:prefLabel "DDC"@eng ;
+    skos:prefLabel "DDC"@deu .
