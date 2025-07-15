@@ -2407,6 +2407,16 @@
 
 #-----------
 
+:published_work
+    rdf:type rdfs:Class ;
+    rdfs:comment "Works to be seen as one with their publication if there is no need for a separation" ;
+    rdfs:subClassOf :work ;
+    rdfs:subClassOf :publication ;
+    rdfs:label "published work"@en ;
+    rdfs:label "veröffentlichtes Werk"@de .
+
+#-----------
+
 :has_license
     rdf:type rdf:Property ;
     rdfs:comment "A relation between a publication and its license." ;
