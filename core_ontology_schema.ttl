@@ -3750,6 +3750,15 @@
     rdfs:label "hat physische Instanz - invers"@de ;
     rdfs:comment "Inverse relation to has_physical_instance." ;
     owl:inverseOf :has_physical_instance .
+#-----------
+
+:published_work
+    rdf:type rdfs:Class ;
+    rdfs:comment "Works to be seen as one with their publication if there is no need for a separation" ;
+    rdfs:subClassOf :work ;
+    rdfs:subClassOf :publication ;
+    rdfs:label "published work"@en ;
+    rdfs:label "veröffentlichtes Werk"@de .
 
 #-----------
 
