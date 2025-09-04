@@ -348,7 +348,27 @@
     rdfs:label "hat Tripel-Wert"@de ;
     rdfs:subPropertyOf :has_value .
 
-# ----------------------
+
+# -------------------
+
+# Properties for making provenance statements about triples
+# these properties are to be automatically added during import into a central knowlede graph
+
+:has_provenance_project
+    rdf:type rdf:Property ;
+    rdfs:label "has provenance project"@en ;
+    rdfs:label "hat Provenienz-Projekt"@de ;
+    rdfs:comment "Relation between a triple and and the IRI of a project (e.g. from ProjekteVZ) that created it. This information is added automatically during import into Central Knowledge Graph" ;
+    rdfs:domain rdf-star:Triple .
+
+:has_provenance_dataset
+    rdf:type rdf:Property ;
+    rdfs:label "has provenance dataset"@en ;
+    rdfs:label "hat Provenienz-Datensatz"@de ;
+    rdfs:comment "Relation between a triple and and the IRI or URL of the dataset where the information was integrated from. This information is added automatically during import into Central Knowledge Graph" ;
+    rdfs:domain rdf-star:Triple .
+
+# ---------------------
     
 :has_entity_description
     rdf:type rdf:Property ;
