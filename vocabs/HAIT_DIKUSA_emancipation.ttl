@@ -4,7 +4,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> rdf:type skos:ConceptScheme ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> rdf:type skos:ConceptScheme ;
     skos:defaultLanguage "en";
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/classes/5> ;
     cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
@@ -12,105 +12,133 @@
     skos:definition "List of categories of emancipation used in the DIKUSA project of the Hannah Arendt Institute for Totalitarianism Studies (HAIT) concerned with experiences during displacement" ;
     skos:prefLabel "Emancipation"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/716> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/716> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/716> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:definition "Identification of a rupture caused by events such as migration, the birth of a child, or the start of a university education."@en ;
+    skos:definition "Bestimmung eines Bruchs durch z.B. Migration, Geburt des Kindes oder Aufnahme von einem Studium."@de ;
     skos:prefLabel "interruption"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/717> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/717> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/717> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:definition "End of professional life due to illness or retirement."@en ;
+    skos:definition "Ende des Berufslebens durch Krankheit oder Pension bzw. Rente."@de ;
     skos:prefLabel "termination"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/752> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/752> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/752> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:definition "Vocational training"@en ;
+    skos:definition "Berufsausbildung"@de ;
     skos:prefLabel "apprenticeship"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/754> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/754> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/754> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:definition "Holding office in a political party."@en ;
+    skos:definition "Mandat bei einer Partei."@de ;
     skos:prefLabel "party mandate"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/755> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/755> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/755> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:definition "Involvement or volunteering with a non-governmental organization (NGO)."@en ;
+    skos:definition "Mitarbeit bzw. Engagement bei einer NGO (non-governmental organization)."@de ;
     skos:prefLabel "NGO"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/756> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/756> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/756> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:definition "Engagement in a feminist organization."@en ;
+    skos:definition "Engagement in einer feministischen Organisation."@de ;
     skos:prefLabel "feminist"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/714> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/714> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/714> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:definition "Role change refers to a transition from professional employment to unpaid domestic work or the resumption of paid employment."@en ;
+    skos:definition "Der Rollenwechsel beschreibt eine erwähnte Änderung im Bezug auf die Berufswelt hin zu einer unbezahlten Tätigkeit im Haushalt oder einer Wiederaufnahme einer bezahlten beruflichen Tätigkeit."@de ;
     skos:prefLabel "change of role"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/751> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/751> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/751> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:definition "Learning foreign languages"@en ;
+    skos:definition "Erlernen von Fremdsprachen"@de ;
     skos:prefLabel "language learning"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/715> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/715> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/715> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:definition "Taking on household responsibilities and child-rearing without financial compensation."@en ;
+    skos:definition "Übernahme der Tätigkeiten im Haushalt und Erziehung der Kinder ohne Bezahlung."@de ;
     skos:prefLabel "housewife"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/757> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/757> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/757> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
-    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:definition "Self-actualization by developing your abilities, desires, and values to live a life that reflects your true personality."@en ;
+    skos:definition "Selbstverwirklichung durch Entfaltung der eigenen Fähigkeiten, Wünsche und Werte, um ein Leben zu führen, das der eigenen Persönlichkeit entspricht."@de ;
     skos:prefLabel "self-realization"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/713> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/713> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/713> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:definition "The start of a career marks the entry into professional life, which usually follows the completion of education."@en ;
+    skos:definition "Mit dem Beginn der Karriere wird der Einstieg in die Berufswelt beschrieben, der in der Regel auf den Abschluss der Ausbildung folgt."@de ;
     skos:prefLabel "beginning"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/718> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/718> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/718> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:definition "Transition phase toward a new occupation or different professional field."@en ;
+    skos:definition "Übergangsphase hin zu neuer Tätigkeit oder anderem Berufsfeld."@de ;
     skos:prefLabel "transition"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/753> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/753> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/753> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
-    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
-    skos:narrower <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/756> ;
-    skos:narrower <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/755> ;
-    skos:narrower <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/754> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:narrower <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/756> ;
+    skos:narrower <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/755> ;
+    skos:narrower <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/754> ;
     skos:prefLabel "political commitment"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/748> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/748> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/748> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
-    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
-    skos:narrower <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/752> ;
-    skos:narrower <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/750> ;
-    skos:narrower <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/751> ;
-    skos:narrower <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/749> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:narrower <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/752> ;
+    skos:narrower <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/750> ;
+    skos:narrower <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/751> ;
+    skos:narrower <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/749> ;
     skos:prefLabel "Opportunities for emancipation"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/712> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/712> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/712> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
-    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
-    skos:narrower <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/713> ;
-    skos:narrower <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/714> ;
-    skos:narrower <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/715> ;
-    skos:narrower <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/716> ;
-    skos:narrower <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/717> ;
-    skos:narrower <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/718> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:narrower <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/713> ;
+    skos:narrower <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/714> ;
+    skos:narrower <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/715> ;
+    skos:narrower <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/716> ;
+    skos:narrower <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/717> ;
+    skos:narrower <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/718> ;
     skos:prefLabel "career"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/749> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/749> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/749> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:definition "Studying at a university or college"@en ;
+    skos:definition "Studium an Universität oder College"@de ;
     skos:prefLabel "study"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en/page/750> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en/page/750> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/750> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emancipation/en> ;
+    skos:definition "Education at elementary school, secondary school, etc."@en ;
+    skos:definition "Ausbildung an Grundschule, Gymnasium etc."@de ;
     skos:prefLabel "education"@en .
 
