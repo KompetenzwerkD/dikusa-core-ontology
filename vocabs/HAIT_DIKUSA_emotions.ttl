@@ -4,7 +4,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> rdf:type skos:ConceptScheme ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> rdf:type skos:ConceptScheme ;
     skos:defaultLanguage "en";
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/classes/4> ;
     cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
@@ -12,98 +12,130 @@
     skos:definition "List of emotions used in the DIKUSA project of the Hannah Arendt Institute for Totalitarianism Studies (HAIT) concerned with experiences during displacement" ;
     skos:prefLabel "Emotions"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/720> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en/page/720> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/720> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
-    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:definition "Excitement, for instance when entering the USA after a successful escape."@en ;
+    skos:definition "Aufregung beispielsweise bei der Einreise in die USA nach geglückter Flucht."@de ;
     skos:prefLabel "excitement"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/725> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en/page/725> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/725> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
-    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:definition "Hoffnung z.B. auf ein neues Leben bzw. eines ohne Verfolgung"@de ;
+    skos:definition "Hope, for example for a new life or one without persecution."@en ;
     skos:prefLabel "hope"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/727> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en/page/727> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/727> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
-    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:definition "Hunger due to lack of money or shortage of supplies."@en ;
+    skos:definition "Hunger aufgrund von Geldmangel oder Versorgungsnot."@de ;
     skos:prefLabel "hunger"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/722> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en/page/722> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/722> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
-    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
-    skos:narrower <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/724> ;
-    skos:narrower <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/723> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:narrower <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en/page/724> ;
+    skos:narrower <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en/page/723> ;
+    skos:definition "Fear, for example of persecution."@en ;
+    skos:definition "Angst z.B. vor Verfolgung."@de ;
     skos:prefLabel "fear"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/724> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en/page/724> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/724> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:definition "Fear for relatives due to attacks and discrimination."@en ;
+    skos:definition "Angst um Angehörige wegen Angriffen und Diskriminierung."@de ;
     skos:prefLabel "fear for family members"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/732> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en/page/732> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/732> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
-    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:definition "Relief at reaching safe spaces or receiving an opportunity."@en ;
+    skos:definition "Erleichterung über das Erreichen sicherer Räume oder den Erhalt einer Möglichkeit."@de ;
     skos:prefLabel "relief"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/723> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en/page/723> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/723> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:definition "Fear of unforeseeable consequences of antisemitism."@en ;
+    skos:definition "Angst vor nicht absehbaren Konsequenzen des Antisemitismus."@de ;
     skos:prefLabel "fear about incalculability"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/730> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en/page/730> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/730> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
-    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:definition "Joy, for instance upon being reunited with family members."@en ;
+    skos:definition "Freude beispielsweise bei der Wiedervereinigung mit Familienmitgliedern."@de ;
     skos:prefLabel "joy"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/726> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en/page/726> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/726> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
-    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:definition "Despair caused by persecution and the closing of borders."@en ;
+    skos:definition "Verzweiflung aufgrund von Verfolgung und Schließung der Grenzen."@de ;
     skos:prefLabel "hopelessness"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/729> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en/page/729> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/729> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
-    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:definition "Indifference, for example regarding one’s opportunities and losses."@en ;
+    skos:definition "Indifferenz z.B. bezüglich der eigenen Chancen und Verluste."@de ;
     skos:prefLabel "indifference"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/731> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en/page/731> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/731> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
-    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:definition "Love for other people."@en ;
+    skos:definition "Liebe zu anderen Menschen."@de ;
     skos:prefLabel "love"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/733> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en/page/733> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/733> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
-    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:definition "Grief over one’s own life story or the loss of relatives."@en ;
+    skos:definition "Trauer über die eigene Biografie bzw. den Verlust von Angehörigen."@de ;
     skos:prefLabel "sadness"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/734> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en/page/734> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/734> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
-    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:definition "A sense of security for oneself or family."@en ;
+    skos:definition "Gefühl von Sicherheit der eigenen Person oder Familie."@de ;
     skos:prefLabel "safety"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/735> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en/page/735> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/735> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
-    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:definition "Surprise due to random events."@en ;
+    skos:definition "Überraschung aufgrund von zufälligen Ereignissen."@de ;
     skos:prefLabel "surprise"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/719> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en/page/719> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/719> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
-    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:definition "Anger, for example due to attacks or exclusion."@en ;
+    skos:definition "Wut z.B. aufgrund von Angriffen oder Ausgrenzung."@de ;
     skos:prefLabel "anger"@en .
 
-<https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en/page/721> rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en/page/721> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/721> ;
-    skos:inScheme <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
-    skos:topConceptOf <https://purl.archive.org/werkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_emotion/en> ;
+    skos:definition "Exclusion at school, at work, or in public."@en ;
+    skos:definition "Ausgrenzung in der Schule, der Arbeit oder in der Öffentlichkeit."@de ;
     skos:prefLabel "exclusion"@en .
