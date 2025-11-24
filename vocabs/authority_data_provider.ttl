@@ -66,3 +66,12 @@
     skos:definition "Historical International Standard Classification of Occupations"@deu ;
     skos:prefLabel "HISCO"@eng ;
     skos:prefLabel "HISCO"@deu .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/lido> rdf:type skos:Concept ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1249973> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en> ;
+    skos:definition "Lightweight Information Describing Objects"@eng ;
+    skos:definition "Lightweight Information Describing Objects"@deu ;
+    skos:prefLabel "LIDO"@eng ;
+    skos:prefLabel "LIDO"@deu .
