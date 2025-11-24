@@ -57,3 +57,12 @@
     skos:definition "Landesamt für Denkmalpflege Sachsen"@deu ;
     skos:prefLabel "LFDS"@eng ;
     skos:prefLabel "LFDS"@deu .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/hisco> rdf:type skos:Concept ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q5629694> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en> ;
+    skos:definition "Historical International Standard Classification of Occupations"@eng ;
+    skos:definition "Historical International Standard Classification of Occupations"@deu ;
+    skos:prefLabel "HISCO"@eng ;
+    skos:prefLabel "HISCO"@deu .
