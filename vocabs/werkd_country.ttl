@@ -1,11 +1,11 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix werkd: <http://www.werkd.saw-leipzig.de/IRI/dikusa-core/> .
+@prefix werkd: <https://purl.archive.org/kompetenzwerkd/core_ontology/> .
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix cc:    <http://creativecommons.org/ns#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 
-werkd:country rdf:type skos:ConceptScheme;
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en> rdf:type skos:ConceptScheme;
     cc:licence              <https://www.gnu.org/licenses/agpl-3.0.en.html> ;
     dc:licence         <https://www.gnu.org/licenses/agpl-3.0.en.html> ;
     skos:prefLabel          "Country Vocabulary"@en;
@@ -13,3055 +13,3055 @@ werkd:country rdf:type skos:ConceptScheme;
     skos:definition         "This is a controlled vocabulary based on GND country category and respective GND IDs recommended to use as values for including references to countries in your data"@en ;
     skos:definition         "Dies ist ein kontrolliertes Vokabular basierend auf der GND Länder-Kategorie und den dazugehörigen GND IDs"@de.
 
-werkd:gnd rdf:type werkd:id_type .
+<https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> rdf:type werkd:id_type .
 
-werkd:nicaragua rdf:type skos:Concept ;
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/nicaragua> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Nicaragua"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4042050-4 .
 gnd:4042050-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4042050-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:kamerun rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/kamerun> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Kamerun"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4029413-4 .
 gnd:4029413-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4029413-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:moldawien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/moldawien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Moldawien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4039967-9 .
 gnd:4039967-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4039967-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:marshallinseln rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/marshallinseln> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Marshallinseln"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4037700-3 .
 gnd:4037700-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4037700-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:norddeutscher_bund rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/norddeutscher_bund> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Norddeutscher Bund"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:2033898-3 .
 gnd:2033898-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "2033898-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:kasachstan rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/kasachstan> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Kasachstan"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4029839-5 .
 gnd:4029839-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4029839-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:belarus rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/belarus> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Belarus"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4079143-9 .
 gnd:4079143-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4079143-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:koenigreich_loango rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/koenigreich_loango> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Königreich Loango"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4288450-0 .
 gnd:4288450-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4288450-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:salomonen rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/salomonen> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Salomonen"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4265796-9 .
 gnd:4265796-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4265796-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:eritrea rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/eritrea> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Eritrea"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4015278-9 .
 gnd:4015278-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4015278-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:lettland rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/lettland> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Lettland"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4074187-4 .
 gnd:4074187-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4074187-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:nepal rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/nepal> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Nepal"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4041612-4 .
 gnd:4041612-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4041612-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:norwegen rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/norwegen> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Norwegen"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4042640-3 .
 gnd:4042640-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4042640-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:malaysia rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/malaysia> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Malaysia"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4037203-0 .
 gnd:4037203-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4037203-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:neuseeland rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/neuseeland> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Neuseeland"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4041915-0 .
 gnd:4041915-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4041915-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:zentralafrikanische_republik rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/zentralafrikanische_republik> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Zentralafrikanische Republik"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4067608-0 .
 gnd:4067608-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4067608-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:neue_hebriden rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/neue_hebriden> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Neue Hebriden"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:61014-8 .
 gnd:61014-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "61014-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:volksrepublik_donezk rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/volksrepublik_donezk> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Volksrepublik Donezk"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1081747218 .
 gnd:1081747218 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1081747218" ;
-werkd:has_id_type werkd:gnd .
-werkd:bosnien-herzegowina rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/bosnien-herzegowina> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Bosnien-Herzegowina"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4088119-2 .
 gnd:4088119-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4088119-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:tansania rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/tansania> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Tansania"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4078149-5 .
 gnd:4078149-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4078149-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:kuba rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/kuba> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Kuba"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4033340-1 .
 gnd:4033340-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4033340-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:dominikanische_republik rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/dominikanische_republik> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Dominikanische Republik"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4012694-8 .
 gnd:4012694-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4012694-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:mocambique rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/mocambique> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Moçambique"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4039786-5 .
 gnd:4039786-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4039786-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:griechenland rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/griechenland> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Griechenland"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4022047-3 .
 gnd:4022047-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4022047-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:suedkorea rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/suedkorea> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Südkorea"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4078029-6 .
 gnd:4078029-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4078029-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:himjar rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/himjar> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Himjar"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1241271305 .
 gnd:1241271305 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1241271305" ;
-werkd:has_id_type werkd:gnd .
-werkd:schweiz_1803-1815 rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/schweiz_1803-1815> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Schweiz (1803-1815)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1085175642 .
 gnd:1085175642 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1085175642" ;
-werkd:has_id_type werkd:gnd .
-werkd:staat_wadhwan rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/staat_wadhwan> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Staat Wadhwan"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:7756217-3 .
 gnd:7756217-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "7756217-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:nordmazedonien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/nordmazedonien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Nordmazedonien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1181214262 .
 gnd:1181214262 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1181214262" ;
-werkd:has_id_type werkd:gnd .
-werkd:paraguay rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/paraguay> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Paraguay"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4044601-3 .
 gnd:4044601-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4044601-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:laos rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/laos> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Laos"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4034571-3 .
 gnd:4034571-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4034571-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:el_salvador rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/el_salvador> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "El Salvador"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4014499-9 .
 gnd:4014499-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4014499-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:lunda_koenigreich rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/lunda_koenigreich> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Lunda (Königreich)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1241258295 .
 gnd:1241258295 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1241258295" ;
-werkd:has_id_type werkd:gnd .
-werkd:fraenkisches_reich rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/fraenkisches_reich> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Fränkisches Reich"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4071332-5 .
 gnd:4071332-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4071332-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:hessen-darmstadt rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/hessen-darmstadt> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Hessen-Darmstadt"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4072471-2 .
 gnd:4072471-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4072471-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:indien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/indien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Indien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4026722-2 .
 gnd:4026722-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4026722-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:polen-litauen rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/polen-litauen> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Polen-Litauen"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1060577984 .
 gnd:1060577984 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1060577984" ;
-werkd:has_id_type werkd:gnd .
-werkd:saint_lucia rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/saint_lucia> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Saint Lucia"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4051307-5 .
 gnd:4051307-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4051307-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:italien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/italien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Italien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4027833-5 .
 gnd:4027833-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4027833-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:pakistan rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/pakistan> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Pakistan"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4075812-6 .
 gnd:4075812-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4075812-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:vereinigte_arabische_emirate rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/vereinigte_arabische_emirate> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Vereinigte Arabische Emirate"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4062742-1 .
 gnd:4062742-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4062742-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:jordanien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/jordanien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Jordanien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4028750-6 .
 gnd:4028750-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4028750-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:sowjetunion rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/sowjetunion> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Sowjetunion"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4077548-3 .
 gnd:4077548-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4077548-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:senegal rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/senegal> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Senegal"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4054529-5 .
 gnd:4054529-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4054529-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:togo rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/togo> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Togo"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4060344-1 .
 gnd:4060344-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4060344-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:antigua_und_barbuda rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/antigua_und_barbuda> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Antigua und Barbuda"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4086593-9 .
 gnd:4086593-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4086593-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:comores rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/comores> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Comores (Territoire d'Outre-Mer)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:123613-1 .
 gnd:123613-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "123613-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:chile rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/chile> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Chile"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4009929-5 .
 gnd:4009929-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4009929-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:republik_der_sieben_vereinigten_provinzen rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/republik_der_sieben_vereinigten_provinzen> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Republik der Sieben Vereinigten Provinzen"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:5245326-1 .
 gnd:5245326-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "5245326-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:schweiz_1353-1513 rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/schweiz_1353-1513> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Schweiz (1353-1513)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1085178900 .
 gnd:1085178900 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1085178900" ;
-werkd:has_id_type werkd:gnd .
-werkd:burundi rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/burundi> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Burundi"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4009181-8 .
 gnd:4009181-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4009181-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:peru rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/peru> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Peru"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4045312-1 .
 gnd:4045312-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4045312-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:gilbert_islands rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/gilbert_islands> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Gilbert Islands"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:44075-9 .
 gnd:44075-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "44075-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:seychellen rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/seychellen> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Seychellen"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4054694-9 .
 gnd:4054694-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4054694-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:tabasaran rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/tabasaran> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Tabasaran"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1027360262 .
 gnd:1027360262 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1027360262" ;
-werkd:has_id_type werkd:gnd .
-werkd:trinidad_und_tobago rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/trinidad_und_tobago> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Trinidad und Tobago"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4060907-8 .
 gnd:4060907-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4060907-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:tuerkei rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/tuerkei> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Türkei"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4061163-2 .
 gnd:4061163-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4061163-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:indonesien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/indonesien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Indonesien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4026761-1 .
 gnd:4026761-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4026761-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:usbekistan rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/usbekistan> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Usbekistan"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4062199-6 .
 gnd:4062199-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4062199-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:liangshan_yizu_zizhizhou rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/liangshan_yizu_zizhizhou> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Liangshan Yizu Zizhizhou"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4316277-0 .
 gnd:4316277-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4316277-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:monaco rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/monaco> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Monaco"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4040031-1 .
 gnd:4040031-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4040031-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:puerto_rico rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/puerto_rico> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Puerto Rico"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4076429-1 .
 gnd:4076429-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4076429-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:batavische_republik rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/batavische_republik> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Batavische Republik"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:5036918-0 .
 gnd:5036918-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "5036918-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:staat_mikronesien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/staat_mikronesien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Staat Mikronesien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4274661-9 .
 gnd:4274661-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4274661-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:barbados rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/barbados> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Barbados"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4004487-7 .
 gnd:4004487-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4004487-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:karantanien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/karantanien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Karantanien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4307086-3 .
 gnd:4307086-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4307086-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:sambia rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/sambia> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Sambia"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4076986-0 .
 gnd:4076986-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4076986-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:bamra rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/bamra> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Bamra"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:7756218-5 .
 gnd:7756218-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "7756218-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:ostfraenkisches_reich rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/ostfraenkisches_reich> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Ostfränkisches Reich"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4301261-9 .
 gnd:4301261-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4301261-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:syrien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/syrien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Syrien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4058794-0 .
 gnd:4058794-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4058794-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:westsamoa rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/westsamoa> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Westsamoa"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4079249-3 .
 gnd:4079249-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4079249-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:taiwan rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/taiwan> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Taiwan"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4017875-4 .
 gnd:4017875-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4017875-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:sao_tome_und_principe rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/sao_tome_und_principe> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "São Tomé und Príncipe"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4118426-9 .
 gnd:4118426-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4118426-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:thueringer_reich rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/thueringer_reich> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Thüringer Reich"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1120732131 .
 gnd:1120732131 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1120732131" ;
-werkd:has_id_type werkd:gnd .
-werkd:mitanni rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/mitanni> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Mitanni"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4010193-9 .
 gnd:4010193-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4010193-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:afghanistan rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/afghanistan> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Afghanistan"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4000687-6 .
 gnd:4000687-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4000687-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:kanada rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/kanada> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Kanada"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4029456-0 .
 gnd:4029456-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4029456-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:albanien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/albanien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Albanien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4001028-4 .
 gnd:4001028-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4001028-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:uruguay rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/uruguay> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Uruguay"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4062186-8 .
 gnd:4062186-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4062186-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:myanmar rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/myanmar> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Myanmar"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1193111315 .
 gnd:1193111315 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1193111315" ;
-werkd:has_id_type werkd:gnd .
-werkd:osmanisches_reich rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/osmanisches_reich> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Osmanisches Reich"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4075720-1 .
 gnd:4075720-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4075720-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:deutschland rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/deutschland> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Deutschland"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4011882-4 .
 gnd:4011882-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4011882-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:vatikanstadt rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/vatikanstadt> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Vatikanstadt"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4062404-3 .
 gnd:4062404-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4062404-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:aethiopien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/aethiopien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Äthiopien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4000639-6 .
 gnd:4000639-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4000639-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:australien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/australien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Australien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4003900-6 .
 gnd:4003900-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4003900-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:simbabwe rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/simbabwe> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Simbabwe"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4049850-5 .
 gnd:4049850-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4049850-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:niue rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/niue> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Niue"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:131744-1 .
 gnd:131744-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "131744-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:liechtenstein rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/liechtenstein> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Liechtenstein"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4035665-6 .
 gnd:4035665-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4035665-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:ghana rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/ghana> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Ghana"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4020949-0 .
 gnd:4020949-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4020949-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:birma rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/birma> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Birma"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4069500-1 .
 gnd:4069500-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4069500-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:republik_kongo rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/republik_kongo> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Republik Kongo"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4032097-2 .
 gnd:4032097-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4032097-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:montenegro rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/montenegro> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Montenegro"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4040163-7 .
 gnd:4040163-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4040163-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:aram rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/aram> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Aram"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1171764901 .
 gnd:1171764901 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1171764901" ;
-werkd:has_id_type werkd:gnd .
-werkd:deutschland_ddr rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/deutschland_ddr> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Deutschland (DDR)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4011890-3 .
 gnd:4011890-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4011890-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:san_marino rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/san_marino> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "San Marino"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4051524-2 .
 gnd:4051524-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4051524-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:al-imarat_al-mutasaliha rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/al-imarat_al-mutasaliha> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "al- Imārāt al-Mutaṣāliḥa"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1035027-5 .
 gnd:1035027-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1035027-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:costa_rica rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/costa_rica> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Costa Rica"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4010618-4 .
 gnd:4010618-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4010618-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:papua-neuguinea rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/papua-neuguinea> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Papua-Neuguinea"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4044569-0 .
 gnd:4044569-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4044569-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:sri_lanka rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/sri_lanka> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Sri Lanka"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4009696-8 .
 gnd:4009696-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4009696-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:dahomey rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/dahomey> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Dahomey"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:15582-2 .
 gnd:15582-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "15582-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:saint_christopher_and_nevis rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/saint_christopher_and_nevis> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Saint Christopher and Nevis"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:133557-1 .
 gnd:133557-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "133557-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:cookinseln rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/cookinseln> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Cookinseln"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4230226-2 .
 gnd:4230226-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4230226-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:gambia rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/gambia> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Gambia"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4019197-7 .
 gnd:4019197-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4019197-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:kasachische_ssr rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/kasachische_ssr> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Kasachische SSR"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1009150-6 .
 gnd:1009150-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1009150-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:finnland rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/finnland> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Finnland"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4017243-0 .
 gnd:4017243-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4017243-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:oesterreich-ungarn rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/oesterreich-ungarn> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Österreich-Ungarn"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4075613-0 .
 gnd:4075613-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4075613-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:rumaenien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/rumaenien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Rumänien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4050939-4 .
 gnd:4050939-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4050939-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:brasilien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/brasilien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Brasilien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4008003-1 .
 gnd:4008003-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4008003-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:republik_von_korca rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/republik_von_korca> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Republik von Korça"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1135617678 .
 gnd:1135617678 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1135617678" ;
-werkd:has_id_type werkd:gnd .
-werkd:jemen rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/jemen> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Jemen"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4073009-8 .
 gnd:4073009-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4073009-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:elam rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/elam> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Elam"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4014149-4 .
 gnd:4014149-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4014149-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:gabun rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/gabun> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Gabun"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4019052-3 .
 gnd:4019052-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4019052-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:malawi rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/malawi> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Malawi"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4074495-4 .
 gnd:4074495-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4074495-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:russische_sfsr rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/russische_sfsr> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Russische SFSR"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4395034-6 .
 gnd:4395034-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4395034-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:tanganyika rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/tanganyika> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Tanganyika"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:15633-4 .
 gnd:15633-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "15633-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:kirchenstaat rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/kirchenstaat> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Kirchenstaat"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4114201-9 .
 gnd:4114201-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4114201-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:kraljevina_srba rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/kraljevina_srba> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Kraljevina Srba, Hrvata i Slovenaca"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:45879-X .
 gnd:45879-X dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "45879-X" ;
-werkd:has_id_type werkd:gnd .
-werkd:dominica rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/dominica> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Dominica"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4085456-5 .
 gnd:4085456-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4085456-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:zypern rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/zypern> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Zypern"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4079596-2 .
 gnd:4079596-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4079596-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:republik_neugranada rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/republik_neugranada> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Republik Neugranada"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1079565973 .
 gnd:1079565973 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1079565973" ;
-werkd:has_id_type werkd:gnd .
-werkd:nigeria rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/nigeria> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Nigeria"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4042300-1 .
 gnd:4042300-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4042300-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:china rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/china> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "China"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4009937-4 .
 gnd:4009937-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4009937-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:latvija rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/latvija> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Latvija"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:122139-5 .
 gnd:122139-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "122139-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:thailand rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/thailand> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Thailand"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4078228-1 .
 gnd:4078228-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4078228-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:kolumbien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/kolumbien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Kolumbien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4031812-6 .
 gnd:4031812-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4031812-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:sint_maarten rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/sint_maarten> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Sint Maarten"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:7589556-0 .
 gnd:7589556-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "7589556-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:malta rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/malta> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Malta"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4037257-1 .
 gnd:4037257-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4037257-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:csfr rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/csfr> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "ČSFR"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1085176169 .
 gnd:1085176169 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1085176169" ;
-werkd:has_id_type werkd:gnd .
-werkd:westsahara rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/westsahara> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Westsahara"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4079248-1 .
 gnd:4079248-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4079248-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:kiribati rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/kiribati> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Kiribati"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:129224-9 .
 gnd:129224-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "129224-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:island rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/island> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Island"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4027754-9 .
 gnd:4027754-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4027754-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:algerien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/algerien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Algerien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4001179-3 .
 gnd:4001179-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4001179-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:lietuva_ab_1991 rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/lietuva_ab_1991> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Lietuva (ab 1991)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1085174980 .
 gnd:1085174980 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1085174980" ;
-werkd:has_id_type werkd:gnd .
-werkd:soudan rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/soudan> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Soudan"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:5027373-5 .
 gnd:5027373-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "5027373-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:uganda rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/uganda> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Uganda"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4061457-8 .
 gnd:4061457-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4061457-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:israel_altertum rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/israel_altertum> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Israel (Altertum)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4072956-4 .
 gnd:4072956-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4072956-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:gallisches_sonderreich rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/gallisches_sonderreich> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Gallisches Sonderreich"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1123969752 .
 gnd:1123969752 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1123969752" ;
-werkd:has_id_type werkd:gnd .
-werkd:frankreich rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/frankreich> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Frankreich"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4018145-5 .
 gnd:4018145-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4018145-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:brunei rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/brunei> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Brunei"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4008479-6 .
 gnd:4008479-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4008479-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:anguilla rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/anguilla> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Anguilla"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4426211-5 .
 gnd:4426211-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4426211-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:suedafrika rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/suedafrika> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Südafrika"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4078012-0 .
 gnd:4078012-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4078012-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:boehmen rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/boehmen> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Böhmen"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4007467-5 .
 gnd:4007467-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4007467-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:srbija_bis_1918 rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/srbija_bis_1918> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Srbija (bis 1918)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1085174875 .
 gnd:1085174875 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1085174875" ;
-werkd:has_id_type werkd:gnd .
-werkd:tunesien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/tunesien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Tunesien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4061206-5 .
 gnd:4061206-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4061206-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:zentralafrikanisches_kaiserreich rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/zentralafrikanisches_kaiserreich> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Zentralafrikanisches Kaiserreich"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:134320-8 .
 gnd:134320-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "134320-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:slovensko_1939-1945 rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/slovensko_1939-1945> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Slovensko (1939-1945)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:108517574X .
 gnd:108517574X dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "108517574X" ;
-werkd:has_id_type werkd:gnd .
-werkd:somalia rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/somalia> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Somalia"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4077509-4 .
 gnd:4077509-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4077509-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:juda_koenigreich rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/juda_koenigreich> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Juda (Königreich)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1241216274 .
 gnd:1241216274 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1241216274" ;
-werkd:has_id_type werkd:gnd .
-werkd:slowakei rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/slowakei> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Slowakei"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4055297-4 .
 gnd:4055297-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4055297-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:argentinien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/argentinien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Argentinien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4002890-2 .
 gnd:4002890-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4002890-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:aegypten rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/aegypten> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Ägypten"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4000556-2 .
 gnd:4000556-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4000556-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:westfraenkisches_reich rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/westfraenkisches_reich> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Westfränkisches Reich"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4065787-5 .
 gnd:4065787-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4065787-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:sierra_leone rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/sierra_leone> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Sierra Leone"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4054908-2 .
 gnd:4054908-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4054908-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:eswatini rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/eswatini> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Eswatini"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1225128579 .
 gnd:1225128579 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1225128579" ;
-werkd:has_id_type werkd:gnd .
-werkd:usa rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/usa> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "USA"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4078704-7 .
 gnd:4078704-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4078704-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:turkmenistan rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/turkmenistan> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Turkmenistan"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4061255-7 .
 gnd:4061255-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4061255-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:deutschland_bundesrepublik rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/deutschland_bundesrepublik> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Deutschland (Bundesrepublik)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4011889-7 .
 gnd:4011889-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4011889-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:samoa rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/samoa> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Samoa"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:3018268-2 .
 gnd:3018268-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "3018268-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:nauru rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/nauru> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Nauru"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4122008-0 .
 gnd:4122008-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4122008-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:belgien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/belgien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Belgien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4005406-8 .
 gnd:4005406-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4005406-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:suedvietnam rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/suedvietnam> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Südvietnam"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4078050-8 .
 gnd:4078050-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4078050-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:philippinen rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/philippinen> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Philippinen"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4045771-0 .
 gnd:4045771-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4045771-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:saudi-arabien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/saudi-arabien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Saudi-Arabien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4051788-3 .
 gnd:4051788-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4051788-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:mauretanien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/mauretanien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Mauretanien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4038051-8 .
 gnd:4038051-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4038051-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:jugoslawien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/jugoslawien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Jugoslawien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4028966-7 .
 gnd:4028966-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4028966-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:georgien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/georgien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Georgien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4022406-5 .
 gnd:4022406-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4022406-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:libanon rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/libanon> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Libanon"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4035567-6 .
 gnd:4035567-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4035567-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:hatti rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/hatti> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Hatti"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4023632-8 .
 gnd:4023632-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4023632-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:kroatien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/kroatien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Kroatien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4073841-3 .
 gnd:4073841-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4073841-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:libyen rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/libyen> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Libyen"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4035589-5 .
 gnd:4035589-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4035589-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:bangladesch rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/bangladesch> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Bangladesch"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4130903-0 .
 gnd:4130903-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4130903-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:slowenien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/slowenien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Slowenien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4055302-4 .
 gnd:4055302-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4055302-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:singapur rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/singapur> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Singapur"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4055089-8 .
 gnd:4055089-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4055089-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:siam rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/siam> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Siam"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:120375-7 .
 gnd:120375-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "120375-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:lesotho rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/lesotho> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Lesotho"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4074183-7 .
 gnd:4074183-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4074183-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:grenada rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/grenada> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Grenada"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4021981-1 .
 gnd:4021981-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4021981-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:kambodscha rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/kambodscha> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Kambodscha"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4029400-6 .
 gnd:4029400-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4029400-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:russland rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/russland> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Russland"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4076899-5 .
 gnd:4076899-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4076899-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:panama rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/panama> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Panama"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4044445-4 .
 gnd:4044445-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4044445-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:elfenbeinkueste rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/elfenbeinkueste> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Elfenbeinküste"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4014426-4 .
 gnd:4014426-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4014426-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:ruanda rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/ruanda> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Ruanda"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4076910-0 .
 gnd:4076910-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4076910-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:armenien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/armenien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Armenien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4085931-9 .
 gnd:4085931-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4085931-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:autonome_republik_nordepirus rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/autonome_republik_nordepirus> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Autonome Republik Nordepirus"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1028843712 .
 gnd:1028843712 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1028843712" ;
-werkd:has_id_type werkd:gnd .
-werkd:tanganyika rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/tanganyika> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Tanganyika"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1085174778 .
 gnd:1085174778 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1085174778" ;
-werkd:has_id_type werkd:gnd .
-werkd:british_solomon_islands rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/british_solomon_islands> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "British Solomon Islands"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:43683-5 .
 gnd:43683-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "43683-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:aegypten_altertum rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/aegypten_altertum> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Ägypten (Altertum)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4068430-1 .
 gnd:4068430-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4068430-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:honduras rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/honduras> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Honduras"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4025814-2 .
 gnd:4025814-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4025814-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:burma rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/burma> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Burma"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:5216525-5 .
 gnd:5216525-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "5216525-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:schweden rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/schweden> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Schweden"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4077258-5 .
 gnd:4077258-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4077258-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:venezuela rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/venezuela> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Venezuela"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4062512-6 .
 gnd:4062512-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4062512-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:jamaika rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/jamaika> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Jamaika"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4028456-6 .
 gnd:4028456-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4028456-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:saint_christopher-nevis-anguilla rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/saint_christopher-nevis-anguilla> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Saint Christopher- Nevis-Anguilla"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:272359-1 .
 gnd:272359-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "272359-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:surinam rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/surinam> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Surinam"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4058664-9 .
 gnd:4058664-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4058664-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:irak rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/irak> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Irak"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4072920-5 .
 gnd:4072920-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4072920-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:ceska_sr rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/ceska_sr> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Česká SR"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1001254-0 .
 gnd:1001254-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1001254-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:ukrainska_narodna_respublika rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/ukrainska_narodna_respublika> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Ukraïnsʹka Narodna Respublika"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1182552048 .
 gnd:1182552048 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1182552048" ;
-werkd:has_id_type werkd:gnd .
-werkd:guatemala rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/guatemala> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Guatemala"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4022428-4 .
 gnd:4022428-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4022428-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:litauen rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/litauen> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Litauen"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4074266-0 .
 gnd:4074266-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4074266-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:spanien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/spanien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Spanien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4055964-6 .
 gnd:4055964-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4055964-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:mauritius rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/mauritius> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Mauritius"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4074641-0 .
 gnd:4074641-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4074641-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:komoren rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/komoren> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Komoren"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4265797-0 .
 gnd:4265797-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4265797-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:irland rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/irland> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Irland"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4027667-3 .
 gnd:4027667-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4027667-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:burkina_faso rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/burkina_faso> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Burkina Faso"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4088707-8 .
 gnd:4088707-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4088707-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:mexiko rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/mexiko> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Mexiko"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4039058-5 .
 gnd:4039058-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4039058-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:haiti rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/haiti> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Haiti"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4022974-9 .
 gnd:4022974-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4022974-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:katar rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/katar> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Katar"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4029924-7 .
 gnd:4029924-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4029924-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:iran rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/iran> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Iran"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4027653-3 .
 gnd:4027653-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4027653-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:aserbaidschan rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/aserbaidschan> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Aserbaidschan"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4068887-2 .
 gnd:4068887-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4068887-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:roemisches_reich rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/roemisches_reich> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Römisches Reich"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4076778-4 .
 gnd:4076778-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4076778-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:venezuela_confederacion rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/venezuela_confederacion> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Venezuela (Confederación)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:6070596-6 .
 gnd:6070596-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "6070596-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:italienisch-somaliland rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/italienisch-somaliland> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Italienisch-Somaliland"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4096343-3 .
 gnd:4096343-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4096343-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:serbien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/serbien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Serbien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4054598-2 .
 gnd:4054598-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4054598-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:holland_koenigreich rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/holland_koenigreich> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Holland (Königreich)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:5245328-5 .
 gnd:5245328-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "5245328-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:griechenland_altertum rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/griechenland_altertum> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Griechenland (Altertum)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4093976-5 .
 gnd:4093976-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4093976-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:osttimor rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/osttimor> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Osttimor"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4075765-1 .
 gnd:4075765-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4075765-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:helvetische_republik rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/helvetische_republik> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Helvetische Republik"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1257385879 .
 gnd:1257385879 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1257385879" ;
-werkd:has_id_type werkd:gnd .
-werkd:luxemburg rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/luxemburg> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Luxemburg"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4036728-9 .
 gnd:4036728-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4036728-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:kirgisien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/kirgisien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Kirgisien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4030848-0 .
 gnd:4030848-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4030848-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:deutsches_reich rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/deutsches_reich> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Deutsches Reich"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:2008993-4 .
 gnd:2008993-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "2008993-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:polen rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/polen> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Polen"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4046496-9 .
 gnd:4046496-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4046496-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:dschibuti rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/dschibuti> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Dschibuti"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4070610-2 .
 gnd:4070610-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4070610-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:namibia rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/namibia> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Namibia"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4075202-1 .
 gnd:4075202-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4075202-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:amarna rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/amarna> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Amarna"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4001620-1 .
 gnd:4001620-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4001620-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:ungarn rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/ungarn> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Ungarn"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4078541-5 .
 gnd:4078541-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4078541-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:guyana rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/guyana> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Guyana"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4072186-3 .
 gnd:4072186-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4072186-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:nigeria_colony_and_protectorate rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/nigeria_colony_and_protectorate> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Nigeria (Colony and Protectorate)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:502234-4 .
 gnd:502234-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "502234-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:bolivien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/bolivien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Bolivien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4007607-6 .
 gnd:4007607-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4007607-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:makedonien_altertum rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/makedonien_altertum> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Makedonien (Altertum)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4393305-1 .
 gnd:4393305-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4393305-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:saint_vincent_state rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/saint_vincent_state> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Saint Vincent (State)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:2036349-7 .
 gnd:2036349-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "2036349-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:zentralafrikanische_foederation rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/zentralafrikanische_foederation> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Zentralafrikanische Föderation"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:14282-7 .
 gnd:14282-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "14282-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:daenemark rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/daenemark> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Dänemark"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4010877-6 .
 gnd:4010877-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4010877-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:portugal rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/portugal> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Portugal"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4046843-4 .
 gnd:4046843-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4046843-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:vietnam rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/vietnam> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Vietnam"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4063514-4 .
 gnd:4063514-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4063514-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:heiliges_roemisches_reich rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/heiliges_roemisches_reich> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Heiliges Römisches Reich"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:2035457-5 .
 gnd:2035457-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "2035457-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:niger rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/niger> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Niger"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4042298-7 .
 gnd:4042298-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4042298-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:oesterreich rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/oesterreich> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Österreich"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4043271-3 .
 gnd:4043271-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4043271-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:niederlande rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/niederlande> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Niederlande"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4042203-3 .
 gnd:4042203-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4042203-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:bhutan rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/bhutan> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Bhutan"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4006397-5 .
 gnd:4006397-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4006397-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:serbien_und_montenegro rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/serbien_und_montenegro> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Serbien und Montenegro"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4692332-9 .
 gnd:4692332-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4692332-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:liberia rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/liberia> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Liberia"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4035583-4 .
 gnd:4035583-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4035583-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:bulgarien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/bulgarien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Bulgarien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4008866-2 .
 gnd:4008866-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4008866-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:ceska_a_slovenska_federativni_republika rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/ceska_a_slovenska_federativni_republika> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Česká a Slovenská Federativní Republika"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1085174735 .
 gnd:1085174735 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1085174735" ;
-werkd:has_id_type werkd:gnd .
-werkd:jemen_demokratische_volksrepublik rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/jemen_demokratische_volksrepublik> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Jemen (Demokratische Volksrepublik)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4073008-6 .
 gnd:4073008-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4073008-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:andorra rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/andorra> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Andorra"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4001937-8 .
 gnd:4001937-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4001937-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:botswana rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/botswana> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Botswana"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4007857-7 .
 gnd:4007857-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4007857-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:tschechien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/tschechien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Tschechien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4303381-7 .
 gnd:4303381-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4303381-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:israel rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/israel> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Israel"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4027808-6 .
 gnd:4027808-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4027808-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:mali-foederation rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/mali-foederation> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Mali-Föderation"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:5025912-X .
 gnd:5025912-X dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "5025912-X" ;
-werkd:has_id_type werkd:gnd .
-werkd:kiribati rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/kiribati> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Kiribati"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4073459-6 .
 gnd:4073459-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4073459-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:benin rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/benin> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Benin"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4005503-6 .
 gnd:4005503-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4005503-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:schweiz rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/schweiz> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Schweiz"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4053881-3 .
 gnd:4053881-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4053881-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:palauinseln rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/palauinseln> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Palauinseln"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4044396-6 .
 gnd:4044396-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4044396-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:grossbritannien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/grossbritannien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Großbritannien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4022153-2 .
 gnd:4022153-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4022153-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:vanuatu rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/vanuatu> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Vanuatu"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4062334-8 .
 gnd:4062334-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4062334-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:makedonien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/makedonien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Makedonien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4114937-3 .
 gnd:4114937-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4114937-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:mongolei rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/mongolei> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Mongolei"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4040056-6 .
 gnd:4040056-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4040056-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:estland rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/estland> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Estland"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4015587-0 .
 gnd:4015587-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4015587-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:mali rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/mali> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Mali"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4074505-3 .
 gnd:4074505-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4074505-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:kuwait rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/kuwait> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Kuwait"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4073919-3 .
 gnd:4073919-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4073919-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:koenigreich_dahomey rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/koenigreich_dahomey> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Königreich Dahomey"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4205537-4 .
 gnd:4205537-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4205537-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:bahamas rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/bahamas> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Bahamas"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4069081-7 .
 gnd:4069081-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4069081-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:saint_kitts_and_nevis rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/saint_kitts_and_nevis> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Saint Kitts and Nevis"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:10186763-3 .
 gnd:10186763-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "10186763-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:belize rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/belize> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Belize"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4005412-3 .
 gnd:4005412-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4005412-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:demokratische_republik_kongo rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/demokratische_republik_kongo> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Demokratische Republik Kongo"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4067357-1 .
 gnd:4067357-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4067357-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:schweiz_1513-1798 rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/schweiz_1513-1798> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Schweiz (1513-1798)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1085175626 .
 gnd:1085175626 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1085175626" ;
-werkd:has_id_type werkd:gnd .
-werkd:guinea rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/guinea> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Guinea"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4022520-3 .
 gnd:4022520-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4022520-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:sudan rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/sudan> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Sudan"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4058378-8 .
 gnd:4058378-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4058378-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:saint_vincent_and_the_grenadines rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/saint_vincent_and_the_grenadines> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Saint Vincent and the Grenadines"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4051308-7 .
 gnd:4051308-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4051308-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:britisch-somaliland rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/britisch-somaliland> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Britisch-Somaliland"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4090132-4 .
 gnd:4090132-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4090132-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:kap_verde rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/kap_verde> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Kap Verde"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4029617-9 .
 gnd:4029617-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4029617-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:bahrain rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/bahrain> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Bahrain"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4004268-6 .
 gnd:4004268-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4004268-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:tschechoslowakei rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/tschechoslowakei> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Tschechoslowakei"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4078435-6 .
 gnd:4078435-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4078435-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:swasiland rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/swasiland> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Swasiland"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4058692-3 .
 gnd:4058692-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4058692-3" ;
-werkd:has_id_type werkd:gnd .
-werkd:obervolta rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/obervolta> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Obervolta"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:15612-7 .
 gnd:15612-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "15612-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:staat_suedsudan rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/staat_suedsudan> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Staat Südsudan"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:7755222-2 .
 gnd:7755222-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "7755222-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:tonga rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/tonga> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Tonga"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4060396-9 .
 gnd:4060396-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4060396-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:qibris rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/qibris> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Qi͏̈bri͏̈s"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:2121811-0 .
 gnd:2121811-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "2121811-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:england rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/england> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "England"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4014770-8 .
 gnd:4014770-8 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4014770-8" ;
-werkd:has_id_type werkd:gnd .
-werkd:ceylon rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/ceylon> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Ceylon"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:19826-2 .
 gnd:19826-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "19826-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:inkareich rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/inkareich> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Inkareich"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4072817-1 .
 gnd:4072817-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4072817-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:angola rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/angola> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Angola"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4002050-2 .
 gnd:4002050-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4002050-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:japan rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/japan> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Japan"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4028495-5 .
 gnd:4028495-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4028495-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:marokko rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/marokko> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Marokko"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4037680-1 .
 gnd:4037680-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4037680-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:ukraine rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/ukraine> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Ukraine"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4061496-7 .
 gnd:4061496-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4061496-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:malediven rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/malediven> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Malediven"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4037212-1 .
 gnd:4037212-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4037212-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:djibouti rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/djibouti> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Djibouti"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1085175731 .
 gnd:1085175731 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1085175731" ;
-werkd:has_id_type werkd:gnd .
-werkd:ecuador rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/ecuador> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Ecuador"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4129321-6 .
 gnd:4129321-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4129321-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:guinea-bissau rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/guinea-bissau> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Guinea-Bissau"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4022522-7 .
 gnd:4022522-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4022522-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:aequatorialguinea rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/aequatorialguinea> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Äquatorialguinea"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4068436-2 .
 gnd:4068436-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4068436-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:schweiz_1815-1848 rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/schweiz_1815-1848> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Schweiz (1815-1848)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1085175650 .
 gnd:1085175650 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1085175650" ;
-werkd:has_id_type werkd:gnd .
-werkd:preussen_ordensstaat rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/preussen_ordensstaat> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Preußen (Ordensstaat)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4076337-7 .
 gnd:4076337-7 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4076337-7" ;
-werkd:has_id_type werkd:gnd .
-werkd:aruba rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/aruba> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Aruba"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4079840-9 .
 gnd:4079840-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4079840-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:foederative_republik_jugoslawien rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/foederative_republik_jugoslawien> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Föderative Republik Jugoslawien"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4339067-5 .
 gnd:4339067-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4339067-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:iran_altertum rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/iran_altertum> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Iran (Altertum)"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4072922-9 .
 gnd:4072922-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4072922-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:tibet rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/tibet> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Tibet"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4060036-1 .
 gnd:4060036-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4060036-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:madagaskar rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/madagaskar> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Madagaskar"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4074425-5 .
 gnd:4074425-5 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4074425-5" ;
-werkd:has_id_type werkd:gnd .
-werkd:kenia rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/kenia> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Kenia"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4030236-2 .
 gnd:4030236-2 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4030236-2" ;
-werkd:has_id_type werkd:gnd .
-werkd:nordkorea rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/nordkorea> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Nordkorea"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4075468-6 .
 gnd:4075468-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4075468-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:zaire rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/zaire> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Zaïre"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1017457-6 .
 gnd:1017457-6 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1017457-6" ;
-werkd:has_id_type werkd:gnd .
-werkd:saint_kitts_und_nevis rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/saint_kitts_und_nevis> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Saint Kitts und Nevis"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4118251-0 .
 gnd:4118251-0 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4118251-0" ;
-werkd:has_id_type werkd:gnd .
-werkd:tadschikistan rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/tadschikistan> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Tadschikistan"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4058877-4 .
 gnd:4058877-4 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4058877-4" ;
-werkd:has_id_type werkd:gnd .
-werkd:fidschi rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/fidschi> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Fidschi"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4017063-9 .
 gnd:4017063-9 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4017063-9" ;
-werkd:has_id_type werkd:gnd .
-werkd:koenigreich_widin rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/koenigreich_widin> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Königreich Widin"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:1053533500 .
 gnd:1053533500 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "1053533500" ;
-werkd:has_id_type werkd:gnd .
-werkd:oman rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/oman> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Oman"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4075653-1 .
 gnd:4075653-1 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4075653-1" ;
-werkd:has_id_type werkd:gnd .
-werkd:tschad rdf:type skos:Concept ;
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
+<https://purl.archive.org/kompetenzwerkd/vocabs/country/en/page/tschad> rdf:type skos:Concept ;
 rdf:type werkd:place ;
 skos:prefLabel "Tschad"@de ;
-skos:inScheme werkd:country ;
+skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/country/en> ;
 rdf:type werkd:nationality_value ;
 werkd:has_id gnd:4061074-3 .
 gnd:4061074-3 dc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
 rdf:type werkd:id ;
 werkd:has_id_value "4061074-3" ;
-werkd:has_id_type werkd:gnd .
+werkd:has_id_type <https://purl.archive.org/kompetenzwerkd/vocabs/authority_data_provider/en/page/gnd> .
