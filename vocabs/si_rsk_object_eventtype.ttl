@@ -1,0 +1,129 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> rdf:type skos:ConceptScheme ;
+    skos:defaultLanguage "en";
+    owl:sameAs <https://rskd.org/object_eventtype/> ;
+    cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:definition "Objekt-Ereignistypen aus dem Register Sorbisches Kulturerbe (RSK) des Sorbisches Institut e. V. / Serbski institut z.t."@de ;
+    skos:definition "Object eventtypes of the Register Sorbisches Kulturerbe (Register of Sorbian Cultural Heritage - RSK)."@de ;
+    skos:prefLabel "Object eventtypes"@en ;
+    skos:prefLabel "Objekt-Ereignistypen"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en/page/1> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/object_eventtype/1> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:definition "Die Entstehung ist ein Ereignis das im Zusammenhang mit Entitäten des materiellen Kulturerbes verwendet wird."@de ;
+    skos:prefLabel "Entstehung"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en/page/2> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/object_eventtype/2> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:definition "Der Verlust ist ein Ereignis das im Zusammenhang mit Entitäten des materiellen Kulturerbes verwendet wird."@de ;
+    skos:prefLabel "Verlust"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en/page/3> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/object_eventtype/3> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:prefLabel "Neubau"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en/page/4> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/object_eventtype/4> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:prefLabel "Sanierung"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en/page/5> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/object_eventtype/5> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:prefLabel "Umbau"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en/page/6> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/object_eventtype/6> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:definition "Brandereignis mit Wirkung des Verlusts."@de ;
+    skos:prefLabel "Abgebrannt/ausgebrannt"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en/page/7> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/object_eventtype/7> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:prefLabel "Neuweihe"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en/page/8> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/object_eventtype/8> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:prefLabel "Abriss"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en/page/9> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/object_eventtype/9> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:prefLabel "Abtragung"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en/page/10> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/object_eventtype/10> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:prefLabel "Ersterwähnung"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en/page/11> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/object_eventtype/11> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:prefLabel "Bauliche Erweiterung"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en/page/12> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/object_eventtype/12> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:prefLabel "Gebrauchsdauer"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en/page/13> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/object_eventtype/13> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:definition "Hier werden die Schöpfer von Kunstwerken genannt"@de ;
+    skos:prefLabel "Geschaffen"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en/page/14> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/object_eventtype/14> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:definition "Verbringung eines ortsfesten Kulturdenkmals an einen anderen Ort."@de ;
+    skos:prefLabel "Translozierung"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en/page/15> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/object_eventtype/15> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:prefLabel "Gefeiert"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en/page/16> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/object_eventtype/16> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:prefLabel "Entwurf"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en/page/17> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/object_eventtype/17> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:prefLabel "Eigentum"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en/page/18> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/object_eventtype/18> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_object_eventtype/en> ;
+    skos:definition "Bennent die stiftende Person/Gruppe/Institution"@de ;
+    skos:prefLabel "Gestiftet"@de .
