@@ -12,7 +12,7 @@
     skos:definition "Ortskategorien des Ortsregister des Register Sorbisches Kulturerbe (RSK) des Sorbisches Institut e. V. / Serbski institut z.t."@de ;
     skos:definition "Place categories of the place index of the Register Sorbisches Kulturerbe (Register of Sorbian Cultural Heritage - RSK)."@de ;
     skos:prefLabel "place category"@en ;
-    skos:prefLabel "Ortskategorie"@en .
+    skos:prefLabel "Ortskategorie"@de .
     
 <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/1> rdf:type skos:Concept ;
     owl:sameAs <https://rskd.org/place_category/1> ;
