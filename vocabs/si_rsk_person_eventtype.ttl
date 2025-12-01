@@ -1,0 +1,276 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> rdf:type skos:ConceptScheme ;
+    skos:defaultLanguage "en";
+    owl:sameAs <https://rskd.org/person_eventtype/> ;
+    cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:definition "Ereignistypen mit Personenbezug des Register Sorbisches Kulturerbe (RSK) des Sorbisches Institut e. V. / Serbski institut z.t."@de ;
+    skos:definition "Event types with person relation of the Register Sorbisches Kulturerbe (Register of Sorbian Cultural Heritage - RSK)."@de ;
+    skos:prefLabel "Person eventtype"@en ;
+    skos:prefLabel "Personen Ereignistypen"@de .
+    
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/1> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/1> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Geburt"@de ;
+    skos:prefLabel "naroźenje"@hsb ;
+    skos:prefLabel "naroźenje"@dsb ;
+    skos:prefLabel "birth"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/2> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/2> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Taufe"@de ;
+    skos:prefLabel "křćeńca"@hsb ;
+    skos:prefLabel "dupjenje"@dsb ;
+    skos:prefLabel "christening"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/3> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/3> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Tod"@de ;
+    skos:prefLabel "smjerć"@hsb ;
+    skos:prefLabel "smjerś"@dsb ;
+    skos:prefLabel "death"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/4> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/4> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Kirchenaustritt"@de ;
+    skos:prefLabel "wustup z cyrkwje"@hsb ;
+    skos:prefLabel "wustup z cerkwje"@dsb ;
+    skos:prefLabel "resignation from church membership"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/5> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/5> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Begräbnis"@de ;
+    skos:prefLabel "pohrjeb"@hsb ;
+    skos:prefLabel "zakopowanje"@dsb ;
+    skos:prefLabel "burial"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/6> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/6> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Heirat"@de ;
+    skos:prefLabel "žeńtwa"@hsb ;
+    skos:prefLabel "swajźba"@dsb ;
+    skos:prefLabel "marriage"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/7> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/7> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Schulbesuch"@de ;
+    skos:prefLabel "wobdźělenje na šulskej wučbje"@hsb ;
+    skos:prefLabel "chójźenje do šule"@dsb ;
+    skos:prefLabel "school"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/8> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/8> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Studium"@de ;
+    skos:prefLabel "studij"@hsb ;
+    skos:prefLabel "studium"@dsb ;
+    skos:prefLabel "academic studies"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/9> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/9> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Berufsausbildung"@de ;
+    skos:prefLabel "powołanske wukubłanje"@hsb ;
+    skos:prefLabel "pówołańske wukubłanje"@dsb ;
+    skos:prefLabel "vocational training"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/10> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/10> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Priesterweihe, Ordination"@de ;
+    skos:prefLabel "měšniska swjećizna, ordinacija"@hsb ;
+    skos:prefLabel "mjeršnikojske wuswěśenje, ordinacija"@dsb ;
+    skos:prefLabel "consecration or ordination"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/11> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/11> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Studienabschluss"@de ;
+    skos:prefLabel "wustudowanje"@hsb ;
+    skos:prefLabel "wótzamknjenje studiuma"@dsb ;
+    skos:prefLabel "academic graduation"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/12> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/12> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Promotion"@de ;
+    skos:prefLabel "promocija"@hsb ;
+    skos:prefLabel "promocija"@dsb ;
+    skos:prefLabel "doctorate"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/13> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/13> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Professur, Habilitation"@de ;
+    skos:prefLabel "profesura, habilitacija"@hsb ;
+    skos:prefLabel "profesura, habilitacija"@dsb ;
+    skos:prefLabel "professorship, Habilitation (in German)"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/14> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/14> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Reise"@de ;
+    skos:prefLabel "pućowanje"@hsb ;
+    skos:prefLabel "drogowanje"@dsb ;
+    skos:prefLabel "travel"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/15> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/15> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Scheidung"@de ;
+    skos:prefLabel "dźělenje mandźelstwa"@hsb ;
+    skos:prefLabel "rozwěrowanje"@dsb ;
+    skos:prefLabel "divorce"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/16> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/16> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Tod des Ehepartners"@de ;
+    skos:prefLabel "smjerć mandźelskeho"@hsb ;
+    skos:prefLabel "smjerś manźelskego"@dsb ;
+    skos:prefLabel "death of spouse"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/17> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/17> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Gefangenschaft, Haft"@de ;
+    skos:prefLabel "jastwo"@hsb ;
+    skos:prefLabel "popajź"@dsb ;
+    skos:prefLabel "imprisonment"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/18> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/18> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Haftentlassung"@de ;
+    skos:prefLabel "pušćenje z jastwa"@hsb ;
+    skos:prefLabel "pušćenje z popajźi"@dsb ;
+    skos:prefLabel "release from prison"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/19> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/19> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Geburt eines eigenen Kindes"@de ;
+    skos:prefLabel "narodźenje swójskeho dźěsća"@hsb ;
+    skos:prefLabel "naroźenje swójskego góleśa"@dsb ;
+    skos:prefLabel "birth of own child"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/20> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/20> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Tod eines nahen Verwandten"@de ;
+    skos:prefLabel "smjerć bliskeho přiwuzneho"@hsb ;
+    skos:prefLabel "smjerś bliskego pśiswójźbnego"@dsb ;
+    skos:prefLabel "death of close relative"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/21> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/21> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Profess, Ordensweihe"@de ;
+    skos:prefLabel "profes, wěčne sluby"@hsb ;
+    skos:prefLabel "rědniske wuswěśenje"@dsb ;
+    skos:prefLabel "profession, taking religious orders vows"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/22> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/22> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Stipendium"@de ;
+    skos:prefLabel "stipendij"@hsb ;
+    skos:prefLabel "stipendium"@dsb ;
+    skos:prefLabel "stipend"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/23> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/23> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "öffentliches oder kirchliches Amt"@de ;
+    skos:prefLabel "zjawne abo cyrkwine zastojnstwo"@hsb ;
+    skos:prefLabel "zjawny abo cerkwiny amt"@dsb ;
+    skos:prefLabel "public or ecclesiastical office"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/24> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/24> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Mitgliedschaft (in Verein, Partei, Parlament usw.)"@de ;
+    skos:prefLabel "čłonstwo (w towarstwje, stronje, parlamenće atd.)"@hsb ;
+    skos:prefLabel "cłonkojstwo (w towaristwje, stronje, parlamenśe atd.)"@dsb ;
+    skos:prefLabel "membership (in a club, political party, parliament etc.)"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/25> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/25> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Berufstätigkeit"@de ;
+    skos:prefLabel "powołanska dźěławosć"@hsb ;
+    skos:prefLabel "pówołańska źěłabnosć"@dsb ;
+    skos:prefLabel "professional occupation"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/26> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/26> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Erwähnung (in Veröffentlichung o.ä.)"@de ;
+    skos:prefLabel "mention (in a publication or similar)"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/27> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/27> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Publikation"@de ;
+    skos:prefLabel "publikacija"@hsb ;
+    skos:prefLabel "publikacija"@dsb ;
+    skos:prefLabel "publication"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/28> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/28> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:prefLabel "Wohnort"@de ;
+    skos:prefLabel "bydlišćo"@hsb ;
+    skos:prefLabel "bydlišćo"@dsb ;
+    skos:prefLabel "place of living"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en/page/29> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/person_eventtype/29> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_person_eventtype/en> ;
+    skos:definition "Angabe eines Herkunftsortes (z.B. wenn Geburtsort nicht angegeben/bekannt)"@de ;
+    skos:definition "Use for place of origin if specified instead of place of birth (in a medieval or early-modern university register, e.g.)"@en ;
+    skos:prefLabel "Herkunft"@de ;
+    skos:prefLabel "pochada"@hsb ;
+    skos:prefLabel "póchada"@dsb ;
+    skos:prefLabel "origins"@en .
