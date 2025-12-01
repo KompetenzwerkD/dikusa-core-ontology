@@ -1,0 +1,81 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> rdf:type skos:ConceptScheme ;
+    skos:defaultLanguage "en";
+    owl:sameAs <https://rskd.org/subject_type/> ;
+    cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:definition "Schlagworttypen aus dem Register Sorbisches Kulturerbe (RSK) des Sorbisches Institut e. V. / Serbski institut z.t."@de ;
+    skos:definition "Subject types of the Register Sorbisches Kulturerbe (Register of Sorbian Cultural Heritage - RSK)."@de ;
+    skos:prefLabel "Subject types"@en ;
+    skos:prefLabel "Schlagworttypen"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en/page/1> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/subject_type/1> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:prefLabel "Sachschlagwort"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en/page/2> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/subject_type/2> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:prefLabel "Allgemeinbegriff (saz)"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en/page/3> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/subject_type/3> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:prefLabel "Ethnografikum (sie)"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en/page/4> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/subject_type/4> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:prefLabel "Nomenklatur Biologie - Chemie (snz)"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en/page/5> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/subject_type/5> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:prefLabel "Historisches Einzelereignis (sih)"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en/page/6> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/subject_type/6> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:prefLabel "Musikalisches Genre (sag)"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en/page/7> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/subject_type/7> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:prefLabel "Musikalische Besetzung (sab)"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en/page/8> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/subject_type/8> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:prefLabel "Werk (wit)"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en/page/9> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/subject_type/9> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:prefLabel "Formangabe zur Art des Inhalts (saf)"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en/page/10> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/subject_type/10> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:prefLabel "Zweifelsfall (szz)"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en/page/11> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/subject_type/11> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_subject_type/en> ;
+    skos:prefLabel "Papier"@de .
