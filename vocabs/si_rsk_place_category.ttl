@@ -1,0 +1,214 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> rdf:type skos:ConceptScheme ;
+    skos:defaultLanguage "en";
+    owl:sameAs <https://rskd.org/place_category/> ;
+    cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:definition "Ortskategorien des Ortsregister des Register Sorbisches Kulturerbe (RSK) des Sorbisches Institut e. V. / Serbski institut z.t."@de ;
+    skos:definition "Place categories of the place index of the Register Sorbisches Kulturerbe (Register of Sorbian Cultural Heritage - RSK)."@de ;
+    skos:prefLabel "place category"@en ;
+    skos:prefLabel "Ortskategorie"@en .
+    
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/1> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/1> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Land (Verwaltungseinheit)"@de ;
+    skos:prefLabel "Country"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/2> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/2> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Landkreis (Verwaltungseinheit)"@de ;
+    skos:prefLabel "Landkreis (Verwaltungseinheit)"@en .
+    
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/3> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/3> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Gemeinde (Verwaltungseinheit)"@de ;
+    skos:prefLabel "Gemeinde (Verwaltungseinheit)"@en .
+    
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/4> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/4> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Wohnplatz (Ort)"@de ;
+    skos:prefLabel "Wohnplatz (Ort)"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/5> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/5> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Gemeindeteil (Ort)"@de ;
+    skos:prefLabel "Gemeindeteil (Ort)"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/6> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/6> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Amt (Verwaltungseinheit)"@de ;
+    skos:prefLabel "Amt (Verwaltungseinheit)"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/7> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/7> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Ortsteil (Ort)"@de ;
+    skos:prefLabel "Ortsteil (Ort)"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/8> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/8> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Siedlung (Ort)"@de ;
+    skos:prefLabel "Siedlung (Ort)"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/9> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/9> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Kernstadt (Ort)"@de ;
+    skos:prefLabel "Kernstadt (Ort)"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/10> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/10> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Amtsfreie Stadt (Verwaltungseinheit)"@de ;
+    skos:prefLabel "Amtsfreie Stadt (Verwaltungseinheit)"@en .
+    
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/11> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/11> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Ort"@de ;
+    skos:prefLabel "Ort"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/12> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/12> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Region (Region)"@de ;
+    skos:prefLabel "Region (Region)"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/13> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/13> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Kerndorf (Ort)"@de ;
+    skos:prefLabel "Kerndorf (Ort)"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/14> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/14> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Kreisfreie Stadt (Verwaltungseinheit)"@de ;
+    skos:prefLabel "Kreisfreie Stadt (Verwaltungseinheit)"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/15> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/15> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Stadt (Verwaltungseinheit)"@de ;
+    skos:prefLabel "Stadt (Verwaltungseinheit)"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/16> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/16> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Amtsfreie Gemeinde (Verwaltungseinheit)"@de ;
+    skos:prefLabel "Amtsfreie Gemeinde (Verwaltungseinheit)"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/17> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/17> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Wohnviertel (Ort)"@de ;
+    skos:prefLabel "Wohnviertel (Ort)"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/18> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/18> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Große Kreisstadt (Verwaltungseinheit)"@de ;
+    skos:prefLabel "Große Kreisstadt (Verwaltungseinheit)"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/19> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/19> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Verwaltungsgemeinschaft (Verwaltungseinheit)"@de ;
+    skos:prefLabel "Verwaltungsgemeinschaft (Verwaltungseinheit)"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/20> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/20> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Bundesland (Verwaltungseinheit)"@de ;
+    skos:prefLabel "Bundesland (Verwaltungseinheit)"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/21> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/21> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel "Stadt (Ort)"@de ;
+    skos:prefLabel "Stadt (Ort)"@en .
+
+
+
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel ""@de ;
+    skos:prefLabel ""@en .
+    
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel ""@de ;
+    skos:prefLabel ""@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel ""@de ;
+    skos:prefLabel ""@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel ""@de ;
+    skos:prefLabel ""@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel ""@de ;
+    skos:prefLabel ""@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel ""@de ;
+    skos:prefLabel ""@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en/page/> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/place_category/> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_place_category/en> ;
+    skos:prefLabel ""@de ;
+    skos:prefLabel ""@en .
