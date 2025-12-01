@@ -1,0 +1,181 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> rdf:type skos:ConceptScheme ;
+    skos:defaultLanguage "en";
+    owl:sameAs <https://rskd.org/profession/> ;
+    cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:definition "Tätigkeiten aus dem Register Sorbisches Kulturerbe (RSK) des Sorbisches Institut e. V. / Serbski institut z.t."@de ;
+    skos:definition "Professions of the Register Sorbisches Kulturerbe (Register of Sorbian Cultural Heritage - RSK)."@de ;
+    skos:prefLabel "Professions"@en ;
+    skos:prefLabel "Tätigkeiten"@de .
+    
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/1> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/1> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "Pfarrer (Geistlicher), Pastor(-in)"@de ;
+    skos:prefLabel "faraŕ (duchowny), pastor(-ka)"@dsb ;
+    skos:prefLabel "rector, parish priest (clergyman), pastor"@en ;
+    skos:prefLabel "farar (duchowny), pastor(-ka)"@hsb .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/2> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/2> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "Chefredakteur"@de ;
+    skos:prefLabel "šefredaktor"@dsb ;
+    skos:prefLabel "editor-in-chief"@en ;
+    skos:prefLabel "šefredaktor"@hsb .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/3> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/3> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "Lehrer(-in)"@de ;
+    skos:prefLabel "wucabnik/-ca"@dsb ;
+    skos:prefLabel "teacher"@en ;
+    skos:prefLabel "wučer(-ka)"@hsb .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/4> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/4> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "Unternehmer, Firmeneigentümer"@de ;
+    skos:prefLabel "pśedewześaŕ, firmowy swójstwownik"@dsb ;
+    skos:prefLabel "Business owner"@en ;
+    skos:prefLabel "předewzaćel, mějićel firmow"@hsb .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/5> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/5> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "Regisseur(-in)"@de ;
+    skos:prefLabel "režiser(-ka)"@dsb ;
+    skos:prefLabel "(movie) director"@en ;
+    skos:prefLabel "režiser(-ka)"@hsb .
+    
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/6> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/6> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "Geistlicher"@de ;
+    skos:prefLabel "Duchowny"@dsb ;
+    skos:prefLabel "Clergyman"@en ;
+    skos:prefLabel "Duchowny"@hsb .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/7> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/7> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "Kaplan (Geistlicher)"@de ;
+    skos:prefLabel "kaplan (duchowny)"@dsb ;
+    skos:prefLabel "chaplain (clergyman)"@en ;
+    skos:prefLabel "kaplan (duchowny)"@hsb .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/8> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/8> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "Vikar (Geistlicher)"@de ;
+    skos:prefLabel "wikar (duchowny)"@dsb ;
+    skos:prefLabel "vicar (clergyman)"@en ;
+    skos:prefLabel "wikar (duchowny)"@hsb .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/9> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/9> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "Erzpriester (Geistlicher)"@de ;
+    skos:prefLabel "arcymjeršnik (duchowny)"@dsb ;
+    skos:prefLabel "archpriest (clergyman)"@en ;
+    skos:prefLabel "arcyměšnik (duchowny)"@hsb .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/10> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/10> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "Kanonikus, Domherr (Geistlicher)"@de ;
+    skos:prefLabel "kanonik, kněz doma (duchowny)"@dsb ;
+    skos:prefLabel "canon, capitular (clergyman)"@en ;
+    skos:prefLabel "kanonik, tachantski knjez (duchowny)"@hsb .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/11> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/11> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "(Erz-)Bischof, Propst (Geistlicher)"@de ;
+    skos:prefLabel "(arcy-)biskup, promšt (duchowny)"@dsb ;
+    skos:prefLabel "(arch-)bishop, provost (clergyman)"@en ;
+    skos:prefLabel "(arcy-)biskop, propst (duchowny)"@hsb .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/12> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/12> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "Künstler(-in)"@de ;
+    skos:prefLabel "wuměłc(-owka)"@dsb ;
+    skos:prefLabel "artist"@en ;
+    skos:prefLabel "wuměłc(-a)"@hsb .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/13> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/13> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "Kunstmaler(-in)"@de ;
+    skos:prefLabel "wuměłski/a moler(-ka)"@dsb ;
+    skos:prefLabel "artist painter"@en ;
+    skos:prefLabel "wuměłski/a mólaŕ(-ka)"@hsb .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/14> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/14> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "Bildhauer(-in), Skulpteur(-in)"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/15> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/15> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "Dichter(-in), Liedtexter(-in)"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/16> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/16> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "Komponist(-in), Arrangeur(-in)"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/17> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/17> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "Musiker(-in) [Instrumental]"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/18> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/18> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "Sänger(-in)"@de ;
+    skos:prefLabel "spiwaŕ(-ka)"@dsb ;
+    skos:prefLabel "singer"@en ;
+    skos:prefLabel "spěwar(-ka)"@hsb .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/19> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/19> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "Schauspieler(-in)"@de ;
+    skos:prefLabel "grajaŕ(-ka)"@dsb ;
+    skos:prefLabel "actor, actress"@en ;
+    skos:prefLabel "dźiwadźelnik/-ca"@hsb .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en/page/20> rdf:type skos:Concept ;
+    owl:sameAs <https://rskd.org/profession/20> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_profession/en> ;
+    skos:prefLabel "im sorbischen Nationalensemble"@de ;
+    skos:prefLabel "w serbskem ludowem ansamblu"@dsb .
