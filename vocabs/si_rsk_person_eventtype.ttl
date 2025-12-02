@@ -10,7 +10,7 @@
     cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
     dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
     skos:definition "Ereignistypen mit Personenbezug des Register Sorbisches Kulturerbe (RSK) des Sorbisches Institut e. V. / Serbski institut z.t."@de ;
-    skos:definition "Event types with person relation of the Register Sorbisches Kulturerbe (Register of Sorbian Cultural Heritage - RSK)."@de ;
+    skos:definition "Event types with person relation of the Register Sorbisches Kulturerbe (Register of Sorbian Cultural Heritage - RSK)."@en ;
     skos:prefLabel "Person eventtype"@en ;
     skos:prefLabel "Personen Ereignistypen"@de .
     
