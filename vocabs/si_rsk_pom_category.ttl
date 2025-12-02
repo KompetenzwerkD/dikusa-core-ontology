@@ -1,0 +1,97 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> rdf:type skos:ConceptScheme ;
+    skos:defaultLanguage "en";
+    owl:sameAs <https://pom.rskd.org/vocab/category/> ;
+    cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:definition "Denkmalkategorien der Sorbischen Kulturdenkmale aus dem Register Sorbisches Kulturerbe (RSK) des Sorbisches Institut e. V. / Serbski institut z.t."@de ;
+    skos:definition "Categories of monuments of Sorbian cultural monuments of the Register Sorbisches Kulturerbe (Register of Sorbian Cultural Heritage - RSK)."@en ;
+    skos:prefLabel "Categories of monuments"@en ;
+    skos:prefLabel "Denkmalkategorien"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en/page/1> rdf:type skos:Concept ;
+    owl:sameAs <https://pom.rskd.org/vocab/category/1> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> ;
+    skos:relatedMatch <https://d-nb.info/gnd/4023693-6>;
+    skos:relatedMatch <https://d-nb.info/gnd/4004973-5>;
+    skos:definition "z. B. Geburts-, Wohn- und Sterbehaus bedeutender Persönlichkeiten, Sitz bedeutender Institutionen, Pfarrhaus, Schule u. ä."@de ;
+    skos:prefLabel "Gebäude"@de ;
+    skos:prefLabel "twarjenje"@dsb ;
+    skos:prefLabel "building"@en ;
+    skos:prefLabel "twarjenje"@hsb .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en/page/2> rdf:type skos:Concept ;
+    owl:sameAs <https://pom.rskd.org/vocab/category/2> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> ;
+    skos:relatedMatch <https://d-nb.info/gnd/4138664-4>;
+    skos:relatedMatch <https://d-nb.info/gnd/4412312-7>;
+    skos:definition "Gedenktafel oder auch Gedenksteine, mit Ausnahme der Friedhöfe. Gedenken an Personen, Ereignisse"@de ;
+    skos:prefLabel "Denkmale und Gedenktafeln"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en/page/3> rdf:type skos:Concept ;
+    owl:sameAs <https://pom.rskd.org/vocab/category/3> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> ;
+    skos:relatedMatch <https://d-nb.info/gnd/4021732-2>;
+    skos:relatedMatch <https://d-nb.info/gnd/4021716-4>;
+    skos:definition "z. B. Grabmale, Einzel- und Gruppenbegräbnisse, Friedhöfe"@de ;
+    skos:prefLabel "Begräbnisstätten"@de ;
+    skos:prefLabel "zakopowanišća"@dsb ;
+    skos:prefLabel "burial places"@en ;
+    skos:prefLabel "pohrjebnišća"@hsb .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en/page/4> rdf:type skos:Concept ;
+    owl:sameAs <https://pom.rskd.org/vocab/category/4> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> ;
+    skos:relatedMatch <https://d-nb.info/gnd/4073436-5>;
+    skos:relatedMatch <https://d-nb.info/gnd/4410221-5>;
+    skos:definition "Gotteshaus mit entsprechendem Interieur wie z. B. Sprüche, Fensterbilder, Fresken und Glocken"@de ;
+    skos:prefLabel "Kirchen und Kirchenausstattung"@de ;
+    skos:prefLabel "Churches and church furnishings"@en .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en/page/5> rdf:type skos:Concept ;
+    owl:sameAs <https://pom.rskd.org/vocab/category/5> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> ;
+    skos:definition "Plastiken einschließlich Skulpturen und Brunnen"@de ;
+    skos:prefLabel "Skulpturen und Plastiken"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en/page/6> rdf:type skos:Concept ;
+    owl:sameAs <https://pom.rskd.org/vocab/category/6> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> ;
+    skos:definition "z. B. Wandbilder, Sgraffiti, Reliefs, Glasmalereien und Mosaike"@de ;
+    skos:prefLabel "Baugebundene Kunst"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en/page/7> rdf:type skos:Concept ;
+    owl:sameAs <https://pom.rskd.org/vocab/category/7> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> ;
+    skos:relatedMatch <https://d-nb.info/gnd/4146138-1>;
+    skos:relatedMatch <https://d-nb.info/gnd/4147023-0>;
+    skos:definition "archäologische Fundstellen wie z. B. Überreste von Siedlungen, Befestigungsanlagen, Kultplätze"@de ;
+    skos:prefLabel "Bodendenkmale"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en/page/8> rdf:type skos:Concept ;
+    owl:sameAs <https://pom.rskd.org/vocab/category/8> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> ;
+    skos:definition "z. B. Block- und Schrotholzhäuser"@de ;
+    skos:prefLabel "Objekte in Volksbauweise"@de .
+
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en/page/9> rdf:type skos:Concept ;
+    owl:sameAs <https://pom.rskd.org/vocab/category/9> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/si_rsk_pom_category/en> ;
+    skos:relatedMatch <https://d-nb.info/gnd/4006647-2>;
+    skos:definition "Betkreuze, Wegkreuze, Bildsäulen, Bildstöcke"@de ;
+    skos:prefLabel "Wegkreuze und Bildstöcke"@de .
