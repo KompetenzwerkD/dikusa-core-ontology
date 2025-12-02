@@ -10,7 +10,7 @@
     cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
     dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
     skos:definition "Tätigkeiten aus dem Register Sorbisches Kulturerbe (RSK) des Sorbisches Institut e. V. / Serbski institut z.t."@de ;
-    skos:definition "Professions of the Register Sorbisches Kulturerbe (Register of Sorbian Cultural Heritage - RSK)."@de ;
+    skos:definition "Professions of the Register Sorbisches Kulturerbe (Register of Sorbian Cultural Heritage - RSK)."@en ;
     skos:prefLabel "Professions"@en ;
     skos:prefLabel "Tätigkeiten"@de .
     
