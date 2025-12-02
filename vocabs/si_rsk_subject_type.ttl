@@ -10,7 +10,7 @@
     cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
     dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
     skos:definition "Schlagworttypen aus dem Register Sorbisches Kulturerbe (RSK) des Sorbisches Institut e. V. / Serbski institut z.t."@de ;
-    skos:definition "Subject types of the Register Sorbisches Kulturerbe (Register of Sorbian Cultural Heritage - RSK)."@de ;
+    skos:definition "Subject types of the Register Sorbisches Kulturerbe (Register of Sorbian Cultural Heritage - RSK)."@en ;
     skos:prefLabel "Subject types"@en ;
     skos:prefLabel "Schlagworttypen"@de .
 
