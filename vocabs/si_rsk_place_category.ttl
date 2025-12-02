@@ -10,7 +10,7 @@
     cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
     dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
     skos:definition "Ortskategorien des Ortsregister des Register Sorbisches Kulturerbe (RSK) des Sorbisches Institut e. V. / Serbski institut z.t."@de ;
-    skos:definition "Place categories of the place index of the Register Sorbisches Kulturerbe (Register of Sorbian Cultural Heritage - RSK)."@de ;
+    skos:definition "Place categories of the place index of the Register Sorbisches Kulturerbe (Register of Sorbian Cultural Heritage - RSK)."@en ;
     skos:prefLabel "place category"@en ;
     skos:prefLabel "Ortskategorie"@de .
     
