@@ -9,28 +9,34 @@
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/classes/6> ;
     cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
     dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
-    skos:definition "List of discrimination experiences used in the DIKUSA project of the Hannah Arendt Institute for Totalitarianism Studies (HAIT) concerned with experiences during displacement" ;
-    skos:prefLabel "Discrimination experience"@en .
+    skos:definition "List of discrimination experiences used in the DIKUSA project of the Hannah Arendt Institute for Totalitarianism Studies (HAIT) concerned with experiences during displacement"@en ;
+    skos:definition "Liste der Diskriminierungserfahrungen, die im DIKUSA-Projekt des Hannah-Arendt-Instituts für Totalitarismusforschung (HAIT) verwendet wurden und sich mit Erfahrungen während Vertreibung befassen."@de ;
+    skos:prefLabel "Discrimination experience"@en ;
+    skos:prefLabel "Diskriminierungserfahrung"@de .
 
 <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_discrimination_experience/en/page/708> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/708> ;
     skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_discrimination_experience/en> ;
-    skos:prefLabel "fear of attacks"@en .
+    skos:prefLabel "fear of attacks"@en ;
+    skos:prefLabel "Angst vor Angriffen"@de .
 
 <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_discrimination_experience/en/page/704> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/704> ;
     skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_discrimination_experience/en> ;
-    skos:prefLabel "attack"@en .
+    skos:prefLabel "attack"@en ;
+    skos:prefLabel "Angriff"@de .
 
 <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_discrimination_experience/en/page/707> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/707> ;
     skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_discrimination_experience/en> ;
-    skos:prefLabel "expropriation"@en .
+    skos:prefLabel "expropriation"@en ;
+    skos:prefLabel "Enteignung"@de .
 
 <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_discrimination_experience/en/page/706> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/706> ;
     skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_discrimination_experience/en> ;
-    skos:prefLabel "exclusion"@en .
+    skos:prefLabel "exclusion"@en ;
+    skos:prefLabel "Ausgrenzung"@de .
 
 <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_discrimination_experience/en/page/703> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/703> ;
@@ -41,9 +47,11 @@
     skos:narrower <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_discrimination_experience/en/page/706> ;
     skos:narrower <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_discrimination_experience/en/page/707> ;
     skos:narrower <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_discrimination_experience/en/page/708> ;
-    skos:prefLabel "antisemitism"@en .
+    skos:prefLabel "antisemitism"@en ;
+    skos:prefLabel "Antisemitismus"@de .
 
 <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_discrimination_experience/en/page/705> rdf:type skos:Concept ;
     owl:sameAs <https://werkd.saw-leipzig.de/hait_weedata/items/705> ;
     skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/hait_dikusa_discrimination_experience/en> ;
-    skos:prefLabel "disenfranchisement"@en .
+    skos:prefLabel "disenfranchisement"@en ;
+    skos:prefLabel "Entfremdung"@de .
