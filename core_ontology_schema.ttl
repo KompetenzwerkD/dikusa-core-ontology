@@ -242,6 +242,7 @@
     rdfs:comment "The name-object of an entity." ;
     rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_script ;
+	rdfs:subClassOf :entity_with_degree ;
     rdfs:label "name"@en ;
     rdfs:label "Name"@de ;
     sh:property [
@@ -705,6 +706,12 @@
     rdfs:comment "Entities such as places or groups, that might be established, dissolved or experience changes to their state of existence." ;
     rdfs:label "entity with existence change"@en ;
     rdfs:label "Entität mit Existenzveränderung"@de .
+
+:entity_with_degree
+    rdf:type rdfs:Class ;
+    rdfs:comment "All entities that can have a degree or are related to one." ;
+    rdfs:label "entity with degree"@en ;
+    rdfs:label "Entität mit (akad.) Titel"@de .
 
 # -----------------------
 
@@ -1481,6 +1488,7 @@
     rdfs:subClassOf :person_relation ;
     rdfs:subClassOf :group_relation ;
     rdfs:subClassOf :entity_with_occupation_value ;
+	rdfs:subClassOf :entity_with_degree ;
     sh:property [
         sh:path [ sh:inversePath :has_person_relation ] ;
         sh:minCount 1
@@ -1552,14 +1560,14 @@
     rdfs:comment "Property containing the degree of an education-related relation." ;
     rdfs:label "has degree"@en ;
     rdfs:label "hat Abschluss"@de ;
-    rdfs:domain :person_group_relation ;
+    rdfs:domain :entity_with_degree ;
     rdfs:range xsd:string .
 
 :has_degree_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :has_degree ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:class :person_group_relation .
+    sh:class :entity_with_degree .
 
 :has_degree_object_shape
 	a sh:NodeShape ;
