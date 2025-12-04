@@ -214,6 +214,7 @@
     rdfs:comment "The name-object of an entity." ;
     rdfs:subClassOf :entity_with_timeframe ;
     rdfs:subClassOf :entity_with_script ;
+    rdfs:subClassOf :entity_with_degree ;
     rdfs:label "name"@en ;
     rdfs:label "Name"@de .
 
@@ -526,6 +527,11 @@
     rdfs:label "entity with existence change"@en ;
     rdfs:label "Entität mit Existenzveränderung"@de .
 
+:entity_with_degree
+    rdf:type rdfs:Class ;
+    rdfs:comment "All entities that can have a degree or are related to one." ;
+    rdfs:label "entity with degree"@en ;
+    rdfs:label "Entität mit (akad.) Titel"@de .
 # -----------------------
 
 :has_place
@@ -989,6 +995,7 @@
     rdfs:subClassOf :entity_with_description ;
     rdfs:subClassOf :person_relation ;
     rdfs:subClassOf :group_relation ;
+    rdfs:subClassOf :entity_with_degree ;
     rdfs:subClassOf :entity_with_occupation_value .
 
 :has_person_group_relation_type
@@ -1030,7 +1037,7 @@
     rdfs:comment "Property containing the degree of an education-related relation." ;
     rdfs:label "has degree"@en ;
     rdfs:label "hat Abschluss"@de ;
-    rdfs:domain :person_group_relation ;
+    rdfs:domain :entity_with_degree ;
     rdfs:range xsd:string .
 
 # ----------------
