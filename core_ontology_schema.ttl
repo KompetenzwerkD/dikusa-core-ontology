@@ -434,13 +434,12 @@
     rdfs:label "hat Provenienz-Datum"@de ;
     rdfs:comment "Property of a triple containing the date it was entered into the database." ;
     rdfs:domain rdf-star:Triple ;
-    rdfs:range xsd:date .
+    rdfs:range rdfs:Literal .
 
 :has_provenance_date_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_provenance_date ;
-    sh:nodeKind sh:Literal ;
-    sh:datatype xsd:date .
+    sh:nodeKind sh:Literal .
 
 # general property for statements on triples
 :has_triple_value
@@ -956,7 +955,7 @@
     rdfs:label "hat frühestes Datum"@de ;
     rdfs:comment "Relation linking an entity to a timepoint, specifically the earliest possible one." ;
     rdfs:domain :entity_with_timepoint ;
-    rdfs:range xsd:date ;
+    rdfs:range rdfs:Literal ;
     rdfs:subPropertyOf :has_value .
 
 :has_date_earliest_subject_shape
@@ -968,8 +967,7 @@
 :has_date_earliest_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_date_earliest ;
-    sh:nodeKind sh:Literal ;
-    sh:datatype xsd:date .
+    sh:nodeKind sh:Literal .
 
 :has_date_latest
     rdf:type rdf:Property ;
@@ -977,7 +975,7 @@
     rdfs:label "hat spätestes Datum"@de ;
     rdfs:comment "Relation linking an entity to a timepoint, specifically the latest possible one." ;
     rdfs:domain :entity_with_timepoint ;
-    rdfs:range xsd:date ;
+    rdfs:range rdfs:Literal ;
     rdfs:subPropertyOf :has_value .
 
 :has_date_latest_subject_shape
@@ -989,8 +987,7 @@
 :has_date_latest_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_date_latest ;
-    sh:nodeKind sh:Literal ;
-    sh:datatype xsd:date .
+    sh:nodeKind sh:Literal .
 
 :has_begin_earliest
     rdf:type rdf:Property ;
@@ -998,7 +995,7 @@
     rdfs:label "hat frühesten Beginn"@de ;
     rdfs:comment "Relation linking an entity to the beginning of a period of time, specifically the earliest possible beginning." ;
     rdfs:domain :entity_with_timeframe ;
-    rdfs:range xsd:date ;
+    rdfs:range rdfs:Literal ;
     rdfs:subPropertyOf :has_value .
 
 :has_begin_earliest_subject_shape
@@ -1010,8 +1007,7 @@
 :has_begin_earliest_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_begin_earliest ;
-    sh:nodeKind sh:Literal ;
-    sh:datatype xsd:date .
+    sh:nodeKind sh:Literal .
 
 :has_begin_latest
     rdf:type rdf:Property ;
@@ -1019,7 +1015,7 @@
     rdfs:label "hat spätesten Beginn"@de ;
     rdfs:comment "Relation linking an entity to the beginning of a period of time, specifically the latest possible beginning." ;
     rdfs:domain :entity_with_timeframe ;
-    rdfs:range xsd:date ;
+    rdfs:range rdfs:Literal ;
     rdfs:subPropertyOf :has_value .
 
 :has_begin_latest_subject_shape
@@ -1031,8 +1027,7 @@
 :has_begin_latest_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_begin_latest ;
-    sh:nodeKind sh:Literal ;
-    sh:datatype xsd:date .
+    sh:nodeKind sh:Literal .
 
 :has_end_earliest
     rdf:type rdf:Property ;
@@ -1040,7 +1035,7 @@
     rdfs:label "hat frühestes Ende"@de ;
     rdfs:comment "Relation linking an entity to the end of a period of time, specifically the earliest possible end." ;
     rdfs:domain :entity_with_timeframe ;
-    rdfs:range xsd:date ;
+    rdfs:range rdfs:Literal ;
     rdfs:subPropertyOf :has_value .
 
 :has_end_earliest_subject_shape
@@ -1052,8 +1047,7 @@
 :has_end_earliest_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_end_earliest ;
-    sh:nodeKind sh:Literal ;
-    sh:datatype xsd:date .
+    sh:nodeKind sh:Literal .
 
 :has_end_latest
     rdf:type rdf:Property ;
@@ -1061,7 +1055,7 @@
     rdfs:label "hat spätestes Ende"@de ;
     rdfs:comment "Relation linking an entity to the end of a period of time, specifically the latest possible end." ;
     rdfs:domain :entity_with_timeframe ;
-    rdfs:range xsd:date ;
+    rdfs:range rdfs:Literal ;
     rdfs:subPropertyOf :has_value .
 
 :has_end_latest_subject_shape
@@ -1073,8 +1067,7 @@
 :has_end_latest_object_shape
 	a sh:NodeShape ;
     sh:targetObjectsOf :has_end_latest ;
-    sh:nodeKind sh:Literal ;
-    sh:datatype xsd:date .
+    sh:nodeKind sh:Literal .
 
 # ------------------
 
