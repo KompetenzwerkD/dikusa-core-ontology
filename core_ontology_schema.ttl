@@ -1579,8 +1579,7 @@
 :is_same_as_external_reference_subject_shape
 	a sh:NodeShape ;
 	sh:targetSubjectsOf :is_same_as_external_reference ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:class :entity_with_external_reference .
+    sh:nodeKind sh:BlankNodeOrIRI .
 
 :is_same_as_external_reference_object_shape
 	a sh:NodeShape ;
