@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en> rdf:type skos:ConceptScheme ;
+    skos:defaultLanguage "en";
+    cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:definition "Ausbildungstypen aus dem Wismut-Erbe-Portal der Sächsischen Akademie der Wissenschaften zu Leipzig"@de ;
+    skos:definition "Education types from the Wismut Heritage Portal of the  Saxon Academy of Sciences and Humanities in Leipzig"@en ;
+    skos:prefLabel "Education types"@en ;
+    skos:prefLabel "Ausbildungstypen"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en/page/1> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/Habilitation> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en> ;
+    skos:prefLabel "Habilitation"@en ;
+    skos:prefLabel "Habilitation"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en/page/2> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/Promotion> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en> ;
+    skos:prefLabel "Doctorate"@en ;
+    skos:prefLabel "Promotion"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en/page/3> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/Studium> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en> ;
+    skos:prefLabel "Studies"@en ;
+    skos:prefLabel "Studium"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en/page/4> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/Ausbildung> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en> ;
+    skos:prefLabel "Apprenticeship"@en ;
+    skos:prefLabel "Ausbildung"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en/page/5> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/Postdoc> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en> ;
+    skos:prefLabel "Postdoc"@en ;
+    skos:prefLabel "Postdoc"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en/page/6> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/Staatsexamen> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_education_types/en> ;
+    skos:prefLabel "State examination"@en ;
+    skos:prefLabel "Staatsexamen"@de .

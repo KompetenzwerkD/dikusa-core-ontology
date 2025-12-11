@@ -1,0 +1,196 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> rdf:type skos:ConceptScheme ;
+    skos:defaultLanguage "en";
+    cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:definition "Typen von Organisationen aus dem Wismut-Erbe-Portal der Sächsischen Akademie der Wissenschaften zu Leipzig"@de ;
+    skos:definition "Organizational Unit Types from the Wismut Heritage Portal of the  Saxon Academy of Sciences and Humanities in Leipzig"@en ;
+    skos:prefLabel "Organizational Unit Types"@en ;
+    skos:prefLabel "Typen von Organisationen"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/1> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=0561lmjxw0>;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Archive"@en ;
+    skos:prefLabel "Archiv"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/2> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=3lx65avg8o> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Publisher"@en ;
+    skos:prefLabel "Verlag"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/3> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=58r75wdirw> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Mining operation"@en ;
+    skos:prefLabel "Gewinnungsbetrieb"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/4> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=6mhv6etfuw> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Processing company"@en ;
+    skos:prefLabel "Aufbereitungsbetrieb"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/5> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=6ub4h8pi57> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "District"@en ;
+    skos:prefLabel "Revier"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/6> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=8e1tix146v> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "VEB - nationally owned enterprise"@en ;
+    skos:prefLabel "VEB"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/7> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=92etdp8xv0> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Association"@en ;
+    skos:prefLabel "Verein"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/8> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=9uy6mt8mgw> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Ministry"@en ;
+    skos:prefLabel "Ministerium"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/9> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=cupqk50027> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "HO Wismut"@en ;
+    skos:prefLabel "HO Wismut"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/10> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=d2typardd0> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "cultural institution"@en ;
+    skos:prefLabel "kulturelle Einrichtung"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/11> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=gibdaxfhun> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Education - Hochschule (institution of higher education)"@en ;
+    skos:prefLabel "Bildungswesen - Hochschule"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/12> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=gqbkgxppgh> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Enterprise"@en ;
+    skos:prefLabel "Unternehmen"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/13> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=gw78wc3kx1> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Education - institute"@en ;
+    skos:prefLabel "Bildungswesen - Institut"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/14> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=gymx6le1sr> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Mine management"@en ;
+    skos:prefLabel "Schachtverwaltung"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/15> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=ilw1c7mayd> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Mining shaft"@en ;
+    skos:prefLabel "Schacht"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/16> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=it0t7qwwcv> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Education - academy"@en ;
+    skos:prefLabel "Bildungswesen - Akademie"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/17> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=km3dypt0xx> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Authority"@en ;
+    skos:prefLabel "Behörde"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/18> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=ldquabr2gv> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Education - school"@en ;
+    skos:prefLabel "Bildungswesen - Schule"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/19> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=ow900rx6rh> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Church"@en ;
+    skos:prefLabel "Kirche"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/20> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=p07qxne0wd> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "object"@en ;
+    skos:prefLabel "Objekt"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/21> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=q1finaas7l> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Education - university"@en ;
+    skos:prefLabel "Bildungswesen » Universität"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/22> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=r3a2r7c07x> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Supplier and auxiliary company"@en ;
+    skos:prefLabel "Zuliefer- und Hilfsbetrieb"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/23> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=rlfapsgajw> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Deposit (mining)"@en ;
+    skos:prefLabel "Lagerstätte"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/24> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=t11lana33e> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Scientific-technical organization"@en ;
+    skos:prefLabel "Wissen.-techn. Organisation"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/25> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=u5ph99juxy> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Heap (mining)"@en ;
+    skos:prefLabel "Halde"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en/page/26> rdf:type skos:Concept ;
+    owl:sameAs <http://wismut.saw-leipzig.de/api/de/@@search?taxonomy_ou_types:list=xnsi7sjg0v> ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_organizational_unit_types/en> ;
+    skos:prefLabel "Healthcare"@en ;
+    skos:prefLabel "Gesundheitsversorgung"@de .

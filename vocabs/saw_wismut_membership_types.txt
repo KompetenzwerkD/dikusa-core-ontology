@@ -1,0 +1,201 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> rdf:type skos:ConceptScheme ;
+    skos:defaultLanguage "en";
+    cc:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    dcterms:licence <http://creativecommons.org/licenses/by-sa/3.0/> ;
+    skos:definition "Mitgliedschaftstypen aus dem Wismut-Erbe-Portal der Sächsischen Akademie der Wissenschaften zu Leipzig"@de ;
+    skos:definition "Membership types from the Wismut Heritage Portal of the  Saxon Academy of Sciences and Humanities in Leipzig"@en ;
+    skos:prefLabel "Membership types"@en ;
+    skos:prefLabel "Mitgliedschaftstypen"@de .
+
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/1> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Foreign member"@en ;
+    skos:prefLabel "Auswärtiges Mitglied"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/2> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Foreign Ordinary Member"@en ;
+    skos:prefLabel "Auswärtiges Ordentliches Mitglied"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/3> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Extraordinary Member"@en ;
+    skos:prefLabel "Außerordentliches Mitglied"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/4> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Founder"@en ;
+    skos:prefLabel "Begründer"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/5> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Advisory Board Member"@en ;
+    skos:prefLabel "Beiratsmitglied"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/6> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Director"@en ;
+    skos:prefLabel "Direktor"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/7> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Effective Member"@en ;
+    skos:prefLabel "Effektives Mitglied"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/8> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Honorary Master"@en ;
+    skos:prefLabel "Ehrenmeister"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/9> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Honorary Member"@en ;
+    skos:prefLabel "Ehrenmitglied"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/10> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Fellow"@en ;
+    skos:prefLabel "Fellow"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/11> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Secretary General"@en ;
+    skos:prefLabel "Generalsekretär"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/12> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Chancellor"@en ;
+    skos:prefLabel "Kanzler"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/13> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Corresponding Member"@en ;
+    skos:prefLabel "Korrespondierendes Mitglied"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/14> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Board of Trustees Member"@en ;
+    skos:prefLabel "Kuratoriumsmitglied"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/15> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Chair Holder"@en ;
+    skos:prefLabel "Lehrstuhlinhaber"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/16> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Master"@en ;
+    skos:prefLabel "Meister"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/17> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Master of the Chair"@en ;
+    skos:prefLabel "Meister vom Stuhl"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/18> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Staff Member"@en ;
+    skos:prefLabel "Mitarbeiter"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/19> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Co-Founder"@en ;
+    skos:prefLabel "Mitbegründer"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/20> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Member"@en ;
+    skos:prefLabel "Mitglied"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/21> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Ordinary Member"@en ;
+    skos:prefLabel "Ordentliches Mitglied"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/22> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "President"@en ;
+    skos:prefLabel "Präsident"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/23> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Secretary"@en ;
+    skos:prefLabel "Sekretar"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/24> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Senator"@en ;
+    skos:prefLabel "Senator"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/25> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Deputy Secretary"@en ;
+    skos:prefLabel "Stellv. Sekretar"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/26> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Deputy Chairperson"@en ;
+    skos:prefLabel "Stellv. Vorsitzender"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/27> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Student"@en ;
+    skos:prefLabel "Student"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/28> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Vice Chancellor"@en ;
+    skos:prefLabel "Vizekanzler"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/29> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Vice President"@en ;
+    skos:prefLabel "Vizepräsident"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/30> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Chairperson"@en ;
+    skos:prefLabel "Vorsitzender"@de .
+
+<https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en/page/31> rdf:type skos:Concept ;
+    skos:inScheme <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:topConceptOf <https://purl.archive.org/kompetenzwerkd/vocabs/saw_wismut_membership_types/en> ;
+    skos:prefLabel "Board Member"@en ;
+    skos:prefLabel "Vorstandsmitglied"@de .
