@@ -77,7 +77,7 @@
 
 :work
     rdf:type rdfs:Class ;
-    rdfs:comment "Different types of written works, such as books, scientific papers, event programs." ;
+    rdfs:comment "Different types of written works, such as books, scientific papers or event programs. Can also be a collection of works." ;
     rdfs:subClassOf :entity_with_title ;
     rdfs:subClassOf :entity_with_id ;
     rdfs:subClassOf :entity_with_external_reference ;
